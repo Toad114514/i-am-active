@@ -1,30 +1,30 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T06:08:21.291Z",
-    "bilibili": "2026-10-25T06:08:07.565Z",
-    "youtube": "2026-10-25T06:08:09.832Z",
-    "ottohub": "2026-10-25T06:08:11.148Z",
-    "kuaishou": "2026-10-25T06:08:14.540Z",
-    "github": "2026-10-25T06:08:15.354Z",
-    "gitee": "2026-10-25T06:08:18.228Z",
-    "archive": "2026-10-25T06:08:18.687Z",
-    "retroachievements": "2026-10-25T06:08:21.778Z",
-    "steam": "2026-10-25T05:40:00.000Z"
+    "weblate": "2026-10-25T06:56:35.052Z",
+    "bilibili": "2026-10-25T06:55:59.197Z",
+    "youtube": "2026-10-25T06:56:01.459Z",
+    "ottohub": "2026-10-25T06:56:02.620Z",
+    "kuaishou": "2026-10-25T06:56:24.305Z",
+    "github": "2026-10-25T06:56:25.175Z",
+    "gitee": "2026-10-25T06:56:30.484Z",
+    "archive": "2026-10-25T06:56:32.331Z",
+    "retroachievements": "2026-10-25T06:56:35.427Z",
+    "steam": "2026-10-25T06:56:38.631Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T06:08:21.779Z",
-      "since": "2026-10-25T05:54:21.633Z",
-      "note": "游戏在最近列表里，但窗口内没有新会话也没有新成就",
+      "checkedAt": "2026-10-25T06:56:35.428Z",
+      "since": "2026-10-25T05:40:00.000Z",
+      "note": "",
       "totalCount": 3,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 36,
-          "minutesTotal": 736,
-          "lastPlayed": "2026-10-25T05:52:55.000Z"
+          "minutes2weeks": 95,
+          "minutesTotal": 766,
+          "lastPlayed": "2026-10-25T06:22:56.000Z"
         },
         {
           "appid": "365450",
@@ -41,7 +41,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 0,
+      "playItems": 1,
       "achievementItems": 0
     }
   }

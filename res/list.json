@@ -1,5 +1,35 @@
 [
   {
+    "id": "github:commit:3ed64166d7e124beadb1f385d84b79f82f426659",
+    "platform": "github",
+    "type": "提交",
+    "title": "chore(data): 回拨 steam 抓取窗口，补回被跳过的一次会话",
+    "summary": "在 Toad114514/i-am-active 中提交：chore(data): 回拨 steam 抓取窗口，补回被跳过的一次会话",
+    "url": "https://github.com/Toad114514/i-am-active/commit/3ed64166d7e124beadb1f385d84b79f82f426659",
+    "image": null,
+    "timestamp": "2026-10-25T06:55:22Z",
+    "meta": {
+      "sha": "3ed6416",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "steam:play:220:1792909376",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "《Half-Life 2》",
+    "summary": "本次会话开始于 2026/10/25 14:22:56，两周内共 1 小时 35 分钟，累计 12 小时 46 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-10-25T06:22:56.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 95,
+      "minutesTotal": 766
+    }
+  },
+  {
     "id": "github:commit:7f4387c490428b7bfb7df4c9ac20c8ddc3356713",
     "platform": "github",
     "type": "提交",
