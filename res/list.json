@@ -5574,19 +5574,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 39 次提交、1 个新仓库",
-    "summary": "39 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「fix(ui): 游戏封面改从左边缘淡入（压暗贴边亮度）、修分类页结果数不更新、」",
+    "title": "Toad114514/i-am-active · 40 次提交、1 个新仓库",
+    "summary": "40 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「fix(copy): 首页副标题与页脚改成「每小时」，与 cron 对齐」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T17:13:25Z",
+    "timestamp": "2026-10-25T17:50:33Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 40,
+      "count": 41,
       "changes": [
         {
-          "group": "10-25 23:25 → 10-26 01:13 · 7 条"
+          "group": "10-25 23:25 → 10-26 01:50 · 8 条"
+        },
+        {
+          "text": "fix(copy): 首页副标题与页脚改成「每小时」，与 cron 对齐",
+          "action": "提交",
+          "component": "c75053f",
+          "url": "https://github.com/Toad114514/i-am-active/commit/c75053f193e5233ed8578ac5896618aa27bcc183",
+          "time": "2026-10-25T17:50:33Z"
         },
         {
           "text": "fix(ui): 游戏封面改从左边缘淡入（压暗贴边亮度）、修分类页结果数不更新、补美术图回填说明",
@@ -5876,11 +5883,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T17:13:25Z",
+      "windowEnd": "2026-10-25T17:50:33Z",
       "sessions": 3,
       "actions": {
         "新建仓库": 1,
-        "提交": 39
+        "提交": 40
       }
     }
   },
