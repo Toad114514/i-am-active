@@ -25,7 +25,7 @@
   /* ---------------- 汇总条目（逐条明细 + 页码式分页） ---------------- */
 
   /** 每页条数；若卡片自带 data-tlist-page-size 则以它为准。 */
-  const TLIST_PAGE_SIZE = 10;
+  const TLIST_PAGE_SIZE = 5;
 
   const ACTION_SHORT = {
     新增译文: '新增',
@@ -59,18 +59,34 @@
     const changes = item.meta.changes;
     // 分段标头（仓库活动里按连续工作时段分段）不算「条」
     const total = changes.filter((change) => !change.group).length;
+    // 首页可见的判定按「条目」算，标头跟着所属的那一段走
+    const visible = new Set();
+    let shownEntries = 0;
+    let group = null;
+    changes.forEach((change, index) => {
+      if (change.group) {
+        group = index;
+        return;
+      }
+      if (shownEntries < size) {
+        visible.add(index);
+        if (group !== null) visible.add(group);
+        shownEntries += 1;
+      }
+    });
     const rows = changes
       .map((change, index) => {
+        const hidden = visible.has(index) ? '' : ' hidden';
         if (change.group) {
           return `
-              <li class="tlist__group" data-tlist-group${index >= size ? ' hidden' : ''}>
+              <li class="tlist__group" data-tlist-group${hidden}>
                 <span>${escapeHtml(change.group)}</span>
               </li>`;
         }
         const label = ACTION_SHORT[change.action] || change.action || '';
         const text = String(change.text || '').trim() || '（空文字）';
         return `
-              <li class="tlist__row"${index >= size ? ' hidden' : ''}>
+              <li class="tlist__row"${hidden}>
                 <a class="tlist__link" href="${escapeHtml(change.url || '#')}" target="_blank" rel="noopener noreferrer">
                   <span class="tlist__text">${escapeHtml(text)}</span>
                   ${label ? `<span class="tlist__tag">${escapeHtml(label)}</span>` : ''}
@@ -94,11 +110,10 @@
                 <span class="item__time">${escapeHtml(item.timeText || '')}</span>
               </div>
               <h3 class="item__title"><a class="item__titlelink" href="${escapeHtml(item.url || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h3>
-              <p class="item__summary">${escapeHtml(item.summary)}</p>
               <ul class="tlist" data-tlist data-tlist-page-size="${size}" data-tlist-current="1">${rows}
               </ul>
               <div class="tlist__foot">
-                <span class="tlist__progress" data-tlist-progress>第 1-${changes.slice(0, size).filter((c) => !c.group).length} 条 / 共 ${total} 条</span>
+                <span class="tlist__progress" data-tlist-progress>第 1-${Math.min(size, total)} 条 / 共 ${total} 条</span>
                 <nav class="pager pager--inner" data-tlist-pager aria-label="明细分页" hidden></nav>
               </div>
             </div>
@@ -147,34 +162,47 @@
     nav.hidden = false;
   }
 
-  /** 翻到指定页：只切换 hidden，条目本身始终在 DOM 里。 */
+  /**
+   * 翻到指定页：只切换 hidden，条目本身始终在 DOM 里。
+   *
+   * 分段标头（data-tlist-group）不是「一条」，不能占页码里的名额——按 DOM 行数
+   * 分页时，一张卡里若有两段，每页就只显示得下 3 条明细。所以先按「条目」分页，
+   * 再把标头挂到它所属的那一段上（该段在本页有条目时，标头一起显示）。
+   */
   function showTlistPage(card, page) {
     const list = card.querySelector('[data-tlist]');
     if (!list) return;
     const rows = Array.from(list.children);
     if (!rows.length) return;
 
+    const isGroup = (row) => row.hasAttribute('data-tlist-group');
+    const entries = [];
+    let group = null;
+    for (const row of rows) {
+      if (isGroup(row)) {
+        group = row;
+        continue;
+      }
+      entries.push({ row, group });
+    }
+
     const size = Number(list.getAttribute('data-tlist-page-size')) || TLIST_PAGE_SIZE;
-    const totalPages = Math.max(1, Math.ceil(rows.length / size));
+    const totalRows = entries.length;
+    const totalPages = Math.max(1, Math.ceil(totalRows / size));
     const current = Math.min(Math.max(1, Math.trunc(page) || 1), totalPages);
     const start = (current - 1) * size;
-    const end = Math.min(start + size, rows.length);
+    const slice = entries.slice(start, start + size);
 
-    rows.forEach((row, index) => {
-      row.hidden = index < start || index >= end;
-    });
+    const visible = new Set(slice.map((entry) => entry.row));
+    for (const entry of slice) if (entry.group) visible.add(entry.group);
+    for (const row of rows) row.hidden = !visible.has(row);
+
     list.setAttribute('data-tlist-current', String(current));
-
-    // 分段标头（data-tlist-group）占一行但不是「一条」，计数要把它排除掉
-    const isGroup = (row) => row.hasAttribute('data-tlist-group');
-    const totalRows = rows.filter((row) => !isGroup(row)).length;
-    const done = rows.slice(0, start).filter((row) => !isGroup(row)).length;
-    const shown = rows.slice(start, end).filter((row) => !isGroup(row)).length;
 
     const progress = card.querySelector('[data-tlist-progress]');
     if (progress) {
-      progress.textContent = shown
-        ? `第 ${done + 1}-${done + shown} 条 / 共 ${totalRows} 条`
+      progress.textContent = slice.length
+        ? `第 ${start + 1}-${start + slice.length} 条 / 共 ${totalRows} 条`
         : `共 ${totalRows} 条`;
     }
 

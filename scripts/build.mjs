@@ -25,7 +25,8 @@ const ASSETS_DIR = path.join(ROOT, 'scripts', 'assets');
 const BASE = process.env.SITE_BASE || config.site.base || '/i-am-active';
 
 /** 汇总卡片里逐条译文每页显示条数（与 assets/site.js 保持一致）。 */
-const TLIST_PAGE_SIZE = 10;
+/** 汇总卡（Weblate 译文时段 / GitHub·Gitee 仓库卡）每页显示几条明细。 */
+const TLIST_PAGE_SIZE = 5;
 
 const ICON_ARROW =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
@@ -104,21 +105,41 @@ function rowTime(iso) {
   return `${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
 }
 
-/** 逐条明细；超出首页容量的部分先 hidden，由前端按页码翻放。 */
+/**
+ * 逐条明细；超出首页容量的部分先 hidden，由前端按页码翻放。
+ *
+ * 首页可见的判定按「条目」算，分段标头不占名额：标头跟着它所属的那一段，
+ * 该段在本页有条目时标头一起显示（否则一张两段的卡每页只能放得下 3 条）。
+ */
 function renderTranslationRows(changes, fold = TLIST_PAGE_SIZE) {
+  const visible = new Set();
+  let entries = 0;
+  let group = null;
+  changes.forEach((change, index) => {
+    if (change.group) {
+      group = index;
+      return;
+    }
+    if (entries < fold) {
+      visible.add(index);
+      if (group !== null) visible.add(group);
+      entries += 1;
+    }
+  });
+
   return changes
     .map((change, index) => {
       // 分段标头（仓库活动按连续工作时段分段）：不是链接，也不计入「共 N 条」
       if (change.group) {
         return `
-            <li class="tlist__group" data-tlist-group${index >= fold ? ' hidden' : ''}>
+            <li class="tlist__group" data-tlist-group${visible.has(index) ? '' : ' hidden'}>
               <span>${esc(change.group)}</span>
             </li>`;
       }
       const label = ACTION_SHORT[change.action] ?? change.action ?? '';
       const text = String(change.text ?? '').trim() || '（空文字）';
       return `
-            <li class="tlist__row"${index >= fold ? ' hidden' : ''}>
+            <li class="tlist__row"${visible.has(index) ? '' : ' hidden'}>
               <a class="tlist__link" href="${esc(change.url || '#')}" target="_blank" rel="noopener noreferrer">
                 <span class="tlist__text">${esc(text)}</span>
                 ${label ? `<span class="tlist__tag">${esc(label)}</span>` : ''}
@@ -137,7 +158,7 @@ function renderDigestItem(item) {
   // 分段标头不算「条」
   const total = changes.filter((change) => !change.group).length;
   const fold = TLIST_PAGE_SIZE;
-  const shown = changes.slice(0, fold).filter((change) => !change.group).length;
+  const shown = Math.min(fold, total);
   const fullTime = item.timestamp ? new Date(item.timestamp).toLocaleString('zh-CN', { hour12: false }) : '';
 
   return `
@@ -153,7 +174,6 @@ function renderDigestItem(item) {
               <span class="item__time" title="${esc(fullTime)}"${isoAttr(item.timestamp) ? ` datetime="${isoAttr(item.timestamp)}"` : ''}>${esc(formatTime(item.timestamp))}</span>
             </div>
             <h3 class="item__title"><a class="item__titlelink" href="${esc(item.url || '#')}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a></h3>
-            <p class="item__summary">${esc(item.summary)}</p>
             <ul class="tlist" data-tlist data-tlist-page-size="${fold}" data-tlist-current="1">
 ${renderTranslationRows(changes, fold)}
             </ul>

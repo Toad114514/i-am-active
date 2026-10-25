@@ -182,8 +182,11 @@ function achievementItem(a, user) {
 
 /**
  * 游戏美术图缓存：一轮里同一款游戏只查一次。
- * `API_GetGame` 会给四张图，其中 ImageIngame 是游戏内截图（横向），最适合当背景；
- * 没有截图时退回封面（BoxArt），再退回标题图。
+ *
+ * `API_GetGame` 给三张图，当背景的优先级是：
+ *   ImageTitle（标题画面的截图，横版、信息密度低，做背景最干净）
+ *   → ImageIngame（游戏内截图，常常是主角被围在角落的一帧，裁成 36% 宽容易糊）
+ *   → ImageBoxArt（竖版封面，最后退路）
  */
 const gameArtCache = new Map();
 /** 取图失败的现场（只留前几条），给 state.json 里的 diagnostics 用。 */
@@ -206,8 +209,9 @@ async function fetchGameArt(gameId, key, budget) {
     const ingame = absolute(data?.ImageIngame ?? data?.imageIngame);
     const boxArt = absolute(data?.ImageBoxArt ?? data?.imageBoxArt);
     const title = absolute(data?.ImageTitle ?? data?.imageTitle);
-    const backdrop = ingame ?? boxArt ?? title;
-    if (backdrop) art = { backdrop, ingame, boxArt, title: data?.Title ?? data?.title ?? null };
+    // 优先标题画面，其次游戏内截图，最后封面
+    const backdrop = title ?? ingame ?? boxArt;
+    if (backdrop) art = { backdrop, ingame, boxArt, title: data?.Title ?? data?.title ?? null, source: title ? 'title' : ingame ? 'ingame' : 'boxart' };
     else if (artDebug.length < 3) {
       artDebug.push(`game ${gameId}: 没有图片字段，返回键 ${Object.keys(data ?? {}).join(',') || '(空)'}`);
     }
@@ -424,8 +428,9 @@ export async function fetchRetroAchievements(context = {}) {
     diag.recentlyPlayed = { ok: null, skipped: 'playSessions = false' };
   }
 
-  // ---------- 3) 游戏截图/封面：当条目背景，成就图标缩成右下角角标 ----------
+  // ---------- 3) 游戏标题画面/截图：当条目背景，成就图标缩成右下角角标 ----------
   let artCount = 0;
+  const artSources = { title: 0, ingame: 0, boxart: 0 };
   if (config.gameArt !== false && items.length > 0) {
     const budget = Math.max(1, Math.min(50, Number(config.maxGameArt) || 20));
     const gameIds = [...new Set(items.map((item) => item.meta?.gameId).filter(Boolean))];
@@ -437,9 +442,12 @@ export async function fetchRetroAchievements(context = {}) {
       const found = art.get(item.meta?.gameId);
       if (!found?.backdrop) continue;
       item.meta.backdrop = found.backdrop;
-      // 只有成就才有东西可角标；游玩记录就单纯一张游戏图
+      item.meta.backdropSource = found.source ?? null;
+      if (found.source && artSources[found.source] !== undefined) artSources[found.source] += 1;
+      // 只有成就才有东西可角标；游玩记录就单纯一张游戏图。
+      // 角标只能是成就徽章本身，别拿游戏截图顶（截图缩到 42px 什么都看不出来）。
       if (item.meta.achievementId) {
-        item.meta.badge = item.meta.badgeUrl ?? item.image ?? found.ingame ?? null;
+        item.meta.badge = item.meta.badgeUrl ?? item.image ?? null;
       }
       artCount += 1;
     }
@@ -447,6 +455,7 @@ export async function fetchRetroAchievements(context = {}) {
   diag.gameArt = {
     games: new Set(items.map((i) => i.meta?.gameId).filter(Boolean)).size,
     withArt: artCount,
+    sources: artSources,
     debug: artDebug.slice(),
   };
   if (artDebug.length) console.warn(`[retroachievements] 取图现场：${artDebug[0]}`);

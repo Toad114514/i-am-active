@@ -79,6 +79,8 @@ function rowText(action) {
 function sessionLabel(session) {
   const start = session[0].ts;
   const end = session[session.length - 1].ts;
+  // 单独一条动作的时段没法定范围，写成 `10-24 22:57 · 1 条` 就够
+  if (session.length === 1) return `${shortTime(start)} · 1 条`;
   const sameDay = shortDate(start) === shortDate(end);
   const span = sameDay ? `${shortTime(start)}–${shortTime(end, false)}` : `${shortTime(start)} → ${shortTime(end)}`;
   return `${span} · ${session.length} 条`;
@@ -99,8 +101,10 @@ function buildRepo({ platform, repo, sessions, maxRows, type }) {
   let emitted = 0;
   for (let i = sessions.length - 1; i >= 0 && emitted < maxRows; i -= 1) {
     const session = sessions[i];
-    // 只有「一段里不止一条」且「整卡不止一段」时加标头，否则标头比内容还多
-    if (sessions.length > 1 && session.length > 1) rows.push({ group: sessionLabel(session) });
+    // 整卡不止一段时，每一段都给标头（哪怕这一段只有一条）。
+    // 只给「多条的段」加标头的话，单条时段会变成一行没有归属的明细，
+    // 夹在两段之间时看着像是属于下面那一段。
+    if (sessions.length > 1) rows.push({ group: sessionLabel(session) });
     for (let j = session.length - 1; j >= 0 && emitted < maxRows; j -= 1) {
       const action = session[j];
       rows.push({

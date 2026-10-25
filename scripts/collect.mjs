@@ -96,13 +96,31 @@ export function applyMerged(list, item) {
   const winEnd = Date.parse(item.meta?.windowEnd ?? item.timestamp ?? '') || Number.MAX_SAFE_INTEGER;
 
   const removed = [];
+  /** 新卡的时段只是某张旧卡的尾巴（抓到残缺数据）→ 整张丢掉，保留旧的完整卡。 */
+  let dropNew = false;
   for (let i = list.length - 1; i >= 0; i -= 1) {
     const old = list[i];
     if (old.platform !== item.platform) continue;
 
     if (old.meta?.merge) {
-      // 旧汇总被新汇总完整覆盖（例如同一批活动继续增长，时段起点没变）→ 只留新的
-      if (old.id === item.id) continue;
+      // 同一张卡：id 相同还要看数据完整度——翻页边界一变，同一时段的抓取结果可能
+      // 只覆盖后半截，拿它覆盖完整卡就会把卡片「截断」（页面上表现为条数少了一截）。
+      if (old.id === item.id) {
+        const os = Date.parse(old.meta?.windowStart ?? '');
+        const oe = Date.parse(old.meta?.windowEnd ?? '');
+        const oldRows = old.meta?.changes?.length ?? 0;
+        const newRows = item.meta?.changes?.length ?? 0;
+        if (
+          Number.isFinite(os) &&
+          Number.isFinite(oe) &&
+          os <= winStart &&
+          oe >= winEnd &&
+          oldRows > newRows
+        ) {
+          dropNew = true;
+        }
+        continue;
+      }
       const os = Date.parse(old.meta?.windowStart ?? '');
       const oe = Date.parse(old.meta?.windowEnd ?? '');
       if (!Number.isFinite(os) || !Number.isFinite(oe)) continue;
@@ -112,6 +130,24 @@ export function applyMerged(list, item) {
       const bothHaveRepo = Boolean(item.meta?.repo) && Boolean(old.meta?.repo);
       const sameRepo = bothHaveRepo && old.meta.repo === item.meta.repo;
       const comparable = !bothHaveRepo || sameRepo;
+
+      // 非仓库型汇总（Weblate 的译文时段）：时段之间本来就不该重叠。
+      // 一旦重叠，说明是同一批数据的两次抓取——翻页边界不同，起点会差一截，
+      // 于是同一段工作会变成两张卡（其中一张还短一截，看着像被截断）。
+      // 处理原则是按「谁覆盖得更全」留一张：
+      //   新卡完整包住旧卡 → 换掉旧的（数据更新了）
+      //   旧卡完整包住新卡 → 新卡只是残缺的重复，整张丢弃
+      if (!bothHaveRepo && os <= winEnd && oe >= winStart) {
+        const newCoversOld = winStart <= os && winEnd >= oe;
+        if (newCoversOld) {
+          removed.push(old.id);
+          list.splice(i, 1);
+        } else {
+          dropNew = true;
+        }
+        continue;
+      }
+
       const subset = comparable && os >= winStart && oe <= winEnd;
       // 同一张卡换了 id 又和老的重叠（窗口边界滑动导致的），也应当替换掉，
       // 否则同一批工作会在列表里留下两张几乎一样的卡。
@@ -134,6 +170,8 @@ export function applyMerged(list, item) {
       list.splice(i, 1);
     }
   }
+
+  if (dropNew) return { added: false, updated: false, removed, skipped: true };
 
   const index = list.findIndex((entry) => entry.id === item.id);
   if (index >= 0) {
@@ -238,7 +276,11 @@ async function main() {
         for (const [key, value] of Object.entries(item.meta ?? {})) {
           if (value === undefined || value === null || value === '') continue;
           const current = target.meta?.[key];
-          if (current === undefined || current === null || current === '') {
+          // backdrop / badge 是从源站「推导」出来的展示字段：规则一变（比如 RA 从
+          // 游戏内截图改成优先标题画面）老条目就该跟着变，不然永远是旧图。
+          const derived = key === 'backdrop' || key === 'badge' || key === 'backdropSource';
+          if (derived || current === undefined || current === null || current === '') {
+            if (current === value) continue;
             target.meta = { ...(target.meta ?? {}), [key]: value };
             changed = true;
           }

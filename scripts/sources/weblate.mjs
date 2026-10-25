@@ -155,16 +155,19 @@ function deepLink(baseUrl, text) {
   return `${baseUrl}?q=${encodeURIComponent(query)}`;
 }
 
-/** 已抓到的这批改动里，最新时段是否已经完整（出现了 > SESSION_GAP 的空档）。 */
-function newestSessionComplete(changes) {
-  const times = changes.map((c) => c.ts).filter(Number.isFinite).sort((a, b) => a - b);
-  for (let i = 1; i < times.length; i += 1) {
-    if (times[i] - times[i - 1] > SESSION_GAP_MS) return true;
-  }
-  return false;
-}
-
-/** 从末页往前翻，直到拿到完整的最新时段（通常 1 页）。 */
+/**
+ * 从末页往前翻，直到翻过整个回看窗口（或撞到 MAX_PAGES）。
+ *
+ * 为什么不能「看到第一个空档就停」：翻页是从最新往回翻的，最新一页里通常就已经
+ * 出现了「上次翻译」和「这次翻译」之间的空档，但同一页里往往还带着**上一次时段
+ * 的尾巴**。这时如果直接停手，上一次那个时段就会被当成「起点 = 页首那一条」的
+ * 新时段——终点一样、起点更晚，页面于是多出一张内容重合、还短一截的卡。
+ * 所以停止条件改成「已经翻到早于回看窗口」或「翻到第 1 页」，保证窗口内的时段
+ * 起点都是真的。
+ *
+ * 返回的 truncatedStart 表示：翻到 MAX_PAGES 上限时窗口内还有更早的数据没翻到，
+ * 手里最早的时段可能只是尾巴（调用方会把它丢掉，宁缺毋滥）。
+ */
 async function fetchRecentChanges() {
   const first = await getJson(`${BASE}/api/changes/?user=${USERNAME}&limit=1`, {
     headers: API_HEADERS,
@@ -172,8 +175,9 @@ async function fetchRecentChanges() {
     retries: 1,
   });
   const total = first?.count ?? 0;
-  if (!total) return [];
+  if (!total) return { changes: [], truncatedStart: false };
 
+  const cutoff = Date.now() - LOOKBACK_MS;
   let page = Math.ceil(total / PAGE_SIZE);
   const seen = new Map();
   let pages = 0;
@@ -190,11 +194,19 @@ async function fetchRecentChanges() {
       seen.set(normalized.id, normalized);
     }
     pages += 1;
-    if (newestSessionComplete([...seen.values()])) break;
+    if (page === 1) break;
+    const earliest = Math.min(...[...seen.values()].map((c) => c.ts).filter(Number.isFinite));
+    // 已经翻过回看窗口，窗口内的时段起点就都是真的了
+    if (Number.isFinite(earliest) && earliest < cutoff) break;
     page -= 1;
   }
 
-  return [...seen.values()].sort((a, b) => a.ts - b.ts);
+  const changes = [...seen.values()].sort((a, b) => a.ts - b.ts);
+  const earliest = changes[0]?.ts;
+  // page > 1：还有更早的页没翻（是被 MAX_PAGES 卡住的），最早那个时段可能不完整
+  const truncatedStart = page > 1 && Number.isFinite(earliest) && earliest > cutoff;
+
+  return { changes, truncatedStart };
 }
 
 /** 按时间空档切成若干「翻译时段」。（导出便于自测） */
@@ -279,8 +291,14 @@ function buildDigest(session) {
     latestTarget ? `最近一条「${latestTarget.slice(0, 40)}」` : '',
   ].filter(Boolean);
 
+  const endId = (end.time ?? '').replace(/\.\d+Z$/, 'Z');
+
   return {
-    id: `weblate:session:${start.time?.replace(/\.\d+Z$/, 'Z') ?? start.ts}`,
+    // id 锚在**时段结束**时间，而不是开始时间：
+    // 同一批译文的两次抓取经常起点不同（翻页边界会切在时段中间），
+    // 用开始时间做 id 就会一抓一个新 id，页面上立刻多出一张重复卡。
+    // 结束时间不会变（= 最后一条改动的时间），所以同一时段永远落在同一张卡上。
+    id: `weblate:session:${endId || end.ts}`,
     platform: 'weblate',
     type: '译文提交',
     title: `TDE ${languageText} · ${translationTotal || total} 条译文改动`,
@@ -308,13 +326,21 @@ function buildDigest(session) {
   };
 }
 
-/** 把改动集合汇总为活动列表（最新在前）。（导出便于自测） */
-export function toDigests(changes) {
+/**
+ * 把改动集合汇总为活动列表（最新在前）。（导出便于自测）
+ *
+ * @param {Array<object>} changes
+ * @param {{truncatedStart?: boolean}} [options]
+ *   truncatedStart = 这批数据的最前面可能只是某个时段的尾巴，最早的那个时段不可信，
+ *   直接丢掉（它上一轮如果完整抓到过，仓库里已经有卡；再建一张只会变成重复卡）。
+ */
+export function toDigests(changes, options = {}) {
   const cutoff = Date.now() - LOOKBACK_MS;
-  const sessions = splitSessions(changes).filter((s) => {
+  let sessions = splitSessions(changes).filter((s) => {
     const last = s[s.length - 1];
     return Number.isFinite(last.ts) && last.ts >= cutoff;
   });
+  if (options.truncatedStart && sessions.length) sessions = sessions.slice(1);
 
   const digests = [];
   for (const session of sessions) {
@@ -326,7 +352,8 @@ export function toDigests(changes) {
 
 /** 走 API 取改动并汇总。 */
 async function fetchViaApi() {
-  return toDigests(await fetchRecentChanges());
+  const { changes, truncatedStart } = await fetchRecentChanges();
+  return toDigests(changes, { truncatedStart });
 }
 
 /** 降级路径：RSS 导出（不限流，固定 10 条）。 */
