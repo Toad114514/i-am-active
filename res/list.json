@@ -1,5 +1,19 @@
 [
   {
+    "id": "github:commit:30454a40a8745a7cc8374f6e5e53cf6c74c5a98f",
+    "platform": "github",
+    "type": "提交",
+    "title": "fix(steam): 把「空返回」的两种原因分开说，并校验 steamId64 位数",
+    "summary": "在 Toad114514/i-am-active 中提交：fix(steam): 把「空返回」的两种原因分开说，并校验 steamId64 位数",
+    "url": "https://github.com/Toad114514/i-am-active/commit/30454a40a8745a7cc8374f6e5e53cf6c74c5a98f",
+    "image": null,
+    "timestamp": "2026-10-25T04:39:08Z",
+    "meta": {
+      "sha": "30454a4",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "github:commit:999dd48b76c73a02f369345bdef0ea77dcc29013",
     "platform": "github",
     "type": "提交",
