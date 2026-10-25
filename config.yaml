@@ -107,27 +107,31 @@ platforms:
     # 然后存成环境变量 RA_API_KEY（GitHub Actions 里存成同名 Secret）。
     # 没有 key 时该平台会跳过并在日志里提示，其它平台不受影响。
     webApiKey: ${RA_API_KEY}
-    # 首轮回溯多少天；之后的运行会按上次时间自动收窄查询窗口
-    lookbackDays: 60
+    # 首轮/全量回填时的回看上限（天）。之后的运行会按上次时间自动收窄窗口，
+    # 所以这里只是个上限：删掉 state.json 里该平台的 lastRun 就会按它全量重抓一次。
+    lookbackDays: 92
     # 每轮至少回看多少分钟（默认 4320 = 3 天）。
     # 作用：某轮失败（key 没配 / 401）时 lastRun 仍会往前走，窗口会缩到只剩两小时，
     # 那几天解锁的成就就永远补不回来。多回看几天只多花一次请求，去重不会产生重复。
     minWindowMinutes: 4320
-    # 单次最多输出多少条成就（防止一口气灌进列表）
-    maxItems: 60
+    # 单次最多输出多少条成就（防止一口气灌进列表）。
+    # 平时一轮只有几条，这个值只是保险；全量回填三个月时靠它放得下全部成就。
+    maxItems: 500
     # 先用 GetUserProfile 校验用户名和 key，能提前发现配错
     profileCheck: true
     # 记录「最近玩过的游戏」（GetUserRecentlyPlayedGames）。
     # 成就接口只回「解锁了什么」，一场没拿成就的游戏靠这条才看得见。
     playSessions: true
     # 单轮最多看几款最近玩过的游戏
-    maxGames: 10
+    maxGames: 30
     # 取游戏封面（没有就退回游戏内截图、再退回标题画面）当条目背景，
     # 成就徽章缩成右下角角标。每款游戏要额外一次 API_GetGame 请求，
     # 同一轮里同一款只查一次。
     gameArt: true
-    # 单轮最多给几款游戏取图
-    maxGameArt: 20
+    # 单轮最多给几款游戏取图（回填时一轮可能撞上几十款）
+    maxGameArt: 40
+    # 两次取图请求之间的最小间隔（毫秒）。取图是一款一次请求，连着打容易被限速。
+    artThrottleMs: 250
 
   # ---------------- Steam（可选，默认关闭） ----------------
   steam:

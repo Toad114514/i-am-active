@@ -42,8 +42,13 @@ RA 的 API 只能给出「最近一段时间解锁的成就」，看不出哪条
 { "id": "retroachievements:98012:2026-10-25 09:30:00", "title": "Beginner I", "gameTitle": "Pokemon Pinball mini", "unlockedAt": "2026-10-25T09:30:00Z" }
 ```
 
-抓取窗口由 `lookbackDays` 控制（首轮默认回溯 60 天），之后每次运行会用
-`res/state.json` 里记录的上次时间自动收窄查询范围，避免重复拉一大批旧数据。
+抓取窗口由 `lookbackDays` 控制（目前是 92 天，只在「不看上次时间」的全量抓取时才用满），
+之后每次运行会用 `res/state.json` 里记录的上次时间自动收窄查询范围，避免重复拉一大批旧数据。
+
+**想一次性补几个月的历史数据**：把 `res/state.json` 里 `lastRun.retroachievements`
+这一行删掉再跑一次（或本地 `node scripts/collect.mjs retroachievements --no-state`）。
+`since` 一为空，窗口就取 `lookbackDays` 的上限；跑完 `lastRun` 会自动写回，
+下一轮又变回增量。条目 id 稳定，重复抓到也只会命中去重，不会产生重复条目。
 
 但窗口有个下限 `minWindowMinutes`（默认 4320 = 3 天）：`lastRun` 在抓取失败时也会往前走，
 如果某天 key 没配、被 401 打回来，窗口会一路缩到只剩两小时，那几天解锁的成就就永远补不回来。

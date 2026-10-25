@@ -81,17 +81,25 @@ export async function http(url, options = {}) {
       });
       if (!response.ok) {
         const body = await response.text().catch(() => '');
-        throw new HttpError(`HTTP ${response.status} ${url}`, {
+        const error = new HttpError(`HTTP ${response.status} ${url}`, {
           status: response.status,
           body: body.slice(0, 400),
           url,
         });
+        error.retryable = response.status === 429 || response.status >= 500;
+        throw error;
       }
       return response;
     } catch (error) {
       lastError = error;
       if (attempt < retries) {
-        await sleep(retryDelayMs * (attempt + 1));
+        /*
+         * 429（触发限速）和 5xx 要「认怂」：比正常错误多等一截，并且按指数拉长
+         * （700ms → 5.6s → 44.8s）。全量回填那种一次性拉三个月数据的场合，
+         * 撞上限速后立刻重试只会把配额烧光，宁可慢一点把数据拿到手。
+         */
+        const penalty = error?.status === 429 ? 8 : error?.status >= 500 ? 4 : 1;
+        await sleep(retryDelayMs * (attempt + 1) * penalty);
       }
     } finally {
       clearTimeout(timer);

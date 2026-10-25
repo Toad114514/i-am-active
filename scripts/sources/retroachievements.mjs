@@ -17,7 +17,7 @@
  * diagnostics，由 collect.mjs 落到 res/state.json 的 diagnostics.retroachievements，
  * 这样直接看仓库就能判断是「没配 key」「key 失效」还是「窗口里真的没活动」。
  */
-import { getJson, HttpError } from '../lib/http.mjs';
+import { getJson, HttpError, sleep } from '../lib/http.mjs';
 import { platform } from '../lib/config.mjs';
 
 const API = 'https://retroachievements.org/API';
@@ -217,10 +217,14 @@ const gameArtCache = new Map();
 /** 取图失败的现场（只留前几条），给 state.json 里的 diagnostics 用。 */
 const artDebug = [];
 
-async function fetchGameArt(gameId, key, budget) {
+async function fetchGameArt(gameId, key, budget, throttleMs = 0) {
   if (!gameId) return null;
   if (gameArtCache.has(gameId)) return gameArtCache.get(gameId);
   if (gameArtCache.size >= budget) return null;
+
+  // 取图是按「款」单独请求的：回填三个月数据时一轮能撞上几十款游戏，
+  // 一口气打过去很容易被当成爬虫。给每次请求之间垫一点间隔（默认 250ms）。
+  if (throttleMs > 0 && gameArtCache.size > 0) await sleep(throttleMs);
 
   let art = null;
   try {
@@ -473,10 +477,12 @@ export async function fetchRetroAchievements(context = {}) {
   const artSources = { title: 0, ingame: 0, boxart: 0 };
   if (config.gameArt !== false && items.length > 0) {
     const budget = Math.max(1, Math.min(50, Number(config.maxGameArt) || 20));
+    // 取图请求之间的最小间隔（默认 250ms）。一轮几十款游戏时不垫间隔容易被限速。
+    const throttleMs = Math.max(0, Number(config.artThrottleMs ?? 250));
     const gameIds = [...new Set(items.map((item) => item.meta?.gameId).filter(Boolean))];
     const art = new Map();
     for (const gameId of gameIds) {
-      art.set(gameId, await fetchGameArt(gameId, key, budget));
+      art.set(gameId, await fetchGameArt(gameId, key, budget, throttleMs));
     }
     for (const item of items) {
       const found = art.get(item.meta?.gameId);
@@ -534,5 +540,6 @@ export { mapAchievement, toIso, lookbackMinutes, explainError, maskKey };
 export async function gameArtFor(gameId) {
   const key = String(platform('retroachievements').webApiKey ?? '').trim();
   if (!key || !gameId) return null;
-  return fetchGameArt(gameId, key, 50);
+  // 回填脚本一轮要查几十款游戏，同样垫间隔
+  return fetchGameArt(gameId, key, 50, 250);
 }
