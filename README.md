@@ -50,16 +50,26 @@ Steam 没有「我最近解锁了什么成就」这种接口，只能按 AppID �
 
 1. `IPlayerService/GetRecentlyPlayedGames` 拿到**最近两周玩过的游戏**（按两周时长排序，
    接口本身就固定两周，不能自定义区间）；
-2. 对这些 AppID 逐个调 `ISteamUserStats/GetPlayerAchievements`；
-3. 只把解锁时间落在「上次抓取时间 → 现在」之间的成就写进列表，首轮回退 14 天。
-   这样第一次跑不会把某款游戏攒了几年的成就一次性灌进来。
+2. 用返回里的 `rtime_last_played` 判断「这次会话是不是新的」，是就写一条**游玩记录**；
+3. 对这些 AppID 逐个调 `ISteamUserStats/GetPlayerAchievements`，解锁时间落在
+   「上次抓取时间 → 现在」之间的成就也写进列表，首轮回退 14 天。
 
-相关的三个旋钮：`steam.recentGames`（关掉就只查 `extraAppIds`）、
-`steam.maxGames`（单轮最多查几款，默认 10）、`steam.maxItems`（单轮最多写几条，默认 60）。
+第 2 步是必要的：只启动游戏、坐在主菜单里没解锁任何成就是常态，只靠成就会一条都抓不到。
+游玩记录的 id 是 `steam:play:<appid>:<会话时间>`，同一次会话重复运行不会重复写入；
+也刻意不用「两周时长增量」当信号，否则后台一直挂着的游戏每轮都会涨，站点会被刷屏。
+
+相关的几个旋钮：`steam.recentGames`（关掉就只查 `extraAppIds`）、
+`steam.playSessions`（关掉就只记成就）、`steam.maxGames`（单轮最多查几款，默认 10）、
+`steam.maxItems`（单轮最多写几条，默认 60）。
 `extraAppIds` 用来长期跟踪某款想持续关注的老游戏。
 
 前提是个人资料「游戏详情」设为公开，否则 `GetRecentlyPlayedGames` 只会返回空的
 `{"response":{}}`——脚本会打一条提示，看起来像「没数据」而不是报错。
+
+另一个容易踩的坑：**游戏还开着的时候，Steam 往往要等你退出后才把这次会话同步到接口**。
+所以刚启动游戏就触发抓取，很可能 `total_count=0` 或者「上次游玩」还是上一回的时间。
+关掉游戏、等一两分钟再跑就正常了。日志里每款游戏都会打一行
+「两周 X / 总计 Y / 上次游玩 Z」，对着看就知道是没同步还是真没玩。
 
 `steamId64` 是 17 位数字，超过 JS 的安全整数范围（2^53），所以配置层会把它保留成
 字符串；写成不带引号的整数也不会被改成浮点。

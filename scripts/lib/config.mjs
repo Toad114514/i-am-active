@@ -100,6 +100,7 @@ const DEFAULTS = {
       steamId64: '',
       apiKey: '',
       recentGames: true,
+      playSessions: true,
       maxGames: 10,
       maxItems: 60,
       extraAppIds: [],

@@ -11,8 +11,14 @@
  *    看起来像「没数据」——这里单独打一条提示，免得误判成代码坏了。
  *  - 未配置密钥时安静跳过（config.yaml 里默认 enabled: false）。
  *
- * 写入窗口：只把 `unlockedtime` 落在 [上次抓取时间, 现在] 的成就写进列表，
- * 首轮退回最近 14 天。否则第一次跑就会把「最近两周玩过的游戏」的历史成就一次性灌进来。
+ * 写入窗口：只把落在 [上次抓取时间, 现在] 的事件写进列表，首轮退回最近 14 天，
+ * 否则第一次跑就会把攒了几年的历史一次灌进来。
+ *
+ * 两类事件：
+ *  1. 游玩记录 —— 来源是 GetRecentlyPlayedGames 里的 `rtime_last_played`（本次会话开始时间）。
+ *     只启动游戏、还没解锁成就是常态（比如坐在主菜单里），只靠成就会一条都抓不到。
+ *     AppID + 时间戳做 id，同一次会话重复运行不会重复写入。
+ *  2. 成就解锁 —— `unlockedtime` 落在窗口内的。
  */
 import { getJson, HttpError } from '../lib/http.mjs';
 import { platform } from '../lib/config.mjs';
@@ -41,6 +47,7 @@ function steamConfig() {
     apiKey: String(config.apiKey ?? '').trim(),
     steamId64: String(config.steamId64 ?? '').trim(),
     recentGames: config.recentGames !== false,
+    playSessions: config.playSessions !== false,
     maxGames: positiveInt(config.maxGames, 10),
     maxItems: positiveInt(config.maxItems, 60),
     extraAppIds: extras,
@@ -54,9 +61,68 @@ function windowStart(context = {}) {
   return Date.now() - RECENT_WINDOW_DAYS * DAY_MS;
 }
 
+/** 分钟数转成人话：45 分钟 / 2 小时 / 3 小时 20 分钟。 */
+function formatPlaytime(minutes) {
+  const total = Math.max(0, Math.round(Number(minutes) || 0));
+  if (total < 60) return `${total} 分钟`;
+  const hours = Math.floor(total / 60);
+  const rest = total % 60;
+  return rest ? `${hours} 小时 ${rest} 分钟` : `${hours} 小时`;
+}
+
+/** 游戏头图，拿不到时前端 img 的 onerror 会自己把容器删掉，不会留破图。 */
+function headerImage(appid) {
+  return `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`;
+}
+
+/**
+ * 「这次真的启动过游戏」的记录。
+ * 只认 `rtime_last_played`，因为它是一次会话的稳定时间戳：
+ * 用 playtime_2weeks 的增量当信号的话，一直挂着的游戏每轮都会涨，
+ * 结果每 2 小时往站点里塞一条「在玩 XXX」。
+ */
+function playItems(games, sinceMs) {
+  const sinceSec = Math.floor(sinceMs / 1000);
+  const items = [];
+  for (const game of games) {
+    if (!game.lastPlayedSec) continue;
+    if (game.lastPlayedSec < sinceSec) continue;
+    const name = game.name ?? `App ${game.appid}`;
+    const parts = [`本次会话开始于 ${formatTime(game.lastPlayedSec)}`];
+    if (game.minutes2weeks > 0) parts.push(`两周内共 ${formatPlaytime(game.minutes2weeks)}`);
+    if (game.minutesTotal > 0) parts.push(`累计 ${formatPlaytime(game.minutesTotal)}`);
+    items.push({
+      id: `steam:play:${game.appid}:${game.lastPlayedSec}`,
+      platform: 'steam',
+      type: '游玩记录',
+      title: `《${name}》`,
+      summary: parts.join('，'),
+      url: `https://steamcommunity.com/app/${game.appid}`,
+      image: headerImage(game.appid),
+      timestamp: new Date(game.lastPlayedSec * 1000).toISOString(),
+      meta: {
+        appid: game.appid,
+        gameName: name,
+        minutes2weeks: game.minutes2weeks,
+        minutesTotal: game.minutesTotal,
+      },
+    });
+  }
+  return items;
+}
+
+/** 时间戳转成本地可读，日志里用，方便对着看。 */
+function formatTime(seconds) {
+  return new Date(seconds * 1000).toLocaleString('zh-CN', {
+    hour12: false,
+    timeZone: 'Asia/Shanghai',
+  });
+}
+
 /**
  * 最近两周玩过的游戏（按两周游玩时长从长到短）。
- * @returns {Promise<Array<{appid: string, name: string|null, minutes2weeks: number}>>}
+ * @returns {Promise<Array<{appid: string, name: string|null, minutes2weeks: number,
+ *   minutesTotal: number, lastPlayedSec: number}>>}
  */
 async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
   const params = new URLSearchParams({ key: apiKey, steamid: steamId64, format: 'json' });
@@ -79,7 +145,11 @@ async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
     //   {"response":{"total_count":0}} → 接口正常工作，只是这两周没玩
     //   {"response":{}}                → 拿不到任何东西，多半是隐私没开或 ID 不对
     if (response.total_count === 0) {
-      console.warn('[steam] 最近两周确实没有游玩记录（total_count=0）');
+      console.warn(
+        '[steam] 最近两周没有游玩记录（total_count=0）。' +
+          '如果游戏正开着，Steam 往往要等你退出后才把这次会话同步到接口，' +
+          '等下次运行再看；也可能是两周内确实没启动过。',
+      );
     } else {
       console.warn(
         '[steam] Steam 返回空响应 {"response":{}}：' +
@@ -96,6 +166,7 @@ async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
       name: game.name ?? null,
       minutes2weeks: Number(game.playtime_2weeks) || 0,
       minutesTotal: Number(game.playtime_forever) || 0,
+      lastPlayedSec: Number(game.rtime_last_played) || 0,
     }))
     .filter((game) => game.appid)
     .slice(0, maxGames);
@@ -180,6 +251,19 @@ export async function fetchSteam(context = {}) {
     ? await recentlyPlayedGames(config)
     : [];
 
+  // 每款游戏都打一行现场数据。Steam 的「什么都没抓到」不报错、只回空，
+  // 没有这行就只能靠猜：是没启动过、隐私没开，还是成就确实没解锁。
+  for (const game of games) {
+    console.log(
+      `[steam] ${game.name ?? `App ${game.appid}`}（${game.appid}）：` +
+        `两周 ${formatPlaytime(game.minutes2weeks)} / 总计 ${formatPlaytime(game.minutesTotal)} / ` +
+        `上次游玩 ${game.lastPlayedSec ? formatTime(game.lastPlayedSec) : '接口未返回'}`,
+    );
+  }
+
+  const collected = config.playSessions ? playItems(games, sinceMs) : [];
+  const plays = collected.length;
+
   // 自动发现的游戏在前，额外关注的 AppID 兜底（去重）
   const targets = new Map();
   for (const game of games) targets.set(game.appid, game.name);
@@ -189,10 +273,9 @@ export async function fetchSteam(context = {}) {
 
   if (targets.size === 0) {
     console.log('[steam] 本轮没有需要检查的游戏');
-    return [];
+    return collected.slice(0, config.maxItems);
   }
 
-  const collected = [];
   for (const [appid, name] of targets) {
     const items = await fetchAchievementsForApp(appid, {
       apiKey: config.apiKey,
@@ -208,13 +291,21 @@ export async function fetchSteam(context = {}) {
   }
 
   const days = Math.max(1, Math.round((Date.now() - sinceMs) / DAY_MS));
+  const achievements = Math.min(collected.length, config.maxItems) - plays;
   console.log(
-    `[steam] 检查 ${targets.size} 款游戏（回看 ${days} 天），窗口内成就 ${Math.min(collected.length, config.maxItems)} 条`,
+    `[steam] 检查 ${targets.size} 款游戏（回看 ${days} 天），` +
+      `新增 ${plays} 条游玩记录 + ${Math.max(0, achievements)} 条成就`,
   );
+  if (collected.length === 0 && games.length > 0) {
+    console.warn(
+      '[steam] 游戏在最近列表里，但窗口内既没有新会话也没有新成就。' +
+        '如果这会儿正玩着，Steam 通常要等你退出后才会更新「上次游玩」时间。',
+    );
+  }
   return collected.slice(0, config.maxItems);
 }
 
 /**
  * 最近两周玩过的游戏 → 可读列表（导出给测试用，逻辑与运行时一致）。
  */
-export { recentlyPlayedGames, windowStart, fetchAchievementsForApp };
+export { recentlyPlayedGames, windowStart, fetchAchievementsForApp, playItems, formatPlaytime };
