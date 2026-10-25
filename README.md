@@ -253,7 +253,7 @@ OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<
 
 | 类型 | 平台 |
 | --- | --- |
-| 游戏 | RetroAchievements、Steam、其他游戏（账号存档） |
+| 游戏 | RetroAchievements、Steam |
 | 视频 | 哔哩哔哩、YouTube、OTTOhub、快手 |
 | 代码 | GitHub、Gitee、Weblate（给 TDE 翻译代码里的字符串） |
 | 归档 | 互联网档案馆、西瓜视频、抖音（后两者是已停更账号的一次性存档） |
@@ -271,15 +271,6 @@ OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<
 > `to_user_id` + `orderby=publishtime` + `tab=1` + `count`/`offset`，`count` 可以
 > 开到 100 一次拿全 76 条；`has_more` 恒为 true 不可信，判终止要看返回数组是否为空）。
 > 补录脚本见 `.tmp/init-ixigua-backfill.mjs`。
-
-**「其他游戏」是账号存档，不是抓取源**：url-social.md 里列的单机/手游账号
-（Minecraft Bedrock、蔚蓝档案国服、SM64CoopDX、终末地、SMM:WE、I wanna、
-元气骑士前传、蛋仔派对、逃跑吧少年）都没有可抓的公开数据——手游没档案接口、
-SM64CoopDX 官网无战绩接口、SMM:WE 2022 停运、opencourse.world 和
-delicious-fruit 的 API 都要登录、基岩版账号不在 Mojang 接口里，网页存档里也没有
-快照。所以学抖音的做法，每个游戏落一张「账号存档卡」（用户名 + 状态 +
-排查结论），归 `miscgame` 平台、活动类型算「游戏」。脚本见
-`.tmp/init-misc-games.mjs`。
 平台展示信息仍登记在 `platforms.mjs`，只是 `PLATFORM_KIND` 里归「归档」。
 
 三个维度可以叠加，URL 用 `?year=2026&kind=code&platform=github` 这样的查询参数保存状态；
