@@ -5574,19 +5574,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 40 次提交、1 个新仓库",
-    "summary": "40 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「fix(copy): 首页副标题与页脚改成「每小时」，与 cron 对齐」",
+    "title": "Toad114514/i-am-active · 41 次提交、1 个新仓库",
+    "summary": "41 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「fix(ra/ui/site): 占位图回退、背景统一调亮、分类页汇总卡每页条数」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T17:50:33Z",
+    "timestamp": "2026-10-25T18:13:52Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 41,
+      "count": 42,
       "changes": [
         {
-          "group": "10-25 23:25 → 10-26 01:50 · 8 条"
+          "group": "10-25 23:25 → 10-26 02:13 · 9 条"
+        },
+        {
+          "text": "fix(ra/ui/site): 占位图回退、背景统一调亮、分类页汇总卡每页条数对齐",
+          "action": "提交",
+          "component": "9c8dab4",
+          "url": "https://github.com/Toad114514/i-am-active/commit/9c8dab42718979291ca0a0987f8231a1ba8d92ec",
+          "time": "2026-10-25T18:13:52Z"
         },
         {
           "text": "fix(copy): 首页副标题与页脚改成「每小时」，与 cron 对齐",
@@ -5883,11 +5890,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T17:50:33Z",
+      "windowEnd": "2026-10-25T18:13:52Z",
       "sessions": 3,
       "actions": {
         "新建仓库": 1,
-        "提交": 40
+        "提交": 41
       }
     }
   },
@@ -8157,8 +8164,8 @@
       "achievementsUnlocked": 12,
       "achievementsTotal": 246,
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/000002.png",
-      "backdropSource": "boxart"
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "backdropSource": "ingame"
     }
   },
   {
@@ -8182,9 +8189,9 @@
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/000002.png",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
       "badge": "https://media.retroachievements.org/Badge/659153.png",
-      "backdropSource": "boxart"
+      "backdropSource": "ingame"
     }
   },
   {
@@ -8208,9 +8215,9 @@
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/000002.png",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
       "badge": "https://media.retroachievements.org/Badge/659151.png",
-      "backdropSource": "boxart"
+      "backdropSource": "ingame"
     }
   },
   {
@@ -8234,9 +8241,9 @@
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/000002.png",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
       "badge": "https://media.retroachievements.org/Badge/659150.png",
-      "backdropSource": "boxart"
+      "backdropSource": "ingame"
     }
   },
   {
@@ -8260,9 +8267,9 @@
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/000002.png",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
       "badge": "https://media.retroachievements.org/Badge/659152.png",
-      "backdropSource": "boxart"
+      "backdropSource": "ingame"
     }
   },
   {

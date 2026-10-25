@@ -1,21 +1,21 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T17:52:08.965Z",
-    "bilibili": "2026-10-25T17:51:20.492Z",
-    "youtube": "2026-10-25T17:51:20.629Z",
-    "ottohub": "2026-10-25T17:51:21.565Z",
-    "kuaishou": "2026-10-25T17:51:23.607Z",
-    "github": "2026-10-25T17:51:35.970Z",
-    "gitee": "2026-10-25T17:51:56.340Z",
-    "archive": "2026-10-25T17:52:02.388Z",
-    "retroachievements": "2026-10-25T17:52:10.452Z",
-    "steam": "2026-10-25T17:52:13.511Z"
+    "weblate": "2026-10-25T18:16:07.901Z",
+    "bilibili": "2026-10-25T18:15:03.615Z",
+    "youtube": "2026-10-25T18:15:03.762Z",
+    "ottohub": "2026-10-25T18:15:04.866Z",
+    "kuaishou": "2026-10-25T18:15:26.549Z",
+    "github": "2026-10-25T18:15:37.973Z",
+    "gitee": "2026-10-25T18:16:01.590Z",
+    "archive": "2026-10-25T18:16:03.114Z",
+    "retroachievements": "2026-10-25T18:16:09.286Z",
+    "steam": "2026-10-25T18:16:12.297Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T17:52:10.452Z",
-      "since": "2026-10-25T17:40:43.865Z",
+      "checkedAt": "2026-10-25T18:16:09.287Z",
+      "since": "2026-10-25T17:52:13.511Z",
       "note": "窗口内没有新动作：这些游戏的 19 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
@@ -74,8 +74,8 @@
       ]
     },
     "retroachievements": {
-      "checkedAt": "2026-10-25T17:52:08.965Z",
-      "since": "2026-10-25T17:40:40.598Z",
+      "checkedAt": "2026-10-25T18:16:07.902Z",
+      "since": "2026-10-25T17:52:10.452Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -107,8 +107,8 @@
         "withArt": 21,
         "sources": {
           "title": 0,
-          "ingame": 0,
-          "boxart": 21
+          "ingame": 5,
+          "boxart": 16
         },
         "debug": []
       }
@@ -124,12 +124,12 @@
     "github": {
       "lookbackDays": 0,
       "repos": 30,
-      "commits": 627,
+      "commits": 628,
       "events": 0,
       "truncated": 0,
       "skipped": 1,
       "digests": 27,
-      "actions": 648
+      "actions": 649
     }
   }
 }
