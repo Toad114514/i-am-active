@@ -506,7 +506,9 @@
     "meta": {
       "appid": "220",
       "gameName": "Half-Life 2",
-      "achievementId": "HL2_BEAT_PLAZASTANDOFF"
+      "achievementId": "HL2_BEAT_PLAZASTANDOFF",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_plazastandoff.jpg"
     }
   },
   {
@@ -522,7 +524,8 @@
       "appid": "220",
       "gameName": "Half-Life 2",
       "minutes2weeks": 201,
-      "minutesTotal": 884
+      "minutesTotal": 884,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
     }
   },
   {
@@ -566,7 +569,8 @@
       "appid": "220",
       "gameName": "Half-Life 2",
       "minutes2weeks": 155,
-      "minutesTotal": 854
+      "minutesTotal": 854,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
     }
   },
   {
@@ -596,7 +600,8 @@
       "appid": "220",
       "gameName": "Half-Life 2",
       "minutes2weeks": 125,
-      "minutesTotal": 824
+      "minutesTotal": 824,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
     }
   },
   {
@@ -640,7 +645,8 @@
       "appid": "220",
       "gameName": "Half-Life 2",
       "minutes2weeks": 95,
-      "minutesTotal": 766
+      "minutesTotal": 766,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
     }
   },
   {
