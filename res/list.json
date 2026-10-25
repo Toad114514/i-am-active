@@ -8854,19 +8854,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 43 次提交、1 个新仓库",
-    "summary": "43 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「chore(ra): 准备三个月全量回填（防风控加固 + 清掉 lastRun 」",
+    "title": "Toad114514/i-am-active · 44 次提交、1 个新仓库",
+    "summary": "44 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「fix(ra): 过滤 Events 活动游戏的镜像成就」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T18:46:26Z",
+    "timestamp": "2026-10-25T18:56:35Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 44,
+      "count": 45,
       "changes": [
         {
-          "group": "10-25 23:25 → 10-26 02:46 · 11 条"
+          "group": "10-25 23:25 → 10-26 02:56 · 12 条"
+        },
+        {
+          "text": "fix(ra): 过滤 Events 活动游戏的镜像成就",
+          "action": "提交",
+          "component": "08afecf",
+          "url": "https://github.com/Toad114514/i-am-active/commit/08afecfdd278f0695fc95bcbee78d3902a3a901a",
+          "time": "2026-10-25T18:56:35Z"
         },
         {
           "text": "chore(ra): 准备三个月全量回填（防风控加固 + 清掉 lastRun 触发一次全量）",
@@ -9184,11 +9191,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T18:46:26Z",
+      "windowEnd": "2026-10-25T18:56:35Z",
       "sessions": 3,
       "actions": {
         "新建仓库": 1,
-        "提交": 43
+        "提交": 44
       }
     }
   },
