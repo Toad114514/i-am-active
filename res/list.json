@@ -1,5 +1,19 @@
 [
   {
+    "id": "github:commit:06ebdab8a80043a17c2c9be7823c93695e2f1eef",
+    "platform": "github",
+    "type": "提交",
+    "title": "feat(steam): 加一个本地自检脚本 steam:doctor",
+    "summary": "在 Toad114514/i-am-active 中提交：feat(steam): 加一个本地自检脚本 steam:doctor",
+    "url": "https://github.com/Toad114514/i-am-active/commit/06ebdab8a80043a17c2c9be7823c93695e2f1eef",
+    "image": null,
+    "timestamp": "2026-10-25T05:12:34Z",
+    "meta": {
+      "sha": "06ebdab",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "github:commit:bab5f407ece2003dfaa056614abc31ce39b06402",
     "platform": "github",
     "type": "提交",
