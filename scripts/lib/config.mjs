@@ -34,6 +34,8 @@ const DEFAULTS = {
       mid: '3494381151586530',
       /** 匿名请求概率性风控，需要多次换指纹重试 */
       retries: 14,
+      /** 可选登录态；没有时匿名抓最近一页 */
+      cookie: '',
     },
     youtube: {
       enabled: true,

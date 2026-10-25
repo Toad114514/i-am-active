@@ -29,8 +29,16 @@ const PAGE_SIZE = Math.max(1, Math.min(50, Number(weblate.pageSize) || 50));
 const MAX_PAGES = Math.max(1, Number(weblate.maxPages) || 4);
 /** 相邻两条改动间隔超过这个值，就算进入了另一个「翻译时段」。 */
 const SESSION_GAP_MS = Math.max(1, Number(weblate.sessionGapMinutes) || 120) * 60 * 1000;
-/** 只看最近这么多天的改动；更早的时段早已入库，不必每轮重算。 */
+/** 汇总窗口：只产出最近这么多天内的时段（想改回看范围改 config 的 lookbackDays）。 */
 const LOOKBACK_MS = Math.max(1, Number(weblate.lookbackDays) || 7) * 24 * 60 * 60 * 1000;
+/**
+ * 增量运行时翻页只翻到「上次抓取时间 - 这个边距」为止，不必每次都翻满整个窗口：
+ * 匿名 API 限额 100 次/24h，而 CI 每小时跑一次，回翻 183 天会把配额瞬间吃光
+ * 然后降级到只有 10 条的 RSS。边距取 3 天 —— 一个「时段」内部改动间隔不超过
+ * sessionGapMinutes（2h），连续 3 天不间断的时段实际不存在，跨边界的时段
+ * 会由 applyMerged 按「谁覆盖得全」保留旧的完整卡。
+ */
+const INCREMENTAL_FLOOR_MARGIN_MS = 3 * 24 * 60 * 60 * 1000;
 /** 单个时段最多保留多少条明细。 */
 const MAX_ROWS = Math.max(1, Number(weblate.maxRows) || 400);
 
@@ -162,25 +170,26 @@ function deepLink(baseUrl, text) {
  * 出现了「上次翻译」和「这次翻译」之间的空档，但同一页里往往还带着**上一次时段
  * 的尾巴**。这时如果直接停手，上一次那个时段就会被当成「起点 = 页首那一条」的
  * 新时段——终点一样、起点更晚，页面于是多出一张内容重合、还短一截的卡。
- * 所以停止条件改成「已经翻到早于回看窗口」或「翻到第 1 页」，保证窗口内的时段
+ * 所以停止条件改成「已经翻到早于翻页下限 floor」或「翻到第 1 页」，保证窗口内的时段
  * 起点都是真的。
  *
- * 返回的 truncatedStart 表示：翻到 MAX_PAGES 上限时窗口内还有更早的数据没翻到，
+ * 返回的 truncatedStart 表示：还没翻到第 1 页就停手了（撞 MAX_PAGES 或增量下限），
  * 手里最早的时段可能只是尾巴（调用方会把它丢掉，宁缺毋滥）。
  */
-async function fetchRecentChanges() {
+async function fetchRecentChanges(floorMs) {
   const first = await getJson(`${BASE}/api/changes/?user=${USERNAME}&limit=1`, {
     headers: API_HEADERS,
     timeoutMs: 20000,
     retries: 1,
   });
   const total = first?.count ?? 0;
-  if (!total) return { changes: [], truncatedStart: false };
+  if (!total) return { changes: [], truncatedStart: false, reachedOldest: true };
 
-  const cutoff = Date.now() - LOOKBACK_MS;
   let page = Math.ceil(total / PAGE_SIZE);
   const seen = new Map();
   let pages = 0;
+  // 是「翻完整个历史（到第 1 页）」还是「中途停手」——中途停手时最早时段可能是残尾
+  let reachedOldest = false;
 
   while (page >= 1 && pages < MAX_PAGES) {
     const data = await getJson(
@@ -194,19 +203,22 @@ async function fetchRecentChanges() {
       seen.set(normalized.id, normalized);
     }
     pages += 1;
-    if (page === 1) break;
+    if (page === 1) {
+      reachedOldest = true;
+      break;
+    }
     const earliest = Math.min(...[...seen.values()].map((c) => c.ts).filter(Number.isFinite));
-    // 已经翻过回看窗口，窗口内的时段起点就都是真的了
-    if (Number.isFinite(earliest) && earliest < cutoff) break;
+    // 已经翻过翻页下限，窗口内的时段起点就都是真的了
+    if (Number.isFinite(earliest) && earliest < floorMs) break;
     page -= 1;
   }
 
   const changes = [...seen.values()].sort((a, b) => a.ts - b.ts);
   const earliest = changes[0]?.ts;
-  // page > 1：还有更早的页没翻（是被 MAX_PAGES 卡住的），最早那个时段可能不完整
-  const truncatedStart = page > 1 && Number.isFinite(earliest) && earliest > cutoff;
+  // 中途停手（page > 1）：还有更早的页没翻，最早那个时段可能不完整
+  const truncatedStart = !reachedOldest && page > 1 && Number.isFinite(earliest) && earliest > floorMs;
 
-  return { changes, truncatedStart };
+  return { changes, truncatedStart, reachedOldest };
 }
 
 /** 按时间空档切成若干「翻译时段」。（导出便于自测） */
@@ -350,9 +362,20 @@ export function toDigests(changes, options = {}) {
   return digests.sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp));
 }
 
+/**
+ * 翻页下限：增量运行只翻到「上次抓取 - 3 天边距」，全量/首轮回翻整个窗口。
+ * @returns {number} floorMs
+ */
+function pageFloor(context = {}) {
+  const cutoff = Date.now() - LOOKBACK_MS;
+  const sinceMs = context.since ? new Date(context.since).getTime() : Number.NaN;
+  if (!Number.isFinite(sinceMs)) return cutoff;
+  return Math.max(cutoff, sinceMs - INCREMENTAL_FLOOR_MARGIN_MS);
+}
+
 /** 走 API 取改动并汇总。 */
-async function fetchViaApi() {
-  const { changes, truncatedStart } = await fetchRecentChanges();
+async function fetchViaApi(context = {}) {
+  const { changes, truncatedStart } = await fetchRecentChanges(pageFloor(context));
   return toDigests(changes, { truncatedStart });
 }
 
@@ -393,14 +416,16 @@ async function fetchViaRss() {
 }
 
 /**
- * 注意：这里**不按 since 过滤**。汇总条目每次都要用完整时段重算，
+ * 注意：这里**不按 since 过滤结果**。汇总条目每次都要用完整时段重算，
  * 只取增量会让「条数」变成增量值，汇总就失真了；覆盖逻辑交给 collect 的 merge。
+ * `since` 只用来收窄**翻页范围**（见 pageFloor），窗口内的老时段每次都会完整重算。
  *
+ * @param {{since?: Date|null}} [context]
  * @returns {Promise<Array<object>>}
  */
-export async function fetchWeblate() {
+export async function fetchWeblate(context = {}) {
   try {
-    return await fetchViaApi();
+    return await fetchViaApi(context);
   } catch (error) {
     console.warn(`[weblate] API 失败（${error.message}），降级到 RSS`);
     try {

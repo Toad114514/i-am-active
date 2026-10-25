@@ -63,15 +63,19 @@ function steamConfig() {
     playSessions: config.playSessions !== false,
     maxGames: positiveInt(config.maxGames, 10),
     maxItems: positiveInt(config.maxItems, 60),
+    // 回看窗口（天）：只在「没有上次抓取时间」时生效（首轮/删掉 lastRun 后的全量回填）。
+    // 0 = 不限，成就全部历史都会入库（与 github.lookbackDays: 0 同一套约定）。
+    lookbackDays: Math.max(0, Math.floor(Number(config.lookbackDays) || 0)),
     extraAppIds: extras,
   };
 }
 
-/** 抓取窗口起点：优先用上次抓取时间，首轮回退到 14 天前。 */
-function windowStart(context = {}) {
+/** 抓取窗口起点：优先用上次抓取时间；没有时退回 lookbackDays（0 = 全历史）。 */
+function windowStart(context = {}, lookbackDays = RECENT_WINDOW_DAYS) {
   const sinceMs = context.since ? new Date(context.since).getTime() : Number.NaN;
   if (Number.isFinite(sinceMs)) return sinceMs;
-  return Date.now() - RECENT_WINDOW_DAYS * DAY_MS;
+  if (lookbackDays === 0) return 0;
+  return Date.now() - lookbackDays * DAY_MS;
 }
 
 /**
@@ -386,7 +390,7 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
  */
 export async function fetchSteam(context = {}) {
   const config = steamConfig();
-  const sinceMs = windowStart(context);
+  const sinceMs = windowStart(context, config.lookbackDays);
   const diag = {
     checkedAt: new Date().toISOString(),
     since: new Date(sinceMs).toISOString(),
@@ -453,11 +457,12 @@ export async function fetchSteam(context = {}) {
   const plays = collected.length;
   diag.playItems = plays;
 
-  // 自动发现的游戏在前，额外关注的 AppID 兜底（去重）
+  // 固定关注的 AppID 排在最前（去重）：它们是刻意点名要跟踪的，
+  // 全量回填时不能被最近游戏的长尾把 maxItems 预算吃掉而遭截断。
   const targets = new Map();
-  for (const game of games) targets.set(game.appid, game.name);
-  for (const appid of config.extraAppIds) {
-    if (!targets.has(appid)) targets.set(appid, null);
+  for (const appid of config.extraAppIds) targets.set(appid, null);
+  for (const game of games) {
+    if (!targets.has(game.appid)) targets.set(game.appid, game.name);
   }
 
   if (targets.size === 0) {

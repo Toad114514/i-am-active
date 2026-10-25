@@ -1,5 +1,1813 @@
 [
   {
+    "id": "weblate:session:2026-05-02T21:47:14Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE 简体中文 · 45 条译文改动",
+    "summary": "修改译文 29 条、新增译文 16 条，涉及 5 个组件（applications/k3b、applications/digikam 等），最近一条「显示滚动文字」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E6%BB%9A%E5%8A%A8%E6%96%87%E5%AD%97%22",
+    "image": null,
+    "timestamp": "2026-05-02T21:47:14.797343Z",
+    "meta": {
+      "merge": true,
+      "count": 47,
+      "translationCount": 45,
+      "changes": [
+        {
+          "text": "显示滚动文字",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E6%BB%9A%E5%8A%A8%E6%96%87%E5%AD%97%22",
+          "time": "2026-05-02T21:47:14.797343Z"
+        },
+        {
+          "text": "运行基础程序",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E8%BF%90%E8%A1%8C%E5%9F%BA%E7%A1%80%E7%A8%8B%E5%BA%8F%22",
+          "time": "2026-05-02T21:47:02.763387Z"
+        },
+        {
+          "text": "显示图片",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87%22",
+          "time": "2026-05-02T21:46:57.465980Z"
+        },
+        {
+          "text": "随机选择显示模式",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E9%9A%8F%E6%9C%BA%E9%80%89%E6%8B%A9%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F%22",
+          "time": "2026-05-02T21:46:50.682804Z"
+        },
+        {
+          "text": "颜色数",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E9%A2%9C%E8%89%B2%E6%95%B0%22",
+          "time": "2026-05-02T21:46:36.039614Z"
+        },
+        {
+          "text": "蚂蚁在一张图片上面走。由 Jamie Zawinski 编写。",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E8%9A%82%E8%9A%81%E5%9C%A8%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87%E4%B8%8A%E9%9D%A2%E8%B5%B0%E3%80%82%E7%94%B1%20Jamie%20Zawinski%20%E7%BC%96%E5%86%99%E3%80%82%22",
+          "time": "2026-05-02T21:46:24.529822Z"
+        },
+        {
+          "text": "蚂蚁聚光灯",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E8%9A%82%E8%9A%81%E8%81%9A%E5%85%89%E7%81%AF%22",
+          "time": "2026-05-02T21:46:19.095875Z"
+        },
+        {
+          "text": "‐聚光灯",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E2%80%90%E8%81%9A%E5%85%89%E7%81%AF%22",
+          "time": "2026-05-02T21:45:57.717636Z"
+        },
+        {
+          "text": "蚂蚁走迷宫，，。由 Jamie Zawinski 编写。",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E8%9A%82%E8%9A%81%E8%B5%B0%E8%BF%B7%E5%AE%AB%EF%BC%8C%EF%BC%8C%E3%80%82%E7%94%B1%20Jamie%20Zawinski%20%E7%BC%96%E5%86%99%E3%80%82%22",
+          "time": "2026-05-02T21:45:43.765793Z"
+        },
+        {
+          "text": "绘画阴影",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E7%BB%98%E7%94%BB%E9%98%B4%E5%BD%B1%22",
+          "time": "2026-05-02T21:45:22.710504Z"
+        },
+        {
+          "text": "源",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%BA%90%22",
+          "time": "2026-05-02T21:43:39.583536Z"
+        },
+        {
+          "text": "帧速率",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%B8%A7%E9%80%9F%E7%8E%87%22",
+          "time": "2026-05-02T21:43:34.995270Z"
+        },
+        {
+          "text": "手臂",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%89%8B%E8%87%82%22",
+          "time": "2026-05-02T21:43:08.586295Z"
+        },
+        {
+          "text": "显示帧速率",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E5%B8%A7%E9%80%9F%E7%8E%87%22",
+          "time": "2026-05-02T21:42:52.543930Z"
+        },
+        {
+          "text": "显示帧速率/fps",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E5%B8%A7%E9%80%9F%E7%8E%87%2Ffps%22",
+          "time": "2026-05-02T21:42:48.599916Z"
+        },
+        {
+          "text": "瓷砖磁铁",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E7%93%B7%E7%A0%96%E7%A3%81%E9%93%81%22",
+          "time": "2026-05-02T21:42:31.871685Z"
+        },
+        {
+          "text": "瓷砖",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E7%93%B7%E7%A0%96%22",
+          "time": "2026-05-02T21:42:24.918449Z"
+        },
+        {
+          "text": "修改译文",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/",
+          "time": "2026-05-02T21:42:17.164581Z"
+        },
+        {
+          "text": "方块磁铁",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%96%B9%E5%9D%97%E7%A3%81%E9%93%81%22",
+          "time": "2026-05-02T21:42:07.384651Z"
+        },
+        {
+          "text": "外边框磁铁",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%A4%96%E8%BE%B9%E6%A1%86%E7%A3%81%E9%93%81%22",
+          "time": "2026-05-02T21:42:01.227010Z"
+        },
+        {
+          "text": "瘦磁铁",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E7%98%A6%E7%A3%81%E9%93%81%22",
+          "time": "2026-05-02T21:41:50.690185Z"
+        },
+        {
+          "text": "宽磁铁",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%AE%BD%E7%A3%81%E9%93%81%22",
+          "time": "2026-05-02T21:41:35.999583Z"
+        },
+        {
+          "text": "随机磁铁布局",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E9%9A%8F%E6%9C%BA%E7%A3%81%E9%93%81%E5%B8%83%E5%B1%80%22",
+          "time": "2026-05-02T21:41:25.401378Z"
+        },
+        {
+          "text": "60 秒",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%2260%20%E7%A7%92%22",
+          "time": "2026-05-02T21:41:16.930583Z"
+        },
+        {
+          "text": "xiaolan2332021@163.com",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22xiaolan2332021%40163.com%22",
+          "time": "2026-05-02T21:40:49.259116Z"
+        },
+        {
+          "text": "Toad114514",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22Toad114514%22",
+          "time": "2026-05-02T21:40:46.825199Z"
+        },
+        {
+          "text": "_n: 亏凸月 (昨天就是满月) 亏凸月 (满月后的第 %n 天)",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%22_n%3A%20%E4%BA%8F%E5%87%B8%E6%9C%88%20(%E6%98%A8%E5%A4%A9%E5%B0%B1%E6%98%AF%E6%BB%A1%E6%9C%88)%20%E4%BA%8F%E5%87%B8%E6%9C%88%20(%E6%BB%A1%E6%9C%88%E5%90%8E%E7%9A%84%E7%AC%AC%20%25n%20%E5%A4%A9)%22",
+          "time": "2026-05-02T21:39:10.972705Z"
+        },
+        {
+          "text": "_n: 残月 (明天就是新月) 残月 (%n 天后是新月)",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%22_n%3A%20%E6%AE%8B%E6%9C%88%20(%E6%98%8E%E5%A4%A9%E5%B0%B1%E6%98%AF%E6%96%B0%E6%9C%88)%20%E6%AE%8B%E6%9C%88%20(%25n%20%E5%A4%A9%E5%90%8E%E6%98%AF%E6%96%B0%E6%9C%88)%22",
+          "time": "2026-05-02T21:39:08.990346Z"
+        },
+        {
+          "text": "_n: 亏凸月 (昨天就是满月) 亏凸月(满月后的第 %n 天)",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%22_n%3A%20%E4%BA%8F%E5%87%B8%E6%9C%88%20(%E6%98%A8%E5%A4%A9%E5%B0%B1%E6%98%AF%E6%BB%A1%E6%9C%88)%20%E4%BA%8F%E5%87%B8%E6%9C%88(%E6%BB%A1%E6%9C%88%E5%90%8E%E7%9A%84%E7%AC%AC%20%25n%20%E5%A4%A9)%22",
+          "time": "2026-05-02T21:38:48.943689Z"
+        },
+        {
+          "text": "_n: 盈凸月 (明天就是满月) 盈凸月 (%n 天后是满月)",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%22_n%3A%20%E7%9B%88%E5%87%B8%E6%9C%88%20(%E6%98%8E%E5%A4%A9%E5%B0%B1%E6%98%AF%E6%BB%A1%E6%9C%88)%20%E7%9B%88%E5%87%B8%E6%9C%88%20(%25n%20%E5%A4%A9%E5%90%8E%E6%98%AF%E6%BB%A1%E6%9C%88)%22",
+          "time": "2026-05-02T21:38:17.895372Z"
+        },
+        {
+          "text": "_n: 娥眉月(昨天就是新月) 娥眉月(新月后的第 %n 天)",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%22_n%3A%20%E5%A8%A5%E7%9C%89%E6%9C%88(%E6%98%A8%E5%A4%A9%E5%B0%B1%E6%98%AF%E6%96%B0%E6%9C%88)%20%E5%A8%A5%E7%9C%89%E6%9C%88(%E6%96%B0%E6%9C%88%E5%90%8E%E7%9A%84%E7%AC%AC%20%25n%20%E5%A4%A9)%22",
+          "time": "2026-05-02T21:38:01.107193Z"
+        },
+        {
+          "text": "KMoon 向您显示的月球会遵从 您当前的设置和时间。",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%22KMoon%20%E5%90%91%E6%82%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%9C%88%E7%90%83%E4%BC%9A%E9%81%B5%E4%BB%8E%20%E6%82%A8%E5%BD%93%E5%89%8D%E7%9A%84%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%97%B6%E9%97%B4%E3%80%82%22",
+          "time": "2026-05-02T21:37:19.545652Z"
+        },
+        {
+          "text": "您可以用这个把月球旋转到您所在位置可观察的 正确的角度。 由于这个角度(几乎)无法从任何 系统给定的数据中计算出来， 因此，您可以在这里配置您 希望 KMoon 如何显示月球。 默认值为 0，但是从这个角度您想要看到 月球是不太可能的。",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%E6%82%A8%E5%8F%AF%E4%BB%A5%E7%94%A8%E8%BF%99%E4%B8%AA%E6%8A%8A%E6%9C%88%E7%90%83%E6%97%8B%E8%BD%AC%E5%88%B0%E6%82%A8%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE%E5%8F%AF%E8%A7%82%E5%AF%9F%E7%9A%84%20%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%A7%92%E5%BA%A6%E3%80%82%20%E7%94%B1%E4%BA%8E%E8%BF%99%E4%B8%AA%E8%A7%92%E5%BA%A6(%E5%87%A0%E4%B9%8E)%E6%97%A0%E6%B3%95%E4%BB%8E%E4%BB%BB%E4%BD%95%20%E7%B3%BB%E7%BB%9F%E7%BB%99%E5%AE%9A%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%87%BA%E6%9D%A5%EF%BC%8C%20%E5%9B%A0",
+          "time": "2026-05-02T21:36:23.021406Z"
+        },
+        {
+          "text": "您可以用这个把月球旋转到您所在位置可观察的 正确的角度。 由于这个角度(几乎)无法从任何 系统给定的数据中计算出来， 因此，您可以在这里配置您希望 KMoon 如何显示月球。 默认值为 0，但是从这个角度您想要看到 月球是不太可能的。",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%E6%82%A8%E5%8F%AF%E4%BB%A5%E7%94%A8%E8%BF%99%E4%B8%AA%E6%8A%8A%E6%9C%88%E7%90%83%E6%97%8B%E8%BD%AC%E5%88%B0%E6%82%A8%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE%E5%8F%AF%E8%A7%82%E5%AF%9F%E7%9A%84%20%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%A7%92%E5%BA%A6%E3%80%82%20%E7%94%B1%E4%BA%8E%E8%BF%99%E4%B8%AA%E8%A7%92%E5%BA%A6(%E5%87%A0%E4%B9%8E)%E6%97%A0%E6%B3%95%E4%BB%8E%E4%BB%BB%E4%BD%95%20%E7%B3%BB%E7%BB%9F%E7%BB%99%E5%AE%9A%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%87%BA%E6%9D%A5%EF%BC%8C%20%E5%9B%A0",
+          "time": "2026-05-02T21:36:17.171516Z"
+        },
+        {
+          "text": "您可以用这个把月球旋转到您所在位置可观察的 正确的角度。 由于这个角度(几乎)无法从任何系统给定的数据 中计算出来，因此，您可以在这里配置您 希望 KMoon 如何显示月球。 默认值为 0，但是从这个角度您想要看到 月球是不太可能的。",
+          "action": "修改译文",
+          "component": "tdetoys/kmoon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kmoon/zh_Hans/?q=%E6%82%A8%E5%8F%AF%E4%BB%A5%E7%94%A8%E8%BF%99%E4%B8%AA%E6%8A%8A%E6%9C%88%E7%90%83%E6%97%8B%E8%BD%AC%E5%88%B0%E6%82%A8%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE%E5%8F%AF%E8%A7%82%E5%AF%9F%E7%9A%84%20%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%A7%92%E5%BA%A6%E3%80%82%20%E7%94%B1%E4%BA%8E%E8%BF%99%E4%B8%AA%E8%A7%92%E5%BA%A6(%E5%87%A0%E4%B9%8E)%E6%97%A0%E6%B3%95%E4%BB%8E%E4%BB%BB%E4%BD%95%E7%B3%BB%E7%BB%9F%E7%BB%99%E5%AE%9A%E7%9A%84%E6%95%B0%E6%8D%AE%20%E4%B8%AD%E8%AE%A1%E7%AE%97%E5%87%BA%E6%9D%A5%EF%BC%8C%E5%9B%A0%E6%AD%A4",
+          "time": "2026-05-02T21:35:29.748386Z"
+        },
+        {
+          "text": "合并菜单",
+          "action": "修改译文",
+          "component": "applications/kbfx",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/kbfx/zh_Hans/?q=%22%E5%90%88%E5%B9%B6%E8%8F%9C%E5%8D%95%22",
+          "time": "2026-05-02T21:33:54.155682Z"
+        },
+        {
+          "text": "勾选框1",
+          "action": "新增译文",
+          "component": "applications/kbfx",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/kbfx/zh_Hans/?q=%22%E5%8B%BE%E9%80%89%E6%A1%861%22",
+          "time": "2026-05-02T21:33:40.629116Z"
+        },
+        {
+          "text": "%1",
+          "action": "新增译文",
+          "component": "applications/kbfx",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/kbfx/zh_Hans/?q=%22%251%22",
+          "time": "2026-05-02T21:33:06.324796Z"
+        },
+        {
+          "text": "从相机下载 && 删除",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E4%BB%8E%E7%9B%B8%E6%9C%BA%E4%B8%8B%E8%BD%BD%20%26%26%20%E5%88%A0%E9%99%A4%22",
+          "time": "2026-05-02T21:30:49.129358Z"
+        },
+        {
+          "text": "尺寸：",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%B0%BA%E5%AF%B8%EF%BC%9A%22",
+          "time": "2026-05-02T21:29:44.899772Z"
+        },
+        {
+          "text": "品牌/型号:",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%93%81%E7%89%8C%2F%E5%9E%8B%E5%8F%B7%3A%22",
+          "time": "2026-05-02T21:29:37.002305Z"
+        },
+        {
+          "text": "光圈/焦距:",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%85%89%E5%9C%88%2F%E7%84%A6%E8%B7%9D%3A%22",
+          "time": "2026-05-02T21:29:19.814783Z"
+        },
+        {
+          "text": "型号:",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9E%8B%E5%8F%B7%3A%22",
+          "time": "2026-05-02T21:29:00.251653Z"
+        },
+        {
+          "text": "保持打开",
+          "action": "新增译文",
+          "component": "applications/k3b",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/k3b/zh_Hans/?q=%22%E4%BF%9D%E6%8C%81%E6%89%93%E5%BC%80%22",
+          "time": "2026-05-02T21:28:03.786410Z"
+        },
+        {
+          "text": "转码视频 DVD 标题",
+          "action": "修改译文",
+          "component": "applications/k3b",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/k3b/zh_Hans/?q=%22%E8%BD%AC%E7%A0%81%E8%A7%86%E9%A2%91%20DVD%20%E6%A0%87%E9%A2%98%22",
+          "time": "2026-05-02T21:27:23.559395Z"
+        }
+      ],
+      "windowStart": "2026-05-02T21:27:23.559395Z",
+      "windowEnd": "2026-05-02T21:47:14.797343Z",
+      "components": [
+        "applications/k3b",
+        "applications/digikam",
+        "applications/kbfx",
+        "tdetoys/kmoon",
+        "tdeartwork/kxsconfig"
+      ],
+      "actions": {
+        "修改译文": 29,
+        "新增译文": 16,
+        "新贡献者": 2
+      },
+      "language": "简体中文",
+      "languageName": "简体中文",
+      "latestTarget": "显示滚动文字",
+      "source": "api"
+    }
+  },
+  {
+    "id": "weblate:session:2026-05-27T18:48:05Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE 简体中文 · 101 条译文改动",
+    "summary": "新增译文 63 条、修改译文 37 条、标记待编辑 1 条，涉及 5 个组件（tdeedu/kgeography、tdebase/ktip 等），最近一条「查找声线」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%9F%A5%E6%89%BE%E5%A3%B0%E7%BA%BF%22",
+    "image": null,
+    "timestamp": "2026-05-27T18:48:05.781387Z",
+    "meta": {
+      "merge": true,
+      "count": 133,
+      "translationCount": 101,
+      "changes": [
+        {
+          "text": "查找声线",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%9F%A5%E6%89%BE%E5%A3%B0%E7%BA%BF%22",
+          "time": "2026-05-27T18:48:05.781387Z"
+        },
+        {
+          "text": "大英帝国",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E5%A4%A7%E8%8B%B1%E5%B8%9D%E5%9B%BD%22",
+          "time": "2026-05-27T18:47:34.313138Z"
+        },
+        {
+          "text": "英国",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E8%8B%B1%E5%9B%BD%22",
+          "time": "2026-05-27T18:47:19.456603Z"
+        },
+        {
+          "text": "美国",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E7%BE%8E%E5%9B%BD%22",
+          "time": "2026-05-27T18:47:03.088316Z"
+        },
+        {
+          "text": "美利坚合众国",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E7%BE%8E%E5%88%A9%E5%9D%9A%E5%90%88%E4%BC%97%E5%9B%BD%22",
+          "time": "2026-05-27T18:46:58.911410Z"
+        },
+        {
+          "text": "，目前工作 %1 在句子 %2 / %3",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%EF%BC%8C%E7%9B%AE%E5%89%8D%E5%B7%A5%E4%BD%9C%20%251%20%E5%9C%A8%E5%8F%A5%E5%AD%90%20%252%20%2F%20%253%22",
+          "time": "2026-05-27T18:46:26.213952Z"
+        },
+        {
+          "text": "朗读事件名",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%9C%97%E8%AF%BB%E4%BA%8B%E4%BB%B6%E5%90%8D%22",
+          "time": "2026-05-27T18:46:01.973436Z"
+        },
+        {
+          "text": "朗读通知消息",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%9C%97%E8%AF%BB%E9%80%9A%E7%9F%A5%E6%B6%88%E6%81%AF%22",
+          "time": "2026-05-27T18:45:54.360297Z"
+        },
+        {
+          "text": "不朗读通知",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E4%B8%8D%E6%9C%97%E8%AF%BB%E9%80%9A%E7%9F%A5%22",
+          "time": "2026-05-27T18:45:47.534261Z"
+        },
+        {
+          "text": "_n: 一个工作 %n 个工作",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22_n%3A%20%E4%B8%80%E4%B8%AA%E5%B7%A5%E4%BD%9C%20%25n%20%E4%B8%AA%E5%B7%A5%E4%BD%9C%22",
+          "time": "2026-05-27T18:45:27.477274Z"
+        },
+        {
+          "text": "朗读完毕后退出",
+          "action": "修改译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%9C%97%E8%AF%BB%E5%AE%8C%E6%AF%95%E5%90%8E%E9%80%80%E5%87%BA%22",
+          "time": "2026-05-27T18:45:08.410293Z"
+        },
+        {
+          "text": "目前句子",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E7%9B%AE%E5%89%8D%E5%8F%A5%E5%AD%90%22",
+          "time": "2026-05-27T18:45:01.691496Z"
+        },
+        {
+          "text": "重新刷新列表所有工作。",
+          "action": "修改译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%87%8D%E6%96%B0%E5%88%B7%E6%96%B0%E5%88%97%E8%A1%A8%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%E3%80%82%22",
+          "time": "2026-05-27T18:44:45.453286Z"
+        },
+        {
+          "text": "重新刷新列表所有工作",
+          "action": "修改译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%87%8D%E6%96%B0%E5%88%B7%E6%96%B0%E5%88%97%E8%A1%A8%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%22",
+          "time": "2026-05-27T18:44:43.277428Z"
+        },
+        {
+          "text": "重新刷新列表所有工作",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%87%8D%E6%96%B0%E5%88%B7%E6%96%B0%E5%88%97%E8%A1%A8%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%22",
+          "time": "2026-05-27T18:44:32.137410Z"
+        },
+        {
+          "text": "切换讲述人",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E5%88%87%E6%8D%A2%E8%AE%B2%E8%BF%B0%E4%BA%BA%22",
+          "time": "2026-05-27T18:44:17.500741Z"
+        },
+        {
+          "text": "朗读文件 (&K)",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%9C%97%E8%AF%BB%E6%96%87%E4%BB%B6%20(%26K)%22",
+          "time": "2026-05-27T18:44:07.928849Z"
+        },
+        {
+          "text": "高级的多步骤工作在下一环节。",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%AB%98%E7%BA%A7%E7%9A%84%E5%A4%9A%E6%AD%A5%E9%AA%A4%E5%B7%A5%E4%BD%9C%E5%9C%A8%E4%B8%8B%E4%B8%80%E7%8E%AF%E8%8A%82%E3%80%82%22",
+          "time": "2026-05-27T18:43:53.972689Z"
+        },
+        {
+          "text": "朗读剪贴板 (&S)",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%9C%97%E8%AF%BB%E5%89%AA%E8%B4%B4%E6%9D%BF%20(%26S)%22",
+          "time": "2026-05-27T18:43:24.900263Z"
+        },
+        {
+          "text": "稍后 (&L)",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E7%A8%8D%E5%90%8E%20(%26L)%22",
+          "time": "2026-05-27T18:43:03.182230Z"
+        },
+        {
+          "text": "步骤",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%AD%A5%E9%AA%A4%22",
+          "time": "2026-05-27T18:42:41.135685Z"
+        },
+        {
+          "text": "步骤数",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%AD%A5%E9%AA%A4%E6%95%B0%22",
+          "time": "2026-05-27T18:42:39.059118Z"
+        },
+        {
+          "text": "状态",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E7%8A%B6%E6%80%81%22",
+          "time": "2026-05-27T18:42:12.137213Z"
+        },
+        {
+          "text": "讲述人 ID",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E8%AE%B2%E8%BF%B0%E4%BA%BA%20ID%22",
+          "time": "2026-05-27T18:42:08.582227Z"
+        },
+        {
+          "text": "序号",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E5%BA%8F%E5%8F%B7%22",
+          "time": "2026-05-27T18:42:02.266801Z"
+        },
+        {
+          "text": "所有者",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%89%80%E6%9C%89%E8%80%85%22",
+          "time": "2026-05-27T18:41:53.084408Z"
+        },
+        {
+          "text": "测试",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%B5%8B%E8%AF%95%22",
+          "time": "2026-05-27T18:41:43.452757Z"
+        },
+        {
+          "text": "原作者",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E5%8E%9F%E4%BD%9C%E8%80%85%22",
+          "time": "2026-05-27T18:41:35.661336Z"
+        },
+        {
+          "text": "文字转语音合成器",
+          "action": "修改译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%96%87%E5%AD%97%E8%BD%AC%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E5%99%A8%22",
+          "time": "2026-05-27T18:41:25.436976Z"
+        },
+        {
+          "text": "语音合成器",
+          "action": "修改译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E5%99%A8%22",
+          "time": "2026-05-27T18:40:45.876392Z"
+        },
+        {
+          "text": "KTTS 未配置",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22KTTS%20%E6%9C%AA%E9%85%8D%E7%BD%AE%22",
+          "time": "2026-05-27T18:40:35.880846Z"
+        },
+        {
+          "text": "KTTS 还没有配置。 至少需要一个已配置的讲述人。 你想要配置他吗？",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22KTTS%20%E8%BF%98%E6%B2%A1%E6%9C%89%E9%85%8D%E7%BD%AE%E3%80%82%20%E8%87%B3%E5%B0%91%E9%9C%80%E8%A6%81%E4%B8%80%E4%B8%AA%E5%B7%B2%E9%85%8D%E7%BD%AE%E7%9A%84%E8%AE%B2%E8%BF%B0%E4%BA%BA%E3%80%82%20%E4%BD%A0%E6%83%B3%E8%A6%81%E9%85%8D%E7%BD%AE%E4%BB%96%E5%90%97%EF%BC%9F%22",
+          "time": "2026-05-27T18:40:27.049972Z"
+        },
+        {
+          "text": "通知事件列表",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%80%9A%E7%9F%A5%E4%BA%8B%E4%BB%B6%E5%88%97%E8%A1%A8%22",
+          "time": "2026-05-27T18:39:46.532934Z"
+        },
+        {
+          "text": "选择事件",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%80%89%E6%8B%A9%E4%BA%8B%E4%BB%B6%22",
+          "time": "2026-05-27T18:39:25.176844Z"
+        },
+        {
+          "text": "其他 %1 事件",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E5%85%B6%E4%BB%96%20%251%20%E4%BA%8B%E4%BB%B6%22",
+          "time": "2026-05-27T18:39:20.725473Z"
+        },
+        {
+          "text": "默认 (所有其他的事件)",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%BB%98%E8%AE%A4%20(%E6%89%80%E6%9C%89%E5%85%B6%E4%BB%96%E7%9A%84%E4%BA%8B%E4%BB%B6)%22",
+          "time": "2026-05-27T18:39:07.248704Z"
+        },
+        {
+          "text": "示例事件",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E7%A4%BA%E4%BE%8B%E4%BA%8B%E4%BB%B6%22",
+          "time": "2026-05-27T18:38:55.567826Z"
+        },
+        {
+          "text": "示例应用",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E7%A4%BA%E4%BE%8B%E5%BA%94%E7%94%A8%22",
+          "time": "2026-05-27T18:38:48.525101Z"
+        },
+        {
+          "text": "示例提示消息",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E7%A4%BA%E4%BE%8B%E6%8F%90%E7%A4%BA%E6%B6%88%E6%81%AF%22",
+          "time": "2026-05-27T18:38:39.466939Z"
+        },
+        {
+          "text": "过滤器配置",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E8%BF%87%E6%BB%A4%E5%99%A8%E9%85%8D%E7%BD%AE%22",
+          "time": "2026-05-27T18:38:24.929748Z"
+        },
+        {
+          "text": "讲述人配置",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E8%AE%B2%E8%BF%B0%E4%BA%BA%E9%85%8D%E7%BD%AE%22",
+          "time": "2026-05-27T18:38:21.432424Z"
+        },
+        {
+          "text": "工作 (&J)",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E5%B7%A5%E4%BD%9C%20(%26J)%22",
+          "time": "2026-05-27T18:38:15.257292Z"
+        },
+        {
+          "text": "添加讲述人",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%B7%BB%E5%8A%A0%E8%AE%B2%E8%BF%B0%E4%BA%BA%22",
+          "time": "2026-05-27T18:38:07.946919Z"
+        },
+        {
+          "text": "文字转语音此配置允许其他应用程序访问语音合成资源请务必为您正在使用的语言配置默认语言因为这将是大多数应用程序使用的语言",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%96%87%E5%AD%97%E8%BD%AC%E8%AF%AD%E9%9F%B3%E6%AD%A4%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E5%85%B6%E4%BB%96%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BF%E9%97%AE%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90%E8%B5%84%E6%BA%90%E8%AF%B7%E5%8A%A1%E5%BF%85%E4%B8%BA%E6%82%A8%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8%E7%9A%84%E8%AF%AD%E8%A8%80%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E8%AF%AD%E8%A8%80%E5%9B%A0%E4%B8%BA%E8%BF%99%E5%B0%86%E6%98%AF%E5%A4%A7%E5%A4%9A%E6%95%B0%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E7%9A%84%E8%AF%AD%E8%A8%80%22",
+          "time": "2026-05-27T18:37:53.986433Z"
+        },
+        {
+          "text": "你改变的配置还没有保存。 点击“应用”以保存更改或“取消”以放弃更改。",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E4%BD%A0%E6%94%B9%E5%8F%98%E7%9A%84%E9%85%8D%E7%BD%AE%E8%BF%98%E6%B2%A1%E6%9C%89%E4%BF%9D%E5%AD%98%E3%80%82%20%E7%82%B9%E5%87%BB%E2%80%9C%E5%BA%94%E7%94%A8%E2%80%9D%E4%BB%A5%E4%BF%9D%E5%AD%98%E6%9B%B4%E6%94%B9%E6%88%96%E2%80%9C%E5%8F%96%E6%B6%88%E2%80%9D%E4%BB%A5%E6%94%BE%E5%BC%83%E6%9B%B4%E6%94%B9%E3%80%82%22",
+          "time": "2026-05-27T18:36:30.749252Z"
+        },
+        {
+          "text": "XML 转换器",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22XML%20%E8%BD%AC%E6%8D%A2%E5%99%A8%22",
+          "time": "2026-05-27T18:35:30.166791Z"
+        },
+        {
+          "text": "文本中断。",
+          "action": "标记待编辑",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%96%87%E6%9C%AC%E4%B8%AD%E6%96%AD%E3%80%82%22",
+          "time": "2026-05-27T18:35:20.043781Z"
+        },
+        {
+          "text": "文本中断。",
+          "action": "修改译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%96%87%E6%9C%AC%E4%B8%AD%E6%96%AD%E3%80%82%22",
+          "time": "2026-05-27T18:35:19.376814Z"
+        },
+        {
+          "text": "文本中断。消息。",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%96%87%E6%9C%AC%E4%B8%AD%E6%96%AD%E3%80%82%E6%B6%88%E6%81%AF%E3%80%82%22",
+          "time": "2026-05-27T18:35:12.360307Z"
+        },
+        {
+          "text": "讲述人选择器",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E8%AE%B2%E8%BF%B0%E4%BA%BA%E9%80%89%E6%8B%A9%E5%99%A8%22",
+          "time": "2026-05-27T18:34:43.260759Z"
+        },
+        {
+          "text": "选择讲述人",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%80%89%E6%8B%A9%E8%AE%B2%E8%BF%B0%E4%BA%BA%22",
+          "time": "2026-05-27T18:34:35.878919Z"
+        },
+        {
+          "text": "文件不是正确的 XML 格式。",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%AF%E6%AD%A3%E7%A1%AE%E7%9A%84%20XML%20%E6%A0%BC%E5%BC%8F%E3%80%82%22",
+          "time": "2026-05-27T18:34:20.285084Z"
+        },
+        {
+          "text": "标准句子边界检测器",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%A0%87%E5%87%86%E5%8F%A5%E5%AD%90%E8%BE%B9%E7%95%8C%E6%A3%80%E6%B5%8B%E5%99%A8%22",
+          "time": "2026-05-27T18:33:57.571558Z"
+        },
+        {
+          "text": "一个用于测试 KTTSD 过滤器的插件。",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E4%B8%80%E4%B8%AA%E7%94%A8%E4%BA%8E%E6%B5%8B%E8%AF%95%20KTTSD%20%E8%BF%87%E6%BB%A4%E5%99%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E3%80%82%22",
+          "time": "2026-05-27T18:33:40.494850Z"
+        },
+        {
+          "text": "列出所有可用的过滤器插件并退出",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E5%8F%AF%E7%94%A8%E7%9A%84%E8%BF%87%E6%BB%A4%E5%99%A8%E6%8F%92%E4%BB%B6%E5%B9%B6%E9%80%80%E5%87%BA%22",
+          "time": "2026-05-27T18:33:17.679995Z"
+        },
+        {
+          "text": "显示 \\t 作为 Tab，否则移除",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%20%5Ct%20%E4%BD%9C%E4%B8%BA%20Tab%EF%BC%8C%E5%90%A6%E5%88%99%E7%A7%BB%E9%99%A4%22",
+          "time": "2026-05-27T18:32:56.841918Z"
+        },
+        {
+          "text": "列出所有可用的过滤器插件并退出",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E5%8F%AF%E7%94%A8%E7%9A%84%E8%BF%87%E6%BB%A4%E5%99%A8%E6%8F%92%E4%BB%B6%E5%B9%B6%E9%80%80%E5%87%BA%22",
+          "time": "2026-05-27T18:32:00.353750Z"
+        },
+        {
+          "text": "需过滤的配置文件组名称",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%9C%80%E8%BF%87%E6%BB%A4%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%BB%84%E5%90%8D%E7%A7%B0%22",
+          "time": "2026-05-27T18:31:44.075008Z"
+        },
+        {
+          "text": "需过滤的 DCOP 应用 ID",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%9C%80%E8%BF%87%E6%BB%A4%E7%9A%84%20DCOP%20%E5%BA%94%E7%94%A8%20ID%22",
+          "time": "2026-05-27T18:30:27.884328Z"
+        },
+        {
+          "text": "需过滤的讲述人代码",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22%E9%9C%80%E8%BF%87%E6%BB%A4%E7%9A%84%E8%AE%B2%E8%BF%B0%E4%BA%BA%E4%BB%A3%E7%A0%81%22",
+          "time": "2026-05-27T18:30:05.146587Z"
+        },
+        {
+          "text": "KTTSD 过滤器插件名 (必须)",
+          "action": "新增译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22KTTSD%20%E8%BF%87%E6%BB%A4%E5%99%A8%E6%8F%92%E4%BB%B6%E5%90%8D%20(%E5%BF%85%E9%A1%BB)%22",
+          "time": "2026-05-27T18:29:37.254416Z"
+        },
+        {
+          "text": "zhang-zhongli@tom.com, xiaolan2332021@163.com",
+          "action": "修改译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22zhang-zhongli%40tom.com%2C%20xiaolan2332021%40163.com%22",
+          "time": "2026-05-27T18:20:44.515116Z"
+        },
+        {
+          "text": "Zhang Zhongli, Toad114514",
+          "action": "修改译文",
+          "component": "tdeaccessibility/kttsd",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaccessibility/kttsd/zh_Hans/?q=%22Zhang%20Zhongli%2C%20Toad114514%22",
+          "time": "2026-05-27T18:20:35.158162Z"
+        },
+        {
+          "text": "飞八分钱，哦对了，我说的很多都是废话你知道吗。",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22%E9%A3%9E%E5%85%AB%E5%88%86%E9%92%B1%EF%BC%8C%E5%93%A6%E5%AF%B9%E4%BA%86%EF%BC%8C%E6%88%91%E8%AF%B4%E7%9A%84%E5%BE%88%E5%A4%9A%E9%83%BD%E6%98%AF%E5%BA%9F%E8%AF%9D%E4%BD%A0%E7%9F%A5%E9%81%93%E5%90%97%E3%80%82%22",
+          "time": "2026-05-27T18:19:28.283747Z"
+        },
+        {
+          "text": "哦对了，我说的很多都是废话你知道吗。",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22%E5%93%A6%E5%AF%B9%E4%BA%86%EF%BC%8C%E6%88%91%E8%AF%B4%E7%9A%84%E5%BE%88%E5%A4%9A%E9%83%BD%E6%98%AF%E5%BA%9F%E8%AF%9D%E4%BD%A0%E7%9F%A5%E9%81%93%E5%90%97%E3%80%82%22",
+          "time": "2026-05-27T18:19:10.454353Z"
+        },
+        {
+          "text": "允许应用提示",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22%E5%85%81%E8%AE%B8%E5%BA%94%E7%94%A8%E6%8F%90%E7%A4%BA%22",
+          "time": "2026-05-27T18:18:29.544455Z"
+        },
+        {
+          "text": "窗口边陪伴你的小宠物来袭",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22%E7%AA%97%E5%8F%A3%E8%BE%B9%E9%99%AA%E4%BC%B4%E4%BD%A0%E7%9A%84%E5%B0%8F%E5%AE%A0%E7%89%A9%E6%9D%A5%E8%A2%AD%22",
+          "time": "2026-05-27T18:18:04.353595Z"
+        },
+        {
+          "text": "桌面小宠物来袭",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22%E6%A1%8C%E9%9D%A2%E5%B0%8F%E5%AE%A0%E7%89%A9%E6%9D%A5%E8%A2%AD%22",
+          "time": "2026-05-27T18:17:50.619541Z"
+        },
+        {
+          "text": "TDE 文件管理器其实也是一个浏览器和一个 FTP 客户端。",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22TDE%20%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8%E5%85%B6%E5%AE%9E%E4%B9%9F%E6%98%AF%E4%B8%80%E4%B8%AA%E6%B5%8F%E8%A7%88%E5%99%A8%E5%92%8C%E4%B8%80%E4%B8%AA%20FTP%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E3%80%82%22",
+          "time": "2026-05-27T18:16:59.557643Z"
+        },
+        {
+          "text": "这不是一个bug，这是特性你知道吗。",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22%E8%BF%99%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AAbug%EF%BC%8C%E8%BF%99%E6%98%AF%E7%89%B9%E6%80%A7%E4%BD%A0%E7%9F%A5%E9%81%93%E5%90%97%E3%80%82%22",
+          "time": "2026-05-27T18:16:08.659117Z"
+        },
+        {
+          "text": "我觉得真正的程序员就不会给他们的程序加注释。程序写出来一堆石山，写的时候难，理解也更难。",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22%E6%88%91%E8%A7%89%E5%BE%97%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B0%B1%E4%B8%8D%E4%BC%9A%E7%BB%99%E4%BB%96%E4%BB%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%8A%A0%E6%B3%A8%E9%87%8A%E3%80%82%E7%A8%8B%E5%BA%8F%E5%86%99%E5%87%BA%E6%9D%A5%E4%B8%80%E5%A0%86%E7%9F%B3%E5%B1%B1%EF%BC%8C%E5%86%99%E7%9A%84%E6%97%B6%E5%80%99%E9%9A%BE%EF%BC%8C%E7%90%86%E8%A7%A3%E4%B9%9F%E6%9B%B4%E9%9A%BE%E3%80%82%22",
+          "time": "2026-05-27T18:15:28.899312Z"
+        },
+        {
+          "text": "wanghuilux@yeah.net, xiaolan2332021@163.com",
+          "action": "修改译文",
+          "component": "tdetoys/amor",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/amor/zh_Hans/?q=%22wanghuilux%40yeah.net%2C%20xiaolan2332021%40163.com%22",
+          "time": "2026-05-27T18:13:47.878446Z"
+        },
+        {
+          "text": "小组件",
+          "action": "修改译文",
+          "component": "tdetoys/kweather-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kweather-desktop-files/zh_Hans/?q=%22%E5%B0%8F%E7%BB%84%E4%BB%B6%22",
+          "time": "2026-05-27T18:13:15.635936Z"
+        },
+        {
+          "text": "小组件配置",
+          "action": "新增译文",
+          "component": "tdetoys/kweather-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kweather-desktop-files/zh_Hans/?q=%22%E5%B0%8F%E7%BB%84%E4%BB%B6%E9%85%8D%E7%BD%AE%22",
+          "time": "2026-05-27T18:13:14.012517Z"
+        },
+        {
+          "text": "组件",
+          "action": "新增译文",
+          "component": "tdetoys/kweather-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kweather-desktop-files/zh_Hans/?q=%22%E7%BB%84%E4%BB%B6%22",
+          "time": "2026-05-27T18:13:06.745555Z"
+        },
+        {
+          "text": "天气",
+          "action": "修改译文",
+          "component": "tdetoys/kweather-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kweather-desktop-files/zh_Hans/?q=%22%E5%A4%A9%E6%B0%94%22",
+          "time": "2026-05-27T18:12:59.600856Z"
+        },
+        {
+          "text": "气象站配置",
+          "action": "新增译文",
+          "component": "tdetoys/kweather-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kweather-desktop-files/zh_Hans/?q=%22%E6%B0%94%E8%B1%A1%E7%AB%99%E9%85%8D%E7%BD%AE%22",
+          "time": "2026-05-27T18:12:51.604357Z"
+        },
+        {
+          "text": "气象站",
+          "action": "新增译文",
+          "component": "tdetoys/kweather-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kweather-desktop-files/zh_Hans/?q=%22%E6%B0%94%E8%B1%A1%E7%AB%99%22",
+          "time": "2026-05-27T18:12:43.897709Z"
+        },
+        {
+          "text": "气象服务配置",
+          "action": "修改译文",
+          "component": "tdetoys/kweather-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kweather-desktop-files/zh_Hans/?q=%22%E6%B0%94%E8%B1%A1%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE%22",
+          "time": "2026-05-27T18:12:29.566294Z"
+        },
+        {
+          "text": "服务",
+          "action": "修改译文",
+          "component": "tdetoys/kweather-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdetoys/kweather-desktop-files/zh_Hans/?q=%22%E6%9C%8D%E5%8A%A1%22",
+          "time": "2026-05-27T18:12:16.778807Z"
+        },
+        {
+          "text": "你知道 TDE 维基 吗？ 这里是用户分享知识和信息的地方，就像以前的 KDE3 维基一样。 这里也同样蕴含着 有用的消息。你也能为这些做贡献。 只需去注册账号然后分享你的点子，一步一步了解 KDE3 的文档然后与当下的 TDE 融合起来。 TDE 社区会感谢您的贡献的！",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E7%9F%A5%E9%81%93%20TDE%20%E7%BB%B4%E5%9F%BA%20%E5%90%97%EF%BC%9F%20%E8%BF%99%E9%87%8C%E6%98%AF%E7%94%A8%E6%88%B7%E5%88%86%E4%BA%AB%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%B0%B1%E5%83%8F%E4%BB%A5%E5%89%8D%E7%9A%84%20KDE3%20%E7%BB%B4%E5%9F%BA%E4%B8%80%E6%A0%B7%E3%80%82%20%E8%BF%99%E9%87%8C%E4%B9%9F%E5%90%8C%E6%A0%B7%E8%95%B4%E5%90%AB%E7%9D%80%20%E6%9C%89%E7%94%A8%E7%9A%84%E6%B6%88",
+          "time": "2026-05-27T18:07:35.572106Z"
+        },
+        {
+          "text": "你知道 TDE 维基 吗？ 这里是用户分享知识和信息的地方，就像以前的 KDE3 维基一样。 There is a lof of useful information there. You can contribute to it too. Just create your account there and shar",
+          "action": "新增译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E7%9F%A5%E9%81%93%20TDE%20%E7%BB%B4%E5%9F%BA%20%E5%90%97%EF%BC%9F%20%E8%BF%99%E9%87%8C%E6%98%AF%E7%94%A8%E6%88%B7%E5%88%86%E4%BA%AB%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%B0%B1%E5%83%8F%E4%BB%A5%E5%89%8D%E7%9A%84%20KDE3%20%E7%BB%B4%E5%9F%BA%E4%B8%80%E6%A0%B7%E3%80%82%20There%20is%20a%20lo",
+          "time": "2026-05-27T18:04:34.767035Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps 仓库 获取他们。 Dockapps 就是一些很小的应用，与 SuperKaramba 小组件不同的是，他们只占用很小的空间，用 64x64 格像素给你带来有趣或者有用的体验。 在添加应用 Dock 栏到你的桌面之后，你可",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20%E4%BB%93%E5%BA%93%20%E8%8E%B7%E5%8F%96%E4%BB%96%E4%BB%AC%E3%80%82%20D",
+          "time": "2026-05-27T18:02:50.086663Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps 仓库 获取他们。 Dockapps 就是一些很小的应用，与 SuperKaramba 小组件不同的是，他们只占用很小的空间，用 64x64 格像素给你带来有趣或者有用的体验。 在添加应用 Dock 栏到你的桌面之后，你可",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20%E4%BB%93%E5%BA%93%20%E8%8E%B7%E5%8F%96%E4%BB%96%E4%BB%AC%E3%80%82%20D",
+          "time": "2026-05-27T18:02:35.332545Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps 仓库 获取他们。 Dockapps 就是一些很小的应用，与 SuperKaramba 小组件不同的是，他们只占用很小的空间，用 64x64 格像素给你带来有趣或者有用的体验。 在添加应用 Dock 栏到你的桌面之后，你可",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20%E4%BB%93%E5%BA%93%20%E8%8E%B7%E5%8F%96%E4%BB%96%E4%BB%AC%E3%80%82%20D",
+          "time": "2026-05-27T18:02:15.589724Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps 仓库 获取他们。 Dockapps 就是一些很小的应用，与 SuperKaramba 小组件不同的是，他们只占用很小的空间，用 64x64 格像素给你带来有趣或者有用的体验。 在添加应用 Dock 栏到你的桌面之后，你可",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20%E4%BB%93%E5%BA%93%20%E8%8E%B7%E5%8F%96%E4%BB%96%E4%BB%AC%E3%80%82%20D",
+          "time": "2026-05-27T18:02:08.768768Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps 仓库 获取他们。 Dockapps 就是一些很小的应用，与 SuperKaramba 小组件不同的是，他们只占用很小的空间，用 64x64 格像素给你带来有趣或者有用的体验。 在添加应用 Dock 栏到你的桌面之后，你可",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20%E4%BB%93%E5%BA%93%20%E8%8E%B7%E5%8F%96%E4%BB%96%E4%BB%AC%E3%80%82%20D",
+          "time": "2026-05-27T18:02:04.569345Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps 仓库 获取他们。 Dockapps 就是一些很小的应用，与 SuperKaramba 小组件不同的是，他们只占用很小的空间，用 64x64 格像素给你带来有趣或者有用的体验。 在添加应用 Dock 栏到你的桌面之后，你可",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20%E4%BB%93%E5%BA%93%20%E8%8E%B7%E5%8F%96%E4%BB%96%E4%BB%AC%E3%80%82%20D",
+          "time": "2026-05-27T18:01:21.557659Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps 仓库 获取他们。 Dockapps 就是一些很小的应用，与 SuperKaramba 小组件不同的是，他们只占用很小的空间，用 64x64 格像素给你带来有趣或者有用的体验。 You can start them fro",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20%E4%BB%93%E5%BA%93%20%E8%8E%B7%E5%8F%96%E4%BB%96%E4%BB%AC%E3%80%82%20D",
+          "time": "2026-05-27T17:57:53.868632Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps 仓库 获取他们。 Dockapps are just tiny applications, comparable to SuperKaramba widgets, that uses 64x64 pixels and p",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20%E4%BB%93%E5%BA%93%20%E8%8E%B7%E5%8F%96%E4%BB%96%E4%BB%AC%E3%80%82%20D",
+          "time": "2026-05-27T17:55:41.501835Z"
+        },
+        {
+          "text": "你可以为 TDE 的应用 Dock 栏 添加各种各样的 Dockapps，可以到 dockapps repository 获取他们。 Dockapps are just tiny applications, comparable to SuperKaramba widgets, that uses 64x64 pixe",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%B8%BA%20TDE%20%E7%9A%84%E5%BA%94%E7%94%A8%20Dock%20%E6%A0%8F%20%E6%B7%BB%E5%8A%A0%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%20Dockapps%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%B0%20dockapps%20repository",
+          "time": "2026-05-27T17:55:27.625284Z"
+        },
+        {
+          "text": "You can get a lof of wonderful dockapps for the TDE application dock bar from the repositories of your distribution or at the dockapps repository. Dockapps are ",
+          "action": "新增译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=You%20can%20get%20a%20lof%20of%20wonderful%20dockapps%20for%20the%20TDE%20applicat",
+          "time": "2026-05-27T17:52:34.033813Z"
+        },
+        {
+          "text": "不同的虚拟桌面都可以单独定制美化。 例如你可以给其中一个桌面设置特定的壁纸： 去看看 TDE 控制中心，在外观 & 主题 -> 背景下设置，或者桌面右键 选择 配置桌面",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%B8%8D%E5%90%8C%E7%9A%84%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2%E9%83%BD%E5%8F%AF%E4%BB%A5%E5%8D%95%E7%8B%AC%E5%AE%9A%E5%88%B6%E7%BE%8E%E5%8C%96%E3%80%82%20%E4%BE%8B%E5%A6%82%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%BB%99%E5%85%B6%E4%B8%AD%E4%B8%80%E4%B8%AA%E6%A1%8C%E9%9D%A2%E8%AE%BE%E7%BD%AE%E7%89%B9%E5%AE%9A%E7%9A%84%E5%A3%81%E7%BA%B8%EF%BC%9A%20%E5%8E%BB%E7%9C%8B%E7%9C%8B%20TDE%20%E6%8E%A7%E5%88%B6%E4%B8%AD%E5%BF%83%EF%BC%8C%E5%9C%A8%E5%A4%96%E8%A7%82%20%26%20%E4%B8%BB%E9%A2%98",
+          "time": "2026-05-27T17:49:40.129010Z"
+        },
+        {
+          "text": "不同的虚拟桌面都可以单独定制美化。 例如你可以给其中一个桌面设置特定的壁纸： Take a look in TDE's Control Center, under Appearance & Themes->Background, or right-click on the desktop and select Conf",
+          "action": "新增译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E4%B8%8D%E5%90%8C%E7%9A%84%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2%E9%83%BD%E5%8F%AF%E4%BB%A5%E5%8D%95%E7%8B%AC%E5%AE%9A%E5%88%B6%E7%BE%8E%E5%8C%96%E3%80%82%20%E4%BE%8B%E5%A6%82%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%BB%99%E5%85%B6%E4%B8%AD%E4%B8%80%E4%B8%AA%E6%A1%8C%E9%9D%A2%E8%AE%BE%E7%BD%AE%E7%89%B9%E5%AE%9A%E7%9A%84%E5%A3%81%E7%BA%B8%EF%BC%9A%20Take%20a%20look%20in%20TDE's%20",
+          "time": "2026-05-27T17:48:22.350848Z"
+        },
+        {
+          "text": "尽管 TDE 是一个十分甚至九分稳定的系统，但一些软件 还是不可避免的出现死机或崩溃的情况，特别是在运行 开发版的软件，或者是一些第三方程序时情况可能还会更严重。 这种情况下你可以手动强制把该程序给 杀掉。 按下 Ctrl+Alt+Esc 后光标会变成一个嘟嘟大嘟嘟大 骷髅头，这时再去点击窗口，对应的软件就会会被 强制",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E5%B0%BD%E7%AE%A1%20TDE%20%E6%98%AF%E4%B8%80%E4%B8%AA%E5%8D%81%E5%88%86%E7%94%9A%E8%87%B3%E4%B9%9D%E5%88%86%E7%A8%B3%E5%AE%9A%E7%9A%84%E7%B3%BB%E7%BB%9F%EF%BC%8C%E4%BD%86%E4%B8%80%E4%BA%9B%E8%BD%AF%E4%BB%B6%20%E8%BF%98%E6%98%AF%E4%B8%8D%E5%8F%AF%E9%81%BF%E5%85%8D%E7%9A%84%E5%87%BA%E7%8E%B0%E6%AD%BB%E6%9C%BA%E6%88%96%E5%B4%A9%E6%BA%83%E7%9A%84%E6%83%85%E5%86%B5%EF%BC%8C%E7%89%B9%E5%88%AB%E6%98%AF%E5%9C%A8%E8%BF%90%E8%A1%8C%20%E5%BC%80%E5%8F%91%E7%89%88%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%8C",
+          "time": "2026-05-27T17:45:33.935428Z"
+        },
+        {
+          "text": "尽管 TDE 是一个十分甚至九分稳定的系统，但一些软件 还是不可避免的出现死机或崩溃的情况，特别是在运行 开发版的软件，或者是一些第三方程序时情况可能还会更严重。 这种情况下你可以手动强制把该程序给 杀掉。 按下 Ctrl+Alt+Esc 后光标会变成一个嘟嘟大嘟嘟大 骷髅头，这时再去点击窗口，对应的软件就会会被 强制",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E5%B0%BD%E7%AE%A1%20TDE%20%E6%98%AF%E4%B8%80%E4%B8%AA%E5%8D%81%E5%88%86%E7%94%9A%E8%87%B3%E4%B9%9D%E5%88%86%E7%A8%B3%E5%AE%9A%E7%9A%84%E7%B3%BB%E7%BB%9F%EF%BC%8C%E4%BD%86%E4%B8%80%E4%BA%9B%E8%BD%AF%E4%BB%B6%20%E8%BF%98%E6%98%AF%E4%B8%8D%E5%8F%AF%E9%81%BF%E5%85%8D%E7%9A%84%E5%87%BA%E7%8E%B0%E6%AD%BB%E6%9C%BA%E6%88%96%E5%B4%A9%E6%BA%83%E7%9A%84%E6%83%85%E5%86%B5%EF%BC%8C%E7%89%B9%E5%88%AB%E6%98%AF%E5%9C%A8%E8%BF%90%E8%A1%8C%20%E5%BC%80%E5%8F%91%E7%89%88%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%8C",
+          "time": "2026-05-27T17:45:19.334294Z"
+        },
+        {
+          "text": "尽管 TDE 是一个十分甚至九分稳定的系统，但一些软件 还是不可避免的出现死机或崩溃的情况，特别是在运行 开发版的软件，或者是一些第三方程序时情况可能还会更严重。 这种情况下你可以强制把该程序给 杀掉。 Pressing Ctrl+Alt+Esc will bring up the skull-and-crossbon",
+          "action": "新增译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=%E5%B0%BD%E7%AE%A1%20TDE%20%E6%98%AF%E4%B8%80%E4%B8%AA%E5%8D%81%E5%88%86%E7%94%9A%E8%87%B3%E4%B9%9D%E5%88%86%E7%A8%B3%E5%AE%9A%E7%9A%84%E7%B3%BB%E7%BB%9F%EF%BC%8C%E4%BD%86%E4%B8%80%E4%BA%9B%E8%BD%AF%E4%BB%B6%20%E8%BF%98%E6%98%AF%E4%B8%8D%E5%8F%AF%E9%81%BF%E5%85%8D%E7%9A%84%E5%87%BA%E7%8E%B0%E6%AD%BB%E6%9C%BA%E6%88%96%E5%B4%A9%E6%BA%83%E7%9A%84%E6%83%85%E5%86%B5%EF%BC%8C%E7%89%B9%E5%88%AB%E6%98%AF%E5%9C%A8%E8%BF%90%E8%A1%8C%20%E5%BC%80%E5%8F%91%E7%89%88%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%8C",
+          "time": "2026-05-27T17:39:28.004073Z"
+        },
+        {
+          "text": "TDE 开发者一直在为无障碍人士提供 帮助, KTTS (TDE 文字转语音) 可以帮助将屏幕上 的文字转换成语音提示. KTTS 可以识别普通的文本文件 (使用 Kate 查看), Konqueror 里的 HTML 页面, TDE 剪贴板里的文字, 以及 TDE 消息 (KNotify). 想开始使用 KTTS 系",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=TDE%20%E5%BC%80%E5%8F%91%E8%80%85%E4%B8%80%E7%9B%B4%E5%9C%A8%E4%B8%BA%E6%97%A0%E9%9A%9C%E7%A2%8D%E4%BA%BA%E5%A3%AB%E6%8F%90%E4%BE%9B%20%E5%B8%AE%E5%8A%A9%2C%20KTTS%20(TDE%20%E6%96%87%E5%AD%97%E8%BD%AC%E8%AF%AD%E9%9F%B3)%20%E5%8F%AF%E4%BB%A5%E5%B8%AE%E5%8A%A9%E5%B0%86%E5%B1%8F%E5%B9%95%E4%B8%8A%20%E7%9A%84%E6%96%87%E5%AD%97%E8%BD%AC%E6%8D%A2%E6%88%90%E8%AF%AD%E9%9F%B3%E6%8F%90%E7%A4%BA.",
+          "time": "2026-05-27T17:34:49.807951Z"
+        },
+        {
+          "text": "TDE 开发者一直在为无障碍人士提供帮助, KTTS (TDE 文字转语音) 可以帮助将屏幕上的文字转换成语音提示. KTTS 可以识别普通的文本文件 (使用 Kate 查看), Konqueror 里的 HTML 页面, TDE 剪贴板里的文字, 以及 TDE 消息 (KNotify). 想开始使用 KTTS 系统,",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=TDE%20%E5%BC%80%E5%8F%91%E8%80%85%E4%B8%80%E7%9B%B4%E5%9C%A8%E4%B8%BA%E6%97%A0%E9%9A%9C%E7%A2%8D%E4%BA%BA%E5%A3%AB%E6%8F%90%E4%BE%9B%E5%B8%AE%E5%8A%A9%2C%20KTTS%20(TDE%20%E6%96%87%E5%AD%97%E8%BD%AC%E8%AF%AD%E9%9F%B3)%20%E5%8F%AF%E4%BB%A5%E5%B8%AE%E5%8A%A9%E5%B0%86%E5%B1%8F%E5%B9%95%E4%B8%8A%E7%9A%84%E6%96%87%E5%AD%97%E8%BD%AC%E6%8D%A2%E6%88%90%E8%AF%AD%E9%9F%B3%E6%8F%90%E7%A4%BA.%20K",
+          "time": "2026-05-27T17:33:11.412606Z"
+        },
+        {
+          "text": "TDE 开发者一直在为无障碍人士提供帮助, KTTS (TDE 文字转语音) 可以帮助将屏幕上的文字转换成语音提示. KTTS currently provides support to speak all or any portion of plain text files (as viewed in Kate), ",
+          "action": "修改译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=TDE%20%E5%BC%80%E5%8F%91%E8%80%85%E4%B8%80%E7%9B%B4%E5%9C%A8%E4%B8%BA%E6%97%A0%E9%9A%9C%E7%A2%8D%E4%BA%BA%E5%A3%AB%E6%8F%90%E4%BE%9B%E5%B8%AE%E5%8A%A9%2C%20KTTS%20(TDE%20%E6%96%87%E5%AD%97%E8%BD%AC%E8%AF%AD%E9%9F%B3)%20%E5%8F%AF%E4%BB%A5%E5%B8%AE%E5%8A%A9%E5%B0%86%E5%B1%8F%E5%B9%95%E4%B8%8A%E7%9A%84%E6%96%87%E5%AD%97%E8%BD%AC%E6%8D%A2%E6%88%90%E8%AF%AD%E9%9F%B3%E6%8F%90%E7%A4%BA.%20K",
+          "time": "2026-05-27T17:28:50.740363Z"
+        },
+        {
+          "text": "TDE developers are always looking to improve accessibility, and with KTTS (TDE Text-to-Speech) you have the power to convert strings of text into audible speech",
+          "action": "新增译文",
+          "component": "tdebase/ktip",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ktip/zh_Hans/?q=TDE%20developers%20are%20always%20looking%20to%20improve%20accessibility%2C%20",
+          "time": "2026-05-27T17:26:39.591692Z"
+        },
+        {
+          "text": "南马托格罗索州",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%8D%97%E9%A9%AC%E6%89%98%E6%A0%BC%E7%BD%97%E7%B4%A2%E5%B7%9E%22",
+          "time": "2026-05-27T17:19:00.929854Z"
+        },
+        {
+          "text": "巴西利亚",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%B7%B4%E8%A5%BF%E5%88%A9%E4%BA%9A%22",
+          "time": "2026-05-27T17:19:00.913480Z"
+        },
+        {
+          "text": "罗赖马山",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E7%BD%97%E8%B5%96%E9%A9%AC%E5%B1%B1%22",
+          "time": "2026-05-27T17:19:00.897150Z"
+        },
+        {
+          "text": "贝洛奥里藏特",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E8%B4%9D%E6%B4%9B%E5%A5%A5%E9%87%8C%E8%97%8F%E7%89%B9%22",
+          "time": "2026-05-27T17:19:00.881563Z"
+        },
+        {
+          "text": "米纳斯吉拉斯州",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E7%B1%B3%E7%BA%B3%E6%96%AF%E5%90%89%E6%8B%89%E6%96%AF%E5%B7%9E%22",
+          "time": "2026-05-27T17:19:00.863943Z"
+        },
+        {
+          "text": "贝伦",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E8%B4%9D%E4%BC%A6%22",
+          "time": "2026-05-27T17:19:00.848235Z"
+        },
+        {
+          "text": "阿拉卡茹",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E9%98%BF%E6%8B%89%E5%8D%A1%E8%8C%B9%22",
+          "time": "2026-05-27T17:19:00.833816Z"
+        },
+        {
+          "text": "塞尔希培",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%A1%9E%E5%B0%94%E5%B8%8C%E5%9F%B9%22",
+          "time": "2026-05-27T17:19:00.820238Z"
+        },
+        {
+          "text": "目前地图: 巴西",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E7%9B%AE%E5%89%8D%E5%9C%B0%E5%9B%BE%3A%20%E5%B7%B4%E8%A5%BF%22",
+          "time": "2026-05-27T17:19:00.804968Z"
+        },
+        {
+          "text": "巴西",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%B7%B4%E8%A5%BF%22",
+          "time": "2026-05-27T17:19:00.787900Z"
+        },
+        {
+          "text": "圣波尔滕",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%9C%A3%E6%B3%A2%E5%B0%94%E6%BB%95%22",
+          "time": "2026-05-27T17:19:00.773356Z"
+        },
+        {
+          "text": "下奥地利",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E4%B8%8B%E5%A5%A5%E5%9C%B0%E5%88%A9%22",
+          "time": "2026-05-27T17:19:00.759140Z"
+        },
+        {
+          "text": "林茨",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E6%9E%97%E8%8C%A8%22",
+          "time": "2026-05-27T17:19:00.744441Z"
+        },
+        {
+          "text": "上奥地利",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E4%B8%8A%E5%A5%A5%E5%9C%B0%E5%88%A9%22",
+          "time": "2026-05-27T17:19:00.729307Z"
+        },
+        {
+          "text": "萨尔茨堡",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E8%90%A8%E5%B0%94%E8%8C%A8%E5%A0%A1%22",
+          "time": "2026-05-27T17:19:00.709069Z"
+        },
+        {
+          "text": "布雷根兹",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%B8%83%E9%9B%B7%E6%A0%B9%E5%85%B9%22",
+          "time": "2026-05-27T17:19:00.692356Z"
+        },
+        {
+          "text": "福拉尔贝格",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E7%A6%8F%E6%8B%89%E5%B0%94%E8%B4%9D%E6%A0%BC%22",
+          "time": "2026-05-27T17:19:00.676865Z"
+        },
+        {
+          "text": "因斯布鲁克",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%9B%A0%E6%96%AF%E5%B8%83%E9%B2%81%E5%85%8B%22",
+          "time": "2026-05-27T17:19:00.659331Z"
+        },
+        {
+          "text": "蒂罗尔",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E8%92%82%E7%BD%97%E5%B0%94%22",
+          "time": "2026-05-27T17:19:00.640077Z"
+        },
+        {
+          "text": "克拉根福",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%85%8B%E6%8B%89%E6%A0%B9%E7%A6%8F%22",
+          "time": "2026-05-27T17:19:00.621177Z"
+        },
+        {
+          "text": "克恩顿",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%85%8B%E6%81%A9%E9%A1%BF%22",
+          "time": "2026-05-27T17:19:00.603003Z"
+        },
+        {
+          "text": "格拉茨",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E6%A0%BC%E6%8B%89%E8%8C%A8%22",
+          "time": "2026-05-27T17:19:00.587238Z"
+        },
+        {
+          "text": "施蒂里亚",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E6%96%BD%E8%92%82%E9%87%8C%E4%BA%9A%22",
+          "time": "2026-05-27T17:19:00.574179Z"
+        },
+        {
+          "text": "艾森施塔特",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E8%89%BE%E6%A3%AE%E6%96%BD%E5%A1%94%E7%89%B9%22",
+          "time": "2026-05-27T17:19:00.559689Z"
+        },
+        {
+          "text": "布尔根兰",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%B8%83%E5%B0%94%E6%A0%B9%E5%85%B0%22",
+          "time": "2026-05-27T17:19:00.544639Z"
+        },
+        {
+          "text": "维也纳",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E7%BB%B4%E4%B9%9F%E7%BA%B3%22",
+          "time": "2026-05-27T17:19:00.530835Z"
+        },
+        {
+          "text": "不是奥地利",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E4%B8%8D%E6%98%AF%E5%A5%A5%E5%9C%B0%E5%88%A9%22",
+          "time": "2026-05-27T17:19:00.517074Z"
+        },
+        {
+          "text": "目前地图: 澳大利亚",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E7%9B%AE%E5%89%8D%E5%9C%B0%E5%9B%BE%3A%20%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%22",
+          "time": "2026-05-27T17:19:00.501913Z"
+        },
+        {
+          "text": "斯里巴加湾市",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E6%96%AF%E9%87%8C%E5%B7%B4%E5%8A%A0%E6%B9%BE%E5%B8%82%22",
+          "time": "2026-05-27T17:19:00.481613Z"
+        },
+        {
+          "text": "1",
+          "action": "Translation uploaded",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%221%22",
+          "time": "2026-05-27T17:19:00.429487Z"
+        }
+      ],
+      "windowStart": "2026-05-27T17:19:00.429487Z",
+      "windowEnd": "2026-05-27T18:48:05.781387Z",
+      "components": [
+        "tdeedu/kgeography",
+        "tdebase/ktip",
+        "tdetoys/kweather-desktop-files",
+        "tdetoys/amor",
+        "tdeaccessibility/kttsd"
+      ],
+      "actions": {
+        "Translation uploaded": 30,
+        "新增译文": 63,
+        "修改译文": 37,
+        "新贡献者": 2,
+        "标记待编辑": 1
+      },
+      "language": "简体中文",
+      "languageName": "简体中文",
+      "latestTarget": "查找声线",
+      "source": "api"
+    }
+  },
+  {
+    "id": "weblate:session:2026-06-22T14:45:09Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE 简体中文 · 67 条译文改动",
+    "summary": "修改译文 56 条、新增译文 11 条，涉及 5 个组件（applications/amarok、koffice/koffice 等），最近一条「乱序节奏」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E4%B9%B1%E5%BA%8F%E8%8A%82%E5%A5%8F%22",
+    "image": null,
+    "timestamp": "2026-06-22T14:45:09.179978Z",
+    "meta": {
+      "merge": true,
+      "count": 68,
+      "translationCount": 67,
+      "changes": [
+        {
+          "text": "乱序节奏",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E4%B9%B1%E5%BA%8F%E8%8A%82%E5%A5%8F%22",
+          "time": "2026-06-22T14:45:09.179978Z"
+        },
+        {
+          "text": "小球数量",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%B0%8F%E7%90%83%E6%95%B0%E9%87%8F%22",
+          "time": "2026-06-22T14:45:00.794452Z"
+        },
+        {
+          "text": "星系变化",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%98%9F%E7%B3%BB%E5%8F%98%E5%8C%96%22",
+          "time": "2026-06-22T14:44:45.398985Z"
+        },
+        {
+          "text": "星系",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%98%9F%E7%B3%BB%22",
+          "time": "2026-06-22T14:44:37.076633Z"
+        },
+        {
+          "text": "动态模糊",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%8A%A8%E6%80%81%E6%A8%A1%E7%B3%8A%22",
+          "time": "2026-06-22T14:44:34.397535Z"
+        },
+        {
+          "text": "绘制以略微不同的速度移动的图形，创建有趣的混乱和有序的模式。由 David Eccles 编写; 2020。",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E7%BB%98%E5%88%B6%E4%BB%A5%E7%95%A5%E5%BE%AE%E4%B8%8D%E5%90%8C%E7%9A%84%E9%80%9F%E5%BA%A6%E7%A7%BB%E5%8A%A8%E7%9A%84%E5%9B%BE%E5%BD%A2%EF%BC%8C%E5%88%9B%E5%BB%BA%E6%9C%89%E8%B6%A3%E7%9A%84%E6%B7%B7%E4%B9%B1%E5%92%8C%E6%9C%89%E5%BA%8F%E7%9A%84%E6%A8%A1%E5%BC%8F%E3%80%82%E7%94%B1%20David%20Eccles%20%E7%BC%96%E5%86%99%3B%202020%E3%80%82%22",
+          "time": "2026-06-22T14:44:28.167908Z"
+        },
+        {
+          "text": "轨迹长度",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E8%BD%A8%E8%BF%B9%E9%95%BF%E5%BA%A6%22",
+          "time": "2026-06-22T14:43:28.120846Z"
+        },
+        {
+          "text": "环境粘度",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E7%8E%AF%E5%A2%83%E7%B2%98%E5%BA%A6%22",
+          "time": "2026-06-22T14:43:26.450578Z"
+        },
+        {
+          "text": "小球数目",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%B0%8F%E7%90%83%E6%95%B0%E7%9B%AE%22",
+          "time": "2026-06-22T14:43:25.162199Z"
+        },
+        {
+          "text": "忽略屏幕边界",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%BF%BD%E7%95%A5%E5%B1%8F%E5%B9%95%E8%BE%B9%E7%95%8C%22",
+          "time": "2026-06-22T14:43:23.953356Z"
+        },
+        {
+          "text": "碰到墙壁会反弹",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E7%A2%B0%E5%88%B0%E5%A2%99%E5%A3%81%E4%BC%9A%E5%8F%8D%E5%BC%B9%22",
+          "time": "2026-06-22T14:43:22.776696Z"
+        },
+        {
+          "text": "养些鲨鱼、海豚和鲸鱼。由 Mark Kilgard 编写; 1998。",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%85%BB%E4%BA%9B%E9%B2%A8%E9%B1%BC%E3%80%81%E6%B5%B7%E8%B1%9A%E5%92%8C%E9%B2%B8%E9%B1%BC%E3%80%82%E7%94%B1%20Mark%20Kilgard%20%E7%BC%96%E5%86%99%3B%201998%E3%80%82%22",
+          "time": "2026-06-22T14:43:14.480256Z"
+        },
+        {
+          "text": "养些鲨鱼、海豚和鲸鱼。由 Mark Kilgard 编写; 1998",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%85%BB%E4%BA%9B%E9%B2%A8%E9%B1%BC%E3%80%81%E6%B5%B7%E8%B1%9A%E5%92%8C%E9%B2%B8%E9%B1%BC%E3%80%82%E7%94%B1%20Mark%20Kilgard%20%E7%BC%96%E5%86%99%3B%201998%22",
+          "time": "2026-06-22T14:43:11.203343Z"
+        },
+        {
+          "text": "渐变背景",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%B8%90%E5%8F%98%E8%83%8C%E6%99%AF%22",
+          "time": "2026-06-22T14:42:19.898745Z"
+        },
+        {
+          "text": "单色背景",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%8D%95%E8%89%B2%E8%83%8C%E6%99%AF%22",
+          "time": "2026-06-22T14:42:18.942147Z"
+        },
+        {
+          "text": "清澈的水",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%B8%85%E6%BE%88%E7%9A%84%E6%B0%B4%22",
+          "time": "2026-06-22T14:42:10.885207Z"
+        },
+        {
+          "text": "水反射",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%B0%B4%E5%8F%8D%E5%B0%84%22",
+          "time": "2026-06-22T14:42:09.156758Z"
+        },
+        {
+          "text": "鲨鱼数量",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E9%B2%A8%E9%B1%BC%E6%95%B0%E9%87%8F%22",
+          "time": "2026-06-22T14:42:01.984439Z"
+        },
+        {
+          "text": "Apple 2",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22Apple%202%22",
+          "time": "2026-06-22T14:41:44.919803Z"
+        },
+        {
+          "text": "颜色数",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E9%A2%9C%E8%89%B2%E6%95%B0%22",
+          "time": "2026-06-22T14:41:21.250798Z"
+        },
+        {
+          "text": "10 分钟",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%2210%20%E5%88%86%E9%92%9F%22",
+          "time": "2026-06-22T14:41:17.902799Z"
+        },
+        {
+          "text": "10 秒钟",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%2210%20%E7%A7%92%E9%92%9F%22",
+          "time": "2026-06-22T14:41:13.183210Z"
+        },
+        {
+          "text": "蚂蚁在一个圆上移动。由 Blair Tennessy 编写; 2004。",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E8%9A%82%E8%9A%81%E5%9C%A8%E4%B8%80%E4%B8%AA%E5%9C%86%E4%B8%8A%E7%A7%BB%E5%8A%A8%E3%80%82%E7%94%B1%20Blair%20Tennessy%20%E7%BC%96%E5%86%99%3B%202004%E3%80%82%22",
+          "time": "2026-06-22T14:40:41.781972Z"
+        },
+        {
+          "text": "打蚂蚁迷宫",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E6%89%93%E8%9A%82%E8%9A%81%E8%BF%B7%E5%AE%AB%22",
+          "time": "2026-06-22T14:39:38.845633Z"
+        },
+        {
+          "text": "失真",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E5%A4%B1%E7%9C%9F%22",
+          "time": "2026-06-22T14:39:16.302857Z"
+        },
+        {
+          "text": "互锁瓷砖的马赛克图案。由Steve Sundstrom编写; 2004。",
+          "action": "修改译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E4%BA%92%E9%94%81%E7%93%B7%E7%A0%96%E7%9A%84%E9%A9%AC%E8%B5%9B%E5%85%8B%E5%9B%BE%E6%A1%88%E3%80%82%E7%94%B1Steve%20Sundstrom%E7%BC%96%E5%86%99%3B%202004%E3%80%82%22",
+          "time": "2026-06-22T14:38:58.867641Z"
+        },
+        {
+          "text": "互锁瓷砖的马赛克图案。 由Steve Sundstrom编写; 2004。",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E4%BA%92%E9%94%81%E7%93%B7%E7%A0%96%E7%9A%84%E9%A9%AC%E8%B5%9B%E5%85%8B%E5%9B%BE%E6%A1%88%E3%80%82%20%E7%94%B1Steve%20Sundstrom%E7%BC%96%E5%86%99%3B%202004%E3%80%82%22",
+          "time": "2026-06-22T14:38:48.622093Z"
+        },
+        {
+          "text": "霓虹磁贴",
+          "action": "新增译文",
+          "component": "tdeartwork/kxsconfig",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeartwork/kxsconfig/zh_Hans/?q=%22%E9%9C%93%E8%99%B9%E7%A3%81%E8%B4%B4%22",
+          "time": "2026-06-22T14:38:07.752027Z"
+        },
+        {
+          "text": "如果设定的话，Amarok 手动保存的播放列表将包含到音轨的相对路径，而不是绝对路径。",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E5%A6%82%E6%9E%9C%E8%AE%BE%E5%AE%9A%E7%9A%84%E8%AF%9D%EF%BC%8CAmarok%20%E6%89%8B%E5%8A%A8%E4%BF%9D%E5%AD%98%E7%9A%84%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E5%B0%86%E5%8C%85%E5%90%AB%E5%88%B0%E9%9F%B3%E8%BD%A8%E7%9A%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E3%80%82%22",
+          "time": "2026-06-22T14:37:02.227706Z"
+        },
+        {
+          "text": "如果选中的话，Amarok 将在顶部显示菜单栏。",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E5%A6%82%E6%9E%9C%E9%80%89%E4%B8%AD%E7%9A%84%E8%AF%9D%EF%BC%8CAmarok%20%E5%B0%86%E5%9C%A8%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA%E8%8F%9C%E5%8D%95%E6%A0%8F%E3%80%82%22",
+          "time": "2026-06-22T14:36:54.607237Z"
+        },
+        {
+          "text": "是否显示菜单栏",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E6%98%AF%E5%90%A6%E6%98%BE%E7%A4%BA%E8%8F%9C%E5%8D%95%E6%A0%8F%22",
+          "time": "2026-06-22T14:36:39.248496Z"
+        },
+        {
+          "text": "如果设定的话，Amarok 将以随机顺序播放列表中的音轨或专辑。",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E5%A6%82%E6%9E%9C%E8%AE%BE%E5%AE%9A%E7%9A%84%E8%AF%9D%EF%BC%8CAmarok%20%E5%B0%86%E4%BB%A5%E9%9A%8F%E6%9C%BA%E9%A1%BA%E5%BA%8F%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%9F%B3%E8%BD%A8%E6%88%96%E4%B8%93%E8%BE%91%E3%80%82%22",
+          "time": "2026-06-22T14:36:25.003167Z"
+        },
+        {
+          "text": "设置为评分星星使用的自定义颜色。",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E8%AE%BE%E7%BD%AE%E4%B8%BA%E8%AF%84%E5%88%86%E6%98%9F%E6%98%9F%E4%BD%BF%E7%94%A8%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A2%9C%E8%89%B2%E3%80%82%22",
+          "time": "2026-06-22T14:36:10.908795Z"
+        },
+        {
+          "text": "设置为评分星星使用的自定义颜色",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E8%AE%BE%E7%BD%AE%E4%B8%BA%E8%AF%84%E5%88%86%E6%98%9F%E6%98%9F%E4%BD%BF%E7%94%A8%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A2%9C%E8%89%B2%22",
+          "time": "2026-06-22T14:36:09.348548Z"
+        },
+        {
+          "text": "是否为评分星星使用自定义颜色",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E6%98%AF%E5%90%A6%E4%B8%BA%E8%AF%84%E5%88%86%E6%98%9F%E6%98%9F%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A2%9C%E8%89%B2%22",
+          "time": "2026-06-22T14:35:47.994867Z"
+        },
+        {
+          "text": "是否为评分星星中使用自定义颜色",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E6%98%AF%E5%90%A6%E4%B8%BA%E8%AF%84%E5%88%86%E6%98%9F%E6%98%9F%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A2%9C%E8%89%B2%22",
+          "time": "2026-06-22T14:35:46.294812Z"
+        },
+        {
+          "text": "是否显示音轨剩余时间。",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E6%98%AF%E5%90%A6%E6%98%BE%E7%A4%BA%E9%9F%B3%E8%BD%A8%E5%89%A9%E4%BD%99%E6%97%B6%E9%97%B4%E3%80%82%22",
+          "time": "2026-06-22T14:35:29.366150Z"
+        },
+        {
+          "text": "选择是否在时间栏内显示秒。",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E9%80%89%E6%8B%A9%E6%98%AF%E5%90%A6%E5%9C%A8%E6%97%B6%E9%97%B4%E6%A0%8F%E5%86%85%E6%98%BE%E7%A4%BA%E7%A7%92%E3%80%82%22",
+          "time": "2026-06-22T14:35:02.528108Z"
+        },
+        {
+          "text": "选择是否在时间栏内显示秒",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E9%80%89%E6%8B%A9%E6%98%AF%E5%90%A6%E5%9C%A8%E6%97%B6%E9%97%B4%E6%A0%8F%E5%86%85%E6%98%BE%E7%A4%BA%E7%A7%92%22",
+          "time": "2026-06-22T14:34:59.396582Z"
+        },
+        {
+          "text": "你需要从你的仓库中安装 moodbar 软件包才能启用心情功能。",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BB%8E%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E4%B8%AD%E5%AE%89%E8%A3%85%20moodbar%20%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%89%8D%E8%83%BD%E5%90%AF%E7%94%A8%E5%BF%83%E6%83%85%E5%8A%9F%E8%83%BD%E3%80%82%22",
+          "time": "2026-06-22T14:34:16.156480Z"
+        },
+        {
+          "text": "你需要从你的仓库中安装 moodbar 软件包才能启用心情功能",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BB%8E%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E4%B8%AD%E5%AE%89%E8%A3%85%20moodbar%20%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%89%8D%E8%83%BD%E5%90%AF%E7%94%A8%E5%BF%83%E6%83%85%E5%8A%9F%E8%83%BD%22",
+          "time": "2026-06-22T14:34:12.004534Z"
+        },
+        {
+          "text": "加载并播放 (&P)",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E5%8A%A0%E8%BD%BD%E5%B9%B6%E6%92%AD%E6%94%BE%20(%26P)%22",
+          "time": "2026-06-22T14:33:33.906658Z"
+        },
+        {
+          "text": "推荐电台",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E6%8E%A8%E8%8D%90%E7%94%B5%E5%8F%B0%22",
+          "time": "2026-06-22T14:33:22.519433Z"
+        },
+        {
+          "text": "老旧",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E8%80%81%E6%97%A7%22",
+          "time": "2026-06-22T14:33:16.998358Z"
+        },
+        {
+          "text": "安装 MP3 支持",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E5%AE%89%E8%A3%85%20MP3%20%E6%94%AF%E6%8C%81%22",
+          "time": "2026-06-22T14:32:47.835998Z"
+        },
+        {
+          "text": "KBlackbox",
+          "action": "修改译文",
+          "component": "tdegames/kblackbox",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdegames/kblackbox/zh_Hans/?q=%22KBlackbox%22",
+          "time": "2026-06-22T14:29:34.681420Z"
+        },
+        {
+          "text": "路线作者：",
+          "action": "修改译文",
+          "component": "tdegames/kolf",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdegames/kolf/zh_Hans/?q=%22%E8%B7%AF%E7%BA%BF%E4%BD%9C%E8%80%85%EF%BC%9A%22",
+          "time": "2026-06-22T14:28:44.960737Z"
+        },
+        {
+          "text": "路线名称：",
+          "action": "修改译文",
+          "component": "tdegames/kolf",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdegames/kolf/zh_Hans/?q=%22%E8%B7%AF%E7%BA%BF%E5%90%8D%E7%A7%B0%EF%BC%9A%22",
+          "time": "2026-06-22T14:28:43.415563Z"
+        },
+        {
+          "text": "i18n-translation@lists.linux.net.cn, xiaolan2332021@163.com",
+          "action": "修改译文",
+          "component": "tdegames/kolf",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdegames/kolf/zh_Hans/?q=%22i18n-translation%40lists.linux.net.cn%2C%20xiaolan2332021%40163.com%22",
+          "time": "2026-06-22T14:27:35.995704Z"
+        },
+        {
+          "text": "TDE 简体中文翻译组, Toad114514",
+          "action": "修改译文",
+          "component": "tdegames/kolf",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdegames/kolf/zh_Hans/?q=%22TDE%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91%E7%BB%84%2C%20Toad114514%22",
+          "time": "2026-06-22T14:27:27.634970Z"
+        },
+        {
+          "text": "斜坡",
+          "action": "新增译文",
+          "component": "tdegames/kolf",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdegames/kolf/zh_Hans/?q=%22%E6%96%9C%E5%9D%A1%22",
+          "time": "2026-06-22T14:27:02.814794Z"
+        },
+        {
+          "text": "悬浮平台",
+          "action": "新增译文",
+          "component": "tdegames/kolf",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdegames/kolf/zh_Hans/?q=%22%E6%82%AC%E6%B5%AE%E5%B9%B3%E5%8F%B0%22",
+          "time": "2026-06-22T14:26:54.984358Z"
+        },
+        {
+          "text": "文字",
+          "action": "修改译文",
+          "component": "koffice/koffice",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/koffice/koffice/zh_Hans/?q=%22%E6%96%87%E5%AD%97%22",
+          "time": "2026-06-22T14:24:38.978842Z"
+        },
+        {
+          "text": "数字",
+          "action": "修改译文",
+          "component": "koffice/koffice",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/koffice/koffice/zh_Hans/?q=%22%E6%95%B0%E5%AD%97%22",
+          "time": "2026-06-22T14:24:35.579457Z"
+        },
+        {
+          "text": "标识符",
+          "action": "修改译文",
+          "component": "koffice/koffice",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/koffice/koffice/zh_Hans/?q=%22%E6%A0%87%E8%AF%86%E7%AC%A6%22",
+          "time": "2026-06-22T14:24:31.266395Z"
+        },
+        {
+          "text": "添加数字",
+          "action": "修改译文",
+          "component": "koffice/koffice",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/koffice/koffice/zh_Hans/?q=%22%E6%B7%BB%E5%8A%A0%E6%95%B0%E5%AD%97%22",
+          "time": "2026-06-22T14:24:23.128875Z"
+        },
+        {
+          "text": "添加分隔符",
+          "action": "修改译文",
+          "component": "koffice/koffice",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/koffice/koffice/zh_Hans/?q=%22%E6%B7%BB%E5%8A%A0%E5%88%86%E9%9A%94%E7%AC%A6%22",
+          "time": "2026-06-22T14:24:13.939847Z"
+        },
+        {
+          "text": "已安装某些字体以确保公式中的符号正确显示。必须重新启动应用程序才能使更改生效",
+          "action": "新增译文",
+          "component": "koffice/koffice",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/koffice/koffice/zh_Hans/?q=%22%E5%B7%B2%E5%AE%89%E8%A3%85%E6%9F%90%E4%BA%9B%E5%AD%97%E4%BD%93%E4%BB%A5%E7%A1%AE%E4%BF%9D%E5%85%AC%E5%BC%8F%E4%B8%AD%E7%9A%84%E7%AC%A6%E5%8F%B7%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA%E3%80%82%E5%BF%85%E9%A1%BB%E9%87%8D%E6%96%B0%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%89%8D%E8%83%BD%E4%BD%BF%E6%9B%B4%E6%94%B9%E7%94%9F%E6%95%88%22",
+          "time": "2026-06-22T14:23:48.993898Z"
+        },
+        {
+          "text": "未知路径",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E6%9C%AA%E7%9F%A5%E8%B7%AF%E5%BE%84%22",
+          "time": "2026-06-22T14:22:39.390360Z"
+        },
+        {
+          "text": "欢迎使用 Amarok! 现如今有很多的音乐播放器。但 Amarok 为您带来的体验永远是独一无二的。绝大多数播放器所缺少的正是一个你能方便掌握的界面。Amarok 所提供的拖曳界面不仅十分方便，而且管理播放列表也将变得前所未有的轻松。我们希望 Amarok 能够真正让您 “重新发现您的音乐！”",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8%20Amarok!%20%E7%8E%B0%E5%A6%82%E4%BB%8A%E6%9C%89%E5%BE%88%E5%A4%9A%E7%9A%84%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E3%80%82%E4%BD%86%20Amarok%20%E4%B8%BA%E6%82%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E4%BD%93%E9%AA%8C%E6%B0%B8%E8%BF%9C%E6%98%AF%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C%E7%9A%84%E3%80%82%E7%BB%9D%E5%A4%A7%E5%A4%9A%E6%95%B0%E6%92%AD%E6%94%BE%E5%99%A8%E6%89%80%E7%BC%BA",
+          "time": "2026-06-22T14:22:06.323839Z"
+        },
+        {
+          "text": "请将此信息报告给 devels@trinitydesktop.org，多谢！",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E8%AF%B7%E5%B0%86%E6%AD%A4%E4%BF%A1%E6%81%AF%E6%8A%A5%E5%91%8A%E7%BB%99%20devels%40trinitydesktop.org%EF%BC%8C%E5%A4%9A%E8%B0%A2%EF%BC%81%22",
+          "time": "2026-06-22T14:20:00.222896Z"
+        },
+        {
+          "text": "在 Amarok 栏上看看我！",
+          "action": "新增译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E5%9C%A8%20Amarok%20%E6%A0%8F%E4%B8%8A%E7%9C%8B%E7%9C%8B%E6%88%91%EF%BC%81%22",
+          "time": "2026-06-22T14:19:34.464735Z"
+        },
+        {
+          "text": "没有错误",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22%E6%B2%A1%E6%9C%89%E9%94%99%E8%AF%AF%22",
+          "time": "2026-06-22T14:18:23.043367Z"
+        },
+        {
+          "text": "Amarok",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=%22Amarok%22",
+          "time": "2026-06-22T14:17:47.902007Z"
+        },
+        {
+          "text": "Amarok 崩溃了！出现这种情况我们表示很抱歉 :( 但是，别急！也许我们已经提供了可修复此问题的升级版本。请查阅您发行版的软件仓库。",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=Amarok%20%E5%B4%A9%E6%BA%83%E4%BA%86%EF%BC%81%E5%87%BA%E7%8E%B0%E8%BF%99%E7%A7%8D%E6%83%85%E5%86%B5%E6%88%91%E4%BB%AC%E8%A1%A8%E7%A4%BA%E5%BE%88%E6%8A%B1%E6%AD%89%20%3A(%20%E4%BD%86%E6%98%AF%EF%BC%8C%E5%88%AB%E6%80%A5%EF%BC%81%E4%B9%9F%E8%AE%B8%E6%88%91%E4%BB%AC%E5%B7%B2%E7%BB%8F%E6%8F%90%E4%BE%9B%E4%BA%86%E5%8F%AF%E4%BF%AE%E5%A4%8D%E6%AD%A4%E9%97%AE%E9%A2%98%E7%9A%84%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC%E3%80%82%E8%AF%B7%E6%9F%A5%E9%98%85%E6%82%A8%E5%8F%91",
+          "time": "2026-06-22T14:17:40.420108Z"
+        },
+        {
+          "text": "Amarok 使用数据库形式来保存你的音乐元数据。如果你不知道要选哪个的话请点击下一步。 MySQL 以及 Postgresql 都比 sqlite快的多，但需要一些小小的初始设定 介绍及配置 MySQL. 介绍及配置 Postgresql.",
+          "action": "新增译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/?q=Amarok%20%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BD%A2%E5%BC%8F%E6%9D%A5%E4%BF%9D%E5%AD%98%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90%E5%85%83%E6%95%B0%E6%8D%AE%E3%80%82%E5%A6%82%E6%9E%9C%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E8%A6%81%E9%80%89%E5%93%AA%E4%B8%AA%E7%9A%84%E8%AF%9D%E8%AF%B7%E7%82%B9%E5%87%BB%E4%B8%8B%E4%B8%80%E6%AD%A5%E3%80%82%20MySQL%20%E4%BB%A5%E5%8F%8A%20Postgr",
+          "time": "2026-06-22T14:16:35.773146Z"
+        },
+        {
+          "text": "修改译文",
+          "action": "修改译文",
+          "component": "applications/amarok",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/amarok/zh_Hans/",
+          "time": "2026-06-22T14:14:26.155732Z"
+        }
+      ],
+      "windowStart": "2026-06-22T14:14:26.155732Z",
+      "windowEnd": "2026-06-22T14:45:09.179978Z",
+      "components": [
+        "applications/amarok",
+        "koffice/koffice",
+        "tdegames/kolf",
+        "tdegames/kblackbox",
+        "tdeartwork/kxsconfig"
+      ],
+      "actions": {
+        "修改译文": 56,
+        "新增译文": 11,
+        "新贡献者": 1
+      },
+      "language": "简体中文",
+      "languageName": "简体中文",
+      "latestTarget": "乱序节奏",
+      "source": "api"
+    }
+  },
+  {
     "id": "hexo:/2024/08/20/termux-all/",
     "platform": "hexo",
     "type": "博客文章",

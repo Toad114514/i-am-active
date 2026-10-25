@@ -838,10 +838,34 @@ body::before {
 .cats__side {
   position: sticky;
   top: 22px;
+  /* 筛选项多（年份×5 + 类型×5 + 平台×12）时侧栏比视口还高，
+     sticky 元素超长会把底部顶出屏幕外且滚不到 —— 限高为视口减去上下边距，
+     自己出滚动条。 */
+  max-height: calc(100vh - 44px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--bg-elev);
   padding: 15px 14px;
+}
+
+.cats__side::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cats__side::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cats__side::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 4px;
+}
+
+.cats__side::-webkit-scrollbar-thumb:hover {
+  background: var(--fg-faint);
 }
 
 .cats__group + .cats__group {
@@ -974,6 +998,9 @@ body::before {
 
   .cats__side {
     position: static;
+    /* 恢复自然流式布局：横向 chip 本身不高，限高+滚动只给桌面端 sticky 侧栏 */
+    max-height: none;
+    overflow: visible;
   }
 
   .cats__group {
