@@ -1,5 +1,75 @@
 [
   {
+    "id": "github:commit:999dd48b76c73a02f369345bdef0ea77dcc29013",
+    "platform": "github",
+    "type": "提交",
+    "title": "fix(ci): 密钥提到 job 级，build 步骤也能读到",
+    "summary": "在 Toad114514/i-am-active 中提交：fix(ci): 密钥提到 job 级，build 步骤也能读到",
+    "url": "https://github.com/Toad114514/i-am-active/commit/999dd48b76c73a02f369345bdef0ea77dcc29013",
+    "image": null,
+    "timestamp": "2026-10-25T04:33:26Z",
+    "meta": {
+      "sha": "999dd48",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "github:commit:6225bb35dae4082b66b042afb965e0decb8f13db",
+    "platform": "github",
+    "type": "提交",
+    "title": "fix(config): 大整数保留字符串，缺必填项只跳过该平台",
+    "summary": "在 Toad114514/i-am-active 中提交：fix(config): 大整数保留字符串，缺必填项只跳过该平台",
+    "url": "https://github.com/Toad114514/i-am-active/commit/6225bb35dae4082b66b042afb965e0decb8f13db",
+    "image": null,
+    "timestamp": "2026-10-25T04:33:26Z",
+    "meta": {
+      "sha": "6225bb3",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "github:commit:2c7f67ad67acfe7726aaf435df3c3482846c8ecd",
+    "platform": "github",
+    "type": "提交",
+    "title": "fix(sources): 修掉 archive 与 ottohub 的 since 二次调用",
+    "summary": "在 Toad114514/i-am-active 中提交：fix(sources): 修掉 archive 与 ottohub 的 since 二次调用",
+    "url": "https://github.com/Toad114514/i-am-active/commit/2c7f67ad67acfe7726aaf435df3c3482846c8ecd",
+    "image": null,
+    "timestamp": "2026-10-25T04:33:26Z",
+    "meta": {
+      "sha": "2c7f67a",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "github:commit:da936d7c0b1193be45c8279dde668baf5dfcc7d3",
+    "platform": "github",
+    "type": "提交",
+    "title": "steam enable",
+    "summary": "在 Toad114514/i-am-active 中提交：steam enable",
+    "url": "https://github.com/Toad114514/i-am-active/commit/da936d7c0b1193be45c8279dde668baf5dfcc7d3",
+    "image": null,
+    "timestamp": "2026-10-25T04:27:07Z",
+    "meta": {
+      "sha": "da936d7",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "github:commit:5e20d76afa7a54e820d2b73dce8b0caba7c1f3cb",
+    "platform": "github",
+    "type": "提交",
+    "title": "feat(steam): 改成抓最近两周玩过的游戏再逐个查成就",
+    "summary": "在 Toad114514/i-am-active 中提交：feat(steam): 改成抓最近两周玩过的游戏再逐个查成就",
+    "url": "https://github.com/Toad114514/i-am-active/commit/5e20d76afa7a54e820d2b73dce8b0caba7c1f3cb",
+    "image": null,
+    "timestamp": "2026-10-25T04:12:01Z",
+    "meta": {
+      "sha": "5e20d76",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "github:commit:dd9e34f4b5de55a916f07957bbc8efdf2701a122",
     "platform": "github",
     "type": "提交",
