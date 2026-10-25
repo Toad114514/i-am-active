@@ -15,7 +15,8 @@
  * 否则第一次跑就会把攒了几年的历史一次灌进来。
  *
  * 两类事件：
- *  1. 游玩记录 —— 来源是 GetRecentlyPlayedGames 里的 `rtime_last_played`（本次会话开始时间）。
+ *  1. 游玩记录 —— 时间取自 `rtime_last_played`。注意 GetRecentlyPlayedGames **不返回**
+ *     这个字段（只有 appid/名称/两周与总时长），要再调一次 GetOwnedGames 才拿得到。
  *     只启动游戏、还没解锁成就是常态（比如坐在主菜单里），只靠成就会一条都抓不到。
  *     AppID + 时间戳做 id，同一次会话重复运行不会重复写入。
  *  2. 成就解锁 —— `unlockedtime` 落在窗口内的。
@@ -132,6 +133,36 @@ function formatTime(seconds) {
 }
 
 /**
+ * `GetRecentlyPlayedGames` 只给 appid / 名称 / 两周与总时长，**不给** `rtime_last_played`
+ * （那是 `GetOwnedGames` 才有的字段，实测返回里根本没有这个键）。
+ * 所以「上次游玩时间」得再补一次 GetOwnedGames，一次性拿全部游戏的对应值。
+ * @returns {Promise<Map<string, number>>} appid → Unix 秒
+ */
+async function lastPlayedTimes({ apiKey, steamId64 }) {
+  const params = new URLSearchParams({
+    key: apiKey,
+    steamid: steamId64,
+    include_played_free_games: '1',
+    format: 'json',
+  });
+  const map = new Map();
+  try {
+    const data = await getJson(`${STEAM_API}/IPlayerService/GetOwnedGames/v1/?${params}`, {
+      timeoutMs: 20000,
+      retries: 1,
+    });
+    for (const game of data?.response?.games ?? []) {
+      const appid = toAppId(game.appid);
+      if (appid) map.set(appid, Number(game.rtime_last_played) || 0);
+    }
+  } catch (error) {
+    const reason = error instanceof HttpError ? `HTTP ${error.status ?? '?'}` : error.message;
+    console.warn(`[steam] 查询「上次游玩时间」失败（不影响成就）：${reason}`);
+  }
+  return map;
+}
+
+/**
  * 最近两周玩过的游戏（按两周游玩时长从长到短）。
  * 同时把「接口到底回了什么」原样带出来，供诊断用。
  * @returns {Promise<{games: Array<{appid: string, name: string|null, minutes2weeks: number,
@@ -183,6 +214,15 @@ async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
     }))
     .filter((game) => game.appid)
     .slice(0, maxGames);
+
+  // 「上次游玩时间」这个接口不给，缺了就补一次 GetOwnedGames
+  if (parsed.some((game) => !game.lastPlayedSec)) {
+    const times = await lastPlayedTimes({ apiKey, steamId64 });
+    for (const game of parsed) {
+      if (!game.lastPlayedSec) game.lastPlayedSec = times.get(game.appid) ?? 0;
+    }
+  }
+
   return { games: parsed, raw: data ?? null, error: null };
 }
 

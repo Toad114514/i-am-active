@@ -50,7 +50,8 @@ Steam 没有「我最近解锁了什么成就」这种接口，只能按 AppID �
 
 1. `IPlayerService/GetRecentlyPlayedGames` 拿到**最近两周玩过的游戏**（按两周时长排序，
    接口本身就固定两周，不能自定义区间）；
-2. 用返回里的 `rtime_last_played` 判断「这次会话是不是新的」，是就写一条**游玩记录**；
+2. 用 `IPlayerService/GetOwnedGames` 补出 `rtime_last_played`（**最近游戏这个接口不返回这个
+   字段**，只有 appid / 名称 / 时长），判断「这次会话是不是新的」，是就写一条**游玩记录**；
 3. 对这些 AppID 逐个调 `ISteamUserStats/GetPlayerAchievements`，解锁时间落在
    「上次抓取时间 → 现在」之间的成就也写进列表，首轮回退 14 天。
 

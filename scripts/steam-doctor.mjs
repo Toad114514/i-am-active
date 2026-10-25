@@ -11,6 +11,7 @@
  */
 import { platform, configPath } from './lib/config.mjs';
 import { getJson, HttpError } from './lib/http.mjs';
+import { recentlyPlayedGames } from './sources/steam.mjs';
 
 const steam = platform('steam');
 const apiKey = String(steam.apiKey ?? '').trim();
@@ -41,27 +42,18 @@ if (!/^\d{17}$/.test(steamId64)) {
   process.exit(1);
 }
 
-const params = new URLSearchParams({ key: apiKey, steamid: steamId64, format: 'json' });
-let data;
-try {
-  data = await getJson(`https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/?${params}`, {
-    timeoutMs: 20000,
-    retries: 1,
-  });
-} catch (error) {
-  const reason = error instanceof HttpError ? `HTTP ${error.status}` : error.message;
-  console.error(`\n✗ 请求失败：${reason}`);
-  if (error instanceof HttpError && error.status === 403) {
-    console.error('  403 多半是 key 不对，或者这个 key 不是你账号的。');
-  }
+// 走的就是抓取器本身那套逻辑（最近游戏 + GetOwnedGames 补上次游玩时间）
+const { games, raw, error } = await recentlyPlayedGames({ apiKey, steamId64, maxGames: 20 });
+if (error) {
+  console.error(`\n✗ 请求失败：${error}`);
+  if (error.includes('403')) console.error('  403 多半是 key 不对，或者这个 key 不是你账号的。');
   process.exit(1);
 }
 
-const response = data?.response ?? {};
-const games = Array.isArray(response.games) ? response.games : [];
+const response = raw?.response ?? {};
 
 console.log('\nGetRecentlyPlayedGames');
-show('原始返回', JSON.stringify(data).slice(0, 400));
+show('原始返回', JSON.stringify(raw).slice(0, 400));
 
 if (games.length === 0) {
   console.log('');
@@ -91,8 +83,8 @@ const when = (seconds) =>
 for (const game of games) {
   console.log(
     `  · ${game.name ?? `App ${game.appid}`}（${game.appid}）：` +
-      `两周 ${fmt(game.playtime_2weeks)} / 总计 ${fmt(game.playtime_forever)} / ` +
-      `上次游玩 ${when(game.rtime_last_played)}`,
+      `两周 ${fmt(game.minutes2weeks)} / 总计 ${fmt(game.minutesTotal)} / ` +
+      `上次游玩 ${when(game.lastPlayedSec)}`,
   );
 }
 
