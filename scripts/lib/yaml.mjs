@@ -133,7 +133,12 @@ function parseScalar(text, file, row) {
   if (/^(true|True|TRUE)$/.test(raw)) return true;
   if (/^(false|False|FALSE)$/.test(raw)) return false;
   if (/^(null|Null|NULL|~)$/.test(raw)) return null;
-  if (/^-?\d+$/.test(raw)) return Number(raw);
+  // 超过 2^53 的整数转 Number 会静默改掉末尾几位（SteamID64 就是 17 位），
+  // 与其给一个错的数字，不如原样保留字符串。
+  if (/^-?\d+$/.test(raw)) {
+    const num = Number(raw);
+    return Number.isSafeInteger(num) ? num : raw;
+  }
   if (/^-?\d*\.\d+$/.test(raw)) return Number(raw);
   return raw;
 }

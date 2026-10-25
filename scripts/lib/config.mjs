@@ -149,10 +149,16 @@ function resolveEnvString(value) {
   });
 }
 
-/** 整个值就是一个 ${VAR} 时，允许按字面量还原类型（数字/布尔）。 */
+/**
+ * 整个值就是一个 ${VAR} 时，允许按字面量还原类型（数字/布尔）。
+ *
+ * 超过 2^53 的整数（SteamID64 是 17 位）在 JS 里存不精确：
+ * Number('76561198012345678') 会变成 76561198012345680，末尾两位被抹掉，
+ * 于是请求带着错的 ID 去查，Steam 只会回「查不到」。这类值一律保留字符串。
+ */
 function coerce(text) {
   if (/^(true|false)$/.test(text)) return text === 'true';
-  if (/^-?\d+$/.test(text)) return Number(text);
+  if (/^-?\d+$/.test(text) && Number.isSafeInteger(Number(text))) return Number(text);
   return text;
 }
 
@@ -206,7 +212,10 @@ export function loadConfig() {
 
   const config = resolveEnvDeep(merged);
 
-  // 平台必填项校验：只校验启用的平台
+  // 平台必填项校验：只校验启用的平台。
+  // 缺字段时**不禁用整个任务**，只把该平台标记为不可用并在 warnings 里说清楚——
+  // 否则一个 Secret 没配好就会连带 build 一起失败，站点整轮停止更新（真踩过）。
+  const invalid = new Set();
   for (const [id, platform] of Object.entries(config.platforms)) {
     if (!(id in DEFAULTS.platforms)) continue;
     if (!isPlainObject(platform)) {
@@ -218,13 +227,15 @@ export function loadConfig() {
     for (const field of REQUIRED[id] ?? []) {
       const value = platform[field];
       if (value === undefined || value === null || String(value).trim() === '') {
-        throw new Error(
-          `config.yaml: 平台 ${id} 已启用，但缺少必填项 ${id}.${field}`,
+        invalid.add(id);
+        warnings.push(
+          `平台 ${id} 已启用，但缺少必填项 ${id}.${field}，本轮跳过该平台（其它平台照常）`,
         );
       }
     }
   }
 
+  config.invalidPlatforms = [...invalid];
   config.warnings = warnings;
   return config;
 }
@@ -236,9 +247,12 @@ export function platform(id) {
   return config.platforms[id] ?? {};
 }
 
-/** 启用的平台 id 列表，顺序与内置定义一致。 */
+/** 启用的平台 id 列表，顺序与内置定义一致；缺必填项的平台会被排除。 */
 export function enabledPlatformIds() {
-  return Object.keys(DEFAULTS.platforms).filter((id) => config.platforms[id]?.enabled !== false);
+  const invalid = new Set(config.invalidPlatforms ?? []);
+  return Object.keys(DEFAULTS.platforms).filter(
+    (id) => config.platforms[id]?.enabled !== false && !invalid.has(id),
+  );
 }
 
 /** 把密钥打码，用于 --show-config 打印。 */
