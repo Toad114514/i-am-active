@@ -256,8 +256,15 @@ OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<
 | 游戏 | RetroAchievements、Steam |
 | 视频 | 哔哩哔哩、YouTube、OTTOhub、快手 |
 | 代码 | GitHub、Gitee、Weblate（给 TDE 翻译代码里的字符串） |
-| 归档 | 互联网档案馆 |
+| 归档 | 互联网档案馆、西瓜视频、抖音（后两者是已停更账号的一次性存档） |
 | 其他 | 没登记的平台（自动兜底） |
+
+**西瓜视频 / 抖音是「存档」，不是抓取源**：两个账号都已经不再更新（西瓜简介写着
+「西瓜永久停更」，抖音账号已丢失），网页端也基本下线。所以它们没有 `scripts/sources/`
+里的抓取器，条目是 2026-10 一次性导入的：西瓜 30 条视频（2021-08 ~ 2024-08，封面
+同 OTTOhub 一样落地到 `res/media/ixigua/`），抖音只有一张账号存档卡（作品列表接口
+已要求签名，只能留档账号本身，头像存 `res/media/douyin/avatar.jpg`）。
+平台展示信息仍登记在 `platforms.mjs`，只是 `PLATFORM_KIND` 里归「归档」。
 
 三个维度可以叠加，URL 用 `?year=2026&kind=code&platform=github` 这样的查询参数保存状态；
 没有条目的类型不会出现在左栏。

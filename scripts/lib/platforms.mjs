@@ -123,6 +123,27 @@ export const PLATFORMS = {
       '<path d="M9.6 2.5 13 6.3l3.3-1.4 2 3.4-3.3 1.4.9 4.6-3.7.7-.9-4.5-4 2.6 1 5.4-3.7.7-1-5.4-4.5 3 1.7-3.4 4.4-2.9L7.4 4l3.7-.7z"/>',
     ),
   },
+  ixigua: {
+    id: 'ixigua',
+    name: '西瓜视频',
+    short: '西瓜视频',
+    color: '#f85959',
+    homepage: 'https://m.ixigua.com/user/1156309825358958',
+    icon: icon(
+      '<path d="M12 3c2.6 3.1 4.2 5.6 5.3 7.9-2 .6-3.4 1.4-4.4 2.6 1-.5 2-.8 3.1-.8-2.4 4.3-4.1 6.6-5.2 8.3-1.1-1.7-2.6-4-4.4-8.1 2.6 0 4.8-.6 6.7-1.9-3-.6-5.1-1.8-6.4-3.6C8.4 8.2 10 5.8 12 3z"/>',
+    ),
+  },
+  douyin: {
+    id: 'douyin',
+    name: '抖音',
+    short: '抖音',
+    color: '#111111',
+    homepage:
+      'https://www.douyin.com/user/MS4wLjABAAAA6PVKsXhOQnDUq6NzC0iR0Yhexul5GSzhHaBQBK7iXQQ',
+    icon: icon(
+      '<path d="M14.1 2h2.6c.2 1.5 1.1 2.7 2.6 3v2.6c-1.6 0-3-.5-4.2-1.4v6.3c0 4.3-3.5 7.5-7.8 7.5S2 17 2 12.7s3.5-7.5 7.8-7.5c.4 0 .8 0 1.2.1v2.7c-.4-.1-.8-.1-1.2-.1-2.6 0-4.7 2-4.7 4.5s2.1 4.5 4.7 4.5 4.8-2 4.8-4.6V2z"/>',
+    ),
+  },
 };
 
 /** 平台 id 顺序（与页面展示顺序一致）。 */
@@ -131,6 +152,8 @@ export const PLATFORM_ORDER = [
   'youtube',
   'ottohub',
   'kuaishou',
+  'ixigua',
+  'douyin',
   'github',
   'gitee',
   'archive',
@@ -151,7 +174,7 @@ export const KINDS = [
   { id: 'game', name: '游戏', color: '#c73e3e', hint: 'RetroAchievements / Steam' },
   { id: 'video', name: '视频', color: '#fb7299', hint: '哔哩哔哩 / YouTube / OTTOhub / 快手' },
   { id: 'code', name: '代码', color: '#8b949e', hint: 'GitHub / Gitee / Weblate' },
-  { id: 'archive', name: '归档', color: '#4a4a4a', hint: '互联网档案馆' },
+  { id: 'archive', name: '归档', color: '#4a4a4a', hint: '互联网档案馆 / 西瓜视频 / 抖音' },
   { id: 'other', name: '其他', color: '#6b7691', hint: '未归类的平台' },
 ];
 
@@ -167,6 +190,9 @@ const PLATFORM_KIND = {
   gitee: 'code',
   weblate: 'code',
   archive: 'archive',
+  // 西瓜/抖音都停更且账号已不可用，能抓到的只是「存档」，不是新动态
+  ixigua: 'archive',
+  douyin: 'archive',
 };
 
 /** @returns {string} 活动类型 id（game / video / code / archive / other） */
@@ -185,6 +211,8 @@ const HOMEPAGE_BUILDERS = {
   youtube: (c) => (c.handle ? `https://youtube.com/${c.handle}` : null),
   ottohub: (c) => (c.uid ? `https://www.ottohub.cn/u/${c.uid}` : null),
   kuaishou: (c) => (c.profileId ? `https://www.kuaishou.com/profile/${c.profileId}` : null),
+  // 西瓜/抖音没有抓取器（账号已停更，数据是 2026-10 一次性导入的存档），
+  // 主页直接写在 PLATFORMS 里，不依赖 config。
   github: (c) => (c.user ? `https://github.com/${c.user}` : null),
   gitee: (c) => (c.user ? `https://gitee.com/${c.user}` : null),
   archive: (c) => (c.user ? `https://archive.org/details/@${c.user}` : null),
