@@ -14596,5 +14596,158 @@
       "followingCount": 7,
       "archived": true
     }
+  },
+  {
+    "id": "miscgame:minecraft-bedrock",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "Minecraft Bedrock 账号存档：zhazhajun666958",
+    "summary": "用户名 zhazhajun666958 · 状态：在用。基岩版账号不在 Mojang 的 Java 版接口里，查不到任何公开档案，所以这里只存档账号本身。",
+    "url": "https://www.minecraft.net/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "Minecraft Bedrock",
+      "username": "zhazhajun666958",
+      "status": "在用",
+      "note": "基岩版账号不在 Mojang 的 Java 版接口里，查不到任何公开档案",
+      "archived": true
+    }
+  },
+  {
+    "id": "miscgame:blue-archive",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "蔚蓝档案（国服） 账号存档：toadXtech",
+    "summary": "用户名 toadXtech · 状态：在用。手游，官方没有公开档案接口，所以这里只存档账号本身。",
+    "url": "https://bluearchive-cn.com/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "蔚蓝档案（国服）",
+      "username": "toadXtech",
+      "status": "在用",
+      "note": "手游，官方没有公开档案接口",
+      "archived": true
+    }
+  },
+  {
+    "id": "miscgame:sm64coopdx",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "SM64CoopDX（CoopNet） 账号存档：toadXtech",
+    "summary": "用户名 toadXtech · 状态：在用。CoopNet 只做联机匹配，官方站点没有用户战绩/游玩记录接口，所以这里只存档账号本身。",
+    "url": "https://sm64coopdx.com/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "SM64CoopDX（CoopNet）",
+      "username": "toadXtech",
+      "status": "在用",
+      "note": "CoopNet 只做联机匹配，官方站点没有用户战绩/游玩记录接口",
+      "archived": true
+    }
+  },
+  {
+    "id": "miscgame:endfield",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "明日方舟：终末地 账号存档：toad114514",
+    "summary": "用户名 toad114514 · 状态：暂退。手游，官方没有公开档案接口，所以这里只存档账号本身。",
+    "url": "https://endfield.hypergryph.com/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "明日方舟：终末地",
+      "username": "toad114514",
+      "status": "暂退",
+      "note": "手游，官方没有公开档案接口",
+      "archived": true
+    }
+  },
+  {
+    "id": "miscgame:smmwe",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "SMM:WE & OpenCourseWorld 账号存档：toad114514",
+    "summary": "用户名 toad114514 · 状态：平台已停运。SMM:WE 2022-08 停运；关卡站 opencourse.world 的 API 要登录（401），抓不到上传的关卡，所以这里只存档账号本身。",
+    "url": "https://www.smmwe.xyz/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "SMM:WE & OpenCourseWorld",
+      "username": "toad114514",
+      "status": "平台已停运",
+      "note": "SMM:WE 2022-08 停运；关卡站 opencourse.world 的 API 要登录（401），抓不到上传的关卡",
+      "archived": true
+    }
+  },
+  {
+    "id": "miscgame:iwbtc",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "I wanna be the creator 账号存档：toad114514",
+    "summary": "用户名 toad114514 · 状态：半退。社区站 delicious-fruit 的 API 要 bearer token，作品列表抓不到，所以这里只存档账号本身。",
+    "url": "https://delicious-fruit.com/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "I wanna be the creator",
+      "username": "toad114514",
+      "status": "半退",
+      "note": "社区站 delicious-fruit 的 API 要 bearer token，作品列表抓不到",
+      "archived": true
+    }
+  },
+  {
+    "id": "miscgame:soulknight-prequel",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "元气骑士前传 账号存档：toad114514",
+    "summary": "用户名 toad114514 · 状态：退坑。手游，官方没有公开档案接口，所以这里只存档账号本身。",
+    "url": "https://qz.chillyroom.com/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "元气骑士前传",
+      "username": "toad114514",
+      "status": "退坑",
+      "note": "手游，官方没有公开档案接口",
+      "archived": true
+    }
+  },
+  {
+    "id": "miscgame:eggman-party",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "蛋仔派对 账号存档：toad114514",
+    "summary": "用户名 toad114514 · 状态：退坑。手游，官方没有公开档案接口，所以这里只存档账号本身。",
+    "url": "https://party.163.com/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "蛋仔派对",
+      "username": "toad114514",
+      "status": "退坑",
+      "note": "手游，官方没有公开档案接口",
+      "archived": true
+    }
+  },
+  {
+    "id": "miscgame:tpbsn",
+    "platform": "miscgame",
+    "type": "游戏账号",
+    "title": "逃跑吧少年 账号存档：toad114514",
+    "summary": "用户名 toad114514 · 状态：退坑。手游，官方没有公开档案接口，所以这里只存档账号本身。",
+    "url": "https://dmm-web.brmyx.com/tpbsn/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "game": "逃跑吧少年",
+      "username": "toad114514",
+      "status": "退坑",
+      "note": "手游，官方没有公开档案接口",
+      "archived": true
+    }
   }
 ]

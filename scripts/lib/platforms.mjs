@@ -133,15 +133,19 @@ export const PLATFORMS = {
       '<path d="M12 3c2.6 3.1 4.2 5.6 5.3 7.9-2 .6-3.4 1.4-4.4 2.6 1-.5 2-.8 3.1-.8-2.4 4.3-4.1 6.6-5.2 8.3-1.1-1.7-2.6-4-4.4-8.1 2.6 0 4.8-.6 6.7-1.9-3-.6-5.1-1.8-6.4-3.6C8.4 8.2 10 5.8 12 3z"/>',
     ),
   },
-  douyin: {
-    id: 'douyin',
-    name: '抖音',
-    short: '抖音',
-    color: '#111111',
-    homepage:
-      'https://www.douyin.com/user/MS4wLjABAAAA6PVKsXhOQnDUq6NzC0iR0Yhexul5GSzhHaBQBK7iXQQ',
+  /**
+   * 「其他游戏」：url-social.md 里列出的那些单机/手游账号。
+   * 它们都没有公开的活动接口（官方没 API、档案站要么关了要么要登录），
+   * 所以只有一次性导入的「账号存档卡」，条目里写清用户名和状态。
+   */
+  miscgame: {
+    id: 'miscgame',
+    name: '其他游戏',
+    short: '其他游戏',
+    color: '#8a7cff',
+    homepage: null,
     icon: icon(
-      '<path d="M14.1 2h2.6c.2 1.5 1.1 2.7 2.6 3v2.6c-1.6 0-3-.5-4.2-1.4v6.3c0 4.3-3.5 7.5-7.8 7.5S2 17 2 12.7s3.5-7.5 7.8-7.5c.4 0 .8 0 1.2.1v2.7c-.4-.1-.8-.1-1.2-.1-2.6 0-4.7 2-4.7 4.5s2.1 4.5 4.7 4.5 4.8-2 4.8-4.6V2z"/>',
+      '<path d="M7 7h10a5 5 0 0 1 0 10 3 3 0 0 1-2.2-1H9.2A3 3 0 0 1 7 15H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2zm1 2v1H6v2h2v1h3v-4H8zm6.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>',
     ),
   },
 };
@@ -160,6 +164,7 @@ export const PLATFORM_ORDER = [
   'weblate',
   'retroachievements',
   'steam',
+  'miscgame',
 ];
 
 /**
@@ -193,6 +198,8 @@ const PLATFORM_KIND = {
   // 西瓜/抖音都停更且账号已不可用，能抓到的只是「存档」，不是新动态
   ixigua: 'archive',
   douyin: 'archive',
+  // 没有公开接口的那些游戏，同样是「账号存档」，但按活动类型算游戏
+  miscgame: 'game',
 };
 
 /** @returns {string} 活动类型 id（game / video / code / archive / other） */
