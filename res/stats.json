@@ -1,7 +1,16 @@
 {
   "monitoringSince": "2026-10-24T21:43:03.162Z",
-  "lastCollectedAt": "2026-10-25T03:57:46.922Z",
-  "collectRuns": 5,
-  "lastRunNewCount": 157,
-  "lastRunFailures": []
+  "lastCollectedAt": "2026-10-25T04:00:48.320Z",
+  "collectRuns": 6,
+  "lastRunNewCount": 0,
+  "lastRunFailures": [
+    {
+      "id": "ottohub",
+      "message": "since.getTime is not a function"
+    },
+    {
+      "id": "archive",
+      "message": "since.getTime is not a function"
+    }
+  ]
 }
