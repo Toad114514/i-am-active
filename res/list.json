@@ -1,5 +1,50 @@
 [
   {
+    "id": "github:commit:e540fcf99f6027f2608e2ec2c91c44af7f297259",
+    "platform": "github",
+    "type": "提交",
+    "title": "chore(data): 给已有 Steam 条目补上 meta.backdrop / meta.badge（老条目不会被重新新增，只能一次性回填）",
+    "summary": "在 Toad114514/i-am-active 中提交：chore(data): 给已有 Steam 条目补上 meta.backdrop / meta.badge（老条目不会被重新新增，只能一次性回填）",
+    "url": "https://github.com/Toad114514/i-am-active/commit/e540fcf99f6027f2608e2ec2c91c44af7f297259",
+    "image": null,
+    "timestamp": "2026-10-25T09:38:10Z",
+    "meta": {
+      "sha": "e540fcf",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "github:commit:82868069cc7f84576f20a9ebce4d8de8eff25238",
+    "platform": "github",
+    "type": "提交",
+    "title": "feat(ui): 游戏条目用游戏图当背景，成就徽章缩成右下角角标",
+    "summary": "在 Toad114514/i-am-active 中提交：feat(ui): 游戏条目用游戏图当背景，成就徽章缩成右下角角标",
+    "url": "https://github.com/Toad114514/i-am-active/commit/82868069cc7f84576f20a9ebce4d8de8eff25238",
+    "image": null,
+    "timestamp": "2026-10-25T09:37:56Z",
+    "meta": {
+      "sha": "8286806",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "steam:play:220:1792920567",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "《Half-Life 2》",
+    "summary": "本次会话开始于 2026/10/25 17:29:27，两周内共 4 小时 13 分钟，累计 15 小时 52 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-10-25T09:29:27.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 253,
+      "minutesTotal": 952,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
     "id": "github:commit:737dfbdc9e16b84499a02a982cc52563dade02ef",
     "platform": "github",
     "type": "提交",

@@ -1,30 +1,30 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T09:04:52.753Z",
-    "bilibili": "2026-10-25T09:04:42.794Z",
-    "youtube": "2026-10-25T09:04:42.922Z",
-    "ottohub": "2026-10-25T09:04:43.976Z",
-    "kuaishou": "2026-10-25T09:04:45.738Z",
-    "github": "2026-10-25T09:04:46.661Z",
-    "gitee": "2026-10-25T09:04:48.882Z",
-    "archive": "2026-10-25T09:04:49.089Z",
-    "retroachievements": "2026-10-25T09:04:53.719Z",
-    "steam": "2026-10-25T09:04:56.293Z"
+    "weblate": "2026-10-25T09:44:59.974Z",
+    "bilibili": "2026-10-25T09:44:43.797Z",
+    "youtube": "2026-10-25T09:44:43.891Z",
+    "ottohub": "2026-10-25T09:44:44.938Z",
+    "kuaishou": "2026-10-25T09:44:46.989Z",
+    "github": "2026-10-25T09:44:47.993Z",
+    "gitee": "2026-10-25T09:44:55.781Z",
+    "archive": "2026-10-25T09:44:56.944Z",
+    "retroachievements": "2026-10-25T09:45:01.340Z",
+    "steam": "2026-10-25T09:45:03.932Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T09:04:53.719Z",
-      "since": "2026-10-25T08:59:11.064Z",
-      "note": "窗口内没有新动作：这些游戏的 19 个已解锁成就都在上次抓取之前",
+      "checkedAt": "2026-10-25T09:45:01.341Z",
+      "since": "2026-10-25T09:04:56.293Z",
+      "note": "",
       "totalCount": 3,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 201,
-          "minutesTotal": 884,
-          "lastPlayed": "2026-10-25T08:21:36.000Z"
+          "minutes2weeks": 253,
+          "minutesTotal": 952,
+          "lastPlayed": "2026-10-25T09:29:27.000Z"
         },
         {
           "appid": "365450",
@@ -41,7 +41,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 0,
+      "playItems": 1,
       "achievementItems": 0,
       "achievements": [
         {
@@ -74,8 +74,8 @@
       ]
     },
     "retroachievements": {
-      "checkedAt": "2026-10-25T09:04:52.753Z",
-      "since": "2026-10-25T08:59:08.347Z",
+      "checkedAt": "2026-10-25T09:44:59.975Z",
+      "since": "2026-10-25T09:04:53.719Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -101,6 +101,10 @@
       "items": {
         "achievements": 17,
         "plays": 4
+      },
+      "gameArt": {
+        "games": 4,
+        "withArt": 0
       }
     }
   }
