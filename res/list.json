@@ -3,19 +3,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 44 次提交、1 个新仓库",
-    "summary": "44 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「fix(ra): 过滤 Events 活动游戏的镜像成就」",
+    "title": "Toad114514/i-am-active · 45 次提交、1 个新仓库",
+    "summary": "45 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「feat(data): 一次性导入西瓜视频 30 条与抖音账号存档（归档类）」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T18:56:35Z",
+    "timestamp": "2026-10-25T19:23:35Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 45,
+      "count": 46,
       "changes": [
         {
-          "group": "10-25 23:25 → 10-26 02:56 · 12 条"
+          "group": "10-25 23:25 → 10-26 03:23 · 13 条"
+        },
+        {
+          "text": "feat(data): 一次性导入西瓜视频 30 条与抖音账号存档（归档类）",
+          "action": "提交",
+          "component": "2e49247",
+          "url": "https://github.com/Toad114514/i-am-active/commit/2e4924741813f8cfa1759d242f5d8793809fc57c",
+          "time": "2026-10-25T19:23:35Z"
         },
         {
           "text": "fix(ra): 过滤 Events 活动游戏的镜像成就",
@@ -340,11 +347,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T18:56:35Z",
+      "windowEnd": "2026-10-25T19:23:35Z",
       "sessions": 3,
       "actions": {
         "新建仓库": 1,
-        "提交": 44
+        "提交": 45
       }
     }
   },
