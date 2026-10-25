@@ -5574,19 +5574,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 41 次提交、1 个新仓库",
-    "summary": "41 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「fix(ra/ui/site): 占位图回退、背景统一调亮、分类页汇总卡每页条数」",
+    "title": "Toad114514/i-am-active · 42 次提交、1 个新仓库",
+    "summary": "42 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「fix(ui/ra): 遮罩改左亮右暗统一方向、RA 图源顺序改为 boxart」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T18:13:52Z",
+    "timestamp": "2026-10-25T18:27:35Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 42,
+      "count": 43,
       "changes": [
         {
-          "group": "10-25 23:25 → 10-26 02:13 · 9 条"
+          "group": "10-25 23:25 → 10-26 02:27 · 10 条"
+        },
+        {
+          "text": "fix(ui/ra): 遮罩改左亮右暗统一方向、RA 图源顺序改为 boxart→title→ingame",
+          "action": "提交",
+          "component": "278ed8a",
+          "url": "https://github.com/Toad114514/i-am-active/commit/278ed8a802b1281c0adc2148acd7df3ab7a08654",
+          "time": "2026-10-25T18:27:35Z"
         },
         {
           "text": "fix(ra/ui/site): 占位图回退、背景统一调亮、分类页汇总卡每页条数对齐",
@@ -5890,11 +5897,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T18:13:52Z",
+      "windowEnd": "2026-10-25T18:27:35Z",
       "sessions": 3,
       "actions": {
         "新建仓库": 1,
-        "提交": 41
+        "提交": 42
       }
     }
   },
@@ -8045,7 +8052,8 @@
       "achievementsTotal": 298,
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8071,7 +8079,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/474719.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8097,7 +8106,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/469314.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8118,7 +8128,8 @@
       "achievementsTotal": 7,
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/115453.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8144,7 +8155,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/115453.png",
       "badge": "https://media.retroachievements.org/Badge/605293.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8164,8 +8176,9 @@
       "achievementsUnlocked": 12,
       "achievementsTotal": 246,
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/103749.png",
-      "backdropSource": "ingame"
+      "backdrop": "https://media.retroachievements.org/Images/103748.png",
+      "backdropSource": "title",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8189,9 +8202,10 @@
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "backdrop": "https://media.retroachievements.org/Images/103748.png",
       "badge": "https://media.retroachievements.org/Badge/659153.png",
-      "backdropSource": "ingame"
+      "backdropSource": "title",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8215,9 +8229,10 @@
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "backdrop": "https://media.retroachievements.org/Images/103748.png",
       "badge": "https://media.retroachievements.org/Badge/659151.png",
-      "backdropSource": "ingame"
+      "backdropSource": "title",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8241,9 +8256,10 @@
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "backdrop": "https://media.retroachievements.org/Images/103748.png",
       "badge": "https://media.retroachievements.org/Badge/659150.png",
-      "backdropSource": "ingame"
+      "backdropSource": "title",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8267,9 +8283,10 @@
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
       "user": "Toad114514",
-      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "backdrop": "https://media.retroachievements.org/Images/103748.png",
       "badge": "https://media.retroachievements.org/Badge/659152.png",
-      "backdropSource": "ingame"
+      "backdropSource": "title",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8295,7 +8312,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/115453.png",
       "badge": "https://media.retroachievements.org/Badge/605295.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8321,7 +8339,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/455923.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8347,7 +8366,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/469768.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8373,7 +8393,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/474723.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8399,7 +8420,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/467024.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8425,7 +8447,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/466902.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8451,7 +8474,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/456136.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8477,7 +8501,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/460297.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8503,7 +8528,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/466904.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8529,7 +8555,8 @@
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/068468.png",
       "badge": "https://media.retroachievements.org/Badge/467022.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
@@ -8550,7 +8577,8 @@
       "achievementsTotal": 17,
       "user": "Toad114514",
       "backdrop": "https://media.retroachievements.org/Images/070366.png",
-      "backdropSource": "boxart"
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
     }
   },
   {
