@@ -59,7 +59,9 @@ export const PLATFORMS = {
     id: 'retroachievements',
     name: 'RetroAchievements',
     short: 'RA',
-    color: '#8b0000',
+    // 官方是深红（#8b0000），但那个色在深色底上对比度只有 1.9，平台名几乎看不见。
+    // #c73e3e 在深/浅两套主题下都够亮，看着仍然是 RA 的暗红。
+    color: '#c73e3e',
     group: '游戏',
     homepage: 'https://retroachievements.org/user/toad114514',
     icon: icon(

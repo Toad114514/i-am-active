@@ -230,7 +230,10 @@ async function main() {
   }
 
   // RetroAchievements：把新成就登记进 res/ralist.json
-  const raFresh = fresh.filter((item) => item.platform === 'retroachievements');
+  // 游玩记录不进：它的 id 已经自带 LastPlayed，重复抓到也只会命中同一条，不需要再留档。
+  const raFresh = fresh.filter(
+    (item) => item.platform === 'retroachievements' && item.meta?.kind !== 'play-session',
+  );
   if (raFresh.length > 0 && !dryRun) {
     const ralist = await readRalist();
     const knownRa = new Set(ralist.map((entry) => entry.id));
