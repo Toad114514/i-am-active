@@ -10,7 +10,8 @@
     "update": "node scripts/collect.mjs && node scripts/build.mjs",
     "serve": "node scripts/serve.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
-    "steam:doctor": "node scripts/steam-doctor.mjs"
+    "steam:doctor": "node scripts/steam-doctor.mjs",
+    "ra:doctor": "node scripts/ra-doctor.mjs"
   },
   "engines": {
     "node": ">=20"

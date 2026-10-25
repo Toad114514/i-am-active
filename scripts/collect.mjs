@@ -30,7 +30,7 @@ import { config, maskSecrets } from './lib/config.mjs';
 import { fetchBilibili } from './sources/bilibili.mjs';
 import { fetchYouTube } from './sources/youtube.mjs';
 import { fetchArchive } from './sources/archive.mjs';
-import { fetchRetroAchievements } from './sources/retroachievements.mjs';
+import { fetchRetroAchievements, lastRaDiagnostics } from './sources/retroachievements.mjs';
 import { fetchWeblate } from './sources/weblate.mjs';
 import { fetchGitHub } from './sources/github.mjs';
 import { fetchGitee } from './sources/gitee.mjs';
@@ -48,7 +48,12 @@ const SOURCES = [
   { id: 'gitee', label: 'Gitee', run: fetchGitee },
   { id: 'archive', label: '互联网档案馆', run: fetchArchive },
   { id: 'weblate', label: 'Weblate', run: fetchWeblate },
-  { id: 'retroachievements', label: 'RetroAchievements', run: fetchRetroAchievements },
+  {
+    id: 'retroachievements',
+    label: 'RetroAchievements',
+    run: fetchRetroAchievements,
+    diagnostics: lastRaDiagnostics,
+  },
   { id: 'steam', label: 'Steam', run: fetchSteam, diagnostics: lastSteamDiagnostics },
 ];
 

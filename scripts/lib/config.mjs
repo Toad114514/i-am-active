@@ -91,9 +91,15 @@ const DEFAULTS = {
       webApiKey: '',
       /** 首轮回溯多少天；之后按上次运行时间收窄 m 参数 */
       lookbackDays: 60,
+      /** 每轮至少回看多少分钟（默认 3 天）：上次运行失败时也能把漏掉的补回来 */
+      minWindowMinutes: 4320,
       maxItems: 60,
       /** 先用 GetUserProfile 校验用户名与 key */
       profileCheck: true,
+      /** 记录「最近玩过的游戏」，没解锁成就也能看见 */
+      playSessions: true,
+      /** 单轮最多看几款最近玩过的游戏 */
+      maxGames: 10,
     },
     steam: {
       enabled: false,

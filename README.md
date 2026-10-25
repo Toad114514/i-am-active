@@ -44,6 +44,38 @@ RA 的 API 只能给出「最近一段时间解锁的成就」，看不出哪条
 抓取窗口由 `lookbackDays` 控制（首轮默认回溯 60 天），之后每次运行会用
 `res/state.json` 里记录的上次时间自动收窄查询范围，避免重复拉一大批旧数据。
 
+但窗口有个下限 `minWindowMinutes`（默认 4320 = 3 天）：`lastRun` 在抓取失败时也会往前走，
+如果某天 key 没配、被 401 打回来，窗口会一路缩到只剩两小时，那几天解锁的成就就永远补不回来。
+每轮多回看几天只多花一次请求，id 稳定，去重不会产生重复条目。
+
+### RetroAchievements 的游玩记录
+
+`API_GetUserRecentAchievements` 只回「解锁了什么」。一场**没解锁成就**的游戏
+（或者模拟器没开成就检测、用了别人的存档、ROM 版本没被追踪）在列表里完全看不见，
+表现就是「昨天明明玩了 B3313，站点上却什么都没有」。所以还会顺带调
+`API_GetUserRecentlyPlayedGames` 补一条**游玩记录**：
+
+```json
+{ "id": "retroachievements:play:12345:2026-10-24 09:30:00", "title": "玩了《B3313》" }
+```
+
+id 里带 `LastPlayed`，同一场游戏重复抓取只会命中同一条；换个时间再玩是新的一条。
+旋钮：`retroachievements.playSessions`（关掉就只记成就）、`maxGames`（单轮最多看几款，默认 10）。
+
+### RetroAchievements 排障
+
+抓不到东西时 RA 不会报错，只会回空数组，所以每轮的现场信息会写进
+`res/state.json` 的 `diagnostics.retroachievements`：key 有没有配（只记打码后的提示和长度）、
+用户名校验过不过、窗口多少分钟、两个接口各自的原始条数 / 采用条数 / 错误信息。
+看这一段就能分清是「没配 key」「key 失效」还是「窗口里真的没活动」。
+
+本地自检（只读，不写 `res/`，也不打印 key）：
+
+```bash
+RA_API_KEY=xxxx node scripts/ra-doctor.mjs                 # 看最近 7 天
+RA_API_KEY=xxxx node scripts/ra-doctor.mjs --minutes 43200  # 往前看 30 天
+```
+
 ### Steam 的抓取范围
 
 Steam 没有「我最近解锁了什么成就」这种接口，只能按 AppID 逐个查，所以流程是：
