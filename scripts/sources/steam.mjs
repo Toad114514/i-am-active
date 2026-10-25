@@ -270,21 +270,34 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
     items: [],
     stats: { total: 0, unlocked: 0, inWindow: 0, ok: false, error: null, ...extra },
   });
-  const params = new URLSearchParams({
-    steamid: steamId64,
-    appid: String(appid),
-    key: apiKey,
-    l: 'schinese',
-  });
+  const base = { steamid: steamId64, appid: String(appid), key: apiKey };
+  // 线上实测：带 l=schinese 时这个接口会对部分账号直接回 403（同一个 key
+  // 调 GetRecentlyPlayedGames / GetOwnedGames 都正常），去掉语言参数重试一次。
+  const attempts = [
+    { label: 'l=schinese', params: new URLSearchParams({ ...base, l: 'schinese' }) },
+    { label: '无 l', params: new URLSearchParams(base) },
+  ];
 
-  let data;
-  try {
-    data = await getJson(`${STEAM_API}/ISteamUserStats/GetPlayerAchievements/v1/?${params}`, {
-      timeoutMs: 20000,
-      retries: 1,
-    });
-  } catch (error) {
-    const reason = error instanceof HttpError ? `HTTP ${error.status ?? '?'}` : error.message;
+  let data = null;
+  const failures = [];
+  for (const attempt of attempts) {
+    try {
+      data = await getJson(`${STEAM_API}/ISteamUserStats/GetPlayerAchievements/v1/?${attempt.params}`, {
+        timeoutMs: 20000,
+        retries: 1,
+      });
+      break;
+    } catch (error) {
+      // 把响应体一起带上：Steam 的 403 会说明到底是「无权访问」还是「key 不对」
+      const reason =
+        error instanceof HttpError
+          ? `HTTP ${error.status ?? '?'}${error.body ? `（${error.body.replace(/\s+/g, ' ').slice(0, 120)}）` : ''}`
+          : error.message;
+      failures.push(`${attempt.label} → ${reason}`);
+    }
+  }
+  if (!data) {
+    const reason = failures.join('；');
     console.warn(`[steam] appid=${appid} 获取成就失败：${reason}`);
     return empty({ error: reason });
   }
