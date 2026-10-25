@@ -1,5 +1,754 @@
 [
   {
+    "id": "retroachievements:580199:2026-08-01 18:16:00",
+    "title": "Your Standard Friday Night",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-01T18:16:00Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580200:2026-08-01 18:41:07",
+    "title": "Bit Misleading",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-01T18:41:07Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580201:2026-08-01 18:55:00",
+    "title": "Justice for All",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-01T18:55:00Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580202:2026-08-01 19:13:10",
+    "title": "Work Smarter, Work Harder",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-01T19:13:10Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580203:2026-08-01 19:37:08",
+    "title": "Not-so Sonic Colors",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-01T19:37:08Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580205:2026-08-01 20:12:20",
+    "title": "Speed Demon XI",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-01T20:12:20Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580204:2026-08-01 20:59:13",
+    "title": "Nebula",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-01T20:59:13Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580206:2026-08-02 20:44:09",
+    "title": "Touch the Sky",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-02T20:44:09Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580207:2026-08-02 21:12:23",
+    "title": "Does Whatever a Spider Can",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-02T21:12:23Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580208:2026-08-02 21:28:25",
+    "title": "Black and White",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-02T21:28:25Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580209:2026-08-02 21:49:46",
+    "title": "Mirror's Edge",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-02T21:49:46Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580903:2026-08-03 20:06:37",
+    "title": "Sign Hunter XXIII",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-03T20:06:37Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580210:2026-08-03 20:12:02",
+    "title": "Oxidized",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-03T20:12:02Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580212:2026-08-03 20:20:37",
+    "title": "Speed Demon XII",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-03T20:20:37Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580211:2026-08-03 21:20:13",
+    "title": "Ardainian's Finest",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-03T21:20:13Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580220:2026-08-09 15:55:41",
+    "title": "Simple Spire",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-09T15:55:41Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580222:2026-08-10 15:58:23",
+    "title": "Fine Climbin'",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-10T15:58:23Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580221:2026-08-10 16:22:03",
+    "title": "R, G, and B",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-10T16:22:03Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580213:2026-08-10 16:30:35",
+    "title": "Touch Grass",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-10T16:30:35Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580214:2026-08-10 17:02:13",
+    "title": "A Love Hot Enough to Burn",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-10T17:02:13Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580215:2026-08-10 18:13:27",
+    "title": "Home Depot",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-10T18:13:27Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580216:2026-08-10 18:31:26",
+    "title": "Just Like Jack",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-10T18:31:26Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580217:2026-08-10 19:02:29",
+    "title": "One Man's Journey",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-10T19:02:29Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580219:2026-08-11 16:47:09",
+    "title": "Speed Demon XIII",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-11T16:47:09Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580218:2026-08-11 17:32:41",
+    "title": "Scatter Like the Dew",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-11T17:32:41Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580223:2026-08-11 17:44:15",
+    "title": "To the Clouds",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-11T17:44:15Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580226:2026-08-11 19:03:24",
+    "title": "Speed Demon XIV",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-11T19:03:24Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580225:2026-08-11 20:05:36",
+    "title": "Picasso's Rose Period",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-11T20:05:36Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580192:2026-08-12 10:17:48",
+    "title": "To the Open Yonder",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-12T10:17:48Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580193:2026-08-12 10:49:07",
+    "title": "Erosion",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-12T10:49:07Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580194:2026-08-12 14:52:06",
+    "title": "Fantaisie-Impromptu",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-12T14:52:06Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580195:2026-08-12 15:07:55",
+    "title": "Hooked on the Edge",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-12T15:07:55Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580196:2026-08-12 15:21:02",
+    "title": "Thread the Narrow Line",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-12T15:21:02Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580197:2026-08-12 17:49:04",
+    "title": "Chamber of Horrors",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-12T17:49:04Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580907:2026-08-12 18:30:25",
+    "title": "Sign Hunter XXI",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-12T18:30:25Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580198:2026-08-12 18:31:34",
+    "title": "Fantasy Kaleidoscope",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-12T18:31:34Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580073:2026-08-22 10:37:03",
+    "title": "Phasin'",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-08-22T10:37:03Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:84480:2026-09-06 08:51:11",
+    "title": "Princess is saved!",
+    "gameTitle": "~Hack~ Super Mario 64: Last Impact",
+    "unlockedAt": "2026-09-06T08:51:11Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:63296:2026-09-06 09:03:33",
+    "title": "My first Star",
+    "gameTitle": "~Hack~ Super Mario 64: Last Impact",
+    "unlockedAt": "2026-09-06T09:03:33Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:342871:2026-09-22 18:11:37",
+    "title": "Detour Through the Castle",
+    "gameTitle": "~Hack~ Only Up! 64",
+    "unlockedAt": "2026-09-22T18:11:37Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:533383:2026-09-22 18:14:24",
+    "title": "Yep, That's All of 'Em",
+    "gameTitle": "~Hack~ Mario Breaks EVERY BONE IN HIS BODY",
+    "unlockedAt": "2026-09-22T18:14:24Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:491966:2026-09-24 12:25:46",
+    "title": "Sharp Cutter",
+    "gameTitle": "~Hack~ Mario in the Multiverse",
+    "unlockedAt": "2026-09-24T12:25:46Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:491972:2026-09-24 12:49:17",
+    "title": "You're a Squid Now",
+    "gameTitle": "~Hack~ Mario in the Multiverse",
+    "unlockedAt": "2026-09-24T12:49:17Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580227:2026-10-03 08:40:35",
+    "title": "Moonlight's Embrace",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-03T08:40:35Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580084:2026-10-03 09:16:01",
+    "title": "Mario Flight Simulator",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-03T09:16:01Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580116:2026-10-06 14:42:49",
+    "title": "Brace the Plunge",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-06T14:42:49Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580115:2026-10-06 15:00:23",
+    "title": "See No Evil",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-06T15:00:23Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580117:2026-10-06 15:14:17",
+    "title": "Cove of Wonders",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-06T15:14:17Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580118:2026-10-06 15:23:11",
+    "title": "An Obstacle Course for Hamsters",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-06T15:23:11Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580228:2026-10-09 19:30:14",
+    "title": "Azure Blue Universe",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-09T19:30:14Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580229:2026-10-09 19:54:41",
+    "title": "Surfin' on a Sine Wave",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-09T19:54:41Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580230:2026-10-09 20:25:22",
+    "title": "Keep on Pressing On",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-09T20:25:22Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580233:2026-10-10 15:17:06",
+    "title": "Speed Demon XV",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T15:17:06Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580231:2026-10-10 15:44:34",
+    "title": "Setting Sail from Regret",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T15:44:34Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580234:2026-10-10 16:04:51",
+    "title": "Don't Get Flipped",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T16:04:51Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580235:2026-10-10 16:34:43",
+    "title": "Third-Degree Burns",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T16:34:43Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580236:2026-10-10 16:53:29",
+    "title": "Bounce Into Danger",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T16:53:29Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580237:2026-10-10 18:11:45",
+    "title": "The Enemy of My Enemy",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T18:11:45Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580238:2026-10-10 18:36:24",
+    "title": "Down the Middle",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T18:36:24Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580239:2026-10-10 18:52:50",
+    "title": "Turnabout Big Top",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T18:52:50Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580240:2026-10-10 19:40:57",
+    "title": "Nothing Funny About This",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T19:40:57Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580241:2026-10-10 20:00:35",
+    "title": "Test of Misery",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T20:00:35Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580119:2026-10-10 20:14:03",
+    "title": "Scale the Spire",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T20:14:03Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580121:2026-10-10 20:21:35",
+    "title": "Speed Demon V",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T20:21:35Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580120:2026-10-10 21:06:03",
+    "title": "Celeste",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-10T21:06:03Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580242:2026-10-11 08:49:10",
+    "title": "Absolute Zero",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-11T08:49:10Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580243:2026-10-11 09:05:14",
+    "title": "Planck",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-11T09:05:14Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:579701:2026-10-11 09:10:56",
+    "title": "You Are A Super Teto!!!",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-11T09:10:56Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:533378:2026-10-16 15:07:29",
+    "title": "How Is This Possible?",
+    "gameTitle": "~Hack~ Mario Breaks EVERY BONE IN HIS BODY",
+    "unlockedAt": "2026-10-16T15:07:29Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:533379:2026-10-16 15:10:31",
+    "title": "Game of Skill",
+    "gameTitle": "~Hack~ Mario Breaks EVERY BONE IN HIS BODY",
+    "unlockedAt": "2026-10-16T15:10:31Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:533381:2026-10-16 15:11:59",
+    "title": "Scrounging for Change",
+    "gameTitle": "~Hack~ Mario Breaks EVERY BONE IN HIS BODY",
+    "unlockedAt": "2026-10-16T15:11:59Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:521592:2026-10-16 15:12:36",
+    "title": "As Good as New",
+    "gameTitle": "RAD 2025",
+    "unlockedAt": "2026-10-16T15:12:36Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:533380:2026-10-16 15:12:36",
+    "title": "As Good as New",
+    "gameTitle": "~Hack~ Mario Breaks EVERY BONE IN HIS BODY",
+    "unlockedAt": "2026-10-16T15:12:36Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580246:2026-10-16 15:48:37",
+    "title": "Home Invasion",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T15:48:37Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:291865:2026-10-16 16:38:24",
+    "title": "Bowser Hallway",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-16T16:38:24Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:412022:2026-10-16 16:42:52",
+    "title": "Thwomp's Fortress",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-16T16:42:52Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:406764:2026-10-16 17:00:00",
+    "title": "Fire Bubble B-Roll",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-16T17:00:00Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:406768:2026-10-16 17:03:27",
+    "title": "Water Land",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-16T17:03:27Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:291857:2026-10-16 17:07:41",
+    "title": "A New Adventure",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-16T17:07:41Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580244:2026-10-16 17:47:52",
+    "title": "El Thor",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T17:47:52Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580245:2026-10-16 18:10:01",
+    "title": "Gunpowder and Volts",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T18:10:01Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580247:2026-10-16 18:31:00",
+    "title": "One Man Front",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T18:31:00Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580189:2026-10-16 20:29:50",
+    "title": "Hometown Reds III",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T20:29:50Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580164:2026-10-16 20:42:06",
+    "title": "Speed Demon VIII",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T20:42:06Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580080:2026-10-16 20:48:08",
+    "title": "Blooming Blossoms",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T20:48:08Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580082:2026-10-16 20:54:30",
+    "title": "Xaldin Was Here",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T20:54:30Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580083:2026-10-16 21:01:55",
+    "title": "Frame Perfection",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T21:01:55Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580070:2026-10-16 21:12:18",
+    "title": "Red, Green, and Full of Metal Fillings",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T21:12:18Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580883:2026-10-16 21:12:59",
+    "title": "Sign Hunter II",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T21:12:59Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580077:2026-10-16 21:22:57",
+    "title": "Red, Blue, and the Sand That Divides Us",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-16T21:22:57Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:417738:2026-10-17 08:42:52",
+    "title": "Shoshinkai Snow Slider",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T08:42:52Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:403174:2026-10-17 08:47:34",
+    "title": "In a Hurry",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T08:47:34Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:291871:2026-10-17 08:50:51",
+    "title": "Unagi's Trap",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T08:50:51Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:403073:2026-10-17 08:52:30",
+    "title": "Infinite Suffering",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T08:52:30Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:418036:2026-10-17 09:00:42",
+    "title": "Cool, Cool Slide",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:00:42Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:412033:2026-10-17 09:02:53",
+    "title": "Maze in the Basement",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:02:53Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:418035:2026-10-17 09:07:23",
+    "title": "Spiky Sand Land",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:07:23Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:403173:2026-10-17 09:10:43",
+    "title": "Scuttlebug Skirmish",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:10:43Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:418981:2026-10-17 09:16:52",
+    "title": "Reminiscent Tower",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:16:52Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:412110:2026-10-17 09:24:35",
+    "title": "Polygonal Chaos",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:24:35Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:291877:2026-10-17 09:27:40",
+    "title": "Toadstool's Groove",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:27:40Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:291858:2026-10-17 09:37:06",
+    "title": "Exclusive to the Show",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:37:06Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:417788:2026-10-17 09:41:28",
+    "title": "Melting Magma Mound",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:41:28Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:406765:2026-10-17 09:46:22",
+    "title": "Jolly Roger Lagoon",
+    "gameTitle": "~Hack~ B3313",
+    "unlockedAt": "2026-10-17T09:46:22Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580153:2026-10-17 10:27:08",
+    "title": "Exit Stage Right",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-17T10:27:08Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580157:2026-10-17 10:36:07",
+    "title": "Speed Demon IX",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-17T10:36:07Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
+    "id": "retroachievements:580156:2026-10-17 11:15:59",
+    "title": "Fahrenheit 451",
+    "gameTitle": "~Hack~ Transcending the Rainbow",
+    "unlockedAt": "2026-10-17T11:15:59Z",
+    "recordedAt": "2026-10-25T18:48:33.163Z"
+  },
+  {
     "id": "retroachievements:412107:2026-10-23 16:03:29",
     "title": "Beta Snowman's Land",
     "gameTitle": "~Hack~ B3313",

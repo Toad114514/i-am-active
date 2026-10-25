@@ -1,20 +1,21 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T18:29:54.422Z",
-    "bilibili": "2026-10-25T18:28:51.954Z",
-    "youtube": "2026-10-25T18:28:52.110Z",
-    "ottohub": "2026-10-25T18:28:53.175Z",
-    "kuaishou": "2026-10-25T18:29:14.859Z",
-    "github": "2026-10-25T18:29:25.965Z",
-    "gitee": "2026-10-25T18:29:48.867Z",
-    "archive": "2026-10-25T18:29:49.969Z",
-    "steam": "2026-10-25T18:30:20.063Z"
+    "weblate": "2026-10-25T18:48:19.981Z",
+    "bilibili": "2026-10-25T18:47:37.330Z",
+    "youtube": "2026-10-25T18:47:37.422Z",
+    "ottohub": "2026-10-25T18:47:38.554Z",
+    "kuaishou": "2026-10-25T18:47:41.907Z",
+    "github": "2026-10-25T18:47:52.910Z",
+    "gitee": "2026-10-25T18:48:13.684Z",
+    "archive": "2026-10-25T18:48:14.961Z",
+    "steam": "2026-10-25T18:48:33.162Z",
+    "retroachievements": "2026-10-25T18:48:30.390Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T18:29:55.794Z",
-      "since": "2026-10-25T18:16:12.297Z",
+      "checkedAt": "2026-10-25T18:48:30.390Z",
+      "since": "2026-10-25T18:30:20.063Z",
       "note": "窗口内没有新动作：这些游戏的 19 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
@@ -73,9 +74,9 @@
       ]
     },
     "retroachievements": {
-      "checkedAt": "2026-10-25T18:29:54.423Z",
-      "since": "2026-10-25T18:16:09.286Z",
-      "windowMinutes": 4320,
+      "checkedAt": "2026-10-25T18:48:19.981Z",
+      "since": null,
+      "windowMinutes": 132480,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
       "note": "",
@@ -87,29 +88,31 @@
       },
       "recentAchievements": {
         "ok": true,
-        "rawCount": 17,
-        "used": 17,
+        "rawCount": 124,
+        "used": 124,
         "error": null
       },
       "recentlyPlayed": {
         "ok": true,
-        "rawCount": 10,
-        "used": 4,
+        "rawCount": 30,
+        "used": 23,
         "error": null
       },
       "items": {
-        "achievements": 17,
-        "plays": 4
+        "achievements": 124,
+        "plays": 23
       },
       "gameArt": {
-        "games": 4,
-        "withArt": 21,
+        "games": 24,
+        "withArt": 146,
         "sources": {
-          "title": 5,
+          "title": 87,
           "ingame": 0,
-          "boxart": 16
+          "boxart": 59
         },
-        "debug": []
+        "debug": [
+          "game 33627: 三张图全是占位图或为空（box=https://media.retroachievements.org/Images/000002.png ingame=https://media.retroachievements.org/Images/000002.png title=https://media.retroachievements.org/Images/000002.png）"
+        ]
       }
     },
     "gitee": {
@@ -123,12 +126,12 @@
     "github": {
       "lookbackDays": 0,
       "repos": 30,
-      "commits": 629,
+      "commits": 630,
       "events": 0,
       "truncated": 0,
       "skipped": 1,
       "digests": 27,
-      "actions": 650
+      "actions": 651
     }
   }
 }
