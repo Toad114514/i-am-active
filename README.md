@@ -261,9 +261,16 @@ OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<
 
 **西瓜视频 / 抖音是「存档」，不是抓取源**：两个账号都已经不再更新（西瓜简介写着
 「西瓜永久停更」，抖音账号已丢失），网页端也基本下线。所以它们没有 `scripts/sources/`
-里的抓取器，条目是 2026-10 一次性导入的：西瓜 30 条视频（2021-08 ~ 2024-08，封面
+里的抓取器，条目是 2026-10 一次性导入的：西瓜全量 76 条视频（2021-04 ~ 2024-08，封面
 同 OTTOhub 一样落地到 `res/media/ixigua/`），抖音只有一张账号存档卡（作品列表接口
 已要求签名，只能留档账号本身，头像存 `res/media/douyin/avatar.jpg`）。
+
+> 西瓜的坑：`i.snssdk.com/video/app/user/home/v1/` 的 `total_number` 写死 30、
+> `has_more=false`，offset/max_behot_time 全无效——第一版只拿到最新 30 条。
+> 真正的全量接口是 `m.ixigua.com/video/app/user/videolist_tab/v3/`（参数
+> `to_user_id` + `orderby=publishtime` + `tab=1` + `count`/`offset`，`count` 可以
+> 开到 100 一次拿全 76 条；`has_more` 恒为 true 不可信，判终止要看返回数组是否为空）。
+> 补录脚本见 `.tmp/init-ixigua-backfill.mjs`。
 平台展示信息仍登记在 `platforms.mjs`，只是 `PLATFORM_KIND` 里归「归档」。
 
 三个维度可以叠加，URL 用 `?year=2026&kind=code&platform=github` 这样的查询参数保存状态；
