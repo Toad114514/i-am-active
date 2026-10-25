@@ -11,3 +11,8 @@ dist/
 # 本地密钥（密钥请用环境变量注入，见 README）
 .env
 .env.*
+
+# 编辑器临时文件
+*.kate-swp
+*.swp
+*~

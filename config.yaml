@@ -106,6 +106,13 @@ platforms:
     enabled: false
     # https://steamcommunity.com/profiles/<steamId64>
     steamId64: ${STEAM_ID64}
+    # https://steamcommunity.com/dev/apikey
     apiKey: ${STEAM_API_KEY}
-    # 要抓成就的游戏 AppID 列表
-    appIds: [753]
+    # 自动抓「最近两周玩过的游戏」再逐个查成就，不用手工维护 AppID
+    recentGames: true
+    # 单轮最多查几款游戏（按两周游玩时长从长到短取前 N）
+    maxGames: 10
+    # 单轮最多写入多少条成就
+    maxItems: 60
+    # 额外固定关注的 AppID，想长期跟踪某款老游戏时填（如 [730, 570]）
+    extraAppIds: []

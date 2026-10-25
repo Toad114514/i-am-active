@@ -43,6 +43,23 @@ RA 的 API 只能给出「最近一段时间解锁的成就」，看不出哪条
 抓取窗口由 `lookbackDays` 控制（首轮默认回溯 60 天），之后每次运行会用
 `res/state.json` 里记录的上次时间自动收窄查询范围，避免重复拉一大批旧数据。
 
+### Steam 的抓取范围
+
+Steam 没有「我最近解锁了什么成就」这种接口，只能按 AppID 逐个查，所以流程是：
+
+1. `IPlayerService/GetRecentlyPlayedGames` 拿到**最近两周玩过的游戏**（按两周时长排序，
+   接口本身就固定两周，不能自定义区间）；
+2. 对这些 AppID 逐个调 `ISteamUserStats/GetPlayerAchievements`；
+3. 只把解锁时间落在「上次抓取时间 → 现在」之间的成就写进列表，首轮回退 14 天。
+   这样第一次跑不会把某款游戏攒了几年的成就一次性灌进来。
+
+相关的三个旋钮：`steam.recentGames`（关掉就只查 `extraAppIds`）、
+`steam.maxGames`（单轮最多查几款，默认 10）、`steam.maxItems`（单轮最多写几条，默认 60）。
+`extraAppIds` 用来长期跟踪某款想持续关注的老游戏。
+
+前提是个人资料「游戏详情」设为公开，否则 `GetRecentlyPlayedGames` 只会返回空的
+`{"response":{}}`——脚本会打一条提示，看起来像「没数据」而不是报错。
+
 ## 自动更新与部署
 
 `.github/workflows/update.yml` 每 2 小时跑一次（`0 */2 * * *`），也可以在

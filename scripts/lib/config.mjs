@@ -99,7 +99,10 @@ const DEFAULTS = {
       enabled: false,
       steamId64: '',
       apiKey: '',
-      appIds: [753],
+      recentGames: true,
+      maxGames: 10,
+      maxItems: 60,
+      extraAppIds: [],
     },
   },
 };

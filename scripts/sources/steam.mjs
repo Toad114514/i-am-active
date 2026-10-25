@@ -3,74 +3,199 @@
  *
  * 关键点（实测）：
  *  - 正确的接口名是 `ISteamUserStats/GetPlayerAchievements/v1/`（不是 ISteamUser），
- *    `GetOwnedGames` 属于 `IPlayerService`。
+ *    「最近玩过的游戏」属于 `IPlayerService/GetRecentlyPlayedGames/v1/`。
  *  - 必须提供 apiKey 与 steamId64，否则 400/403。
+ *  - GetRecentlyPlayedGames 固定只看最近两周，且**按两周游玩时长排序**，不是按时间倒序；
+ *    它还能顺带给出这段时间玩过的 AppID，所以不需要手工维护 appIds。
+ *  - 个人资料「游戏详情」不是公开时，GetRecentlyPlayedGames 返回 `{"response":{}}`，
+ *    看起来像「没数据」——这里单独打一条提示，免得误判成代码坏了。
  *  - 未配置密钥时安静跳过（config.yaml 里默认 enabled: false）。
+ *
+ * 写入窗口：只把 `unlockedtime` 落在 [上次抓取时间, 现在] 的成就写进列表，
+ * 首轮退回最近 14 天。否则第一次跑就会把「最近两周玩过的游戏」的历史成就一次性灌进来。
  */
-import { getJson } from '../lib/http.mjs';
+import { getJson, HttpError } from '../lib/http.mjs';
 import { platform } from '../lib/config.mjs';
 
 const STEAM_API = 'https://api.steampowered.com';
+const RECENT_WINDOW_DAYS = 14;
+const DAY_MS = 24 * 60 * 60 * 1000;
 
-/** 从配置解析 SteamID64 与要关注的 AppID 列表。 */
+/** AppID 只接受纯数字，避免把占位值当游戏去查。 */
+function toAppId(value) {
+  const text = String(value ?? '').trim();
+  return /^\d+$/.test(text) ? text : null;
+}
+
+/** 从配置解析密钥、SteamID64、窗口与上限。 */
 function steamConfig() {
   const config = platform('steam');
-  const appIds = (Array.isArray(config.appIds) ? config.appIds : [config.appIds])
-    .map((id) => String(id ?? '').trim())
+  const positiveInt = (value, fallback) => {
+    const num = Number(value);
+    return Number.isFinite(num) && num > 0 ? Math.floor(num) : fallback;
+  };
+  const extras = (Array.isArray(config.extraAppIds) ? config.extraAppIds : [config.extraAppIds])
+    .map(toAppId)
     .filter(Boolean);
   return {
     apiKey: String(config.apiKey ?? '').trim(),
     steamId64: String(config.steamId64 ?? '').trim(),
-    appIds,
+    recentGames: config.recentGames !== false,
+    maxGames: positiveInt(config.maxGames, 10),
+    maxItems: positiveInt(config.maxItems, 60),
+    extraAppIds: extras,
   };
 }
 
+/** 抓取窗口起点：优先用上次抓取时间，首轮回退到 14 天前。 */
+function windowStart(context = {}) {
+  const sinceMs = context.since ? new Date(context.since).getTime() : Number.NaN;
+  if (Number.isFinite(sinceMs)) return sinceMs;
+  return Date.now() - RECENT_WINDOW_DAYS * DAY_MS;
+}
+
 /**
+ * 最近两周玩过的游戏（按两周游玩时长从长到短）。
+ * @returns {Promise<Array<{appid: string, name: string|null, minutes2weeks: number}>>}
+ */
+async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
+  const params = new URLSearchParams({ key: apiKey, steamid: steamId64, format: 'json' });
+  let data;
+  try {
+    data = await getJson(`${STEAM_API}/IPlayerService/GetRecentlyPlayedGames/v1/?${params}`, {
+      timeoutMs: 20000,
+      retries: 1,
+    });
+  } catch (error) {
+    const reason = error instanceof HttpError ? `HTTP ${error.status ?? '?'}` : error.message;
+    console.warn(`[steam] 查询最近玩过的游戏失败：${reason}`);
+    return [];
+  }
+
+  const games = Array.isArray(data?.response?.games) ? data.response.games : [];
+  if (games.length === 0) {
+    console.warn(
+      '[steam] 最近两周没有可读的游戏记录。' +
+        '多半是「个人资料 → 隐私设置 → 游戏详情」不是公开，或者这两周真的没玩。',
+    );
+    return [];
+  }
+
+  return games
+    .map((game) => ({
+      appid: toAppId(game.appid),
+      name: game.name ?? null,
+      minutes2weeks: Number(game.playtime_2weeks) || 0,
+      minutesTotal: Number(game.playtime_forever) || 0,
+    }))
+    .filter((game) => game.appid)
+    .slice(0, maxGames);
+}
+
+/**
+ * 单款游戏的成就解锁记录，只保留窗口内的。
  * @returns {Promise<Array<object>>}
  */
-export async function fetchSteam() {
-  const { apiKey, steamId64, appIds } = steamConfig();
-  if (!apiKey || !steamId64) {
+async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, gameName }) {
+  const params = new URLSearchParams({
+    steamid: steamId64,
+    appid: String(appid),
+    key: apiKey,
+    l: 'schinese',
+  });
+
+  let data;
+  try {
+    data = await getJson(`${STEAM_API}/ISteamUserStats/GetPlayerAchievements/v1/?${params}`, {
+      timeoutMs: 20000,
+      retries: 1,
+    });
+  } catch (error) {
+    const reason = error instanceof HttpError ? `HTTP ${error.status ?? '?'}` : error.message;
+    console.warn(`[steam] appid=${appid} 获取成就失败：${reason}`);
+    return [];
+  }
+
+  const stats = data?.playerstats ?? {};
+  // 该游戏没有成就体系时这里会是 { success: false, error: 'Requested app has no stats' }
+  if (stats.success === false || !Array.isArray(stats.achievements)) return [];
+
+  const name = stats.gameName ?? gameName ?? `App ${appid}`;
+  const items = [];
+  for (const achievement of stats.achievements) {
+    if (!achievement.unlocked || !achievement.unlockedtime) continue;
+    const unlockedMs = Number(achievement.unlockedtime) * 1000;
+    if (!Number.isFinite(unlockedMs) || unlockedMs < sinceMs) continue;
+
+    const title = achievement.name || achievement.apiname || '未命名成就';
+    items.push({
+      id: `steam:${appid}:${achievement.achievementid}`,
+      platform: 'steam',
+      type: '成就解锁',
+      title,
+      summary: achievement.description
+        ? `在《${name}》解锁成就「${title}」：${achievement.description}`
+        : `在《${name}》解锁成就「${title}」`,
+      url: `https://steamcommunity.com/profiles/${steamId64}/stats/${appid}/achievements`,
+      image: achievement.icon ?? achievement.icongray ?? null,
+      timestamp: new Date(unlockedMs).toISOString(),
+      meta: { appid, gameName: name, achievementId: achievement.achievementid },
+    });
+  }
+  return items;
+}
+
+/**
+ * @param {{since?: Date|null}} [context]
+ * @returns {Promise<Array<object>>}
+ */
+export async function fetchSteam(context = {}) {
+  const config = steamConfig();
+  if (!config.apiKey || !config.steamId64) {
     console.warn('[steam] 缺少 steam.apiKey 或 steam.steamId64，跳过');
     return [];
   }
 
-  const items = [];
+  const sinceMs = windowStart(context);
+  const games = config.recentGames
+    ? await recentlyPlayedGames(config)
+    : [];
 
-  for (const appid of appIds) {
-    const params = new URLSearchParams({
-      steamid: steamId64,
-      appid: String(appid),
-      key: apiKey,
-      l: 'schinese',
-    });
-    try {
-      const data = await getJson(
-        `${STEAM_API}/ISteamUserStats/GetPlayerAchievements/v1/?${params}`,
-        { timeoutMs: 20000, retries: 1 },
-      );
-      const stats = data?.playerstats ?? {};
-      const gameName = stats.gameName ?? `App ${appid}`;
-      for (const achievement of stats.achievements ?? []) {
-        if (!achievement.unlocked || !achievement.unlockedtime) continue;
-        items.push({
-          id: `steam:${appid}:${achievement.achievementid}`,
-          platform: 'steam',
-          type: '成就解锁',
-          title: achievement.name || achievement.apiname || '未命名成就',
-          summary:
-            achievement.description ||
-            `在《${gameName}》中解锁成就「${achievement.name ?? ''}」`,
-          url: `https://steamcommunity.com/profiles/${steamId64}/stats/${appid}/achievements`,
-          image: achievement.iconurl || achievement.icon || null,
-          timestamp: new Date(achievement.unlockedtime * 1000).toISOString(),
-          meta: { appid, achievementId: achievement.achievementid, gameName },
-        });
-      }
-    } catch (error) {
-      console.warn(`[steam] appid=${appid} 获取失败: ${error.message}`);
-    }
+  // 自动发现的游戏在前，额外关注的 AppID 兜底（去重）
+  const targets = new Map();
+  for (const game of games) targets.set(game.appid, game.name);
+  for (const appid of config.extraAppIds) {
+    if (!targets.has(appid)) targets.set(appid, null);
   }
 
-  return items;
+  if (targets.size === 0) {
+    console.log('[steam] 本轮没有需要检查的游戏');
+    return [];
+  }
+
+  const collected = [];
+  for (const [appid, name] of targets) {
+    const items = await fetchAchievementsForApp(appid, {
+      apiKey: config.apiKey,
+      steamId64: config.steamId64,
+      sinceMs,
+      gameName: name,
+    });
+    if (items.length) {
+      console.log(`[steam] ${name ?? `App ${appid}`}：窗口内解锁 ${items.length} 个成就`);
+    }
+    collected.push(...items);
+    if (collected.length >= config.maxItems) break;
+  }
+
+  const days = Math.max(1, Math.round((Date.now() - sinceMs) / DAY_MS));
+  console.log(
+    `[steam] 检查 ${targets.size} 款游戏（回看 ${days} 天），窗口内成就 ${Math.min(collected.length, config.maxItems)} 条`,
+  );
+  return collected.slice(0, config.maxItems);
 }
+
+/**
+ * 最近两周玩过的游戏 → 可读列表（导出给测试用，逻辑与运行时一致）。
+ */
+export { recentlyPlayedGames, windowStart, fetchAchievementsForApp };
