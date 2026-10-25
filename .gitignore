@@ -1,0 +1,13 @@
+node_modules/
+.tmp/
+dist/
+*.log
+.DS_Store
+
+# 回收站 / 编辑器与智能体工作目录
+.Trash-0/
+.workbuddy/
+
+# 本地密钥（密钥请用环境变量注入，见 README）
+.env
+.env.*
