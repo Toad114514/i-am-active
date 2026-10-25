@@ -23,6 +23,16 @@ jobs:
     name: 抓取 + 生成
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    # 密钥放在 job 级：collect 和 build 都要读 config.yaml，而 config 一加载就会
+    # 校验「已启用平台的必填项」。只在 collect 步骤注入的话，build 会因为
+    # steam.steamId64 读不到而直接抛错（真实踩过）。
+    env:
+      RA_API_KEY: ${{ secrets.RA_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      YT_API_KEY: ${{ secrets.YT_API_KEY }}
+      KUAISHOU_COOKIE: ${{ secrets.KUAISHOU_COOKIE }}
+      STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+      STEAM_ID64: ${{ secrets.STEAM_ID64 }}
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4
@@ -32,16 +42,9 @@ jobs:
         with:
           node-version: 22
 
-      # 密钥统一通过环境变量注入，config.yaml 里只写 ${VAR} 占位符。
-      # 没配的变量会解析成空值，对应平台按「未配置」跳过，不会让整个任务失败。
+      # config.yaml 里只写 ${VAR} 占位符；没配的变量解析成空值，
+      # 对应平台按「未配置」跳过，不会让整个任务失败。
       - name: 抓取各平台活动
-        env:
-          RA_API_KEY: ${{ secrets.RA_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}
-          KUAISHOU_COOKIE: ${{ secrets.KUAISHOU_COOKIE }}
-          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
-          STEAM_ID64: ${{ secrets.STEAM_ID64 }}
         run: node scripts/collect.mjs 2>&1 | tee collect.log
 
       - name: 生成静态站
