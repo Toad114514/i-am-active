@@ -1,5 +1,19 @@
 [
   {
+    "id": "github:commit:bab5f407ece2003dfaa056614abc31ce39b06402",
+    "platform": "github",
+    "type": "提交",
+    "title": "feat(steam): 增加「游玩记录」，只启动游戏也能看见",
+    "summary": "在 Toad114514/i-am-active 中提交：feat(steam): 增加「游玩记录」，只启动游戏也能看见",
+    "url": "https://github.com/Toad114514/i-am-active/commit/bab5f407ece2003dfaa056614abc31ce39b06402",
+    "image": null,
+    "timestamp": "2026-10-25T05:05:07Z",
+    "meta": {
+      "sha": "bab5f40",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "github:commit:30454a40a8745a7cc8374f6e5e53cf6c74c5a98f",
     "platform": "github",
     "type": "提交",
