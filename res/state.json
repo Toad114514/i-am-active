@@ -1,21 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T21:16:54.363Z",
-    "bilibili": "2026-10-25T21:09:01.828Z",
-    "youtube": "2026-10-25T20:16:50.795Z",
-    "ottohub": "2026-10-25T20:16:51.934Z",
-    "kuaishou": "2026-10-25T20:16:54.758Z",
-    "github": "2026-10-25T20:17:05.571Z",
-    "gitee": "2026-10-25T20:17:26.207Z",
-    "archive": "2026-10-25T20:17:27.478Z",
-    "retroachievements": "2026-10-25T20:17:36.548Z",
-    "hexo": "2026-10-25T20:39:04.133Z"
+    "weblate": "2026-10-25T21:23:20.889Z",
+    "bilibili": "2026-10-25T21:22:36.141Z",
+    "youtube": "2026-10-25T21:22:36.303Z",
+    "ottohub": "2026-10-25T21:22:37.428Z",
+    "kuaishou": "2026-10-25T21:22:40.244Z",
+    "github": "2026-10-25T21:22:51.838Z",
+    "gitee": "2026-10-25T21:23:10.293Z",
+    "archive": "2026-10-25T21:23:13.492Z",
+    "retroachievements": "2026-10-25T21:23:30.074Z",
+    "hexo": "2026-10-25T21:23:27.790Z",
+    "steam": "2026-10-25T21:23:34.585Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-10-25T20:17:34.398Z",
-      "since": "2026-10-25T20:02:09.561Z",
+      "checkedAt": "2026-10-25T21:23:27.791Z",
+      "since": "2026-10-25T20:17:36.548Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -64,12 +65,99 @@
     "github": {
       "lookbackDays": 0,
       "repos": 30,
-      "commits": 634,
+      "commits": 637,
       "events": 0,
       "truncated": 0,
       "skipped": 1,
       "digests": 27,
-      "actions": 655
+      "actions": 658
+    },
+    "steam": {
+      "checkedAt": "2026-10-25T21:23:30.075Z",
+      "since": "1970-01-01T00:00:00.000Z",
+      "note": "",
+      "totalCount": 3,
+      "games": [
+        {
+          "appid": "220",
+          "name": "Half-Life 2",
+          "minutes2weeks": 253,
+          "minutesTotal": 952,
+          "lastPlayed": "2026-10-25T09:29:27.000Z"
+        },
+        {
+          "appid": "365450",
+          "name": "Hacknet",
+          "minutes2weeks": 7,
+          "minutesTotal": 291,
+          "lastPlayed": "2026-10-25T14:59:56.000Z"
+        },
+        {
+          "appid": "10",
+          "name": "Counter-Strike",
+          "minutes2weeks": 1,
+          "minutesTotal": 1,
+          "lastPlayed": "2026-10-25T05:11:19.000Z"
+        }
+      ],
+      "playItems": 3,
+      "achievementItems": 29,
+      "achievements": [
+        {
+          "appid": "477160",
+          "name": null,
+          "total": 155,
+          "unlocked": 5,
+          "inWindow": 5,
+          "ok": true,
+          "error": null
+        },
+        {
+          "appid": "4000",
+          "name": null,
+          "total": 29,
+          "unlocked": 2,
+          "inWindow": 2,
+          "ok": true,
+          "error": null
+        },
+        {
+          "appid": "431960",
+          "name": null,
+          "total": 17,
+          "unlocked": 3,
+          "inWindow": 3,
+          "ok": true,
+          "error": null
+        },
+        {
+          "appid": "220",
+          "name": "Half-Life 2",
+          "total": 69,
+          "unlocked": 14,
+          "inWindow": 14,
+          "ok": true,
+          "error": null
+        },
+        {
+          "appid": "365450",
+          "name": "Hacknet",
+          "total": 11,
+          "unlocked": 5,
+          "inWindow": 5,
+          "ok": true,
+          "error": null
+        },
+        {
+          "appid": "10",
+          "name": "Counter-Strike",
+          "total": 0,
+          "unlocked": 0,
+          "inWindow": 0,
+          "ok": false,
+          "error": "l=schinese → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））；无 l → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））"
+        }
+      ]
     }
   }
 }

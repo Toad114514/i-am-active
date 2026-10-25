@@ -1,5 +1,498 @@
 [
   {
+    "id": "steam:220:HL2_BEAT_TOXICTUNNEL",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "侦测到辐射能量",
+    "summary": "在《Half-Life 2》解锁成就「侦测到辐射能量」：在《半衰期2》中通过 17 号城下方的有毒隧道。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_toxictunnel.jpg",
+    "timestamp": "2026-10-25T08:09:24.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_BEAT_TOXICTUNNEL",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_toxictunnel.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_FOLLOWFREEMAN",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "跟着弗里曼",
+    "summary": "在《Half-Life 2》解锁成就「跟着弗里曼」：指挥起义的反叛军队。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_followfreeman.jpg",
+    "timestamp": "2026-10-25T07:20:31.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_FOLLOWFREEMAN",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_followfreeman.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_BEAT_TURRETSTANDOFF2",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "可怕的弗里曼",
+    "summary": "在《Half-Life 2》解锁成就「可怕的弗里曼」：在诺瓦矿场中，成功从第二次机枪塔僵持中生还。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_turretstandoff2.jpg",
+    "timestamp": "2026-10-25T06:53:09.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_BEAT_TURRETSTANDOFF2",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_turretstandoff2.jpg"
+    }
+  },
+  {
+    "id": "steam:play:10:1792905079",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "《Counter-Strike》",
+    "summary": "本次会话开始于 2026/10/25 13:11:19，两周内共 1 分钟，累计 1 分钟",
+    "url": "https://steamcommunity.com/app/10",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/10/header.jpg",
+    "timestamp": "2026-10-25T05:11:19.000Z",
+    "meta": {
+      "appid": "10",
+      "gameName": "Counter-Strike",
+      "minutes2weeks": 1,
+      "minutesTotal": 1,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/10/header.jpg"
+    }
+  },
+  {
+    "id": "steam:365450:themeswitch_run",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "Makeover!",
+    "summary": "在《Hacknet》解锁成就「Makeover!」：Run ThemeSwitcher",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/365450/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/908ed2a59fb165dcc9c6830e73cc8c263aa57e53.jpg",
+    "timestamp": "2026-10-05T21:21:16.000Z",
+    "meta": {
+      "appid": "365450",
+      "gameName": "Hacknet",
+      "achievementId": "themeswitch_run",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/365450/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/908ed2a59fb165dcc9c6830e73cc8c263aa57e53.jpg"
+    }
+  },
+  {
+    "id": "steam:365450:progress_csec",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "CSEC",
+    "summary": "在《Hacknet》解锁成就「CSEC」：Be granted an account within CSEC",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/365450/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/ab55f17901da853fee72f03b7be862522b3f5dd6.jpg",
+    "timestamp": "2026-10-05T21:06:23.000Z",
+    "meta": {
+      "appid": "365450",
+      "gameName": "Hacknet",
+      "achievementId": "progress_csec",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/365450/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/ab55f17901da853fee72f03b7be862522b3f5dd6.jpg"
+    }
+  },
+  {
+    "id": "steam:365450:secret_path_complete",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "/el Sec Champion",
+    "summary": "在《Hacknet》解锁成就「/el Sec Champion」：Master of /el's friendly community",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/365450/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/ab55f17901da853fee72f03b7be862522b3f5dd6.jpg",
+    "timestamp": "2026-10-05T20:56:49.000Z",
+    "meta": {
+      "appid": "365450",
+      "gameName": "Hacknet",
+      "achievementId": "secret_path_complete",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/365450/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/ab55f17901da853fee72f03b7be862522b3f5dd6.jpg"
+    }
+  },
+  {
+    "id": "steam:365450:rude_response",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "Rude",
+    "summary": "在《Hacknet》解锁成就「Rude」：That's just impolite",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/365450/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/fb047a4666cd44ddfc0c936013d9d2081c1fb24f.jpg",
+    "timestamp": "2026-10-05T20:38:42.000Z",
+    "meta": {
+      "appid": "365450",
+      "gameName": "Hacknet",
+      "achievementId": "rude_response",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/365450/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/fb047a4666cd44ddfc0c936013d9d2081c1fb24f.jpg"
+    }
+  },
+  {
+    "id": "steam:365450:progress_entropy",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "Entropy",
+    "summary": "在《Hacknet》解锁成就「Entropy」：Be granted an account within Entropy",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/365450/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/f8efc52503876eac7b059b849938e77af8ccf4ee.jpg",
+    "timestamp": "2026-10-05T18:39:02.000Z",
+    "meta": {
+      "appid": "365450",
+      "gameName": "Hacknet",
+      "achievementId": "progress_entropy",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/365450/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/365450/f8efc52503876eac7b059b849938e77af8ccf4ee.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_KILL_ENEMIES_WITHANTLIONS",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "捕虫",
+    "summary": "在《Half-Life 2》解锁成就「捕虫」：借蚁狮之力干掉 50 个敌人。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_kill_enemies_withantlions.jpg",
+    "timestamp": "2026-10-05T12:49:07.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_KILL_ENEMIES_WITHANTLIONS",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_kill_enemies_withantlions.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_KILL_ODESSAGUNSHIP",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "卡伯居害怕踏上的地方",
+    "summary": "在《Half-Life 2》解锁成就「卡伯居害怕踏上的地方」",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_kill_odessagunship.jpg",
+    "timestamp": "2026-10-05T09:18:07.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_KILL_ODESSAGUNSHIP",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_kill_odessagunship.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_BEAT_CEMETERY",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "神圣之地",
+    "summary": "在《Half-Life 2》解锁成就「神圣之地」",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_cemetery.jpg",
+    "timestamp": "2026-10-05T08:33:19.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_BEAT_CEMETERY",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_cemetery.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_GET_GRAVITYGUN",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "零位能量场",
+    "summary": "在《Half-Life 2》解锁成就「零位能量场」：在黑山基地东区获得重力枪",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_get_gravitygun.jpg",
+    "timestamp": "2026-10-05T07:13:55.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_GET_GRAVITYGUN",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_get_gravitygun.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_KILL_CHOPPER",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "复仇！",
+    "summary": "在《Half-Life 2》解锁成就「复仇！」：在《半衰期2》中摧毁捕猎直升机。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_kill_chopper.jpg",
+    "timestamp": "2026-10-05T06:52:22.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_KILL_CHOPPER",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_kill_chopper.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_GET_AIRBOATGUN",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "重型武器",
+    "summary": "在《Half-Life 2》解锁成就「重型武器」：获得汽船的机枪。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_get_airboatgun.jpg",
+    "timestamp": "2026-10-05T06:23:22.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_GET_AIRBOATGUN",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_get_airboatgun.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_GET_AIRBOAT",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "起锚！",
+    "summary": "在《Half-Life 2》解锁成就「起锚！」：获得汽船。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_get_airboat.jpg",
+    "timestamp": "2026-10-04T19:00:06.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_GET_AIRBOAT",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_get_airboat.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_GET_CROWBAR",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "可靠的硬件",
+    "summary": "在《Half-Life 2》解锁成就「可靠的硬件」：拿到撬棍。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_get_crowbar.jpg",
+    "timestamp": "2026-10-04T17:08:37.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_GET_CROWBAR",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_get_crowbar.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_ESCAPE_APARTMENTRAID",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "反抗者",
+    "summary": "在《Half-Life 2》解锁成就「反抗者」：逃脱公寓围捕。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_escape_apartmentraid.jpg",
+    "timestamp": "2026-10-04T16:57:18.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_ESCAPE_APARTMENTRAID",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_escape_apartmentraid.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_PUT_CANINTRASH",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "顺从",
+    "summary": "在《Half-Life 2》解锁成就「顺从」",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_put_canintrash.jpg",
+    "timestamp": "2026-10-04T16:42:19.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_PUT_CANINTRASH",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_put_canintrash.jpg"
+    }
+  },
+  {
+    "id": "steam:431960:SUBSCRIBE_50_WALLPAPERS",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "我全都要",
+    "summary": "在《Wallpaper Engine》解锁成就「我全都要」：使用50张不同的创意工坊壁纸",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/431960/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/431960/09f51531c6243518225293fcdc81c8894ba7def6.jpg",
+    "timestamp": "2026-08-27T14:59:12.000Z",
+    "meta": {
+      "appid": "431960",
+      "gameName": "Wallpaper Engine",
+      "achievementId": "SUBSCRIBE_50_WALLPAPERS",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/431960/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/431960/09f51531c6243518225293fcdc81c8894ba7def6.jpg"
+    }
+  },
+  {
+    "id": "steam:4000:GMA_PLAY_MULTIPLAYER",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "众乐乐",
+    "summary": "在《Garry's Mod》解锁成就「众乐乐」：玩一次多人游戏",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/4000/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4000/d6b5b7ac882b0865415218642cb21bfb5a5fca77.jpg",
+    "timestamp": "2026-08-27T13:29:09.000Z",
+    "meta": {
+      "appid": "4000",
+      "gameName": "Garry's Mod",
+      "achievementId": "GMA_PLAY_MULTIPLAYER",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4000/d6b5b7ac882b0865415218642cb21bfb5a5fca77.jpg"
+    }
+  },
+  {
+    "id": "steam:431960:SUBSCRIBE_10_WALLPAPERS",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "小试牛刀",
+    "summary": "在《Wallpaper Engine》解锁成就「小试牛刀」：使用10张不同的创意工坊壁纸",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/431960/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/431960/1c2250cab3953159e542b9ff4bd5be9ec75c9f61.jpg",
+    "timestamp": "2026-08-26T05:58:43.000Z",
+    "meta": {
+      "appid": "431960",
+      "gameName": "Wallpaper Engine",
+      "achievementId": "SUBSCRIBE_10_WALLPAPERS",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/431960/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/431960/1c2250cab3953159e542b9ff4bd5be9ec75c9f61.jpg"
+    }
+  },
+  {
+    "id": "steam:431960:SUBSCRIBE_25_WALLPAPERS",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "这么熟练",
+    "summary": "在《Wallpaper Engine》解锁成就「这么熟练」：使用25张不同的创意工坊壁纸",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/431960/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/431960/4f48b4262e14e6b25f09d7df1e00392b8c65d0f2.jpg",
+    "timestamp": "2026-08-26T05:58:43.000Z",
+    "meta": {
+      "appid": "431960",
+      "gameName": "Wallpaper Engine",
+      "achievementId": "SUBSCRIBE_25_WALLPAPERS",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/431960/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/431960/4f48b4262e14e6b25f09d7df1e00392b8c65d0f2.jpg"
+    }
+  },
+  {
+    "id": "steam:477160:Achievement003",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "这该怎么上？",
+    "summary": "在《Human Fall Flat》解锁成就「这该怎么上？」：完成“山峰”",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/477160/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/666538e0b81ddfa87b7a0aff7b3ecf43afe6a485.jpg",
+    "timestamp": "2026-08-25T12:30:17.000Z",
+    "meta": {
+      "appid": "477160",
+      "gameName": "Human Fall Flat",
+      "achievementId": "Achievement003",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/666538e0b81ddfa87b7a0aff7b3ecf43afe6a485.jpg"
+    }
+  },
+  {
+    "id": "steam:477160:Achievement010",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "无路可逃",
+    "summary": "在《Human Fall Flat》解锁成就「无路可逃」：坠落并重生一次",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/477160/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/41f97336c04175dca346f753b71af224bf365529.jpg",
+    "timestamp": "2026-08-25T12:23:27.000Z",
+    "meta": {
+      "appid": "477160",
+      "gameName": "Human Fall Flat",
+      "achievementId": "Achievement010",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/41f97336c04175dca346f753b71af224bf365529.jpg"
+    }
+  },
+  {
+    "id": "steam:477160:Achievement002",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "别扎到手！",
+    "summary": "在《Human Fall Flat》解锁成就「别扎到手！」：完成“搬运”",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/477160/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/4d56eab4c42e270945e88e5d183d78186f843eac.jpg",
+    "timestamp": "2026-08-25T12:19:18.000Z",
+    "meta": {
+      "appid": "477160",
+      "gameName": "Human Fall Flat",
+      "achievementId": "Achievement002",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/4d56eab4c42e270945e88e5d183d78186f843eac.jpg"
+    }
+  },
+  {
+    "id": "steam:477160:Achievement001",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "呜~呜——！",
+    "summary": "在《Human Fall Flat》解锁成就「呜~呜——！」：完成“火车”",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/477160/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/ff963655efb5b8000cea2bf314e141d82334ffce.jpg",
+    "timestamp": "2026-08-25T12:14:03.000Z",
+    "meta": {
+      "appid": "477160",
+      "gameName": "Human Fall Flat",
+      "achievementId": "Achievement001",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/ff963655efb5b8000cea2bf314e141d82334ffce.jpg"
+    }
+  },
+  {
+    "id": "steam:477160:Achievement000",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "信仰之…呃啊！",
+    "summary": "在《Human Fall Flat》解锁成就「信仰之…呃啊！」：完成“豪宅”",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/477160/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/be2ca7728b348b6e3b8e7b6ef138b2ad17ab3f98.jpg",
+    "timestamp": "2026-08-25T12:00:47.000Z",
+    "meta": {
+      "appid": "477160",
+      "gameName": "Human Fall Flat",
+      "achievementId": "Achievement000",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/477160/be2ca7728b348b6e3b8e7b6ef138b2ad17ab3f98.jpg"
+    }
+  },
+  {
+    "id": "steam:4000:GMA_PLAY_SINGLEPLAYER",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "独乐乐",
+    "summary": "在《Garry's Mod》解锁成就「独乐乐」：玩一次单人游戏",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/4000/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4000/b8ce64f366e8a8a1c2aef231cca8ec82f3115d63.jpg",
+    "timestamp": "2026-01-24T13:30:33.000Z",
+    "meta": {
+      "appid": "4000",
+      "gameName": "Garry's Mod",
+      "achievementId": "GMA_PLAY_SINGLEPLAYER",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4000/b8ce64f366e8a8a1c2aef231cca8ec82f3115d63.jpg"
+    }
+  },
+  {
     "id": "weblate:session:2026-05-02T21:47:14Z",
     "platform": "weblate",
     "type": "译文提交",
@@ -2304,19 +2797,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 49 次提交、1 个新仓库",
-    "summary": "49 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「feat(blog): 接入主站博客 Toad's Blog（Hexo Atom」",
+    "title": "Toad114514/i-am-active · 50 次提交、1 个新仓库",
+    "summary": "50 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「feat: 侧栏限高滚动 / Weblate 窗口扩到 6 个月 / Steam」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T20:40:17Z",
+    "timestamp": "2026-10-25T21:20:07Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 50,
+      "count": 51,
       "changes": [
         {
-          "group": "10-25 23:25 → 10-26 04:40 · 17 条"
+          "group": "10-25 23:25 → 10-26 05:20 · 18 条"
+        },
+        {
+          "text": "feat: 侧栏限高滚动 / Weblate 窗口扩到 6 个月 / Steam 全量回填与固定关注 / B 站翻页与可选登录态",
+          "action": "提交",
+          "component": "e0a16b4",
+          "url": "https://github.com/Toad114514/i-am-active/commit/e0a16b453a638060e411057092b720c6e1d1356e",
+          "time": "2026-10-25T21:20:07Z"
         },
         {
           "text": "feat(blog): 接入主站博客 Toad's Blog（Hexo Atom feed，文章类）",
@@ -2676,11 +3176,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T20:40:17Z",
+      "windowEnd": "2026-10-25T21:20:07Z",
       "sessions": 3,
       "actions": {
         "新建仓库": 1,
-        "提交": 49
+        "提交": 50
       }
     }
   },
