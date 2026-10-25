@@ -186,6 +186,8 @@ function achievementItem(a, user) {
  * 没有截图时退回封面（BoxArt），再退回标题图。
  */
 const gameArtCache = new Map();
+/** 取图失败的现场（只留前几条），给 state.json 里的 diagnostics 用。 */
+const artDebug = [];
 
 async function fetchGameArt(gameId, key, budget) {
   if (!gameId) return null;
@@ -204,13 +206,14 @@ async function fetchGameArt(gameId, key, budget) {
     const title = absolute(data?.ImageTitle);
     const backdrop = ingame ?? boxArt ?? title;
     if (backdrop) art = { backdrop, ingame, boxArt, title: data?.Title ?? null };
+    else if (artDebug.length < 3) {
+      artDebug.push(`game ${gameId}: 没有图片字段，返回键 ${Object.keys(data ?? {}).join(',') || '(空)'}`);
+    }
   } catch (error) {
+    const reason = error instanceof HttpError ? explainError(error) : error.message;
+    if (artDebug.length < 3) artDebug.push(`game ${gameId}: ${reason}`);
     // 游戏图只是锦上添花，查不到就不放背景，绝不影响条目本身
-    console.warn(
-      `[retroachievements] game ${gameId} 取游戏图失败：${
-        error instanceof HttpError ? explainError(error) : error.message
-      }`,
-    );
+    console.warn(`[retroachievements] game ${gameId} 取游戏图失败：${reason}`);
   }
   gameArtCache.set(gameId, art);
   return art;
@@ -280,6 +283,7 @@ export async function fetchRetroAchievements(context = {}) {
     items: { achievements: 0, plays: 0 },
   };
   diagnostics = diag;
+  artDebug.length = 0;
 
   if (config.enabled === false) {
     diag.note = 'config.yaml 里 retroachievements.enabled = false';
@@ -438,7 +442,12 @@ export async function fetchRetroAchievements(context = {}) {
       artCount += 1;
     }
   }
-  diag.gameArt = { games: new Set(items.map((i) => i.meta?.gameId).filter(Boolean)).size, withArt: artCount };
+  diag.gameArt = {
+    games: new Set(items.map((i) => i.meta?.gameId).filter(Boolean)).size,
+    withArt: artCount,
+    debug: artDebug.slice(),
+  };
+  if (artDebug.length) console.warn(`[retroachievements] 取图现场：${artDebug[0]}`);
 
   diag.items = {
     achievements: achievements.length,
