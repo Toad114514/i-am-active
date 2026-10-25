@@ -1,30 +1,30 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T07:41:03.205Z",
-    "bilibili": "2026-10-25T07:40:50.220Z",
-    "youtube": "2026-10-25T07:40:50.355Z",
-    "ottohub": "2026-10-25T07:40:51.079Z",
-    "kuaishou": "2026-10-25T07:40:53.208Z",
-    "github": "2026-10-25T07:40:54.352Z",
-    "gitee": "2026-10-25T07:40:59.135Z",
-    "archive": "2026-10-25T07:41:00.028Z",
-    "retroachievements": "2026-10-25T07:41:03.903Z",
-    "steam": "2026-10-25T07:41:06.961Z"
+    "weblate": "2026-10-25T08:03:29.796Z",
+    "bilibili": "2026-10-25T08:03:18.219Z",
+    "youtube": "2026-10-25T08:03:18.398Z",
+    "ottohub": "2026-10-25T08:03:19.465Z",
+    "kuaishou": "2026-10-25T08:03:21.628Z",
+    "github": "2026-10-25T08:03:22.838Z",
+    "gitee": "2026-10-25T08:03:25.858Z",
+    "archive": "2026-10-25T08:03:26.722Z",
+    "retroachievements": "2026-10-25T08:03:30.441Z",
+    "steam": "2026-10-25T08:03:36.221Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T07:41:03.904Z",
-      "since": "2026-10-25T07:23:51.277Z",
-      "note": "窗口内没有新动作：最近列表里的游戏都没有成就体系，或本周没有新解锁",
+      "checkedAt": "2026-10-25T08:03:30.441Z",
+      "since": "2026-10-25T07:41:06.961Z",
+      "note": "",
       "totalCount": 3,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 125,
-          "minutesTotal": 824,
-          "lastPlayed": "2026-10-25T07:21:35.000Z"
+          "minutes2weeks": 155,
+          "minutesTotal": 854,
+          "lastPlayed": "2026-10-25T07:51:35.000Z"
         },
         {
           "appid": "365450",
@@ -41,7 +41,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 0,
+      "playItems": 1,
       "achievementItems": 0,
       "achievements": [
         {
@@ -51,7 +51,7 @@
           "unlocked": 0,
           "inWindow": 0,
           "ok": false,
-          "error": "HTTP 403"
+          "error": "l=schinese → HTTP 403（{\"playerstats\":{\"error\":\"Profile is not public\",\"success\":false}}）；无 l → HTTP 403（{\"playerstats\":{\"error\":\"Profile is not public\",\"success\":false}}）"
         },
         {
           "appid": "365450",
@@ -60,7 +60,7 @@
           "unlocked": 0,
           "inWindow": 0,
           "ok": false,
-          "error": "HTTP 403"
+          "error": "l=schinese → HTTP 403（{\"playerstats\":{\"error\":\"Profile is not public\",\"success\":false}}）；无 l → HTTP 403（{\"playerstats\":{\"error\":\"Profile is not public\",\"success\":false}}）"
         },
         {
           "appid": "10",
@@ -69,7 +69,7 @@
           "unlocked": 0,
           "inWindow": 0,
           "ok": false,
-          "error": "HTTP 400"
+          "error": "l=schinese → HTTP 400（{\"playerstats\":{\"error\":\"Requested app has no stats\",\"success\":false}}）；无 l → HTTP 400（{\"playerstats\":{\"error\":\"Requested app has no stats\",\"success\":false}}）"
         }
       ]
     }

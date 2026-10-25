@@ -1,5 +1,35 @@
 [
   {
+    "id": "github:commit:1d223ed1739a975ffbdfba72e4a4ef10c5a02859",
+    "platform": "github",
+    "type": "提交",
+    "title": "chore(steam): 成就接口 403 时去掉 l 参数重试，并把响应体记进诊断",
+    "summary": "在 Toad114514/i-am-active 中提交：chore(steam): 成就接口 403 时去掉 l 参数重试，并把响应体记进诊断",
+    "url": "https://github.com/Toad114514/i-am-active/commit/1d223ed1739a975ffbdfba72e4a4ef10c5a02859",
+    "image": null,
+    "timestamp": "2026-10-25T07:52:04Z",
+    "meta": {
+      "sha": "1d223ed",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "steam:play:220:1792914695",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "《Half-Life 2》",
+    "summary": "本次会话开始于 2026/10/25 15:51:35，两周内共 2 小时 35 分钟，累计 14 小时 14 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-10-25T07:51:35.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 155,
+      "minutesTotal": 854
+    }
+  },
+  {
     "id": "github:commit:57f31e7ed0336a8a56e4f359c70a7d54c8b6eec3",
     "platform": "github",
     "type": "提交",
