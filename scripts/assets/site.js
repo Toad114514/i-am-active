@@ -410,7 +410,9 @@
     if (!root) return;
 
     const listNode = $('[data-cats-list]', root);
-    const countNode = $('[data-cats-count]', root);
+    // 计数在 .section-head 里，不在 [data-cats] 里面——按 root 找会永远是 null，
+    // 结果条数就停在 SSR 生成的「共 N 条」不动了。
+    const countNode = $('[data-cats-count]');
     const emptyNode = $('[data-cats-empty]', root);
     const yearSelect = $('[data-cats-year]', root);
     const platformSelect = $('[data-cats-platform]', root);

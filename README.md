@@ -10,7 +10,8 @@
 ```bash
 npm run collect -- --show-config   # 看解析后的配置（密钥自动打码）
 npm run collect -- --dry-run       # 只抓不写，先看会新增什么
-npm run update                     # 抓取 + 生成站点
+npm run art:refresh                # 只重取老条目的游戏封面/截图（不抓新活动）
+npm run update                     # 抓取 + 回填美术图 + 生成站点
 ```
 
 几条规则：
@@ -143,8 +144,10 @@ STEAM_API_KEY=xxx STEAM_ID64=7656119xxxxxxxxxx npm run steam:doctor
   同一轮里同一款游戏只查一次，单轮上限由 `retroachievements.maxGameArt`
   （默认 20）控制。
 - 亮度：游戏图（尤其 Steam 头图）本身是大面积高饱和的亮色，早期用 0.92 的不透明度
-  铺上去会「发光」，比其它平台的头图亮一档。现在压到 `opacity .48 +
-  brightness(.72)`，实测左栏平均亮度从 0.67 降到 0.58，和普通条目（0.57）基本齐平。
+  铺上去会「发光」，比其它平台的头图亮一档。现在 `opacity .5 + brightness(.72)`，
+  而且遮罩和普通条目一样**从左边缘淡入**（`rgba(0,0,0,.3) → #000 26%`）——
+  只降不透明度是不够的，普通条目的左栏被遮罩压得很暗，而游戏图原来 0% 就是全黑，
+  贴边那一块永远比别的卡片亮。
 - 徽章：钉在左图区域的右下角（`.item--badge`），右边缘对齐正文起点，不会压到文字。
 - 拿不到游戏图就**自动退回**老版式（图标铺底），背景图 404 时由 `onerror` 把整块
   媒体区连同 `item--media/item--game/item--badge` 一起去掉，不会留一块空白。
@@ -153,11 +156,17 @@ STEAM_API_KEY=xxx STEAM_ID64=7656119xxxxxxxxxx npm run steam:doctor
 `meta.badge` 存在时 `image` 才被当成角标，否则 `image` 仍然是背景——所以其它平台
 的老条目不受影响。
 
-**老条目怎么补上背景图**：`collect` 对「同 id 已存在」的条目做了一次字段补全。
-`meta.backdrop` / `meta.badge` / `meta.backdropSource` 是**从源站推导出来的展示字段**，
-每次都会跟着源站刷新（改优先级后老条目也能换图）；其它字段只补新出现、原值为空的，
-不改已有值、也不算新增。日志里显示 `补全 N 条老记录`。不这样做的话，历史条目永远
-不会被「重新新增」，也就永远拿不到后来才加的展示字段。
+**老条目怎么补上背景图**：两条路一起走。
+
+1. `collect` 对「同 id 已存在」的条目做字段补全。`meta.backdrop` / `meta.badge` /
+   `meta.backdropSource` 是**从源站推导出来的展示字段**，每次都会跟着源站刷新；
+   其它字段只补新出现、原值为空的，不改已有值、也不算新增。日志里显示
+   `补全 N 条老记录`。
+2. 增量窗口**够不着**的老条目靠 `npm run art:refresh`（`scripts/art-refresh.mjs`）。
+   RA 只回看最近 3 天，更早的成就不会再被抓到，改了取图优先级它们就永远停在旧图上。
+   这个脚本扫一遍 `res/list.json`，把 `backdropSource` 缺省或仍是 `title` 的 gameId
+   重查一次（`title` 就是旧规则的痕迹；`ingame` 说明这款游戏确实没封面，不用再查），
+   所以第一次跑完之后每次都空跑。CI 里紧跟 collect 执行，失败也不影响构建。
 
 ## 代码仓库活动的汇总（GitHub / Gitee）
 
@@ -230,7 +239,8 @@ OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<
 ## 分类页的活动类型
 
 分类页除了「年份 × 平台」，还多了一维 **活动类型**：游戏 / 视频 / 代码 / 归档 / 其他。
-映射写在 `scripts/lib/platforms.mjs` 的 `PLATFORM_KIND`（和平台自己的 `group` 不是一回事）：
+映射只有一处：`scripts/lib/platforms.mjs` 的 `KINDS` + `PLATFORM_KIND`（页面渲染和
+前端筛选都走 `kindOf()`）：
 
 | 类型 | 平台 |
 | --- | --- |
@@ -248,9 +258,9 @@ OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<
 `.github/workflows/update.yml` 每 1 小时跑一次（`0 * * * *`），也可以在
 Actions 页面点 **Run workflow** 手动触发；推到 `main` 时也会重建一次。
 
-一次运行做四件事：抓取各平台 → 有新增就把 `res/*.json` 提交回 `main` →
-生成 `dist/` → 部署到 GitHub Pages。只有 `res/` 真的变了才会产生提交，
-所以不会每小时堆一个空 commit。
+一次运行做五件事：抓取各平台 → 回填老条目的游戏美术图 → 有变化就把 `res/*.json`
+（含 `res/media/`）提交回 `main` → 生成 `dist/` → 部署到 GitHub Pages。只有 `res/`
+真的变了才会产生提交，所以不会每小时堆一个空 commit。
 
 首次启用需要两个一次性设置：
 
