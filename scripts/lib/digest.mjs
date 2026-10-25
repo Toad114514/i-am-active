@@ -116,16 +116,11 @@ function buildRepo({ platform, repo, sessions, maxRows, type }) {
 
   const total = all.length;
   const latestText = rowText(last);
-  // 「新建仓库」只是这张卡的开场白，标题里再算一项会把标题拉得很长；
-  // 但也别让它凭空消失——只有它一种动作时照常显示。
-  const headline = counts.size > 1 && counts.has('新建仓库')
-    ? new Map([...counts].filter(([kind]) => kind !== '新建仓库'))
-    : counts;
   const span = shortDate(first.ts) === shortDate(last.ts)
     ? ''
     : `（${shortDate(first.ts)} → ${shortDate(last.ts)}）`;
   const summary = [
-    countsText(headline),
+    countsText(counts),
     span ? `横跨 ${span.slice(1, -1)}` : '',
     last.kind === '新建仓库' ? '' : `最近一条「${latestText.slice(0, 40)}」`,
   ]
@@ -136,7 +131,9 @@ function buildRepo({ platform, repo, sessions, maxRows, type }) {
     id: `${platform}:repo:${repo}`,
     platform,
     type,
-    title: `${repo} · ${countsText(headline)}`,
+    // 标题里的各项加起来要等于明细条数（下面「共 N 条」就是 total），
+    // 不然同一张卡上两个数字对不上，看着像算错了。
+    title: `${repo} · ${countsText(counts)}`,
     summary,
     url: first.repoUrl ?? last.url ?? null,
     image: null,
