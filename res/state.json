@@ -1,22 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T09:59:27.247Z",
-    "bilibili": "2026-10-25T09:59:04.085Z",
-    "youtube": "2026-10-25T09:59:04.221Z",
-    "ottohub": "2026-10-25T09:59:05.920Z",
-    "kuaishou": "2026-10-25T09:59:19.091Z",
-    "github": "2026-10-25T15:18:18.419Z",
-    "gitee": "2026-10-25T15:22:19.474Z",
-    "archive": "2026-10-25T09:59:24.049Z",
-    "retroachievements": "2026-10-25T09:59:29.006Z",
-    "steam": "2026-10-25T09:59:31.735Z"
+    "weblate": "2026-10-25T15:33:24.195Z",
+    "bilibili": "2026-10-25T15:32:38.188Z",
+    "youtube": "2026-10-25T15:32:38.359Z",
+    "ottohub": "2026-10-25T15:32:39.378Z",
+    "kuaishou": "2026-10-25T15:32:42.163Z",
+    "github": "2026-10-25T15:32:54.340Z",
+    "gitee": "2026-10-25T15:33:18.711Z",
+    "archive": "2026-10-25T15:33:19.986Z",
+    "retroachievements": "2026-10-25T15:33:25.636Z",
+    "steam": "2026-10-25T15:33:29.147Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T09:59:29.007Z",
-      "since": "2026-10-25T09:45:03.932Z",
-      "note": "窗口内没有新动作：这些游戏的 19 个已解锁成就都在上次抓取之前",
+      "checkedAt": "2026-10-25T15:33:25.637Z",
+      "since": "2026-10-25T09:59:31.735Z",
+      "note": "",
       "totalCount": 3,
       "games": [
         {
@@ -29,9 +29,9 @@
         {
           "appid": "365450",
           "name": "Hacknet",
-          "minutes2weeks": 6,
-          "minutesTotal": 290,
-          "lastPlayed": "2026-10-25T05:04:31.000Z"
+          "minutes2weeks": 7,
+          "minutesTotal": 291,
+          "lastPlayed": "2026-10-25T14:59:56.000Z"
         },
         {
           "appid": "10",
@@ -41,7 +41,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 0,
+      "playItems": 1,
       "achievementItems": 0,
       "achievements": [
         {
@@ -74,8 +74,8 @@
       ]
     },
     "retroachievements": {
-      "checkedAt": "2026-10-25T09:59:27.247Z",
-      "since": "2026-10-25T09:45:01.340Z",
+      "checkedAt": "2026-10-25T15:33:24.195Z",
+      "since": "2026-10-25T09:59:29.006Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -111,19 +111,20 @@
     "gitee": {
       "lookbackDays": 0,
       "repos": 6,
-      "commits": 248,
+      "commits": 263,
       "truncated": 0,
-      "actions": 248,
-      "digests": 4
+      "actions": 263,
+      "digests": 6
     },
     "github": {
-      "lookbackDays": 1500,
+      "lookbackDays": 0,
       "repos": 30,
-      "commits": 606,
+      "commits": 620,
       "events": 0,
       "truncated": 0,
+      "skipped": 1,
       "digests": 27,
-      "actions": 627
+      "actions": 641
     }
   }
 }
