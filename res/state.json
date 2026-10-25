@@ -1,30 +1,30 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T08:20:22.296Z",
-    "bilibili": "2026-10-25T08:20:09.025Z",
-    "youtube": "2026-10-25T08:20:09.194Z",
-    "ottohub": "2026-10-25T08:20:11.314Z",
-    "kuaishou": "2026-10-25T08:20:14.731Z",
-    "github": "2026-10-25T08:20:15.624Z",
-    "gitee": "2026-10-25T08:20:18.954Z",
-    "archive": "2026-10-25T08:20:19.574Z",
-    "retroachievements": "2026-10-25T08:20:22.813Z",
-    "steam": "2026-10-25T08:20:29.142Z"
+    "weblate": "2026-10-25T08:38:45.049Z",
+    "bilibili": "2026-10-25T08:38:33.555Z",
+    "youtube": "2026-10-25T08:38:33.783Z",
+    "ottohub": "2026-10-25T08:38:34.786Z",
+    "kuaishou": "2026-10-25T08:38:37.363Z",
+    "github": "2026-10-25T08:38:38.405Z",
+    "gitee": "2026-10-25T08:38:41.308Z",
+    "archive": "2026-10-25T08:38:42.236Z",
+    "retroachievements": "2026-10-25T08:38:45.615Z",
+    "steam": "2026-10-25T08:38:48.550Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T08:20:22.814Z",
-      "since": "2026-10-25T08:03:36.221Z",
-      "note": "Steam 拒绝读成就：Profile is not public。把「编辑个人资料 → 隐私设置」里的「我的个人资料」和「游戏详情」都设为公开（游玩记录不受影响，可以正常写）",
+      "checkedAt": "2026-10-25T08:38:45.616Z",
+      "since": "2026-10-25T08:20:29.142Z",
+      "note": "",
       "totalCount": 3,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 155,
-          "minutesTotal": 854,
-          "lastPlayed": "2026-10-25T07:51:35.000Z"
+          "minutes2weeks": 201,
+          "minutesTotal": 884,
+          "lastPlayed": "2026-10-25T08:21:36.000Z"
         },
         {
           "appid": "365450",
@@ -41,26 +41,26 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 0,
+      "playItems": 1,
       "achievementItems": 0,
       "achievements": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "total": 0,
-          "unlocked": 0,
+          "total": 69,
+          "unlocked": 13,
           "inWindow": 0,
-          "ok": false,
-          "error": "l=schinese → HTTP 403（Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开）；无 l → HTTP 403（Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开）"
+          "ok": true,
+          "error": null
         },
         {
           "appid": "365450",
           "name": "Hacknet",
-          "total": 0,
-          "unlocked": 0,
+          "total": 11,
+          "unlocked": 5,
           "inWindow": 0,
-          "ok": false,
-          "error": "l=schinese → HTTP 403（Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开）；无 l → HTTP 403（Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开）"
+          "ok": true,
+          "error": null
         },
         {
           "appid": "10",

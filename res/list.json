@@ -1,5 +1,21 @@
 [
   {
+    "id": "steam:play:220:1792916496",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "《Half-Life 2》",
+    "summary": "本次会话开始于 2026/10/25 16:21:36，两周内共 3 小时 21 分钟，累计 14 小时 44 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-10-25T08:21:36.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 201,
+      "minutesTotal": 884
+    }
+  },
+  {
     "id": "github:commit:015c580c249f40019bb8a8abf53f513f7f5f861c",
     "platform": "github",
     "type": "提交",
