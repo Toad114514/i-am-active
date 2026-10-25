@@ -1,0 +1,111 @@
+# ============================================================
+#  i-am-active 配置文件
+#
+#  - 所有平台的账号 / 开关 / 抓取参数都在这里，脚本里不再写死。
+#  - 值里可以写 ${环境变量名}，运行时替换；写 ${VAR:-默认值} 则变量缺省时用默认值。
+#    密钥请用这种方式引用 GitHub Actions Secrets，不要直接写进仓库。
+#  - enabled: false 的平台会被完全跳过（不影响其它平台）。
+#  - 改完可用 `npm run collect -- --show-config` 检查解析结果（密钥会自动打码）。
+# ============================================================
+
+site:
+  # GitHub Pages 的项目子路径；CI 里也可用环境变量 SITE_BASE 覆盖
+  base: /i-am-active
+
+collect:
+  # true = 每个平台只抓「上次运行以来」的增量（记录在 res/state.json）
+  # false = 每次都全量回溯（首次部署或补数据时可以临时关掉）
+  incremental: true
+
+platforms:
+  # ---------------- 哔哩哔哩 ----------------
+  bilibili:
+    enabled: true
+    # 空间页 https://space.bilibili.com/<mid>
+    mid: "3494381151586530"
+    # 匿名接口有概率性风控，失败时换指纹重试的次数
+    retries: 14
+
+  # ---------------- YouTube ----------------
+  youtube:
+    enabled: true
+    # 频道 ID（UC 开头），抓取用；不是 @handle
+    channelId: UCuNJ-CHkXLcOf41aoip4x5w
+    # 频道 handle，只用于拼主页地址（https://youtube.com/<handle>）
+    handle: "@toad1145"
+    # 可选：配了就优先走 Data API v3，不配则用频道 RSS（无需密钥）
+    apiKey: ${YT_API_KEY}
+
+  # ---------------- OTTOhub ----------------
+  ottohub:
+    enabled: true
+    # 主页 https://www.ottohub.cn/u/<uid>
+    uid: 22067
+
+  # ---------------- 快手 ----------------
+  kuaishou:
+    enabled: true
+    # 主页 https://www.kuaishou.com/profile/<profileId>
+    profileId: xn57ehqqzfdqie
+    # 快手作品列表需要登录态，公开接口一律 403；有 Cookie 时填这里
+    cookie: ${KUAISHOU_COOKIE}
+
+  # ---------------- GitHub ----------------
+  github:
+    enabled: true
+    user: Toad114514
+    # 强烈建议配置：匿名只有 60 次/小时，很容易限流
+    token: ${GITHUB_TOKEN}
+    # 首次运行回溯多少天（之后按增量抓）
+    backfillDays: 120
+    perPage: 30
+
+  # ---------------- Gitee ----------------
+  gitee:
+    enabled: true
+    user: toadstool
+    backfillDays: 365
+    perPage: 30
+
+  # ---------------- 互联网档案馆 ----------------
+  archive:
+    enabled: true
+    # 账号页 https://archive.org/details/@<user>
+    user: toad1145
+
+  # ---------------- Weblate（TDE 项目） ----------------
+  weblate:
+    enabled: true
+    baseUrl: https://mirror.git.trinitydesktop.org/weblate
+    user: toad114514
+    # 相邻改动间隔超过这个分钟数就算新的一段「翻译时段」，每段汇总成一条活动
+    sessionGapMinutes: 120
+    lookbackDays: 7
+    # 单条汇总最多保留的逐条明细行数（页面每页显示 10 行）
+    maxRows: 400
+    pageSize: 50
+    maxPages: 4
+
+  # ---------------- RetroAchievements ----------------
+  retroachievements:
+    enabled: true
+    user: Toad114514
+    # 在 https://retroachievements.org/settings 的 Keys 区域生成 Web API Key，
+    # 然后存成环境变量 RA_API_KEY（GitHub Actions 里存成同名 Secret）。
+    # 没有 key 时该平台会跳过并在日志里提示，其它平台不受影响。
+    webApiKey: ${RA_API_KEY}
+    # 首轮回溯多少天；之后的运行会按上次时间自动收窄查询窗口
+    lookbackDays: 60
+    # 单次最多输出多少条成就（防止一口气灌进列表）
+    maxItems: 60
+    # 先用 GetUserProfile 校验用户名和 key，能提前发现配错
+    profileCheck: true
+
+  # ---------------- Steam（可选，默认关闭） ----------------
+  steam:
+    enabled: false
+    # https://steamcommunity.com/profiles/<steamId64>
+    steamId64: ${STEAM_ID64}
+    apiKey: ${STEAM_API_KEY}
+    # 要抓成就的游戏 AppID 列表
+    appIds: [753]
