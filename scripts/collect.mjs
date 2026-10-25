@@ -26,14 +26,15 @@ import {
 } from './lib/store.mjs';
 import { readState, writeState, lastRunOf } from './lib/state.mjs';
 import { config, maskSecrets } from './lib/config.mjs';
+import { pathToFileURL } from 'node:url';
 
 import { fetchBilibili } from './sources/bilibili.mjs';
 import { fetchYouTube } from './sources/youtube.mjs';
 import { fetchArchive } from './sources/archive.mjs';
 import { fetchRetroAchievements, lastRaDiagnostics } from './sources/retroachievements.mjs';
 import { fetchWeblate } from './sources/weblate.mjs';
-import { fetchGitHub } from './sources/github.mjs';
-import { fetchGitee } from './sources/gitee.mjs';
+import { fetchGitHub, lastGitHubDiagnostics } from './sources/github.mjs';
+import { fetchGitee, lastGiteeDiagnostics } from './sources/gitee.mjs';
 import { fetchSteam, lastSteamDiagnostics } from './sources/steam.mjs';
 import { fetchOttoHub } from './sources/ottohub.mjs';
 import { fetchKuaishou } from './sources/kuaishou.mjs';
@@ -44,8 +45,8 @@ const SOURCES = [
   { id: 'youtube', label: 'YouTube', run: fetchYouTube },
   { id: 'ottohub', label: 'OTTOhub', run: fetchOttoHub },
   { id: 'kuaishou', label: '快手', run: fetchKuaishou },
-  { id: 'github', label: 'GitHub', run: fetchGitHub },
-  { id: 'gitee', label: 'Gitee', run: fetchGitee },
+  { id: 'github', label: 'GitHub', run: fetchGitHub, diagnostics: lastGitHubDiagnostics },
+  { id: 'gitee', label: 'Gitee', run: fetchGitee, diagnostics: lastGiteeDiagnostics },
   { id: 'archive', label: '互联网档案馆', run: fetchArchive },
   { id: 'weblate', label: 'Weblate', run: fetchWeblate },
   {
@@ -90,7 +91,7 @@ function sortItems(items) {
  *  - 同 id 覆盖为最新版本（同一批活动继续增长时更新条数，而不是再插一条）。
  * @returns {{added: boolean, updated: boolean, removed: string[]}}
  */
-function applyMerged(list, item) {
+export function applyMerged(list, item) {
   const winStart = Date.parse(item.meta?.windowStart ?? item.timestamp ?? '') || 0;
   const winEnd = Date.parse(item.meta?.windowEnd ?? item.timestamp ?? '') || Number.MAX_SAFE_INTEGER;
 
@@ -104,12 +105,27 @@ function applyMerged(list, item) {
       if (old.id === item.id) continue;
       const os = Date.parse(old.meta?.windowStart ?? '');
       const oe = Date.parse(old.meta?.windowEnd ?? '');
-      if (Number.isFinite(os) && Number.isFinite(oe) && os >= winStart && oe <= winEnd) {
+      if (!Number.isFinite(os) || !Number.isFinite(oe)) continue;
+      // 两个条目都带 meta.repo（GitHub / Gitee 的仓库卡）时，只跟自己仓库比：
+      // 一张覆盖多年时段的仓库卡会把时间范围更窄的、别的仓库的卡也包进去，
+      // 不加这层判断就会被误删。
+      const bothHaveRepo = Boolean(item.meta?.repo) && Boolean(old.meta?.repo);
+      const sameRepo = bothHaveRepo && old.meta.repo === item.meta.repo;
+      const comparable = !bothHaveRepo || sameRepo;
+      const subset = comparable && os >= winStart && oe <= winEnd;
+      // 同一张卡换了 id 又和老的重叠（窗口边界滑动导致的），也应当替换掉，
+      // 否则同一批工作会在列表里留下两张几乎一样的卡。
+      const overlap = sameRepo && os <= winEnd && oe >= winStart;
+      if (subset || overlap) {
         removed.push(old.id);
         list.splice(i, 1);
       }
       continue;
     }
+
+    // 汇总卡只吸收自己仓库的逐条旧记录（老数据迁移）。
+    // 不按仓库区分的话，一张覆盖很宽时段的卡会把别的仓库的记录一起吞掉。
+    if (item.meta?.repo && old.meta?.repo && old.meta.repo !== item.meta.repo) continue;
 
     const t = old.timestamp ? Date.parse(old.timestamp) : NaN;
     if (!Number.isFinite(t)) continue;
@@ -313,7 +329,13 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error('[collect] 致命错误:', error);
-  process.exit(1);
-});
+// 直接 `node scripts/collect.mjs` 时才开始跑；被别的脚本 import（比如回归测试
+// 单独验证 applyMerged）时只导出函数，不产生副作用。
+const isDirectRun =
+  process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isDirectRun) {
+  main().catch((error) => {
+    console.error('[collect] 致命错误:', error);
+    process.exit(1);
+  });
+}

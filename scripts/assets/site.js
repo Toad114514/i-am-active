@@ -37,6 +37,12 @@
     新增源串: '源串',
     修改源串: '源串改',
     翻译改动: '改动',
+    // 仓库活动（GitHub / Gitee）
+    提交: '提交',
+    新建仓库: '仓库',
+    '新建 PR': 'PR',
+    '新建 Issue': 'Issue',
+    '合并 PR': '合并',
   };
 
   const rowTime = (iso) => {
@@ -51,11 +57,18 @@
   function renderDigestItem(item, fold) {
     const size = fold || TLIST_PAGE_SIZE;
     const changes = item.meta.changes;
-    const total = changes.length;
+    // 分段标头（仓库活动里按连续工作时段分段）不算「条」
+    const total = changes.filter((change) => !change.group).length;
     const rows = changes
       .map((change, index) => {
+        if (change.group) {
+          return `
+              <li class="tlist__group" data-tlist-group${index >= size ? ' hidden' : ''}>
+                <span>${escapeHtml(change.group)}</span>
+              </li>`;
+        }
         const label = ACTION_SHORT[change.action] || change.action || '';
-        const text = String(change.text || '').trim() || '（空译文）';
+        const text = String(change.text || '').trim() || '（空文字）';
         return `
               <li class="tlist__row"${index >= size ? ' hidden' : ''}>
                 <a class="tlist__link" href="${escapeHtml(change.url || '#')}" target="_blank" rel="noopener noreferrer">
@@ -85,8 +98,8 @@
               <ul class="tlist" data-tlist data-tlist-page-size="${size}" data-tlist-current="1">${rows}
               </ul>
               <div class="tlist__foot">
-                <span class="tlist__progress" data-tlist-progress>第 1-${Math.min(size, total)} 条 / 共 ${total} 条</span>
-                <nav class="pager pager--inner" data-tlist-pager aria-label="译文分页" hidden></nav>
+                <span class="tlist__progress" data-tlist-progress>第 1-${changes.slice(0, size).filter((c) => !c.group).length} 条 / 共 ${total} 条</span>
+                <nav class="pager pager--inner" data-tlist-pager aria-label="明细分页" hidden></nav>
               </div>
             </div>
           </div>
@@ -152,8 +165,18 @@
     });
     list.setAttribute('data-tlist-current', String(current));
 
+    // 分段标头（data-tlist-group）占一行但不是「一条」，计数要把它排除掉
+    const isGroup = (row) => row.hasAttribute('data-tlist-group');
+    const totalRows = rows.filter((row) => !isGroup(row)).length;
+    const done = rows.slice(0, start).filter((row) => !isGroup(row)).length;
+    const shown = rows.slice(start, end).filter((row) => !isGroup(row)).length;
+
     const progress = card.querySelector('[data-tlist-progress]');
-    if (progress) progress.textContent = `第 ${start + 1}-${end} 条 / 共 ${rows.length} 条`;
+    if (progress) {
+      progress.textContent = shown
+        ? `第 ${done + 1}-${done + shown} 条 / 共 ${totalRows} 条`
+        : `共 ${totalRows} 条`;
+    }
 
     const nav = card.querySelector('[data-tlist-pager]');
     if (nav) renderTlistPager(nav, current, totalPages);

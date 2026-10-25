@@ -86,6 +86,12 @@ const ACTION_SHORT = {
   新增源串: '源串',
   修改源串: '源串改',
   翻译改动: '改动',
+  // 仓库活动（GitHub / Gitee）：tag 位置窄，长标签会挤掉提交信息
+  提交: '提交',
+  新建仓库: '仓库',
+  '新建 PR': 'PR',
+  '新建 Issue': 'Issue',
+  '合并 PR': '合并',
 };
 
 /** 明细行的短时间（固定 UTC+8，避免 CI 与本机时区不一致）。 */
@@ -98,12 +104,19 @@ function rowTime(iso) {
   return `${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
 }
 
-/** 逐条译文列表；超出首页容量的部分先 hidden，由前端按页码翻放。 */
+/** 逐条明细；超出首页容量的部分先 hidden，由前端按页码翻放。 */
 function renderTranslationRows(changes, fold = TLIST_PAGE_SIZE) {
   return changes
     .map((change, index) => {
+      // 分段标头（仓库活动按连续工作时段分段）：不是链接，也不计入「共 N 条」
+      if (change.group) {
+        return `
+            <li class="tlist__group" data-tlist-group${index >= fold ? ' hidden' : ''}>
+              <span>${esc(change.group)}</span>
+            </li>`;
+      }
       const label = ACTION_SHORT[change.action] ?? change.action ?? '';
-      const text = String(change.text ?? '').trim() || '（空译文）';
+      const text = String(change.text ?? '').trim() || '（空文字）';
       return `
             <li class="tlist__row"${index >= fold ? ' hidden' : ''}>
               <a class="tlist__link" href="${esc(change.url || '#')}" target="_blank" rel="noopener noreferrer">
@@ -121,8 +134,10 @@ function renderTranslationRows(changes, fold = TLIST_PAGE_SIZE) {
 function renderDigestItem(item) {
   const platform = getPlatform(item.platform);
   const changes = item.meta.changes;
-  const total = changes.length;
+  // 分段标头不算「条」
+  const total = changes.filter((change) => !change.group).length;
   const fold = TLIST_PAGE_SIZE;
+  const shown = changes.slice(0, fold).filter((change) => !change.group).length;
   const fullTime = item.timestamp ? new Date(item.timestamp).toLocaleString('zh-CN', { hour12: false }) : '';
 
   return `
@@ -143,8 +158,8 @@ function renderDigestItem(item) {
 ${renderTranslationRows(changes, fold)}
             </ul>
             <div class="tlist__foot">
-              <span class="tlist__progress" data-tlist-progress>第 1-${Math.min(fold, total)} 条 / 共 ${total} 条</span>
-              <nav class="pager pager--inner" data-tlist-pager aria-label="译文分页" hidden></nav>
+              <span class="tlist__progress" data-tlist-progress>第 1-${shown} 条 / 共 ${total} 条</span>
+              <nav class="pager pager--inner" data-tlist-pager aria-label="明细分页" hidden></nav>
             </div>
           </div>
         </div>

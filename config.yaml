@@ -51,21 +51,34 @@ platforms:
     cookie: ${KUAISHOU_COOKIE}
 
   # ---------------- GitHub ----------------
+  # 提交 / Issue / PR 会按「仓库 + 时间空档」汇总成一张卡，不再一个提交一条。
   github:
     enabled: true
     user: Toad114514
     # 强烈建议配置：匿名只有 60 次/小时，很容易限流
     token: ${GITHUB_TOKEN}
-    # 首次运行回溯多少天（之后按增量抓）
-    backfillDays: 120
-    perPage: 30
+    # 汇总窗口（天），0 = 全历史。仓库卡要装下「这个仓库的全部操作」，
+    # 所以默认不限时间：带 since 的话窗口边界每天推进，最老的几条提交会慢慢消失。
+    lookbackDays: 0
+    # 同一仓库相邻两次操作间隔超过这个分钟数，算另一次动工 → 卡内另起一段
+    sessionGapMinutes: 90
+    # 单页条数（上限 100）与每个仓库最多翻几页
+    perPage: 100
+    maxPages: 2
+    # 单张卡最多保留多少条明细、最多查多少个仓库
+    maxRows: 300
+    maxRepos: 40
 
   # ---------------- Gitee ----------------
   gitee:
     enabled: true
     user: toadstool
-    backfillDays: 365
-    perPage: 30
+    lookbackDays: 0
+    sessionGapMinutes: 90
+    perPage: 100
+    maxPages: 2
+    maxRows: 300
+    maxRepos: 40
 
   # ---------------- 互联网档案馆 ----------------
   archive:

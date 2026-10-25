@@ -596,6 +596,36 @@ body::before {
   display: none;
 }
 
+/*
+ * 分段标头：仓库活动按「连续工作时段」把明细切成若干段，
+ * 每段前面来一条这样的窄行（`10-25 20:01–20:48 · 5 条`）。
+ * 它不是一条明细，所以不计入「共 N 条」，也不能有 hover。
+ */
+.tlist__group {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 2px 5px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--fg-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.tlist__group[hidden] {
+  display: none;
+}
+
+.tlist__group::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 3px;
+  height: 11px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--pc, var(--accent)) 72%, transparent);
+}
+
 .tlist__link {
   display: flex;
   align-items: baseline;

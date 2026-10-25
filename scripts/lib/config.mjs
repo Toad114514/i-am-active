@@ -59,14 +59,31 @@ const DEFAULTS = {
       user: 'Toad114514',
       /** 可选：不填就是匿名 60 次/小时，很容易限流 */
       token: '',
-      backfillDays: 120,
-      perPage: 30,
+      /**
+       * 汇总窗口（天），0 = 全历史。仓库卡是「这个仓库的全部操作」，
+       * 所以默认不限时间——带 since 的话窗口边界每天推进一点，
+       * 卡里最老的几条提交会一天天静默消失。
+       */
+      lookbackDays: 0,
+      /** 同一仓库相邻两次操作间隔超过这个分钟数，就算另一次动工 */
+      sessionGapMinutes: 90,
+      /** 单页条数（GitHub 上限 100）+ 每个仓库最多翻几页 */
+      perPage: 100,
+      maxPages: 2,
+      /** 单张汇总卡最多保留多少条明细 */
+      maxRows: 300,
+      /** 最多查多少个仓库 */
+      maxRepos: 40,
     },
     gitee: {
       enabled: true,
       user: 'toadstool',
-      backfillDays: 365,
-      perPage: 30,
+      lookbackDays: 0,
+      sessionGapMinutes: 90,
+      perPage: 100,
+      maxPages: 2,
+      maxRows: 300,
+      maxRepos: 40,
     },
     archive: {
       enabled: true,
