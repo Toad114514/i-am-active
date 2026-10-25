@@ -72,12 +72,21 @@ async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
     return [];
   }
 
-  const games = Array.isArray(data?.response?.games) ? data.response.games : [];
+  const response = data?.response ?? {};
+  const games = Array.isArray(response.games) ? response.games : [];
   if (games.length === 0) {
-    console.warn(
-      '[steam] 最近两周没有可读的游戏记录。' +
-        '多半是「个人资料 → 隐私设置 → 游戏详情」不是公开，或者这两周真的没玩。',
-    );
+    // 两种空要分开说，否则排查时会误判：
+    //   {"response":{"total_count":0}} → 接口正常工作，只是这两周没玩
+    //   {"response":{}}                → 拿不到任何东西，多半是隐私没开或 ID 不对
+    if (response.total_count === 0) {
+      console.warn('[steam] 最近两周确实没有游玩记录（total_count=0）');
+    } else {
+      console.warn(
+        '[steam] Steam 返回空响应 {"response":{}}：' +
+          '可能是「个人资料 → 隐私设置 → 游戏详情」不是公开，' +
+          '也可能 steamId64 不是这个账号的（17 位数字，不是 toad1145 这种自定义名）',
+      );
+    }
     return [];
   }
 
@@ -154,6 +163,16 @@ export async function fetchSteam(context = {}) {
   if (!config.apiKey || !config.steamId64) {
     console.warn('[steam] 缺少 steam.apiKey 或 steam.steamId64，跳过');
     return [];
+  }
+
+  // SteamID64 是 17 位纯数字；填成 toad1145 这种自定义名或填错位数时，
+  // API 只会返回空，不会报错，所以这里先把它显式点出来。
+  if (!/^\d{17}$/.test(config.steamId64)) {
+    const tail = config.steamId64.length > 6 ? `${config.steamId64.slice(0, 5)}…（${config.steamId64.length} 位）` : '（位数明显不对）';
+    console.warn(
+      `[steam] steamId64 应该是 17 位纯数字，当前是 ${tail}；` +
+        '用 https://steamid.io 把个人资料链接换算一下',
+    );
   }
 
   const sinceMs = windowStart(context);
