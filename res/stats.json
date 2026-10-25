@@ -1,7 +1,7 @@
 {
   "monitoringSince": "2026-10-24T21:43:03.162Z",
-  "lastCollectedAt": "2026-10-25T03:19:37.765Z",
-  "collectRuns": 4,
-  "lastRunNewCount": 0,
+  "lastCollectedAt": "2026-10-25T03:57:46.922Z",
+  "collectRuns": 5,
+  "lastRunNewCount": 157,
   "lastRunFailures": []
 }
