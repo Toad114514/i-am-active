@@ -1,22 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T15:33:24.195Z",
-    "bilibili": "2026-10-25T15:32:38.188Z",
-    "youtube": "2026-10-25T15:32:38.359Z",
-    "ottohub": "2026-10-25T15:32:39.378Z",
-    "kuaishou": "2026-10-25T15:32:42.163Z",
-    "github": "2026-10-25T15:32:54.340Z",
-    "gitee": "2026-10-25T15:33:18.711Z",
-    "archive": "2026-10-25T15:33:19.986Z",
-    "retroachievements": "2026-10-25T15:33:25.636Z",
-    "steam": "2026-10-25T15:33:29.147Z"
+    "weblate": "2026-10-25T15:46:32.889Z",
+    "bilibili": "2026-10-25T15:45:46.051Z",
+    "youtube": "2026-10-25T15:45:46.107Z",
+    "ottohub": "2026-10-25T15:45:47.969Z",
+    "kuaishou": "2026-10-25T15:45:49.992Z",
+    "github": "2026-10-25T15:46:01.643Z",
+    "gitee": "2026-10-25T15:46:28.679Z",
+    "archive": "2026-10-25T15:46:29.473Z",
+    "retroachievements": "2026-10-25T15:46:34.443Z",
+    "steam": "2026-10-25T15:46:37.198Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T15:33:25.637Z",
-      "since": "2026-10-25T09:59:31.735Z",
-      "note": "",
+      "checkedAt": "2026-10-25T15:46:34.444Z",
+      "since": "2026-10-25T15:33:29.147Z",
+      "note": "窗口内没有新动作：这些游戏的 19 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
         {
@@ -41,7 +41,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 1,
+      "playItems": 0,
       "achievementItems": 0,
       "achievements": [
         {
@@ -74,8 +74,8 @@
       ]
     },
     "retroachievements": {
-      "checkedAt": "2026-10-25T15:33:24.195Z",
-      "since": "2026-10-25T09:59:29.006Z",
+      "checkedAt": "2026-10-25T15:46:32.890Z",
+      "since": "2026-10-25T15:33:25.636Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -119,12 +119,12 @@
     "github": {
       "lookbackDays": 0,
       "repos": 30,
-      "commits": 620,
+      "commits": 621,
       "events": 0,
       "truncated": 0,
       "skipped": 1,
       "digests": 27,
-      "actions": 641
+      "actions": 642
     }
   }
 }
