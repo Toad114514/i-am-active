@@ -1,5 +1,20 @@
 [
   {
+    "id": "steam:220:HL2_BEAT_PLAZASTANDOFF",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "广场守卫者",
+    "summary": "在《Half-Life 2》解锁成就「广场守卫者」：在“反叛者 1 号”一节中，从广场僵持的战斗中幸存。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_plazastandoff.jpg",
+    "timestamp": "2026-10-25T08:42:52.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_BEAT_PLAZASTANDOFF"
+    }
+  },
+  {
     "id": "steam:play:220:1792916496",
     "platform": "steam",
     "type": "游玩记录",
