@@ -1,0 +1,97 @@
+name: 更新并部署
+
+# 每 2 小时抓取一次，也支持在 Actions 页面手动 Run workflow，
+# 另外 main 上有代码改动时顺便重建一次站点。
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+# 抓取完要把 res/*.json 回写进仓库，所以需要写权限。
+permissions:
+  contents: write
+
+# 同一时间只允许一个实例在跑，避免两个任务同时改 res/list.json 而互相覆盖。
+concurrency:
+  group: update-site
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: 抓取 + 生成
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # 密钥统一通过环境变量注入，config.yaml 里只写 ${VAR} 占位符。
+      # 没配的变量会解析成空值，对应平台按「未配置」跳过，不会让整个任务失败。
+      - name: 抓取各平台活动
+        env:
+          RA_API_KEY: ${{ secrets.RA_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          KUAISHOU_COOKIE: ${{ secrets.KUAISHOU_COOKIE }}
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          STEAM_ID64: ${{ secrets.STEAM_ID64 }}
+        run: node scripts/collect.mjs 2>&1 | tee collect.log
+
+      - name: 生成静态站
+        env:
+          SITE_BASE: /${{ github.event.repository.name }}
+        run: node scripts/build.mjs
+
+      - name: 写任务摘要
+        if: always()
+        run: |
+          {
+            echo "### 抓取结果"
+            echo '```'
+            tail -n 25 collect.log 2>/dev/null || echo '（没有采集日志）'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # 只有 res 真的变了才提交，避免每 2 小时产生一个空提交。
+      # 用 GITHUB_TOKEN 推的提交不会再次触发本工作流，所以不会自激循环。
+      - name: 回写数据
+        run: |
+          if [ -z "$(git status --porcelain res)" ]; then
+            echo "res/ 无变化，跳过提交"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add res
+          git commit -m "chore(data): 自动更新活动列表 $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin HEAD:main
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+
+      - name: 打包站点
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: 部署到 GitHub Pages
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: 部署
+        id: deployment
+        uses: actions/deploy-pages@v4

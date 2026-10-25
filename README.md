@@ -42,3 +42,20 @@ RA 的 API 只能给出「最近一段时间解锁的成就」，看不出哪条
 
 抓取窗口由 `lookbackDays` 控制（首轮默认回溯 60 天），之后每次运行会用
 `res/state.json` 里记录的上次时间自动收窄查询范围，避免重复拉一大批旧数据。
+
+## 自动更新与部署
+
+`.github/workflows/update.yml` 每 2 小时跑一次（`0 */2 * * *`），也可以在
+Actions 页面点 **Run workflow** 手动触发；推到 `main` 时也会重建一次。
+
+一次运行做四件事：抓取各平台 → 有新增就把 `res/*.json` 提交回 `main` →
+生成 `dist/` → 部署到 GitHub Pages。只有 `res/` 真的变了才会产生提交，
+所以不会每 2 小时堆一个空 commit。
+
+首次启用需要两个一次性设置：
+
+1. **Settings → Pages → Source 选 GitHub Actions**（不是分支，否则 `deploy-pages` 会报 `Get Pages site failed`）。
+2. **Settings → Secrets and variables → Actions** 里加上表里的密钥。`GITHUB_TOKEN` 由 Actions 自动提供，不用手动建。
+
+私密平台数据（`res/`）是用工作流自带的 `GITHUB_TOKEN` 提交的，这类提交不会再次
+触发工作流，因此不存在自激循环；`concurrency` 也限制了同一时刻只有一个实例在写数据。
