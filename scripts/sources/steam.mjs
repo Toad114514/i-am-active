@@ -266,7 +266,10 @@ async function fetchAchievementSchema(appid, apiKey) {
  * @returns {Promise<{items: Array<object>, stats: {total: number, unlocked: number, inWindow: number}}>}
  */
 async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, gameName }) {
-  const empty = { items: [], stats: { total: 0, unlocked: 0, inWindow: 0 } };
+  const empty = (extra = {}) => ({
+    items: [],
+    stats: { total: 0, unlocked: 0, inWindow: 0, ok: false, error: null, ...extra },
+  });
   const params = new URLSearchParams({
     steamid: steamId64,
     appid: String(appid),
@@ -283,12 +286,16 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
   } catch (error) {
     const reason = error instanceof HttpError ? `HTTP ${error.status ?? '?'}` : error.message;
     console.warn(`[steam] appid=${appid} 获取成就失败：${reason}`);
-    return empty;
+    return empty({ error: reason });
   }
 
   const stats = data?.playerstats ?? {};
   // 该游戏没有成就体系时这里会是 { success: false, error: 'Requested app has no stats' }
-  if (stats.success === false || !Array.isArray(stats.achievements)) return empty;
+  if (stats.success === false || !Array.isArray(stats.achievements)) {
+    const detail = typeof stats.error === 'string' ? stats.error : null;
+    if (detail) console.warn(`[steam] appid=${appid} 读不到成就：${detail}`);
+    return empty({ error: detail });
+  }
 
   const gameTitle = stats.gameName ?? gameName ?? `App ${appid}`;
   const unlockedTotal = stats.achievements.filter(isAchieved).length;
@@ -300,7 +307,13 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
     fresh.push({ achievement, seconds });
   }
 
-  const summary = { total: stats.achievements.length, unlocked: unlockedTotal, inWindow: fresh.length };
+  const summary = {
+    total: stats.achievements.length,
+    unlocked: unlockedTotal,
+    inWindow: fresh.length,
+    ok: true,
+    error: null,
+  };
   if (fresh.length === 0) return { items: [], stats: summary };
 
   // 只有真的要把成就写进列表时，才多花一次请求去取中文名
