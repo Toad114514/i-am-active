@@ -74,6 +74,20 @@ function windowStart(context = {}) {
   return Date.now() - RECENT_WINDOW_DAYS * DAY_MS;
 }
 
+/**
+ * 把 Steam 的错误体翻译成人话。最常遇到的是 403 + Profile is not public：
+ * 同一个 key 调 GetOwnedGames 能过、调 GetPlayerAchievements 却被拒，
+ * 因为成就接口对隐私的要求更严（需要「我的个人资料」和「游戏详情」都公开）。
+ */
+function explainSteamError(body) {
+  const text = String(body ?? '');
+  if (/profile is not public/i.test(text)) {
+    return 'Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开';
+  }
+  if (/no stats/i.test(text)) return '这款游戏没有成就体系（Steam 回 Requested app has no stats）';
+  return text.replace(/\s+/g, ' ').slice(0, 160);
+}
+
 /** 分钟数转成人话：45 分钟 / 2 小时 / 3 小时 20 分钟。 */
 function formatPlaytime(minutes) {
   const total = Math.max(0, Math.round(Number(minutes) || 0));
@@ -288,16 +302,18 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
       });
       break;
     } catch (error) {
-      // 把响应体一起带上：Steam 的 403 会说明到底是「无权访问」还是「key 不对」
+      // 把响应体一起带上：Steam 的 403 会说明到底是「无权访问」「隐私没开」还是「key 不对」
       const reason =
         error instanceof HttpError
-          ? `HTTP ${error.status ?? '?'}${error.body ? `（${error.body.replace(/\s+/g, ' ').slice(0, 120)}）` : ''}`
+          ? `HTTP ${error.status ?? '?'}${error.body ? `（${explainSteamError(error.body)}）` : ''}`
           : error.message;
       failures.push(`${attempt.label} → ${reason}`);
     }
   }
   if (!data) {
     const reason = failures.join('；');
+    // 「这款游戏没有成就体系」是正常情况，不值得刷一行警告
+    if (/no stats/i.test(reason)) return empty({ error: reason });
     console.warn(`[steam] appid=${appid} 获取成就失败：${reason}`);
     return empty({ error: reason });
   }
@@ -465,6 +481,13 @@ export async function fetchSteam(context = {}) {
     `[steam] 检查 ${targets.size} 款游戏（回看 ${days} 天），` +
       `新增 ${plays} 条游玩记录 + ${achievements} 条成就`,
   );
+  const privacyBlocked = diag.achievements.some((entry) => /Profile is not public/i.test(entry.error ?? ''));
+  if (privacyBlocked && collected.length === 0) {
+    diag.note =
+      'Steam 拒绝读成就：Profile is not public。把「编辑个人资料 → 隐私设置」里的' +
+      '「我的个人资料」和「游戏详情」都设为公开（游玩记录不受影响，可以正常写）';
+    console.warn(`[steam] ${diag.note}`);
+  }
   if (collected.length === 0 && games.length > 0) {
     const unlockedSum = diag.achievements.reduce((sum, entry) => sum + (entry.unlocked ?? 0), 0);
     const totalSum = diag.achievements.reduce((sum, entry) => sum + (entry.total ?? 0), 0);
@@ -472,10 +495,12 @@ export async function fetchSteam(context = {}) {
       '[steam] 游戏在最近列表里，但窗口内既没有新会话也没有新成就。' +
         `（这些游戏共有 ${totalSum} 个成就、已解锁 ${unlockedSum} 个，只是都不在窗口内）`,
     );
-    diag.note =
-      unlockedSum > 0
-        ? `窗口内没有新动作：这些游戏的 ${unlockedSum} 个已解锁成就都在上次抓取之前`
-        : '窗口内没有新动作：最近列表里的游戏都没有成就体系，或本周没有新解锁';
+    if (!privacyBlocked) {
+      diag.note =
+        unlockedSum > 0
+          ? `窗口内没有新动作：这些游戏的 ${unlockedSum} 个已解锁成就都在上次抓取之前`
+          : '窗口内没有新动作：最近列表里的游戏都没有成就体系，或本周没有新解锁';
+    }
   }
   return collected.slice(0, config.maxItems);
 }
@@ -483,4 +508,4 @@ export async function fetchSteam(context = {}) {
 /**
  * 最近两周玩过的游戏 → 可读列表（导出给测试用，逻辑与运行时一致）。
  */
-export { recentlyPlayedGames, windowStart, fetchAchievementsForApp, playItems, formatPlaytime };
+export { recentlyPlayedGames, windowStart, fetchAchievementsForApp, playItems, formatPlaytime, explainSteamError };

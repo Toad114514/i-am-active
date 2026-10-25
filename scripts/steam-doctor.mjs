@@ -11,7 +11,7 @@
  */
 import { platform, configPath } from './lib/config.mjs';
 import { getJson, HttpError } from './lib/http.mjs';
-import { recentlyPlayedGames } from './sources/steam.mjs';
+import { recentlyPlayedGames, explainSteamError } from './sources/steam.mjs';
 
 const steam = platform('steam');
 const apiKey = String(steam.apiKey ?? '').trim();
@@ -117,7 +117,11 @@ try {
     );
   }
 } catch (error) {
-  console.warn(`\n成就接口请求失败：${error instanceof HttpError ? `HTTP ${error.status}` : error.message}`);
+  const status = error instanceof HttpError ? `HTTP ${error.status}` : error.message;
+  console.warn(`\n成就接口请求失败：${status}`);
+  if (error instanceof HttpError && error.body) {
+    console.warn(`原因：${explainSteamError(error.body)}`);
+  }
 }
 
 console.log('\n结论：链路是通的，上面这些游戏里「上次游玩」在抓取窗口内的会写一条游玩记录。');
