@@ -1,22 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T09:44:59.974Z",
-    "bilibili": "2026-10-25T09:44:43.797Z",
-    "youtube": "2026-10-25T09:44:43.891Z",
-    "ottohub": "2026-10-25T09:44:44.938Z",
-    "kuaishou": "2026-10-25T09:44:46.989Z",
-    "github": "2026-10-25T09:44:47.993Z",
-    "gitee": "2026-10-25T09:44:55.781Z",
-    "archive": "2026-10-25T09:44:56.944Z",
-    "retroachievements": "2026-10-25T09:45:01.340Z",
-    "steam": "2026-10-25T09:45:03.932Z"
+    "weblate": "2026-10-25T09:59:27.247Z",
+    "bilibili": "2026-10-25T09:59:04.085Z",
+    "youtube": "2026-10-25T09:59:04.221Z",
+    "ottohub": "2026-10-25T09:59:05.920Z",
+    "kuaishou": "2026-10-25T09:59:19.091Z",
+    "github": "2026-10-25T09:59:20.340Z",
+    "gitee": "2026-10-25T09:59:23.639Z",
+    "archive": "2026-10-25T09:59:24.049Z",
+    "retroachievements": "2026-10-25T09:59:29.006Z",
+    "steam": "2026-10-25T09:59:31.735Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T09:45:01.341Z",
-      "since": "2026-10-25T09:04:56.293Z",
-      "note": "",
+      "checkedAt": "2026-10-25T09:59:29.007Z",
+      "since": "2026-10-25T09:45:03.932Z",
+      "note": "窗口内没有新动作：这些游戏的 19 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
         {
@@ -41,7 +41,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 1,
+      "playItems": 0,
       "achievementItems": 0,
       "achievements": [
         {
@@ -74,8 +74,8 @@
       ]
     },
     "retroachievements": {
-      "checkedAt": "2026-10-25T09:44:59.975Z",
-      "since": "2026-10-25T09:04:53.719Z",
+      "checkedAt": "2026-10-25T09:59:27.247Z",
+      "since": "2026-10-25T09:45:01.340Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -104,7 +104,8 @@
       },
       "gameArt": {
         "games": 4,
-        "withArt": 0
+        "withArt": 21,
+        "debug": []
       }
     }
   }

@@ -1,5 +1,33 @@
 [
   {
+    "id": "github:commit:e9e57fc378b0496eac1038951a08a47295d9082c",
+    "platform": "github",
+    "type": "提交",
+    "title": "fix(retroachievements): GetGame 的参数名是 i 不是 g（写错只会拿到空对象，图全丢）",
+    "summary": "在 Toad114514/i-am-active 中提交：fix(retroachievements): GetGame 的参数名是 i 不是 g（写错只会拿到空对象，图全丢）",
+    "url": "https://github.com/Toad114514/i-am-active/commit/e9e57fc378b0496eac1038951a08a47295d9082c",
+    "image": null,
+    "timestamp": "2026-10-25T09:52:14Z",
+    "meta": {
+      "sha": "e9e57fc",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
+    "id": "github:commit:29915677e6b43dcbfda05f7a125fc5d00dd920c5",
+    "platform": "github",
+    "type": "提交",
+    "title": "chore(retroachievements): 取图失败时把现场（报错原文/返回键名）记进 state.json",
+    "summary": "在 Toad114514/i-am-active 中提交：chore(retroachievements): 取图失败时把现场（报错原文/返回键名）记进 state.json",
+    "url": "https://github.com/Toad114514/i-am-active/commit/29915677e6b43dcbfda05f7a125fc5d00dd920c5",
+    "image": null,
+    "timestamp": "2026-10-25T09:50:35Z",
+    "meta": {
+      "sha": "2991567",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "github:commit:e540fcf99f6027f2608e2ec2c91c44af7f297259",
     "platform": "github",
     "type": "提交",
@@ -88,7 +116,8 @@
       "consoleName": "Nintendo 64",
       "achievementsUnlocked": 30,
       "achievementsTotal": 298,
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png"
     }
   },
   {
@@ -111,7 +140,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/474719.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/474719.png"
     }
   },
   {
@@ -134,7 +165,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/469314.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/469314.png"
     }
   },
   {
@@ -153,7 +186,8 @@
       "consoleName": "Nintendo 64",
       "achievementsUnlocked": 7,
       "achievementsTotal": 7,
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/133715.png"
     }
   },
   {
@@ -176,7 +210,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/605293.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/115448.png",
       "gameUrl": "https://retroachievements.org/game/34305",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/133715.png",
+      "badge": "https://media.retroachievements.org/Badge/605293.png"
     }
   },
   {
@@ -195,7 +231,8 @@
       "consoleName": "Nintendo 64",
       "achievementsUnlocked": 12,
       "achievementsTotal": 246,
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png"
     }
   },
   {
@@ -218,7 +255,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/659153.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "badge": "https://media.retroachievements.org/Badge/659153.png"
     }
   },
   {
@@ -241,7 +280,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/659151.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "badge": "https://media.retroachievements.org/Badge/659151.png"
     }
   },
   {
@@ -264,7 +305,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/659150.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "badge": "https://media.retroachievements.org/Badge/659150.png"
     }
   },
   {
@@ -287,7 +330,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/659152.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/120597.png",
       "gameUrl": "https://retroachievements.org/game/31306",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/103749.png",
+      "badge": "https://media.retroachievements.org/Badge/659152.png"
     }
   },
   {
@@ -310,7 +355,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/605295.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/115448.png",
       "gameUrl": "https://retroachievements.org/game/34305",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/133715.png",
+      "badge": "https://media.retroachievements.org/Badge/605295.png"
     }
   },
   {
@@ -333,7 +380,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/455923.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/455923.png"
     }
   },
   {
@@ -356,7 +405,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/469768.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/469768.png"
     }
   },
   {
@@ -379,7 +430,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/474723.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/474723.png"
     }
   },
   {
@@ -402,7 +455,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/467024.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/467024.png"
     }
   },
   {
@@ -425,7 +480,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/466902.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/466902.png"
     }
   },
   {
@@ -448,7 +505,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/456136.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/456136.png"
     }
   },
   {
@@ -471,7 +530,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/460297.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/460297.png"
     }
   },
   {
@@ -494,7 +555,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/466904.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/466904.png"
     }
   },
   {
@@ -517,7 +580,9 @@
       "badgeUrl": "https://media.retroachievements.org/Badge/467022.png",
       "gameIconUrl": "https://media.retroachievements.org/Images/068471.png",
       "gameUrl": "https://retroachievements.org/game/17500",
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/135002.png",
+      "badge": "https://media.retroachievements.org/Badge/467022.png"
     }
   },
   {
@@ -536,7 +601,8 @@
       "consoleName": "Nintendo 64",
       "achievementsUnlocked": 0,
       "achievementsTotal": 17,
-      "user": "Toad114514"
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/070330.png"
     }
   },
   {
