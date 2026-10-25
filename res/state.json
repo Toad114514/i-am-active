@@ -1,22 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T08:56:20.000Z",
-    "bilibili": "2026-10-25T08:56:08.474Z",
-    "youtube": "2026-10-25T08:56:08.544Z",
-    "ottohub": "2026-10-25T08:56:09.598Z",
-    "kuaishou": "2026-10-25T08:56:13.037Z",
-    "github": "2026-10-25T08:56:13.834Z",
-    "gitee": "2026-10-25T08:56:16.832Z",
-    "archive": "2026-10-25T08:56:17.378Z",
-    "retroachievements": "2026-10-25T08:56:20.486Z",
-    "steam": "2026-10-25T08:56:23.164Z"
+    "weblate": "2026-10-25T08:59:07.564Z",
+    "bilibili": "2026-10-25T08:58:51.312Z",
+    "youtube": "2026-10-25T08:58:51.424Z",
+    "ottohub": "2026-10-25T08:58:52.413Z",
+    "kuaishou": "2026-10-25T08:58:54.627Z",
+    "github": "2026-10-25T08:58:55.627Z",
+    "gitee": "2026-10-25T08:58:57.551Z",
+    "archive": "2026-10-25T08:59:04.369Z",
+    "retroachievements": "2026-10-25T08:59:08.347Z",
+    "steam": "2026-10-25T08:59:11.064Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T08:56:20.487Z",
-      "since": "2026-10-25T08:42:06.263Z",
-      "note": "",
+      "checkedAt": "2026-10-25T08:59:08.347Z",
+      "since": "2026-10-25T08:56:23.164Z",
+      "note": "窗口内没有新动作：这些游戏的 19 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
         {
@@ -42,14 +42,14 @@
         }
       ],
       "playItems": 0,
-      "achievementItems": 1,
+      "achievementItems": 0,
       "achievements": [
         {
           "appid": "220",
           "name": "Half-Life 2",
           "total": 69,
           "unlocked": 14,
-          "inWindow": 1,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
@@ -72,6 +72,36 @@
           "error": "l=schinese → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））；无 l → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））"
         }
       ]
+    },
+    "retroachievements": {
+      "checkedAt": "2026-10-25T08:59:07.564Z",
+      "since": "2026-10-25T08:56:20.486Z",
+      "windowMinutes": 4320,
+      "keyConfigured": true,
+      "keyHint": "oCzx…yt（长度 32）",
+      "note": "",
+      "profile": {
+        "ok": true,
+        "user": "toad114514",
+        "points": 1266,
+        "truePoints": 3210
+      },
+      "recentAchievements": {
+        "ok": true,
+        "rawCount": 17,
+        "used": 17,
+        "error": null
+      },
+      "recentlyPlayed": {
+        "ok": true,
+        "rawCount": 10,
+        "used": 4,
+        "error": null
+      },
+      "items": {
+        "achievements": 17,
+        "plays": 4
+      }
     }
   }
 }
