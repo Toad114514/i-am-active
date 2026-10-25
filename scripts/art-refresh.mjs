@@ -11,17 +11,16 @@
  *   RA 的封面/截图要按 gameId 现查（API_GetGame），存下来的是当时的 URL；
  *   Steam 的头图是 `apps/<appid>/header.jpg`，纯推导、不会过期，没有回填的必要。
  *
- * 幂等：只重查「可能被当前规则改善」的游戏——`backdropSource` 缺失、是 `title`
- * （旧规则留下的痕迹），或者存的图根本是 RA 那张占位图（游戏没封面时 API 返回
- * 的是写着 no screenshot found 的灰图）。第一次跑完之后后续每次都是空跑，
- * 不会每小时去骚扰 API。
+ * 幂等：只重查「可能被当前规则改善」的游戏——从没取过图、存的是占位图，
+ * 或者 `meta.artRule` 和当前规则对不上（取图顺序改过时全员重查一次）。
+ * 因此改完那一轮之后，后续每次都是空跑，不会每小时去骚扰 API。
  *
  * 用法：
  *   node scripts/art-refresh.mjs            # 回填并写回 res/list.json
  *   node scripts/art-refresh.mjs --dry-run  # 只打印，不写文件
  */
 import { readList, writeList } from './lib/store.mjs';
-import { gameArtFor, isPlaceholderArt } from './sources/retroachievements.mjs';
+import { gameArtFor, isPlaceholderArt, ART_RULE } from './sources/retroachievements.mjs';
 
 /** 单轮最多重查多少款游戏（防止某天列表里突然堆了一堆老 gameId）。 */
 const MAX_GAMES = 30;
@@ -43,10 +42,20 @@ async function main() {
   }
 
   // 只挑「可能被新规则改善」的游戏
+  // 只挑「可能被当前规则改善」的游戏：
+  //   1) 从来没取过图（backdropSource 缺失）
+  //   2) 存的是 RA 那张占位图（游戏其实没有这张图）
+  //   3) meta.artRule 和当前规则对不上（取图顺序改过，老条目要全员重查一次）
+  // 前两条命中范围很小，第三条只在改规则那一轮命中一次，之后各自都带着新版本号，
+  // 于是下次就是空跑——不会每小时都去骚扰 API。
   const stale = [...byGame.entries()].filter(([, items]) =>
     items.some((item) => {
       const source = item.meta?.backdropSource ?? null;
-      return !source || source === 'title' || isPlaceholderArt(item.meta?.backdrop);
+      return (
+        !source ||
+        isPlaceholderArt(item.meta?.backdrop) ||
+        item.meta?.artRule !== ART_RULE
+      );
     }),
   );
 
@@ -85,6 +94,7 @@ async function main() {
         // 「图标当背景」的纯文字样式，总比铺一张 no screenshot found 强。
         backdrop: art.backdrop ?? null,
         backdropSource: art.backdrop ? (art.source ?? null) : null,
+        artRule: ART_RULE,
       };
       // 成就条目缺角标时顺手补上（只用成就自己的徽章，不拿游戏图顶）
       if (item.meta.achievementId && !item.meta.badge) {

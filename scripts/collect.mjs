@@ -278,7 +278,12 @@ async function main() {
           const current = target.meta?.[key];
           // backdrop / badge 是从源站「推导」出来的展示字段：规则一变（比如 RA 从
           // 游戏内截图改成优先封面）老条目就该跟着变，不然永远是旧图。
-          const derived = key === 'backdrop' || key === 'badge' || key === 'backdropSource';
+          // 同样是按当前规则推导出来的（规则一变就该跟着变，见 ART_RULE）。
+          const derived =
+            key === 'backdrop' ||
+            key === 'badge' ||
+            key === 'backdropSource' ||
+            key === 'artRule';
           if (derived || current === undefined || current === null || current === '') {
             if (current === value) continue;
             target.meta = { ...(target.meta ?? {}), [key]: value };

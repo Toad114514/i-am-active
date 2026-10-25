@@ -396,13 +396,25 @@ body::before {
   height: 100%;
   object-fit: cover;
   /*
-   * 0.62 是「所有平台统一」的不透明度：视频封面、游戏封面、归档缩略图都走这一条。
-   * 之前是 0.5，配上正文那层渐变之后整张图几乎看不见，读起来像纯文字卡片。
-   * 游戏图不再单独压暗（曾经额外叠过 brightness(.72)），各平台保持同一观感。
+   * 所有平台统一：左边最亮，向右一路淡到透明（左亮 → 右暗，单向）。
+   * 之前是「左暗 → 中间亮 → 右暗」的双向淡入淡出，图被压得只剩中间一条，
+   * 整体看着发灰。文字从 30%/32% 处开始，右半边正好该让位给文字。
    */
-  opacity: 0.62;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.35) 34%, #000 88%);
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.35) 34%, #000 88%);
+  opacity: 0.72;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    rgba(0, 0, 0, 0.82) 46%,
+    rgba(0, 0, 0, 0.35) 78%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    rgba(0, 0, 0, 0.82) 46%,
+    rgba(0, 0, 0, 0.35) 78%,
+    transparent 100%
+  );
   filter: saturate(0.85);
 }
 
@@ -427,26 +439,10 @@ body::before {
 }
 
 /*
- * 游戏条目只改几何，不改亮度/饱和度——亮度和视频卡共用上面那一条，避免
- * 「游戏封面比别人暗一大截」。唯一保留的是遮罩：图收窄成 36% 的「海报」，
- * 右边缘正好落在正文渐变的起点上，不淡出会露出一条硬边。
+ * 游戏条目只改几何，不改观感：亮度、饱和度、遮罩方向全部和上面共用一条。
+ * 图收窄成 36% 的「海报」，而统一的遮罩本来就是向右淡到透明，
+ * 海报右边缘正好全透明，不会有硬边。
  */
-.item--game .item__media img {
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(0, 0, 0, 0.35) 26%,
-    #000 62%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(0, 0, 0, 0.35) 26%,
-    #000 62%,
-    transparent 100%
-  );
-}
 
 .item--game .item__body {
   margin-left: 32%;

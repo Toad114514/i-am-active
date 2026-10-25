@@ -184,14 +184,17 @@ function achievementItem(a, user) {
  * 游戏美术图缓存：一轮里同一款游戏只查一次。
  *
  * `API_GetGame` 给三张图，当背景的优先级是：
- *   ImageBoxArt（商店/盒装封面，绝大多数游戏都有，而且是最「像这款游戏」的一张）
- *   → ImageIngame（游戏内截图）
- *   → ImageTitle（标题画面截图）
+ *   ImageBoxArt（商店/盒装封面，最「像这款游戏」的一张）
+ *   → ImageTitle（游戏内标题画面）
+ *   → ImageIngame（游玩过程的截图）
  *
- * 标题画面排最后是踩过坑的：RA 的标题画面常常不是游戏标题界面，而是
- * 「一张大头宣传图」——B3313 的 ImageTitle 就是马里奥的大头照，铺在卡片
- * 左半边完全不像是这款游戏。封面反而最稳。
+ * 标题画面排在游玩截图前面：标题画面一眼能认出是哪款游戏，而游玩截图常常是
+ * 关卡里某个角落。代价是 RA 的 `ImageTitle` 偶尔不是真正的标题界面，而是
+ * 一张宣传大头图（B3313 那张就是马里奥大头照）——但只有封面缺失时才会轮到它。
+ *
+ * 改顺序要同时把 `ART_RULE` 的版本号 +1：老条目靠它对不上号来触发重查。
  */
+export const ART_RULE = 'boxart>title>ingame@v2';
 /**
  * RA 的共享占位图：游戏没有对应美术时，API **不会**返回空字符串，而是返回这张
  * 「No Screenshot Found」的图。不认识它的话，条目背景就是一张写着
@@ -235,8 +238,8 @@ async function fetchGameArt(gameId, key, budget) {
     // 一张都不可用才真的算「没有图」，否则往下退到 ingame / 标题画面。
     const candidates = [
       ['boxart', boxArt],
-      ['ingame', ingame],
       ['title', title],
+      ['ingame', ingame],
     ].filter(([, url]) => url && !isPlaceholderArt(url));
     const picked = candidates[0] ?? null;
     art = {
@@ -245,6 +248,7 @@ async function fetchGameArt(gameId, key, budget) {
       boxArt,
       title: data?.Title ?? data?.title ?? null,
       source: picked ? picked[0] : null,
+      rule: ART_RULE,
     };
     if (!picked && artDebug.length < 3) {
       artDebug.push(
@@ -479,6 +483,8 @@ export async function fetchRetroAchievements(context = {}) {
       if (!found?.backdrop) continue;
       item.meta.backdrop = found.backdrop;
       item.meta.backdropSource = found.source ?? null;
+      // 记下当前取图规则：改顺序时老条目靠它对不上号来触发重查
+      item.meta.artRule = found.rule ?? null;
       if (found.source && artSources[found.source] !== undefined) artSources[found.source] += 1;
       // 只有成就才有东西可角标；游玩记录就单纯一张游戏图。
       // 角标只能是成就徽章本身，别拿游戏截图顶（截图缩到 42px 什么都看不出来）。
