@@ -402,16 +402,29 @@
       if (emptyNode) emptyNode.hidden = true;
 
       listNode.innerHTML = filtered
-        .map((item) =>
-          item.meta && Array.isArray(item.meta.changes) && item.meta.changes.length
-            ? renderDigestItem(item, 10)
-            : `
+        .map((item) => {
+          if (item.meta && Array.isArray(item.meta.changes) && item.meta.changes.length) {
+            return renderDigestItem(item, 10);
+          }
+          // 和 build.mjs 的 renderItem 保持同一套规则：有游戏背景图时，
+          // 成就图标缩成右下角角标；没有就退回「图标当背景」。
+          const backdrop = (item.meta && item.meta.backdrop) || null;
+          const badge = (item.meta && item.meta.badge) || null;
+          const mediaSrc = backdrop || item.image;
+          const hasMedia = Boolean(mediaSrc);
+          const showBadge = Boolean(backdrop) && Boolean(badge);
+          return `
         <li>
-          <a class="item${item.image ? ' item--media' : ''}" href="${escapeHtml(item.url || '#')}"
+          <a class="item${hasMedia ? ' item--media' : ''}${backdrop ? ' item--game' : ''}${showBadge ? ' item--badge' : ''}" href="${escapeHtml(item.url || '#')}"
              style="--pc:${escapeHtml(item.color || '#888')}">
             ${
-              item.image
-                ? `<span class="item__media"><img src="${escapeHtml(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`
+              hasMedia
+                ? `<span class="item__media"><img src="${escapeHtml(mediaSrc)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`
+                : ''
+            }
+            ${
+              showBadge
+                ? `<img class="item__badge" src="${escapeHtml(badge)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
                 : ''
             }
             <div class="item__body">
@@ -432,8 +445,8 @@
               </div>
             </div>
           </a>
-        </li>`
-        )
+        </li>`;
+        })
         .join('');
 
       // 重新渲染后，新卡片需要重新建页码条

@@ -411,6 +411,53 @@ body::before {
   );
 }
 
+/*
+ * 游戏条目（RA / Steam）：左边是游戏截图或封面，右边是文字。
+ * 和视频缩略图那种「大图向右渐隐铺到文字底下」不同，游戏图收窄成一条
+ * 「海报」并在正文起点处就淡出——64px 的成就徽章要有个像样的落脚处，
+ * 而且游戏截图本身信息量大，铺满反而看不清。
+ */
+.item--game .item__media {
+  width: 36%;
+}
+
+.item--game .item__media img {
+  opacity: 0.92;
+  filter: saturate(0.95);
+  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 58%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 0%, #000 58%, transparent 100%);
+}
+
+.item--game .item__body {
+  margin-left: 32%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    color-mix(in srgb, var(--bg-elev) 82%, transparent) 10%,
+    var(--bg-elev) 34%
+  );
+}
+
+/*
+ * 背景是游戏截图/封面时，成就图标不当背景用——64px 的像素图拉满整条高度
+ * 只会糊成一片。缩成小角标钉在「左图区域」的右下角，右边缘对齐正文起点。
+ * z-index 要压过相邻的 .item__body（它带半透明渐变，会盖住下面的东西）。
+ */
+.item--badge .item__badge {
+  position: absolute;
+  z-index: 2;
+  left: calc(32% - 54px);
+  bottom: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(10, 12, 18, 0.5);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+  object-fit: cover;
+  pointer-events: none;
+}
+
 .item__body {
   position: relative;
   padding: 12px 15px 11px;
@@ -962,6 +1009,16 @@ body::before {
 
   .item--media .item__body {
     padding-top: 118px;
+  }
+
+  /* 窄屏时图变成顶部通栏，角标落在通栏右下角（文字从 118px 才开始，不会压到） */
+  .item--badge .item__badge {
+    left: auto;
+    right: 12px;
+    bottom: auto;
+    top: 76px;
+    width: 40px;
+    height: 40px;
   }
 
   .brand__stats {

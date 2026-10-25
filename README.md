@@ -127,6 +127,28 @@ STEAM_API_KEY=xxx STEAM_ID64=7656119xxxxxxxxxx npm run steam:doctor
 `steamId64` 是 17 位数字，超过 JS 的安全整数范围（2^53），所以配置层会把它保留成
 字符串；写成不带引号的整数也不会被改成浮点。
 
+## 游戏成就条目的版式（RA / Steam）
+
+成就徽章只有 64×64，直接铺成卡片背景会被拉成一团糊。所以这两类条目的排法是
+**游戏图当背景 + 徽章当角标**：
+
+- 背景图：RA 取 `API_GetGame` 的 `ImageIngame`（游戏内截图），没有就退回
+  `ImageBoxArt`（封面）；Steam 直接用 CDN 的 `steam/apps/<appid>/header.jpg`，
+  不需要 key。同一轮里同一款游戏只查一次，单轮上限由 `retroachievements.maxGameArt`
+  （默认 20）控制。
+- 徽章：钉在左图区域的右下角（`.item--badge`），右边缘对齐正文起点，不会压到文字。
+- 拿不到游戏图就**自动退回**老版式（图标铺底），背景图 404 时由 `onerror` 把整块
+  媒体区连同 `item--media/item--game/item--badge` 一起去掉，不会留一块空白。
+
+数据上就是条目多了两个字段：`meta.backdrop`（背景）和 `meta.badge`（角标）。
+`meta.badge` 存在时 `image` 才被当成角标，否则 `image` 仍然是背景——所以其它平台
+的老条目不受影响。
+
+**老条目怎么补上背景图**：`collect` 对「同 id 已存在」的条目做了一次字段补全
+（只补新出现、原值为空的 `meta.*`，不改已有值、不算新增），日志里显示
+`补全 N 条老记录`。不这样做的话，历史条目永远不会被「重新新增」，也就永远拿不到
+后来才加的展示字段。
+
 ## 自动更新与部署
 
 `.github/workflows/update.yml` 每 2 小时跑一次（`0 */2 * * *`），也可以在

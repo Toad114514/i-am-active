@@ -205,8 +205,34 @@ async function main() {
         }
       }
 
-      const brandNew = plain.filter((item) => !known.has(item.id));
-      for (const item of brandNew) known.add(item.id);
+      const brandNew = [];
+      let enrichedCount = 0;
+      for (const item of plain) {
+        if (!known.has(item.id)) {
+          known.add(item.id);
+          brandNew.push(item);
+          continue;
+        }
+        // 同 id 已存在：只补本轮新出现的字段（例如后来才加上的 meta.backdrop /
+        // meta.badge），已有值不动、顺序不动、也不算新增。否则老条目永远拿不到
+        // 新加的展示字段——它们不会被重新「新增」，只会被去重跳过。
+        const target = working.find((entry) => entry.id === item.id);
+        if (!target) continue;
+        let changed = false;
+        for (const [key, value] of Object.entries(item.meta ?? {})) {
+          if (value === undefined || value === null || value === '') continue;
+          const current = target.meta?.[key];
+          if (current === undefined || current === null || current === '') {
+            target.meta = { ...(target.meta ?? {}), [key]: value };
+            changed = true;
+          }
+        }
+        if (!target.image && item.image) {
+          target.image = item.image;
+          changed = true;
+        }
+        if (changed) enrichedCount += 1;
+      }
       fresh.push(...brandNew);
       touched.push(...brandNew);
       addedCount += brandNew.length;
@@ -220,8 +246,9 @@ async function main() {
 
       const extra = absorbed ? `，吸收旧记录 ${absorbed} 条` : '';
       const updateText = updatedCount ? `，更新汇总 ${updatedCount} 条` : '';
+      const enrichText = enrichedCount ? `，补全 ${enrichedCount} 条老记录` : '';
       console.log(
-        `[collect] ${source.label.padEnd(18)} 抓到 ${String(items.length).padStart(3)} 条，新增 ${String(addedCount).padStart(3)} 条${updateText}${extra} (${elapsed}s)`,
+        `[collect] ${source.label.padEnd(18)} 抓到 ${String(items.length).padStart(3)} 条，新增 ${String(addedCount).padStart(3)} 条${updateText}${enrichText}${extra} (${elapsed}s)`,
       );
     } catch (error) {
       failures.push({ id: source.id, message: error.message });

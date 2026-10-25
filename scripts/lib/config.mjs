@@ -100,6 +100,10 @@ const DEFAULTS = {
       playSessions: true,
       /** 单轮最多看几款最近玩过的游戏 */
       maxGames: 10,
+      /** 取游戏截图/封面当条目背景（每款游戏一次 API_GetGame 请求） */
+      gameArt: true,
+      /** 单轮最多给几款游戏取图，防止条目爆炸时打太多请求 */
+      maxGameArt: 20,
     },
     steam: {
       enabled: false,

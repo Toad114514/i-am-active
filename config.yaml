@@ -109,6 +109,11 @@ platforms:
     playSessions: true
     # 单轮最多看几款最近玩过的游戏
     maxGames: 10
+    # 取游戏内截图（没有就退回封面）当条目背景，成就徽章缩成右下角角标。
+    # 每款游戏要额外一次 API_GetGame 请求，同一轮里同一款只查一次。
+    gameArt: true
+    # 单轮最多给几款游戏取图
+    maxGameArt: 20
 
   # ---------------- Steam（可选，默认关闭） ----------------
   steam:

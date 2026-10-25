@@ -157,18 +157,36 @@ function renderItem(item) {
     return renderDigestItem(item);
   }
   const platform = getPlatform(item.platform);
-  const hasImage = Boolean(item.image);
+
+  /*
+   * 两种「有图」的排版：
+   *  - 游戏条目（RA / Steam）：meta.backdrop 是游戏截图或封面，铺在左边当背景；
+   *    成就图标缩成右下角的小角标（item--badge），不再被拉成糊掉的巨图。
+   *  - 其它平台：没有 backdrop，item.image 继续当背景用（老样子）。
+   * 背景图加载失败时把 item--media / item--badge 一起去掉，退回纯文字卡片，
+   * 不会留下 46% 的一整块空白。
+   */
+  const backdrop = item.meta?.backdrop ?? null;
+  const badge = item.meta?.badge ?? null;
+  const mediaSrc = backdrop ?? item.image;
+  const hasMedia = Boolean(mediaSrc);
+  const showBadge = Boolean(backdrop) && Boolean(badge);
   const time = formatTime(item.timestamp);
   const fullTime = item.timestamp
     ? new Date(item.timestamp).toLocaleString('zh-CN', { hour12: false })
     : '';
   return `
       <li>
-        <a class="item${hasImage ? ' item--media' : ''}" href="${esc(item.url || '#')}"
+        <a class="item${hasMedia ? ' item--media' : ''}${backdrop ? ' item--game' : ''}${showBadge ? ' item--badge' : ''}" href="${esc(item.url || '#')}"
            style="--pc:${esc(platform.color)}"${item.url ? ' target="_blank" rel="noopener noreferrer"' : ''}>
           ${
-            hasImage
-              ? `<span class="item__media"><img src="${esc(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></span>`
+            hasMedia
+              ? `<span class="item__media"><img src="${esc(mediaSrc)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var a=this.closest('.item');this.parentNode.remove();a&&a.classList.remove('item--media','item--game','item--badge')"></span>`
+              : ''
+          }
+          ${
+            showBadge
+              ? `<img class="item__badge" src="${esc(badge)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
               : ''
           }
           <div class="item__body">

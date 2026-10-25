@@ -181,6 +181,42 @@ function achievementItem(a, user) {
 }
 
 /**
+ * 游戏美术图缓存：一轮里同一款游戏只查一次。
+ * `API_GetGame` 会给四张图，其中 ImageIngame 是游戏内截图（横向），最适合当背景；
+ * 没有截图时退回封面（BoxArt），再退回标题图。
+ */
+const gameArtCache = new Map();
+
+async function fetchGameArt(gameId, key, budget) {
+  if (!gameId) return null;
+  if (gameArtCache.has(gameId)) return gameArtCache.get(gameId);
+  if (gameArtCache.size >= budget) return null;
+
+  let art = null;
+  try {
+    const params = new URLSearchParams({ y: key, g: String(gameId) });
+    const data = await getJson(`${API}/API_GetGame.php?${params}`, {
+      timeoutMs: 20000,
+      retries: 1,
+    });
+    const ingame = absolute(data?.ImageIngame);
+    const boxArt = absolute(data?.ImageBoxArt);
+    const title = absolute(data?.ImageTitle);
+    const backdrop = ingame ?? boxArt ?? title;
+    if (backdrop) art = { backdrop, ingame, boxArt, title: data?.Title ?? null };
+  } catch (error) {
+    // 游戏图只是锦上添花，查不到就不放背景，绝不影响条目本身
+    console.warn(
+      `[retroachievements] game ${gameId} 取游戏图失败：${
+        error instanceof HttpError ? explainError(error) : error.message
+      }`,
+    );
+  }
+  gameArtCache.set(gameId, art);
+  return art;
+}
+
+/**
  * 最近玩过的游戏 → 「游玩记录」条目。
  *
  * 成就接口只回「解锁了什么」，一场没拿成就的游戏（或者存档状态/模拟器没开
@@ -381,6 +417,28 @@ export async function fetchRetroAchievements(context = {}) {
   } else {
     diag.recentlyPlayed = { ok: null, skipped: 'playSessions = false' };
   }
+
+  // ---------- 3) 游戏截图/封面：当条目背景，成就图标缩成右下角角标 ----------
+  let artCount = 0;
+  if (config.gameArt !== false && items.length > 0) {
+    const budget = Math.max(1, Math.min(50, Number(config.maxGameArt) || 20));
+    const gameIds = [...new Set(items.map((item) => item.meta?.gameId).filter(Boolean))];
+    const art = new Map();
+    for (const gameId of gameIds) {
+      art.set(gameId, await fetchGameArt(gameId, key, budget));
+    }
+    for (const item of items) {
+      const found = art.get(item.meta?.gameId);
+      if (!found?.backdrop) continue;
+      item.meta.backdrop = found.backdrop;
+      // 只有成就才有东西可角标；游玩记录就单纯一张游戏图
+      if (item.meta.achievementId) {
+        item.meta.badge = item.meta.badgeUrl ?? item.image ?? found.ingame ?? null;
+      }
+      artCount += 1;
+    }
+  }
+  diag.gameArt = { games: new Set(items.map((i) => i.meta?.gameId).filter(Boolean)).size, withArt: artCount };
 
   diag.items = {
     achievements: achievements.length,

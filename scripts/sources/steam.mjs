@@ -132,6 +132,8 @@ function playItems(games, sinceMs) {
         gameName: name,
         minutes2weeks: game.minutes2weeks,
         minutesTotal: game.minutesTotal,
+        // 游戏头图当条目背景（和成就条目同一套版式，只是没有角标）
+        backdrop: headerImage(game.appid),
       },
     });
   }
@@ -353,6 +355,7 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
     const detail = schema.get(key) ?? {};
     const title = achievement.name || achievement.displayName || detail.displayName || key;
     const description = achievement.description || detail.description || '';
+    const icon = achievement.icon || detail.icon || detail.icongray || null;
     return {
       id: `steam:${appid}:${key}`,
       platform: 'steam',
@@ -362,9 +365,16 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
         ? `在《${gameTitle}》解锁成就「${title}」：${description}`
         : `在《${gameTitle}》解锁成就「${title}」`,
       url: `https://steamcommunity.com/profiles/${steamId64}/stats/${appid}/achievements`,
-      image: achievement.icon || detail.icon || detail.icongray || null,
+      image: icon,
       timestamp: new Date(seconds * 1000).toISOString(),
-      meta: { appid, gameName: gameTitle, achievementId: key },
+      meta: {
+        appid,
+        gameName: gameTitle,
+        achievementId: key,
+        // 背景用游戏头图（不需要 key，CDN 直出 460×215），图标缩成右下角角标
+        backdrop: headerImage(appid),
+        badge: icon,
+      },
     };
   });
   return { items, stats: summary };
