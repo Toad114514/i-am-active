@@ -105,8 +105,12 @@ try {
   if (stats.success === false || !Array.isArray(stats.achievements)) {
     console.log(`\n成就接口：${first.name ?? first.appid} 没有成就体系（success:false），会静默跳过`);
   } else {
-    const unlocked = stats.achievements.filter((a) => a.unlocked);
-    const recent = unlocked.filter((a) => Number(a.unlockedtime) * 1000 > Date.now() - 7 * 864e5);
+    // Valve 的字段是 achieved / unlocktime（不是 unlocked / unlockedtime）
+    const isDone = (a) => Number(a.achieved ?? a.unlocked ?? 0) === 1;
+    const unlocked = stats.achievements.filter(isDone);
+    const recent = unlocked.filter(
+      (a) => Number(a.unlocktime ?? a.unlockedtime ?? 0) * 1000 > Date.now() - 7 * 864e5,
+    );
     console.log(
       `\n成就接口：${first.name ?? first.appid} 共 ${stats.achievements.length} 个成就，已解锁 ${unlocked.length} 个，` +
         `最近 7 天解锁 ${recent.length} 个`,

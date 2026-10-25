@@ -227,10 +227,46 @@ async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
 }
 
 /**
+ * Valve 的 GetPlayerAchievements 返回的是 `achieved`（0/1）与 `unlocktime`（Unix 秒），
+ * **不是** `unlocked` / `unlockedtime`——后者是某些第三方封装自己改的名字。
+ * 之前按 unlocked 读，结果每条都被当成「没解锁」，成就永远是 0 条。
+ */
+const isAchieved = (achievement) => Number(achievement.achieved ?? achievement.unlocked ?? 0) === 1;
+const unlockSeconds = (achievement) =>
+  Number(achievement.unlocktime ?? achievement.unlockedtime ?? 0) || 0;
+
+/**
+ * 成就的中文名 / 描述 / 图标来自 GetSchemaForGame。GetPlayerAchievements 本身
+ * 只给 apiname / achieved / unlocktime，直接用 apiname 当标题会显示成
+ * 「ACH_WIN_ONE_GAME」这种内部标识。
+ * @returns {Promise<Map<string, {displayName?: string, description?: string, icon?: string}>>}
+ */
+async function fetchAchievementSchema(appid, apiKey) {
+  const params = new URLSearchParams({ key: apiKey, appid: String(appid), l: 'schinese' });
+  try {
+    const data = await getJson(`${STEAM_API}/ISteamUserStats/GetSchemaForGame/v2/?${params}`, {
+      timeoutMs: 20000,
+      retries: 1,
+    });
+    const list = data?.game?.availableGameStats?.achievements ?? [];
+    const map = new Map();
+    for (const achievement of list) {
+      if (achievement?.name) map.set(achievement.name, achievement);
+    }
+    return map;
+  } catch (error) {
+    const reason = error instanceof HttpError ? `HTTP ${error.status ?? '?'}` : error.message;
+    console.warn(`[steam] appid=${appid} 获取成就名称失败（标题将退回内部标识）：${reason}`);
+    return new Map();
+  }
+}
+
+/**
  * 单款游戏的成就解锁记录，只保留窗口内的。
- * @returns {Promise<Array<object>>}
+ * @returns {Promise<{items: Array<object>, stats: {total: number, unlocked: number, inWindow: number}}>}
  */
 async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, gameName }) {
+  const empty = { items: [], stats: { total: 0, unlocked: 0, inWindow: 0 } };
   const params = new URLSearchParams({
     steamid: steamId64,
     appid: String(appid),
@@ -247,36 +283,49 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
   } catch (error) {
     const reason = error instanceof HttpError ? `HTTP ${error.status ?? '?'}` : error.message;
     console.warn(`[steam] appid=${appid} 获取成就失败：${reason}`);
-    return [];
+    return empty;
   }
 
   const stats = data?.playerstats ?? {};
   // 该游戏没有成就体系时这里会是 { success: false, error: 'Requested app has no stats' }
-  if (stats.success === false || !Array.isArray(stats.achievements)) return [];
+  if (stats.success === false || !Array.isArray(stats.achievements)) return empty;
 
-  const name = stats.gameName ?? gameName ?? `App ${appid}`;
-  const items = [];
+  const gameTitle = stats.gameName ?? gameName ?? `App ${appid}`;
+  const unlockedTotal = stats.achievements.filter(isAchieved).length;
+  const fresh = [];
   for (const achievement of stats.achievements) {
-    if (!achievement.unlocked || !achievement.unlockedtime) continue;
-    const unlockedMs = Number(achievement.unlockedtime) * 1000;
-    if (!Number.isFinite(unlockedMs) || unlockedMs < sinceMs) continue;
+    if (!isAchieved(achievement)) continue;
+    const seconds = unlockSeconds(achievement);
+    if (!seconds || seconds * 1000 < sinceMs) continue;
+    fresh.push({ achievement, seconds });
+  }
 
-    const title = achievement.name || achievement.apiname || '未命名成就';
-    items.push({
-      id: `steam:${appid}:${achievement.achievementid}`,
+  const summary = { total: stats.achievements.length, unlocked: unlockedTotal, inWindow: fresh.length };
+  if (fresh.length === 0) return { items: [], stats: summary };
+
+  // 只有真的要把成就写进列表时，才多花一次请求去取中文名
+  const schema = await fetchAchievementSchema(appid, apiKey);
+
+  const items = fresh.map(({ achievement, seconds }) => {
+    const key = achievement.apiname || achievement.name || 'unknown';
+    const detail = schema.get(key) ?? {};
+    const title = achievement.name || achievement.displayName || detail.displayName || key;
+    const description = achievement.description || detail.description || '';
+    return {
+      id: `steam:${appid}:${key}`,
       platform: 'steam',
       type: '成就解锁',
       title,
-      summary: achievement.description
-        ? `在《${name}》解锁成就「${title}」：${achievement.description}`
-        : `在《${name}》解锁成就「${title}」`,
+      summary: description
+        ? `在《${gameTitle}》解锁成就「${title}」：${description}`
+        : `在《${gameTitle}》解锁成就「${title}」`,
       url: `https://steamcommunity.com/profiles/${steamId64}/stats/${appid}/achievements`,
-      image: achievement.icon ?? achievement.icongray ?? null,
-      timestamp: new Date(unlockedMs).toISOString(),
-      meta: { appid, gameName: name, achievementId: achievement.achievementid },
-    });
-  }
-  return items;
+      image: achievement.icon || detail.icon || detail.icongray || null,
+      timestamp: new Date(seconds * 1000).toISOString(),
+      meta: { appid, gameName: gameTitle, achievementId: key },
+    };
+  });
+  return { items, stats: summary };
 }
 
 /**
@@ -294,6 +343,7 @@ export async function fetchSteam(context = {}) {
     games: [],
     playItems: 0,
     achievementItems: 0,
+    achievements: [],
   };
   diagnostics = diag;
 
@@ -364,14 +414,19 @@ export async function fetchSteam(context = {}) {
   }
 
   for (const [appid, name] of targets) {
-    const items = await fetchAchievementsForApp(appid, {
+    const { items, stats } = await fetchAchievementsForApp(appid, {
       apiKey: config.apiKey,
       steamId64: config.steamId64,
       sinceMs,
       gameName: name,
     });
-    if (items.length) {
-      console.log(`[steam] ${name ?? `App ${appid}`}：窗口内解锁 ${items.length} 个成就`);
+    diag.achievements.push({ appid, name: name ?? null, ...stats });
+    if (stats.inWindow > 0) {
+      console.log(`[steam] ${name ?? `App ${appid}`}：窗口内解锁 ${stats.inWindow} 个成就`);
+    } else if (stats.unlocked > 0) {
+      console.log(
+        `[steam] ${name ?? `App ${appid}`}：共 ${stats.total} 个成就、已解锁 ${stats.unlocked} 个，窗口内没有新的`,
+      );
     }
     collected.push(...items);
     if (collected.length >= config.maxItems) break;
@@ -385,11 +440,16 @@ export async function fetchSteam(context = {}) {
       `新增 ${plays} 条游玩记录 + ${achievements} 条成就`,
   );
   if (collected.length === 0 && games.length > 0) {
+    const unlockedSum = diag.achievements.reduce((sum, entry) => sum + (entry.unlocked ?? 0), 0);
+    const totalSum = diag.achievements.reduce((sum, entry) => sum + (entry.total ?? 0), 0);
     console.warn(
       '[steam] 游戏在最近列表里，但窗口内既没有新会话也没有新成就。' +
-        '如果这会儿正玩着，Steam 通常要等你退出后才会更新「上次游玩」时间。',
+        `（这些游戏共有 ${totalSum} 个成就、已解锁 ${unlockedSum} 个，只是都不在窗口内）`,
     );
-    diag.note = '游戏在最近列表里，但窗口内没有新会话也没有新成就';
+    diag.note =
+      unlockedSum > 0
+        ? `窗口内没有新动作：这些游戏的 ${unlockedSum} 个已解锁成就都在上次抓取之前`
+        : '窗口内没有新动作：最近列表里的游戏都没有成就体系，或本周没有新解锁';
   }
   return collected.slice(0, config.maxItems);
 }

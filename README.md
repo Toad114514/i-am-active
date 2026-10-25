@@ -55,6 +55,14 @@ Steam 没有「我最近解锁了什么成就」这种接口，只能按 AppID �
 3. 对这些 AppID 逐个调 `ISteamUserStats/GetPlayerAchievements`，解锁时间落在
    「上次抓取时间 → 现在」之间的成就也写进列表，首轮回退 14 天。
 
+第 3 步有两个容易踩的坑，都已处理：
+
+- 这个接口的字段是 **`achieved` / `unlocktime`**，不是 `unlocked` / `unlockedtime`。
+  按后者读会得到 `undefined`，每条成就都被当成「没解锁」，安静地一条都不写。
+- 它只给 `apiname`（内部标识，形如 `ACH_WIN_ONE_GAME`），**不给**中文名和描述。
+  所以真要写成就时会再调一次 `ISteamUserStats/GetSchemaForGame`，把
+  `apiname → displayName / description / icon` 补上；拿不到就退回 `apiname`。
+
 第 2 步是必要的：只启动游戏、坐在主菜单里没解锁任何成就是常态，只靠成就会一条都抓不到。
 游玩记录的 id 是 `steam:play:<appid>:<会话时间>`，同一次会话重复运行不会重复写入；
 也刻意不用「两周时长增量」当信号，否则后台一直挂着的游戏每轮都会涨，站点会被刷屏。
