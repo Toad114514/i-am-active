@@ -247,7 +247,7 @@ OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<
 
 ## 分类页的活动类型
 
-分类页除了「年份 × 平台」，还多了一维 **活动类型**：游戏 / 视频 / 代码 / 归档 / 其他。
+分类页除了「年份 × 平台」，还多了一维 **活动类型**：游戏 / 视频 / 代码 / 文章 / 归档 / 其他。
 映射只有一处：`scripts/lib/platforms.mjs` 的 `KINDS` + `PLATFORM_KIND`（页面渲染和
 前端筛选都走 `kindOf()`）：
 
@@ -256,8 +256,17 @@ OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<
 | 游戏 | RetroAchievements、Steam |
 | 视频 | 哔哩哔哩、YouTube、OTTOhub、快手 |
 | 代码 | GitHub、Gitee、Weblate（给 TDE 翻译代码里的字符串） |
+| 文章 | Toad's Blog（主站博客） |
 | 归档 | 互联网档案馆、西瓜视频、抖音（后两者是已停更账号的一次性存档） |
 | 其他 | 没登记的平台（自动兜底） |
+
+**Toad's Blog（主站博客）走的是 Atom feed**：`https://toad.ccwu.cc/atom.xml`
+（hexo-generator-feed 生成的；`/rss.xml` /`/feed.xml` /`/rss2.xml` /`/feed/` 这些
+常见路径在本站全是 404，别再试了）。抓取器 `scripts/sources/hexo.mjs` 三个坑：
+feed 里的链接写的是 `toad114514.github.io`（要换成自定义域）；没写 `date` 的页面
+`published` 会落到 1970（视为无时间，排到末尾）；正文首图多为图床外链而
+**imgtp.com 已经 403 跑路**，所以首图抓取时就地下载到 `res/media/hexo/`，
+下载不到就不带图，绝不存会破的外链。
 
 **西瓜视频 / 抖音是「存档」，不是抓取源**：两个账号都已经不再更新（西瓜简介写着
 「西瓜永久停更」，抖音账号已丢失），网页端也基本下线。所以它们没有 `scripts/sources/`

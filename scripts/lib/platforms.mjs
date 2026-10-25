@@ -144,6 +144,17 @@ export const PLATFORMS = {
       '<path d="M14.1 2h2.6c.2 1.5 1.1 2.7 2.6 3v2.6c-1.6 0-3-.5-4.2-1.4v6.3c0 4.3-3.5 7.5-7.8 7.5S2 17 2 12.7s3.5-7.5 7.8-7.5c.4 0 .8 0 1.2.1v2.7c-.4-.1-.8-.1-1.2-.1-2.6 0-4.7 2-4.7 4.5s2.1 4.5 4.7 4.5 4.8-2 4.8-4.6V2z"/>',
     ),
   },
+  hexo: {
+    id: 'hexo',
+    name: "Toad's Blog",
+    short: '博客',
+    // Hexo 官方蓝；和「其他」的蓝灰、GitHub 的灰区分得开
+    color: '#0e83cd',
+    homepage: 'https://toad.ccwu.cc/',
+    icon: icon(
+      '<path d="M4 3h11l5 5v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm10 2v4h4l-4-4zM6.5 12h11v1.8h-11V12zm0 4h11v1.8h-11V16z"/>',
+    ),
+  },
 };
 
 /** 平台 id 顺序（与页面展示顺序一致）。 */
@@ -158,6 +169,7 @@ export const PLATFORM_ORDER = [
   'gitee',
   'archive',
   'weblate',
+  'hexo',
   'retroachievements',
   'steam',
 ];
@@ -174,6 +186,7 @@ export const KINDS = [
   { id: 'game', name: '游戏', color: '#c73e3e', hint: 'RetroAchievements / Steam' },
   { id: 'video', name: '视频', color: '#fb7299', hint: '哔哩哔哩 / YouTube / OTTOhub / 快手' },
   { id: 'code', name: '代码', color: '#8b949e', hint: 'GitHub / Gitee / Weblate' },
+  { id: 'article', name: '文章', color: '#2fa46a', hint: "Toad's Blog" },
   { id: 'archive', name: '归档', color: '#4a4a4a', hint: '互联网档案馆 / 西瓜视频 / 抖音' },
   { id: 'other', name: '其他', color: '#6b7691', hint: '未归类的平台' },
 ];
@@ -189,6 +202,7 @@ const PLATFORM_KIND = {
   github: 'code',
   gitee: 'code',
   weblate: 'code',
+  hexo: 'article',
   archive: 'archive',
   // 西瓜/抖音都停更且账号已不可用，能抓到的只是「存档」，不是新动态
   ixigua: 'archive',
@@ -217,6 +231,7 @@ const HOMEPAGE_BUILDERS = {
   gitee: (c) => (c.user ? `https://gitee.com/${c.user}` : null),
   archive: (c) => (c.user ? `https://archive.org/details/@${c.user}` : null),
   weblate: (c) => (c.baseUrl && c.user ? `${String(c.baseUrl).replace(/\/+$/, '')}/user/${c.user}/` : null),
+  hexo: (c) => String(c.siteUrl || 'https://toad.ccwu.cc').replace(/\/+$/, '') + '/',
   retroachievements: (c) => (c.user ? `https://retroachievements.org/user/${c.user}` : null),
   steam: (c) => (c.steamId64 ? `https://steamcommunity.com/profiles/${c.steamId64}` : null),
 };

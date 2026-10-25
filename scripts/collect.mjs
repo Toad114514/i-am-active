@@ -38,6 +38,7 @@ import { fetchGitee, lastGiteeDiagnostics } from './sources/gitee.mjs';
 import { fetchSteam, lastSteamDiagnostics } from './sources/steam.mjs';
 import { fetchOttoHub } from './sources/ottohub.mjs';
 import { fetchKuaishou } from './sources/kuaishou.mjs';
+import { fetchHexo } from './sources/hexo.mjs';
 
 /** 所有抓取器：每个平台一个独立模块，互不影响。 */
 const SOURCES = [
@@ -49,6 +50,7 @@ const SOURCES = [
   { id: 'gitee', label: 'Gitee', run: fetchGitee, diagnostics: lastGiteeDiagnostics },
   { id: 'archive', label: '互联网档案馆', run: fetchArchive },
   { id: 'weblate', label: 'Weblate', run: fetchWeblate },
+  { id: 'hexo', label: "Toad's Blog", run: fetchHexo },
   {
     id: 'retroachievements',
     label: 'RetroAchievements',

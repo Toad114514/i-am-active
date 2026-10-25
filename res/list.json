@@ -1,5 +1,498 @@
 [
   {
+    "id": "hexo:/2024/08/20/termux-all/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "一篇文章上手 Termux",
+    "summary": "分类：科技与狠活 / termux / 科技 · 前言 termux，一个让你在手机上运行类 linux 终端的工具。本以为他会和终端模拟器那样，需要root。其实不然 termux 特地为此封装了无数需要在 linux 中才可运行的包并毫无意外的在安卓里稳定运行。 于",
+    "url": "https://toad.ccwu.cc/2024/08/20/termux-all/",
+    "image": "media/hexo/termux-all.png",
+    "timestamp": "2024-08-20T06:12:32.000Z",
+    "meta": {
+      "slug": "termux-all",
+      "tags": [
+        "科技与狠活",
+        "termux",
+        "科技"
+      ],
+      "updated": "2024-10-20T05:09:13.255Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/08/16/hello-world/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "你好逝界",
+    "summary": "欢迎来到 Hexo ! 这是你的最早的文章。 点击 文档 查看更多信息. 如果你在使用 Hexo 时出现了 Bugsssssssssss, 你可以在 这里 找到解决方案或者去 GitHub 提交 issues. 快速失败",
+    "url": "https://toad.ccwu.cc/2024/08/16/hello-world/",
+    "image": null,
+    "timestamp": "2024-08-15T20:12:45.887Z",
+    "meta": {
+      "slug": "hello-world",
+      "tags": [],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/05/26/apache2-ins/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "Apache2 完整安装指导",
+    "summary": "分类：科技与狠活 / 服务器 / termux / Apache · 本教程适用于termux和linux发行版本，请根据代码注释选择合适的代码 了解 Apache Apache，像羽毛一样的图标，全球服务器使用量第一的服务器软件，扩展高，安全高都是对Apache最好的标志。 在termu",
+    "url": "https://toad.ccwu.cc/2024/05/26/apache2-ins/",
+    "image": null,
+    "timestamp": "2024-05-26T15:02:25.000Z",
+    "meta": {
+      "slug": "apache2-ins",
+      "tags": [
+        "科技与狠活",
+        "服务器",
+        "termux",
+        "Apache"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/05/24/kolibrios-try/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "体验纯汇编系统 KolibriOS",
+    "summary": "分类：科技与狠活 / 系统 / 操作系统 / kolibrios · 在纯汇编系统领域上，MenuetOS属于是最早的。MenuetOS出来后，过了一段时间，便从MenuetOS上剥离了一个新的系统， KolibriOS 下载 KolibriOS 登陆该地址后，选择 LiveCD Imag",
+    "url": "https://toad.ccwu.cc/2024/05/24/kolibrios-try/",
+    "image": null,
+    "timestamp": "2024-05-23T18:30:42.000Z",
+    "meta": {
+      "slug": "kolibrios-try",
+      "tags": [
+        "科技与狠活",
+        "系统",
+        "操作系统",
+        "kolibrios"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/05/15/pug-tuorist/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "HTML 模板语言 pug 基础语法",
+    "summary": "分类：科技与狠活 / pug / 语言 · 如果你想要对Hexo主题进行深度美化，且你要进行深度美化的主题模板引擎使用的就是pug(如butterfly)，则该文章将帮助到你 前言 给你的博客美化是博客建站中感觉重要但又可以丢掉的一点，大部分人会给自己的网站添加细",
+    "url": "https://toad.ccwu.cc/2024/05/15/pug-tuorist/",
+    "image": null,
+    "timestamp": "2024-05-15T04:59:47.000Z",
+    "meta": {
+      "slug": "pug-tuorist",
+      "tags": [
+        "科技与狠活",
+        "pug",
+        "语言"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/04/30/hexo-refine/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "完善 Hexo 其他功能",
+    "summary": "分类：技术 / 博客 / Hexo / 科技 · Hexo 博客建站一条龙 系列 Hexo 部署 Hexo 其他功能 前言 上次我成功的在 Termux 安装了 Hexo。 本次我们将完善 Hexo 的其他功能 。 记得先cd到你博客的路径 网站地图 安装 hexo-g",
+    "url": "https://toad.ccwu.cc/2024/04/30/hexo-refine/",
+    "image": "media/hexo/hexo-refine.png",
+    "timestamp": "2024-04-30T09:28:28.000Z",
+    "meta": {
+      "slug": "hexo-refine",
+      "tags": [
+        "技术",
+        "博客",
+        "Hexo",
+        "科技"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/04/28/qz-s1-end-pt-md/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "元气骑士前传 S1 赛季 爬塔排行榜",
+    "summary": "分类：游戏 / 元气骑士前传 · 前言 你个写博客的怎么还写游戏是吧(( 在元气骑士前传里，一个职业的强度，只有爬塔排行榜才能决定其强度。 在这前传更新s2赛季的前 8 个小时前，赶紧炸裂写了个文章好吧 本文章让你清楚什么才是现在所在的前传环境里最强 注",
+    "url": "https://toad.ccwu.cc/2024/04/28/qz-s1-end-pt-md/",
+    "image": null,
+    "timestamp": "2024-04-27T17:39:51.000Z",
+    "meta": {
+      "slug": "qz-s1-end-pt-md",
+      "tags": [
+        "游戏",
+        "元气骑士前传"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/04/24/new-blog/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "新的 Toads Blog",
+    "summary": "分类：Hexo / 科技 · 三个月不见终于变力 本次的 Toads Blog 直接使用 butterfly 为主题。原因是fluid主题基本上不能很好的在termu上。 很多种看我的方式 全平台同名toad114514，除开下面所列 B站 狗头均",
+    "url": "https://toad.ccwu.cc/2024/04/24/new-blog/",
+    "image": null,
+    "timestamp": "2024-04-23T17:25:20.000Z",
+    "meta": {
+      "slug": "new-blog",
+      "tags": [
+        "Hexo",
+        "科技"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/01/12/termux-nginx/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "Termux 搭建 nginx 服务器",
+    "summary": "分类：科技与狠活 / 服务器 / Termux / Nginx · 前言 nginx的风还是吹到了， Termux! 不是Termux没明星，而是 Termux全明星 “”(指装irc等服务器和python等)!不是Termux不出手，而是出手 没对手 ！Termux大舞台，有才你就来(",
+    "url": "https://toad.ccwu.cc/2024/01/12/termux-nginx/",
+    "image": null,
+    "timestamp": "2024-01-11T16:02:24.000Z",
+    "meta": {
+      "slug": "termux-nginx",
+      "tags": [
+        "科技与狠活",
+        "服务器",
+        "Termux",
+        "Nginx"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2024/01/03/ken/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "Termux 安装 Hexo 踩的dark坑",
+    "summary": "分类：科技 / termux / hexo · 前言 当我尝试在 Termux 中利用 Ubuntu22.04.3 发行版去安装 Hexo 时，我已经踩了非常多的坑。 我自己比较早的时候就已经试过了，把整个hexo的工作目录复制下来然后放在termux里面。没成功。",
+    "url": "https://toad.ccwu.cc/2024/01/03/ken/",
+    "image": "media/hexo/ken.png",
+    "timestamp": "2024-01-03T11:49:11.000Z",
+    "meta": {
+      "slug": "ken",
+      "tags": [
+        "科技",
+        "termux",
+        "hexo"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/08/19/zh-1/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "张浩事情速览",
+    "summary": "分类：张浩 · 张浩黑历史（确信 本文章的部分图片已失效。现在正在补图片 让我们从上到下，浏览这些张浩的事情罢 2022年 11月左右，偷张浩penis出现 11月左右，张浩楼道崩溃。 12月初，张浩和王老虎打架 12月左右，张浩永远都",
+    "url": "https://toad.ccwu.cc/2023/08/19/zh-1/",
+    "image": null,
+    "timestamp": "2023-08-19T13:17:00.000Z",
+    "meta": {
+      "slug": "zh-1",
+      "tags": [
+        "张浩"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/08/18/hexo-dep/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "如何使用 Github Pages + Hexo 搭建博客服务器",
+    "summary": "分类：科技 / 博客 / Hexo · Hexo 博客建站一条龙 系列 Hexo 部署 Hexo 其他功能 前情提要 上次在本地搞了搞 Zblog，现在我有github账号，也有了一台临时电脑来部署东西。也是非常的nb好吧 准备 github账号 一台电脑 注",
+    "url": "https://toad.ccwu.cc/2023/08/18/hexo-dep/",
+    "image": null,
+    "timestamp": "2023-08-18T13:38:00.000Z",
+    "meta": {
+      "slug": "hexo-dep",
+      "tags": [
+        "科技",
+        "博客",
+        "Hexo"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/23/win32-nb/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "如何把 Windows3.2 变得更强",
+    "summary": "分类：科技与狠活 / 系统 / Dosbox / Windows · 如上图，这是我的 Windows3.2 截图。已安装了SB16声卡和24位显卡驱动。安装了常用软件（包括Office4.2、WPS97、Quicktime、Acrobat、Goldware等）。桌面使用CalmiraXP",
+    "url": "https://toad.ccwu.cc/2023/07/23/win32-nb/",
+    "image": null,
+    "timestamp": "2023-07-23T13:50:34.000Z",
+    "meta": {
+      "slug": "win32-nb",
+      "tags": [
+        "科技与狠活",
+        "系统",
+        "Dosbox",
+        "Windows"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/21/zhang-sayto-lzt/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "张浩对李这停说的话",
+    "summary": "分类：张浩 · 李这停，你tm天天打我，我那个文武你叫我打上我却打下了",
+    "url": "https://toad.ccwu.cc/2023/07/21/zhang-sayto-lzt/",
+    "image": null,
+    "timestamp": "2023-07-20T20:21:37.000Z",
+    "meta": {
+      "slug": "zhang-sayto-lzt",
+      "tags": [
+        "张浩"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/21/sm64l-music-pack/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "Super Mario 64 Land 串烧背景音乐",
+    "summary": "分类：游戏 / 马里奥 / 音乐 / OST · 我因为无聊就做了一个串烧 用了5个小时才做好 这tm比我录下来的Saunh Ashar还长（Saunh Ashar 一小时，这个串烧2小时） 因为太长，所以要给目录索引，否则我早就被你们芬芳馥郁了。后面会补上各个关卡背景",
+    "url": "https://toad.ccwu.cc/2023/07/21/sm64l-music-pack/",
+    "image": "media/hexo/sm64l-music-pack.jpg",
+    "timestamp": "2023-07-20T16:00:20.000Z",
+    "meta": {
+      "slug": "sm64l-music-pack",
+      "tags": [
+        "游戏",
+        "马里奥",
+        "音乐",
+        "OST"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/18/smmwe-level-pack/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "SMMWE 终极关卡包！",
+    "summary": "分类：游戏 / 马里奥 / SMMWE · ![103.jpeg][0] SMMWE 终极关卡包 是的，我们推出了SMMWE终极关卡包，用于纪念SMMWE，由Toad114514制作。 该终极关卡包有什么特点？ 30+ 关卡 种类多（包括微操、普通、自动、跑步、解",
+    "url": "https://toad.ccwu.cc/2023/07/18/smmwe-level-pack/",
+    "image": null,
+    "timestamp": "2023-07-18T06:21:14.000Z",
+    "meta": {
+      "slug": "smmwe-level-pack",
+      "tags": [
+        "游戏",
+        "马里奥",
+        "SMMWE"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/17/zhanghao-page-history/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "张浩 Page 盛衰史",
+    "summary": "分类：张浩 / 页面 · 这次聊一个与技术无关的话题。 什么，你要我说 张浩 Page？ 也许可以谈谈这件事…… 张浩 Pages 的开端 那是去年的时候，2022年5月份左右认识张浩，当时我五年级的旅途基本上要结束了。发现张浩和我都有共同的爱好",
+    "url": "https://toad.ccwu.cc/2023/07/17/zhanghao-page-history/",
+    "image": null,
+    "timestamp": "2023-07-16T19:38:29.000Z",
+    "meta": {
+      "slug": "zhanghao-page-history",
+      "tags": [
+        "张浩",
+        "页面"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/17/change-web-style/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "我们更新了网站首页！！",
+    "summary": "分类：科技与狠活 / 网站 · 最新的首页使用 Foundation 制作而成，且更有导航样式！ 这波非常的 beautiful! 关于我改这个主页的事情，到之后我再来说说吧",
+    "url": "https://toad.ccwu.cc/2023/07/17/change-web-style/",
+    "image": "media/hexo/change-web-style.jpg",
+    "timestamp": "2023-07-16T18:51:16.000Z",
+    "meta": {
+      "slug": "change-web-style",
+      "tags": [
+        "科技与狠活",
+        "网站"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/06/v2ray-port/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "有了 v2ray 但是没有节点怎么办",
+    "summary": "分类：科技与狠活 / v2ray / 节点 · 有了翻墙软件但是没有节点怎么办，我做了一个一个订阅链接 注意：这些订阅链接只能用于学习用途，请勿用于非法用途！ 免费节点订阅链接 后面带*的订阅链接会每天更新，具体更新情况看订阅链接更新的网站 ClashNode htt",
+    "url": "https://toad.ccwu.cc/2023/07/06/v2ray-port/",
+    "image": "media/hexo/v2ray-port.jpg",
+    "timestamp": "2023-07-05T16:31:33.000Z",
+    "meta": {
+      "slug": "v2ray-port",
+      "tags": [
+        "科技与狠活",
+        "v2ray",
+        "节点"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/02/blog-new-rad/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "我给 blog 装了个电台浏览器",
+    "summary": "分类：科技与狠活 / 博客 / 播放器 · 这里只有一个我喜欢的电台。之后会加入更多电台。 在播放器列表力点击最后一个就可以了。 Qplayer2设置 1 2 3 4 5 6 7 { \"name\" : \"HBR1 - I.D.M Tranceponder\" , \"",
+    "url": "https://toad.ccwu.cc/2023/07/02/blog-new-rad/",
+    "image": "media/hexo/blog-new-rad.jpg",
+    "timestamp": "2023-07-02T04:07:47.000Z",
+    "meta": {
+      "slug": "blog-new-rad",
+      "tags": [
+        "科技与狠活",
+        "博客",
+        "播放器"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/07/01/lxde-widget-change/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "关于 lxde 配组件的教程",
+    "summary": "分类：科技与狠活 / 科技 / linux / 桌面环境 / lxde · 嘿，大家好，我回来了;-) 为什么那么久没更新，是因为我去复习，来考小升初了 考完了，写个文章，开始这个没有作业的暑假吧(喜 lxde 配组件(完全文字版 lxde 简介 还是先引用 LXDE，全名Lightweight",
+    "url": "https://toad.ccwu.cc/2023/07/01/lxde-widget-change/",
+    "image": null,
+    "timestamp": "2023-06-30T16:32:26.000Z",
+    "meta": {
+      "slug": "lxde-widget-change",
+      "tags": [
+        "科技与狠活",
+        "科技",
+        "linux",
+        "桌面环境",
+        "lxde"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/06/10/learn-get-zhanghao/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "学习偷袭张浩",
+    "summary": "分类：张浩 · 学习偷袭张浩 欢迎来到学习偷袭张浩！此处收集了朋友偷袭张浩的方法，你可以给我 发邮箱 提供偷袭张浩的方法！ That so good!",
+    "url": "https://toad.ccwu.cc/2023/06/10/learn-get-zhanghao/",
+    "image": null,
+    "timestamp": "2023-06-10T11:44:53.000Z",
+    "meta": {
+      "slug": "learn-get-zhanghao",
+      "tags": [
+        "张浩"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/06/10/create-irc/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "搭建IRC服务器",
+    "summary": "分类：科技与狠活 / 服务器 / IRC · 首先，我们要了解IRC是什么玩意： 因特网中继聊天（Internet Relay Chat），一般称为互联网中继聊天，简称：IRC。它是由芬兰人Jarkko Oikarinen于1988年首创的一种网络聊天协议。经过十年",
+    "url": "https://toad.ccwu.cc/2023/06/10/create-irc/",
+    "image": "media/hexo/create-irc.jpg",
+    "timestamp": "2023-06-10T04:07:46.000Z",
+    "meta": {
+      "slug": "create-irc",
+      "tags": [
+        "科技与狠活",
+        "服务器",
+        "IRC"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/2023/06/10/thank-zblog/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "《360度无死角感谢Z-blog》",
+    "summary": "分类：科技与狠活 / 博客 / 科技 / Zblog · 关于 ksweb别想玩typecho 的事情罢，我的ksweb装typecho会出现没有文件的情况，这令我非常的生气(114514 今天晚上，我看见有一个叫Z-blog的玩意进入了我的视野里。它也是blog部署，于是”试",
+    "url": "https://toad.ccwu.cc/2023/06/10/thank-zblog/",
+    "image": "media/hexo/thank-zblog.jpg",
+    "timestamp": "2023-06-09T18:27:17.000Z",
+    "meta": {
+      "slug": "thank-zblog",
+      "tags": [
+        "科技与狠活",
+        "博客",
+        "科技",
+        "Zblog"
+      ],
+      "updated": "2024-08-15T20:12:45.897Z",
+      "coverMirrored": true
+    }
+  },
+  {
+    "id": "hexo:/1970/01/01/haojj/",
+    "platform": "hexo",
+    "type": "博客文章",
+    "title": "浩简介",
+    "summary": "分类：张浩 · 浩，约十岁，有矮。人有故事，如浩楼下溃，浩与虎交打，浩叛等。此皆已知，浩虽十年张浩无人知，楼坏知天下。浩有号“勇士总冠军”。自张浩反，至张浩，子轩执手机录之，口中念心“张浩勇士总冠军”，此号之所由来也。号已过李罢识之。盗",
+    "url": "https://toad.ccwu.cc/1970/01/01/haojj/",
+    "image": null,
+    "timestamp": null,
+    "meta": {
+      "slug": "haojj",
+      "tags": [
+        "张浩"
+      ],
+      "updated": "2024-08-15T20:12:45.887Z",
+      "coverMirrored": true
+    }
+  },
+  {
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",

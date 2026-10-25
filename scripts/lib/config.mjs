@@ -101,6 +101,13 @@ const DEFAULTS = {
       maxPages: 4,
       pageSize: 50,
     },
+    hexo: {
+      enabled: true,
+      /** hexo-generator-feed 的 Atom；本站点只有 atom.xml 有内容 */
+      feedUrl: 'https://toad.ccwu.cc/atom.xml',
+      /** feed 里的链接写的是 github.io，展示统一换成自定义域 */
+      siteUrl: 'https://toad.ccwu.cc',
+    },
     retroachievements: {
       enabled: true,
       user: 'Toad114514',
