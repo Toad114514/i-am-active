@@ -1,21 +1,21 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T16:48:18.313Z",
-    "bilibili": "2026-10-25T16:47:20.027Z",
-    "youtube": "2026-10-25T16:47:20.211Z",
-    "ottohub": "2026-10-25T17:03:53.945Z",
-    "kuaishou": "2026-10-25T16:47:33.993Z",
-    "github": "2026-10-25T16:47:46.543Z",
-    "gitee": "2026-10-25T16:48:11.027Z",
-    "archive": "2026-10-25T16:48:12.454Z",
-    "retroachievements": "2026-10-25T16:48:20.183Z",
-    "steam": "2026-10-25T16:48:22.986Z"
+    "weblate": "2026-10-25T17:40:39.056Z",
+    "bilibili": "2026-10-25T17:39:49.537Z",
+    "youtube": "2026-10-25T17:39:49.693Z",
+    "ottohub": "2026-10-25T17:39:50.605Z",
+    "kuaishou": "2026-10-25T17:39:52.850Z",
+    "github": "2026-10-25T17:40:05.856Z",
+    "gitee": "2026-10-25T17:40:30.404Z",
+    "archive": "2026-10-25T17:40:32.237Z",
+    "retroachievements": "2026-10-25T17:40:40.598Z",
+    "steam": "2026-10-25T17:40:43.865Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T16:48:20.183Z",
-      "since": "2026-10-25T15:46:37.198Z",
+      "checkedAt": "2026-10-25T17:40:40.599Z",
+      "since": "2026-10-25T16:48:22.986Z",
       "note": "窗口内没有新动作：这些游戏的 19 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
@@ -74,8 +74,8 @@
       ]
     },
     "retroachievements": {
-      "checkedAt": "2026-10-25T16:48:18.313Z",
-      "since": "2026-10-25T15:46:34.443Z",
+      "checkedAt": "2026-10-25T17:40:39.057Z",
+      "since": "2026-10-25T16:48:20.183Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -106,9 +106,9 @@
         "games": 4,
         "withArt": 21,
         "sources": {
-          "title": 21,
+          "title": 0,
           "ingame": 0,
-          "boxart": 0
+          "boxart": 21
         },
         "debug": []
       }
@@ -124,12 +124,12 @@
     "github": {
       "lookbackDays": 0,
       "repos": 30,
-      "commits": 623,
+      "commits": 626,
       "events": 0,
       "truncated": 0,
       "skipped": 1,
       "digests": 27,
-      "actions": 644
+      "actions": 647
     }
   }
 }
