@@ -3,19 +3,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 46 次提交、1 个新仓库",
-    "summary": "46 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「feat(data): 补录西瓜视频早期作品 46 条（2021-04~2021」",
+    "title": "Toad114514/i-am-active · 47 次提交、1 个新仓库",
+    "summary": "47 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「feat(data): 登记 url-social.md 剩余游戏账号存档 9 」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T19:59:35Z",
+    "timestamp": "2026-10-25T20:15:57Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 47,
+      "count": 48,
       "changes": [
         {
-          "group": "10-25 23:25 → 10-26 03:59 · 14 条"
+          "group": "10-25 23:25 → 10-26 04:15 · 15 条"
+        },
+        {
+          "text": "feat(data): 登记 url-social.md 剩余游戏账号存档 9 条（miscgame 平台）",
+          "action": "提交",
+          "component": "a868114",
+          "url": "https://github.com/Toad114514/i-am-active/commit/a8681143092ecf594f1edd728fdefa26775aba94",
+          "time": "2026-10-25T20:15:57Z"
         },
         {
           "text": "feat(data): 补录西瓜视频早期作品 46 条（2021-04~2021-08，全量 30→76）",
@@ -354,11 +361,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T19:59:35Z",
+      "windowEnd": "2026-10-25T20:15:57Z",
       "sessions": 3,
       "actions": {
         "新建仓库": 1,
-        "提交": 46
+        "提交": 47
       }
     }
   },
