@@ -103,7 +103,7 @@ platforms:
 
   # ---------------- Steam（可选，默认关闭） ----------------
   steam:
-    enabled: false
+    enabled: true
     # https://steamcommunity.com/profiles/<steamId64>
     steamId64: ${STEAM_ID64}
     # https://steamcommunity.com/dev/apikey
