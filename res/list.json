@@ -1,5 +1,19 @@
 [
   {
+    "id": "github:commit:7f4387c490428b7bfb7df4c9ac20c8ddc3356713",
+    "platform": "github",
+    "type": "提交",
+    "title": "fix(steam): 上次游玩时间要靠 GetOwnedGames 补，最近游戏接口不给",
+    "summary": "在 Toad114514/i-am-active 中提交：fix(steam): 上次游玩时间要靠 GetOwnedGames 补，最近游戏接口不给",
+    "url": "https://github.com/Toad114514/i-am-active/commit/7f4387c490428b7bfb7df4c9ac20c8ddc3356713",
+    "image": null,
+    "timestamp": "2026-10-25T06:03:00Z",
+    "meta": {
+      "sha": "7f4387c",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "github:commit:6b45bd1ffd6d212e95b61d9d5b50013b1ef5c03c",
     "platform": "github",
     "type": "提交",
