@@ -412,6 +412,11 @@ export async function fetchRetroAchievements(context = {}) {
       achievements = raw
         .map(mapAchievement)
         .filter((a) => {
+          // RA 的活动系统会把成就「镜像」到 Events 平台的活动游戏里：在
+          // hack/活动关联游戏里解锁时，同一个成就（同徽章、同时间戳）会再
+          // 发一条到 RAD 2025 之类的活动页，成就 ID 不同但内容重复，玩家
+          // 根本没单独「玩过」那个活动游戏。这类镜像条目直接跳过。
+          if (a.consoleName === 'Events') return false;
           // 同一条成就在窗口里可能出现多次（软核 + 硬核），按「成就 + 解锁时间」去重
           const key = `${a.achievementId}:${a.unlockedAtRaw}`;
           if (!a.achievementId || seen.has(key)) return false;
@@ -453,6 +458,8 @@ export async function fetchRetroAchievements(context = {}) {
       const windowStartMs = Date.now() - minutes * 60000;
       plays = playRaw
         .filter((game) => {
+          // 同上：Events 活动游戏的「游玩记录」也是镜像出来的，跳过
+          if ((game.ConsoleName ?? game.consoleName) === 'Events') return false;
           const playedAt = Date.parse(toIso(game.LastPlayed) ?? '');
           return Number.isFinite(playedAt) && playedAt >= windowStartMs;
         })

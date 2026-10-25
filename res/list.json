@@ -967,29 +967,6 @@
     }
   },
   {
-    "id": "retroachievements:521592:2026-10-16 15:12:36",
-    "platform": "retroachievements",
-    "type": "硬核成就",
-    "title": "As Good as New",
-    "summary": "在《RAD 2025》解锁硬核成就「As Good as New」，1 分：Complete the game and fix Mario's bones.",
-    "url": "https://retroachievements.org/achievement/521592",
-    "image": "https://media.retroachievements.org/Badge/605291.png",
-    "timestamp": "2026-10-16T15:12:36Z",
-    "meta": {
-      "achievementId": 521592,
-      "gameId": 33627,
-      "gameTitle": "RAD 2025",
-      "consoleName": "Events",
-      "points": 1,
-      "trueRatio": 9,
-      "hardcore": true,
-      "badgeUrl": "https://media.retroachievements.org/Badge/605291.png",
-      "gameIconUrl": "https://media.retroachievements.org/Images/113795.png",
-      "gameUrl": "https://retroachievements.org/game/33627",
-      "user": "Toad114514"
-    }
-  },
-  {
     "id": "retroachievements:533381:2026-10-16 15:11:59",
     "platform": "retroachievements",
     "type": "硬核成就",
