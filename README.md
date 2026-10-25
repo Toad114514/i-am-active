@@ -132,14 +132,19 @@ STEAM_API_KEY=xxx STEAM_ID64=7656119xxxxxxxxxx npm run steam:doctor
 成就徽章只有 64×64，直接铺成卡片背景会被拉成一团糊。所以这两类条目的排法是
 **游戏图当背景 + 徽章当角标**：
 
-- 背景图：RA 取 `API_GetGame` 的三张图，优先级是 **`ImageTitle`（标题画面截图）→
-  `ImageIngame`（游戏内截图）→ `ImageBoxArt`（封面）**。标题画面横向、信息密度低，
-  缩成 36% 宽也认得出来；游戏截图常常是主角被围在角落的一帧，铺成背景容易糊。
+- 背景图：RA 取 `API_GetGame` 的三张图，优先级是 **`ImageBoxArt`（封面）→
+  `ImageIngame`（游戏内截图）→ `ImageTitle`（标题画面截图）**。
+  封面最稳，而且最像「这款游戏」；标题画面排最后是踩过坑的——RA 的 `ImageTitle`
+  经常不是标题界面而是一张宣传大头图（B3313 的那张就是马里奥的大头照），铺在卡片
+  左半边完全认不出是哪款游戏。
   用了哪一张会记在 `meta.backdropSource`，也汇总进 `state.json` 的
   `diagnostics.retroachievements.gameArt.sources`。
   Steam 直接用 CDN 的 `steam/apps/<appid>/header.jpg`，不需要 key。
   同一轮里同一款游戏只查一次，单轮上限由 `retroachievements.maxGameArt`
   （默认 20）控制。
+- 亮度：游戏图（尤其 Steam 头图）本身是大面积高饱和的亮色，早期用 0.92 的不透明度
+  铺上去会「发光」，比其它平台的头图亮一档。现在压到 `opacity .48 +
+  brightness(.72)`，实测左栏平均亮度从 0.67 降到 0.58，和普通条目（0.57）基本齐平。
 - 徽章：钉在左图区域的右下角（`.item--badge`），右边缘对齐正文起点，不会压到文字。
 - 拿不到游戏图就**自动退回**老版式（图标铺底），背景图 404 时由 `onerror` 把整块
   媒体区连同 `item--media/item--game/item--badge` 一起去掉，不会留一块空白。
@@ -205,6 +210,38 @@ STEAM_API_KEY=xxx STEAM_ID64=7656119xxxxxxxxxx npm run steam:doctor
 - `collect` 侧还有一道兜底：非仓库型汇总卡只看「谁覆盖得更全」——新卡完整包住旧卡
   就替换，旧卡完整包住新卡就丢掉新卡（不让残缺数据顶掉完整数据）；同 id 但新卡明细
   更少时同样保留旧的。
+
+## 需要自己托管的图片（OTTOhub 封面）
+
+OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<过期时间戳>`）：
+存进 `res/list.json` 当天能看，过了 `t` 就整站 403。而页面上的 `onerror` 会把图片块
+连 `item--media` 一起去掉，症状看起来像「它从来就没有封面」。
+
+所以 OTTOhub 的封面在抓取时**就地下载**到 `res/media/ottohub/<vid>.<ext>`，条目里只记
+站点相对路径 `media/ottohub/<vid>.jpg`：
+
+- `build.mjs` 把 `res/media/` 整目录复制进 `dist/media/`，并把相对路径补成
+  `/i-am-active/media/...`（主页、`/page/N/`、`/category/` 都能取到）；
+- 已经存在的文件不会重复下载（`vid` 是稳定的键），换封面属于罕见情况，删掉文件即可；
+- `collect` 对「站点相对路径的 image」允许**覆盖**老条目的远程链接——不覆盖的话，
+  历史条目永远停在那条会过期的签名地址上；
+- 图片会跟 `res/*.json` 一起被 CI 提交回仓库，线上不再依赖源站签名。
+
+## 分类页的活动类型
+
+分类页除了「年份 × 平台」，还多了一维 **活动类型**：游戏 / 视频 / 代码 / 归档 / 其他。
+映射写在 `scripts/lib/platforms.mjs` 的 `PLATFORM_KIND`（和平台自己的 `group` 不是一回事）：
+
+| 类型 | 平台 |
+| --- | --- |
+| 游戏 | RetroAchievements、Steam |
+| 视频 | 哔哩哔哩、YouTube、OTTOhub、快手 |
+| 代码 | GitHub、Gitee、Weblate（给 TDE 翻译代码里的字符串） |
+| 归档 | 互联网档案馆 |
+| 其他 | 没登记的平台（自动兜底） |
+
+三个维度可以叠加，URL 用 `?year=2026&kind=code&platform=github` 这样的查询参数保存状态；
+没有条目的类型不会出现在左栏。
 
 ## 自动更新与部署
 

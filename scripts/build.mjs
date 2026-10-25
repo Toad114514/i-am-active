@@ -14,8 +14,8 @@ import { mkdir, writeFile, rm, readFile, readdir } from 'node:fs/promises';
 import { existsSync, statSync } from 'node:fs';
 import path from 'node:path';
 
-import { readList, readStats, DIST_DIR, ROOT } from './lib/store.mjs';
-import { PLATFORMS, PLATFORM_ORDER, getPlatform } from './lib/platforms.mjs';
+import { readList, readStats, DIST_DIR, RES_DIR, ROOT } from './lib/store.mjs';
+import { PLATFORMS, PLATFORM_ORDER, KINDS, getPlatform, kindOf } from './lib/platforms.mjs';
 import { SITE, PAGE_SIZE, esc, formatTime, isoAttr, yearOf } from './lib/site.mjs';
 import { config } from './lib/config.mjs';
 
@@ -391,6 +391,21 @@ ${renderFooter({
 
 let currentStats = { totalItems: 0, monitoringSince: null };
 
+/**
+ * 图片地址归一化。
+ *
+ * 抓取器可以只写站点相对路径（`media/ottohub/123.jpg`）——那些图是抓取时
+ * 就地下载到 res/media/ 的（原站链接带签名、几小时就失效）。这里补上 BASE
+ * 前缀，页面上就变成站内绝对路径 `/i-am-active/media/...`，无论主页、
+ * `/page/3/`、`/category/` 都能正确取到。
+ */
+function resolveMedia(src) {
+  if (!src) return null;
+  if (/^(https?:)?\/\//i.test(src) || src.startsWith('data:')) return src;
+  if (src.startsWith('/')) return src;
+  return `${BASE === '/' ? '/' : `${BASE}/`}${src.replace(/^\/+/, '')}`;
+}
+
 /** 为主页与分类页准备统一的条目视图。 */
 function toView(item) {
   const platform = getPlatform(item.platform);
@@ -401,6 +416,7 @@ function toView(item) {
     color: platform.color,
     icon: platform.icon,
     year: yearOf(item.timestamp),
+    kind: kindOf(item.platform),
     timeText: formatTime(item.timestamp),
   };
 }
@@ -455,13 +471,16 @@ ${slice.map(renderItem).join('\n')}
 /* ------------------------------------------------------------------ */
 
 async function buildCategory(list, assetsPrefix) {
-  // 统计年份与平台
+  // 统计年份、平台与活动类型
   const yearCounts = new Map();
   const platformCounts = new Map();
+  const kindCounts = new Map();
   for (const item of list) {
     const y = yearOf(item.timestamp);
     if (y) yearCounts.set(y, (yearCounts.get(y) ?? 0) + 1);
     platformCounts.set(item.platform, (platformCounts.get(item.platform) ?? 0) + 1);
+    const k = kindOf(item.platform);
+    kindCounts.set(k, (kindCounts.get(k) ?? 0) + 1);
   }
   const years = [...yearCounts.keys()].sort((a, b) => b - a);
 
@@ -492,9 +511,21 @@ async function buildCategory(list, assetsPrefix) {
     }),
   ];
 
+  // 活动类型：游戏 / 视频 / 代码 / 归档 / 其他（空类型不显示）
+  const kindLinks = [
+    `<li><a class="cats__link" href="?" aria-current="true" data-cats-kind-link data-kind="all">
+       <span class="cats__dot" style="--pc:var(--accent)"></span>全部类型<span class="cats__count">${list.length}</span>
+     </a></li>`,
+    ...KINDS.filter((kind) => kindCounts.has(kind.id)).map(
+      (kind) => `<li><a class="cats__link" href="?kind=${kind.id}" data-cats-kind-link data-kind="${kind.id}" title="${esc(kind.hint ?? '')}">
+       <span class="cats__dot" style="--pc:${esc(kind.color)}"></span>${esc(kind.name)}<span class="cats__count">${kindCounts.get(kind.id)}</span>
+     </a></li>`,
+    ),
+  ];
+
   const body = `
     <div class="section-head">
-      <h2>按平台 / 年份分类</h2>
+      <h2>按平台 / 年份 / 类型分类</h2>
       <span class="section-head__meta" data-cats-count>${list.length} 条结果</span>
     </div>
     <div class="cats" data-cats data-cats-src="${esc(assetsPrefix)}items.json">
@@ -502,6 +533,10 @@ async function buildCategory(list, assetsPrefix) {
         <div class="cats__group">
           <p class="cats__label">年份</p>
           <ul class="cats__list">${yearLinks.join('')}</ul>
+        </div>
+        <div class="cats__group">
+          <p class="cats__label">活动类型</p>
+          <ul class="cats__list">${kindLinks.join('')}</ul>
         </div>
         <div class="cats__group">
           <p class="cats__label">社交平台</p>
@@ -514,7 +549,7 @@ ${list.slice(0, PAGE_SIZE).map(renderItem).join('\n')}
         </ul>
         <div class="empty" data-cats-empty hidden>
           <strong>没有符合条件的活动</strong>
-          换一个年份或平台试试。
+          换一个年份、类型或平台试试。
         </div>
       </section>
     </div>
@@ -522,7 +557,7 @@ ${list.slice(0, PAGE_SIZE).map(renderItem).join('\n')}
 
   const html = renderPage({
     title: `分类 · ${SITE.title}`,
-    description: `按年份与社交平台浏览 ${SITE.owner} 的活动记录。`,
+    description: `按年份、活动类型与社交平台浏览 ${SITE.owner} 的活动记录。`,
     base: assetsPrefix,
     current: 'category',
     body,
@@ -539,6 +574,19 @@ ${list.slice(0, PAGE_SIZE).map(renderItem).join('\n')}
 /* ------------------------------------------------------------------ */
 /* 站内链接自检                                                        */
 /* ------------------------------------------------------------------ */
+
+/**
+ * 递归复制目录（手写而非 fs.cp：沙箱里 copyfile 会被拦，readFile/writeFile 不会）。
+ */
+async function copyDir(src, dest) {
+  await mkdir(dest, { recursive: true });
+  for (const entry of await readdir(src, { withFileTypes: true })) {
+    const from = path.join(src, entry.name);
+    const to = path.join(dest, entry.name);
+    if (entry.isDirectory()) await copyDir(from, to);
+    else await writeFile(to, await readFile(from));
+  }
+}
 
 /** 递归列出目录下所有 .html。 */
 async function listHtml(dir) {
@@ -599,12 +647,14 @@ async function main() {
   const list = await readList();
   const stats = await readStats();
 
-  // 按时间倒序（无时间的排后面）
-  const sorted = [...list].sort((a, b) => {
-    const ta = a.timestamp ? Date.parse(a.timestamp) : Number.NEGATIVE_INFINITY;
-    const tb = b.timestamp ? Date.parse(b.timestamp) : Number.NEGATIVE_INFINITY;
-    return tb - ta;
-  });
+  // 按时间倒序（无时间的排后面）；同时把「站点相对路径」的图片补成站内绝对路径
+  const sorted = [...list]
+    .sort((a, b) => {
+      const ta = a.timestamp ? Date.parse(a.timestamp) : Number.NEGATIVE_INFINITY;
+      const tb = b.timestamp ? Date.parse(b.timestamp) : Number.NEGATIVE_INFINITY;
+      return tb - ta;
+    })
+    .map((item) => ({ ...item, image: resolveMedia(item.image) }));
 
   currentStats = {
     totalItems: sorted.length,
@@ -622,6 +672,12 @@ async function main() {
   for (const asset of ['style.css', 'site.js']) {
     const content = await readFile(path.join(ASSETS_DIR, asset), 'utf8');
     await writeFile(path.join(DIST_DIR, 'assets', asset), content, 'utf8');
+  }
+
+  // 自己托管的图片（res/media → dist/media）：原站链接带签名会过期，见 store.mjs
+  const mediaDir = path.join(RES_DIR, 'media');
+  if (existsSync(mediaDir)) {
+    await copyDir(mediaDir, path.join(DIST_DIR, 'media'));
   }
 
   // 搜索索引 / 分类数据

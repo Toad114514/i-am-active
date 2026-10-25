@@ -414,9 +414,11 @@
     const emptyNode = $('[data-cats-empty]', root);
     const yearSelect = $('[data-cats-year]', root);
     const platformSelect = $('[data-cats-platform]', root);
+    const kindSelect = $('[data-cats-kind]', root);
     let items = [];
 
-    const state = { year: 'all', platform: 'all' };
+    // 三个维度可以叠加：年份 × 活动类型 × 平台
+    const state = { year: 'all', kind: 'all', platform: 'all' };
 
     const load = () => {
       const src = root.getAttribute('data-cats-src');
@@ -436,6 +438,7 @@
     const apply = () => {
       const filtered = items.filter((item) => {
         if (state.year !== 'all' && String(item.year) !== state.year) return false;
+        if (state.kind !== 'all' && item.kind !== state.kind) return false;
         if (state.platform !== 'all' && item.platform !== state.platform) return false;
         return true;
       });
@@ -511,6 +514,12 @@
           link.getAttribute('data-year') === state.year ? 'true' : 'false'
         );
       });
+      $$('[data-cats-kind-link]', root).forEach((link) => {
+        link.setAttribute(
+          'aria-current',
+          link.getAttribute('data-kind') === state.kind ? 'true' : 'false'
+        );
+      });
       $$('[data-cats-platform-link]', root).forEach((link) => {
         link.setAttribute(
           'aria-current',
@@ -518,29 +527,36 @@
         );
       });
       if (yearSelect) yearSelect.value = state.year;
+      if (kindSelect) kindSelect.value = state.kind;
       if (platformSelect) platformSelect.value = state.platform;
       const url = new URL(window.location.href);
       if (state.year === 'all') url.searchParams.delete('year');
       else url.searchParams.set('year', state.year);
+      if (state.kind === 'all') url.searchParams.delete('kind');
+      else url.searchParams.set('kind', state.kind);
       if (state.platform === 'all') url.searchParams.delete('platform');
       else url.searchParams.set('platform', state.platform);
       window.history.replaceState(null, '', url);
     };
 
     root.addEventListener('click', (event) => {
-      const link = event.target.closest('[data-cats-year-link], [data-cats-platform-link]');
+      const link = event.target.closest(
+        '[data-cats-year-link], [data-cats-kind-link], [data-cats-platform-link]'
+      );
       if (!link) return;
       event.preventDefault();
       if (link.hasAttribute('data-year')) state.year = link.getAttribute('data-year');
+      if (link.hasAttribute('data-kind')) state.kind = link.getAttribute('data-kind');
       if (link.hasAttribute('data-platform')) state.platform = link.getAttribute('data-platform');
       sync();
       apply();
     });
 
-    [yearSelect, platformSelect].forEach((select) => {
+    [yearSelect, kindSelect, platformSelect].forEach((select) => {
       if (!select) return;
       select.addEventListener('change', () => {
         if (select === yearSelect) state.year = select.value;
+        else if (select === kindSelect) state.kind = select.value;
         else state.platform = select.value;
         sync();
         apply();
@@ -549,8 +565,10 @@
 
     const params = new URLSearchParams(window.location.search);
     const y = params.get('year');
+    const k = params.get('kind');
     const p = params.get('platform');
     if (y && $(`[data-cats-year-link][data-year="${CSS.escape(y)}"]`, root)) state.year = y;
+    if (k && $(`[data-cats-kind-link][data-kind="${CSS.escape(k)}"]`, root)) state.kind = k;
     if (p && $(`[data-cats-platform-link][data-platform="${CSS.escape(p)}"]`, root))
       state.platform = p;
 

@@ -277,7 +277,7 @@ async function main() {
           if (value === undefined || value === null || value === '') continue;
           const current = target.meta?.[key];
           // backdrop / badge 是从源站「推导」出来的展示字段：规则一变（比如 RA 从
-          // 游戏内截图改成优先标题画面）老条目就该跟着变，不然永远是旧图。
+          // 游戏内截图改成优先封面）老条目就该跟着变，不然永远是旧图。
           const derived = key === 'backdrop' || key === 'badge' || key === 'backdropSource';
           if (derived || current === undefined || current === null || current === '') {
             if (current === value) continue;
@@ -286,6 +286,16 @@ async function main() {
           }
         }
         if (!target.image && item.image) {
+          target.image = item.image;
+          changed = true;
+        } else if (
+          // 站点自己托管的图（`media/` 相对路径）：必须覆盖老条目里那条
+          // 「当初存下来的远程链接」——OTTOhub 的封面是带签名的，存的当天能看，
+          // 第二天就 403，不覆盖的话老条目永远没有封面。
+          item.image &&
+          String(item.image).startsWith('media/') &&
+          target.image !== item.image
+        ) {
           target.image = item.image;
           changed = true;
         }

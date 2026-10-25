@@ -47,6 +47,12 @@ jobs:
       - name: 抓取各平台活动
         run: node scripts/collect.mjs 2>&1 | tee collect.log
 
+      # 老条目的游戏封面：增量抓取只碰最近几天，改过取图规则后要靠这一步补上。
+      # 幂等——没有需要回填的条目时直接空跑；失败不影响后面的构建。
+      - name: 回填游戏美术图
+        continue-on-error: true
+        run: node scripts/art-refresh.mjs 2>&1 | tee -a collect.log
+
       - name: 生成静态站
         env:
           SITE_BASE: /${{ github.event.repository.name }}

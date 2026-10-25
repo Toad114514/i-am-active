@@ -7,7 +7,8 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "collect": "node scripts/collect.mjs",
-    "update": "node scripts/collect.mjs && node scripts/build.mjs",
+    "art:refresh": "node scripts/art-refresh.mjs",
+    "update": "node scripts/collect.mjs && node scripts/art-refresh.mjs && node scripts/build.mjs",
     "serve": "node scripts/serve.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
     "steam:doctor": "node scripts/steam-doctor.mjs",

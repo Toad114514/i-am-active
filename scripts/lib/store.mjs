@@ -9,6 +9,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const ROOT = path.resolve(__dirname, '..', '..');
 /** 数据目录 */
 export const RES_DIR = path.join(ROOT, 'res');
+/**
+ * 「抓回来自己托管」的图片目录（相对仓库根）。
+ *
+ * 有的平台的图片地址带签名，几小时后就 403（OTTOhub 的封面就是这样），
+ * 把 URL 原样存进 list.json 等于存了个明天就失效的链接。这类图在抓取时
+ * 就地下载到 res/media/ 下，条目里只记站点相对路径（`media/xxx.jpg`），
+ * build 时整目录复制进 dist/，于是线上永久有效。
+ */
+export const MEDIA_DIR = path.join(RES_DIR, 'media');
 /** 构建输出目录 */
 export const DIST_DIR = path.join(ROOT, 'dist');
 

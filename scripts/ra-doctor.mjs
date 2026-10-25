@@ -129,7 +129,7 @@ if (firstGameId) {
     show('ImageIngame', pick(game.data, 'ImageIngame', 'imageIngame'));
     show('ImageBoxArt', pick(game.data, 'ImageBoxArt', 'imageBoxArt'));
     show('ImageTitle', pick(game.data, 'ImageTitle', 'imageTitle'));
-    console.log('  → 条目背景优先用 ImageIngame，其次 ImageBoxArt。');
+    console.log('  → 条目背景优先用 ImageBoxArt（封面），其次 ImageIngame，最后 ImageTitle。');
   }
 }
 

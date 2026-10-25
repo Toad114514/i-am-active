@@ -184,9 +184,13 @@ function achievementItem(a, user) {
  * 游戏美术图缓存：一轮里同一款游戏只查一次。
  *
  * `API_GetGame` 给三张图，当背景的优先级是：
- *   ImageTitle（标题画面的截图，横版、信息密度低，做背景最干净）
- *   → ImageIngame（游戏内截图，常常是主角被围在角落的一帧，裁成 36% 宽容易糊）
- *   → ImageBoxArt（竖版封面，最后退路）
+ *   ImageBoxArt（商店/盒装封面，绝大多数游戏都有，而且是最「像这款游戏」的一张）
+ *   → ImageIngame（游戏内截图）
+ *   → ImageTitle（标题画面截图）
+ *
+ * 标题画面排最后是踩过坑的：RA 的标题画面常常不是游戏标题界面，而是
+ * 「一张大头宣传图」——B3313 的 ImageTitle 就是马里奥的大头照，铺在卡片
+ * 左半边完全不像是这款游戏。封面反而最稳。
  */
 const gameArtCache = new Map();
 /** 取图失败的现场（只留前几条），给 state.json 里的 diagnostics 用。 */
@@ -209,10 +213,17 @@ async function fetchGameArt(gameId, key, budget) {
     const ingame = absolute(data?.ImageIngame ?? data?.imageIngame);
     const boxArt = absolute(data?.ImageBoxArt ?? data?.imageBoxArt);
     const title = absolute(data?.ImageTitle ?? data?.imageTitle);
-    // 优先标题画面，其次游戏内截图，最后封面
-    const backdrop = title ?? ingame ?? boxArt;
-    if (backdrop) art = { backdrop, ingame, boxArt, title: data?.Title ?? data?.title ?? null, source: title ? 'title' : ingame ? 'ingame' : 'boxart' };
-    else if (artDebug.length < 3) {
+    // 优先封面，其次游戏内截图，最后标题画面
+    const backdrop = boxArt ?? ingame ?? title;
+    if (backdrop) {
+      art = {
+        backdrop,
+        ingame,
+        boxArt,
+        title: data?.Title ?? data?.title ?? null,
+        source: boxArt ? 'boxart' : ingame ? 'ingame' : 'title',
+      };
+    } else if (artDebug.length < 3) {
       artDebug.push(`game ${gameId}: 没有图片字段，返回键 ${Object.keys(data ?? {}).join(',') || '(空)'}`);
     }
   } catch (error) {
@@ -428,7 +439,7 @@ export async function fetchRetroAchievements(context = {}) {
     diag.recentlyPlayed = { ok: null, skipped: 'playSessions = false' };
   }
 
-  // ---------- 3) 游戏标题画面/截图：当条目背景，成就图标缩成右下角角标 ----------
+  // ---------- 3) 游戏封面/截图：当条目背景，成就图标缩成右下角角标 ----------
   let artCount = 0;
   const artSources = { title: 0, ingame: 0, boxart: 0 };
   if (config.gameArt !== false && items.length > 0) {
@@ -479,3 +490,18 @@ export async function fetchRetroAchievements(context = {}) {
 }
 
 export { mapAchievement, toIso, lookbackMinutes, explainError, maskKey };
+
+/**
+ * 给「美术图回填」脚本用的出口：按 gameId 单独取一次游戏图。
+ *
+ * 和抓取时走的是同一个 fetchGameArt（同一套 boxart → ingame → title 优先级、
+ * 同一个进程内缓存），只是不依赖「这一轮抓到哪些成就」——老条目不会因为
+ * 掉出回看窗口就永远停留在旧规则下的那张图上。
+ *
+ * 没配 key / 取图失败都返回 null，调用方保持原样即可。
+ */
+export async function gameArtFor(gameId) {
+  const key = String(platform('retroachievements').webApiKey ?? '').trim();
+  if (!key || !gameId) return null;
+  return fetchGameArt(gameId, key, 50);
+}

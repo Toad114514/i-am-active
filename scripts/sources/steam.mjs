@@ -98,7 +98,7 @@ function formatPlaytime(minutes) {
 }
 
 /** 游戏头图，拿不到时前端 img 的 onerror 会自己把容器删掉，不会留破图。 */
-function headerImage(appid) {
+export function headerImage(appid) {
   return `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`;
 }
 
