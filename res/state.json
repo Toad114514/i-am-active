@@ -1,15 +1,48 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T05:14:47.917Z",
-    "bilibili": "2026-10-25T05:14:34.859Z",
-    "youtube": "2026-10-25T05:14:37.089Z",
-    "ottohub": "2026-10-25T05:14:38.038Z",
-    "kuaishou": "2026-10-25T05:14:40.208Z",
-    "github": "2026-10-25T05:14:40.966Z",
-    "gitee": "2026-10-25T05:14:44.134Z",
-    "archive": "2026-10-25T05:14:45.251Z",
-    "retroachievements": "2026-10-25T05:14:48.398Z",
-    "steam": "2026-10-25T05:14:51.387Z"
+    "weblate": "2026-10-25T05:54:18.281Z",
+    "bilibili": "2026-10-25T05:53:59.947Z",
+    "youtube": "2026-10-25T05:54:02.208Z",
+    "ottohub": "2026-10-25T05:54:03.071Z",
+    "kuaishou": "2026-10-25T05:54:06.467Z",
+    "github": "2026-10-25T05:54:07.406Z",
+    "gitee": "2026-10-25T05:54:13.255Z",
+    "archive": "2026-10-25T05:54:15.543Z",
+    "retroachievements": "2026-10-25T05:54:18.630Z",
+    "steam": "2026-10-25T05:54:21.633Z"
   },
-  "knownIds": {}
+  "knownIds": {},
+  "diagnostics": {
+    "steam": {
+      "checkedAt": "2026-10-25T05:54:18.631Z",
+      "since": "2026-10-25T05:14:51.387Z",
+      "note": "游戏在最近列表里，但窗口内没有新会话也没有新成就",
+      "totalCount": 3,
+      "games": [
+        {
+          "appid": "220",
+          "name": "Half-Life 2",
+          "minutes2weeks": 36,
+          "minutesTotal": 736,
+          "lastPlayed": null
+        },
+        {
+          "appid": "365450",
+          "name": "Hacknet",
+          "minutes2weeks": 6,
+          "minutesTotal": 290,
+          "lastPlayed": null
+        },
+        {
+          "appid": "10",
+          "name": "Counter-Strike",
+          "minutes2weeks": 1,
+          "minutesTotal": 1,
+          "lastPlayed": null
+        }
+      ],
+      "playItems": 0,
+      "achievementItems": 0
+    }
+  }
 }
