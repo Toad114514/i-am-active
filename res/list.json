@@ -1,5 +1,35 @@
 [
   {
+    "id": "steam:play:220:1792912895",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "《Half-Life 2》",
+    "summary": "本次会话开始于 2026/10/25 15:21:35，两周内共 2 小时 5 分钟，累计 13 小时 44 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-10-25T07:21:35.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 125,
+      "minutesTotal": 824
+    }
+  },
+  {
+    "id": "github:commit:d282d7cd107682429504944fa26e4fb475c961e5",
+    "platform": "github",
+    "type": "提交",
+    "title": "fix(steam): 成就一条都不出的原因是字段名读错，顺带补中文名",
+    "summary": "在 Toad114514/i-am-active 中提交：fix(steam): 成就一条都不出的原因是字段名读错，顺带补中文名",
+    "url": "https://github.com/Toad114514/i-am-active/commit/d282d7cd107682429504944fa26e4fb475c961e5",
+    "image": null,
+    "timestamp": "2026-10-25T07:16:44Z",
+    "meta": {
+      "sha": "d282d7c",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "github:commit:3ed64166d7e124beadb1f385d84b79f82f426659",
     "platform": "github",
     "type": "提交",
