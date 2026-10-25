@@ -1,0 +1,2293 @@
+[
+  {
+    "id": "weblate:session:2026-10-24T15:00:54Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE 简体中文 · 84 条译文改动",
+    "summary": "新增译文 42 条、修改译文 41 条、标记待编辑 1 条，涉及 9 个组件（applications/kbfx、tdebase/kate 等），最近一条「按列表 (&Y)」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%8C%89%E5%88%97%E8%A1%A8%20(%26Y)%22",
+    "image": null,
+    "timestamp": "2026-10-24T16:03:23.846069Z",
+    "meta": {
+      "merge": true,
+      "count": 94,
+      "translationCount": 84,
+      "changes": [
+        {
+          "text": "按列表 (&Y)",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%8C%89%E5%88%97%E8%A1%A8%20(%26Y)%22",
+          "time": "2026-10-24T16:03:23.846069Z"
+        },
+        {
+          "text": "by column",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22by%20column%22",
+          "time": "2026-10-24T16:03:04.144988Z"
+        },
+        {
+          "text": "数字 (&M)",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%95%B0%E5%AD%97%20(%26M)%22",
+          "time": "2026-10-24T16:02:48.278681Z"
+        },
+        {
+          "text": "字母 (&B)",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%AD%97%E6%AF%8D%20(%26B)%22",
+          "time": "2026-10-24T16:02:39.189193Z"
+        },
+        {
+          "text": "排序类型",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%8E%92%E5%BA%8F%E7%B1%BB%E5%9E%8B%22",
+          "time": "2026-10-24T16:02:28.718944Z"
+        },
+        {
+          "text": "结束于：",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E7%BB%93%E6%9D%9F%E4%BA%8E%EF%BC%9A%22",
+          "time": "2026-10-24T16:02:24.448385Z"
+        },
+        {
+          "text": "开始于：",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%BC%80%E5%A7%8B%E4%BA%8E%EF%BC%9A%22",
+          "time": "2026-10-24T16:02:18.616145Z"
+        },
+        {
+          "text": "特殊 (&Q)",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E7%89%B9%E6%AE%8A%20(%26Q)%22",
+          "time": "2026-10-24T16:02:06.602243Z"
+        },
+        {
+          "text": "unique",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22unique%22",
+          "time": "2026-10-24T16:01:50.636407Z"
+        },
+        {
+          "text": "区分大小写 (&C)",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99%20(%26C)%22",
+          "time": "2026-10-24T16:01:45.009423Z"
+        },
+        {
+          "text": "高级",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E9%AB%98%E7%BA%A7%22",
+          "time": "2026-10-24T16:01:28.749888Z"
+        },
+        {
+          "text": "降序 (&D)",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E9%99%8D%E5%BA%8F%20(%26D)%22",
+          "time": "2026-10-24T16:01:24.839729Z"
+        },
+        {
+          "text": "升序 (&A)",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%8D%87%E5%BA%8F%20(%26A)%22",
+          "time": "2026-10-24T16:01:15.156276Z"
+        },
+        {
+          "text": "表单: \"开始于\" 和 \"结束于\" 必须包含数字。",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E8%A1%A8%E5%8D%95%3A%20%E5%BC%80%E5%A7%8B%E4%BA%8E%20%E5%92%8C%20%E7%BB%93%E6%9D%9F%E4%BA%8E%20%E5%BF%85%E9%A1%BB%E5%8C%85%E5%90%AB%E6%95%B0%E5%AD%97%E3%80%82%22",
+          "time": "2026-10-24T16:01:05.275676Z"
+        },
+        {
+          "text": "表单: \"开始于\" 和 \"结束于\" 必须包含数字",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E8%A1%A8%E5%8D%95%3A%20%E5%BC%80%E5%A7%8B%E4%BA%8E%20%E5%92%8C%20%E7%BB%93%E6%9D%9F%E4%BA%8E%20%E5%BF%85%E9%A1%BB%E5%8C%85%E5%90%AB%E6%95%B0%E5%AD%97%22",
+          "time": "2026-10-24T16:01:01.409038Z"
+        },
+        {
+          "text": ": \"开始于\" 和 \"结束于\" have to contains numbers.",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%3A%20%E5%BC%80%E5%A7%8B%E4%BA%8E%20%E5%92%8C%20%E7%BB%93%E6%9D%9F%E4%BA%8E%20have%20to%20contains%20numbers.%22",
+          "time": "2026-10-24T16:00:41.970021Z"
+        },
+        {
+          "text": "Fields: \"Starting at\" and \"Ending at\" have to contains numbers.",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22Fields%3A%20Starting%20at%20and%20Ending%20at%20have%20to%20contains%20numbers.%22",
+          "time": "2026-10-24T15:59:52.043876Z"
+        },
+        {
+          "text": "排序",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%8E%92%E5%BA%8F%22",
+          "time": "2026-10-24T15:59:41.164842Z"
+        },
+        {
+          "text": "数字排序 (0-9)",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%95%B0%E5%AD%97%E6%8E%92%E5%BA%8F%20(0-9)%22",
+          "time": "2026-10-24T15:59:29.629760Z"
+        },
+        {
+          "text": "字母排序 (A-Z)。",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%AD%97%E6%AF%8D%E6%8E%92%E5%BA%8F%20(A-Z)%E3%80%82%22",
+          "time": "2026-10-24T15:59:16.974764Z"
+        },
+        {
+          "text": "排序区域的结尾段。",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%8E%92%E5%BA%8F%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%BB%93%E5%B0%BE%E6%AE%B5%E3%80%82%22",
+          "time": "2026-10-24T15:58:58.898632Z"
+        },
+        {
+          "text": "排序区域的起始列。",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%8E%92%E5%BA%8F%E5%8C%BA%E5%9F%9F%E7%9A%84%E8%B5%B7%E5%A7%8B%E5%88%97%E3%80%82%22",
+          "time": "2026-10-24T15:58:48.272885Z"
+        },
+        {
+          "text": "检查此项可按特定列排序。 如果其中的一行选中了，那么此选项会被自动勾选。起始字段和结束字段根据选择自动填充。",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%A3%80%E6%9F%A5%E6%AD%A4%E9%A1%B9%E5%8F%AF%E6%8C%89%E7%89%B9%E5%AE%9A%E5%88%97%E6%8E%92%E5%BA%8F%E3%80%82%20%E5%A6%82%E6%9E%9C%E5%85%B6%E4%B8%AD%E7%9A%84%E4%B8%80%E8%A1%8C%E9%80%89%E4%B8%AD%E4%BA%86%EF%BC%8C%E9%82%A3%E4%B9%88%E6%AD%A4%E9%80%89%E9%A1%B9%E4%BC%9A%E8%A2%AB%E8%87%AA%E5%8A%A8%E5%8B%BE%E9%80%89%E3%80%82%E8%B5%B7%E5%A7%8B%E5%AD%97%E6%AE%B5%E5%92%8C%E7%BB%93%E6%9D%9F%E5%AD%97%E6%AE%B5%E6%A0%B9%E6%8D%AE%E9%80%89%E6%8B%A9%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E3%80%82%22",
+          "time": "2026-10-24T15:58:36.596355Z"
+        },
+        {
+          "text": "检查此项可按特定列排序。 如果其中的一行选中了，那么此选项会被自动勾选。Start and end fields are filled according to selection.",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%E6%A3%80%E6%9F%A5%E6%AD%A4%E9%A1%B9%E5%8F%AF%E6%8C%89%E7%89%B9%E5%AE%9A%E5%88%97%E6%8E%92%E5%BA%8F%E3%80%82%20%E5%A6%82%E6%9E%9C%E5%85%B6%E4%B8%AD%E7%9A%84%E4%B8%80%E8%A1%8C%E9%80%89%E4%B8%AD%E4%BA%86%EF%BC%8C%E9%82%A3%E4%B9%88%E6%AD%A4%E9%80%89%E9%A1%B9%E4%BC%9A%E8%A2%AB%E8%87%AA%E5%8A%A8%E5%8B%BE%E9%80%89%E3%80%82Start%20and%20end%20fields%20are",
+          "time": "2026-10-24T15:58:26.983639Z"
+        },
+        {
+          "text": "Check this for sorting by specific column. If a part of one line is selected, this checkbox is automatically selected. Start and end fields are filled according",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=Check%20this%20for%20sorting%20by%20specific%20column.%20If%20a%20part%20of%20one%20",
+          "time": "2026-10-24T15:50:36.779946Z"
+        },
+        {
+          "text": "勾选此项以启用区分大小写排序。",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%8B%BE%E9%80%89%E6%AD%A4%E9%A1%B9%E4%BB%A5%E5%90%AF%E7%94%A8%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99%E6%8E%92%E5%BA%8F%E3%80%82%22",
+          "time": "2026-10-24T15:50:23.762455Z"
+        },
+        {
+          "text": "勾选此项可删除所有重复记录。",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%8B%BE%E9%80%89%E6%AD%A4%E9%A1%B9%E5%8F%AF%E5%88%A0%E9%99%A4%E6%89%80%E6%9C%89%E9%87%8D%E5%A4%8D%E8%AE%B0%E5%BD%95%E3%80%82%22",
+          "time": "2026-10-24T15:50:22.009880Z"
+        },
+        {
+          "text": "请勾选此项以启用区分大小写排序。",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E8%AF%B7%E5%8B%BE%E9%80%89%E6%AD%A4%E9%A1%B9%E4%BB%A5%E5%90%AF%E7%94%A8%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99%E6%8E%92%E5%BA%8F%E3%80%82%22",
+          "time": "2026-10-24T15:50:15.454184Z"
+        },
+        {
+          "text": "降序排序 （从 A - Z 或 0 - 9）。",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E9%99%8D%E5%BA%8F%E6%8E%92%E5%BA%8F%20%EF%BC%88%E4%BB%8E%20A%20-%20Z%20%E6%88%96%200%20-%209%EF%BC%89%E3%80%82%22",
+          "time": "2026-10-24T15:44:26.929115Z"
+        },
+        {
+          "text": "升序排序 （从 A - Z 或 0 - 9）。",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%8D%87%E5%BA%8F%E6%8E%92%E5%BA%8F%20%EF%BC%88%E4%BB%8E%20A%20-%20Z%20%E6%88%96%200%20-%209%EF%BC%89%E3%80%82%22",
+          "time": "2026-10-24T15:44:16.059872Z"
+        },
+        {
+          "text": "升序排序 （从 A - Z 或 0 - 9）",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E5%8D%87%E5%BA%8F%E6%8E%92%E5%BA%8F%20%EF%BC%88%E4%BB%8E%20A%20-%20Z%20%E6%88%96%200%20-%209%EF%BC%89%22",
+          "time": "2026-10-24T15:44:12.380484Z"
+        },
+        {
+          "text": "排序",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22%E6%8E%92%E5%BA%8F%22",
+          "time": "2026-10-24T15:43:43.737408Z"
+        },
+        {
+          "text": "xiaolan2332021@163.com",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22xiaolan2332021%40163.com%22",
+          "time": "2026-10-24T15:43:38.170658Z"
+        },
+        {
+          "text": "toad114514",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-sort",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-sort/zh_Hans/?q=%22toad114514%22",
+          "time": "2026-10-24T15:43:32.119992Z"
+        },
+        {
+          "text": "错误： 无法运行 %1。",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-make",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-make/zh_Hans/?q=%22%E9%94%99%E8%AF%AF%EF%BC%9A%20%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C%20%251%E3%80%82%22",
+          "time": "2026-10-24T15:43:10.414315Z"
+        },
+        {
+          "text": "Kate 文本片段",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E6%96%87%E6%9C%AC%E7%89%87%E6%AE%B5%22",
+          "time": "2026-10-24T15:42:16.775350Z"
+        },
+        {
+          "text": "Kate 段落",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E6%AE%B5%E8%90%BD%22",
+          "time": "2026-10-24T15:42:05.645795Z"
+        },
+        {
+          "text": "Kate 头文件",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E5%A4%B4%E6%96%87%E4%BB%B6%22",
+          "time": "2026-10-24T15:41:46.023804Z"
+        },
+        {
+          "text": "Kate Javascript 控制台",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20Javascript%20%E6%8E%A7%E5%88%B6%E5%8F%B0%22",
+          "time": "2026-10-24T15:41:00.500055Z"
+        },
+        {
+          "text": "Kate 排序",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E6%8E%92%E5%BA%8F%22",
+          "time": "2026-10-24T15:40:53.274128Z"
+        },
+        {
+          "text": "便捷插入 HTML 标签",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22%E4%BE%BF%E6%8D%B7%E6%8F%92%E5%85%A5%20HTML%20%E6%A0%87%E7%AD%BE%22",
+          "time": "2026-10-24T15:40:45.111625Z"
+        },
+        {
+          "text": "在磁盘上保存 Kate 的文件列表",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22%E5%9C%A8%E7%A3%81%E7%9B%98%E4%B8%8A%E4%BF%9D%E5%AD%98%20Kate%20%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8%22",
+          "time": "2026-10-24T15:40:23.020111Z"
+        },
+        {
+          "text": "Kate 文件列表加载器",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8%E5%8A%A0%E8%BD%BD%E5%99%A8%22",
+          "time": "2026-10-24T15:40:10.283682Z"
+        },
+        {
+          "text": "HTML 整理",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22HTML%20%E6%95%B4%E7%90%86%22",
+          "time": "2026-10-24T15:39:40.187699Z"
+        },
+        {
+          "text": "Kate 头信息解析",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E5%A4%B4%E4%BF%A1%E6%81%AF%E8%A7%A3%E6%9E%90%22",
+          "time": "2026-10-24T15:39:30.339196Z"
+        },
+        {
+          "text": "对文件或选择进行排序",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22%E5%AF%B9%E6%96%87%E4%BB%B6%E6%88%96%E9%80%89%E6%8B%A9%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F%22",
+          "time": "2026-10-24T15:39:11.417053Z"
+        },
+        {
+          "text": "Kate 排序",
+          "action": "标记待编辑",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E6%8E%92%E5%BA%8F%22",
+          "time": "2026-10-24T15:39:04.002786Z"
+        },
+        {
+          "text": "Kate 排序",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E6%8E%92%E5%BA%8F%22",
+          "time": "2026-10-24T15:39:03.311704Z"
+        },
+        {
+          "text": "Kate 插件",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-plugins-desktop-files/zh_Hans/?q=%22Kate%20%E6%8F%92%E4%BB%B6%22",
+          "time": "2026-10-24T15:38:57.947664Z"
+        },
+        {
+          "text": "启用排序功能",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-cppsymbolviewer",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-cppsymbolviewer/zh_Hans/?q=%22%E5%90%AF%E7%94%A8%E6%8E%92%E5%BA%8F%E5%8A%9F%E8%83%BD%22",
+          "time": "2026-10-24T15:38:42.145947Z"
+        },
+        {
+          "text": "启用排序",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-cppsymbolviewer",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-cppsymbolviewer/zh_Hans/?q=%22%E5%90%AF%E7%94%A8%E6%8E%92%E5%BA%8F%22",
+          "time": "2026-10-24T15:38:31.997988Z"
+        },
+        {
+          "text": "在树状模式下自动展开节点",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-cppsymbolviewer",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-cppsymbolviewer/zh_Hans/?q=%22%E5%9C%A8%E6%A0%91%E7%8A%B6%E6%A8%A1%E5%BC%8F%E4%B8%8B%E8%87%AA%E5%8A%A8%E5%B1%95%E5%BC%80%E8%8A%82%E7%82%B9%22",
+          "time": "2026-10-24T15:38:27.596981Z"
+        },
+        {
+          "text": "广告屏蔽器",
+          "action": "新增译文",
+          "component": "tdeaddons/konq-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/konq-plugins-desktop-files/zh_Hans/?q=%22%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E5%99%A8%22",
+          "time": "2026-10-24T15:37:14.485872Z"
+        },
+        {
+          "text": "使用 SSH, RSync 和 Unison 进行双向远程文件夹同步",
+          "action": "新增译文",
+          "component": "tdeaddons/konq-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/konq-plugins-desktop-files/zh_Hans/?q=%22%E4%BD%BF%E7%94%A8%20SSH%2C%20RSync%20%E5%92%8C%20Unison%20%E8%BF%9B%E8%A1%8C%E5%8F%8C%E5%90%91%E8%BF%9C%E7%A8%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E5%90%8C%E6%AD%A5%22",
+          "time": "2026-10-24T15:36:56.823588Z"
+        },
+        {
+          "text": "远程文件夹同步",
+          "action": "新增译文",
+          "component": "tdeaddons/konq-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/konq-plugins-desktop-files/zh_Hans/?q=%22%E8%BF%9C%E7%A8%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E5%90%8C%E6%AD%A5%22",
+          "time": "2026-10-24T15:36:06.346702Z"
+        },
+        {
+          "text": "显示所有可屏蔽的HTML元素以屏蔽广告",
+          "action": "修改译文",
+          "component": "tdeaddons/konq-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/konq-plugins-desktop-files/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E5%8F%AF%E5%B1%8F%E8%94%BD%E7%9A%84HTML%E5%85%83%E7%B4%A0%E4%BB%A5%E5%B1%8F%E8%94%BD%E5%B9%BF%E5%91%8A%22",
+          "time": "2026-10-24T15:35:46.606032Z"
+        },
+        {
+          "text": "显示所有可屏蔽的HTML元素以屏蔽广告。",
+          "action": "新增译文",
+          "component": "tdeaddons/konq-plugins-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/konq-plugins-desktop-files/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E5%8F%AF%E5%B1%8F%E8%94%BD%E7%9A%84HTML%E5%85%83%E7%B4%A0%E4%BB%A5%E5%B1%8F%E8%94%BD%E5%B9%BF%E5%91%8A%E3%80%82%22",
+          "time": "2026-10-24T15:35:42.784872Z"
+        },
+        {
+          "text": "请求的是关于 %1 个交换区空间的信息，但是只获得 %2 个交换区项。 KTimeMon 将会继续获取。 请使用 http://bugs.trinitydesktop.org/ 来联系维护者，他会乐于协助。",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%E8%AF%B7%E6%B1%82%E7%9A%84%E6%98%AF%E5%85%B3%E4%BA%8E%20%251%20%E4%B8%AA%E4%BA%A4%E6%8D%A2%E5%8C%BA%E7%A9%BA%E9%97%B4%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%8C%E4%BD%86%E6%98%AF%E5%8F%AA%E8%8E%B7%E5%BE%97%20%252%20%E4%B8%AA%E4%BA%A4%E6%8D%A2%E5%8C%BA%E9%A1%B9%E3%80%82%20KTimeMon%20%E5%B0%86%E4%BC%9A%E7%BB%A7%E7%BB%AD%E8%8E%B7%E5%8F%96%E3%80%82%20%E8%AF%B7%E4%BD%BF%E7%94%A8%20htt",
+          "time": "2026-10-24T15:34:50.485863Z"
+        },
+        {
+          "text": "请求的是关于 %1 个交换区空间的信息，但是只获得 %2 个交换区项。 KTimeMon 将会尝试继续获取。 请使用 http://bugs.trinitydesktop.org/ 来联系维护者，他会乐于协助。",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%E8%AF%B7%E6%B1%82%E7%9A%84%E6%98%AF%E5%85%B3%E4%BA%8E%20%251%20%E4%B8%AA%E4%BA%A4%E6%8D%A2%E5%8C%BA%E7%A9%BA%E9%97%B4%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%8C%E4%BD%86%E6%98%AF%E5%8F%AA%E8%8E%B7%E5%BE%97%20%252%20%E4%B8%AA%E4%BA%A4%E6%8D%A2%E5%8C%BA%E9%A1%B9%E3%80%82%20KTimeMon%20%E5%B0%86%E4%BC%9A%E5%B0%9D%E8%AF%95%E7%BB%A7%E7%BB%AD%E8%8E%B7%E5%8F%96%E3%80%82%20%E8%AF%B7%E4%BD%BF%E7%94%A8%20h",
+          "time": "2026-10-24T15:34:44.427018Z"
+        },
+        {
+          "text": "请求的是关于 %1 个交换区空间的信息，但是只获得 %2 个交换区项。 KTimeMon 将会试图继续。 请使用 http://bugs.trinitydesktop.org/ 来联系维护者，他会乐于协助。",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%E8%AF%B7%E6%B1%82%E7%9A%84%E6%98%AF%E5%85%B3%E4%BA%8E%20%251%20%E4%B8%AA%E4%BA%A4%E6%8D%A2%E5%8C%BA%E7%A9%BA%E9%97%B4%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%8C%E4%BD%86%E6%98%AF%E5%8F%AA%E8%8E%B7%E5%BE%97%20%252%20%E4%B8%AA%E4%BA%A4%E6%8D%A2%E5%8C%BA%E9%A1%B9%E3%80%82%20KTimeMon%20%E5%B0%86%E4%BC%9A%E8%AF%95%E5%9B%BE%E7%BB%A7%E7%BB%AD%E3%80%82%20%E8%AF%B7%E4%BD%BF%E7%94%A8%20htt",
+          "time": "2026-10-24T15:34:33.383515Z"
+        },
+        {
+          "text": "无法初始化“kstat”库。该库被用来获取内核信息。诊断结果是 %1。 您是在运行 Solaris 吗？请使用 mueller@kde.org 来联系维护者，他会乐于协助。",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%E6%97%A0%E6%B3%95%E5%88%9D%E5%A7%8B%E5%8C%96%E2%80%9Ckstat%E2%80%9D%E5%BA%93%E3%80%82%E8%AF%A5%E5%BA%93%E8%A2%AB%E7%94%A8%E6%9D%A5%E8%8E%B7%E5%8F%96%E5%86%85%E6%A0%B8%E4%BF%A1%E6%81%AF%E3%80%82%E8%AF%8A%E6%96%AD%E7%BB%93%E6%9E%9C%E6%98%AF%20%251%E3%80%82%20%E6%82%A8%E6%98%AF%E5%9C%A8%E8%BF%90%E8%A1%8C%20Solaris%20%E5%90%97%EF%BC%9F%E8%AF%B7%E4%BD%BF%E7%94%A8%20muel",
+          "time": "2026-10-24T15:34:25.043931Z"
+        },
+        {
+          "text": "无法打开文件“%1”。原因是： %2 需要该文件来判定当前系统信息。也许您的 proc 文件系统不是标准 Linux 格式？",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E2%80%9C%251%E2%80%9D%E3%80%82%E5%8E%9F%E5%9B%A0%E6%98%AF%EF%BC%9A%20%252%20%E9%9C%80%E8%A6%81%E8%AF%A5%E6%96%87%E4%BB%B6%E6%9D%A5%E5%88%A4%E5%AE%9A%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%E3%80%82%E4%B9%9F%E8%AE%B8%E6%82%A8%E7%9A%84%20proc%20%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%8D%E6%98%AF%E6%A0%87%E5%87%86%20Linux%20%E6%A0%BC",
+          "time": "2026-10-24T15:34:04.541513Z"
+        },
+        {
+          "text": "CPU ：%1% 空闲 内存：%2 MB %3% 空闲 交换区：%4 MB %5% 空闲",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%22CPU%20%EF%BC%9A%251%25%20%E7%A9%BA%E9%97%B2%20%E5%86%85%E5%AD%98%EF%BC%9A%252%20MB%20%253%25%20%E7%A9%BA%E9%97%B2%20%E4%BA%A4%E6%8D%A2%E5%8C%BA%EF%BC%9A%254%20MB%20%255%25%20%E7%A9%BA%E9%97%B2%22",
+          "time": "2026-10-24T15:33:37.410375Z"
+        },
+        {
+          "text": "TDE 的 KTimeMon 由 Dirk A. Mueller 维护 M. Maierhofer 编写 基于 H. Maierhofer 的 timemon",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=TDE%20%E7%9A%84%20KTimeMon%20%E7%94%B1%20Dirk%20A.%20Mueller%20%E7%BB%B4%E6%8A%A4%20M.%20Maierhofer%20%E7%BC%96%E5%86%99%20%E5%9F%BA%E4%BA%8E%20H.%20M",
+          "time": "2026-10-24T15:32:56.835945Z"
+        },
+        {
+          "text": "无法获取虚拟内存信息。 诊断结果是“%1”。 请使用 http://bugs.trinitydesktop.org/ 来联系维护者，他会乐于协助。",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E4%BF%A1%E6%81%AF%E3%80%82%20%E8%AF%8A%E6%96%AD%E7%BB%93%E6%9E%9C%E6%98%AF%E2%80%9C%251%E2%80%9D%E3%80%82%20%E8%AF%B7%E4%BD%BF%E7%94%A8%20http%3A%2F%2Fbugs.trinitydesktop.org%2F%20%E6%9D%A5",
+          "time": "2026-10-24T15:32:41.416613Z"
+        },
+        {
+          "text": "无法获取 CPUSTATE 状态。 诊断结果是“%1”。 请使用 http://bugs.trinitydesktop.org/ 来联系维护者，他会乐于协助。",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%20CPUSTATE%20%E7%8A%B6%E6%80%81%E3%80%82%20%E8%AF%8A%E6%96%AD%E7%BB%93%E6%9E%9C%E6%98%AF%E2%80%9C%251%E2%80%9D%E3%80%82%20%E8%AF%B7%E4%BD%BF%E7%94%A8%20http%3A%2F%2Fbugs.trinitydesktop.",
+          "time": "2026-10-24T15:32:14.328461Z"
+        },
+        {
+          "text": "无法获取 CPU 数量。 诊断信息为“%1”。 请使用 http://bugs.trinitydesktop.org/ 来联系维护者，他会乐于协助。",
+          "action": "修改译文",
+          "component": "tdeaddons/kicker-ktimemon",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kicker-ktimemon/zh_Hans/?q=%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%20CPU%20%E6%95%B0%E9%87%8F%E3%80%82%20%E8%AF%8A%E6%96%AD%E4%BF%A1%E6%81%AF%E4%B8%BA%E2%80%9C%251%E2%80%9D%E3%80%82%20%E8%AF%B7%E4%BD%BF%E7%94%A8%20http%3A%2F%2Fbugs.trinitydesktop.org%2F%20",
+          "time": "2026-10-24T15:31:57.010922Z"
+        },
+        {
+          "text": "行为选项",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-tabbarextension",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-tabbarextension/zh_Hans/?q=%22%E8%A1%8C%E4%B8%BA%E9%80%89%E9%A1%B9%22",
+          "time": "2026-10-24T15:30:13.976859Z"
+        },
+        {
+          "text": "中键点击关闭文档",
+          "action": "新增译文",
+          "component": "tdeaddons/kate-tabbarextension",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-tabbarextension/zh_Hans/?q=%22%E4%B8%AD%E9%94%AE%E7%82%B9%E5%87%BB%E5%85%B3%E9%97%AD%E6%96%87%E6%A1%A3%22",
+          "time": "2026-10-24T15:30:09.748949Z"
+        },
+        {
+          "text": "配置标签栏扩展",
+          "action": "修改译文",
+          "component": "tdeaddons/kate-tabbarextension",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeaddons/kate-tabbarextension/zh_Hans/?q=%22%E9%85%8D%E7%BD%AE%E6%A0%87%E7%AD%BE%E6%A0%8F%E6%89%A9%E5%B1%95%22",
+          "time": "2026-10-24T15:29:38.900810Z"
+        },
+        {
+          "text": "切换当前会话的只读状态。在只读会话中，你可以照常工作，但是 Kate 关闭或切换到别的会话时，文档将不会保存。你可以使用此会话来创建会话模板，可以允许文档保持一段时间不变。",
+          "action": "修改译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=%E5%88%87%E6%8D%A2%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E7%9A%84%E5%8F%AA%E8%AF%BB%E7%8A%B6%E6%80%81%E3%80%82%E5%9C%A8%E5%8F%AA%E8%AF%BB%E4%BC%9A%E8%AF%9D%E4%B8%AD%EF%BC%8C%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%85%A7%E5%B8%B8%E5%B7%A5%E4%BD%9C%EF%BC%8C%E4%BD%86%E6%98%AF%20Kate%20%E5%85%B3%E9%97%AD%E6%88%96%E5%88%87%E6%8D%A2%E5%88%B0%E5%88%AB%E7%9A%84%E4%BC%9A%E8%AF%9D%E6%97%B6%EF%BC%8C%E6%96%87%E6%A1%A3%E5%B0%86%E4%B8%8D%E4%BC%9A%E4%BF%9D%E5%AD%98%E3%80%82%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8",
+          "time": "2026-10-24T15:23:58.977811Z"
+        },
+        {
+          "text": "切换当前会话的只读状态。在只读会话中，你可以照常工作，但是 Kate 关闭或切换到别的会话时，文档将不会保存You can use this option to create template sessions that you wish to keep unchanged over time.",
+          "action": "修改译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=%E5%88%87%E6%8D%A2%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E7%9A%84%E5%8F%AA%E8%AF%BB%E7%8A%B6%E6%80%81%E3%80%82%E5%9C%A8%E5%8F%AA%E8%AF%BB%E4%BC%9A%E8%AF%9D%E4%B8%AD%EF%BC%8C%E4%BD%A0%E5%8F%AF%E4%BB%A5%E7%85%A7%E5%B8%B8%E5%B7%A5%E4%BD%9C%EF%BC%8C%E4%BD%86%E6%98%AF%20Kate%20%E5%85%B3%E9%97%AD%E6%88%96%E5%88%87%E6%8D%A2%E5%88%B0%E5%88%AB%E7%9A%84%E4%BC%9A%E8%AF%9D%E6%97%B6%EF%BC%8C%E6%96%87%E6%A1%A3%E5%B0%86%E4%B8%8D%E4%BC%9A%E4%BF%9D%E5%AD%98You%20ca",
+          "time": "2026-10-24T15:23:04.612940Z"
+        },
+        {
+          "text": "切换当前会话的只读状态。在只读会话中，you can work as usual but the list of documents in the session will not be saved when you exit Kate or switch to another session.You can use ",
+          "action": "修改译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=%E5%88%87%E6%8D%A2%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E7%9A%84%E5%8F%AA%E8%AF%BB%E7%8A%B6%E6%80%81%E3%80%82%E5%9C%A8%E5%8F%AA%E8%AF%BB%E4%BC%9A%E8%AF%9D%E4%B8%AD%EF%BC%8Cyou%20can%20work%20as%20usual%20but%20the%20list%20of%20doc",
+          "time": "2026-10-24T15:22:17.988439Z"
+        },
+        {
+          "text": "Toggle read only status for the selected session.In a read only session, you can work as usual but the list of documents in the session will not be saved when y",
+          "action": "新增译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=Toggle%20read%20only%20status%20for%20the%20selected%20session.In%20a%20read%20o",
+          "time": "2026-10-24T15:21:36.501743Z"
+        },
+        {
+          "text": "试图关闭所有文档时打开了新文件，关闭被中止。",
+          "action": "修改译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=%22%E8%AF%95%E5%9B%BE%E5%85%B3%E9%97%AD%E6%89%80%E6%9C%89%E6%96%87%E6%A1%A3%E6%97%B6%E6%89%93%E5%BC%80%E4%BA%86%E6%96%B0%E6%96%87%E4%BB%B6%EF%BC%8C%E5%85%B3%E9%97%AD%E8%A2%AB%E4%B8%AD%E6%AD%A2%E3%80%82%22",
+          "time": "2026-10-24T15:21:28.266291Z"
+        },
+        {
+          "text": "当 MDI 设置启用时强制进入单文档模式。",
+          "action": "新增译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=%22%E5%BD%93%20MDI%20%E8%AE%BE%E7%BD%AE%E5%90%AF%E7%94%A8%E6%97%B6%E5%BC%BA%E5%88%B6%E8%BF%9B%E5%85%A5%E5%8D%95%E6%96%87%E6%A1%A3%E6%A8%A1%E5%BC%8F%E3%80%82%22",
+          "time": "2026-10-24T15:20:58.345145Z"
+        },
+        {
+          "text": "设置 Kate 记住的文件数量。提示: 如果接下来设置的值低于当前值，那么列表将会直接截断。",
+          "action": "修改译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=%22%E8%AE%BE%E7%BD%AE%20Kate%20%E8%AE%B0%E4%BD%8F%E7%9A%84%E6%96%87%E4%BB%B6%E6%95%B0%E9%87%8F%E3%80%82%E6%8F%90%E7%A4%BA%3A%20%E5%A6%82%E6%9E%9C%E6%8E%A5%E4%B8%8B%E6%9D%A5%E8%AE%BE%E7%BD%AE%E7%9A%84%E5%80%BC%E4%BD%8E%E4%BA%8E%E5%BD%93%E5%89%8D%E5%80%BC%EF%BC%8C%E9%82%A3%E4%B9%88%E5%88%97%E8%A1%A8%E5%B0%86%E4%BC%9A%E7%9B%B4%E6%8E%A5%E6%88%AA%E6%96%AD%E3%80%82%22",
+          "time": "2026-10-24T15:20:31.901525Z"
+        },
+        {
+          "text": "设置 Kate 记住的文件数量。提示: If you set this lower than the current value, the list will be truncated and some items forgotten.",
+          "action": "修改译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=%E8%AE%BE%E7%BD%AE%20Kate%20%E8%AE%B0%E4%BD%8F%E7%9A%84%E6%96%87%E4%BB%B6%E6%95%B0%E9%87%8F%E3%80%82%E6%8F%90%E7%A4%BA%3A%20If%20you%20set%20this%20lower%20than%20the%20current%20v",
+          "time": "2026-10-24T15:19:22.427763Z"
+        },
+        {
+          "text": "Sets the number of recent files remembered by Kate.NOTE: If you set this lower than the current value, the list will be truncated and some items forgotten.",
+          "action": "新增译文",
+          "component": "tdebase/kate",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kate/zh_Hans/?q=Sets%20the%20number%20of%20recent%20files%20remembered%20by%20Kate.NOTE%3A%20If%20",
+          "time": "2026-10-24T15:18:50.004227Z"
+        },
+        {
+          "text": "http://www.pcagenten.se",
+          "action": "修改译文",
+          "component": "applications/kbfx",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/kbfx/zh_Hans/?q=%22http%3A%2F%2Fwww.pcagenten.se%22",
+          "time": "2026-10-24T15:17:48.672654Z"
+        },
+        {
+          "text": "HTTP://WWW.PCAGENTEN.SE",
+          "action": "新增译文",
+          "component": "applications/kbfx",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/kbfx/zh_Hans/?q=%22HTTP%3A%2F%2FWWW.PCAGENTEN.SE%22",
+          "time": "2026-10-24T15:17:31.510859Z"
+        },
+        {
+          "text": "kbfxconfigapp",
+          "action": "新增译文",
+          "component": "applications/kbfx",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/kbfx/zh_Hans/?q=%22kbfxconfigapp%22",
+          "time": "2026-10-24T15:17:23.531114Z"
+        },
+        {
+          "text": "KBFX 将通过当前值计算一些必要的值* 主菜单高度 和 * 主菜单宽度 * 底部遍览高度 和 * 底部边栏宽度 所以确保你的值在通过计算后符合你的预期！提示：主题布局也取决于图片尺寸！因此如果主题看起来不符合您的预期，试着将图片宽度调小，或者更改其他设置。 * 主菜单宽度 记得调高！",
+          "action": "新增译文",
+          "component": "applications/kbfx",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/kbfx/zh_Hans/?q=KBFX%20%E5%B0%86%E9%80%9A%E8%BF%87%E5%BD%93%E5%89%8D%E5%80%BC%E8%AE%A1%E7%AE%97%E4%B8%80%E4%BA%9B%E5%BF%85%E8%A6%81%E7%9A%84%E5%80%BC*%20%E4%B8%BB%E8%8F%9C%E5%8D%95%E9%AB%98%E5%BA%A6%20%E5%92%8C%20*%20%E4%B8%BB%E8%8F%9C%E5%8D%95%E5%AE%BD%E5%BA%A6%20*%20%E5%BA%95%E9%83%A8%E9%81%8D%E8%A7%88%E9%AB%98%E5%BA%A6%20%E5%92%8C%20*%20%E5%BA%95%E9%83%A8%E8%BE%B9%E6%A0%8F%E5%AE%BD%E5%BA%A6%20%E6%89%80%E4%BB%A5%E7%A1%AE",
+          "time": "2026-10-24T15:07:49.598202Z"
+        },
+        {
+          "text": "无法移除 KBFX 主题。您可能连我删除 %1 这个文件夹的权限都没有。",
+          "action": "修改译文",
+          "component": "applications/kbfx",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/kbfx/zh_Hans/?q=%22%E6%97%A0%E6%B3%95%E7%A7%BB%E9%99%A4%20KBFX%20%E4%B8%BB%E9%A2%98%E3%80%82%E6%82%A8%E5%8F%AF%E8%83%BD%E8%BF%9E%E6%88%91%E5%88%A0%E9%99%A4%20%251%20%E8%BF%99%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%9D%83%E9%99%90%E9%83%BD%E6%B2%A1%E6%9C%89%E3%80%82%22",
+          "time": "2026-10-24T15:00:54.183778Z"
+        }
+      ],
+      "windowStart": "2026-10-24T15:00:54.183778Z",
+      "windowEnd": "2026-10-24T16:03:23.846069Z",
+      "components": [
+        "applications/kbfx",
+        "tdebase/kate",
+        "tdeaddons/kate-tabbarextension",
+        "tdeaddons/kicker-ktimemon",
+        "tdeaddons/konq-plugins-desktop-files",
+        "tdeaddons/kate-cppsymbolviewer",
+        "tdeaddons/kate-plugins-desktop-files",
+        "tdeaddons/kate-make",
+        "tdeaddons/kate-sort"
+      ],
+      "actions": {
+        "修改译文": 41,
+        "新增译文": 42,
+        "新贡献者": 6,
+        "标记待编辑": 1,
+        "提交变更": 1,
+        "新增语言": 1,
+        "资源更新": 1,
+        "新增待译文本": 1
+      },
+      "language": "简体中文",
+      "languageName": "简体中文",
+      "latestTarget": "按列表 (&Y)",
+      "source": "api"
+    }
+  },
+  {
+    "id": "bilibili:1260924706444279809",
+    "platform": "bilibili",
+    "type": "转发动态",
+    "title": "SM64 Custom Music - Dreamcore Ad Song",
+    "summary": "我的 m64 port \n借用了midishow上的一个midi（本来是想拿来做音mad）\n另外我的kaizo改版改名了现在叫 Toads Chipsets Confused",
+    "url": "https://www.bilibili.com/video/BV18TJR6REBs",
+    "image": "https://i1.hdslb.com/bfs/archive/4551df6ed26e14d61e0e7387b0570b0e4b246989.jpg",
+    "timestamp": "2026-10-19T14:31:51.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "bilibili:1256842344353759237",
+    "platform": "bilibili",
+    "type": "转发动态",
+    "title": "柴又",
+    "summary": "50w再生恭喜[打call]",
+    "url": "https://www.bilibili.com/video/BV1px411D7Ux",
+    "image": "https://i1.hdslb.com/bfs/archive/4a660f7f52d15269e6e39f76d46709eef36d4d0e.jpg",
+    "timestamp": "2026-10-08T14:30:12.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "bilibili:1255238500486217733",
+    "platform": "bilibili",
+    "type": "转发动态",
+    "title": "狗哥开wg被制裁现在在寻找新游戏游玩。",
+    "summary": "狗哥开wg被制裁现在在寻找新游戏游玩。",
+    "url": "https://www.bilibili.com/opus/1255235665808850948",
+    "image": "https://i0.hdslb.com/bfs/new_dyn/fe5d653622913d527daa42b37fc5b61e1970548778.jpg",
+    "timestamp": "2026-10-04T06:46:28.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "bilibili:1254517508647419940",
+    "platform": "bilibili",
+    "type": "投稿视频",
+    "title": "[sm64coopdx] Flood Ultimate a26.10 更新 & 宣传片",
+    "summary": "来！",
+    "url": "https://www.bilibili.com/video/BV1QXa26NEu9",
+    "image": "https://i0.hdslb.com/bfs/archive/ccedffa640238fb85ea7e4cfb28cc7af7b524697.jpg",
+    "timestamp": "2026-10-02T08:08:39.000Z",
+    "meta": {
+      "bvid": "BV1QXa26NEu9"
+    }
+  },
+  {
+    "id": "bilibili:1254307806829346820",
+    "platform": "bilibili",
+    "type": "图文动态",
+    "title": "明天的惊喜",
+    "summary": "明天的惊喜",
+    "url": "https://www.bilibili.com/opus/1254307806829346820",
+    "image": "https://i0.hdslb.com/bfs/new_dyn/84a218aa884ac76b0e6938405d761dc13494381151586530.jpg",
+    "timestamp": "2026-10-01T18:34:54.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "bilibili:1253341623879729176",
+    "platform": "bilibili",
+    "type": "图文动态",
+    "title": "我去我去等了几个月神秘frutiger游戏发售了😋",
+    "summary": "我去我去等了几个月神秘frutiger游戏发售了😋\n\n直接拿下\n我要去探索未曾许诺的未来了",
+    "url": "https://www.bilibili.com/opus/1253341623879729176",
+    "image": "https://i0.hdslb.com/bfs/new_dyn/d7569ea205f6722cdd72fbc666657cea3494381151586530.png",
+    "timestamp": "2026-09-29T04:05:37.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "bilibili:1253339854341668872",
+    "platform": "bilibili",
+    "type": "转发动态",
+    "title": "路易吉，耍起嘛 - 神游马力欧 版本0313",
+    "summary": "路易吉消失耍起",
+    "url": "https://www.bilibili.com/video/BV11khj6qEG3",
+    "image": "https://i0.hdslb.com/bfs/archive/a7db90076037e588cbcb47c6d586210c51055b20.jpg",
+    "timestamp": "2026-09-29T03:58:45.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "bilibili:1252042142904221701",
+    "platform": "bilibili",
+    "type": "投稿视频",
+    "title": "新大厅重置 | Transtoad Confused 神秘Kaizo改版更新",
+    "summary": "b",
+    "url": "https://www.bilibili.com/video/BV15EhU6VEow",
+    "image": "https://i1.hdslb.com/bfs/archive/87d10b1dbbab2a7427cf3adf373f2f4f1fab914f.jpg",
+    "timestamp": "2026-09-25T16:02:58.000Z",
+    "meta": {
+      "bvid": "BV15EhU6VEow"
+    }
+  },
+  {
+    "id": "bilibili:1250378212414849047",
+    "platform": "bilibili",
+    "type": "转发动态",
+    "title": "[生日作] Multisource Sparta Tender Remix",
+    "summary": "09.21 修复了一个pv多轨道错误并使用kdenlive拼接，这就是最终版本了，然后p2补上inst\n1080p 60fps 渲染太慢了还时不时假死，准备打算到中秋节再换一次源（或者拜托朋友帮忙渲染",
+    "url": "https://www.bilibili.com/video/BV1HMev6WEFR",
+    "image": "https://i1.hdslb.com/bfs/archive/5a0a8e2983d9efa1514d225b73d55691518f45a6.jpg",
+    "timestamp": "2026-09-21T04:26:04.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "bilibili:1250077766565494787",
+    "platform": "bilibili",
+    "type": "投稿视频",
+    "title": "[生日作] Multisource Sparta Tender Remix",
+    "summary": "生贺作即兴一个sparta",
+    "url": "https://www.bilibili.com/video/BV1HMev6WEFR",
+    "image": "https://i1.hdslb.com/bfs/archive/5a0a8e2983d9efa1514d225b73d55691518f45a6.jpg",
+    "timestamp": "2026-09-20T09:00:11.000Z",
+    "meta": {
+      "bvid": "BV1HMev6WEFR"
+    }
+  },
+  {
+    "id": "bilibili:1250025986460745748",
+    "platform": "bilibili",
+    "type": "图文动态",
+    "title": "又活一年哈哈",
+    "summary": "又活一年哈哈\n\nsparta tender remix正在导出\n诶我去估计是来不及了😡\n（应该会是今晚定时发吧）\n\n为啥国庆调休和我生日叠在一块了呀我怒了😡",
+    "url": "https://www.bilibili.com/opus/1250025986460745748",
+    "image": "https://i0.hdslb.com/bfs/new_dyn/7938b276a09efbb8c1ac39123b78476f3494381151586530.jpg",
+    "timestamp": "2026-09-20T05:39:15.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "bilibili:1247943322413039620",
+    "platform": "bilibili",
+    "type": "转发动态",
+    "title": "FE/SM64DS/Drench Game/Arena Levels一镜到底(FU)",
+    "summary": "虽然本视频用上了Flood Ultimate（就是我改的Flood+洪水增强）但原版Flood+也可以用\n另外SM64DS关有几个我的原创关😋😋",
+    "url": "https://www.bilibili.com/video/BV1PKe56NECC",
+    "image": "https://i1.hdslb.com/bfs/archive/eb2335ad98868b34b8613e1d7531ab941ce9df75.jpg",
+    "timestamp": "2026-09-14T14:57:27.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "archive:gz2zhong100st_celebrate_iso",
+    "platform": "archive",
+    "type": "影片",
+    "title": "高州二中百年校庆专辑 (2005 VCD ISO/CHD)",
+    "summary": "这是一张我在老家发现的光盘，应该有点收藏价值 这是曾经 2005 年高州市第二中学 100 周年校庆活动的珍贵录像 格式为 Video-CD，版本未知 我本人拿回来之后通过 k3b 提取了视频文件，以及使用了各类小工具提取成了chd/iso文件，以方便各位在虚拟机/实体机观看或刻录 VCD 标题不知为何我的vlc放不出来，所以这里也给不了截图了 主持：高州市",
+    "url": "https://archive.org/details/gz2zhong100st_celebrate_iso",
+    "image": "https://archive.org/services/img/gz2zhong100st_celebrate_iso",
+    "timestamp": "2026-08-19T11:45:15Z",
+    "meta": {
+      "identifier": "gz2zhong100st_celebrate_iso",
+      "mediatype": "movies",
+      "collections": [
+        "opensource_movies"
+      ],
+      "downloads": 16,
+      "itemSize": 2224416066,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "ottohub:28489",
+    "platform": "ottohub",
+    "type": "视频",
+    "title": "Area geller",
+    "summary": "发布于 OTTOhub「Toad114514」，95 次播放，时长 39s",
+    "url": "https://www.ottohub.cn/video/28489",
+    "image": "https://oss-qcdn.ottohub.cn/video/video_cover/NiAYKuE4yW53l8DnLbBBl_iqqr73d--BaFtUh_hK2zXDnlm3Cc8M5tUw6ZeW677y?sign=5489abc9af19b7590410565928a95b9f&t=6add3468",
+    "timestamp": "2026-07-27T11:54:31.000Z",
+    "meta": {
+      "vid": "28489",
+      "duration": "39",
+      "viewCount": "95",
+      "likeCount": "1"
+    }
+  },
+  {
+    "id": "ottohub:28006",
+    "platform": "ottohub",
+    "type": "视频",
+    "title": "第一次被冻住。",
+    "summary": "发布于 OTTOhub「Toad114514」，113 次播放，时长 37s",
+    "url": "https://www.ottohub.cn/video/28006",
+    "image": "https://oss-qcdn.ottohub.cn/video/video_cover/yx6JKJCkEb1OieR4bkXUDloCAMIky-3Vme5Zu6pFHllmfN9bY0mkvEDXEOTmgWyw?sign=02944d9e2fe818c9f9a61a02389ffe8d&t=6add3468",
+    "timestamp": "2026-07-21T09:14:29.000Z",
+    "meta": {
+      "vid": "28006",
+      "duration": "37",
+      "viewCount": "113",
+      "likeCount": "0"
+    }
+  },
+  {
+    "id": "bilibili:1220403416600150019",
+    "platform": "bilibili",
+    "type": "图文动态",
+    "title": "The End",
+    "summary": "中考结束了\n终于！\n\nps: 刚开完家长会回来有点晚",
+    "url": "https://www.bilibili.com/opus/1220403416600150019",
+    "image": "https://i0.hdslb.com/bfs/new_dyn/d670b956c1289f6b090e9ba71ef64a7a3494381151586530.jpg",
+    "timestamp": "2026-07-02T09:48:33.000Z",
+    "meta": {
+      "bvid": null
+    }
+  },
+  {
+    "id": "ottohub:25593",
+    "platform": "ottohub",
+    "type": "视频",
+    "title": "shop #1",
+    "summary": "发布于 OTTOhub「Toad114514」，34 次播放，时长 83s",
+    "url": "https://www.ottohub.cn/video/25593",
+    "image": "https://oss-qcdn.ottohub.cn/video/video_cover/FBj0Vkv8ZeP9Us5vhyzxOBrLWDrQThPf82xJqyaQ3NYyJIXgE4Xp9pg5ZSdsf0c6?sign=6efbf1cfee1a820c272be5281736f61d&t=6add3468",
+    "timestamp": "2026-06-21T15:25:27.000Z",
+    "meta": {
+      "vid": "25593",
+      "duration": "83",
+      "viewCount": "34",
+      "likeCount": "0"
+    }
+  },
+  {
+    "id": "ottohub:23136",
+    "platform": "ottohub",
+    "type": "视频",
+    "title": "Blue Archive Sparta Groove Remix",
+    "summary": "发布于 OTTOhub「Toad114514」，26 次播放，时长 52s",
+    "url": "https://www.ottohub.cn/video/23136",
+    "image": "https://oss-qcdn.ottohub.cn/video/video_cover/_JkTo61cUnmQK_jwx2ZNlpO5A0G4XczBvvH72Rf7DbKCJU2iSqXt9mycxb3m1vef?sign=4645b0a94e1f7e8b6ba9be23e425b6cd&t=6add3468",
+    "timestamp": "2026-05-17T15:09:41.000Z",
+    "meta": {
+      "vid": "23136",
+      "duration": "52",
+      "viewCount": "26",
+      "likeCount": "0"
+    }
+  },
+  {
+    "id": "archive:run-mobile-1.13.3",
+    "platform": "archive",
+    "type": "条目",
+    "title": "Run 1.13.3 (arm64-v8a, Split apks)",
+    "summary": "Run 3 on the Android ports and i like this game PackageName: com.kongregate.mobile.run.google",
+    "url": "https://archive.org/details/run-mobile-1.13.3",
+    "image": "https://archive.org/services/img/run-mobile-1.13.3",
+    "timestamp": "2026-05-07T17:17:46Z",
+    "meta": {
+      "identifier": "run-mobile-1.13.3",
+      "mediatype": "software",
+      "collections": [
+        "apkarchive",
+        "phonesoftware"
+      ],
+      "downloads": 35,
+      "itemSize": 104581451,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:BiliBili-BV1wSQTB9En6",
+    "platform": "archive",
+    "type": "影片",
+    "title": "够格你有对手了。(二创)",
+    "summary": "-",
+    "url": "https://archive.org/details/BiliBili-BV1wSQTB9En6",
+    "image": "https://archive.org/services/img/BiliBili-BV1wSQTB9En6",
+    "timestamp": "2026-05-06T18:48:32Z",
+    "meta": {
+      "identifier": "BiliBili-BV1wSQTB9En6",
+      "mediatype": "movies",
+      "collections": [
+        "social-media-video"
+      ],
+      "downloads": 8,
+      "itemSize": 21988503,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:BiliBili-BV1QfRkB5Eq8",
+    "platform": "archive",
+    "type": "影片",
+    "title": "Special Stage",
+    "summary": "五一最后一天给大家发个音mad（今天晚上回校了） 3dpv部分全部NodeVideo 索尼克nb 原曲 BV1wb4y1v7Q6 (虽然是Fanmix) [sonic 1up sound] 归档 ov22361 https://v.kuaishou.com/ndwDSIIy",
+    "url": "https://archive.org/details/BiliBili-BV1QfRkB5Eq8",
+    "image": "https://archive.org/services/img/BiliBili-BV1QfRkB5Eq8",
+    "timestamp": "2026-05-06T18:41:36Z",
+    "meta": {
+      "identifier": "BiliBili-BV1QfRkB5Eq8",
+      "mediatype": "movies",
+      "collections": [
+        "social-media-video"
+      ],
+      "downloads": 5,
+      "itemSize": 39427467,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:toad114_upvideoCollect_02",
+    "platform": "archive",
+    "type": "影片",
+    "title": "Toad114's Uploaded Video Collection Vol.2",
+    "summary": "This collection contains all recoverable videos from my Kuaishou account, @Toad114514. It was my second \"home\" platform, despite only being there for a few years. Kuaishou took up",
+    "url": "https://archive.org/details/toad114_upvideoCollect_02",
+    "image": "https://archive.org/services/img/toad114_upvideoCollect_02",
+    "timestamp": "2026-05-06T17:49:03Z",
+    "meta": {
+      "identifier": "toad114_upvideoCollect_02",
+      "mediatype": "movies",
+      "collections": [
+        "opensource_movies"
+      ],
+      "downloads": 29,
+      "itemSize": 1307825727,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "ottohub:22361",
+    "platform": "ottohub",
+    "type": "视频",
+    "title": "Special Stage",
+    "summary": "发布于 OTTOhub「Toad114514」，25 次播放，时长 69s",
+    "url": "https://www.ottohub.cn/video/22361",
+    "image": "https://oss-qcdn.ottohub.cn/video/video_cover/0yPeHnXI8LWGcaJ5A9c2GBh5-fWMPPzPzT6yRzS808inLFX95pUEQSHJc8Ke2s3O?sign=c232ac0822ab0e5983d27a205e36e380&t=6add3468",
+    "timestamp": "2026-05-05T14:32:16.000Z",
+    "meta": {
+      "vid": "22361",
+      "duration": "69",
+      "viewCount": "25",
+      "likeCount": "0"
+    }
+  },
+  {
+    "id": "archive:BiliBili-BV1CjovBmE8w_p1",
+    "platform": "archive",
+    "type": "影片",
+    "title": "Multisource Sparta Disruptive Remix p01 Disruptive",
+    "summary": "搓了几周只用手机搓出来了一个比较接近用 Vegas 做出来的斯巴达混音了 这base轨又多又有点长对轨对的我手累 但挺好听 另外这是我做的第一个Sparta Remix 下次得等我暑假买台笔记本回来 我可不想等到地球大爆炸了才对完轨我哭哭 Sparta Disruptive Base by Alexer BV1HmvWeQEUr / https://yout",
+    "url": "https://archive.org/details/BiliBili-BV1CjovBmE8w_p1",
+    "image": "https://archive.org/services/img/BiliBili-BV1CjovBmE8w_p1",
+    "timestamp": "2026-04-29T18:41:28Z",
+    "meta": {
+      "identifier": "BiliBili-BV1CjovBmE8w_p1",
+      "mediatype": "movies",
+      "collections": [
+        "social-media-video"
+      ],
+      "downloads": 10,
+      "itemSize": 58496160,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:BiliBili-BV1CjovBmE8w_p2",
+    "platform": "archive",
+    "type": "影片",
+    "title": "Multisource Sparta Disruptive Remix p02 inst",
+    "summary": "搓了几周只用手机搓出来了一个比较接近用 Vegas 做出来的斯巴达混音了 这base轨又多又有点长对轨对的我手累 但挺好听 另外这是我做的第一个Sparta Remix 下次得等我暑假买台笔记本回来 我可不想等到地球大爆炸了才对完轨我哭哭 Sparta Disruptive Base by Alexer BV1HmvWeQEUr / https://yout",
+    "url": "https://archive.org/details/BiliBili-BV1CjovBmE8w_p2",
+    "image": "https://archive.org/services/img/BiliBili-BV1CjovBmE8w_p2",
+    "timestamp": "2026-04-29T18:40:53Z",
+    "meta": {
+      "identifier": "BiliBili-BV1CjovBmE8w_p2",
+      "mediatype": "movies",
+      "collections": [
+        "social-media-video"
+      ],
+      "downloads": 4,
+      "itemSize": 30819517,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:toad114_music_ds",
+    "platform": "archive",
+    "type": "音频",
+    "title": "Diaratance Stanford",
+    "summary": "实验性音乐来袭。 New Album Experimental Music. ©diaraRecord 2026",
+    "url": "https://archive.org/details/toad114_music_ds",
+    "image": "https://archive.org/services/img/toad114_music_ds",
+    "timestamp": "2026-04-29T18:22:03Z",
+    "meta": {
+      "identifier": "toad114_music_ds",
+      "mediatype": "audio",
+      "collections": [
+        "hifidelity_potpourri",
+        "hifidelity"
+      ],
+      "downloads": 11,
+      "itemSize": 62017312,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "ottohub:21792",
+    "platform": "ottohub",
+    "type": "视频",
+    "title": "Multisource Sparta Disruptive Remix",
+    "summary": "发布于 OTTOhub「Toad114514」，30 次播放，时长 137s",
+    "url": "https://www.ottohub.cn/video/21792",
+    "image": "https://oss-qcdn.ottohub.cn/video/video_cover/D0e3WqJRFGcUPDyTE1pQI6hJvmxyfjjOKNAmtcFrWJAJABJ6qb3Bh2u6c0acmJv5?sign=1e7178c3ea949318f50e054f21e6ac67&t=6add3468",
+    "timestamp": "2026-04-26T15:31:34.000Z",
+    "meta": {
+      "vid": "21792",
+      "duration": "137",
+      "viewCount": "30",
+      "likeCount": "0"
+    }
+  },
+  {
+    "id": "archive:toad114_milkpresent",
+    "platform": "archive",
+    "type": "资料",
+    "title": "fk-milk Milkdrop Presets Collection",
+    "summary": "Something i made Milkdrop presets on 2023. it names fk-milk can available download in my Github Pages. 一些我在 2023 年做的 Milkydrop 预设，我就把这些全部合起来做成一个collection，命名为 fk-milk，现在也可以在我的 Gith",
+    "url": "https://archive.org/details/toad114_milkpresent",
+    "image": "https://archive.org/services/img/toad114_milkpresent",
+    "timestamp": "2026-04-22T19:43:56Z",
+    "meta": {
+      "identifier": "toad114_milkpresent",
+      "mediatype": "data",
+      "collections": [
+        "opensource_media"
+      ],
+      "downloads": 22,
+      "itemSize": 461059,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:kuaishou_delect_bncdb_01",
+    "platform": "archive",
+    "type": "影片",
+    "title": "逃跑吧少年追捕者。",
+    "summary": "发布视频大概在2024年，目前视频源链接已被作者删除，但我仍有留档。 Published maybe in 2024. Original Video url was been removed.",
+    "url": "https://archive.org/details/kuaishou_delect_bncdb_01",
+    "image": "https://archive.org/services/img/kuaishou_delect_bncdb_01",
+    "timestamp": "2026-04-22T19:23:04Z",
+    "meta": {
+      "identifier": "kuaishou_delect_bncdb_01",
+      "mediatype": "movies",
+      "collections": [
+        "opensource"
+      ],
+      "downloads": 18,
+      "itemSize": 159559910,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:toad114_markpast7",
+    "platform": "archive",
+    "type": "音频",
+    "title": "markpast7 (6)",
+    "summary": "An Experimental music album start in 2023.x.x using fl studio mobile",
+    "url": "https://archive.org/details/toad114_markpast7",
+    "image": "https://archive.org/services/img/toad114_markpast7",
+    "timestamp": "2026-04-22T19:04:04Z",
+    "meta": {
+      "identifier": "toad114_markpast7",
+      "mediatype": "audio",
+      "collections": [
+        "hifidelity_potpourri",
+        "hifidelity"
+      ],
+      "downloads": 8,
+      "itemSize": 10841497,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:BiliBili-BV1HVAizcEZ1",
+    "platform": "archive",
+    "type": "影片",
+    "title": "已诅咒的大教堂",
+    "summary": "尝试了伪3d 我动效忍者导出就这么糊我怒了没办法解决 原曲 RednGreen - Cursed Cathedral BV1ki4y1F7FB Original SPC: https://www.smwcentral.net/?p=section&a=details&id=20510 基于 https://www.midishow.com/midi/curs",
+    "url": "https://archive.org/details/BiliBili-BV1HVAizcEZ1",
+    "image": "https://archive.org/services/img/BiliBili-BV1HVAizcEZ1",
+    "timestamp": "2026-04-22T18:33:14Z",
+    "meta": {
+      "identifier": "BiliBili-BV1HVAizcEZ1",
+      "mediatype": "movies",
+      "collections": [
+        "social-media-video"
+      ],
+      "downloads": 29,
+      "itemSize": 24053277,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:BiliBili-BV1wgFsz9EYp",
+    "platform": "archive",
+    "type": "影片",
+    "title": "☠️BOB de alta velocidad con OMM☠️",
+    "summary": "☠️BOB de alta velocidad con OMM☠️",
+    "url": "https://archive.org/details/BiliBili-BV1wgFsz9EYp",
+    "image": "https://archive.org/services/img/BiliBili-BV1wgFsz9EYp",
+    "timestamp": "2026-04-22T18:30:33Z",
+    "meta": {
+      "identifier": "BiliBili-BV1wgFsz9EYp",
+      "mediatype": "movies",
+      "collections": [
+        "social-media-video"
+      ],
+      "downloads": 13,
+      "itemSize": 6501747,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "archive:toad114_upvideoCollect_01",
+    "platform": "archive",
+    "type": "影片",
+    "title": "Toad114514's Uploaded Video Collection (21.04 ~ 23.12)",
+    "summary": "This is a collection of all retrievable archives from my Xigua Video account (@Toad114514). As my first-ever video platform, it’s full of embarrassing old memories, but they’re sti",
+    "url": "https://archive.org/details/toad114_upvideoCollect_01",
+    "image": "https://archive.org/services/img/toad114_upvideoCollect_01",
+    "timestamp": "2026-04-22T17:09:06Z",
+    "meta": {
+      "identifier": "toad114_upvideoCollect_01",
+      "mediatype": "movies",
+      "collections": [
+        "opensource_movies"
+      ],
+      "downloads": 15,
+      "itemSize": 827114128,
+      "screenName": "Toad114514"
+    }
+  },
+  {
+    "id": "gitee:commit:8a4058f5db662b980d24be746bf95241f772661b",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(main): Using apt-cache check package",
+    "summary": "在 toadstool/tpaxs 中提交：fix(main): Using apt-cache check package",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/8a4058f5db662b980d24be746bf95241f772661b",
+    "image": null,
+    "timestamp": "2026-03-30T03:16:00+08:00",
+    "meta": {
+      "sha": "8a4058f",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:e749b71d3872dea401158537923b06955ae9cad9",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(shop): 游戏部分和检测安装提示",
+    "summary": "在 toadstool/tpaxs 中提交：feat(shop): 游戏部分和检测安装提示",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/e749b71d3872dea401158537923b06955ae9cad9",
+    "image": null,
+    "timestamp": "2026-03-30T03:15:35+08:00",
+    "meta": {
+      "sha": "e749b71",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "ottohub:20029",
+    "platform": "ottohub",
+    "type": "视频",
+    "title": "the ytpmv session",
+    "summary": "发布于 OTTOhub「Toad114514」，41 次播放，时长 50s",
+    "url": "https://www.ottohub.cn/video/20029",
+    "image": "https://oss-qcdn.ottohub.cn/video/video_cover/w05XzrRZEZDmB0HRXKyF0Wi_dfEtkcSyIVX0rf3Uu0W4yGCP5kFk09_R8A5A40Q_?sign=8859833f34070cbd4f64b5125023eddf&t=6add3468",
+    "timestamp": "2026-03-29T08:44:34.000Z",
+    "meta": {
+      "vid": "20029",
+      "duration": "50",
+      "viewCount": "41",
+      "likeCount": "2"
+    }
+  },
+  {
+    "id": "ottohub:19848",
+    "platform": "ottohub",
+    "type": "视频",
+    "title": "？！戈登！？",
+    "summary": "发布于 OTTOhub「Toad114514」，61 次播放，时长 10s",
+    "url": "https://www.ottohub.cn/video/19848",
+    "image": "https://oss-qcdn.ottohub.cn/video/video_cover/MU9eWEktig1QtJliS_NR_E9RwNo5nLPnM6ARoHCWjlEdnRtRr-xD5SIfSGmfxo-H?sign=be4f64d0d8cd8654e13bd0af7e0605a6&t=6add3468",
+    "timestamp": "2026-03-27T09:32:53.000Z",
+    "meta": {
+      "vid": "19848",
+      "duration": "10",
+      "viewCount": "61",
+      "likeCount": "1"
+    }
+  },
+  {
+    "id": "gitee:commit:9509d6f4a861f164dde6465072cacb3336bf1497",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(main): Status of tools",
+    "summary": "在 toadstool/tpaxs 中提交：feat(main): Status of tools",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/9509d6f4a861f164dde6465072cacb3336bf1497",
+    "image": null,
+    "timestamp": "2026-03-25T01:26:49+08:00",
+    "meta": {
+      "sha": "9509d6f",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:38300bd3b6dbba39ece11402d31e425a11174685",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "update(omz): script/p10k install",
+    "summary": "在 toadstool/tpaxs 中提交：update(omz): script/p10k install",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/38300bd3b6dbba39ece11402d31e425a11174685",
+    "image": null,
+    "timestamp": "2026-03-24T01:35:18+08:00",
+    "meta": {
+      "sha": "38300bd",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:fb97c56efead329370e545c65bc6148ab87660b4",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(lib): 测试中的纯bash文件选择界面",
+    "summary": "在 toadstool/tpaxs 中提交：feat(lib): 测试中的纯bash文件选择界面",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/fb97c56efead329370e545c65bc6148ab87660b4",
+    "image": null,
+    "timestamp": "2026-03-10T03:53:13+08:00",
+    "meta": {
+      "sha": "fb97c56",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:2c6dff903934b8cbf2381db3c5745df016c94a4d",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "chore(setup): Permission",
+    "summary": "在 toadstool/tpaxs 中提交：chore(setup): Permission",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/2c6dff903934b8cbf2381db3c5745df016c94a4d",
+    "image": null,
+    "timestamp": "2026-03-02T02:50:04+08:00",
+    "meta": {
+      "sha": "2c6dff9",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:826a8c97d0d97c11b8e8740be5abbe5b4a36b5d3",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(main): 添加了一个未安装的提示判断",
+    "summary": "在 toadstool/tpaxs 中提交：feat(main): 添加了一个未安装的提示判断",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/826a8c97d0d97c11b8e8740be5abbe5b4a36b5d3",
+    "image": null,
+    "timestamp": "2026-03-02T02:38:44+08:00",
+    "meta": {
+      "sha": "826a8c9",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:04058f1f00fbb6d4ab2cd31a0fbb1667173c51ea",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(update): 修复和优化",
+    "summary": "在 toadstool/tpaxs 中提交：fix(update): 修复和优化",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/04058f1f00fbb6d4ab2cd31a0fbb1667173c51ea",
+    "image": null,
+    "timestamp": "2026-03-02T02:37:56+08:00",
+    "meta": {
+      "sha": "04058f1",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:74128a0c3636a70d85a4da1c8185013683f6cfc2",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(tools): 新增 .nomedia 批量创建工具",
+    "summary": "在 toadstool/tpaxs 中提交：feat(tools): 新增 .nomedia 批量创建工具",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/74128a0c3636a70d85a4da1c8185013683f6cfc2",
+    "image": null,
+    "timestamp": "2026-03-02T02:18:05+08:00",
+    "meta": {
+      "sha": "74128a0",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:f32ea9d693de3138bbddc290f37831f8bc3356bc",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(setup): config 配置添加和删除",
+    "summary": "在 toadstool/tpaxs 中提交：feat(setup): config 配置添加和删除",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/f32ea9d693de3138bbddc290f37831f8bc3356bc",
+    "image": null,
+    "timestamp": "2026-03-02T01:34:23+08:00",
+    "meta": {
+      "sha": "f32ea9d",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:7e6032ae5359e89ccb4d2838aa3ef510e7726d9f",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(shop): 添加软件",
+    "summary": "在 toadstool/tpaxs 中提交：feat(shop): 添加软件",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/7e6032ae5359e89ccb4d2838aa3ef510e7726d9f",
+    "image": null,
+    "timestamp": "2026-02-27T12:57:36+08:00",
+    "meta": {
+      "sha": "7e6032a",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:b111a5d8096fe65b3dcd740b490ab535c78a7572",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(shop): 新分类 Devploments 和一些新进货软件",
+    "summary": "在 toadstool/tpaxs 中提交：feat(shop): 新分类 Devploments 和一些新进货软件",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/b111a5d8096fe65b3dcd740b490ab535c78a7572",
+    "image": null,
+    "timestamp": "2025-11-04T00:07:10+08:00",
+    "meta": {
+      "sha": "b111a5d",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:49dc26f3e94361982be42250a7baaa6e5e699cbf",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(qcli): 新架构 x86-64",
+    "summary": "在 toadstool/tpaxs 中提交：feat(qcli): 新架构 x86-64",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/49dc26f3e94361982be42250a7baaa6e5e699cbf",
+    "image": null,
+    "timestamp": "2025-11-03T23:55:00+08:00",
+    "meta": {
+      "sha": "49dc26f",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:7d6d2aa5fd05c3c30bea3b33d79ad7c9dc6b17ab",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(shop): some written chore",
+    "summary": "在 toadstool/tpaxs 中提交：fix(shop): some written chore",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/7d6d2aa5fd05c3c30bea3b33d79ad7c9dc6b17ab",
+    "image": null,
+    "timestamp": "2025-11-03T23:54:27+08:00",
+    "meta": {
+      "sha": "7d6d2aa",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:5d3dc576be83a21b37c0c82bdac1a66b9a33a62d",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "chore(main): 改了下字",
+    "summary": "在 toadstool/tpaxs 中提交：chore(main): 改了下字",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/5d3dc576be83a21b37c0c82bdac1a66b9a33a62d",
+    "image": null,
+    "timestamp": "2025-09-19T00:24:56+08:00",
+    "meta": {
+      "sha": "5d3dc57",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:5136cefe6d88fd290245b23cce434751afb4442f",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "i18n(ollama): i18n English",
+    "summary": "在 toadstool/tpaxs 中提交：i18n(ollama): i18n English",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/5136cefe6d88fd290245b23cce434751afb4442f",
+    "image": null,
+    "timestamp": "2025-09-19T00:24:30+08:00",
+    "meta": {
+      "sha": "5136cef",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:dc8bea10c55d8927ee41014af87dfec01a923c9f",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(main): some not important bug",
+    "summary": "在 toadstool/tpaxs 中提交：fix(main): some not important bug",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/dc8bea10c55d8927ee41014af87dfec01a923c9f",
+    "image": null,
+    "timestamp": "2025-09-17T01:37:27+08:00",
+    "meta": {
+      "sha": "dc8bea1",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:5d7393ac66ec6dfcf0c5ca6d92008d0828f304d2",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(shop): 新工具 shop，目前仅能下载部分来自x11/多媒体的软件",
+    "summary": "在 toadstool/tpaxs 中提交：feat(shop): 新工具 shop，目前仅能下载部分来自x11/多媒体的软件",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/5d7393ac66ec6dfcf0c5ca6d92008d0828f304d2",
+    "image": null,
+    "timestamp": "2025-09-17T01:37:17+08:00",
+    "meta": {
+      "sha": "5d7393a",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:0ec42ff2b76e713b14eaa111558c4df6360f4f65",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(qcli): 创建vm之后cdrom和vncport设置为空bugs",
+    "summary": "在 toadstool/tpaxs 中提交：fix(qcli): 创建vm之后cdrom和vncport设置为空bugs",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/0ec42ff2b76e713b14eaa111558c4df6360f4f65",
+    "image": null,
+    "timestamp": "2025-09-17T01:26:28+08:00",
+    "meta": {
+      "sha": "0ec42ff",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:1c15db35cd98cdbc3e81d63e49e7cb87feb5c249",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feat(qcli): 提供挂载目录 & 磁盘等修改",
+    "summary": "在 toadstool/tpaxs 中提交：feat(qcli): 提供挂载目录 & 磁盘等修改",
+    "url": "https://gitee.com/toadstool/tpaxs/commit/1c15db35cd98cdbc3e81d63e49e7cb87feb5c249",
+    "image": null,
+    "timestamp": "2025-09-17T01:16:34+08:00",
+    "meta": {
+      "sha": "1c15db3",
+      "repo": "toadstool/tpaxs"
+    }
+  },
+  {
+    "id": "gitee:commit:92b12901aeac5fe9acb783cc05848e767d78b408",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "some Unuseful thing",
+    "summary": "在 toadstool/staxle 中提交：some Unuseful thing",
+    "url": "https://gitee.com/toadstool/staxle/commit/92b12901aeac5fe9acb783cc05848e767d78b408",
+    "image": null,
+    "timestamp": "2025-06-23T01:38:57+08:00",
+    "meta": {
+      "sha": "92b1290",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:bd2a69b82bf073353b639a2087a9602a127205e7",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "docs(Readme): update readme",
+    "summary": "在 toadstool/staxle 中提交：docs(Readme): update readme",
+    "url": "https://gitee.com/toadstool/staxle/commit/bd2a69b82bf073353b639a2087a9602a127205e7",
+    "image": null,
+    "timestamp": "2025-02-27T12:59:10+08:00",
+    "meta": {
+      "sha": "bd2a69b",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:d1e73cd44ad2fbd5187b45f16c68e504c5267015",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "readme update(zh-cn)",
+    "summary": "在 toadstool/staxle 中提交：readme update(zh-cn)",
+    "url": "https://gitee.com/toadstool/staxle/commit/d1e73cd44ad2fbd5187b45f16c68e504c5267015",
+    "image": null,
+    "timestamp": "2025-01-26T04:12:28+08:00",
+    "meta": {
+      "sha": "d1e73cd",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:d21252da79d9e8ecce201c5550f30978ad4b7a9f",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(bug): server2me into bug",
+    "summary": "在 toadstool/staxle 中提交：fix(bug): server2me into bug",
+    "url": "https://gitee.com/toadstool/staxle/commit/d21252da79d9e8ecce201c5550f30978ad4b7a9f",
+    "image": null,
+    "timestamp": "2025-01-26T04:08:03+08:00",
+    "meta": {
+      "sha": "d21252d",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:bbef09b4c2ad5c58d9f40bffac4c795d1790d877",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(bug): fix x11-apps split to strip",
+    "summary": "在 toadstool/staxle 中提交：fix(bug): fix x11-apps split to strip",
+    "url": "https://gitee.com/toadstool/staxle/commit/bbef09b4c2ad5c58d9f40bffac4c795d1790d877",
+    "image": null,
+    "timestamp": "2025-01-21T12:51:06+08:00",
+    "meta": {
+      "sha": "bbef09b",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:de3576a3b77fc8435f403e34d7471c880e4959f8",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feature(main): lxde option",
+    "summary": "在 toadstool/staxle 中提交：feature(main): lxde option",
+    "url": "https://gitee.com/toadstool/staxle/commit/de3576a3b77fc8435f403e34d7471c880e4959f8",
+    "image": null,
+    "timestamp": "2025-01-21T12:33:23+08:00",
+    "meta": {
+      "sha": "de3576a",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:92f2630a11bc53bbc974a22ec2330f3cff200f6e",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(bug): i18n '\\n' Error",
+    "summary": "在 toadstool/staxle 中提交：fix(bug): i18n '\\n' Error",
+    "url": "https://gitee.com/toadstool/staxle/commit/92f2630a11bc53bbc974a22ec2330f3cff200f6e",
+    "image": null,
+    "timestamp": "2025-01-21T12:30:25+08:00",
+    "meta": {
+      "sha": "92f2630",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:192e045b0b146d22e91fba0a5d81d301b0d4f90d",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(bug): a small bug",
+    "summary": "在 toadstool/staxle 中提交：fix(bug): a small bug",
+    "url": "https://gitee.com/toadstool/staxle/commit/192e045b0b146d22e91fba0a5d81d301b0d4f90d",
+    "image": null,
+    "timestamp": "2025-01-21T12:20:03+08:00",
+    "meta": {
+      "sha": "192e045",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:61698c1b882e796cb675244cd4f20ce40bbae338",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(bug): a small bug",
+    "summary": "在 toadstool/staxle 中提交：fix(bug): a small bug",
+    "url": "https://gitee.com/toadstool/staxle/commit/61698c1b882e796cb675244cd4f20ce40bbae338",
+    "image": null,
+    "timestamp": "2025-01-21T12:16:32+08:00",
+    "meta": {
+      "sha": "61698c1",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:bd52ebc589271da7f7553721811754b6110d9ca0",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "Really releases v1.05.3",
+    "summary": "在 toadstool/staxle 中提交：Really releases v1.05.3",
+    "url": "https://gitee.com/toadstool/staxle/commit/bd52ebc589271da7f7553721811754b6110d9ca0",
+    "image": null,
+    "timestamp": "2025-01-21T11:59:17+08:00",
+    "meta": {
+      "sha": "bd52ebc",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:47d0ee8529c1df416ebd731c95c524981fb4c7b9",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "Merge branch 'dev'",
+    "summary": "在 toadstool/staxle 中提交：Merge branch 'dev'",
+    "url": "https://gitee.com/toadstool/staxle/commit/47d0ee8529c1df416ebd731c95c524981fb4c7b9",
+    "image": null,
+    "timestamp": "2025-01-21T11:59:02+08:00",
+    "meta": {
+      "sha": "47d0ee8",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:7adeef72ee4dd315cd2c3620b866ff80cdc36b94",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "git tree",
+    "summary": "在 toadstool/staxle 中提交：git tree",
+    "url": "https://gitee.com/toadstool/staxle/commit/7adeef72ee4dd315cd2c3620b866ff80cdc36b94",
+    "image": null,
+    "timestamp": "2025-01-21T11:57:16+08:00",
+    "meta": {
+      "sha": "7adeef7",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:67804dfafd6815c2f95bcd69f69f121a945b4032",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "Release(main): v1.05.3",
+    "summary": "在 toadstool/staxle 中提交：Release(main): v1.05.3",
+    "url": "https://gitee.com/toadstool/staxle/commit/67804dfafd6815c2f95bcd69f69f121a945b4032",
+    "image": null,
+    "timestamp": "2025-01-21T11:52:51+08:00",
+    "meta": {
+      "sha": "67804df",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:9d1e75f3376f46a34b7e60fe0c25e34609fc5e48",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feature(main): add xfce4 new display by noVNC",
+    "summary": "在 toadstool/staxle 中提交：feature(main): add xfce4 new display by noVNC",
+    "url": "https://gitee.com/toadstool/staxle/commit/9d1e75f3376f46a34b7e60fe0c25e34609fc5e48",
+    "image": null,
+    "timestamp": "2025-01-21T10:56:49+08:00",
+    "meta": {
+      "sha": "9d1e75f",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:48f0bb6d4c52247b3fa4a11d8312ff3ed105f1ce",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "feature(main): lxqt desktop install and x11-apps",
+    "summary": "在 toadstool/staxle 中提交：feature(main): lxqt desktop install and x11-apps",
+    "url": "https://gitee.com/toadstool/staxle/commit/48f0bb6d4c52247b3fa4a11d8312ff3ed105f1ce",
+    "image": null,
+    "timestamp": "2025-01-21T10:39:14+08:00",
+    "meta": {
+      "sha": "48f0bb6",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:200efb0151ef6e4d6d20f27597e3431e202e1ffb",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "add(webpy): add desktop termux-x11 settings",
+    "summary": "在 toadstool/staxle 中提交：add(webpy): add desktop termux-x11 settings",
+    "url": "https://gitee.com/toadstool/staxle/commit/200efb0151ef6e4d6d20f27597e3431e202e1ffb",
+    "image": null,
+    "timestamp": "2025-01-21T02:33:11+08:00",
+    "meta": {
+      "sha": "200efb0",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:fb81912a95e3b6e9e28b5edfbbbd4541dc673111",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(bug): rechange i18n system version",
+    "summary": "在 toadstool/staxle 中提交：fix(bug): rechange i18n system version",
+    "url": "https://gitee.com/toadstool/staxle/commit/fb81912a95e3b6e9e28b5edfbbbd4541dc673111",
+    "image": null,
+    "timestamp": "2025-01-21T02:32:23+08:00",
+    "meta": {
+      "sha": "fb81912",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:f82b455ad1b87b24e79c9d84604f66a44cc9fedf",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "i18n(add): termux tool menu i18n",
+    "summary": "在 toadstool/staxle 中提交：i18n(add): termux tool menu i18n",
+    "url": "https://gitee.com/toadstool/staxle/commit/f82b455ad1b87b24e79c9d84604f66a44cc9fedf",
+    "image": null,
+    "timestamp": "2025-01-19T23:57:30+08:00",
+    "meta": {
+      "sha": "f82b455",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:f942efc77726d5f34f1611671945e933bedab574",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "gitignore add",
+    "summary": "在 toadstool/staxle 中提交：gitignore add",
+    "url": "https://gitee.com/toadstool/staxle/commit/f942efc77726d5f34f1611671945e933bedab574",
+    "image": null,
+    "timestamp": "2025-01-19T18:41:53+08:00",
+    "meta": {
+      "sha": "f942efc",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:f8890709e69cc57b5286f44091ea073d000bce33",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "fix(bug): add new i18n text (line)",
+    "summary": "在 toadstool/staxle 中提交：fix(bug): add new i18n text (line)",
+    "url": "https://gitee.com/toadstool/staxle/commit/f8890709e69cc57b5286f44091ea073d000bce33",
+    "image": null,
+    "timestamp": "2025-01-19T18:34:52+08:00",
+    "meta": {
+      "sha": "f889070",
+      "repo": "toadstool/staxle"
+    }
+  },
+  {
+    "id": "gitee:commit:df13c2dba7733e50b3ff11bd2119f223c28afdfd",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "最后一次提交",
+    "summary": "在 toadstool/efopt 中提交：最后一次提交",
+    "url": "https://gitee.com/toadstool/efopt/commit/df13c2dba7733e50b3ff11bd2119f223c28afdfd",
+    "image": null,
+    "timestamp": "2024-08-20T03:42:42+08:00",
+    "meta": {
+      "sha": "df13c2d",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:46c288fee675d3918d358e618783fddf2f1d7439",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "停更通知",
+    "summary": "在 toadstool/efopt 中提交：停更通知",
+    "url": "https://gitee.com/toadstool/efopt/commit/46c288fee675d3918d358e618783fddf2f1d7439",
+    "image": null,
+    "timestamp": "2024-08-20T03:30:37+08:00",
+    "meta": {
+      "sha": "46c288f",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:83c6f4ea134def279199c3d39764376b3817e9ae",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "孩子们是停更通知！",
+    "summary": "在 toadstool/efopt 中提交：孩子们是停更通知！",
+    "url": "https://gitee.com/toadstool/efopt/commit/83c6f4ea134def279199c3d39764376b3817e9ae",
+    "image": null,
+    "timestamp": "2024-08-20T03:26:28+08:00",
+    "meta": {
+      "sha": "83c6f4e",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:9309b7e9963904cc4792205f6c3a5d14340cf498",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "milkdrop预设",
+    "summary": "在 toadstool/milkfk 中提交：milkdrop预设",
+    "url": "https://gitee.com/toadstool/milkfk/commit/9309b7e9963904cc4792205f6c3a5d14340cf498",
+    "image": null,
+    "timestamp": "2024-07-13T12:40:13+00:00",
+    "meta": {
+      "sha": "9309b7e",
+      "repo": "toadstool/milkfk"
+    }
+  },
+  {
+    "id": "gitee:commit:5544abb07cc66ec83a97ce27f36ab9c243f3dbd7",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "update README.en.md.",
+    "summary": "在 toadstool/milkfk 中提交：update README.en.md.",
+    "url": "https://gitee.com/toadstool/milkfk/commit/5544abb07cc66ec83a97ce27f36ab9c243f3dbd7",
+    "image": null,
+    "timestamp": "2023-08-18T16:52:19+00:00",
+    "meta": {
+      "sha": "5544abb",
+      "repo": "toadstool/milkfk"
+    }
+  },
+  {
+    "id": "gitee:commit:8600f4c8ef57585c333559d39a45f0a31f5e3333",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "删除文件 milk/.keep",
+    "summary": "在 toadstool/milkfk 中提交：删除文件 milk/.keep",
+    "url": "https://gitee.com/toadstool/milkfk/commit/8600f4c8ef57585c333559d39a45f0a31f5e3333",
+    "image": null,
+    "timestamp": "2023-08-18T16:15:36+00:00",
+    "meta": {
+      "sha": "8600f4c",
+      "repo": "toadstool/milkfk"
+    }
+  },
+  {
+    "id": "gitee:commit:f48033f0ba8d06ab3689bf2542c9ce40ab4850f9",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "删除文件 milk/README.md",
+    "summary": "在 toadstool/milkfk 中提交：删除文件 milk/README.md",
+    "url": "https://gitee.com/toadstool/milkfk/commit/f48033f0ba8d06ab3689bf2542c9ce40ab4850f9",
+    "image": null,
+    "timestamp": "2023-08-18T16:15:19+00:00",
+    "meta": {
+      "sha": "f48033f",
+      "repo": "toadstool/milkfk"
+    }
+  },
+  {
+    "id": "gitee:commit:70fb77f4d75526d6e32fac256f1ac8edefd5e4e8",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "milkdrop预设",
+    "summary": "在 toadstool/milkfk 中提交：milkdrop预设",
+    "url": "https://gitee.com/toadstool/milkfk/commit/70fb77f4d75526d6e32fac256f1ac8edefd5e4e8",
+    "image": null,
+    "timestamp": "2023-08-18T16:14:48+00:00",
+    "meta": {
+      "sha": "70fb77f",
+      "repo": "toadstool/milkfk"
+    }
+  },
+  {
+    "id": "gitee:commit:1605a7f443535446aad76dcd3cfcd981f7d6e1b2",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "新建 milk",
+    "summary": "在 toadstool/milkfk 中提交：新建 milk",
+    "url": "https://gitee.com/toadstool/milkfk/commit/1605a7f443535446aad76dcd3cfcd981f7d6e1b2",
+    "image": null,
+    "timestamp": "2023-08-18T16:13:49+00:00",
+    "meta": {
+      "sha": "1605a7f",
+      "repo": "toadstool/milkfk"
+    }
+  },
+  {
+    "id": "gitee:commit:6f9748f568f4b2d3f5416dc7cc3cdfa6554fd03f",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "update README.md.",
+    "summary": "在 toadstool/milkfk 中提交：update README.md.",
+    "url": "https://gitee.com/toadstool/milkfk/commit/6f9748f568f4b2d3f5416dc7cc3cdfa6554fd03f",
+    "image": null,
+    "timestamp": "2023-08-18T16:13:26+00:00",
+    "meta": {
+      "sha": "6f9748f",
+      "repo": "toadstool/milkfk"
+    }
+  },
+  {
+    "id": "gitee:commit:6d16ed6b70219e5ba098cde227e3da77bc67140a",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "Initial commit",
+    "summary": "在 toadstool/milkfk 中提交：Initial commit",
+    "url": "https://gitee.com/toadstool/milkfk/commit/6d16ed6b70219e5ba098cde227e3da77bc67140a",
+    "image": null,
+    "timestamp": "2023-08-18T16:12:45+00:00",
+    "meta": {
+      "sha": "6d16ed6",
+      "repo": "toadstool/milkfk"
+    }
+  },
+  {
+    "id": "gitee:commit:5e072cb2c31c096cbd48b00cf69fd3bc8543e4be",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "主要文件，很多都是鸽子画的饼",
+    "summary": "在 toadstool/efopt 中提交：主要文件，很多都是鸽子画的饼",
+    "url": "https://gitee.com/toadstool/efopt/commit/5e072cb2c31c096cbd48b00cf69fd3bc8543e4be",
+    "image": null,
+    "timestamp": "2023-05-08T12:01:50+00:00",
+    "meta": {
+      "sha": "5e072cb",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:80985d48e08dc44b4e80dd8703bfcf1f91cf4d28",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "state3 proot部分",
+    "summary": "在 toadstool/efopt 中提交：state3 proot部分",
+    "url": "https://gitee.com/toadstool/efopt/commit/80985d48e08dc44b4e80dd8703bfcf1f91cf4d28",
+    "image": null,
+    "timestamp": "2023-05-08T11:56:59+00:00",
+    "meta": {
+      "sha": "80985d4",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:074b28b539554ba19f5ebb51c63f08776a400b84",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "state3安装器主要文件",
+    "summary": "在 toadstool/efopt 中提交：state3安装器主要文件",
+    "url": "https://gitee.com/toadstool/efopt/commit/074b28b539554ba19f5ebb51c63f08776a400b84",
+    "image": null,
+    "timestamp": "2023-05-08T11:55:49+00:00",
+    "meta": {
+      "sha": "074b28b",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:c9b1ad157fcb79634e6d89e8399505b8ccb7da0b",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "新建 state3",
+    "summary": "在 toadstool/efopt 中提交：新建 state3",
+    "url": "https://gitee.com/toadstool/efopt/commit/c9b1ad157fcb79634e6d89e8399505b8ccb7da0b",
+    "image": null,
+    "timestamp": "2023-05-08T11:51:44+00:00",
+    "meta": {
+      "sha": "c9b1ad1",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:49b9fe7459537f36d762ddb9e8a3191478358718",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "主要文件，很多都是鸽子画的饼",
+    "summary": "在 toadstool/efopt 中提交：主要文件，很多都是鸽子画的饼",
+    "url": "https://gitee.com/toadstool/efopt/commit/49b9fe7459537f36d762ddb9e8a3191478358718",
+    "image": null,
+    "timestamp": "2023-05-08T11:50:16+00:00",
+    "meta": {
+      "sha": "49b9fe7",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:56ed51f4f6f8ccb8dcbc458b8fb3817a7230f708",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "启动脚本",
+    "summary": "在 toadstool/efopt 中提交：启动脚本",
+    "url": "https://gitee.com/toadstool/efopt/commit/56ed51f4f6f8ccb8dcbc458b8fb3817a7230f708",
+    "image": null,
+    "timestamp": "2023-05-08T11:49:01+00:00",
+    "meta": {
+      "sha": "56ed51f",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:f8a703678452ca38fd46e0c78469c40e0f181137",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "安装程序，只是走过场",
+    "summary": "在 toadstool/efopt 中提交：安装程序，只是走过场",
+    "url": "https://gitee.com/toadstool/efopt/commit/f8a703678452ca38fd46e0c78469c40e0f181137",
+    "image": null,
+    "timestamp": "2023-05-08T11:47:46+00:00",
+    "meta": {
+      "sha": "f8a7036",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:2ef2eb20c7736de5fa4bcb555ce679d3edd2dfb4",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "自述文件",
+    "summary": "在 toadstool/efopt 中提交：自述文件",
+    "url": "https://gitee.com/toadstool/efopt/commit/2ef2eb20c7736de5fa4bcb555ce679d3edd2dfb4",
+    "image": null,
+    "timestamp": "2023-05-08T11:41:40+00:00",
+    "meta": {
+      "sha": "2ef2eb2",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:b79b1a5e86bd2b98fcfd44df219f29d50717b54e",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "add README.md.",
+    "summary": "在 toadstool/efopt 中提交：add README.md.",
+    "url": "https://gitee.com/toadstool/efopt/commit/b79b1a5e86bd2b98fcfd44df219f29d50717b54e",
+    "image": null,
+    "timestamp": "2023-05-08T11:34:54+00:00",
+    "meta": {
+      "sha": "b79b1a5",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:f5ae4249be83bb31a4e4682ca3f1b50f1bc53834",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "Initial commit",
+    "summary": "在 toadstool/efopt 中提交：Initial commit",
+    "url": "https://gitee.com/toadstool/efopt/commit/f5ae4249be83bb31a4e4682ca3f1b50f1bc53834",
+    "image": null,
+    "timestamp": "2023-05-08T11:05:13+00:00",
+    "meta": {
+      "sha": "f5ae424",
+      "repo": "toadstool/efopt"
+    }
+  },
+  {
+    "id": "gitee:commit:db46e3a5fb6b025ac98d85b8dd3fc9856a12919b",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "删除文件 LICENSE",
+    "summary": "在 toadstool/xbres 中提交：删除文件 LICENSE",
+    "url": "https://gitee.com/toadstool/xbres/commit/db46e3a5fb6b025ac98d85b8dd3fc9856a12919b",
+    "image": null,
+    "timestamp": "2023-04-11T12:13:32+00:00",
+    "meta": {
+      "sha": "db46e3a",
+      "repo": "toadstool/xbres"
+    }
+  },
+  {
+    "id": "gitee:commit:b1cd64cc7ca182e9a24d3be1c7845243df5a4ed0",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "自述文件（更新于2023/3/21）",
+    "summary": "在 toadstool/xbres 中提交：自述文件（更新于2023/3/21）",
+    "url": "https://gitee.com/toadstool/xbres/commit/b1cd64cc7ca182e9a24d3be1c7845243df5a4ed0",
+    "image": null,
+    "timestamp": "2023-03-21T12:47:06+00:00",
+    "meta": {
+      "sha": "b1cd64c",
+      "repo": "toadstool/xbres"
+    }
+  },
+  {
+    "id": "gitee:commit:a8d19d8ed29072fb0ac77f0a242407686a89ac14",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "自述文件（更新于2023/3/21）",
+    "summary": "在 toadstool/xbres 中提交：自述文件（更新于2023/3/21）",
+    "url": "https://gitee.com/toadstool/xbres/commit/a8d19d8ed29072fb0ac77f0a242407686a89ac14",
+    "image": null,
+    "timestamp": "2023-03-21T12:44:41+00:00",
+    "meta": {
+      "sha": "a8d19d8",
+      "repo": "toadstool/xbres"
+    }
+  },
+  {
+    "id": "gitee:commit:577956a3284a9bad228bad5d44c8c6cf4a5f8a8e",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "自述文件，更新于2023/3/21",
+    "summary": "在 toadstool/xbres 中提交：自述文件，更新于2023/3/21",
+    "url": "https://gitee.com/toadstool/xbres/commit/577956a3284a9bad228bad5d44c8c6cf4a5f8a8e",
+    "image": null,
+    "timestamp": "2023-03-21T12:37:11+00:00",
+    "meta": {
+      "sha": "577956a",
+      "repo": "toadstool/xbres"
+    }
+  },
+  {
+    "id": "gitee:commit:e6b45040a1cff8d8f7c15174504b34aadb403dae",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "主文件",
+    "summary": "在 toadstool/hqkillboss 中提交：主文件",
+    "url": "https://gitee.com/toadstool/hqkillboss/commit/e6b45040a1cff8d8f7c15174504b34aadb403dae",
+    "image": null,
+    "timestamp": "2023-03-20T12:47:18+00:00",
+    "meta": {
+      "sha": "e6b4504",
+      "repo": "toadstool/hqkillboss"
+    }
+  },
+  {
+    "id": "gitee:commit:9ea0ff36477543aa94c497bbe804e2a79300df6e",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "删除文件 main.js",
+    "summary": "在 toadstool/hqkillboss 中提交：删除文件 main.js",
+    "url": "https://gitee.com/toadstool/hqkillboss/commit/9ea0ff36477543aa94c497bbe804e2a79300df6e",
+    "image": null,
+    "timestamp": "2023-03-20T12:46:26+00:00",
+    "meta": {
+      "sha": "9ea0ff3",
+      "repo": "toadstool/hqkillboss"
+    }
+  },
+  {
+    "id": "gitee:commit:7153faec6decd916a1359a1b6b2458268cd849e7",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "删除文件 README.en.md",
+    "summary": "在 toadstool/xbres 中提交：删除文件 README.en.md",
+    "url": "https://gitee.com/toadstool/xbres/commit/7153faec6decd916a1359a1b6b2458268cd849e7",
+    "image": null,
+    "timestamp": "2023-03-20T12:23:27+00:00",
+    "meta": {
+      "sha": "7153fae",
+      "repo": "toadstool/xbres"
+    }
+  },
+  {
+    "id": "gitee:commit:d4102b2e5e1edd9f5f773e7e405062dc6bff1ecc",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "add LICENSE.",
+    "summary": "在 toadstool/xbres 中提交：add LICENSE.",
+    "url": "https://gitee.com/toadstool/xbres/commit/d4102b2e5e1edd9f5f773e7e405062dc6bff1ecc",
+    "image": null,
+    "timestamp": "2023-03-20T12:22:50+00:00",
+    "meta": {
+      "sha": "d4102b2",
+      "repo": "toadstool/xbres"
+    }
+  },
+  {
+    "id": "gitee:commit:17cac410d6e14bd777dde753c7d08ed04ed56bbc",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "Initial commit",
+    "summary": "在 toadstool/xbres 中提交：Initial commit",
+    "url": "https://gitee.com/toadstool/xbres/commit/17cac410d6e14bd777dde753c7d08ed04ed56bbc",
+    "image": null,
+    "timestamp": "2023-03-20T12:20:55+00:00",
+    "meta": {
+      "sha": "17cac41",
+      "repo": "toadstool/xbres"
+    }
+  },
+  {
+    "id": "gitee:commit:f979c57da39e4d095e1f116d6f81ab78beaa515c",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "add LICENSE.",
+    "summary": "在 toadstool/hqkillboss 中提交：add LICENSE.",
+    "url": "https://gitee.com/toadstool/hqkillboss/commit/f979c57da39e4d095e1f116d6f81ab78beaa515c",
+    "image": null,
+    "timestamp": "2023-03-20T12:15:02+00:00",
+    "meta": {
+      "sha": "f979c57",
+      "repo": "toadstool/hqkillboss"
+    }
+  },
+  {
+    "id": "gitee:commit:f15b8d4b61003cb152b201816512bd4955b570b7",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "自述文件",
+    "summary": "在 toadstool/hqkillboss 中提交：自述文件",
+    "url": "https://gitee.com/toadstool/hqkillboss/commit/f15b8d4b61003cb152b201816512bd4955b570b7",
+    "image": null,
+    "timestamp": "2023-03-19T06:07:01+00:00",
+    "meta": {
+      "sha": "f15b8d4",
+      "repo": "toadstool/hqkillboss"
+    }
+  },
+  {
+    "id": "gitee:commit:32638b5ac9be8e8a4680c17ca79bb481276bff43",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "删除文件 README.en.md",
+    "summary": "在 toadstool/hqkillboss 中提交：删除文件 README.en.md",
+    "url": "https://gitee.com/toadstool/hqkillboss/commit/32638b5ac9be8e8a4680c17ca79bb481276bff43",
+    "image": null,
+    "timestamp": "2023-03-19T06:03:10+00:00",
+    "meta": {
+      "sha": "32638b5",
+      "repo": "toadstool/hqkillboss"
+    }
+  },
+  {
+    "id": "gitee:commit:162d8fc39f8d9540edff917e2206ed6b0d4fae0c",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "删除文件 README.md",
+    "summary": "在 toadstool/hqkillboss 中提交：删除文件 README.md",
+    "url": "https://gitee.com/toadstool/hqkillboss/commit/162d8fc39f8d9540edff917e2206ed6b0d4fae0c",
+    "image": null,
+    "timestamp": "2023-03-19T06:02:11+00:00",
+    "meta": {
+      "sha": "162d8fc",
+      "repo": "toadstool/hqkillboss"
+    }
+  },
+  {
+    "id": "gitee:commit:4b729b39aa14d13cf265240c7eba73ffdcef319c",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "主要文件",
+    "summary": "在 toadstool/hqkillboss 中提交：主要文件",
+    "url": "https://gitee.com/toadstool/hqkillboss/commit/4b729b39aa14d13cf265240c7eba73ffdcef319c",
+    "image": null,
+    "timestamp": "2023-03-19T04:09:26+00:00",
+    "meta": {
+      "sha": "4b729b3",
+      "repo": "toadstool/hqkillboss"
+    }
+  },
+  {
+    "id": "gitee:commit:10169fd7a24bc7c86191c33101ebea9aaf42738b",
+    "platform": "gitee",
+    "type": "提交",
+    "title": "Initial commit",
+    "summary": "在 toadstool/hqkillboss 中提交：Initial commit",
+    "url": "https://gitee.com/toadstool/hqkillboss/commit/10169fd7a24bc7c86191c33101ebea9aaf42738b",
+    "image": null,
+    "timestamp": "2023-03-19T04:05:29+00:00",
+    "meta": {
+      "sha": "10169fd",
+      "repo": "toadstool/hqkillboss"
+    }
+  },
+  {
+    "id": "youtube:peP8iwEaoU0",
+    "platform": "youtube",
+    "type": "视频",
+    "title": "aqui un momento con ciclope :v",
+    "summary": "toad 🐸😈 的新视频",
+    "url": "https://www.youtube.com/watch?v=peP8iwEaoU0",
+    "image": "https://i1.ytimg.com/vi/peP8iwEaoU0/hqdefault.jpg",
+    "timestamp": "2021-10-04T21:24:27+00:00",
+    "meta": {
+      "videoId": "peP8iwEaoU0",
+      "views": 42,
+      "updated": "2026-10-05T01:57:24+00:00"
+    }
+  }
+]
