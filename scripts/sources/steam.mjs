@@ -27,6 +27,18 @@ const STEAM_API = 'https://api.steampowered.com';
 const RECENT_WINDOW_DAYS = 14;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
+/**
+ * 上一轮抓取的现场信息。collect 会把它写进 res/state.json 的 diagnostics.steam，
+ * 这样「Steam 为什么一条都没有」不用翻 CI 日志也能查——日志会过期，也可能没有权限看。
+ * 只放公开信息（AppID、时长、时间），不含密钥。
+ */
+let diagnostics = null;
+
+/** @returns {object|null} */
+export function lastSteamDiagnostics() {
+  return diagnostics;
+}
+
 /** AppID 只接受纯数字，避免把占位值当游戏去查。 */
 function toAppId(value) {
   const text = String(value ?? '').trim();
@@ -121,8 +133,9 @@ function formatTime(seconds) {
 
 /**
  * 最近两周玩过的游戏（按两周游玩时长从长到短）。
- * @returns {Promise<Array<{appid: string, name: string|null, minutes2weeks: number,
- *   minutesTotal: number, lastPlayedSec: number}>>}
+ * 同时把「接口到底回了什么」原样带出来，供诊断用。
+ * @returns {Promise<{games: Array<{appid: string, name: string|null, minutes2weeks: number,
+ *   minutesTotal: number, lastPlayedSec: number}>, raw: object|null, error: string|null}>}
  */
 async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
   const params = new URLSearchParams({ key: apiKey, steamid: steamId64, format: 'json' });
@@ -135,7 +148,7 @@ async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
   } catch (error) {
     const reason = error instanceof HttpError ? `HTTP ${error.status ?? '?'}` : error.message;
     console.warn(`[steam] 查询最近玩过的游戏失败：${reason}`);
-    return [];
+    return { games: [], raw: null, error: reason };
   }
 
   const response = data?.response ?? {};
@@ -157,10 +170,10 @@ async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
           '也可能 steamId64 不是这个账号的（17 位数字，不是 toad1145 这种自定义名）',
       );
     }
-    return [];
+    return { games: [], raw: data ?? null, error: null };
   }
 
-  return games
+  const parsed = games
     .map((game) => ({
       appid: toAppId(game.appid),
       name: game.name ?? null,
@@ -170,6 +183,7 @@ async function recentlyPlayedGames({ apiKey, steamId64, maxGames }) {
     }))
     .filter((game) => game.appid)
     .slice(0, maxGames);
+  return { games: parsed, raw: data ?? null, error: null };
 }
 
 /**
@@ -231,25 +245,57 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
  */
 export async function fetchSteam(context = {}) {
   const config = steamConfig();
+  const sinceMs = windowStart(context);
+  const diag = {
+    checkedAt: new Date().toISOString(),
+    since: new Date(sinceMs).toISOString(),
+    note: '',
+    totalCount: null,
+    games: [],
+    playItems: 0,
+    achievementItems: 0,
+  };
+  diagnostics = diag;
+
   if (!config.apiKey || !config.steamId64) {
     console.warn('[steam] 缺少 steam.apiKey 或 steam.steamId64，跳过');
+    diag.note = '缺少密钥（steam.apiKey / steam.steamId64）';
     return [];
   }
 
   // SteamID64 是 17 位纯数字；填成 toad1145 这种自定义名或填错位数时，
   // API 只会返回空，不会报错，所以这里先把它显式点出来。
   if (!/^\d{17}$/.test(config.steamId64)) {
-    const tail = config.steamId64.length > 6 ? `${config.steamId64.slice(0, 5)}…（${config.steamId64.length} 位）` : '（位数明显不对）';
+    const tail =
+      config.steamId64.length > 6
+        ? `${config.steamId64.slice(0, 5)}…（${config.steamId64.length} 位）`
+        : '（位数明显不对）';
     console.warn(
       `[steam] steamId64 应该是 17 位纯数字，当前是 ${tail}；` +
         '用 https://steamid.io 把个人资料链接换算一下',
     );
+    diag.note = `steamId64 位数不对（${config.steamId64.length} 位）`;
   }
 
-  const sinceMs = windowStart(context);
-  const games = config.recentGames
+  const recent = config.recentGames
     ? await recentlyPlayedGames(config)
-    : [];
+    : { games: [], raw: null, error: null };
+  const games = recent.games;
+  diag.totalCount = recent.raw?.response?.total_count ?? null;
+  diag.games = games.map((game) => ({
+    appid: game.appid,
+    name: game.name,
+    minutes2weeks: game.minutes2weeks,
+    minutesTotal: game.minutesTotal,
+    lastPlayed: game.lastPlayedSec ? new Date(game.lastPlayedSec * 1000).toISOString() : null,
+  }));
+  if (recent.error) diag.note = `查询最近游戏失败：${recent.error}`;
+  else if (games.length === 0) {
+    diag.note =
+      diag.totalCount === 0
+        ? '最近两周没有可读的游玩记录（total_count=0），游戏可能还开着没同步'
+        : '接口返回空对象，多半是隐私「游戏详情」未公开或 steamId64 不是这个账号';
+  }
 
   // 每款游戏都打一行现场数据。Steam 的「什么都没抓到」不报错、只回空，
   // 没有这行就只能靠猜：是没启动过、隐私没开，还是成就确实没解锁。
@@ -263,6 +309,7 @@ export async function fetchSteam(context = {}) {
 
   const collected = config.playSessions ? playItems(games, sinceMs) : [];
   const plays = collected.length;
+  diag.playItems = plays;
 
   // 自动发现的游戏在前，额外关注的 AppID 兜底（去重）
   const targets = new Map();
@@ -291,16 +338,18 @@ export async function fetchSteam(context = {}) {
   }
 
   const days = Math.max(1, Math.round((Date.now() - sinceMs) / DAY_MS));
-  const achievements = Math.min(collected.length, config.maxItems) - plays;
+  const achievements = Math.max(0, Math.min(collected.length, config.maxItems) - plays);
+  diag.achievementItems = achievements;
   console.log(
     `[steam] 检查 ${targets.size} 款游戏（回看 ${days} 天），` +
-      `新增 ${plays} 条游玩记录 + ${Math.max(0, achievements)} 条成就`,
+      `新增 ${plays} 条游玩记录 + ${achievements} 条成就`,
   );
   if (collected.length === 0 && games.length > 0) {
     console.warn(
       '[steam] 游戏在最近列表里，但窗口内既没有新会话也没有新成就。' +
         '如果这会儿正玩着，Steam 通常要等你退出后才会更新「上次游玩」时间。',
     );
+    diag.note = '游戏在最近列表里，但窗口内没有新会话也没有新成就';
   }
   return collected.slice(0, config.maxItems);
 }

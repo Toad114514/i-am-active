@@ -34,7 +34,7 @@ import { fetchRetroAchievements } from './sources/retroachievements.mjs';
 import { fetchWeblate } from './sources/weblate.mjs';
 import { fetchGitHub } from './sources/github.mjs';
 import { fetchGitee } from './sources/gitee.mjs';
-import { fetchSteam } from './sources/steam.mjs';
+import { fetchSteam, lastSteamDiagnostics } from './sources/steam.mjs';
 import { fetchOttoHub } from './sources/ottohub.mjs';
 import { fetchKuaishou } from './sources/kuaishou.mjs';
 
@@ -49,7 +49,7 @@ const SOURCES = [
   { id: 'archive', label: '互联网档案馆', run: fetchArchive },
   { id: 'weblate', label: 'Weblate', run: fetchWeblate },
   { id: 'retroachievements', label: 'RetroAchievements', run: fetchRetroAchievements },
-  { id: 'steam', label: 'Steam', run: fetchSteam },
+  { id: 'steam', label: 'Steam', run: fetchSteam, diagnostics: lastSteamDiagnostics },
 ];
 
 /** 补齐条目缺失的字段，并做基本清洗。 */
@@ -207,6 +207,10 @@ async function main() {
       addedCount += brandNew.length;
 
       state.lastRun[source.id] = new Date().toISOString();
+      // 抓取器如果留了现场信息（比如 Steam 为什么一条都没抓到），一起进 state.json，
+      // 之后直接看仓库就能排障，不用翻 CI 日志。
+      const diag = source.diagnostics?.();
+      if (diag) state.diagnostics = { ...(state.diagnostics ?? {}), [source.id]: diag };
       addedTotal += addedCount;
 
       const extra = absorbed ? `，吸收旧记录 ${absorbed} 条` : '';

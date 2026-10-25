@@ -15,6 +15,8 @@ export function emptyState() {
     lastRun: {},
     /** 各平台已知的条目 id（防止同一批内容反复入库） */
     knownIds: {},
+    /** 各平台上一轮的现场信息（抓取器自愿提供，用于事后排障） */
+    diagnostics: {},
   };
 }
 
