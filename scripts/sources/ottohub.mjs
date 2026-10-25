@@ -36,7 +36,7 @@ export async function fetchOttoHub(context = {}) {
   }
 
   const videos = json?.data?.video_list ?? [];
-  const since = context.since ? context.since.getTime() : null;
+  const sinceMs = context.since ? new Date(context.since).getTime() : null;
 
   return videos
     .map((video) => ({
@@ -59,7 +59,7 @@ export async function fetchOttoHub(context = {}) {
       },
     }))
     .filter((item) => {
-      if (!since || !item.timestamp) return true;
-      return Date.parse(item.timestamp) >= since.getTime();
+      if (sinceMs === null || !item.timestamp) return true;
+      return Date.parse(item.timestamp) >= sinceMs;
     });
 }
