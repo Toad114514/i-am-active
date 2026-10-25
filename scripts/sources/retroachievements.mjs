@@ -196,16 +196,18 @@ async function fetchGameArt(gameId, key, budget) {
 
   let art = null;
   try {
-    const params = new URLSearchParams({ y: key, g: String(gameId) });
+    // 参数名是 `i`（不是 `g`）。用错名字时 RA 不会报错，只会返回一个空对象，
+    // 看起来像「这款游戏没有图」。字段同时兼容 PascalCase / camelCase。
+    const params = new URLSearchParams({ y: key, i: String(gameId) });
     const data = await getJson(`${API}/API_GetGame.php?${params}`, {
       timeoutMs: 20000,
       retries: 1,
     });
-    const ingame = absolute(data?.ImageIngame);
-    const boxArt = absolute(data?.ImageBoxArt);
-    const title = absolute(data?.ImageTitle);
+    const ingame = absolute(data?.ImageIngame ?? data?.imageIngame);
+    const boxArt = absolute(data?.ImageBoxArt ?? data?.imageBoxArt);
+    const title = absolute(data?.ImageTitle ?? data?.imageTitle);
     const backdrop = ingame ?? boxArt ?? title;
-    if (backdrop) art = { backdrop, ingame, boxArt, title: data?.Title ?? null };
+    if (backdrop) art = { backdrop, ingame, boxArt, title: data?.Title ?? data?.title ?? null };
     else if (artDebug.length < 3) {
       artDebug.push(`game ${gameId}: 没有图片字段，返回键 ${Object.keys(data ?? {}).join(',') || '(空)'}`);
     }

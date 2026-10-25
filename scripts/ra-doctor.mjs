@@ -114,6 +114,25 @@ if (played.error) {
   }
 }
 
+// ---------- 4) 游戏图（截图/封面）----------
+// 站点上成就条目的背景就是这里拿的：参数名必须是 `i`，写成 `g` 会静默返回空对象。
+const firstGameId = Array.isArray(recent.data) ? recent.data[0]?.GameID : null;
+if (firstGameId) {
+  console.log(`\nGetGame（gameId=${firstGameId}）`);
+  const game = await call('API_GetGame.php', { i: String(firstGameId) });
+  if (game.error) {
+    console.error(`  ✗ ${game.error}`);
+  } else if (!game.data || !Object.keys(game.data).length) {
+    console.error('  ✗ 返回空对象 → 参数名写错（必须是 i=<gameId>，不是 g=）');
+  } else {
+    const pick = (o, a, b) => o?.[a] ?? o?.[b] ?? '（无）';
+    show('ImageIngame', pick(game.data, 'ImageIngame', 'imageIngame'));
+    show('ImageBoxArt', pick(game.data, 'ImageBoxArt', 'imageBoxArt'));
+    show('ImageTitle', pick(game.data, 'ImageTitle', 'imageTitle'));
+    console.log('  → 条目背景优先用 ImageIngame，其次 ImageBoxArt。');
+  }
+}
+
 console.log('\n小结');
 console.log('  · 成就接口正常但为空 → 那段时间确实没解锁，不是抓取坏了。');
 console.log('  · 只要「玩过」能看见游戏 → 说明账号、key、网络都通，成就为空是游戏侧的事');
