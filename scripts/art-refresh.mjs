@@ -11,16 +11,17 @@
  *   RA 的封面/截图要按 gameId 现查（API_GetGame），存下来的是当时的 URL；
  *   Steam 的头图是 `apps/<appid>/header.jpg`，纯推导、不会过期，没有回填的必要。
  *
- * 幂等：只重查 `backdropSource` 缺失或是 `title` 的游戏（`title` 就是旧规则
- * 留下的痕迹，而 `ingame` 说明这款游戏确实没有封面，再查也一样）。
- * 因此第一次跑完之后，后续每次都是空跑，不会每小时去骚扰 API。
+ * 幂等：只重查「可能被当前规则改善」的游戏——`backdropSource` 缺失、是 `title`
+ * （旧规则留下的痕迹），或者存的图根本是 RA 那张占位图（游戏没封面时 API 返回
+ * 的是写着 no screenshot found 的灰图）。第一次跑完之后后续每次都是空跑，
+ * 不会每小时去骚扰 API。
  *
  * 用法：
  *   node scripts/art-refresh.mjs            # 回填并写回 res/list.json
  *   node scripts/art-refresh.mjs --dry-run  # 只打印，不写文件
  */
 import { readList, writeList } from './lib/store.mjs';
-import { gameArtFor } from './sources/retroachievements.mjs';
+import { gameArtFor, isPlaceholderArt } from './sources/retroachievements.mjs';
 
 /** 单轮最多重查多少款游戏（防止某天列表里突然堆了一堆老 gameId）。 */
 const MAX_GAMES = 30;
@@ -45,7 +46,7 @@ async function main() {
   const stale = [...byGame.entries()].filter(([, items]) =>
     items.some((item) => {
       const source = item.meta?.backdropSource ?? null;
-      return !source || source === 'title';
+      return !source || source === 'title' || isPlaceholderArt(item.meta?.backdrop);
     }),
   );
 
@@ -65,7 +66,8 @@ async function main() {
 
   for (const [gameId, items] of todo) {
     const art = await gameArtFor(gameId);
-    if (!art?.backdrop) {
+    // art === null：没配 key 或请求失败，这种情况不能动老数据（否则会把已有的图抹掉）
+    if (!art) {
       failures += 1;
       console.log(`[art] 游戏 ${gameId}：没取到图（可能 key 未配置），保持原样`);
       continue;
@@ -79,20 +81,27 @@ async function main() {
       const beforeSource = item.meta?.backdropSource ?? null;
       item.meta = {
         ...(item.meta ?? {}),
-        backdrop: art.backdrop,
-        backdropSource: art.source ?? null,
+        // art.backdrop 为 null = 三张图全是占位图：清掉背景，让卡片退回
+        // 「图标当背景」的纯文字样式，总比铺一张 no screenshot found 强。
+        backdrop: art.backdrop ?? null,
+        backdropSource: art.backdrop ? (art.source ?? null) : null,
       };
       // 成就条目缺角标时顺手补上（只用成就自己的徽章，不拿游戏图顶）
       if (item.meta.achievementId && !item.meta.badge) {
         item.meta.badge = item.meta.badgeUrl ?? item.image ?? null;
       }
-      if (before !== art.backdrop || beforeSource !== (art.source ?? null)) changed += 1;
+      const after = art.backdrop ?? null;
+      if (before !== after || beforeSource !== (art.backdrop ? (art.source ?? null) : null)) {
+        changed += 1;
+      }
     }
 
     if (changed) {
       updatedGames += 1;
       updatedItems += changed;
-      console.log(`[art] 游戏 ${gameId}：图源 ${from} → ${art.source}，更新 ${changed} 条`);
+      console.log(
+        `[art] 游戏 ${gameId}：图源 ${from} → ${art.backdrop ? art.source : '无图（清空）'}，更新 ${changed} 条`,
+      );
     } else {
       console.log(`[art] 游戏 ${gameId}：已经是 ${art.source}，无需改动`);
     }

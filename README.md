@@ -138,6 +138,11 @@ STEAM_API_KEY=xxx STEAM_ID64=7656119xxxxxxxxxx npm run steam:doctor
   封面最稳，而且最像「这款游戏」；标题画面排最后是踩过坑的——RA 的 `ImageTitle`
   经常不是标题界面而是一张宣传大头图（B3313 的那张就是马里奥的大头照），铺在卡片
   左半边完全认不出是哪款游戏。
+  另外游戏缺图时 RA **不会**返回空值，而是返回一张写着「No Screenshot Found」的
+  共享占位图（`Images/000002.png`）——不认识它的话，封面优先会退化成「永远铺着
+  占位图」。三张候选图都会先过占位判断，全被占位挡掉就真的不放背景，退回
+  「游戏图标当背景」的样式（见 `scripts/sources/retroachievements.mjs` 的
+  `PLACEHOLDER_ART`）。
   用了哪一张会记在 `meta.backdropSource`，也汇总进 `state.json` 的
   `diagnostics.retroachievements.gameArt.sources`。
   Steam 直接用 CDN 的 `steam/apps/<appid>/header.jpg`，不需要 key。

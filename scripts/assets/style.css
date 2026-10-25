@@ -395,7 +395,12 @@ body::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  /*
+   * 0.62 是「所有平台统一」的不透明度：视频封面、游戏封面、归档缩略图都走这一条。
+   * 之前是 0.5，配上正文那层渐变之后整张图几乎看不见，读起来像纯文字卡片。
+   * 游戏图不再单独压暗（曾经额外叠过 brightness(.72)），各平台保持同一观感。
+   */
+  opacity: 0.62;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.35) 34%, #000 88%);
   mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.35) 34%, #000 88%);
   filter: saturate(0.85);
@@ -421,30 +426,23 @@ body::before {
   width: 36%;
 }
 
+/*
+ * 游戏条目只改几何，不改亮度/饱和度——亮度和视频卡共用上面那一条，避免
+ * 「游戏封面比别人暗一大截」。唯一保留的是遮罩：图收窄成 36% 的「海报」，
+ * 右边缘正好落在正文渐变的起点上，不淡出会露出一条硬边。
+ */
 .item--game .item__media img {
-  /*
-   * 游戏图（Steam 头图、RA 封面）比其它平台的头图亮得多：视频封面通常本身
-   * 就偏暗、且有平台自己的压暗层，而游戏封面/截图常常是大面积高饱和的亮色，
-   * 按 0.92 的不透明度铺上去会「跳」出卡片，字压在上面也糊。
-   *
-   * 光调 opacity 是不够的：普通条目的遮罩从左边缘就开始淡入（0% 透明），
-   * 左栏整体被压到很暗；而这里原来是 0% 就全黑，等于「一块发光的海报」贴着
-   * 卡片左边。所以两件事一起做——降不透明度 + 同样从左边缘淡入，
-   * 但淡入比普通条目短、底部保持实，仍能看出是张海报。
-   */
-  opacity: 0.5;
-  filter: saturate(0.9) brightness(0.72);
   -webkit-mask-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.3) 0%,
-    #000 26%,
+    transparent 0%,
+    rgba(0, 0, 0, 0.35) 26%,
     #000 62%,
     transparent 100%
   );
   mask-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.3) 0%,
-    #000 26%,
+    transparent 0%,
+    rgba(0, 0, 0, 0.35) 26%,
     #000 62%,
     transparent 100%
   );

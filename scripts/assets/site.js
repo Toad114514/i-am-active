@@ -460,7 +460,9 @@
       listNode.innerHTML = filtered
         .map((item) => {
           if (item.meta && Array.isArray(item.meta.changes) && item.meta.changes.length) {
-            return renderDigestItem(item, 10);
+            // 每页条数必须和静态页同一份（TLIST_PAGE_SIZE）：这里曾经写死 10，
+            // 于是分类页上汇总卡一页显示 10 条，首页是 5 条，两处不一致。
+            return renderDigestItem(item, TLIST_PAGE_SIZE);
           }
           // 和 build.mjs 的 renderItem 保持同一套规则：有游戏背景图时，
           // 成就图标缩成右下角角标；没有就退回「图标当背景」。

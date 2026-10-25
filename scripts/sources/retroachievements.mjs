@@ -192,6 +192,24 @@ function achievementItem(a, user) {
  * 「一张大头宣传图」——B3313 的 ImageTitle 就是马里奥的大头照，铺在卡片
  * 左半边完全不像是这款游戏。封面反而最稳。
  */
+/**
+ * RA 的共享占位图：游戏没有对应美术时，API **不会**返回空字符串，而是返回这张
+ * 「No Screenshot Found」的图。不认识它的话，条目背景就是一张写着
+ * 「no screenshot found」的灰图（~Hack~ Super Mario Treasure World 就是这样，
+ * ImageBoxArt = Images/000002.png，直接铺在卡片上）。
+ *
+ * 只能按「共享占位图名单」判断，不能按编号区间一刀切：低编号里混着真实素材
+ * （000004~000007 是某款 Sonic 的截图，000010 也是真实游戏画面），
+ * 只有 000002 是系统占位图。
+ */
+const PLACEHOLDER_ART = new Set(['000002.png']);
+
+/** 导出给 art-refresh：判断已存的老条目是不是停在占位图上。 */
+export function isPlaceholderArt(url) {
+  if (!url) return false;
+  return PLACEHOLDER_ART.has(String(url).split('/').pop() || '');
+}
+
 const gameArtCache = new Map();
 /** 取图失败的现场（只留前几条），给 state.json 里的 diagnostics 用。 */
 const artDebug = [];
@@ -213,18 +231,25 @@ async function fetchGameArt(gameId, key, budget) {
     const ingame = absolute(data?.ImageIngame ?? data?.imageIngame);
     const boxArt = absolute(data?.ImageBoxArt ?? data?.imageBoxArt);
     const title = absolute(data?.ImageTitle ?? data?.imageTitle);
-    // 优先封面，其次游戏内截图，最后标题画面
-    const backdrop = boxArt ?? ingame ?? title;
-    if (backdrop) {
-      art = {
-        backdrop,
-        ingame,
-        boxArt,
-        title: data?.Title ?? data?.title ?? null,
-        source: boxArt ? 'boxart' : ingame ? 'ingame' : 'title',
-      };
-    } else if (artDebug.length < 3) {
-      artDebug.push(`game ${gameId}: 没有图片字段，返回键 ${Object.keys(data ?? {}).join(',') || '(空)'}`);
+    // 缺图时 RA 给的是占位图，不是空值——所以三张图都要过一遍占位判断，
+    // 一张都不可用才真的算「没有图」，否则往下退到 ingame / 标题画面。
+    const candidates = [
+      ['boxart', boxArt],
+      ['ingame', ingame],
+      ['title', title],
+    ].filter(([, url]) => url && !isPlaceholderArt(url));
+    const picked = candidates[0] ?? null;
+    art = {
+      backdrop: picked ? picked[1] : null,
+      ingame,
+      boxArt,
+      title: data?.Title ?? data?.title ?? null,
+      source: picked ? picked[0] : null,
+    };
+    if (!picked && artDebug.length < 3) {
+      artDebug.push(
+        `game ${gameId}: 三张图全是占位图或为空（box=${boxArt ?? '-'} ingame=${ingame ?? '-'} title=${title ?? '-'}）`,
+      );
     }
   } catch (error) {
     const reason = error instanceof HttpError ? explainError(error) : error.message;
