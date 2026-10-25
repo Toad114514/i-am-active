@@ -496,19 +496,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 48 次提交、1 个新仓库",
-    "summary": "48 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「Revert \"feat(data): 登记 url-social.md 剩余游」",
+    "title": "Toad114514/i-am-active · 49 次提交、1 个新仓库",
+    "summary": "49 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「feat(blog): 接入主站博客 Toad's Blog（Hexo Atom」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T20:22:57Z",
+    "timestamp": "2026-10-25T20:40:17Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 49,
+      "count": 50,
       "changes": [
         {
-          "group": "10-25 23:25 → 10-26 04:22 · 16 条"
+          "group": "10-25 23:25 → 10-26 04:40 · 17 条"
+        },
+        {
+          "text": "feat(blog): 接入主站博客 Toad's Blog（Hexo Atom feed，文章类）",
+          "action": "提交",
+          "component": "acaf8ea",
+          "url": "https://github.com/Toad114514/i-am-active/commit/acaf8ea33f8c029a090a383576de15d253623e4c",
+          "time": "2026-10-25T20:40:17Z"
         },
         {
           "text": "Revert \"feat(data): 登记 url-social.md 剩余游戏账号存档 9 条（miscgame 平台）\"",
@@ -861,11 +868,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T20:22:57Z",
+      "windowEnd": "2026-10-25T20:40:17Z",
       "sessions": 3,
       "actions": {
         "新建仓库": 1,
-        "提交": 48
+        "提交": 49
       }
     }
   },
