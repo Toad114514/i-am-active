@@ -314,7 +314,7 @@ function renderFooter({ base, stats, totalItems }) {
         </div>
       </div>
       <p class="footer__note">
-        本页由 GitHub Actions 每 2 小时自动巡检各平台并重新生成，共收录
+        本页由 GitHub Actions 每 1 小时自动巡检各平台并重新生成，共收录
         <b>${totalItems}</b> 条活动记录。数据来源见
         <a href="${esc(SITE.repoUrl)}" target="_blank" rel="noopener noreferrer">仓库</a>。
       </p>

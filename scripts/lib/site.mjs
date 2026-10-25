@@ -12,7 +12,7 @@
 
 export const SITE = {
   title: '蟾蜍在互联网上的活跃记录',
-  subtitle: 'Toad114514 的跨平台活跃存档 · 由 GitHub Actions 每两小时自动巡检',
+  subtitle: 'Toad114514 的跨平台活跃存档 · 由 GitHub Actions 每小时自动巡检',
   description:
     '汇总哔哩哔哩、YouTube、OTTOhub、快手、GitHub、Gitee、互联网档案馆、Weblate、RetroAchievements、Steam 等平台上的最新动态。',
   repoUrl: 'https://github.com/Toad114514/i-am-active',
