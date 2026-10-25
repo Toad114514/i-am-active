@@ -1,22 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T21:23:20.889Z",
-    "bilibili": "2026-10-25T21:22:36.141Z",
-    "youtube": "2026-10-25T21:22:36.303Z",
-    "ottohub": "2026-10-25T21:22:37.428Z",
-    "kuaishou": "2026-10-25T21:22:40.244Z",
-    "github": "2026-10-25T21:22:51.838Z",
-    "gitee": "2026-10-25T21:23:10.293Z",
-    "archive": "2026-10-25T21:23:13.492Z",
-    "retroachievements": "2026-10-25T21:23:30.074Z",
-    "hexo": "2026-10-25T21:23:27.790Z",
-    "steam": "2026-10-25T21:23:34.585Z"
+    "weblate": "2026-10-25T22:14:34.184Z",
+    "bilibili": "2026-10-25T22:13:49.217Z",
+    "youtube": "2026-10-25T22:13:49.414Z",
+    "ottohub": "2026-10-25T22:13:50.223Z",
+    "kuaishou": "2026-10-25T22:13:52.400Z",
+    "github": "2026-10-25T22:14:04.536Z",
+    "gitee": "2026-10-25T22:14:25.662Z",
+    "archive": "2026-10-25T22:14:26.619Z",
+    "retroachievements": "2026-10-25T22:14:41.555Z",
+    "hexo": "2026-10-25T22:14:38.866Z",
+    "steam": "2026-10-25T22:14:44.280Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-10-25T21:23:27.791Z",
-      "since": "2026-10-25T20:17:36.548Z",
+      "checkedAt": "2026-10-25T22:14:38.867Z",
+      "since": "2026-10-25T21:23:30.074Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -73,9 +73,9 @@
       "actions": 658
     },
     "steam": {
-      "checkedAt": "2026-10-25T21:23:30.075Z",
-      "since": "1970-01-01T00:00:00.000Z",
-      "note": "",
+      "checkedAt": "2026-10-25T22:14:41.556Z",
+      "since": "2026-10-25T21:23:34.585Z",
+      "note": "窗口内没有新动作：这些游戏的 29 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
         {
@@ -100,15 +100,15 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 3,
-      "achievementItems": 29,
+      "playItems": 0,
+      "achievementItems": 0,
       "achievements": [
         {
           "appid": "477160",
           "name": null,
           "total": 155,
           "unlocked": 5,
-          "inWindow": 5,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
@@ -117,7 +117,7 @@
           "name": null,
           "total": 29,
           "unlocked": 2,
-          "inWindow": 2,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
@@ -126,7 +126,7 @@
           "name": null,
           "total": 17,
           "unlocked": 3,
-          "inWindow": 3,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
@@ -135,7 +135,7 @@
           "name": "Half-Life 2",
           "total": 69,
           "unlocked": 14,
-          "inWindow": 14,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
@@ -144,7 +144,7 @@
           "name": "Hacknet",
           "total": 11,
           "unlocked": 5,
-          "inWindow": 5,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
