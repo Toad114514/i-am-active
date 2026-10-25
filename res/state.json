@@ -1,22 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T07:23:47.830Z",
-    "bilibili": "2026-10-25T07:23:33.465Z",
-    "youtube": "2026-10-25T07:23:33.668Z",
-    "ottohub": "2026-10-25T07:23:34.740Z",
-    "kuaishou": "2026-10-25T07:23:37.932Z",
-    "github": "2026-10-25T07:23:38.799Z",
-    "gitee": "2026-10-25T07:23:43.719Z",
-    "archive": "2026-10-25T07:23:44.906Z",
-    "retroachievements": "2026-10-25T07:23:48.278Z",
-    "steam": "2026-10-25T07:23:51.277Z"
+    "weblate": "2026-10-25T07:41:03.205Z",
+    "bilibili": "2026-10-25T07:40:50.220Z",
+    "youtube": "2026-10-25T07:40:50.355Z",
+    "ottohub": "2026-10-25T07:40:51.079Z",
+    "kuaishou": "2026-10-25T07:40:53.208Z",
+    "github": "2026-10-25T07:40:54.352Z",
+    "gitee": "2026-10-25T07:40:59.135Z",
+    "archive": "2026-10-25T07:41:00.028Z",
+    "retroachievements": "2026-10-25T07:41:03.903Z",
+    "steam": "2026-10-25T07:41:06.961Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T07:23:48.278Z",
-      "since": "2026-10-25T06:56:38.631Z",
-      "note": "",
+      "checkedAt": "2026-10-25T07:41:03.904Z",
+      "since": "2026-10-25T07:23:51.277Z",
+      "note": "窗口内没有新动作：最近列表里的游戏都没有成就体系，或本周没有新解锁",
       "totalCount": 3,
       "games": [
         {
@@ -41,7 +41,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 1,
+      "playItems": 0,
       "achievementItems": 0,
       "achievements": [
         {
@@ -49,21 +49,27 @@
           "name": "Half-Life 2",
           "total": 0,
           "unlocked": 0,
-          "inWindow": 0
+          "inWindow": 0,
+          "ok": false,
+          "error": "HTTP 403"
         },
         {
           "appid": "365450",
           "name": "Hacknet",
           "total": 0,
           "unlocked": 0,
-          "inWindow": 0
+          "inWindow": 0,
+          "ok": false,
+          "error": "HTTP 403"
         },
         {
           "appid": "10",
           "name": "Counter-Strike",
           "total": 0,
           "unlocked": 0,
-          "inWindow": 0
+          "inWindow": 0,
+          "ok": false,
+          "error": "HTTP 400"
         }
       ]
     }

@@ -1,5 +1,19 @@
 [
   {
+    "id": "github:commit:57f31e7ed0336a8a56e4f359c70a7d54c8b6eec3",
+    "platform": "github",
+    "type": "提交",
+    "title": "chore(steam): 诊断里记下成就接口的错误原因",
+    "summary": "在 Toad114514/i-am-active 中提交：chore(steam): 诊断里记下成就接口的错误原因",
+    "url": "https://github.com/Toad114514/i-am-active/commit/57f31e7ed0336a8a56e4f359c70a7d54c8b6eec3",
+    "image": null,
+    "timestamp": "2026-10-25T07:33:07Z",
+    "meta": {
+      "sha": "57f31e7",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "steam:play:220:1792912895",
     "platform": "steam",
     "type": "游玩记录",
