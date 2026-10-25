@@ -1,5 +1,19 @@
 [
   {
+    "id": "github:commit:015c580c249f40019bb8a8abf53f513f7f5f861c",
+    "platform": "github",
+    "type": "提交",
+    "title": "fix(steam): 把「Profile is not public」翻译成可操作提示",
+    "summary": "在 Toad114514/i-am-active 中提交：fix(steam): 把「Profile is not public」翻译成可操作提示",
+    "url": "https://github.com/Toad114514/i-am-active/commit/015c580c249f40019bb8a8abf53f513f7f5f861c",
+    "image": null,
+    "timestamp": "2026-10-25T08:13:00Z",
+    "meta": {
+      "sha": "015c580",
+      "repo": "Toad114514/i-am-active"
+    }
+  },
+  {
     "id": "github:commit:1d223ed1739a975ffbdfba72e4a4ef10c5a02859",
     "platform": "github",
     "type": "提交",

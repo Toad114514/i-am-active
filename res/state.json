@@ -1,22 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-25T08:03:29.796Z",
-    "bilibili": "2026-10-25T08:03:18.219Z",
-    "youtube": "2026-10-25T08:03:18.398Z",
-    "ottohub": "2026-10-25T08:03:19.465Z",
-    "kuaishou": "2026-10-25T08:03:21.628Z",
-    "github": "2026-10-25T08:03:22.838Z",
-    "gitee": "2026-10-25T08:03:25.858Z",
-    "archive": "2026-10-25T08:03:26.722Z",
-    "retroachievements": "2026-10-25T08:03:30.441Z",
-    "steam": "2026-10-25T08:03:36.221Z"
+    "weblate": "2026-10-25T08:20:22.296Z",
+    "bilibili": "2026-10-25T08:20:09.025Z",
+    "youtube": "2026-10-25T08:20:09.194Z",
+    "ottohub": "2026-10-25T08:20:11.314Z",
+    "kuaishou": "2026-10-25T08:20:14.731Z",
+    "github": "2026-10-25T08:20:15.624Z",
+    "gitee": "2026-10-25T08:20:18.954Z",
+    "archive": "2026-10-25T08:20:19.574Z",
+    "retroachievements": "2026-10-25T08:20:22.813Z",
+    "steam": "2026-10-25T08:20:29.142Z"
   },
   "knownIds": {},
   "diagnostics": {
     "steam": {
-      "checkedAt": "2026-10-25T08:03:30.441Z",
-      "since": "2026-10-25T07:41:06.961Z",
-      "note": "",
+      "checkedAt": "2026-10-25T08:20:22.814Z",
+      "since": "2026-10-25T08:03:36.221Z",
+      "note": "Steam 拒绝读成就：Profile is not public。把「编辑个人资料 → 隐私设置」里的「我的个人资料」和「游戏详情」都设为公开（游玩记录不受影响，可以正常写）",
       "totalCount": 3,
       "games": [
         {
@@ -41,7 +41,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 1,
+      "playItems": 0,
       "achievementItems": 0,
       "achievements": [
         {
@@ -51,7 +51,7 @@
           "unlocked": 0,
           "inWindow": 0,
           "ok": false,
-          "error": "l=schinese → HTTP 403（{\"playerstats\":{\"error\":\"Profile is not public\",\"success\":false}}）；无 l → HTTP 403（{\"playerstats\":{\"error\":\"Profile is not public\",\"success\":false}}）"
+          "error": "l=schinese → HTTP 403（Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开）；无 l → HTTP 403（Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开）"
         },
         {
           "appid": "365450",
@@ -60,7 +60,7 @@
           "unlocked": 0,
           "inWindow": 0,
           "ok": false,
-          "error": "l=schinese → HTTP 403（{\"playerstats\":{\"error\":\"Profile is not public\",\"success\":false}}）；无 l → HTTP 403（{\"playerstats\":{\"error\":\"Profile is not public\",\"success\":false}}）"
+          "error": "l=schinese → HTTP 403（Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开）；无 l → HTTP 403（Steam 说「Profile is not public」：需要把 编辑个人资料 → 隐私设置 里的「我的个人资料」和「游戏详情」都设成公开）"
         },
         {
           "appid": "10",
@@ -69,7 +69,7 @@
           "unlocked": 0,
           "inWindow": 0,
           "ok": false,
-          "error": "l=schinese → HTTP 400（{\"playerstats\":{\"error\":\"Requested app has no stats\",\"success\":false}}）；无 l → HTTP 400（{\"playerstats\":{\"error\":\"Requested app has no stats\",\"success\":false}}）"
+          "error": "l=schinese → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））；无 l → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））"
         }
       ]
     }
