@@ -629,6 +629,32 @@
     syncLabel();
   }
 
+  /* ---------------- 回到顶部 ---------------- */
+
+  /**
+   * 时间线一页四万多像素，底部回顶要拉很久，所以给个浮动按钮。
+   * 滚过一屏（约 600px）才出现；没出现时 tabindex=-1 避开键盘焦点。
+   */
+  function startBackToTop() {
+    const btn = $('[data-to-top]');
+    if (!btn) return;
+
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const sync = () => {
+      const on = window.scrollY > 600;
+      btn.classList.toggle('is-on', on);
+      btn.tabIndex = on ? 0 : -1;
+    };
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+
+    window.addEventListener('scroll', sync, { passive: true });
+    sync();
+  }
+
   /* ---------------- 启动 ---------------- */
 
   function boot() {
@@ -638,6 +664,7 @@
     startCategoryFilter();
     initTranslationLists();
     startThemeToggle();
+    startBackToTop();
   }
 
   if (document.readyState === 'loading') {

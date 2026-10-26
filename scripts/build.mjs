@@ -47,6 +47,9 @@ const ICON_SUN =
 const ICON_MOON =
   '<svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.6 6.6 0 0 0 10.5 10.5Z"/></svg>';
 
+const ICON_UP =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>';
+
 /* ------------------------------------------------------------------ */
 /* 页面片段                                                            */
 /* ------------------------------------------------------------------ */
@@ -407,6 +410,7 @@ ${renderFooter({
   stats: current === 'home' ? currentStats : currentStats,
   totalItems: currentStats.totalItems,
 })}
+<button class="totop" type="button" data-to-top aria-label="回到顶部" tabindex="-1">${ICON_UP}</button>
 <script src="${esc(assetsPrefix)}assets/site.js" defer></script>
 </body>
 </html>

@@ -638,7 +638,7 @@ body::before {
  * 圆角上会露出两条斜直线；径向以右上角为圆心，边缘是弧线，和圆角同向。
  * 底图走 ::before、正文 z-index 抬到 1，这样标题和明细文字不会被压暗。
  *
- * 尺寸用 `54% auto`（按卡片宽度的百分比定宽、等比缩高），而不是 cover：
+ * 尺寸用 `46% auto`（按卡片宽度的百分比定宽、等比缩高），而不是 cover：
  * cover 会按卡片高度撑满、左右裁掉一大截，整个 About 对话框只剩中间一段。
  * 定宽缩放后整张截图都在，只是缩到右上一块。
  */
@@ -652,35 +652,42 @@ body::before {
   inset: 0;
   z-index: 0;
   /*
-   * 上层是「向上淡出到卡片底色」的渐变，下层才是截图：
-   * 这样图在右上角最实，往左、往下融进卡片，明细文字所在的下半部分基本是干净的。
-   * 渐变里的颜色用 var(--bg-elev)，亮色主题下自动改成往白色融，不用写两套。
+   * 三层：垂直方向「向上淡出到卡片底色」、水平方向「向左吞进卡片底色」，
+   * 最下面才是截图。
+   * 水平那层是必须的：图是按宽度缩放的一块矩形，只靠径向遮罩的话它的**左边缘**
+   * 还剩三四成不透明度，会在卡片中间露出一条竖直硬边（看着像贴了张图）。
+   * 渐隐范围都控制得很窄（垂直到 52%、水平到 44%），图的主体保持清楚，
+   * 只让边缘融进底色——渐变铺太大就成了糊在卡上的一团。
    */
   background:
+    /* 图顶边是截图里的窗口标题栏（一条浅色带），贴着卡片上沿会像贴纸的直角，
+       先用底色在顶部压 12% 把它化掉 */
+    linear-gradient(to bottom, var(--bg-elev) 0%, transparent 12%),
     linear-gradient(
       to top,
       var(--bg-elev) 0%,
-      color-mix(in srgb, var(--bg-elev) 80%, transparent) 18%,
-      color-mix(in srgb, var(--bg-elev) 45%, transparent) 42%,
-      transparent 66%
+      color-mix(in srgb, var(--bg-elev) 58%, transparent) 14%,
+      color-mix(in srgb, var(--bg-elev) 26%, transparent) 34%,
+      transparent 52%
     ),
-    url('../media/tde-card.jpg') right top / 40% auto no-repeat;
+    linear-gradient(to left, transparent 10%, var(--bg-elev) 44%),
+    url('../media/tde-card.jpg') right top / 46% auto no-repeat;
   /*
    * 截图本身是浅色的（TDE 的 About 对话框），深色主题下必须压亮度，
    * 否则标题区和右侧时间会被白底吃掉；亮色主题不用压，见下面的覆盖。
    */
-  filter: saturate(0.9) brightness(0.6);
+  filter: saturate(0.9) brightness(0.5);
   -webkit-mask-image: radial-gradient(
-    80% 124% at 100% 0%,
+    100% 150% at 100% 0%,
     #000 0%,
-    rgba(0, 0, 0, 0.6) 44%,
-    transparent 78%
+    rgba(0, 0, 0, 0.62) 54%,
+    transparent 94%
   );
   mask-image: radial-gradient(
-    80% 124% at 100% 0%,
+    100% 150% at 100% 0%,
     #000 0%,
-    rgba(0, 0, 0, 0.6) 44%,
-    transparent 78%
+    rgba(0, 0, 0, 0.62) 54%,
+    transparent 94%
   );
   pointer-events: none;
 }
@@ -691,20 +698,29 @@ body::before {
 }
 
 /*
- * 明细行右侧的「修改 / 提交」标签和时间是右对齐的，正好落在截图渐隐区上：
- * 让出 42%（图占 40%，再留一点余量），行内对齐线提前，页边仍是齐的。
- * 实测 42% 时最长的一行仍然单行不折断；再宽就会开始出省略号。
+ * 明细行不再整体让出图宽——那会把整块正文赶成窄栏，看起来像给图腾了个占位。
+ * 只让出 26%（和旧版一致），右侧标签轻微压到渐隐区，靠 text-shadow 兜住可读性。
  * 窄屏另有覆盖（见文末）。
  */
 .item--tde .tlist {
-  padding-right: 42%;
+  padding-right: 26%;
 }
 
+/*
+ * 明细行压在截图上时（白底对话框），单层模糊光晕顶不住，字会糊进背景里：
+ * 先一圈贴字的实色描边、再一圈大一点的柔光，白底上也能读；
+ * 时间/组件这两项本来是最浅的 fg-faint，压在图上直接消失，这里提一档。
+ */
 .item--tde .tlist__text,
 .item--tde .tlist__time,
 .item--tde .tlist__tag,
 .item--tde .tlist__comp {
-  text-shadow: 0 0 5px var(--bg-elev);
+  text-shadow: 0 0 2px var(--bg-elev), 0 0 6px var(--bg-elev), 0 0 12px var(--bg-elev);
+}
+
+.item--tde .tlist__time,
+.item--tde .tlist__comp {
+  color: var(--fg-dim);
 }
 
 .item--tde .item__body {
@@ -949,37 +965,15 @@ body::before {
   align-items: start;
 }
 
+/*
+ * 分类侧栏不再 sticky：以前跟着视口停住，反而把筛选项一直糊在滚动内容旁边；
+ * 现在让它随页面一起滚走，筛完往上一滚就回到列表顶部。
+ */
 .cats__side {
-  position: sticky;
-  top: 22px;
-  /* 筛选项多（年份×5 + 类型×5 + 平台×12）时侧栏比视口还高，
-     sticky 元素超长会把底部顶出屏幕外且滚不到 —— 限高为视口减去上下边距，
-     自己出滚动条。 */
-  max-height: calc(100vh - 44px);
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--line) transparent;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--bg-elev);
   padding: 15px 14px;
-}
-
-.cats__side::-webkit-scrollbar {
-  width: 8px;
-}
-
-.cats__side::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.cats__side::-webkit-scrollbar-thumb {
-  background: var(--line);
-  border-radius: 4px;
-}
-
-.cats__side::-webkit-scrollbar-thumb:hover {
-  background: var(--fg-faint);
 }
 
 .cats__group + .cats__group {
@@ -1264,6 +1258,54 @@ body::before {
   color: var(--pc, var(--accent));
 }
 
+/* ---------------- 回到顶部 ---------------- */
+
+/*
+ * 右下角浮动按钮。时间线一页四万多像素高，滚到 2021 年想回顶要拉很久。
+ * 默认 opacity:0 + visibility:hidden，滚过一屏后由 site.js 加 .is-on 淡入。
+ */
+.totop {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--bg-elev-2) 92%, transparent);
+  backdrop-filter: blur(8px);
+  color: var(--fg-dim);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.18s, transform 0.18s, visibility 0.18s, color 0.16s,
+    border-color 0.16s;
+}
+
+.totop.is-on {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.totop:hover,
+.totop:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent-line);
+  outline: none;
+}
+
+.totop svg {
+  width: 18px;
+  height: 18px;
+}
+
 /* ---------------- 页脚 ---------------- */
 
 .footer {
@@ -1325,10 +1367,8 @@ body::before {
   }
 
   .cats__side {
-    position: static;
-    /* 恢复自然流式布局：横向 chip 本身不高，限高+滚动只给桌面端 sticky 侧栏 */
+    /* 窄屏本来就是自然流式（横向 chip），这里只需清掉桌面端的内边距感 */
     max-height: none;
-    overflow: visible;
   }
 
   .cats__group {
@@ -1477,16 +1517,12 @@ body::before {
 }
 
 /*
- * 中等窗口（720–1080）：卡片变窄，40% 的图 + 42% 的让位会把明细行挤到出省略号。
- * 图文一起缩到 26%，优先保住文字完整（1080 以上卡片恒为 1036px，不受影响）。
+ * 中等窗口（720–1080）：卡片变窄，46% 的图会把明细行挤到出省略号。
+ * 图缩到 34%，让位保持 26%，优先保住文字完整（1080 以上卡片恒为 1036px，不受影响）。
  */
 @media (max-width: 1080px) and (min-width: 721px) {
   .item--tde::before {
-    background-size: 26% auto;
-  }
-
-  .item--tde .tlist {
-    padding-right: 28%;
+    background-size: 34% auto;
   }
 }
 
