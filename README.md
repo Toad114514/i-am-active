@@ -2,14 +2,14 @@
 请查阅 [Github Page](https://toad.ccwu.cc/i-am-active) 观看aaa
 
 # 介绍
-这是一个用于展示我 2021 年以来到现在，在各个平台的活跃情况的集合，也可以允许作为考察我本人黑历史使用的大脑开智历程
+这是一个用于展示我 2021 年以来到现在，在各个平台的活跃情况的集合，也可以允许作为考察我本人黑历史使用的大脑开智历程  
 警告： 100% Vibe-Coding 项目aaa
 
 # 框架
-我刚开始还以为会用到什么 Vitepress 或者 astro 这样的静态网站生成器框架，结果根本就不是。
-我的天啊bro自己硬搓静态网站生成器框架的来。
-手搓yaml配置文件解析器的来
-所以你会发现这个 Nodejs 项目什么都不依赖（除了某些特殊平台爬网页会需要用到 Playwright，如果不需要那就一点事没有）
+我刚开始还以为会用到什么 Vitepress 或者 astro 这样的静态网站生成器框架，结果根本就不是。  
+我的天啊bro自己硬搓静态网站生成器框架的来。  
+手搓yaml配置文件解析器的来  
+所以你会发现这个 Nodejs 项目什么都不依赖（除了某些特殊平台爬网页会需要用到 Playwright，如果不需要那就一点事没有）  
 Deepseek v4.1 Flash 还是太吓人。
 
 ```js
@@ -35,15 +35,15 @@ npm run update                     # 抓取 + 回填美术图 + 生成站点
 npm run serve                      # 本地服务器
 ```
 
-所有平台配置放在 `config.yaml`，然后 `.github/workflow/update.yaml` 每一小时爬一次然后更新一次
+所有平台配置放在 `config.yaml`，然后 `.github/workflow/update.yaml` 每一小时爬一次然后更新一次  
 我反正要是在这些平台发东西肯定逃不掉被抓一番然后运到这里来
 
 # 页面
-我们有主页可以大家一条一套看。
-我们有时间线整理归纳。
-我们有分类功能选定特殊地点。
-我们有搜索功能。
-明暗色切换。
+我们有主页可以大家一条一套看。  
+我们有时间线整理归纳。  
+我们有分类功能选定特殊地点。  
+我们有搜索功能。  
+明暗色切换。  
 
 # 平台活跃及原理省流
  - Toad114514 in [![Bilibili](https://img.shields.io/badge/Bilibili-pink?style=plastic&logo=bilibili&label=Video)
