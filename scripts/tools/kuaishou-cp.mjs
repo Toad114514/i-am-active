@@ -10,11 +10,20 @@
 //   且实测该页面会话「签发出来就被服务端判 result:109」——cookie 齐、签名齐、
 //   时钟差 1 秒、住宅 IP 直连，依然 109（Firefox 与 Chromium 复现一致）。
 //   cp.kuaishou.com 是独立产品线，登录态由自己维护，它的
-//   POST /rest/cp/works/v2/video/pc/photo/list **免签名**：result=1 直接返回
-//   total + list，一条就带齐标题/封面/播放/点赞/评论/时长/发布时间。
+//   POST /rest/cp/works/v2/video/pc/photo/list 只要求 __NS_sig3（签名绑 body，
+//   手工改 POST 体一律 500002 请稍后重试），所以这里**全部通过 UI 触发请求**，
+//   绝不自己拼 body。
+//
+// 两个必须知道的坑（都踩过）：
+//   1. 作品列表默认只查「近 365 天」，接口 body 里 timeRangeType=5、
+//      startTime=一年前。直接看就是「我明明发了几百个，只回来 25 个」。
+//      置顶作品不受时间窗限制，所以会混在结果最前面（2024 的两条就是这么来的）。
+//   2. 时间范围一次**不能超过 1 年**（超了 result=1000「时间范围不能大于1年」），
+//      而且单页 limit=30，剩下靠列表容器 .el-main 的无限滚动追加。
+//      手工改 cursor 翻页会破签名 → 只能按年切窗 + 滚到底。
 //
 // 前置：先用有头模式扫码登录一次（profile 会持久化，之后可无头复用）
-//   PLAYWRIGHT_PATH=... KS_HEADED=1 node scripts/tools/kuaishou-cp.mjs
+//   KS_HEADED=1 node scripts/tools/kuaishou-cp.mjs
 //
 // 用法：node scripts/tools/kuaishou-cp.mjs          # 采集 + 镜像封面 + 并入 res/list.json
 //       node scripts/tools/kuaishou-cp.mjs --dry    # 只采集，不写 res/
@@ -23,6 +32,7 @@
 //   PLAYWRIGHT_PATH   playwright 包入口（默认用本机 workbuddy 运行时里那份）
 //   KS_PROFILE        浏览器 profile 目录（默认 ~/.cache/ks-cp）
 //   KS_HEADED=1       有头模式（需要重新扫码时用）
+//   KS_FROM_YEAR      最早年份（默认 2019，快手 2019 年之前基本没有作品页）
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
@@ -44,6 +54,7 @@ const FIXED_UA =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36';
 const DRY = process.argv.includes('--dry');
 const HEADED = process.env.KS_HEADED === '1';
+const FROM_YEAR = Number(process.env.KS_FROM_YEAR || 2019);
 
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -63,84 +74,103 @@ const ctx = await chromium.launchPersistentContext(PROFILE_DIR, {
 
 const page = ctx.pages()[0] || (await ctx.newPage());
 
-// ---- 抓一次 photo/list 的请求与响应，作为翻页模板 ----
-let template = null; // { url, postData, headers }
-const pages = []; // 每页的 data { list, nextCursor, total }
-
-ctx.on('request', (req) => {
-  if (!/\/rest\/cp\/works\/v2\/video\/pc\/photo\/list/.test(req.url())) return;
-  if (template) return;
-  template = { url: req.url(), postData: req.postData(), headers: req.headers() };
-});
+// ---- 收集接口返回 ----
+const collected = new Map(); // workId -> work
+let lastRespAt = 0;
+let sawNoMore = false;
 
 ctx.on('response', async (res) => {
   if (!/\/rest\/cp\/works\/v2\/video\/pc\/photo\/list/.test(res.url())) return;
   try {
     const j = JSON.parse(await res.text());
-    if (j?.result === 1 && j.data) {
-      pages.push(j.data);
-      log(`  接口: result=1 total=${j.data.total} 本页=${j.data.list?.length} nextCursor=${j.data.nextCursor}`);
-    } else {
-      log(`  接口异常: result=${j?.result} message=${j?.message}`);
-    }
+    if (j?.result !== 1 || !j.data) { log(`  接口异常: result=${j?.result} ${j?.message || ''}`); return; }
+    for (const it of j.data.list || []) collected.set(String(it.workId), it);
+    lastRespAt = Date.now();
+    if (j.data.nextCursor === 'no_more') sawNoMore = true;
   } catch {}
 });
 
 log('打开作品管理 …');
 await page.goto('https://cp.kuaishou.com/article/manage/video', { waitUntil: 'domcontentloaded', timeout: 60000 }).catch((e) => log('goto:', e.message.slice(0, 100)));
-await sleep(12000);
+await sleep(10000);
 
 const needLogin = await page.evaluate(() => /扫码登录|立即登录|登录快手/.test(document.body.innerText || '')).catch(() => true);
 if (needLogin) {
   log('❌ 未登录（profile 里的 cp 会话失效），请重新跑有头模式扫码：KS_HEADED=1');
-  await page.screenshot({ path: '/home/toad/.cache/tmp/ks-cp-relogin.png' }).catch(() => {});
+  await page.screenshot({ path: path.join(os.tmpdir(), 'ks-cp-relogin.png') }).catch(() => {});
   await ctx.close();
   process.exit(1);
 }
 
-if (!pages.length) {
-  log('❌ 没等到 photo/list 响应');
-  await ctx.close();
-  process.exit(1);
+const startInput = page.locator('input[placeholder="开始日期"]').first();
+const endInput = page.locator('input[placeholder="结束日期"]').first();
+
+/** 误差弹窗（时间范围不能大于1年）会盖住页面，必须先关掉 */
+async function dismissDialog() {
+  const dlg = page.locator('.cp-dialog-wrapper').first();
+  if (!(await dlg.count())) return;
+  const btn = dlg.getByRole('button', { name: /确认|确定/ }).first();
+  await btn.click({ timeout: 3000 }).catch(() => {});
+  await sleep(600);
 }
 
-// ---- 翻页补齐（total 大于首页条数时） ----
-const collected = new Map();
-for (const p of pages) for (const it of p.list || []) collected.set(String(it.workId), it);
-let total = pages[0].total ?? collected.size;
-let cursor = pages[pages.length - 1].nextCursor;
-log(`首页 ${collected.size}/${total} 条`);
+/** 用 UI 设置时间范围：Element Plus 的 range input 必须先全选再输入，fill('') 清不干净 */
+async function setRange(a, b) {
+  await dismissDialog();
+  await startInput.click({ timeout: 15000 });
+  await sleep(450);
+  await page.keyboard.press('Control+A');
+  await startInput.type(a, { delay: 25 });
+  await sleep(350);
+  await endInput.click({ timeout: 8000 });
+  await sleep(250);
+  await page.keyboard.press('Control+A');
+  await endInput.type(b, { delay: 25 });
+  await sleep(350);
+  await endInput.press('Enter').catch(() => {});
+  await sleep(2200);
+  await dismissDialog();
+}
 
-let guard = 0;
-while (collected.size < total && template && cursor && guard < 40) {
-  guard += 1;
-  const body = (() => {
-    try {
-      const b = JSON.parse(template.postData || '{}');
-      for (const k of ['cursor', 'nextCursor', 'pcursor']) if (k in b) b[k] = String(cursor);
-      return b;
-    } catch {
-      return null;
-    }
-  })();
-  if (!body) break;
-  if (!('cursor' in body) && !('nextCursor' in body) && !('pcursor' in body)) {
-    body.cursor = String(cursor);
+/** 列表是 .el-main 无限滚动，滚到底会自己带签名追加下一页 */
+async function scrollToEnd(max = 24) {
+  let idle = 0;
+  let lastSize = collected.size;
+  for (let i = 0; i < max; i += 1) {
+    await page.evaluate(() => {
+      const el = document.querySelector('.el-main');
+      if (el) el.scrollTop = el.scrollHeight;
+      else window.scrollTo(0, document.body.scrollHeight);
+    }).catch(() => {});
+    await sleep(1200);
+    if (collected.size === lastSize) idle += 1;
+    else { idle = 0; lastSize = collected.size; }
+    if (idle >= 3) break;
+    if (sawNoMore) break;
   }
-  const json = await page.evaluate(async ({ url, payload }) => {
-    const r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'include', body: JSON.stringify(payload) });
-    return r.json();
-  }, { url: template.url, payload: body }).catch((e) => (log('  翻页异常:', e.message.slice(0, 80)), null));
+}
 
-  if (!json || json.result !== 1 || !json.data) { log('  翻页返回异常，停止'); break; }
-  const got = json.data.list || [];
-  let added = 0;
-  for (const it of got) if (!collected.has(String(it.workId))) { collected.set(String(it.workId), it); added += 1; }
-  total = json.data.total ?? total;
-  log(`  翻页 +${added} → ${collected.size}/${total}`);
-  if (!got.length || !json.data.nextCursor || json.data.nextCursor === cursor) break;
-  cursor = json.data.nextCursor;
-  await sleep(800);
+const now = new Date();
+const windows = [];
+for (let y = FROM_YEAR; y <= now.getFullYear(); y += 1) {
+  const isCur = y === now.getFullYear();
+  windows.push([`${y}-01-01`, isCur ? `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}` : `${y}-12-31`]);
+}
+
+for (const [a, b] of windows) {
+  const before = collected.size;
+  sawNoMore = false;
+  log(`窗口 ${a} → ${b}`);
+  await setRange(a, b);
+  await sleep(1500);
+  await scrollToEnd();
+  log(`  本年新增 ${collected.size - before} 条，累计 ${collected.size}`);
+}
+
+if (!collected.size) {
+  log('❌ 一条都没抓到');
+  await ctx.close();
+  process.exit(1);
 }
 
 // ---- 落地原始数据 ----
@@ -210,6 +240,7 @@ for (const w of raw) {
       playCount: w.playCount ?? null,
       likeCount: w.likeCount ?? null,
       commentCount: w.commentCount ?? null,
+      pinned: w.photoTop === true,
       archived: true,
     },
   });
