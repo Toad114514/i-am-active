@@ -6,9 +6,12 @@
  *  - 必须先拿 cookie：访问空间页拿 buvid3/b_nut，再调 /x/frontend/finger/spi 拿 b_3/b_4。
  *  - 接口对匿名请求存在概率性风控（-352 / code:0 但 items 为空），
  *    必须重试，且每次重试换一份全新的 buvid_fp 才有效。
- *  - 按 `next_offset` 翻页可以取到入站以来的全部动态（投稿视频本身就是一条
+ *  - 按 `data.offset` 翻页可以取到入站以来的全部动态（投稿视频本身就是一条
  *    DYNAMIC_TYPE_AV 动态，翻完动态 = 投稿 + 动态全覆盖）；
  *    增量轮传 sinceMs 早停，只翻第一页就够。
+ *  - ⚠️ 游标字段是 `data.offset`，**不是** `next_offset`：只读后者会永远停在
+ *    第一页（13 条），而且这个 bug 在「匿名」和「带登录 Cookie」两种情况下
+ *    表现完全一样，很容易被误判成「匿名被降级」。
  */
 import { CookieJar, getJsonWithJar, randomHex, sleep } from '../lib/http.mjs';
 import { platform } from '../lib/config.mjs';
@@ -82,7 +85,11 @@ async function freshCookies(mid, loginCookie = '') {
 const MAX_FEED_PAGES = 30;
 
 /**
- * 拉取动态列表，带风控重试，按 next_offset 翻页直到取完。
+ * 拉取动态列表，带风控重试，按接口返回的游标翻页直到取完。
+ *
+ * 游标字段是 `data.offset`（老文档写的 `next_offset` 现在已经**不返回**了，
+ * 只读 next_offset 会永远停在第一页、拿不到 13 条以外的内容）；同时看
+ * `data.has_more`，末页它会是 false。
  *
  * @param {{sinceMs?: number|null}} [options]
  *   sinceMs 非 null 时启用增量早停：某一页里**最旧**的一条都比 since 还早，
@@ -100,6 +107,7 @@ async function fetchFeed({ sinceMs = null } = {}) {
   for (let page = 0; page < MAX_FEED_PAGES; page++) {
     let items = null;
     let nextOffset = null;
+    let hasMore = false;
     // 每次尝试都用全新 cookie：风控针对的是指纹，换指纹才有效
     for (let attempt = 1; attempt <= retries; attempt++) {
       const jar = await freshCookies(mid, cookie);
@@ -113,13 +121,15 @@ async function fetchFeed({ sinceMs = null } = {}) {
           retries: 0,
           timeoutMs: 20000,
         });
-        const pageItems = data?.data?.items ?? [];
-        nextOffset = data?.data?.next_offset ?? null;
+        const pageData = data?.data ?? {};
+        const pageItems = pageData.items ?? [];
+        nextOffset = pageData.next_offset ?? pageData.offset ?? null;
+        hasMore = pageData.has_more !== false;
         if (pageItems.length > 0) {
           items = pageItems;
           break;
         }
-        // items 为空：只有第 0 页且从未拿到过 next_offset 才可能是「一条动态都没有」；
+        // items 为空：只有第 0 页且从未拿到过游标才可能是「一条动态都没有」；
         // 中间页的空十有八九是风控，落到下面的重试里换指纹再来
         lastCode = data?.code ?? 'empty';
       } catch (error) {
@@ -151,8 +161,9 @@ async function fetchFeed({ sinceMs = null } = {}) {
 
     // 增量早停：整页都比 since 旧，后面全是更老的历史
     if (sinceMs !== null && Number.isFinite(oldestTs) && oldestTs < sinceMs) break;
-    // next_offset 没了 = 真的翻完了
-    if (!nextOffset) break;
+    // 没有游标 / has_more=false / 游标没前进 = 真的翻完了
+    if (!nextOffset || !hasMore) break;
+    if (String(nextOffset) === offset) break;
     offset = String(nextOffset);
   }
 
