@@ -31,6 +31,8 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       YT_API_KEY: ${{ secrets.YT_API_KEY }}
       KUAISHOU_COOKIE: ${{ secrets.KUAISHOU_COOKIE }}
+      # B站匿名请求被降级（只给最近一页、不返 next_offset），要带登录 Cookie 才能翻全量
+      BILI_COOKIE: ${{ secrets.BILI_COOKIE }}
       STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
       STEAM_ID64: ${{ secrets.STEAM_ID64 }}
     steps:

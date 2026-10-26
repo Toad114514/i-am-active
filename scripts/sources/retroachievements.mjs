@@ -149,7 +149,7 @@ function lookbackMinutes(config, since) {
 
 /** 成就 → 站点条目。 */
 function achievementItem(a, user) {
-  const hardcoreText = a.hardcore ? '硬核成就' : '成就';
+  const hardcoreText = a.hardcore ? 'Hardcore' : 'Softcore';
   const pointsText = a.points ? `，${a.points} 分` : '';
   const gameText = a.gameTitle ? `在《${a.gameTitle}》解锁${hardcoreText}` : `解锁${hardcoreText}`;
   return {
@@ -281,7 +281,7 @@ function playSessionItem(game, user) {
   const done = game.NumAchieved ?? null;
   const scoreText =
     Number.isFinite(Number(done)) && Number.isFinite(Number(total)) && Number(total) > 0
-      ? `，成就 ${Number(done)}/${Number(total)}`
+      ? `，${Number(done)}/${Number(total)} 完成`
       : '';
   const consoleText = game.ConsoleName ? `在 ${game.ConsoleName} 上` : '';
   return {
@@ -289,8 +289,8 @@ function playSessionItem(game, user) {
     id: `retroachievements:play:${game.GameID}:${game.LastPlayed ?? ''}`,
     platform: 'retroachievements',
     type: '游玩记录',
-    title: `玩了《${title}》`,
-    summary: `${consoleText}玩了《${title}》${scoreText}`,
+    title: `启动了 ${title}`,
+    summary: `${consoleText}开始玩 ${title} ${scoreText}`,
     url: game.GameID ? `${SITE}/game/${game.GameID}` : `${SITE}/user/${user}`,
     image: absolute(game.ImageIcon),
     timestamp: toIso(game.LastPlayed),

@@ -126,7 +126,7 @@ function playItems(games, sinceMs) {
       id: `steam:play:${game.appid}:${game.lastPlayedSec}`,
       platform: 'steam',
       type: '游玩记录',
-      title: `《${name}》`,
+      title: `启动了 ${name}`,
       summary: parts.join('，'),
       url: `https://steamcommunity.com/app/${game.appid}`,
       image: headerImage(game.appid),
@@ -366,8 +366,8 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
       type: '成就解锁',
       title,
       summary: description
-        ? `在《${gameTitle}》解锁成就「${title}」：${description}`
-        : `在《${gameTitle}》解锁成就「${title}」`,
+        ? `${gameTitle} 获得成就「${title}」：${description}`
+        : `${gameTitle} 获得成就「${title}」`,
       url: `https://steamcommunity.com/profiles/${steamId64}/stats/${appid}/achievements`,
       image: icon,
       timestamp: new Date(seconds * 1000).toISOString(),
