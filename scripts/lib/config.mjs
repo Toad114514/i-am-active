@@ -86,10 +86,21 @@ const DEFAULTS = {
       maxPages: 2,
       maxRows: 300,
       maxRepos: 40,
+      /** 镜像仓库声明：Gitee 短名 → GitHub 仓库（只写改过名的，短名相同会自动认） */
+      mirrors: {},
     },
     archive: {
       enabled: true,
       user: 'toad1145',
+    },
+    codemao: {
+      enabled: true,
+      userId: '',
+      /** 首轮全量 init 时每页条数与最多翻几页（接口上限 100） */
+      pageSize: 100,
+      maxPages: 3,
+      /** 之后每轮只取第一页这么多条，盯新作品 */
+      incrementalLimit: 20,
     },
     weblate: {
       enabled: true,
@@ -153,6 +164,7 @@ const REQUIRED = {
   github: ['user'],
   gitee: ['user'],
   archive: ['user'],
+  codemao: ['userId'],
   weblate: ['baseUrl', 'user'],
   retroachievements: ['user'],
   steam: ['steamId64'],

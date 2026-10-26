@@ -6,10 +6,14 @@
  *
  * 注意：和 GitHub 不同，Gitee 这里不按 since 增量抓——汇总条目每次都要用
  * 完整时段重算，只取增量会让条数失真、时段起点乱跳。固定回看 lookbackDays 天。
+ *
+ * 镜像仓库（tpaxs / Staxle / milk-fk 这类 GitHub 同步过来的）里的提交不算 Gitee
+ * 的独立活动，切时段前就按 sha 丢掉，见 lib/mirrors.mjs。
  */
 import { getJson } from '../lib/http.mjs';
 import { platform } from '../lib/config.mjs';
 import { buildRepoDigests } from '../lib/digest.mjs';
+import { dropMirroredActions } from '../lib/mirrors.mjs';
 
 const gitee = platform('gitee');
 const USER = String(gitee.user);
@@ -21,6 +25,8 @@ const LOOKBACK_MS = LOOKBACK_DAYS * 86400_000;
 const SESSION_GAP_MS = Math.max(1, Number(gitee.sessionGapMinutes) || 90) * 60_000;
 const MAX_ROWS = Math.max(1, Number(gitee.maxRows) || 300);
 const MAX_REPOS = Math.max(1, Number(gitee.maxRepos) || 25);
+/** 镜像声明：Gitee 仓库短名（或全名）→ GitHub 仓库，见 config.yaml。 */
+const MIRRORS = gitee.mirrors ?? {};
 
 let lastDiagnostics = null;
 
@@ -73,9 +79,12 @@ async function fetchCommits(fullName, sinceIso) {
 }
 
 /**
+ * @param {object} [options]
+ * @param {() => {byRepo: Map<string, Set<string>>, byNorm: Map<string, Set<string>>}} [options.githubShas]
+ *   取 GitHub 已落库的提交 sha 索引（在 Gitee 跑之前调用，此时 GitHub 这轮的结果已经并入列表）
  * @returns {Promise<Array<object>>} 汇总条目（meta.merge = true）
  */
-export async function fetchGitee() {
+export async function fetchGitee({ githubShas } = {}) {
   const cutoff = LOOKBACK_DAYS > 0 ? Date.now() - LOOKBACK_MS : Number.NEGATIVE_INFINITY;
   const safetyStart = Number.isFinite(cutoff) ? cutoff - 2 * 86400_000 : Number.NEGATIVE_INFINITY;
   const sinceIso = Number.isFinite(safetyStart) ? new Date(safetyStart).toISOString() : null;
@@ -115,16 +124,34 @@ export async function fetchGitee() {
     diag.commits += commits.length;
   }
 
+  // 镜像仓库的提交在这里就出局：它们已经在 GitHub 卡里了，再算一遍等于同一件
+  // 工作出现两次。必须在切时段之前过滤，否则镜像提交会把 Gitee 独有的提交
+  // 连成一段不存在的「连续动工」。
+  let usable = actions;
+  if (typeof githubShas === 'function') {
+    const { kept, dropped, repos, hits } = dropMirroredActions(actions, githubShas(), MIRRORS);
+    usable = kept;
+    if (dropped > 0) {
+      diag.mirrored = dropped;
+      // 交给 collect 写进 res/mirrors.json：卡片并掉了，但「Gitee 上也有这个仓库」
+      // 这条信息要留在站点上（GitHub 卡会标「Gitee 同步」）。
+      diag.mirrorHits = Object.fromEntries(
+        [...hits.entries()].map(([repo, hit]) => [repo, { github: hit.github, commits: hit.count }]),
+      );
+      console.log(`[gitee] 跳过 ${dropped} 条镜像提交（已在 GitHub 卡里）: ${repos.join(', ')}`);
+    }
+  }
+
   const digests = buildRepoDigests({
     platform: 'gitee',
-    actions: actions.filter((action) => action.ts >= safetyStart),
+    actions: usable.filter((action) => action.ts >= safetyStart),
     gapMs: SESSION_GAP_MS,
     maxRows: MAX_ROWS,
     type: '仓库活动',
   });
 
   const settled = digests.filter((digest) => Date.parse(digest.meta.windowEnd) >= cutoff);
-  diag.actions = actions.length;
+  diag.actions = usable.length;
   diag.digests = settled.length;
   lastDiagnostics = diag;
   return settled;

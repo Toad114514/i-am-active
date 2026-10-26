@@ -24,6 +24,14 @@ export const DIST_DIR = path.join(ROOT, 'dist');
 export const LIST_FILE = path.join(RES_DIR, 'list.json');
 export const RALIST_FILE = path.join(RES_DIR, 'ralist.json');
 export const STATS_FILE = path.join(RES_DIR, 'stats.json');
+/**
+ * 镜像仓库登记表（res/mirrors.json）。
+ *
+ * Gitee 上有些仓库是 GitHub 的镜像同步，同一批提交只算一次（卡片留在 GitHub 那边）。
+ * 但「这个仓库在 Gitee 也有」这件事本身是信息，丢掉之后站点上就看不出来了——
+ * 存一份登记表，GitHub 卡才能标出「Gitee 同步」。
+ */
+export const MIRRORS_FILE = path.join(RES_DIR, 'mirrors.json');
 
 /**
  * 读取 JSON 文件；不存在时返回 fallback。
@@ -87,7 +95,16 @@ export function writeStats(stats) {
   return writeJson(STATS_FILE, stats);
 }
 
-/** 判断条目是否已存在（按 id 去重）。 */
-export function hasItem(list, id) {
+/** 读取镜像仓库登记表（res/mirrors.json）：{ '<gitee 全名>': { github, commits, cards } } */
+export function readMirrors() {
+  return readJson(MIRRORS_FILE, {});
+}
+
+/** 写入镜像仓库登记表。 */
+export function writeMirrors(table) {
+  return writeJson(MIRRORS_FILE, table);
+}
+
+/** 判断条目是否已存在（按 id 去重）。 */export function hasItem(list, id) {
   return list.some((item) => item.id === id);
 }

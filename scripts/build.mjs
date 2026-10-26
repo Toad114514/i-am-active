@@ -14,7 +14,7 @@ import { mkdir, writeFile, rm, readFile, readdir } from 'node:fs/promises';
 import { existsSync, statSync } from 'node:fs';
 import path from 'node:path';
 
-import { readList, readStats, DIST_DIR, RES_DIR, ROOT } from './lib/store.mjs';
+import { readList, readStats, readMirrors, DIST_DIR, RES_DIR, ROOT } from './lib/store.mjs';
 import { PLATFORMS, PLATFORM_ORDER, KINDS, getPlatform, kindOf } from './lib/platforms.mjs';
 import { SITE, PAGE_SIZE, esc, formatTime, isoAttr, yearOf } from './lib/site.mjs';
 import { config } from './lib/config.mjs';
@@ -27,6 +27,15 @@ const BASE = process.env.SITE_BASE || config.site.base || '/i-am-active';
 /** 汇总卡片里逐条译文每页显示条数（与 assets/site.js 保持一致）。 */
 /** 汇总卡（Weblate 译文时段 / GitHub·Gitee 仓库卡）每页显示几条明细。 */
 const TLIST_PAGE_SIZE = 5;
+
+/**
+ * GitHub 仓库全名 → Gitee 镜像信息（res/mirrors.json）。
+ *
+ * 镜像仓库的提交只在 GitHub 那边出卡（见 scripts/lib/mirrors.mjs），但「这个仓库
+ * 在 Gitee 也有」本身是条信息：不标出来的话 Gitee 那边就只剩几张卡，看着像少了。
+ * main() 里加载后填进来，渲染时给对应的 GitHub 卡挂一个「Gitee 镜像」标记。
+ */
+let MIRROR_BY_GITHUB = new Map();
 
 const ICON_ARROW =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
@@ -167,6 +176,21 @@ function renderTranslationRows(changes, fold = TLIST_PAGE_SIZE) {
     .join('');
 }
 
+/**
+ * GitHub 卡上的「Gitee 镜像」标记。
+ *
+ * 镜像仓库的提交只出一张卡（GitHub 那边），Gitee 侧不再重复。这个标记把那层
+ * 关系补回界面上：悬停能看到「那 N 次提交是同一批改动」，点进去是 Gitee 仓库。
+ */
+function mirrorChip(item) {
+  if (item.platform !== 'github') return '';
+  const mirror = MIRROR_BY_GITHUB.get(item.meta?.repo ?? '');
+  if (!mirror?.repo) return '';
+  const gitee = getPlatform('gitee');
+  const tip = `Gitee 上有同名镜像仓库（gitee.com/${mirror.repo}）：那 ${mirror.commits} 次提交是同一批改动，已并入这张 GitHub 卡`;
+  return `<a class="item__mirror" href="https://gitee.com/${esc(mirror.repo)}" target="_blank" rel="noopener noreferrer" title="${esc(tip)}" style="--pc:${esc(gitee.color)}"><span class="item__mirror-dot"></span>Gitee 镜像</a>`;
+}
+
 /** 汇总型条目（带逐条明细）：整张卡不能是链接，否则明细里的链接会嵌套。 */
 function renderDigestItem(item) {
   const platform = getPlatform(item.platform);
@@ -189,7 +213,7 @@ function renderDigestItem(item) {
               <span class="item__sep">·</span>
               <span class="item__type">${esc(item.type || '活动')}</span>
               <span class="item__sep">·</span>
-              <span class="item__time" title="${esc(fullTime)}"${isoAttr(item.timestamp) ? ` datetime="${isoAttr(item.timestamp)}"` : ''}>${esc(formatTime(item.timestamp))}</span>
+              <span class="item__time" title="${esc(fullTime)}"${isoAttr(item.timestamp) ? ` datetime="${isoAttr(item.timestamp)}"` : ''}>${esc(formatTime(item.timestamp))}</span>${mirrorChip(item)}
             </div>
             <h3 class="item__title"><a class="item__titlelink" href="${esc(item.url || '#')}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a></h3>
             <ul class="tlist" data-tlist data-tlist-page-size="${fold}" data-tlist-current="1">
@@ -441,6 +465,12 @@ function resolveMedia(src) {
 /** 为主页与分类页准备统一的条目视图。 */
 function toView(item) {
   const platform = getPlatform(item.platform);
+  /*
+   * 镜像关系要跟着数据走：分类页是浏览器端用 items.json 重新渲染的（筛选、搜索都走
+   * 那一份），只在静态 HTML 里挂标记的话，一点筛选标记就没了。
+   */
+  const mirror = item.platform === 'github' ? MIRROR_BY_GITHUB.get(item.meta?.repo ?? '') : null;
+  const gitee = getPlatform('gitee');
   return {
     ...item,
     platformName: platform.name,
@@ -450,6 +480,9 @@ function toView(item) {
     year: yearOf(item.timestamp),
     kind: kindOf(item.platform),
     timeText: formatTime(item.timestamp),
+    mirror: mirror
+      ? { platform: 'gitee', name: gitee.name, repo: mirror.repo, commits: mirror.commits, color: gitee.color }
+      : null,
   };
 }
 
@@ -537,8 +570,23 @@ async function buildCategory(list, assetsPrefix) {
      </a></li>`,
     ...sortedPlatforms.map((id) => {
       const p = getPlatform(id);
-      return `<li><a class="cats__link" href="?platform=${id}" data-cats-platform-link data-platform="${id}">
-       <span class="cats__dot" style="--pc:${esc(p.color)}"></span>${esc(p.name)}<span class="cats__count">${platformCounts.get(id)}</span>
+      /*
+       * Gitee 的计数要算上「镜像卡」：那些仓库的提交并进了 GitHub 卡，但点开 Gitee
+       * 时它们会一起列出来（见 site.js 的筛选），所以这里得跟着显示，否则侧栏写
+       * 「5」、点进去看到 72 条，两个数字对不上。
+       */
+      const mirrorCards =
+        id === 'gitee'
+          ? list.filter((item) => item.platform === 'github' && MIRROR_BY_GITHUB.has(item.meta?.repo ?? ''))
+              .length
+          : 0;
+      const mirrorCommits = [...MIRROR_BY_GITHUB.values()].reduce((sum, m) => sum + m.commits, 0);
+      const total = platformCounts.get(id) + mirrorCards;
+      const mirrorNote = mirrorCards
+        ? `<span class="cats__mirror" title="其中 ${mirrorCards} 张是 GitHub 上的镜像卡：这些仓库在 Gitee 是同步镜像，${mirrorCommits} 次提交已并入 GitHub 卡，点开 Gitee 会一并列出">镜像 ${mirrorCards}</span>`
+        : '';
+      return `<li><a class="cats__link" href="?platform=${id}" data-cats-platform-link data-platform="${id}" data-direct-count="${platformCounts.get(id)}" data-mirror-count="${mirrorCards}">
+       <span class="cats__dot" style="--pc:${esc(p.color)}"></span>${esc(p.name)}<span class="cats__count">${total}</span>${mirrorNote}
      </a></li>`;
     }),
   ];
@@ -576,6 +624,7 @@ async function buildCategory(list, assetsPrefix) {
         </div>
       </aside>
       <section class="cats__main">
+        <p class="cats__note" data-cats-note hidden></p>
         <ul class="list" data-cats-list>
 ${list.slice(0, PAGE_SIZE).map(renderItem).join('\n')}
         </ul>
@@ -669,7 +718,7 @@ async function buildTimeline(list, assetsPrefix) {
             <span class="tl-item__body">
               <a class="tl-item__title" href="${esc(item.url || '#')}"${item.url ? ' target="_blank" rel="noopener noreferrer"' : ''} title="${esc(item.title)}">${esc(item.title)}</a>
               ${item.summary ? `<span class="tl-item__desc">${esc(item.summary)}</span>` : ''}
-              <span class="tl-item__meta"><span class="tl-item__plat">${esc(platform.name)}</span><span>·</span><span>${esc(item.type || '活动')}</span><span>·</span><span>${esc(fullTime)}</span></span>
+              <span class="tl-item__meta"><span class="tl-item__plat">${esc(platform.name)}</span><span>·</span><span>${esc(item.type || '活动')}</span><span>·</span><span>${esc(fullTime)}</span>${mirrorChip(item)}</span>
             </span>
           </li>`;
             })
@@ -795,6 +844,17 @@ async function verifyLinks() {
 async function main() {
   const list = await readList();
   const stats = await readStats();
+
+  // 镜像登记表：Gitee 侧被并掉的仓库，GitHub 卡上要标「Gitee 镜像」
+  const mirrors = await readMirrors();
+  MIRROR_BY_GITHUB = new Map(
+    Object.entries(mirrors)
+      .filter(([, entry]) => entry?.github)
+      .map(([giteeRepo, entry]) => [
+        entry.github,
+        { repo: giteeRepo, commits: Number(entry.commits) || 0 },
+      ]),
+  );
 
   // 按时间倒序（无时间的排后面）；同时把「站点相对路径」的图片补成站内绝对路径
   const sorted = [...list]

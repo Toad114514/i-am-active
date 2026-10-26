@@ -561,6 +561,41 @@ body::before {
   text-overflow: ellipsis;
 }
 
+/*
+ * 「Gitee 镜像」标记。
+ * 镜像仓库的提交只在 GitHub 那边出卡（Gitee 侧不重复），这个标记把关系补回界面：
+ * 悬停看提示、点进去是 Gitee 仓库。`margin-left:auto` 把它推到 meta 行右端，
+ * 和其它信息分开，看起来是「属性」而不是又一段文字。
+ */
+.item__mirror {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 0 7px 0 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 17px;
+  color: var(--fg-dim);
+  white-space: nowrap;
+  text-decoration: none;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.item__mirror-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pc, var(--fg-faint));
+}
+
+.item__mirror:hover {
+  color: var(--fg);
+  border-color: var(--pc, var(--line));
+}
+
 .item__title {
   margin: 5px 0 0;
   font-size: 15px;
@@ -1040,6 +1075,38 @@ body::before {
   color: var(--fg-faint);
 }
 
+/* Gitee 计数旁的「镜像 N」：这部分是 GitHub 上的镜像卡，点开同一平台会一起列出 */
+.cats__mirror {
+  margin-left: 5px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--fg-faint);
+  opacity: 0.8;
+  cursor: help;
+}
+
+/*
+ * 分类页顶部的说明条：只在「该平台有镜像卡」时由 site.js 显示。
+ * 以前这段信息塞在 title 提示里，没人会去悬停——Gitee 视图看着就只剩几行，
+ * 像数据被删了。放在列表上方，一眼就能读到「这些卡为什么在 GitHub 名下」。
+ */
+.cats__note {
+  margin: 0 0 12px;
+  padding: 10px 13px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--pc-note, var(--accent));
+  border-radius: 9px;
+  background: var(--bg-elev);
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--fg-dim);
+  text-wrap: pretty;
+}
+
+.cats__note[hidden] {
+  display: none;
+}
+
 .cats__main {
   min-width: 0;
 }
@@ -1404,6 +1471,19 @@ body::before {
 }
 
 @media (max-width: 720px) {
+  /*
+   * 窄屏 meta 行放不下「时间 + Gitee 镜像」：原来靠 margin-left:auto 把标记顶到右端，
+   * 结果时间被挤成「20..」。改成允许换行、标记不再右对齐，时间保持完整。
+   */
+  .item__meta {
+    flex-wrap: wrap;
+    row-gap: 3px;
+  }
+
+  .item__mirror {
+    margin-left: 0;
+  }
+
   .topbar__head {
     flex-direction: column;
     gap: 16px;

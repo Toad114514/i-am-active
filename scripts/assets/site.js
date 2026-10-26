@@ -27,6 +27,20 @@
   /** 每页条数；若卡片自带 data-tlist-page-size 则以它为准。 */
   const TLIST_PAGE_SIZE = 5;
 
+  /**
+   * 「Gitee 镜像」标记（和 build.mjs 的 mirrorChip 同一套 markup）。
+   *
+   * 分类页是浏览器端用 items.json 重渲染的，标记只写在静态 HTML 里的话，
+   * 一点筛选就消失，所以两边都得有。数据来自 toView() 加的 item.mirror。
+   */
+  function mirrorChip(item) {
+    const mirror = item && item.mirror;
+    if (!mirror || !mirror.repo) return '';
+    const name = mirror.name || 'Gitee';
+    const tip = `${name} 上有同名镜像仓库（gitee.com/${mirror.repo}）：那 ${mirror.commits} 次提交是同一批改动，已并入这张 GitHub 卡`;
+    return `<a class="item__mirror" href="https://gitee.com/${escapeHtml(mirror.repo)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(tip)}" style="--pc:${escapeHtml(mirror.color || '#c71d23')}"><span class="item__mirror-dot"></span>${escapeHtml(name)} 镜像</a>`;
+  }
+
   const ACTION_SHORT = {
     新增译文: '新增',
     修改译文: '修改',
@@ -107,7 +121,7 @@
                 <span class="item__sep">·</span>
                 <span class="item__type">${escapeHtml(item.type || '')}</span>
                 <span class="item__sep">·</span>
-                <span class="item__time">${escapeHtml(item.timeText || '')}</span>
+                <span class="item__time">${escapeHtml(item.timeText || '')}</span>${mirrorChip(item)}
               </div>
               <h3 class="item__title"><a class="item__titlelink" href="${escapeHtml(item.url || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h3>
               <ul class="tlist" data-tlist data-tlist-page-size="${size}" data-tlist-current="1">${rows}
@@ -413,6 +427,7 @@
     // 计数在 .section-head 里，不在 [data-cats] 里面——按 root 找会永远是 null，
     // 结果条数就停在 SSR 生成的「共 N 条」不动了。
     const countNode = $('[data-cats-count]');
+    const noteNode = $('[data-cats-note]', root);
     const emptyNode = $('[data-cats-empty]', root);
     const yearSelect = $('[data-cats-year]', root);
     const platformSelect = $('[data-cats-platform]', root);
@@ -441,12 +456,44 @@
       const filtered = items.filter((item) => {
         if (state.year !== 'all' && String(item.year) !== state.year) return false;
         if (state.kind !== 'all' && item.kind !== state.kind) return false;
-        if (state.platform !== 'all' && item.platform !== state.platform) return false;
+        if (state.platform !== 'all' && item.platform !== state.platform) {
+          /*
+           * 平台视图里把「镜像卡」一并带出来。Gitee 上大部分仓库是 GitHub 的镜像
+           * 同步，同一批提交只在 GitHub 那边出卡；只按 item.platform 过滤的话，
+           * Gitee 视图就只剩几条独有提交，看着像数据丢了。
+           */
+          if (!(item.mirror && item.mirror.platform === state.platform)) return false;
+        }
         return true;
       });
 
+      // 视图里哪些是「借来的」镜像卡：计数和说明条都要用
+      const mirrors =
+        state.platform === 'all'
+          ? []
+          : filtered.filter((item) => item.mirror && item.mirror.platform === state.platform);
+      const direct = filtered.length - mirrors.length;
+
       if (countNode) {
-        countNode.textContent = `${filtered.length} 条结果`;
+        // 窄屏顶栏放不下长句：镜像卡单独说明一句就够，明细见下面的说明条
+        countNode.textContent = mirrors.length
+          ? `${filtered.length} 条结果 · 含 ${mirrors.length} 张镜像卡`
+          : `${filtered.length} 条结果`;
+      }
+
+      if (noteNode) {
+        const repos = new Map();
+        for (const item of mirrors) repos.set(item.mirror.repo, item.mirror.commits);
+        if (repos.size) {
+          const commits = [...repos.values()].reduce((sum, n) => sum + n, 0);
+          const name = mirrors[0].mirror.name || '另一个平台';
+          noteNode.textContent = `${name} 上有 ${repos.size} 个仓库是 GitHub 的镜像同步，那 ${commits} 次提交已并入 GitHub 卡。下面带「${name} 镜像」标记的 ${mirrors.length} 张就是它们，中间夹着 ${name} 独有的 ${direct} 条。`;
+          if (mirrors[0].mirror.color) noteNode.style.setProperty('--pc-note', mirrors[0].mirror.color);
+          noteNode.hidden = false;
+        } else {
+          noteNode.textContent = '';
+          noteNode.hidden = true;
+        }
       }
       if (!listNode) return;
 

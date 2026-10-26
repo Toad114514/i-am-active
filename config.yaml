@@ -33,7 +33,7 @@ platforms:
 
   # ---------------- YouTube ----------------
   youtube:
-    enabled: true
+    enabled: false
     # 频道 ID（UC 开头），抓取用；不是 @handle
     channelId: UCuNJ-CHkXLcOf41aoip4x5w
     # 频道 handle，只用于拼主页地址（https://youtube.com/<handle>）
@@ -85,6 +85,14 @@ platforms:
     maxPages: 2
     maxRows: 300
     maxRepos: 40
+    # 镜像同步的仓库：Gitee 那边只是 GitHub 的副本，同一批提交不该在时间线上
+    # 出现两次，所以这些仓库的镜像提交会被丢掉，只在 GitHub 卡里体现一次。
+    # 判据是提交 sha（镜像过去的提交两边完全一致），这里只需补「改了名」的对应
+    # 关系——短名相同的（tpaxs / Staxle / milk-fk）能自动认出来，不用写。
+    # Gitee 上真正独有的提交（直接推到 Gitee 的）照常出卡。
+    mirrors:
+      efopt: Efoptos
+      hqkillboss: huaqiangbuymelon
 
   # ---------------- 编程猫（作品归档） ----------------
   # 这个号最早的一片足迹：2021 年起在上面发布的作品（Kitten4 源码编辑器 / Nemo）。

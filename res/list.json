@@ -1903,31 +1903,17 @@
     "id": "github:repo:Toad114514/i-am-active:2026-10-26T16:13:31Z",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 6 次提交",
-    "summary": "10-27 00:13–02:18，最近一条「feat: 仓库活动按时间空档拆成多张卡；接入编程猫作品归档（2021 起 10」",
+    "title": "Toad114514/i-am-active · 4 次提交",
+    "summary": "10-27 00:13–01:19，最近一条「style: TDE 卡改回渐隐背景并缩小截图，时间线条目补摘要与页面导语」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-26T18:18:09Z",
+    "timestamp": "2026-10-26T17:19:22Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 6,
+      "count": 4,
       "changes": [
-        {
-          "text": "feat: 仓库活动按时间空档拆成多张卡；接入编程猫作品归档（2021 起 100 件）",
-          "action": "提交",
-          "component": "f23aa0b",
-          "url": "https://github.com/Toad114514/i-am-active/commit/f23aa0bda972f5756509cc2eff350ddb9be3890c",
-          "time": "2026-10-26T18:18:09Z"
-        },
-        {
-          "text": "style: TDE 截图放大并柔化边缘贴合，时间线加回到顶部按钮，分类侧栏停止吸顶",
-          "action": "提交",
-          "component": "389b47f",
-          "url": "https://github.com/Toad114514/i-am-active/commit/389b47f30417d3b94101d6412a6b3140ae4579f9",
-          "time": "2026-10-26T17:44:35Z"
-        },
         {
           "text": "style: TDE 卡改回渐隐背景并缩小截图，时间线条目补摘要与页面导语",
           "action": "提交",
@@ -1958,9 +1944,9 @@
         }
       ],
       "windowStart": "2026-10-26T16:13:31Z",
-      "windowEnd": "2026-10-26T18:18:09Z",
+      "windowEnd": "2026-10-26T17:19:22Z",
       "actions": {
-        "提交": 6
+        "提交": 4
       }
     }
   },
@@ -2337,10 +2323,10 @@
           "time": "2026-10-25T04:39:08Z"
         },
         {
-          "text": "fix(sources): 修掉 archive 与 ottohub 的 since 二次调用",
+          "text": "fix(ci): 密钥提到 job 级，build 步骤也能读到",
           "action": "提交",
-          "component": "2c7f67a",
-          "url": "https://github.com/Toad114514/i-am-active/commit/2c7f67ad67acfe7726aaf435df3c3482846c8ecd",
+          "component": "999dd48",
+          "url": "https://github.com/Toad114514/i-am-active/commit/999dd48b76c73a02f369345bdef0ea77dcc29013",
           "time": "2026-10-25T04:33:26Z"
         },
         {
@@ -2351,10 +2337,10 @@
           "time": "2026-10-25T04:33:26Z"
         },
         {
-          "text": "fix(ci): 密钥提到 job 级，build 步骤也能读到",
+          "text": "fix(sources): 修掉 archive 与 ottohub 的 since 二次调用",
           "action": "提交",
-          "component": "999dd48",
-          "url": "https://github.com/Toad114514/i-am-active/commit/999dd48b76c73a02f369345bdef0ea77dcc29013",
+          "component": "2c7f67a",
+          "url": "https://github.com/Toad114514/i-am-active/commit/2c7f67ad67acfe7726aaf435df3c3482846c8ecd",
           "time": "2026-10-25T04:33:26Z"
         },
         {
@@ -12626,43 +12612,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2026-03-29T19:15:35Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 2 次提交",
-    "summary": "03-30 03:15–03:16，最近一条「fix(main): Using apt-cache check package」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2026-03-29T19:16:00Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 2,
-      "changes": [
-        {
-          "text": "fix(main): Using apt-cache check package",
-          "action": "提交",
-          "component": "8a4058f",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/8a4058f5db662b980d24be746bf95241f772661b",
-          "time": "2026-03-29T19:16:00Z"
-        },
-        {
-          "text": "feat(shop): 游戏部分和检测安装提示",
-          "action": "提交",
-          "component": "e749b71",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/e749b71d3872dea401158537923b06955ae9cad9",
-          "time": "2026-03-29T19:15:35Z"
-        }
-      ],
-      "windowStart": "2026-03-29T19:15:35Z",
-      "windowEnd": "2026-03-29T19:16:00Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
     "id": "kuaishou:3xxuduv6schxg36",
     "platform": "kuaishou",
     "type": "视频",
@@ -12759,36 +12708,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2026-03-24T17:26:49Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 1 次提交",
-    "summary": "03-25 01:26，最近一条「feat(main): Status of tools」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2026-03-24T17:26:49Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 1,
-      "changes": [
-        {
-          "text": "feat(main): Status of tools",
-          "action": "提交",
-          "component": "9509d6f",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/9509d6f4a861f164dde6465072cacb3336bf1497",
-          "time": "2026-03-24T17:26:49Z"
-        }
-      ],
-      "windowStart": "2026-03-24T17:26:49Z",
-      "windowEnd": "2026-03-24T17:26:49Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/tpaxs:2026-03-23T17:35:18Z",
     "platform": "github",
     "type": "仓库活动",
@@ -12808,36 +12727,6 @@
           "action": "提交",
           "component": "38300bd",
           "url": "https://github.com/Toad114514/tpaxs/commit/38300bd3b6dbba39ece11402d31e425a11174685",
-          "time": "2026-03-23T17:35:18Z"
-        }
-      ],
-      "windowStart": "2026-03-23T17:35:18Z",
-      "windowEnd": "2026-03-23T17:35:18Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2026-03-23T17:35:18Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 1 次提交",
-    "summary": "03-24 01:35，最近一条「update(omz): script/p10k install」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2026-03-23T17:35:18Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 1,
-      "changes": [
-        {
-          "text": "update(omz): script/p10k install",
-          "action": "提交",
-          "component": "38300bd",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/38300bd3b6dbba39ece11402d31e425a11174685",
           "time": "2026-03-23T17:35:18Z"
         }
       ],
@@ -13128,36 +13017,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2026-03-09T19:53:13Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 1 次提交",
-    "summary": "03-10 03:53，最近一条「feat(lib): 测试中的纯bash文件选择界面」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2026-03-09T19:53:13Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 1,
-      "changes": [
-        {
-          "text": "feat(lib): 测试中的纯bash文件选择界面",
-          "action": "提交",
-          "component": "fb97c56",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/fb97c56efead329370e545c65bc6148ab87660b4",
-          "time": "2026-03-09T19:53:13Z"
-        }
-      ],
-      "windowStart": "2026-03-09T19:53:13Z",
-      "windowEnd": "2026-03-09T19:53:13Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/tpaxs:2026-03-01T17:34:23Z",
     "platform": "github",
     "type": "仓库活动",
@@ -13205,64 +13064,6 @@
           "action": "提交",
           "component": "f32ea9d",
           "url": "https://github.com/Toad114514/tpaxs/commit/f32ea9d693de3138bbddc290f37831f8bc3356bc",
-          "time": "2026-03-01T17:34:23Z"
-        }
-      ],
-      "windowStart": "2026-03-01T17:34:23Z",
-      "windowEnd": "2026-03-01T18:50:04Z",
-      "actions": {
-        "提交": 5
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2026-03-01T17:34:23Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 5 次提交",
-    "summary": "03-02 01:34–02:50，最近一条「chore(setup): Permission」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2026-03-01T18:50:04Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 5,
-      "changes": [
-        {
-          "text": "chore(setup): Permission",
-          "action": "提交",
-          "component": "2c6dff9",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/2c6dff903934b8cbf2381db3c5745df016c94a4d",
-          "time": "2026-03-01T18:50:04Z"
-        },
-        {
-          "text": "feat(main): 添加了一个未安装的提示判断",
-          "action": "提交",
-          "component": "826a8c9",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/826a8c97d0d97c11b8e8740be5abbe5b4a36b5d3",
-          "time": "2026-03-01T18:38:44Z"
-        },
-        {
-          "text": "fix(update): 修复和优化",
-          "action": "提交",
-          "component": "04058f1",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/04058f1f00fbb6d4ab2cd31a0fbb1667173c51ea",
-          "time": "2026-03-01T18:37:56Z"
-        },
-        {
-          "text": "feat(tools): 新增 .nomedia 批量创建工具",
-          "action": "提交",
-          "component": "74128a0",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/74128a0c3636a70d85a4da1c8185013683f6cfc2",
-          "time": "2026-03-01T18:18:05Z"
-        },
-        {
-          "text": "feat(setup): config 配置添加和删除",
-          "action": "提交",
-          "component": "f32ea9d",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/f32ea9d693de3138bbddc290f37831f8bc3356bc",
           "time": "2026-03-01T17:34:23Z"
         }
       ],
@@ -13364,36 +13165,6 @@
           "action": "提交",
           "component": "7e6032a",
           "url": "https://github.com/Toad114514/tpaxs/commit/7e6032ae5359e89ccb4d2838aa3ef510e7726d9f",
-          "time": "2026-02-27T04:57:36Z"
-        }
-      ],
-      "windowStart": "2026-02-27T04:57:36Z",
-      "windowEnd": "2026-02-27T04:57:36Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2026-02-27T04:57:36Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 1 次提交",
-    "summary": "02-27 12:57，最近一条「feat(shop): 添加软件」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2026-02-27T04:57:36Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 1,
-      "changes": [
-        {
-          "text": "feat(shop): 添加软件",
-          "action": "提交",
-          "component": "7e6032a",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/7e6032ae5359e89ccb4d2838aa3ef510e7726d9f",
           "time": "2026-02-27T04:57:36Z"
         }
       ],
@@ -14255,50 +14026,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-11-03T15:54:27Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 3 次提交",
-    "summary": "11-03 23:54 → 11-04 00:07，最近一条「feat(shop): 新分类 Devploments 和一些新进货软件」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-11-03T16:07:10Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 3,
-      "changes": [
-        {
-          "text": "feat(shop): 新分类 Devploments 和一些新进货软件",
-          "action": "提交",
-          "component": "b111a5d",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/b111a5d8096fe65b3dcd740b490ab535c78a7572",
-          "time": "2025-11-03T16:07:10Z"
-        },
-        {
-          "text": "feat(qcli): 新架构 x86-64",
-          "action": "提交",
-          "component": "49dc26f",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/49dc26f3e94361982be42250a7baaa6e5e699cbf",
-          "time": "2025-11-03T15:55:00Z"
-        },
-        {
-          "text": "fix(shop): some written chore",
-          "action": "提交",
-          "component": "7d6d2aa",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/7d6d2aa5fd05c3c30bea3b33d79ad7c9dc6b17ab",
-          "time": "2025-11-03T15:54:27Z"
-        }
-      ],
-      "windowStart": "2025-11-03T15:54:27Z",
-      "windowEnd": "2025-11-03T16:07:10Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
     "id": "bilibili:1129976586772152326",
     "platform": "bilibili",
     "type": "图文动态",
@@ -14571,43 +14298,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-09-18T16:24:30Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 2 次提交",
-    "summary": "09-19 00:24–00:24，最近一条「chore(main): 改了下字」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-09-18T16:24:56Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 2,
-      "changes": [
-        {
-          "text": "chore(main): 改了下字",
-          "action": "提交",
-          "component": "5d3dc57",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/5d3dc576be83a21b37c0c82bdac1a66b9a33a62d",
-          "time": "2025-09-18T16:24:56Z"
-        },
-        {
-          "text": "i18n(ollama): i18n English",
-          "action": "提交",
-          "component": "5136cef",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/5136cefe6d88fd290245b23cce434751afb4442f",
-          "time": "2025-09-18T16:24:30Z"
-        }
-      ],
-      "windowStart": "2025-09-18T16:24:30Z",
-      "windowEnd": "2025-09-18T16:24:56Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
     "id": "kuaishou:3xfare3dime98um",
     "platform": "kuaishou",
     "type": "视频",
@@ -14681,71 +14371,6 @@
           "action": "提交",
           "component": "a2b055e",
           "url": "https://github.com/Toad114514/tpaxs/commit/a2b055e6fc74b0f9bef405211979386c084713f6",
-          "time": "2025-09-16T17:03:11Z"
-        }
-      ],
-      "windowStart": "2025-09-16T17:03:11Z",
-      "windowEnd": "2025-09-16T17:37:27Z",
-      "actions": {
-        "提交": 6
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-09-16T17:03:11Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 6 次提交",
-    "summary": "09-17 01:03–01:37，最近一条「fix(main): some not important bug」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-09-16T17:37:27Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 6,
-      "changes": [
-        {
-          "text": "fix(main): some not important bug",
-          "action": "提交",
-          "component": "dc8bea1",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/dc8bea10c55d8927ee41014af87dfec01a923c9f",
-          "time": "2025-09-16T17:37:27Z"
-        },
-        {
-          "text": "feat(shop): 新工具 shop，目前仅能下载部分来自x11/多媒体的软件",
-          "action": "提交",
-          "component": "5d7393a",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/5d7393ac66ec6dfcf0c5ca6d92008d0828f304d2",
-          "time": "2025-09-16T17:37:17Z"
-        },
-        {
-          "text": "fix(qcli): 创建vm之后cdrom和vncport设置为空bugs",
-          "action": "提交",
-          "component": "0ec42ff",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/0ec42ff2b76e713b14eaa111558c4df6360f4f65",
-          "time": "2025-09-16T17:26:28Z"
-        },
-        {
-          "text": "feat(qcli): 提供挂载目录 & 磁盘等修改",
-          "action": "提交",
-          "component": "1c15db3",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/1c15db35cd98cdbc3e81d63e49e7cb87feb5c249",
-          "time": "2025-09-16T17:16:34Z"
-        },
-        {
-          "text": "chore(main): Update README.md",
-          "action": "提交",
-          "component": "2842b03",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/2842b037135e474179c711417612c92bf5ec9f5f",
-          "time": "2025-09-16T17:03:29Z"
-        },
-        {
-          "text": "feat(main): whiptail base Tool MENU",
-          "action": "提交",
-          "component": "a2b055e",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/a2b055e6fc74b0f9bef405211979386c084713f6",
           "time": "2025-09-16T17:03:11Z"
         }
       ],
@@ -14852,43 +14477,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-09-02T16:47:00Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 2 次提交",
-    "summary": "09-03 00:47–01:05，最近一条「feat(main): termux-api notifcation wake(」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-09-02T17:05:34Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 2,
-      "changes": [
-        {
-          "text": "feat(main): termux-api notifcation wake(dev)",
-          "action": "提交",
-          "component": "700a6af",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/700a6af2cbaf227bb3fde7b48d2fcd3b0ed9329b",
-          "time": "2025-09-02T17:05:34Z"
-        },
-        {
-          "text": "feat(update): Open Update intro by \"tpaxs update\"",
-          "action": "提交",
-          "component": "2bc3475",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/2bc34750caf7157247c6a4d0e1e12a0094417cbb",
-          "time": "2025-09-02T16:47:00Z"
-        }
-      ],
-      "windowStart": "2025-09-02T16:47:00Z",
-      "windowEnd": "2025-09-02T17:05:34Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/tpaxs:2025-08-31T17:02:16Z",
     "platform": "github",
     "type": "仓库活动",
@@ -14929,57 +14517,6 @@
           "action": "提交",
           "component": "3045cee",
           "url": "https://github.com/Toad114514/tpaxs/commit/3045cee50b482c22e2ee3b81eb4a365d5b260a40",
-          "time": "2025-08-31T17:02:16Z"
-        }
-      ],
-      "windowStart": "2025-08-31T17:02:16Z",
-      "windowEnd": "2025-08-31T18:11:34Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-08-31T17:02:16Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 4 次提交",
-    "summary": "09-01 01:02–02:11，最近一条「feat(qcli): new manager2.sh 修改和bug修复」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-08-31T18:11:34Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 4,
-      "changes": [
-        {
-          "text": "feat(qcli): new manager2.sh 修改和bug修复",
-          "action": "提交",
-          "component": "7db8d09",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/7db8d097b6cbd0612d7aaf6250f0939daa286bb6",
-          "time": "2025-08-31T18:11:34Z"
-        },
-        {
-          "text": "fix(update): 新的基于 git commit 式更新和修复",
-          "action": "提交",
-          "component": "56ba7dc",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/56ba7dc8eea91d23407b19c56804dbe6242eb25b",
-          "time": "2025-08-31T17:45:47Z"
-        },
-        {
-          "text": "feat(devdemo): no some how",
-          "action": "提交",
-          "component": "e516466",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/e5164669975038a82af7dd05cd51e20e25a29905",
-          "time": "2025-08-31T17:03:11Z"
-        },
-        {
-          "text": "docs(maib): 文档更新",
-          "action": "提交",
-          "component": "3045cee",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/3045cee50b482c22e2ee3b81eb4a365d5b260a40",
           "time": "2025-08-31T17:02:16Z"
         }
       ],
@@ -15740,36 +15277,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2025-06-22T17:38:57Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 1 次提交",
-    "summary": "06-23 01:38，最近一条「some Unuseful thing」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2025-06-22T17:38:57Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 1,
-      "changes": [
-        {
-          "text": "some Unuseful thing",
-          "action": "提交",
-          "component": "92b1290",
-          "url": "https://gitee.com/toadstool/staxle/commit/92b12901aeac5fe9acb783cc05848e767d78b408",
-          "time": "2025-06-22T17:38:57Z"
-        }
-      ],
-      "windowStart": "2025-06-22T17:38:57Z",
-      "windowEnd": "2025-06-22T17:38:57Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
     "id": "kuaishou:3x8ii9gb8uhcgq4",
     "platform": "kuaishou",
     "type": "视频",
@@ -15905,57 +15412,6 @@
           "action": "提交",
           "component": "ab02edc",
           "url": "https://github.com/Toad114514/tpaxs/commit/ab02edc2765036528c929d9c57509c7a9c88da19",
-          "time": "2025-06-02T19:36:07Z"
-        }
-      ],
-      "windowStart": "2025-06-02T19:36:07Z",
-      "windowEnd": "2025-06-02T19:54:48Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-06-02T19:36:07Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 4 次提交",
-    "summary": "06-03 03:36–03:54，最近一条「i18n(tdesking): Xfce4(包括精简版) & 主菜单的英文补充」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-06-02T19:54:48Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 4,
-      "changes": [
-        {
-          "text": "i18n(tdesking): Xfce4(包括精简版) & 主菜单的英文补充",
-          "action": "提交",
-          "component": "e3e3f0f",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/e3e3f0f935a6783221853cd4adc91564da011a49",
-          "time": "2025-06-02T19:54:48Z"
-        },
-        {
-          "text": "chore(msfIns): 退出方式 & msf6命令错误纠正",
-          "action": "提交",
-          "component": "a483980",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/a4839803810bcf64c195ec142136d0b16b254bc3",
-          "time": "2025-06-02T19:38:34Z"
-        },
-        {
-          "text": "chore(ollama): 修改了clone时的镜像站使用提示",
-          "action": "提交",
-          "component": "cfb48a7",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/cfb48a7e727394fc0f9a62401b02ddecfb769ea4",
-          "time": "2025-06-02T19:37:33Z"
-        },
-        {
-          "text": "feat(qcli):Update text and manager2.sh",
-          "action": "提交",
-          "component": "ab02edc",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/ab02edc2765036528c929d9c57509c7a9c88da19",
           "time": "2025-06-02T19:36:07Z"
         }
       ],
@@ -16199,57 +15655,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-04-13T20:37:10Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 4 次提交",
-    "summary": "04-14 04:37–04:38，最近一条「feat(qcli): 完工并通过基础测试 manager.sh」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-04-13T20:38:59Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 4,
-      "changes": [
-        {
-          "text": "feat(qcli): 完工并通过基础测试 manager.sh",
-          "action": "提交",
-          "component": "fcad614",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/fcad6148d92c2289feda1b7b63fc44b09379f4de",
-          "time": "2025-04-13T20:38:59Z"
-        },
-        {
-          "text": "chore(tdesking): 修改退出方式",
-          "action": "提交",
-          "component": "62f4944",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/62f494495b44f35d10bcc9f723849045f5bc6cd3",
-          "time": "2025-04-13T20:38:27Z"
-        },
-        {
-          "text": "chore(main): 修改了子脚本的运行方式，做到子脚本退出主脚本不退出",
-          "action": "提交",
-          "component": "6edcb46",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/6edcb46a939dba2492746850ec03e743343330a3",
-          "time": "2025-04-13T20:38:02Z"
-        },
-        {
-          "text": "fix(qcli): 修复 create.sh 路径错误问题",
-          "action": "提交",
-          "component": "b32ca32",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/b32ca32e64e726f4e6f7e9ae372d66ed7d3fc501",
-          "time": "2025-04-13T20:37:10Z"
-        }
-      ],
-      "windowStart": "2025-04-13T20:37:10Z",
-      "windowEnd": "2025-04-13T20:38:59Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
     "id": "kuaishou:3x2myh3zc8pfpm2",
     "platform": "kuaishou",
     "type": "视频",
@@ -16395,23 +15800,16 @@
         {
           "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
           "action": "提交",
-          "component": "0786415",
-          "url": "https://github.com/Toad114514/tpaxs/commit/07864150b14e4f951a16325038defe87cdc07222",
-          "time": "2025-04-09T16:06:49Z"
-        },
-        {
-          "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
-          "action": "提交",
           "component": "f89bfb5",
           "url": "https://github.com/Toad114514/tpaxs/commit/f89bfb5c3c7fc802b8ad086e0adc6fd78052f429",
           "time": "2025-04-09T16:06:49Z"
         },
         {
-          "text": "chore(global): 更新 tpaxs dev 版本",
+          "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
           "action": "提交",
-          "component": "3b97f77",
-          "url": "https://github.com/Toad114514/tpaxs/commit/3b97f77ec13bce38f7623aad3f121f7d2c672e45",
-          "time": "2025-04-09T16:05:58Z"
+          "component": "0786415",
+          "url": "https://github.com/Toad114514/tpaxs/commit/07864150b14e4f951a16325038defe87cdc07222",
+          "time": "2025-04-09T16:06:49Z"
         },
         {
           "text": "chore(global): 更新 tpaxs dev 版本",
@@ -16421,11 +15819,11 @@
           "time": "2025-04-09T16:05:58Z"
         },
         {
-          "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
+          "text": "chore(global): 更新 tpaxs dev 版本",
           "action": "提交",
-          "component": "0112df4",
-          "url": "https://github.com/Toad114514/tpaxs/commit/0112df496a09eae928b33f553d9c440a0a7b059e",
-          "time": "2025-04-09T16:04:27Z"
+          "component": "3b97f77",
+          "url": "https://github.com/Toad114514/tpaxs/commit/3b97f77ec13bce38f7623aad3f121f7d2c672e45",
+          "time": "2025-04-09T16:05:58Z"
         },
         {
           "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
@@ -16433,105 +15831,12 @@
           "component": "d79b2da",
           "url": "https://github.com/Toad114514/tpaxs/commit/d79b2da714aaf69e096dc6f44c15a1ad94b2f3a8",
           "time": "2025-04-09T16:04:27Z"
-        }
-      ],
-      "windowStart": "2025-04-09T16:04:27Z",
-      "windowEnd": "2025-04-09T16:35:17Z",
-      "actions": {
-        "提交": 11
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-04-09T16:04:27Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 11 次提交",
-    "summary": "04-10 00:04–00:35，最近一条「fix(qcli): 修改 .vmfolder 默认存放位置」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-04-09T16:35:17Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 11,
-      "changes": [
-        {
-          "text": "fix(qcli): 修改 .vmfolder 默认存放位置",
-          "action": "提交",
-          "component": "3cca06d",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/3cca06d38bfd14fce3063663ba9603d529ebf232",
-          "time": "2025-04-09T16:35:17Z"
-        },
-        {
-          "text": "feat(global): 新增 ${conf_path} 和 ${LANG} 全局变量及其对应使用文档",
-          "action": "提交",
-          "component": "ed6bdb7",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/ed6bdb757369a5f2448083113d95f4f8308df3f5",
-          "time": "2025-04-09T16:26:12Z"
-        },
-        {
-          "text": "git(main): 调整 update.sh 文件权限为 755",
-          "action": "提交",
-          "component": "da4578b",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/da4578bbaa3e026b481f2b0e9b467af8de15fef9",
-          "time": "2025-04-09T16:25:04Z"
-        },
-        {
-          "text": "git(main): 更新了 .gitignore",
-          "action": "提交",
-          "component": "c7d4a57",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/c7d4a570561de2c8c98008b1854598ec4afcc793",
-          "time": "2025-04-09T16:24:22Z"
-        },
-        {
-          "text": "git(repo): 操作失误了我给pull --no-rebase回来了",
-          "action": "提交",
-          "component": "ce41b6a",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/ce41b6a8b985a7c2ee80482a15218c46488f709a",
-          "time": "2025-04-09T16:17:07Z"
-        },
-        {
-          "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
-          "action": "提交",
-          "component": "0786415",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/07864150b14e4f951a16325038defe87cdc07222",
-          "time": "2025-04-09T16:06:49Z"
-        },
-        {
-          "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
-          "action": "提交",
-          "component": "f89bfb5",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/f89bfb5c3c7fc802b8ad086e0adc6fd78052f429",
-          "time": "2025-04-09T16:06:49Z"
-        },
-        {
-          "text": "chore(global): 更新 tpaxs dev 版本",
-          "action": "提交",
-          "component": "3b97f77",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/3b97f77ec13bce38f7623aad3f121f7d2c672e45",
-          "time": "2025-04-09T16:05:58Z"
-        },
-        {
-          "text": "chore(global): 更新 tpaxs dev 版本",
-          "action": "提交",
-          "component": "80e589f",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/80e589f0f02f6d4a7f25f9e7f86e9a2381e0fd77",
-          "time": "2025-04-09T16:05:58Z"
         },
         {
           "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
           "action": "提交",
           "component": "0112df4",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/0112df496a09eae928b33f553d9c440a0a7b059e",
-          "time": "2025-04-09T16:04:27Z"
-        },
-        {
-          "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
-          "action": "提交",
-          "component": "d79b2da",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/d79b2da714aaf69e096dc6f44c15a1ad94b2f3a8",
+          "url": "https://github.com/Toad114514/tpaxs/commit/0112df496a09eae928b33f553d9c440a0a7b059e",
           "time": "2025-04-09T16:04:27Z"
         }
       ],
@@ -16547,7 +15852,7 @@
     "platform": "github",
     "type": "仓库活动",
     "title": "Toad114514/tpaxs · 4 次提交",
-    "summary": "04-09 02:19–02:31，最近一条「fix(i18n): small bugs」",
+    "summary": "04-09 02:19–02:31，最近一条「fix(i18n): 小bug」",
     "url": "https://github.com/Toad114514/tpaxs",
     "image": null,
     "timestamp": "2025-04-08T18:31:11Z",
@@ -16558,17 +15863,17 @@
       "count": 4,
       "changes": [
         {
-          "text": "fix(i18n): small bugs",
-          "action": "提交",
-          "component": "1f34988",
-          "url": "https://github.com/Toad114514/tpaxs/commit/1f34988bf14b8e9c540e3a580651e3c052334871",
-          "time": "2025-04-08T18:31:11Z"
-        },
-        {
           "text": "fix(i18n): 小bug",
           "action": "提交",
           "component": "6a20dd3",
           "url": "https://github.com/Toad114514/tpaxs/commit/6a20dd391ab346905e5398ac3dfad8ff06e51752",
+          "time": "2025-04-08T18:31:11Z"
+        },
+        {
+          "text": "fix(i18n): small bugs",
+          "action": "提交",
+          "component": "1f34988",
+          "url": "https://github.com/Toad114514/tpaxs/commit/1f34988bf14b8e9c540e3a580651e3c052334871",
           "time": "2025-04-08T18:31:11Z"
         },
         {
@@ -16583,57 +15888,6 @@
           "action": "提交",
           "component": "2c55414",
           "url": "https://github.com/Toad114514/tpaxs/commit/2c55414460a4578aacc2549ac270ef5ab4a6ecfc",
-          "time": "2025-04-08T18:19:32Z"
-        }
-      ],
-      "windowStart": "2025-04-08T18:19:32Z",
-      "windowEnd": "2025-04-08T18:31:11Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-04-08T18:19:32Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 4 次提交",
-    "summary": "04-09 02:19–02:31，最近一条「fix(i18n): small bugs」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-04-08T18:31:11Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 4,
-      "changes": [
-        {
-          "text": "fix(i18n): small bugs",
-          "action": "提交",
-          "component": "1f34988",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/1f34988bf14b8e9c540e3a580651e3c052334871",
-          "time": "2025-04-08T18:31:11Z"
-        },
-        {
-          "text": "fix(i18n): 小bug",
-          "action": "提交",
-          "component": "6a20dd3",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/6a20dd391ab346905e5398ac3dfad8ff06e51752",
-          "time": "2025-04-08T18:31:11Z"
-        },
-        {
-          "text": "i18n(main): add Japanese lang (Bot-traslate)",
-          "action": "提交",
-          "component": "4a323cf",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/4a323cf0dbefdbe681a34fd3a535d592c7144b0c",
-          "time": "2025-04-08T18:28:58Z"
-        },
-        {
-          "text": "feat(qcli): add Create VM feature",
-          "action": "提交",
-          "component": "2c55414",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/2c55414460a4578aacc2549ac270ef5ab4a6ecfc",
           "time": "2025-04-08T18:19:32Z"
         }
       ],
@@ -16699,71 +15953,6 @@
           "action": "提交",
           "component": "6c65bbd",
           "url": "https://github.com/Toad114514/tpaxs/commit/6c65bbdbec8699ce343f8281b314e82f7cd7da4d",
-          "time": "2025-04-06T16:10:01Z"
-        }
-      ],
-      "windowStart": "2025-04-06T16:10:01Z",
-      "windowEnd": "2025-04-06T17:36:50Z",
-      "actions": {
-        "提交": 6
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-04-06T16:10:01Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 6 次提交",
-    "summary": "04-07 00:10–01:36，最近一条「feat(qcli): Update v0.1 to v0.21 (DEV)」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-04-06T17:36:50Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 6,
-      "changes": [
-        {
-          "text": "feat(qcli): Update v0.1 to v0.21 (DEV)",
-          "action": "提交",
-          "component": "3f5554b",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/3f5554bc77f96ae6366973b7bb89a46e132ff39a",
-          "time": "2025-04-06T17:36:50Z"
-        },
-        {
-          "text": "docs(main): Update some Docs",
-          "action": "提交",
-          "component": "e0742ba",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/e0742ba2c03d2e8a0a3a7bd7fcdcc80a482c37e7",
-          "time": "2025-04-06T16:36:42Z"
-        },
-        {
-          "text": "feat(global): Add 'tool_path' Variable",
-          "action": "提交",
-          "component": "fc8f908",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/fc8f90822bb8ff401eabe2f966223a058fa3e01f",
-          "time": "2025-04-06T16:35:59Z"
-        },
-        {
-          "text": "docs(main): README.md support English",
-          "action": "提交",
-          "component": "315e53c",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/315e53cbc2ab8968ecaaa74527bec41c69a8cd94",
-          "time": "2025-04-06T16:34:40Z"
-        },
-        {
-          "text": "chore(setup): chore some code",
-          "action": "提交",
-          "component": "c243f61",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/c243f61558827f78e41c707c492d022099ef09e2",
-          "time": "2025-04-06T16:10:47Z"
-        },
-        {
-          "text": "feat(qcli): basic check qemu status and main menu",
-          "action": "提交",
-          "component": "6c65bbd",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/6c65bbdbec8699ce343f8281b314e82f7cd7da4d",
           "time": "2025-04-06T16:10:01Z"
         }
       ],
@@ -16926,57 +16115,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-03-20T16:47:58Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 4 次提交",
-    "summary": "03-21 00:47–01:01，最近一条「fix(main): List of All tolls no English 」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-03-20T17:01:21Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 4,
-      "changes": [
-        {
-          "text": "fix(main): List of All tolls no English desc support bug",
-          "action": "提交",
-          "component": "1fcf528",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/1fcf52843c07d3390f59329825afd2d0055ba9aa",
-          "time": "2025-03-20T17:01:21Z"
-        },
-        {
-          "text": "fix(main): descEnglish Support",
-          "action": "提交",
-          "component": "baeb3a7",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/baeb3a7410d0ce1f5aea25f076d24ad54172210d",
-          "time": "2025-03-20T16:56:18Z"
-        },
-        {
-          "text": "docs(dev): Rechange and Add for info.ini template",
-          "action": "提交",
-          "component": "74a2141",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/74a214139b80c00e2fde39bbfdab5d97cfaafbd5",
-          "time": "2025-03-20T16:52:45Z"
-        },
-        {
-          "text": "feat(main): Add Desc for English support",
-          "action": "提交",
-          "component": "23c152f",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/23c152f97930481dd5f348fa23269877fb3afa4a",
-          "time": "2025-03-20T16:47:58Z"
-        }
-      ],
-      "windowStart": "2025-03-20T16:47:58Z",
-      "windowEnd": "2025-03-20T17:01:21Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
     "id": "kuaishou:3x3k563nbiasvnm",
     "platform": "kuaishou",
     "type": "视频",
@@ -17059,50 +16197,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-27T04:49:16Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 3 次提交",
-    "summary": "02-27 12:49–13:49，最近一条「feat(tools): ollama setup tools」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-27T05:49:25Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 3,
-      "changes": [
-        {
-          "text": "feat(tools): ollama setup tools",
-          "action": "提交",
-          "component": "404ed28",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/404ed2826e7633186370c322a399edd8f34a82d2",
-          "time": "2025-02-27T05:49:25Z"
-        },
-        {
-          "text": "feat(global): add some config read/write function",
-          "action": "提交",
-          "component": "2d2f555",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/2d2f5558381eb6222e75de9bda9bc07688ed2444",
-          "time": "2025-02-27T04:49:49Z"
-        },
-        {
-          "text": "docs(global): add Devloper function",
-          "action": "提交",
-          "component": "e588b74",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/e588b7411c585eaa17604cf91ad4b869da21d167",
-          "time": "2025-02-27T04:49:16Z"
-        }
-      ],
-      "windowStart": "2025-02-27T04:49:16Z",
-      "windowEnd": "2025-02-27T05:49:25Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2025-02-27T04:59:10Z",
     "platform": "github",
     "type": "仓库活动",
@@ -17122,36 +16216,6 @@
           "action": "提交",
           "component": "bd2a69b",
           "url": "https://github.com/Toad114514/Staxle/commit/bd2a69b82bf073353b639a2087a9602a127205e7",
-          "time": "2025-02-27T04:59:10Z"
-        }
-      ],
-      "windowStart": "2025-02-27T04:59:10Z",
-      "windowEnd": "2025-02-27T04:59:10Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2025-02-27T04:59:10Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 1 次提交",
-    "summary": "02-27 12:59，最近一条「docs(Readme): update readme」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2025-02-27T04:59:10Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 1,
-      "changes": [
-        {
-          "text": "docs(Readme): update readme",
-          "action": "提交",
-          "component": "bd2a69b",
-          "url": "https://gitee.com/toadstool/staxle/commit/bd2a69b82bf073353b639a2087a9602a127205e7",
           "time": "2025-02-27T04:59:10Z"
         }
       ],
@@ -17189,43 +16253,6 @@
           "action": "提交",
           "component": "c3871bb",
           "url": "https://github.com/Toad114514/tpaxs/commit/c3871bb4dc2e48f9bc32729eef8059b6f62ed2d8",
-          "time": "2025-02-26T14:40:40Z"
-        }
-      ],
-      "windowStart": "2025-02-26T14:40:40Z",
-      "windowEnd": "2025-02-26T14:46:31Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-26T14:40:40Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 2 次提交",
-    "summary": "02-26 22:40–22:46，最近一条「feat(global): function iniRead」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-26T14:46:31Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 2,
-      "changes": [
-        {
-          "text": "feat(global): function iniRead",
-          "action": "提交",
-          "component": "ddcde9d",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/ddcde9ddac3c48562a30749a6a84771fc8b4f659",
-          "time": "2025-02-26T14:46:31Z"
-        },
-        {
-          "text": "docs(global): Demo Global Readme",
-          "action": "提交",
-          "component": "c3871bb",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/c3871bb4dc2e48f9bc32729eef8059b6f62ed2d8",
           "time": "2025-02-26T14:40:40Z"
         }
       ],
@@ -17296,57 +16323,6 @@
           "action": "提交",
           "component": "d74e065",
           "url": "https://github.com/Toad114514/tpaxs/commit/d74e065211da11a3361151ee9f8238e204602c01",
-          "time": "2025-02-11T09:49:13Z"
-        }
-      ],
-      "windowStart": "2025-02-11T09:49:13Z",
-      "windowEnd": "2025-02-11T10:17:15Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-11T09:49:13Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 4 次提交",
-    "summary": "02-11 17:49–18:17，最近一条「fix(core): depend display version bug」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-11T10:17:15Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 4,
-      "changes": [
-        {
-          "text": "fix(core): depend display version bug",
-          "action": "提交",
-          "component": "0d8cd67",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/0d8cd6725a8b1464b72a8ad8aab12311bbc2ec31",
-          "time": "2025-02-11T10:17:15Z"
-        },
-        {
-          "text": "docs(dev): depend params template",
-          "action": "提交",
-          "component": "191cf00",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/191cf006ff9c35609d25a1e944f8b0ec9b53c099",
-          "time": "2025-02-11T09:54:25Z"
-        },
-        {
-          "text": "chore(tdking): check depend by core",
-          "action": "提交",
-          "component": "2adb241",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/2adb24126984d2ff813b84ae25129f2afabccfb2",
-          "time": "2025-02-11T09:52:32Z"
-        },
-        {
-          "text": "feat(core): depend check",
-          "action": "提交",
-          "component": "d74e065",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/d74e065211da11a3361151ee9f8238e204602c01",
           "time": "2025-02-11T09:49:13Z"
         }
       ],
@@ -17452,92 +16428,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-10T21:15:30Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 9 次提交",
-    "summary": "02-11 05:15–06:03，最近一条「docs(main): star history will add future」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-10T22:03:08Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 9,
-      "changes": [
-        {
-          "text": "docs(main): star history will add future",
-          "action": "提交",
-          "component": "4dead17",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/4dead17cda04e955edc50d14b49a124bf43d4f82",
-          "time": "2025-02-10T22:03:08Z"
-        },
-        {
-          "text": "chore(msf_ins): printf optimize",
-          "action": "提交",
-          "component": "c938b17",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/c938b17cbed4f67f0138b195e3c00eda830c45a9",
-          "time": "2025-02-10T22:00:09Z"
-        },
-        {
-          "text": "fix(main): cannot into bugs",
-          "action": "提交",
-          "component": "657925c",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/657925c0d050f60cc5269c0838165e7ee569934a",
-          "time": "2025-02-10T21:56:10Z"
-        },
-        {
-          "text": "docs(main): Install code",
-          "action": "提交",
-          "component": "a9abe6b",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/a9abe6bdc0613860d8676a7ea1fb272ffa3b2eb7",
-          "time": "2025-02-10T21:39:53Z"
-        },
-        {
-          "text": "feat(i18n): ls/list coms for English",
-          "action": "提交",
-          "component": "ffc8172",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/ffc81724a9b1c07639d56a5f9974e3322a5deecd",
-          "time": "2025-02-10T21:24:03Z"
-        },
-        {
-          "text": "feat(msf_ins): can auto install msf6",
-          "action": "提交",
-          "component": "0508ffd",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/0508ffdb0ce76ddf150dd74c01bc4fc3e08abb5a",
-          "time": "2025-02-10T21:16:36Z"
-        },
-        {
-          "text": "chore(global): apt_echo function",
-          "action": "提交",
-          "component": "0880d28",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/0880d28dd65d1b2713eb5e40e9d3f151b41dc889",
-          "time": "2025-02-10T21:16:14Z"
-        },
-        {
-          "text": "feat(setup): git clone select",
-          "action": "提交",
-          "component": "fb5a1c2",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/fb5a1c215bf0f203f868eb5c25ebf33cb43cd8a5",
-          "time": "2025-02-10T21:15:56Z"
-        },
-        {
-          "text": "docs(dev): Update and English Version",
-          "action": "提交",
-          "component": "48ee3ca",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/48ee3ca838f6b7f1ed1f5b4dc1384ce90bc87a8c",
-          "time": "2025-02-10T21:15:30Z"
-        }
-      ],
-      "windowStart": "2025-02-10T21:15:30Z",
-      "windowEnd": "2025-02-10T22:03:08Z",
-      "actions": {
-        "提交": 9
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/tpaxs:2025-02-10T09:27:25Z",
     "platform": "github",
     "type": "仓库活动",
@@ -17571,50 +16461,6 @@
           "action": "提交",
           "component": "ef8cda5",
           "url": "https://github.com/Toad114514/tpaxs/commit/ef8cda53b4e7e581961e3afd8b11347195d33290",
-          "time": "2025-02-10T09:27:25Z"
-        }
-      ],
-      "windowStart": "2025-02-10T09:27:25Z",
-      "windowEnd": "2025-02-10T09:31:55Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-10T09:27:25Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 3 次提交",
-    "summary": "02-10 17:27–17:31，最近一条「docs(dev): chore some word」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-10T09:31:55Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 3,
-      "changes": [
-        {
-          "text": "docs(dev): chore some word",
-          "action": "提交",
-          "component": "9e216d0",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/9e216d0dc67a6a9772006f9f84d868d9bc33bf46",
-          "time": "2025-02-10T09:31:55Z"
-        },
-        {
-          "text": "fix(main): show details dont display",
-          "action": "提交",
-          "component": "330cdbd",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/330cdbd01b54a5d0b426e633621c1a64fe48afe3",
-          "time": "2025-02-10T09:30:26Z"
-        },
-        {
-          "text": "feat(main): show tools details",
-          "action": "提交",
-          "component": "ef8cda5",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/ef8cda53b4e7e581961e3afd8b11347195d33290",
           "time": "2025-02-10T09:27:25Z"
         }
       ],
@@ -17680,71 +16526,6 @@
           "action": "提交",
           "component": "f4e336a",
           "url": "https://github.com/Toad114514/tpaxs/commit/f4e336a3123e7187eb0d7c98b193010732b31333",
-          "time": "2025-02-09T19:34:38Z"
-        }
-      ],
-      "windowStart": "2025-02-09T19:34:38Z",
-      "windowEnd": "2025-02-09T20:45:50Z",
-      "actions": {
-        "提交": 6
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-09T19:34:38Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 6 次提交",
-    "summary": "02-10 03:34–04:45，最近一条「feat(tools): msf_ins tool」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-09T20:45:50Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 6,
-      "changes": [
-        {
-          "text": "feat(tools): msf_ins tool",
-          "action": "提交",
-          "component": "0e5ff35",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/0e5ff35b0dc783f703ed3e3a908714addb5dc42c",
-          "time": "2025-02-09T20:45:50Z"
-        },
-        {
-          "text": "feat(tdking): startup tips after script create",
-          "action": "提交",
-          "component": "eaa0eb5",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/eaa0eb525a424e0f400eabfc39809dbb58fdce19",
-          "time": "2025-02-09T20:39:32Z"
-        },
-        {
-          "text": "feat(tdking): One-dragon faster install",
-          "action": "提交",
-          "component": "f793830",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/f793830c1ec3f88edf8c2736a2635240c449ac6a",
-          "time": "2025-02-09T20:35:39Z"
-        },
-        {
-          "text": "feat(tdking): tx11-legacy-drawer change",
-          "action": "提交",
-          "component": "7538cc8",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/7538cc8e6b9473c4e7123aeff8bbdbf60ec253a8",
-          "time": "2025-02-09T20:29:36Z"
-        },
-        {
-          "text": "feat(tdesking): startup scripts",
-          "action": "提交",
-          "component": "45d2581",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/45d2581f26b27c209978ccf5468e45731ace97cb",
-          "time": "2025-02-09T20:19:31Z"
-        },
-        {
-          "text": "del(tman): remove tman",
-          "action": "提交",
-          "component": "f4e336a",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/f4e336a3123e7187eb0d7c98b193010732b31333",
           "time": "2025-02-09T19:34:38Z"
         }
       ],
@@ -17951,50 +16732,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-07T08:16:17Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 3 次提交",
-    "summary": "02-07 16:16–16:17，最近一条「chore(main): hide version」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-07T08:17:00Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 3,
-      "changes": [
-        {
-          "text": "chore(main): hide version",
-          "action": "提交",
-          "component": "ccdb425",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/ccdb425e4a1cc219f3a47be440653150cc840db1",
-          "time": "2025-02-07T08:17:00Z"
-        },
-        {
-          "text": "chore(tman): use cat display",
-          "action": "提交",
-          "component": "32a4f7c",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/32a4f7c66c4f5ca7f287d080f731e52ff6652444",
-          "time": "2025-02-07T08:16:41Z"
-        },
-        {
-          "text": "add(main): tps command",
-          "action": "提交",
-          "component": "44f95e3",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/44f95e3880afbc542d3e09cd399337d038226e1e",
-          "time": "2025-02-07T08:16:17Z"
-        }
-      ],
-      "windowStart": "2025-02-07T08:16:17Z",
-      "windowEnd": "2025-02-07T08:17:00Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/tpaxs:2025-02-06T17:57:53Z",
     "platform": "github",
     "type": "仓库活动",
@@ -18039,50 +16776,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-06T17:57:53Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 3 次提交",
-    "summary": "02-07 01:57–02:05，最近一条「fix(main): bugs of command path(tman)」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-06T18:05:27Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 3,
-      "changes": [
-        {
-          "text": "fix(main): bugs of command path(tman)",
-          "action": "提交",
-          "component": "a5596ef",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/a5596ef25ad57a02726ca4f9eba69320dcc166f5",
-          "time": "2025-02-06T18:05:27Z"
-        },
-        {
-          "text": "update(global): small update",
-          "action": "提交",
-          "component": "9bc791c",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/9bc791cc47414681a5f2bb1c6282bbaefe491a02",
-          "time": "2025-02-06T18:05:00Z"
-        },
-        {
-          "text": "add(main): big update",
-          "action": "提交",
-          "component": "5e8ee7d",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/5e8ee7dd8756954810ad46037720e33d1ed1e0ca",
-          "time": "2025-02-06T17:57:53Z"
-        }
-      ],
-      "windowStart": "2025-02-06T17:57:53Z",
-      "windowEnd": "2025-02-06T18:05:27Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/tpaxs:2025-02-06T10:05:34Z",
     "platform": "github",
     "type": "仓库活动",
@@ -18102,36 +16795,6 @@
           "action": "提交",
           "component": "afcf3a1",
           "url": "https://github.com/Toad114514/tpaxs/commit/afcf3a18f9118a9f4fa1942fa047df07725a5120",
-          "time": "2025-02-06T10:05:34Z"
-        }
-      ],
-      "windowStart": "2025-02-06T10:05:34Z",
-      "windowEnd": "2025-02-06T10:05:34Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/tpaxs:2025-02-06T10:05:34Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/tpaxs · 1 次提交",
-    "summary": "02-06 18:05，最近一条「add(main): first commit」",
-    "url": "https://gitee.com/toadstool/tpaxs",
-    "image": null,
-    "timestamp": "2025-02-06T10:05:34Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/tpaxs",
-      "count": 1,
-      "changes": [
-        {
-          "text": "add(main): first commit",
-          "action": "提交",
-          "component": "afcf3a1",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/afcf3a18f9118a9f4fa1942fa047df07725a5120",
           "time": "2025-02-06T10:05:34Z"
         }
       ],
@@ -18169,43 +16832,6 @@
           "action": "提交",
           "component": "d21252d",
           "url": "https://github.com/Toad114514/Staxle/commit/d21252da79d9e8ecce201c5550f30978ad4b7a9f",
-          "time": "2025-01-25T20:08:03Z"
-        }
-      ],
-      "windowStart": "2025-01-25T20:08:03Z",
-      "windowEnd": "2025-01-25T20:12:28Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2025-01-25T20:08:03Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 2 次提交",
-    "summary": "01-26 04:08–04:12，最近一条「readme update(zh-cn)」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2025-01-25T20:12:28Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 2,
-      "changes": [
-        {
-          "text": "readme update(zh-cn)",
-          "action": "提交",
-          "component": "d1e73cd",
-          "url": "https://gitee.com/toadstool/staxle/commit/d1e73cd44ad2fbd5187b45f16c68e504c5267015",
-          "time": "2025-01-25T20:12:28Z"
-        },
-        {
-          "text": "fix(bug): server2me into bug",
-          "action": "提交",
-          "component": "d21252d",
-          "url": "https://gitee.com/toadstool/staxle/commit/d21252da79d9e8ecce201c5550f30978ad4b7a9f",
           "time": "2025-01-25T20:08:03Z"
         }
       ],
@@ -18317,106 +16943,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2025-01-21T02:39:14Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 11 次提交",
-    "summary": "01-21 10:39–12:51，最近一条「fix(bug): fix x11-apps split to strip」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2025-01-21T04:51:06Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 11,
-      "changes": [
-        {
-          "text": "fix(bug): fix x11-apps split to strip",
-          "action": "提交",
-          "component": "bbef09b",
-          "url": "https://gitee.com/toadstool/staxle/commit/bbef09b4c2ad5c58d9f40bffac4c795d1790d877",
-          "time": "2025-01-21T04:51:06Z"
-        },
-        {
-          "text": "feature(main): lxde option",
-          "action": "提交",
-          "component": "de3576a",
-          "url": "https://gitee.com/toadstool/staxle/commit/de3576a3b77fc8435f403e34d7471c880e4959f8",
-          "time": "2025-01-21T04:33:23Z"
-        },
-        {
-          "text": "fix(bug): i18n '\\n' Error",
-          "action": "提交",
-          "component": "92f2630",
-          "url": "https://gitee.com/toadstool/staxle/commit/92f2630a11bc53bbc974a22ec2330f3cff200f6e",
-          "time": "2025-01-21T04:30:25Z"
-        },
-        {
-          "text": "fix(bug): a small bug",
-          "action": "提交",
-          "component": "192e045",
-          "url": "https://gitee.com/toadstool/staxle/commit/192e045b0b146d22e91fba0a5d81d301b0d4f90d",
-          "time": "2025-01-21T04:20:03Z"
-        },
-        {
-          "text": "fix(bug): a small bug",
-          "action": "提交",
-          "component": "61698c1",
-          "url": "https://gitee.com/toadstool/staxle/commit/61698c1b882e796cb675244cd4f20ce40bbae338",
-          "time": "2025-01-21T04:16:32Z"
-        },
-        {
-          "text": "Really releases v1.05.3",
-          "action": "提交",
-          "component": "bd52ebc",
-          "url": "https://gitee.com/toadstool/staxle/commit/bd52ebc589271da7f7553721811754b6110d9ca0",
-          "time": "2025-01-21T03:59:17Z"
-        },
-        {
-          "text": "Merge branch 'dev'",
-          "action": "提交",
-          "component": "47d0ee8",
-          "url": "https://gitee.com/toadstool/staxle/commit/47d0ee8529c1df416ebd731c95c524981fb4c7b9",
-          "time": "2025-01-21T03:59:02Z"
-        },
-        {
-          "text": "git tree",
-          "action": "提交",
-          "component": "7adeef7",
-          "url": "https://gitee.com/toadstool/staxle/commit/7adeef72ee4dd315cd2c3620b866ff80cdc36b94",
-          "time": "2025-01-21T03:57:16Z"
-        },
-        {
-          "text": "Release(main): v1.05.3",
-          "action": "提交",
-          "component": "67804df",
-          "url": "https://gitee.com/toadstool/staxle/commit/67804dfafd6815c2f95bcd69f69f121a945b4032",
-          "time": "2025-01-21T03:52:51Z"
-        },
-        {
-          "text": "feature(main): add xfce4 new display by noVNC",
-          "action": "提交",
-          "component": "9d1e75f",
-          "url": "https://gitee.com/toadstool/staxle/commit/9d1e75f3376f46a34b7e60fe0c25e34609fc5e48",
-          "time": "2025-01-21T02:56:49Z"
-        },
-        {
-          "text": "feature(main): lxqt desktop install and x11-apps",
-          "action": "提交",
-          "component": "48f0bb6",
-          "url": "https://gitee.com/toadstool/staxle/commit/48f0bb6d4c52247b3fa4a11d8312ff3ed105f1ce",
-          "time": "2025-01-21T02:39:14Z"
-        }
-      ],
-      "windowStart": "2025-01-21T02:39:14Z",
-      "windowEnd": "2025-01-21T04:51:06Z",
-      "actions": {
-        "提交": 11
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2025-01-20T18:32:23Z",
     "platform": "github",
     "type": "仓库活动",
@@ -18454,43 +16980,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2025-01-20T18:32:23Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 2 次提交",
-    "summary": "01-21 02:32–02:33，最近一条「add(webpy): add desktop termux-x11 setti」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2025-01-20T18:33:11Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 2,
-      "changes": [
-        {
-          "text": "add(webpy): add desktop termux-x11 settings",
-          "action": "提交",
-          "component": "200efb0",
-          "url": "https://gitee.com/toadstool/staxle/commit/200efb0151ef6e4d6d20f27597e3431e202e1ffb",
-          "time": "2025-01-20T18:33:11Z"
-        },
-        {
-          "text": "fix(bug): rechange i18n system version",
-          "action": "提交",
-          "component": "fb81912",
-          "url": "https://gitee.com/toadstool/staxle/commit/fb81912a95e3b6e9e28b5edfbbbd4541dc673111",
-          "time": "2025-01-20T18:32:23Z"
-        }
-      ],
-      "windowStart": "2025-01-20T18:32:23Z",
-      "windowEnd": "2025-01-20T18:33:11Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2025-01-19T15:57:30Z",
     "platform": "github",
     "type": "仓库活动",
@@ -18510,36 +16999,6 @@
           "action": "提交",
           "component": "f82b455",
           "url": "https://github.com/Toad114514/Staxle/commit/f82b455ad1b87b24e79c9d84604f66a44cc9fedf",
-          "time": "2025-01-19T15:57:30Z"
-        }
-      ],
-      "windowStart": "2025-01-19T15:57:30Z",
-      "windowEnd": "2025-01-19T15:57:30Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2025-01-19T15:57:30Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 1 次提交",
-    "summary": "01-19 23:57，最近一条「i18n(add): termux tool menu i18n」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2025-01-19T15:57:30Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 1,
-      "changes": [
-        {
-          "text": "i18n(add): termux tool menu i18n",
-          "action": "提交",
-          "component": "f82b455",
-          "url": "https://gitee.com/toadstool/staxle/commit/f82b455ad1b87b24e79c9d84604f66a44cc9fedf",
           "time": "2025-01-19T15:57:30Z"
         }
       ],
@@ -18584,50 +17043,6 @@
           "action": "提交",
           "component": "011fc7f",
           "url": "https://github.com/Toad114514/Staxle/commit/011fc7f47d85b5a85e8043642309226e1bf97af3",
-          "time": "2025-01-19T10:32:43Z"
-        }
-      ],
-      "windowStart": "2025-01-19T10:32:43Z",
-      "windowEnd": "2025-01-19T10:41:53Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2025-01-19T10:32:43Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 3 次提交",
-    "summary": "01-19 18:32–18:41，最近一条「gitignore add」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2025-01-19T10:41:53Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 3,
-      "changes": [
-        {
-          "text": "gitignore add",
-          "action": "提交",
-          "component": "f942efc",
-          "url": "https://gitee.com/toadstool/staxle/commit/f942efc77726d5f34f1611671945e933bedab574",
-          "time": "2025-01-19T10:41:53Z"
-        },
-        {
-          "text": "fix(bug): add new i18n text (line)",
-          "action": "提交",
-          "component": "f889070",
-          "url": "https://gitee.com/toadstool/staxle/commit/f8890709e69cc57b5286f44091ea073d000bce33",
-          "time": "2025-01-19T10:34:52Z"
-        },
-        {
-          "text": "change(setup): remove setup tool select and option set",
-          "action": "提交",
-          "component": "011fc7f",
-          "url": "https://gitee.com/toadstool/staxle/commit/011fc7f47d85b5a85e8043642309226e1bf97af3",
           "time": "2025-01-19T10:32:43Z"
         }
       ],
@@ -18764,36 +17179,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-12-31T19:33:55Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 1 次提交",
-    "summary": "01-01 03:33，最近一条「add(web.py): add termux-x11 install/star」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-12-31T19:33:55Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 1,
-      "changes": [
-        {
-          "text": "add(web.py): add termux-x11 install/start",
-          "action": "提交",
-          "component": "3fc04b8",
-          "url": "https://gitee.com/toadstool/staxle/commit/3fc04b811d3e80296d896d7d254573755867f0ef",
-          "time": "2024-12-31T19:33:55Z"
-        }
-      ],
-      "windowStart": "2024-12-31T19:33:55Z",
-      "windowEnd": "2024-12-31T19:33:55Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2024-12-28T07:38:35Z",
     "platform": "github",
     "type": "仓库活动",
@@ -18813,36 +17198,6 @@
           "action": "提交",
           "component": "9581d80",
           "url": "https://github.com/Toad114514/Staxle/commit/9581d8073dde88b321b36f4114c076fbd8e51b11",
-          "time": "2024-12-28T07:38:35Z"
-        }
-      ],
-      "windowStart": "2024-12-28T07:38:35Z",
-      "windowEnd": "2024-12-28T07:38:35Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-12-28T07:38:35Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 1 次提交",
-    "summary": "12-28 15:38，最近一条「i18n(add): add Server Language」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-12-28T07:38:35Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 1,
-      "changes": [
-        {
-          "text": "i18n(add): add Server Language",
-          "action": "提交",
-          "component": "9581d80",
-          "url": "https://gitee.com/toadstool/staxle/commit/9581d8073dde88b321b36f4114c076fbd8e51b11",
           "time": "2024-12-28T07:38:35Z"
         }
       ],
@@ -18903,36 +17258,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-12-24T17:47:43Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 1 次提交",
-    "summary": "12-25 01:47，最近一条「feature(main): add android12 Process kil」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-12-24T17:47:43Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 1,
-      "changes": [
-        {
-          "text": "feature(main): add android12 Process killer(signal 9) fix",
-          "action": "提交",
-          "component": "d8c9661",
-          "url": "https://gitee.com/toadstool/staxle/commit/d8c966144adc2a4e40f5afa25d14ce5249f8a4c6",
-          "time": "2024-12-24T17:47:43Z"
-        }
-      ],
-      "windowStart": "2024-12-24T17:47:43Z",
-      "windowEnd": "2024-12-24T17:47:43Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2024-12-23T17:24:15Z",
     "platform": "github",
     "type": "仓库活动",
@@ -18970,43 +17295,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-12-23T17:24:15Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 2 次提交",
-    "summary": "12-24 01:24–01:49，最近一条「install(main): add something」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-12-23T17:49:24Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 2,
-      "changes": [
-        {
-          "text": "install(main): add something",
-          "action": "提交",
-          "component": "2548153",
-          "url": "https://gitee.com/toadstool/staxle/commit/254815326173a1652968a2cad13f95e8fe5bedf7",
-          "time": "2024-12-23T17:49:24Z"
-        },
-        {
-          "text": "feature(webpy): Terminal by Web",
-          "action": "提交",
-          "component": "1e1b71b",
-          "url": "https://gitee.com/toadstool/staxle/commit/1e1b71bf3a7a8a001feaea3c616002b3d414b59a",
-          "time": "2024-12-23T17:24:15Z"
-        }
-      ],
-      "windowStart": "2024-12-23T17:24:15Z",
-      "windowEnd": "2024-12-23T17:49:24Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2024-12-23T05:45:08Z",
     "platform": "github",
     "type": "仓库活动",
@@ -19026,36 +17314,6 @@
           "action": "提交",
           "component": "5004c37",
           "url": "https://github.com/Toad114514/Staxle/commit/5004c370a74d65844a890681cb11f7a910394aee",
-          "time": "2024-12-23T05:45:08Z"
-        }
-      ],
-      "windowStart": "2024-12-23T05:45:08Z",
-      "windowEnd": "2024-12-23T05:45:08Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-12-23T05:45:08Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 1 次提交",
-    "summary": "12-23 13:45，最近一条「fix(main): language bug」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-12-23T05:45:08Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 1,
-      "changes": [
-        {
-          "text": "fix(main): language bug",
-          "action": "提交",
-          "component": "5004c37",
-          "url": "https://gitee.com/toadstool/staxle/commit/5004c370a74d65844a890681cb11f7a910394aee",
           "time": "2024-12-23T05:45:08Z"
         }
       ],
@@ -19107,57 +17365,6 @@
           "action": "提交",
           "component": "6f35a4c",
           "url": "https://github.com/Toad114514/Staxle/commit/6f35a4c01890b2ab2a4c5643ff3f1c129a11593b",
-          "time": "2024-12-21T12:21:55Z"
-        }
-      ],
-      "windowStart": "2024-12-21T12:21:55Z",
-      "windowEnd": "2024-12-21T13:04:20Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-12-21T12:21:55Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 4 次提交",
-    "summary": "12-21 20:21–21:04，最近一条「feature(main): any update」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-12-21T13:04:20Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 4,
-      "changes": [
-        {
-          "text": "feature(main): any update",
-          "action": "提交",
-          "component": "812aaf2",
-          "url": "https://gitee.com/toadstool/staxle/commit/812aaf2b12d1e85236db60d0fb58d25880f46558",
-          "time": "2024-12-21T13:04:20Z"
-        },
-        {
-          "text": "add(i18n): add English support",
-          "action": "提交",
-          "component": "007a6d9",
-          "url": "https://gitee.com/toadstool/staxle/commit/007a6d90d6bb9a9e8b1d5adb5a9f4a6224936787",
-          "time": "2024-12-21T12:49:38Z"
-        },
-        {
-          "text": "fix(main): fix bugs for output",
-          "action": "提交",
-          "component": "ea1f1a9",
-          "url": "https://gitee.com/toadstool/staxle/commit/ea1f1a92da4bb6ad94c3bffe03458658e9ad7df7",
-          "time": "2024-12-21T12:48:35Z"
-        },
-        {
-          "text": "feature(main): add i18n support",
-          "action": "提交",
-          "component": "6f35a4c",
-          "url": "https://gitee.com/toadstool/staxle/commit/6f35a4c01890b2ab2a4c5643ff3f1c129a11593b",
           "time": "2024-12-21T12:21:55Z"
         }
       ],
@@ -19347,127 +17554,6 @@
           "action": "提交",
           "component": "391a2bf",
           "url": "https://github.com/Toad114514/Staxle/commit/391a2bf68cc761fa464339ae7ca3cb4f23950c4f",
-          "time": "2024-12-07T07:12:50Z"
-        }
-      ],
-      "windowStart": "2024-12-07T07:12:50Z",
-      "windowEnd": "2024-12-07T12:16:36Z",
-      "actions": {
-        "提交": 14
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-12-07T07:12:50Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 14 次提交",
-    "summary": "12-07 15:12–20:16，最近一条「main(branch): ✓8 small tipss」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-12-07T12:16:36Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 14,
-      "changes": [
-        {
-          "text": "main(branch): ✓8 small tipss",
-          "action": "提交",
-          "component": "85229db",
-          "url": "https://gitee.com/toadstool/staxle/commit/85229db6f5a46d538963194ddc334ac6044884f8",
-          "time": "2024-12-07T12:16:36Z"
-        },
-        {
-          "text": "dev(branch): ✓8 tips in readme.md",
-          "action": "提交",
-          "component": "21f0af0",
-          "url": "https://gitee.com/toadstool/staxle/commit/21f0af0435e3ea94abbe2fbb15dbe19c501d31c0",
-          "time": "2024-12-07T12:12:01Z"
-        },
-        {
-          "text": "feature(main): add skip apt update and upgrade option",
-          "action": "提交",
-          "component": "04ca488",
-          "url": "https://gitee.com/toadstool/staxle/commit/04ca48801be74fa71b0398cbcab99bd77090484d",
-          "time": "2024-12-07T11:46:50Z"
-        },
-        {
-          "text": "fix(webpy):bugs",
-          "action": "提交",
-          "component": "28b47f6",
-          "url": "https://gitee.com/toadstool/staxle/commit/28b47f69b8ab525f1bb7ecb6cb2349882d1e7335",
-          "time": "2024-12-07T10:35:56Z"
-        },
-        {
-          "text": "feature(main): config save plan change",
-          "action": "提交",
-          "component": "c29b11c",
-          "url": "https://gitee.com/toadstool/staxle/commit/c29b11c3fe88860190fd8c15d4dd61afeac6dcdf",
-          "time": "2024-12-07T10:04:03Z"
-        },
-        {
-          "text": "fix(main): xfce4 install bugs",
-          "action": "提交",
-          "component": "7ae1962",
-          "url": "https://gitee.com/toadstool/staxle/commit/7ae1962150d7d4f5bfd9e34dddc0f1da045be7e4",
-          "time": "2024-12-07T09:06:02Z"
-        },
-        {
-          "text": "feature(main): add timg/mpd/mpv/musicfox install",
-          "action": "提交",
-          "component": "d59a8b0",
-          "url": "https://gitee.com/toadstool/staxle/commit/d59a8b01549132e0ea320bf5e23ffe60eec21127",
-          "time": "2024-12-07T07:42:14Z"
-        },
-        {
-          "text": "code(main): .gitignore",
-          "action": "提交",
-          "component": "e214ce7",
-          "url": "https://gitee.com/toadstool/staxle/commit/e214ce7e13dc976c2cbc35902720b781bb86cc7c",
-          "time": "2024-12-07T07:39:13Z"
-        },
-        {
-          "text": "code(main): rename .gitinore",
-          "action": "提交",
-          "component": "d0bb222",
-          "url": "https://gitee.com/toadstool/staxle/commit/d0bb222862eccf4ba25d8b312cf66dfcc12a2aed",
-          "time": "2024-12-07T07:23:00Z"
-        },
-        {
-          "text": "feature(webpy-core): remove nginx install check",
-          "action": "提交",
-          "component": "048c775",
-          "url": "https://gitee.com/toadstool/staxle/commit/048c775e43da71be4f233c6a77cff6d02d3b6817",
-          "time": "2024-12-07T07:16:17Z"
-        },
-        {
-          "text": "code(qemd): folder vm keep in remote repos",
-          "action": "提交",
-          "component": "da52b51",
-          "url": "https://gitee.com/toadstool/staxle/commit/da52b5173f8e2b255816f83572b264b37c7c4f04",
-          "time": "2024-12-07T07:15:37Z"
-        },
-        {
-          "text": "code(main): add .gitinore and change setup.sh",
-          "action": "提交",
-          "component": "f45b273",
-          "url": "https://gitee.com/toadstool/staxle/commit/f45b273b22afe13f409d41e0986d879f6976b08d",
-          "time": "2024-12-07T07:15:02Z"
-        },
-        {
-          "text": "code(webpy): write big cake",
-          "action": "提交",
-          "component": "7647c8c",
-          "url": "https://gitee.com/toadstool/staxle/commit/7647c8c73dfe1f525e902e2abf6adb5d2ab3c567",
-          "time": "2024-12-07T07:14:14Z"
-        },
-        {
-          "text": "feature(main): Add Xfce4 install option",
-          "action": "提交",
-          "component": "391a2bf",
-          "url": "https://gitee.com/toadstool/staxle/commit/391a2bf68cc761fa464339ae7ca3cb4f23950c4f",
           "time": "2024-12-07T07:12:50Z"
         }
       ],
@@ -19938,64 +18024,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-11-06T16:36:30Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 5 次提交",
-    "summary": "11-07 00:36–01:22，最近一条「New(main): Releases 1.05.2」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-11-06T17:22:48Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 5,
-      "changes": [
-        {
-          "text": "New(main): Releases 1.05.2",
-          "action": "提交",
-          "component": "21ae4bf",
-          "url": "https://gitee.com/toadstool/staxle/commit/21ae4bf0450de7d0870cadaff24cf18029a4c84c",
-          "time": "2024-11-06T17:22:48Z"
-        },
-        {
-          "text": "feature(main): added mysql",
-          "action": "提交",
-          "component": "a024381",
-          "url": "https://gitee.com/toadstool/staxle/commit/a0243810a9d70faf63b898c04227b6f933158e3a",
-          "time": "2024-11-06T17:14:44Z"
-        },
-        {
-          "text": "change(main): changed metasploit install",
-          "action": "提交",
-          "component": "843ceef",
-          "url": "https://gitee.com/toadstool/staxle/commit/843ceefe43124a96b022b7e52bb107c4da700e74",
-          "time": "2024-11-06T17:06:31Z"
-        },
-        {
-          "text": "fix(main): option 11,12 of termux bugs",
-          "action": "提交",
-          "component": "02ca915",
-          "url": "https://gitee.com/toadstool/staxle/commit/02ca9153dd752a711670d354b5a97346d101b771",
-          "time": "2024-11-06T16:42:41Z"
-        },
-        {
-          "text": "feature(core): added github clone mirror feature",
-          "action": "提交",
-          "component": "e68b7c7",
-          "url": "https://gitee.com/toadstool/staxle/commit/e68b7c7cc961c4c01f79d01e44bb75dbbea323e8",
-          "time": "2024-11-06T16:36:30Z"
-        }
-      ],
-      "windowStart": "2024-11-06T16:36:30Z",
-      "windowEnd": "2024-11-06T17:22:48Z",
-      "actions": {
-        "提交": 5
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2024-11-05T16:48:52Z",
     "platform": "github",
     "type": "仓库活动",
@@ -20036,57 +18064,6 @@
           "action": "提交",
           "component": "6bbe779",
           "url": "https://github.com/Toad114514/Staxle/commit/6bbe779b177886a88f8045b83b2e86a50f577cb0",
-          "time": "2024-11-05T16:48:52Z"
-        }
-      ],
-      "windowStart": "2024-11-05T16:48:52Z",
-      "windowEnd": "2024-11-05T18:41:32Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-11-05T16:48:52Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 4 次提交",
-    "summary": "11-06 00:48–02:41，最近一条「feature(main): add tools setup check」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-11-05T18:41:32Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 4,
-      "changes": [
-        {
-          "text": "feature(main): add tools setup check",
-          "action": "提交",
-          "component": "8ab2999",
-          "url": "https://gitee.com/toadstool/staxle/commit/8ab2999353b04565843270f07756ce4cb3d76e1d",
-          "time": "2024-11-05T18:41:32Z"
-        },
-        {
-          "text": "feature(main): add config files",
-          "action": "提交",
-          "component": "9ed270f",
-          "url": "https://gitee.com/toadstool/staxle/commit/9ed270fda3cc5a7a8812675ed6bb124a3dccc495",
-          "time": "2024-11-05T18:08:51Z"
-        },
-        {
-          "text": "fix(webpy): fix passwd set bug",
-          "action": "提交",
-          "component": "5394ffc",
-          "url": "https://gitee.com/toadstool/staxle/commit/5394ffc655f4d69c7f0901085e0601b26c14adbd",
-          "time": "2024-11-05T17:16:38Z"
-        },
-        {
-          "text": "feature(main): remake update system",
-          "action": "提交",
-          "component": "6bbe779",
-          "url": "https://gitee.com/toadstool/staxle/commit/6bbe779b177886a88f8045b83b2e86a50f577cb0",
           "time": "2024-11-05T16:48:52Z"
         }
       ],
@@ -20163,71 +18140,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-11-04T19:20:43Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 6 次提交",
-    "summary": "11-05 03:20–03:28，最近一条「repo(update): README.md」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-11-04T19:28:08Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 6,
-      "changes": [
-        {
-          "text": "repo(update): README.md",
-          "action": "提交",
-          "component": "cd82cdc",
-          "url": "https://gitee.com/toadstool/staxle/commit/cd82cdc67f8857a62a89b1d1b886ff03b0e32d74",
-          "time": "2024-11-04T19:28:08Z"
-        },
-        {
-          "text": "repo(del): nothing files",
-          "action": "提交",
-          "component": "4c0ddb5",
-          "url": "https://gitee.com/toadstool/staxle/commit/4c0ddb5d5c08f9531250f40765c082b30900b142",
-          "time": "2024-11-04T19:25:23Z"
-        },
-        {
-          "text": "repo(delect): delect bash script menu",
-          "action": "提交",
-          "component": "a1717d6",
-          "url": "https://gitee.com/toadstool/staxle/commit/a1717d677d343b046ace52f150ee5e662e345372",
-          "time": "2024-11-04T19:22:37Z"
-        },
-        {
-          "text": "repo(delect): delect bash script menu",
-          "action": "提交",
-          "component": "b08a014",
-          "url": "https://gitee.com/toadstool/staxle/commit/b08a014fe20b63b8930d5c3f89fd078c05f7a731",
-          "time": "2024-11-04T19:22:10Z"
-        },
-        {
-          "text": "tools(qemd): fix some small bugs",
-          "action": "提交",
-          "component": "de3ef94",
-          "url": "https://gitee.com/toadstool/staxle/commit/de3ef94d4cd69dd31331e1f6689781318a159b99",
-          "time": "2024-11-04T19:21:24Z"
-        },
-        {
-          "text": "install(setup.sh): new setup wizard script",
-          "action": "提交",
-          "component": "9dce2eb",
-          "url": "https://gitee.com/toadstool/staxle/commit/9dce2eb08e295d8a7fce367eddf9123b3891ffd1",
-          "time": "2024-11-04T19:20:43Z"
-        }
-      ],
-      "windowStart": "2024-11-04T19:20:43Z",
-      "windowEnd": "2024-11-04T19:28:08Z",
-      "actions": {
-        "提交": 6
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2024-11-03T08:40:21Z",
     "platform": "github",
     "type": "仓库活动",
@@ -20261,50 +18173,6 @@
           "action": "提交",
           "component": "7a57147",
           "url": "https://github.com/Toad114514/Staxle/commit/7a57147c0f2bc943dbaa224f7c8de9dc67ec790e",
-          "time": "2024-11-03T08:40:21Z"
-        }
-      ],
-      "windowStart": "2024-11-03T08:40:21Z",
-      "windowEnd": "2024-11-03T08:41:54Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-11-03T08:40:21Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 3 次提交",
-    "summary": "11-03 16:40–16:41，最近一条「[i18n] Delect i18n support」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-11-03T08:41:54Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 3,
-      "changes": [
-        {
-          "text": "[i18n] Delect i18n support",
-          "action": "提交",
-          "component": "39633b6",
-          "url": "https://gitee.com/toadstool/staxle/commit/39633b67718b4af895ccd4958e22c46b60982434",
-          "time": "2024-11-03T08:41:54Z"
-        },
-        {
-          "text": "[bug]",
-          "action": "提交",
-          "component": "fab3f1d",
-          "url": "https://gitee.com/toadstool/staxle/commit/fab3f1d50a3312aaa07635ae7c4257e0a6db6f0c",
-          "time": "2024-11-03T08:40:41Z"
-        },
-        {
-          "text": "[bash-menu] New Bash Menu",
-          "action": "提交",
-          "component": "7a57147",
-          "url": "https://gitee.com/toadstool/staxle/commit/7a57147c0f2bc943dbaa224f7c8de9dc67ec790e",
           "time": "2024-11-03T08:40:21Z"
         }
       ],
@@ -20431,113 +18299,6 @@
           "action": "提交",
           "component": "2a57cbe",
           "url": "https://github.com/Toad114514/Staxle/commit/2a57cbe92893286df0f30cdd9483e67ff9172713",
-          "time": "2024-10-28T16:24:39Z"
-        }
-      ],
-      "windowStart": "2024-10-28T16:24:39Z",
-      "windowEnd": "2024-10-28T17:45:36Z",
-      "actions": {
-        "提交": 12
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-10-28T16:24:39Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 12 次提交",
-    "summary": "10-29 00:24–01:45，最近一条「[webpanel] add panel login toast and cod」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-10-28T17:45:36Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 12,
-      "changes": [
-        {
-          "text": "[webpanel] add panel login toast and code-server new action",
-          "action": "提交",
-          "component": "7dd8a0b",
-          "url": "https://gitee.com/toadstool/staxle/commit/7dd8a0b7582353c2e13232e2d80bb11ad2b7b5d1",
-          "time": "2024-10-28T17:45:36Z"
-        },
-        {
-          "text": "[webpanel] add panel login toast and code-server new action",
-          "action": "提交",
-          "component": "b45d7dc",
-          "url": "https://gitee.com/toadstool/staxle/commit/b45d7dc1d4c9e64a2e708680f8aef70e9067f4c6",
-          "time": "2024-10-28T17:45:12Z"
-        },
-        {
-          "text": "[feature] i18n support and setup.py",
-          "action": "提交",
-          "component": "e44e46e",
-          "url": "https://gitee.com/toadstool/staxle/commit/e44e46ee3e1922db5f31677d899a223de387c74d",
-          "time": "2024-10-28T17:34:30Z"
-        },
-        {
-          "text": "[readme] upload",
-          "action": "提交",
-          "component": "578efd6",
-          "url": "https://gitee.com/toadstool/staxle/commit/578efd6e5338edb0293db3805bb20ddd1f9e6de0",
-          "time": "2024-10-28T16:54:50Z"
-        },
-        {
-          "text": "[readme] upload",
-          "action": "提交",
-          "component": "55d4cbb",
-          "url": "https://gitee.com/toadstool/staxle/commit/55d4cbbfc6440ae692500b3987287dd327f0d3c7",
-          "time": "2024-10-28T16:53:00Z"
-        },
-        {
-          "text": "[readme] upload",
-          "action": "提交",
-          "component": "38ed28a",
-          "url": "https://gitee.com/toadstool/staxle/commit/38ed28a51a308b44999dedf844231e5c93b6822a",
-          "time": "2024-10-28T16:43:02Z"
-        },
-        {
-          "text": "[readme] upload",
-          "action": "提交",
-          "component": "24ba44f",
-          "url": "https://gitee.com/toadstool/staxle/commit/24ba44f575a176914e6e6a1c79e341131889c8cd",
-          "time": "2024-10-28T16:40:16Z"
-        },
-        {
-          "text": "[readme] upload",
-          "action": "提交",
-          "component": "ca4d046",
-          "url": "https://gitee.com/toadstool/staxle/commit/ca4d04603dd4b56bed30846598bcbe261fecd40d",
-          "time": "2024-10-28T16:28:27Z"
-        },
-        {
-          "text": "[readme] upload",
-          "action": "提交",
-          "component": "cd1bc8e",
-          "url": "https://gitee.com/toadstool/staxle/commit/cd1bc8e29274487e60590baf60f25124a3c025d2",
-          "time": "2024-10-28T16:27:44Z"
-        },
-        {
-          "text": "[readme] upload",
-          "action": "提交",
-          "component": "26287be",
-          "url": "https://gitee.com/toadstool/staxle/commit/26287be3e0023d10c7486f6735b246808088144a",
-          "time": "2024-10-28T16:26:43Z"
-        },
-        {
-          "text": "[chexo] path change",
-          "action": "提交",
-          "component": "3df5dcd",
-          "url": "https://gitee.com/toadstool/staxle/commit/3df5dcd6892420852b7a181541a09f5d0ba1e0ca",
-          "time": "2024-10-28T16:25:04Z"
-        },
-        {
-          "text": "[chexo] path change",
-          "action": "提交",
-          "component": "2a57cbe",
-          "url": "https://gitee.com/toadstool/staxle/commit/2a57cbe92893286df0f30cdd9483e67ff9172713",
           "time": "2024-10-28T16:24:39Z"
         }
       ],
@@ -20800,71 +18561,6 @@
           "action": "提交",
           "component": "41308fd",
           "url": "https://github.com/Toad114514/Staxle/commit/41308fd31d887c0a7c1471bac7171d86e5921fc3",
-          "time": "2024-10-24T17:15:44Z"
-        }
-      ],
-      "windowStart": "2024-10-24T17:15:44Z",
-      "windowEnd": "2024-10-24T17:52:55Z",
-      "actions": {
-        "提交": 6
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-10-24T17:15:44Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 6 次提交",
-    "summary": "10-25 01:15–01:52，最近一条「[Releases] New Releases 1.05.1」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-10-24T17:52:55Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 6,
-      "changes": [
-        {
-          "text": "[Releases] New Releases 1.05.1",
-          "action": "提交",
-          "component": "8b28fff",
-          "url": "https://gitee.com/toadstool/staxle/commit/8b28ffff861824b1c0b259768b5db8cbef94f0ba",
-          "time": "2024-10-24T17:52:55Z"
-        },
-        {
-          "text": "[webpanel] add panel password",
-          "action": "提交",
-          "component": "24d663b",
-          "url": "https://gitee.com/toadstool/staxle/commit/24d663b0f917dc37bdb99f97a84b18e84dc9dc98",
-          "time": "2024-10-24T17:46:56Z"
-        },
-        {
-          "text": "[webpanel] add panel password",
-          "action": "提交",
-          "component": "e5cfda3",
-          "url": "https://gitee.com/toadstool/staxle/commit/e5cfda31885b3899542eb93ec356ef32aebe9660",
-          "time": "2024-10-24T17:46:17Z"
-        },
-        {
-          "text": "[qemd] qemu-img generate path rechange and config rechange",
-          "action": "提交",
-          "component": "c47bf60",
-          "url": "https://gitee.com/toadstool/staxle/commit/c47bf6017f393fbdb6b1218f3c4dba60c5b2d0da",
-          "time": "2024-10-24T17:26:18Z"
-        },
-        {
-          "text": "[qemd] New qemd tools",
-          "action": "提交",
-          "component": "baac1ce",
-          "url": "https://gitee.com/toadstool/staxle/commit/baac1cea43172b1960654bceb60afda12b97e874",
-          "time": "2024-10-24T17:16:05Z"
-        },
-        {
-          "text": "[qemd] New qemd tools",
-          "action": "提交",
-          "component": "41308fd",
-          "url": "https://gitee.com/toadstool/staxle/commit/41308fd31d887c0a7c1471bac7171d86e5921fc3",
           "time": "2024-10-24T17:15:44Z"
         }
       ],
@@ -21417,57 +19113,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-10-17T17:08:19Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 4 次提交",
-    "summary": "10-18 01:08–01:44，最近一条「[Server2me] mainmenu simple info minimal」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-10-17T17:44:33Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 4,
-      "changes": [
-        {
-          "text": "[Server2me] mainmenu simple info minimal",
-          "action": "提交",
-          "component": "5344a74",
-          "url": "https://gitee.com/toadstool/staxle/commit/5344a74c1d1d6a7bae605c0e82a7c169a26341c0",
-          "time": "2024-10-17T17:44:33Z"
-        },
-        {
-          "text": "[feature] lazymux script install option",
-          "action": "提交",
-          "component": "afa3269",
-          "url": "https://gitee.com/toadstool/staxle/commit/afa3269ff57058e73a9b51db7eedd0acbe6a43ea",
-          "time": "2024-10-17T17:34:35Z"
-        },
-        {
-          "text": "[WebPanel] New Nginx Panel Button",
-          "action": "提交",
-          "component": "646513a",
-          "url": "https://gitee.com/toadstool/staxle/commit/646513a78c34010096134c51e0a0c0b1ff193ba9",
-          "time": "2024-10-17T17:27:02Z"
-        },
-        {
-          "text": "[Readme.md] Update something",
-          "action": "提交",
-          "component": "0be4ed4",
-          "url": "https://gitee.com/toadstool/staxle/commit/0be4ed4dd9a0288f53ed456fb3d15add70c60011",
-          "time": "2024-10-17T17:08:19Z"
-        }
-      ],
-      "windowStart": "2024-10-17T17:08:19Z",
-      "windowEnd": "2024-10-17T17:44:33Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2024-10-17T05:43:43Z",
     "platform": "github",
     "type": "仓库活动",
@@ -21494,43 +19139,6 @@
           "action": "提交",
           "component": "a63e56f",
           "url": "https://github.com/Toad114514/Staxle/commit/a63e56f12c8da14c7ec23e69a7c4647be11db573",
-          "time": "2024-10-17T05:43:43Z"
-        }
-      ],
-      "windowStart": "2024-10-17T05:43:43Z",
-      "windowEnd": "2024-10-17T05:46:47Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-10-17T05:43:43Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 2 次提交",
-    "summary": "10-17 13:43–13:46，最近一条「[setup.sh] add version and some package 」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-10-17T05:46:47Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 2,
-      "changes": [
-        {
-          "text": "[setup.sh] add version and some package install",
-          "action": "提交",
-          "component": "e2765a6",
-          "url": "https://gitee.com/toadstool/staxle/commit/e2765a67de223b82c81fbb27e2bbcfc71d291f03",
-          "time": "2024-10-17T05:46:47Z"
-        },
-        {
-          "text": "[chexo] add git push setting option",
-          "action": "提交",
-          "component": "a63e56f",
-          "url": "https://gitee.com/toadstool/staxle/commit/a63e56f12c8da14c7ec23e69a7c4647be11db573",
           "time": "2024-10-17T05:43:43Z"
         }
       ],
@@ -21594,50 +19202,6 @@
           "action": "提交",
           "component": "d26cda8",
           "url": "https://github.com/Toad114514/Staxle/commit/d26cda875bf2f8eb1393476ae34fd7fbc591063d",
-          "time": "2024-10-08T18:06:44Z"
-        }
-      ],
-      "windowStart": "2024-10-08T18:06:44Z",
-      "windowEnd": "2024-10-08T18:15:05Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-10-08T18:06:44Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 3 次提交",
-    "summary": "10-09 02:06–02:15，最近一条「[feature] fix if branch bug」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-10-08T18:15:05Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 3,
-      "changes": [
-        {
-          "text": "[feature] fix if branch bug",
-          "action": "提交",
-          "component": "893cf3d",
-          "url": "https://gitee.com/toadstool/staxle/commit/893cf3d965469454a0a63bf2392df4e756074862",
-          "time": "2024-10-08T18:15:05Z"
-        },
-        {
-          "text": "[feature] add firefox install option",
-          "action": "提交",
-          "component": "e024662",
-          "url": "https://gitee.com/toadstool/staxle/commit/e02466209876ffe97c24c7e8df8e9cd90437ae1c",
-          "time": "2024-10-08T18:12:58Z"
-        },
-        {
-          "text": "[feature] add fvwm (Window Manager) install option",
-          "action": "提交",
-          "component": "d26cda8",
-          "url": "https://gitee.com/toadstool/staxle/commit/d26cda875bf2f8eb1393476ae34fd7fbc591063d",
           "time": "2024-10-08T18:06:44Z"
         }
       ],
@@ -21884,57 +19448,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-10-04T07:31:07Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 4 次提交",
-    "summary": "10-04 15:31–15:46，最近一条「[chexo] add info theme's website」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-10-04T07:46:14Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 4,
-      "changes": [
-        {
-          "text": "[chexo] add info theme's website",
-          "action": "提交",
-          "component": "95e9eac",
-          "url": "https://gitee.com/toadstool/staxle/commit/95e9eac10e705dc9d90c08f174527b31ce2c566c",
-          "time": "2024-10-04T07:46:14Z"
-        },
-        {
-          "text": "[server2me] [bugs] fix cannot into server2me tool bugs",
-          "action": "提交",
-          "component": "5f9d374",
-          "url": "https://gitee.com/toadstool/staxle/commit/5f9d37444bdfbd55dfaf8d3d50af7c09bd43f3ad",
-          "time": "2024-10-04T07:34:17Z"
-        },
-        {
-          "text": "Revert \"[server2me] fix cannot start server2me bugs\"",
-          "action": "提交",
-          "component": "d5e21e9",
-          "url": "https://gitee.com/toadstool/staxle/commit/d5e21e9d760442ac241737e245dd9459aeda2334",
-          "time": "2024-10-04T07:31:47Z"
-        },
-        {
-          "text": "[server2me] fix cannot start server2me bugs",
-          "action": "提交",
-          "component": "f6665dc",
-          "url": "https://gitee.com/toadstool/staxle/commit/f6665dc11f1248fee284686a86748c9a59a37f7b",
-          "time": "2024-10-04T07:31:07Z"
-        }
-      ],
-      "windowStart": "2024-10-04T07:31:07Z",
-      "windowEnd": "2024-10-04T07:46:14Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Toad114514.github.io:2024-10-04T07:19:45Z",
     "platform": "github",
     "type": "仓库活动",
@@ -22054,57 +19567,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-10-01T01:55:26Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 4 次提交",
-    "summary": "10-01 09:55–10:23，最近一条「[Readme.md] add something」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-10-01T02:23:43Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 4,
-      "changes": [
-        {
-          "text": "[Readme.md] add something",
-          "action": "提交",
-          "component": "e08440e",
-          "url": "https://gitee.com/toadstool/staxle/commit/e08440eb69a667f6233d570acd911447e9f62d09",
-          "time": "2024-10-01T02:23:43Z"
-        },
-        {
-          "text": "[feature] add termux ptoperties option",
-          "action": "提交",
-          "component": "3a4a159",
-          "url": "https://gitee.com/toadstool/staxle/commit/3a4a15909c817a4e4eff5308493d9d75018b8f54",
-          "time": "2024-10-01T02:20:01Z"
-        },
-        {
-          "text": "[server2me] add lighttpd start & stop and more",
-          "action": "提交",
-          "component": "3c7f049",
-          "url": "https://gitee.com/toadstool/staxle/commit/3c7f04988578f583672b899b3f9e115620ad9136",
-          "time": "2024-10-01T02:05:24Z"
-        },
-        {
-          "text": "[feature] add lighttpd install option",
-          "action": "提交",
-          "component": "33625ed",
-          "url": "https://gitee.com/toadstool/staxle/commit/33625edec9d567ac12920fabfa3fd3f69fc2e6eb",
-          "time": "2024-10-01T01:55:26Z"
-        }
-      ],
-      "windowStart": "2024-10-01T01:55:26Z",
-      "windowEnd": "2024-10-01T02:23:43Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
     "id": "kuaishou:3xkgr26rbpeknpc",
     "platform": "kuaishou",
     "type": "视频",
@@ -22189,71 +19651,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-09-25T16:32:23Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 6 次提交",
-    "summary": "09-26 00:32–01:13，最近一条「[Readme] change some text」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-09-25T17:13:43Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 6,
-      "changes": [
-        {
-          "text": "[Readme] change some text",
-          "action": "提交",
-          "component": "8dde9f7",
-          "url": "https://gitee.com/toadstool/staxle/commit/8dde9f7e5984bf52a4c5d0219d9bd5e2e89af003",
-          "time": "2024-09-25T17:13:43Z"
-        },
-        {
-          "text": "[feature] [installtion] add 'lazygit' and 'lynx' install option",
-          "action": "提交",
-          "component": "14203fe",
-          "url": "https://gitee.com/toadstool/staxle/commit/14203fe563a3cffb0f9973c1a67c61713f013558",
-          "time": "2024-09-25T17:09:19Z"
-        },
-        {
-          "text": "[staxcore.py] tuning any code",
-          "action": "提交",
-          "component": "e2de1bb",
-          "url": "https://gitee.com/toadstool/staxle/commit/e2de1bb7463d9dca59297ee3a7c3372cb44b92f1",
-          "time": "2024-09-25T16:56:16Z"
-        },
-        {
-          "text": "[staxcore] remove useless code and add option in 'apt install'",
-          "action": "提交",
-          "component": "d4d56fa",
-          "url": "https://gitee.com/toadstool/staxle/commit/d4d56faa778f4fbb6253014b8cec10068edbc754",
-          "time": "2024-09-25T16:42:08Z"
-        },
-        {
-          "text": "[staxcore.py] remove server action code",
-          "action": "提交",
-          "component": "62a2721",
-          "url": "https://gitee.com/toadstool/staxle/commit/62a272101c5f327d54ae943194e60bf6932532de",
-          "time": "2024-09-25T16:35:34Z"
-        },
-        {
-          "text": "[Server2me] add Server2me and basic feature",
-          "action": "提交",
-          "component": "f2c4dc2",
-          "url": "https://gitee.com/toadstool/staxle/commit/f2c4dc2d45ab417b46dea678aa2a712efcacdf7f",
-          "time": "2024-09-25T16:32:23Z"
-        }
-      ],
-      "windowStart": "2024-09-25T16:32:23Z",
-      "windowEnd": "2024-09-25T17:13:43Z",
-      "actions": {
-        "提交": 6
-      }
-    }
-  },
-  {
     "id": "kuaishou:3xjwmg26xkah2ss",
     "platform": "kuaishou",
     "type": "视频",
@@ -22313,57 +19710,6 @@
           "action": "提交",
           "component": "0d5d36a",
           "url": "https://github.com/Toad114514/Staxle/commit/0d5d36ade7349391f813664b12afad37ffde20cd",
-          "time": "2024-09-22T08:57:22Z"
-        }
-      ],
-      "windowStart": "2024-09-22T08:57:22Z",
-      "windowEnd": "2024-09-22T09:15:49Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-09-22T08:57:22Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 4 次提交",
-    "summary": "09-22 16:57–17:15，最近一条「[Releases] New releases 1.03.6」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-09-22T09:15:49Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 4,
-      "changes": [
-        {
-          "text": "[Releases] New releases 1.03.6",
-          "action": "提交",
-          "component": "86e552c",
-          "url": "https://gitee.com/toadstool/staxle/commit/86e552c89fb64c3ac89bd2ad166ff329f93d6a33",
-          "time": "2024-09-22T09:15:49Z"
-        },
-        {
-          "text": "[feature] [web.py] use webcore.py and revise something",
-          "action": "提交",
-          "component": "4a3d368",
-          "url": "https://gitee.com/toadstool/staxle/commit/4a3d3689050c575037d13c93b0450b517596b713",
-          "time": "2024-09-22T09:12:23Z"
-        },
-        {
-          "text": "[feature] [web.py] revise staxle update ways via web.py",
-          "action": "提交",
-          "component": "59bb43e",
-          "url": "https://gitee.com/toadstool/staxle/commit/59bb43e3a71b6dafd98266b260e6116574cbfea2",
-          "time": "2024-09-22T09:00:07Z"
-        },
-        {
-          "text": "[feature] [hacker] add 'Easysploit' 'Phonesploit' and 'Cmseek' install option",
-          "action": "提交",
-          "component": "0d5d36a",
-          "url": "https://gitee.com/toadstool/staxle/commit/0d5d36ade7349391f813664b12afad37ffde20cd",
           "time": "2024-09-22T08:57:22Z"
         }
       ],
@@ -22448,71 +19794,6 @@
           "action": "提交",
           "component": "2e586c3",
           "url": "https://github.com/Toad114514/Staxle/commit/2e586c39ae24de1be1e3873b0ad50f7ae7d24883",
-          "time": "2024-09-19T16:37:14Z"
-        }
-      ],
-      "windowStart": "2024-09-19T16:37:14Z",
-      "windowEnd": "2024-09-19T16:58:48Z",
-      "actions": {
-        "提交": 6
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-09-19T16:37:14Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 6 次提交",
-    "summary": "09-20 00:37–00:58，最近一条「[setup] edit move action back to 'echo >」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-09-19T16:58:48Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 6,
-      "changes": [
-        {
-          "text": "[setup] edit move action back to 'echo > files'",
-          "action": "提交",
-          "component": "0d4746a",
-          "url": "https://gitee.com/toadstool/staxle/commit/0d4746a97a6fb1fb3c5ba3a79e712d68c8733ce6",
-          "time": "2024-09-19T16:58:48Z"
-        },
-        {
-          "text": "[README.md] change a new plan to install script",
-          "action": "提交",
-          "component": "1001b5e",
-          "url": "https://gitee.com/toadstool/staxle/commit/1001b5e39ae9b200f058acca605d731db5f1352c",
-          "time": "2024-09-19T16:55:18Z"
-        },
-        {
-          "text": "[README.md] change a new plan to install script",
-          "action": "提交",
-          "component": "3605633",
-          "url": "https://gitee.com/toadstool/staxle/commit/360563349af1633bf798f334337d7c69201f853f",
-          "time": "2024-09-19T16:54:00Z"
-        },
-        {
-          "text": "[README.md] change a new plan to install script",
-          "action": "提交",
-          "component": "a7f222e",
-          "url": "https://gitee.com/toadstool/staxle/commit/a7f222ef651de976e42a89a420ce5d5d8165b9be",
-          "time": "2024-09-19T16:48:44Z"
-        },
-        {
-          "text": "[feature] [chexo] add check PyYAML lib installed",
-          "action": "提交",
-          "component": "0947344",
-          "url": "https://gitee.com/toadstool/staxle/commit/09473449ad9343b2d459c08be587087c2888b286",
-          "time": "2024-09-19T16:39:51Z"
-        },
-        {
-          "text": "[feature] [main] edit setup command file move and change update",
-          "action": "提交",
-          "component": "2e586c3",
-          "url": "https://gitee.com/toadstool/staxle/commit/2e586c39ae24de1be1e3873b0ad50f7ae7d24883",
           "time": "2024-09-19T16:37:14Z"
         }
       ],
@@ -22620,64 +19901,6 @@
           "action": "提交",
           "component": "d1def4d",
           "url": "https://github.com/Toad114514/Staxle/commit/d1def4dc6514ac14e5c4a5dd82395fcd60443d63",
-          "time": "2024-09-18T16:46:30Z"
-        }
-      ],
-      "windowStart": "2024-09-18T16:46:30Z",
-      "windowEnd": "2024-09-18T17:09:54Z",
-      "actions": {
-        "提交": 5
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-09-18T16:46:30Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 5 次提交",
-    "summary": "09-19 00:46–01:09，最近一条「[bug] [main] change version v1.03.4 to v」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-09-18T17:09:54Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 5,
-      "changes": [
-        {
-          "text": "[bug] [main] change version v1.03.4 to v1.03.5 and change number",
-          "action": "提交",
-          "component": "93a875f",
-          "url": "https://gitee.com/toadstool/staxle/commit/93a875ff76e0495b0f4c1278e4558f0c5692d319",
-          "time": "2024-09-18T17:09:54Z"
-        },
-        {
-          "text": "[bug] [main] change version v1.03.4 to v1.03.5 and change number",
-          "action": "提交",
-          "component": "01f1944",
-          "url": "https://gitee.com/toadstool/staxle/commit/01f1944d5ccd73f1df5443c9e1d569f9095adf90",
-          "time": "2024-09-18T17:09:10Z"
-        },
-        {
-          "text": "[feature] [main] add a setup bash file and change any more code",
-          "action": "提交",
-          "component": "4449921",
-          "url": "https://gitee.com/toadstool/staxle/commit/44499214e44f9e58f0273d267d38b8ff5ec24810",
-          "time": "2024-09-18T17:04:08Z"
-        },
-        {
-          "text": "[feature] [Chexo] add info msg and editor posts more festure",
-          "action": "提交",
-          "component": "641377a",
-          "url": "https://gitee.com/toadstool/staxle/commit/641377a123e8b73477a2eb69fa6fb3e7f887d900",
-          "time": "2024-09-18T16:47:54Z"
-        },
-        {
-          "text": "[feature] [Chexo] add info msg and editor posts more festure",
-          "action": "提交",
-          "component": "d1def4d",
-          "url": "https://gitee.com/toadstool/staxle/commit/d1def4dc6514ac14e5c4a5dd82395fcd60443d63",
           "time": "2024-09-18T16:46:30Z"
         }
       ],
@@ -22800,43 +20023,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-09-17T03:43:11Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 2 次提交",
-    "summary": "09-17 11:43–11:53，最近一条「v1.03.5-rm」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-09-17T03:53:27Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 2,
-      "changes": [
-        {
-          "text": "v1.03.5-rm",
-          "action": "提交",
-          "component": "df25d41",
-          "url": "https://gitee.com/toadstool/staxle/commit/df25d41ccc6320f57aeea9e0f91f92c127c5de79",
-          "time": "2024-09-17T03:53:27Z"
-        },
-        {
-          "text": "v1.03.5",
-          "action": "提交",
-          "component": "db734b4",
-          "url": "https://gitee.com/toadstool/staxle/commit/db734b4d1ffaa1ddcf96cdd8fc96c36e226ee6cd",
-          "time": "2024-09-17T03:43:11Z"
-        }
-      ],
-      "windowStart": "2024-09-17T03:43:11Z",
-      "windowEnd": "2024-09-17T03:53:27Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Staxle:2024-09-16T21:17:10Z",
     "platform": "github",
     "type": "仓库活动",
@@ -22856,36 +20042,6 @@
           "action": "提交",
           "component": "e19fe10",
           "url": "https://github.com/Toad114514/Staxle/commit/e19fe10f32cf1e7f8c73973413327246cde75775",
-          "time": "2024-09-16T21:17:10Z"
-        }
-      ],
-      "windowStart": "2024-09-16T21:17:10Z",
-      "windowEnd": "2024-09-16T21:17:10Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-09-16T21:17:10Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 1 次提交",
-    "summary": "09-17 05:17，最近一条「v1.03.4」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-09-16T21:17:10Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 1,
-      "changes": [
-        {
-          "text": "v1.03.4",
-          "action": "提交",
-          "component": "e19fe10",
-          "url": "https://gitee.com/toadstool/staxle/commit/e19fe10f32cf1e7f8c73973413327246cde75775",
           "time": "2024-09-16T21:17:10Z"
         }
       ],
@@ -23104,43 +20260,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-09-08T16:03:33Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 2 次提交",
-    "summary": "09-09 00:03–00:05，最近一条「readme」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-09-08T16:05:53Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 2,
-      "changes": [
-        {
-          "text": "readme",
-          "action": "提交",
-          "component": "2a38ea6",
-          "url": "https://gitee.com/toadstool/staxle/commit/2a38ea6a8622ee9355f6acbd54181615391ed30f",
-          "time": "2024-09-08T16:05:53Z"
-        },
-        {
-          "text": "v1.03.3",
-          "action": "提交",
-          "component": "8576737",
-          "url": "https://gitee.com/toadstool/staxle/commit/857673732c879146e4aad8627da61f09fff8284c",
-          "time": "2024-09-08T16:03:33Z"
-        }
-      ],
-      "windowStart": "2024-09-08T16:03:33Z",
-      "windowEnd": "2024-09-08T16:05:53Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
     "id": "kuaishou:3xmr6sq92ueqwta",
     "platform": "kuaishou",
     "type": "视频",
@@ -23254,43 +20373,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-08-28T18:10:25Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 2 次提交",
-    "summary": "08-29 02:10–02:12，最近一条「change version」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-08-28T18:12:26Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 2,
-      "changes": [
-        {
-          "text": "change version",
-          "action": "提交",
-          "component": "9e94ba5",
-          "url": "https://gitee.com/toadstool/staxle/commit/9e94ba590c2bfe53069d1983462ac67b640ed8df",
-          "time": "2024-08-28T18:12:26Z"
-        },
-        {
-          "text": "v1.03.2",
-          "action": "提交",
-          "component": "87afc7c",
-          "url": "https://gitee.com/toadstool/staxle/commit/87afc7c2587431f6d6e266c188f92d35544a43f8",
-          "time": "2024-08-28T18:10:25Z"
-        }
-      ],
-      "windowStart": "2024-08-28T18:10:25Z",
-      "windowEnd": "2024-08-28T18:12:26Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
     "id": "kuaishou:3x6apfwkm3iqr6q",
     "platform": "kuaishou",
     "type": "视频",
@@ -23336,43 +20418,6 @@
           "action": "提交",
           "component": "4117690",
           "url": "https://github.com/Toad114514/Staxle/commit/41176908e01b3fa610d032e4a0feff83301eb5fd",
-          "time": "2024-08-23T12:37:23Z"
-        }
-      ],
-      "windowStart": "2024-08-23T12:37:23Z",
-      "windowEnd": "2024-08-23T13:18:27Z",
-      "actions": {
-        "提交": 2
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/staxle:2024-08-23T12:37:23Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 2 次提交",
-    "summary": "08-23 20:37–21:18，最近一条「v1.03.1」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-08-23T13:18:27Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 2,
-      "changes": [
-        {
-          "text": "v1.03.1",
-          "action": "提交",
-          "component": "c503c08",
-          "url": "https://gitee.com/toadstool/staxle/commit/c503c082149c0c244de75f06b50d45fb2b06836b",
-          "time": "2024-08-23T13:18:27Z"
-        },
-        {
-          "text": "v1.03",
-          "action": "提交",
-          "component": "4117690",
-          "url": "https://gitee.com/toadstool/staxle/commit/41176908e01b3fa610d032e4a0feff83301eb5fd",
           "time": "2024-08-23T12:37:23Z"
         }
       ],
@@ -23572,57 +20617,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/staxle:2024-08-19T19:06:18Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/staxle · 4 次提交",
-    "summary": "08-20 03:06–04:32，最近一条「add star history」",
-    "url": "https://gitee.com/toadstool/staxle",
-    "image": null,
-    "timestamp": "2024-08-19T20:32:34Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/staxle",
-      "count": 4,
-      "changes": [
-        {
-          "text": "add star history",
-          "action": "提交",
-          "component": "d4bbd05",
-          "url": "https://gitee.com/toadstool/staxle/commit/d4bbd05ac31c4abcfc5503328f7eb41e4e1d81b5",
-          "time": "2024-08-19T20:32:34Z"
-        },
-        {
-          "text": "insert 'import socket'",
-          "action": "提交",
-          "component": "a06835e",
-          "url": "https://gitee.com/toadstool/staxle/commit/a06835e2f7d6c3b9ce997c5c9f4016bd6d08b78d",
-          "time": "2024-08-19T19:14:11Z"
-        },
-        {
-          "text": "v1.0x",
-          "action": "提交",
-          "component": "46e112a",
-          "url": "https://gitee.com/toadstool/staxle/commit/46e112ad49f46e351bd05f78c73268f28802ac2e",
-          "time": "2024-08-19T19:11:34Z"
-        },
-        {
-          "text": "v1.0x",
-          "action": "提交",
-          "component": "a847031",
-          "url": "https://gitee.com/toadstool/staxle/commit/a84703188989f341b18f3bfff9f8efc31a86f7c1",
-          "time": "2024-08-19T19:06:18Z"
-        }
-      ],
-      "windowStart": "2024-08-19T19:06:18Z",
-      "windowEnd": "2024-08-19T20:32:34Z",
-      "actions": {
-        "提交": 4
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Toad114514:2024-08-19T20:01:42Z",
     "platform": "github",
     "type": "仓库活动",
@@ -23686,50 +20680,6 @@
           "action": "提交",
           "component": "83c6f4e",
           "url": "https://github.com/Toad114514/Efoptos/commit/83c6f4ea134def279199c3d39764376b3817e9ae",
-          "time": "2024-08-19T19:26:28Z"
-        }
-      ],
-      "windowStart": "2024-08-19T19:26:28Z",
-      "windowEnd": "2024-08-19T19:42:42Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/efopt:2024-08-19T19:26:28Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/efopt · 3 次提交",
-    "summary": "08-20 03:26–03:42，最近一条「最后一次提交」",
-    "url": "https://gitee.com/toadstool/efopt",
-    "image": null,
-    "timestamp": "2024-08-19T19:42:42Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/efopt",
-      "count": 3,
-      "changes": [
-        {
-          "text": "最后一次提交",
-          "action": "提交",
-          "component": "df13c2d",
-          "url": "https://gitee.com/toadstool/efopt/commit/df13c2dba7733e50b3ff11bd2119f223c28afdfd",
-          "time": "2024-08-19T19:42:42Z"
-        },
-        {
-          "text": "停更通知",
-          "action": "提交",
-          "component": "46c288f",
-          "url": "https://gitee.com/toadstool/efopt/commit/46c288fee675d3918d358e618783fddf2f1d7439",
-          "time": "2024-08-19T19:30:37Z"
-        },
-        {
-          "text": "孩子们是停更通知！",
-          "action": "提交",
-          "component": "83c6f4e",
-          "url": "https://gitee.com/toadstool/efopt/commit/83c6f4ea134def279199c3d39764376b3817e9ae",
           "time": "2024-08-19T19:26:28Z"
         }
       ],
@@ -24218,36 +21168,6 @@
           "action": "提交",
           "component": "9309b7e",
           "url": "https://github.com/Toad114514/milk-fk/commit/9309b7e9963904cc4792205f6c3a5d14340cf498",
-          "time": "2024-07-13T12:40:13Z"
-        }
-      ],
-      "windowStart": "2024-07-13T12:40:13Z",
-      "windowEnd": "2024-07-13T12:40:13Z",
-      "actions": {
-        "提交": 1
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/milkfk:2024-07-13T12:40:13Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/milkfk · 1 次提交",
-    "summary": "07-13 20:40，最近一条「milkdrop预设」",
-    "url": "https://gitee.com/toadstool/milkfk",
-    "image": null,
-    "timestamp": "2024-07-13T12:40:13Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/milkfk",
-      "count": 1,
-      "changes": [
-        {
-          "text": "milkdrop预设",
-          "action": "提交",
-          "component": "9309b7e",
-          "url": "https://gitee.com/toadstool/milkfk/commit/9309b7e9963904cc4792205f6c3a5d14340cf498",
           "time": "2024-07-13T12:40:13Z"
         }
       ],
@@ -26469,78 +23389,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/milkfk:2023-08-18T16:12:45Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/milkfk · 7 次提交",
-    "summary": "08-19 00:12–00:52，最近一条「update README.en.md.」",
-    "url": "https://gitee.com/toadstool/milkfk",
-    "image": null,
-    "timestamp": "2023-08-18T16:52:19Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/milkfk",
-      "count": 7,
-      "changes": [
-        {
-          "text": "update README.en.md.",
-          "action": "提交",
-          "component": "5544abb",
-          "url": "https://gitee.com/toadstool/milkfk/commit/5544abb07cc66ec83a97ce27f36ab9c243f3dbd7",
-          "time": "2023-08-18T16:52:19Z"
-        },
-        {
-          "text": "删除文件 milk/.keep",
-          "action": "提交",
-          "component": "8600f4c",
-          "url": "https://gitee.com/toadstool/milkfk/commit/8600f4c8ef57585c333559d39a45f0a31f5e3333",
-          "time": "2023-08-18T16:15:36Z"
-        },
-        {
-          "text": "删除文件 milk/README.md",
-          "action": "提交",
-          "component": "f48033f",
-          "url": "https://gitee.com/toadstool/milkfk/commit/f48033f0ba8d06ab3689bf2542c9ce40ab4850f9",
-          "time": "2023-08-18T16:15:19Z"
-        },
-        {
-          "text": "milkdrop预设",
-          "action": "提交",
-          "component": "70fb77f",
-          "url": "https://gitee.com/toadstool/milkfk/commit/70fb77f4d75526d6e32fac256f1ac8edefd5e4e8",
-          "time": "2023-08-18T16:14:48Z"
-        },
-        {
-          "text": "新建 milk",
-          "action": "提交",
-          "component": "1605a7f",
-          "url": "https://gitee.com/toadstool/milkfk/commit/1605a7f443535446aad76dcd3cfcd981f7d6e1b2",
-          "time": "2023-08-18T16:13:49Z"
-        },
-        {
-          "text": "update README.md.",
-          "action": "提交",
-          "component": "6f9748f",
-          "url": "https://gitee.com/toadstool/milkfk/commit/6f9748f568f4b2d3f5416dc7cc3cdfa6554fd03f",
-          "time": "2023-08-18T16:13:26Z"
-        },
-        {
-          "text": "Initial commit",
-          "action": "提交",
-          "component": "6d16ed6",
-          "url": "https://gitee.com/toadstool/milkfk/commit/6d16ed6b70219e5ba098cde227e3da77bc67140a",
-          "time": "2023-08-18T16:12:45Z"
-        }
-      ],
-      "windowStart": "2023-08-18T16:12:45Z",
-      "windowEnd": "2023-08-18T16:52:19Z",
-      "actions": {
-        "提交": 7
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Toad114514:2023-08-18T15:39:50Z",
     "platform": "github",
     "type": "仓库活动",
@@ -26997,99 +23845,6 @@
     }
   },
   {
-    "id": "gitee:repo:toadstool/efopt:2023-05-08T11:05:13Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/efopt · 10 次提交",
-    "summary": "05-08 19:05–20:01，最近一条「主要文件，很多都是鸽子画的饼」",
-    "url": "https://gitee.com/toadstool/efopt",
-    "image": null,
-    "timestamp": "2023-05-08T12:01:50Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/efopt",
-      "count": 10,
-      "changes": [
-        {
-          "text": "主要文件，很多都是鸽子画的饼",
-          "action": "提交",
-          "component": "5e072cb",
-          "url": "https://gitee.com/toadstool/efopt/commit/5e072cb2c31c096cbd48b00cf69fd3bc8543e4be",
-          "time": "2023-05-08T12:01:50Z"
-        },
-        {
-          "text": "state3 proot部分",
-          "action": "提交",
-          "component": "80985d4",
-          "url": "https://gitee.com/toadstool/efopt/commit/80985d48e08dc44b4e80dd8703bfcf1f91cf4d28",
-          "time": "2023-05-08T11:56:59Z"
-        },
-        {
-          "text": "state3安装器主要文件",
-          "action": "提交",
-          "component": "074b28b",
-          "url": "https://gitee.com/toadstool/efopt/commit/074b28b539554ba19f5ebb51c63f08776a400b84",
-          "time": "2023-05-08T11:55:49Z"
-        },
-        {
-          "text": "新建 state3",
-          "action": "提交",
-          "component": "c9b1ad1",
-          "url": "https://gitee.com/toadstool/efopt/commit/c9b1ad157fcb79634e6d89e8399505b8ccb7da0b",
-          "time": "2023-05-08T11:51:44Z"
-        },
-        {
-          "text": "主要文件，很多都是鸽子画的饼",
-          "action": "提交",
-          "component": "49b9fe7",
-          "url": "https://gitee.com/toadstool/efopt/commit/49b9fe7459537f36d762ddb9e8a3191478358718",
-          "time": "2023-05-08T11:50:16Z"
-        },
-        {
-          "text": "启动脚本",
-          "action": "提交",
-          "component": "56ed51f",
-          "url": "https://gitee.com/toadstool/efopt/commit/56ed51f4f6f8ccb8dcbc458b8fb3817a7230f708",
-          "time": "2023-05-08T11:49:01Z"
-        },
-        {
-          "text": "安装程序，只是走过场",
-          "action": "提交",
-          "component": "f8a7036",
-          "url": "https://gitee.com/toadstool/efopt/commit/f8a703678452ca38fd46e0c78469c40e0f181137",
-          "time": "2023-05-08T11:47:46Z"
-        },
-        {
-          "text": "自述文件",
-          "action": "提交",
-          "component": "2ef2eb2",
-          "url": "https://gitee.com/toadstool/efopt/commit/2ef2eb20c7736de5fa4bcb555ce679d3edd2dfb4",
-          "time": "2023-05-08T11:41:40Z"
-        },
-        {
-          "text": "add README.md.",
-          "action": "提交",
-          "component": "b79b1a5",
-          "url": "https://gitee.com/toadstool/efopt/commit/b79b1a5e86bd2b98fcfd44df219f29d50717b54e",
-          "time": "2023-05-08T11:34:54Z"
-        },
-        {
-          "text": "Initial commit",
-          "action": "提交",
-          "component": "f5ae424",
-          "url": "https://gitee.com/toadstool/efopt/commit/f5ae4249be83bb31a4e4682ca3f1b50f1bc53834",
-          "time": "2023-05-08T11:05:13Z"
-        }
-      ],
-      "windowStart": "2023-05-08T11:05:13Z",
-      "windowEnd": "2023-05-08T12:01:50Z",
-      "actions": {
-        "提交": 10
-      }
-    }
-  },
-  {
     "id": "github:repo:Toad114514/Toad114514.github.io:2023-05-01T14:39:52Z",
     "platform": "github",
     "type": "仓库活动",
@@ -27257,50 +24012,6 @@
           "action": "提交",
           "component": "f979c57",
           "url": "https://github.com/Toad114514/huaqiangbuymelon/commit/f979c57da39e4d095e1f116d6f81ab78beaa515c",
-          "time": "2023-03-20T12:15:02Z"
-        }
-      ],
-      "windowStart": "2023-03-20T12:15:02Z",
-      "windowEnd": "2023-03-20T12:47:18Z",
-      "actions": {
-        "提交": 3
-      }
-    }
-  },
-  {
-    "id": "gitee:repo:toadstool/hqkillboss:2023-03-20T12:15:02Z",
-    "platform": "gitee",
-    "type": "仓库活动",
-    "title": "toadstool/hqkillboss · 3 次提交",
-    "summary": "03-20 20:15–20:47，最近一条「主文件」",
-    "url": "https://gitee.com/toadstool/hqkillboss",
-    "image": null,
-    "timestamp": "2023-03-20T12:47:18Z",
-    "meta": {
-      "merge": true,
-      "kind": "repo-digest",
-      "repo": "toadstool/hqkillboss",
-      "count": 3,
-      "changes": [
-        {
-          "text": "主文件",
-          "action": "提交",
-          "component": "e6b4504",
-          "url": "https://gitee.com/toadstool/hqkillboss/commit/e6b45040a1cff8d8f7c15174504b34aadb403dae",
-          "time": "2023-03-20T12:47:18Z"
-        },
-        {
-          "text": "删除文件 main.js",
-          "action": "提交",
-          "component": "9ea0ff3",
-          "url": "https://gitee.com/toadstool/hqkillboss/commit/9ea0ff36477543aa94c497bbe804e2a79300df6e",
-          "time": "2023-03-20T12:46:26Z"
-        },
-        {
-          "text": "add LICENSE.",
-          "action": "提交",
-          "component": "f979c57",
-          "url": "https://gitee.com/toadstool/hqkillboss/commit/f979c57da39e4d095e1f116d6f81ab78beaa515c",
           "time": "2023-03-20T12:15:02Z"
         }
       ],

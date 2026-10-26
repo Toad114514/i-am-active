@@ -23,9 +23,12 @@ import {
   writeRalist,
   readStats,
   writeStats,
+  readMirrors,
+  writeMirrors,
 } from './lib/store.mjs';
 import { readState, writeState, lastRunOf } from './lib/state.mjs';
 import { config, maskSecrets } from './lib/config.mjs';
+import { buildGitHubShaIndex, pruneMirroredCards } from './lib/mirrors.mjs';
 import { pathToFileURL } from 'node:url';
 
 import { fetchBilibili } from './sources/bilibili.mjs';
@@ -239,11 +242,18 @@ async function main() {
   const failures = [];
   let addedTotal = 0;
 
+  // Gitee 的镜像去重要拿 GitHub 的提交 sha 做参照。这里给的是「现算」的取值器，
+  // 不能提前算好存着：GitHub 抓取器跑完会把这一轮的新卡并进 working，取值器
+  // 晚一步调用才能看到它们，否则新提交会被当成 Gitee 独有再出一张卡。
+  const githubShas = () => buildGitHubShaIndex(working);
+  /** Gitee 本轮识别出的镜像关系（仓库 → GitHub 仓库 + 镜像提交数）。 */
+  let mirrorHits = null;
+
   for (const source of sources) {
     const startedAt = Date.now();
     const since = noState ? null : lastRunOf(state, source.id);
     try {
-      const items = await source.run({ since });
+      const items = await source.run({ since, githubShas });
       const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
 
       const merged = items.filter((item) => item.meta?.merge === true);
@@ -341,6 +351,7 @@ async function main() {
       // 之后直接看仓库就能排障，不用翻 CI 日志。
       const diag = source.diagnostics?.();
       if (diag) state.diagnostics = { ...(state.diagnostics ?? {}), [source.id]: diag };
+      if (source.id === 'gitee' && diag?.mirrorHits) mirrorHits = diag.mirrorHits;
       addedTotal += addedCount;
 
       const extra = absorbed ? `，吸收旧记录 ${absorbed} 条` : '';
@@ -354,6 +365,34 @@ async function main() {
       failures.push({ id: source.id, message: error.message });
       console.error(`[collect] ${source.label.padEnd(18)} 失败: ${error.message}`);
     }
+  }
+
+  // Gitee 镜像卡的历史清理：以前跑出来的镜像卡 id 是当时算的，本轮不会再生成
+  // 同一张，只能按 sha 单独删。只删整张都是镜像提交的卡。
+  if (sources.some((source) => source.id === 'gitee')) {
+    const { removed } = pruneMirroredCards(working, githubShas(), config.platforms?.gitee?.mirrors ?? {});
+    if (removed.length) {
+      for (const id of removed) known.delete(id);
+      console.log(`[collect] 清理 ${removed.length} 张纯镜像的 Gitee 卡（内容已在 GitHub 卡里）`);
+    }
+  }
+
+  // 镜像登记表：卡片并进 GitHub 之后，「这个仓库在 Gitee 也有同步」只剩这里有记录，
+  // 站点靠它给 GitHub 卡标「Gitee 同步 · N 次提交」。
+  if (mirrorHits && !dryRun) {
+    const registry = await readMirrors();
+    for (const [giteeRepo, hit] of Object.entries(mirrorHits)) {
+      const prev = registry[giteeRepo] ?? {};
+      registry[giteeRepo] = {
+        github: hit.github ?? prev.github ?? null,
+        // 每轮都是按全历史重算的，直接覆盖；但别让一轮残缺的抓取把数字改小
+        commits: Math.max(Number(prev.commits) || 0, Number(hit.commits) || 0),
+        cards: Number(prev.cards) || 0,
+        updatedAt: new Date().toISOString(),
+      };
+    }
+    await writeMirrors(registry);
+    console.log(`[collect] 镜像登记表：${Object.keys(registry).length} 个 Gitee 镜像仓库`);
   }
 
   // RetroAchievements：把新成就登记进 res/ralist.json
