@@ -3,19 +3,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 51 次提交、1 个新仓库",
-    "summary": "51 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-27，最近一条「快手补齐全量 172 条作品（2023-12 起），修好按年切窗+无限滚动采集」",
+    "title": "Toad114514/i-am-active · 52 次提交、1 个新仓库",
+    "summary": "52 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-27，最近一条「feat: 新增时间线页与暗色/亮色切换，Weblate TDE 卡加渐隐背景图」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-26T16:13:31Z",
+    "timestamp": "2026-10-26T16:42:29Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 52,
+      "count": 53,
       "changes": [
         {
-          "group": "10-27 00:13 · 1 条"
+          "group": "10-27 00:13–00:42 · 2 条"
+        },
+        {
+          "text": "feat: 新增时间线页与暗色/亮色切换，Weblate TDE 卡加渐隐背景图",
+          "action": "提交",
+          "component": "2c986fc",
+          "url": "https://github.com/Toad114514/i-am-active/commit/2c986fc16020c68c611f504fc53bb7be3bf24310",
+          "time": "2026-10-26T16:42:29Z"
         },
         {
           "text": "快手补齐全量 172 条作品（2023-12 起），修好按年切窗+无限滚动采集",
@@ -392,11 +399,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-26T16:13:31Z",
+      "windowEnd": "2026-10-26T16:42:29Z",
       "sessions": 4,
       "actions": {
         "新建仓库": 1,
-        "提交": 51
+        "提交": 52
       }
     }
   },
