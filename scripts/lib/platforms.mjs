@@ -155,6 +155,23 @@ export const PLATFORMS = {
       '<path d="M4 3h11l5 5v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm10 2v4h4l-4-4zM6.5 12h11v1.8h-11V12zm0 4h11v1.8h-11V16z"/>',
     ),
   },
+  codemao: {
+    id: 'codemao',
+    name: '编程猫',
+    short: '编程猫',
+    /*
+     * 品牌色是亮黄（#ffbe00 那种），但这个色要同时当「平台名」的文字色和
+     * 时间线上的圆点：亮黄在白底上对比度只有 1.8，平台名几乎看不见
+     * （和 RA 的 #8b0000 一样的坑，方向相反）。压成暗金后深色主题 6.1:1、
+     * 亮色主题 3.0:1，两边都还能读，也不会跟 OTTOhub 的 #f0a500 混成一个色。
+     */
+    color: '#cc8b00',
+    homepage: 'https://shequ.codemao.cn/mobile/user/16551623',
+    // 猫头（编程猫的吉祥物是只猫）：两只耳朵 + 圆脸，眼睛用 evenodd 挖空
+    icon: icon(
+      '<path fill-rule="evenodd" d="M12 3.6c-4.9 0-8.6 3.3-8.6 7.5v3.1c0 3.5 3.9 6.3 8.6 6.3s8.6-2.8 8.6-6.3v-3.1c0-4.2-3.7-7.5-8.6-7.5zM4.9 5.4 3.6 1.6l4.2 2L4.9 5.4zm14.2 0-2.9-1.8 4.2-2-1.3 3.8zM9.2 10.1a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6zm5.6 0a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6z"/>',
+    ),
+  },
 };
 
 /** 平台 id 顺序（与页面展示顺序一致）。 */
@@ -167,6 +184,7 @@ export const PLATFORM_ORDER = [
   'douyin',
   'github',
   'gitee',
+  'codemao',
   'archive',
   'weblate',
   'hexo',
@@ -185,7 +203,7 @@ export const PLATFORM_ORDER = [
 export const KINDS = [
   { id: 'game', name: '游戏', color: '#c73e3e', hint: 'RetroAchievements / Steam' },
   { id: 'video', name: '视频', color: '#fb7299', hint: '哔哩哔哩 / YouTube / OTTOhub / 快手' },
-  { id: 'code', name: '代码', color: '#8b949e', hint: 'GitHub / Gitee / Weblate' },
+  { id: 'code', name: '代码', color: '#8b949e', hint: 'GitHub / Gitee / Weblate / 编程猫' },
   { id: 'article', name: '文章', color: '#2fa46a', hint: "Toad's Blog" },
   { id: 'archive', name: '归档', color: '#4a4a4a', hint: '互联网档案馆 / 西瓜视频 / 抖音' },
   { id: 'other', name: '其他', color: '#6b7691', hint: '未归类的平台' },
@@ -202,6 +220,9 @@ const PLATFORM_KIND = {
   github: 'code',
   gitee: 'code',
   weblate: 'code',
+  // 编程猫上那些作品就是当年写的代码/小游戏（Kitten4 源码编辑器、Nemo），
+  // 归「代码」而不是「归档」：归档是按「放东西进去」算的，这里是自己做的作品。
+  codemao: 'code',
   hexo: 'article',
   archive: 'archive',
   // 西瓜/抖音都停更且账号已不可用，能抓到的只是「存档」，不是新动态
@@ -229,6 +250,7 @@ const HOMEPAGE_BUILDERS = {
   // 主页直接写在 PLATFORMS 里，不依赖 config。
   github: (c) => (c.user ? `https://github.com/${c.user}` : null),
   gitee: (c) => (c.user ? `https://gitee.com/${c.user}` : null),
+  codemao: (c) => (c.userId ? `https://shequ.codemao.cn/mobile/user/${c.userId}` : null),
   archive: (c) => (c.user ? `https://archive.org/details/@${c.user}` : null),
   weblate: (c) => (c.baseUrl && c.user ? `${String(c.baseUrl).replace(/\/+$/, '')}/user/${c.user}/` : null),
   hexo: (c) => String(c.siteUrl || 'https://toad.ccwu.cc').replace(/\/+$/, '') + '/',

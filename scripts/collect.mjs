@@ -39,6 +39,7 @@ import { fetchSteam, lastSteamDiagnostics } from './sources/steam.mjs';
 import { fetchOttoHub } from './sources/ottohub.mjs';
 import { fetchKuaishou } from './sources/kuaishou.mjs';
 import { fetchHexo } from './sources/hexo.mjs';
+import { fetchCodemao, lastCodemaoDiagnostics } from './sources/codemao.mjs';
 
 /** 所有抓取器：每个平台一个独立模块，互不影响。 */
 const SOURCES = [
@@ -49,6 +50,12 @@ const SOURCES = [
   { id: 'github', label: 'GitHub', run: fetchGitHub, diagnostics: lastGitHubDiagnostics },
   { id: 'gitee', label: 'Gitee', run: fetchGitee, diagnostics: lastGiteeDiagnostics },
   { id: 'archive', label: '互联网档案馆', run: fetchArchive },
+  {
+    id: 'codemao',
+    label: '编程猫',
+    run: fetchCodemao,
+    diagnostics: lastCodemaoDiagnostics,
+  },
   { id: 'weblate', label: 'Weblate', run: fetchWeblate },
   { id: 'hexo', label: "Toad's Blog", run: fetchHexo },
   {
@@ -263,6 +270,7 @@ async function main() {
 
       const brandNew = [];
       let enrichedCount = 0;
+      let refreshedCount = 0;
       for (const item of plain) {
         if (!known.has(item.id)) {
           known.add(item.id);
@@ -274,6 +282,22 @@ async function main() {
         // 新加的展示字段——它们不会被重新「新增」，只会被去重跳过。
         const target = working.find((entry) => entry.id === item.id);
         if (!target) continue;
+        /*
+         * 同一个对象被「更新」了（目前只有编程猫：作品改完重新发布会刷新
+         * publish_time，抓取器把它放进 meta.rev）。这种情况不是新条目，而是
+         * 原来那条的另一个版本——标题、封面、发布时间都可能换过，必须整条
+         * 重写并挪到列表最前（时间变了，位置也该跟着变）。走下面「只补空字段」
+         * 那套是不行的：它刻意不覆盖已有值，时间会永远停在第一次抓到的那次。
+         */
+        const revChanged =
+          item.meta?.rev != null && target.meta?.rev != null && item.meta.rev !== target.meta.rev;
+        if (revChanged) {
+          const index = working.indexOf(target);
+          if (index >= 0) working.splice(index, 1);
+          working.unshift(normalize(item));
+          refreshedCount += 1;
+          continue;
+        }
         let changed = false;
         for (const [key, value] of Object.entries(item.meta ?? {})) {
           if (value === undefined || value === null || value === '') continue;
@@ -322,8 +346,9 @@ async function main() {
       const extra = absorbed ? `，吸收旧记录 ${absorbed} 条` : '';
       const updateText = updatedCount ? `，更新汇总 ${updatedCount} 条` : '';
       const enrichText = enrichedCount ? `，补全 ${enrichedCount} 条老记录` : '';
+      const refreshText = refreshedCount ? `，原地刷新 ${refreshedCount} 条被更新的记录` : '';
       console.log(
-        `[collect] ${source.label.padEnd(18)} 抓到 ${String(items.length).padStart(3)} 条，新增 ${String(addedCount).padStart(3)} 条${updateText}${enrichText}${extra} (${elapsed}s)`,
+        `[collect] ${source.label.padEnd(18)} 抓到 ${String(items.length).padStart(3)} 条，新增 ${String(addedCount).padStart(3)} 条${updateText}${enrichText}${refreshText}${extra} (${elapsed}s)`,
       );
     } catch (error) {
       failures.push({ id: source.id, message: error.message });

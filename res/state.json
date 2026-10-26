@@ -1,22 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-10-26T17:48:43.189Z",
-    "youtube": "2026-10-26T17:47:52.362Z",
-    "ottohub": "2026-10-26T17:47:53.410Z",
-    "kuaishou": "2026-10-26T17:47:55.447Z",
-    "github": "2026-10-26T17:48:10.329Z",
-    "gitee": "2026-10-26T17:48:33.096Z",
-    "archive": "2026-10-26T17:48:34.835Z",
-    "retroachievements": "2026-10-26T17:48:51.555Z",
-    "hexo": "2026-10-26T17:48:49.635Z",
-    "steam": "2026-10-26T17:48:54.976Z",
-    "bilibili": "2026-10-26T17:47:52.230Z"
+    "weblate": "2026-10-26T17:21:20.972Z",
+    "youtube": "2026-10-26T17:20:25.522Z",
+    "ottohub": "2026-10-26T17:20:26.784Z",
+    "kuaishou": "2026-10-26T17:20:41.742Z",
+    "github": "2026-10-26T17:20:54.397Z",
+    "gitee": "2026-10-26T17:21:16.780Z",
+    "archive": "2026-10-26T17:21:18.462Z",
+    "retroachievements": "2026-10-26T17:21:29.447Z",
+    "hexo": "2026-10-26T17:21:27.690Z",
+    "steam": "2026-10-26T17:21:32.533Z",
+    "bilibili": "2026-10-26T17:20:25.452Z",
+    "codemao": "2026-10-26T18:09:20.724Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-10-26T17:48:49.636Z",
-      "since": "2026-10-26T17:21:29.447Z",
+      "checkedAt": "2026-10-26T17:21:27.691Z",
+      "since": "2026-10-26T16:57:04.825Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -65,16 +66,16 @@
     "github": {
       "lookbackDays": 0,
       "repos": 30,
-      "commits": 642,
+      "commits": 641,
       "events": 0,
       "truncated": 0,
       "skipped": 1,
       "digests": 27,
-      "actions": 663
+      "actions": 662
     },
     "steam": {
-      "checkedAt": "2026-10-26T17:48:51.555Z",
-      "since": "2026-10-26T17:21:32.533Z",
+      "checkedAt": "2026-10-26T17:21:29.448Z",
+      "since": "2026-10-26T16:57:07.778Z",
       "note": "窗口内没有新动作：这些游戏的 29 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
@@ -158,6 +159,12 @@
           "error": "l=schinese → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））；无 l → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））"
         }
       ]
+    },
+    "codemao": {
+      "mode": "incremental",
+      "works": 20,
+      "pages": 1,
+      "total": 100
     }
   }
 }

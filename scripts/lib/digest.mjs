@@ -1,19 +1,26 @@
 /**
  * 仓库活动汇总（GitHub / Gitee 共用）。
  *
- * 输出的是「一个仓库一张卡」的汇总条目，版式复用 Weblate 那套
+ * 输出的是「一次连续动工一张卡」的汇总条目，版式复用 Weblate 那套
  * （item--digest + 可翻页的逐条明细），所以必须带 meta.merge 和 meta.changes。
  *
- * 三级结构，缺一不可：
- *   1. 一个仓库一张卡 —— 逐个提交列出来会把整条时间线刷满，也无法回答
- *      「这个仓库我一共干了多少」。不同仓库天然分开。
- *   2. 卡内按「连续工作时段」分段 —— 隔了一周再动同一个仓库，混在一段里
- *      会让人误以为是同一次连续工作，所以用时间空档切开，每段加一条分段标头。
- *   3. 段内逐条列出 —— 提交信息 / Issue 标题 / 短 sha，可翻页。
+ * 两级结构：
+ *   1. 按「连续工作时段」切卡 —— 同一个仓库隔了几天再动一次，是两次完全
+ *      不同的事，混成一张卡会变成一个越滚越大、看不出节奏的仓库档案。
+ *      相邻两次操作的空档超过 gapMs 就切开，一段一张卡。
+ *   2. 段内逐条列出 —— 提交信息 / Issue 标题 / 短 sha，可翻页。
  *
- * 聚合键（id）只到仓库一级：`<platform>:repo:<仓库全名>`。同一仓库继续干活时
- * id 不变 → collect 走「覆盖」而不是「新增」，卡片原地更新，条数越滚越准，
- * 也不会因为抓取窗口边界滑动而重复出卡。
+ * 聚合键（id）锚在**时段起点**：`<platform>:repo:<仓库全名>:<时段第一条操作的时间>`。
+ *
+ *   - 不能用「仓库」当 id（旧做法）：那样一个仓库只有一张卡，等于把上面第 1 条
+ *     的切分全丢掉，卡片只能靠卡内的分段标头表达时间，列表上仍是一大坨。
+ *   - 也不能锚在时段终点：一次动工里随时会再推一个提交，终点会往后挪，
+ *     id 跟着变，于是同一段工作会不停「换 id 重出卡」，旧卡得靠吸收逻辑删，
+ *     每轮都要删一次。起点在整段工作期间是固定的，追加提交只会原地更新这张卡。
+ *
+ * 一个仓库的多个时段卡之间在时间上互不重叠，所以 collect 的「新卡包住旧卡就替换」
+ * 不会误删兄弟卡；反过来，两个时段被新数据接上（补抓到中间的提交）时，合并后的
+ * 新卡会完整包住那两张旧卡，旧的被吸收掉，正好是想要的结果。
  */
 
 /** 相邻两条动作间隔超过 gapMs 就切开。输入需按时间升序。 */
@@ -75,64 +82,52 @@ function rowText(action) {
   return action.kind === '提交' ? '（无提交信息）' : '（无标题）';
 }
 
-/** 分段标头：`10-25 20:01–20:48 · 5 条`，跨天的写成 `10-23 22:10 → 10-24 01:30`。 */
-function sessionLabel(session) {
+/** 时段的时间范围：`10-25 20:01–20:48`，跨天写成 `10-23 22:10 → 10-24 01:30`。 */
+function sessionSpan(session) {
   const start = session[0].ts;
   const end = session[session.length - 1].ts;
-  // 单独一条动作的时段没法定范围，写成 `10-24 22:57 · 1 条` 就够
-  if (session.length === 1) return `${shortTime(start)} · 1 条`;
+  // 单独一条动作没法定范围，写起点就够了
+  if (session.length === 1) return shortTime(start);
   const sameDay = shortDate(start) === shortDate(end);
-  const span = sameDay ? `${shortTime(start)}–${shortTime(end, false)}` : `${shortTime(start)} → ${shortTime(end)}`;
-  return `${span} · ${session.length} 条`;
+  return sameDay
+    ? `${shortTime(start)}–${shortTime(end, false)}`
+    : `${shortTime(start)} → ${shortTime(end)}`;
 }
 
-/** 把同一个仓库的全部动作用汇总成一张卡。 */
-function buildRepo({ platform, repo, sessions, maxRows, type }) {
-  const all = sessions.flat();
-  if (!all.length) return null;
+/** 把一段连续工作做成一张卡。 */
+function buildSessionCard({ platform, repo, session, maxRows, type }) {
+  if (!session.length) return null;
 
-  const first = all[0];
-  const last = all[all.length - 1];
+  const first = session[0];
+  const last = session[session.length - 1];
   const counts = new Map();
-  for (const action of all) counts.set(action.kind, (counts.get(action.kind) ?? 0) + 1);
+  for (const action of session) counts.set(action.kind, (counts.get(action.kind) ?? 0) + 1);
 
-  // 明细：最新的时段在最上面，段内也是最新在前
+  // 明细：段内最新在前
   const rows = [];
-  let emitted = 0;
-  for (let i = sessions.length - 1; i >= 0 && emitted < maxRows; i -= 1) {
-    const session = sessions[i];
-    // 整卡不止一段时，每一段都给标头（哪怕这一段只有一条）。
-    // 只给「多条的段」加标头的话，单条时段会变成一行没有归属的明细，
-    // 夹在两段之间时看着像是属于下面那一段。
-    if (sessions.length > 1) rows.push({ group: sessionLabel(session) });
-    for (let j = session.length - 1; j >= 0 && emitted < maxRows; j -= 1) {
-      const action = session[j];
-      rows.push({
-        text: rowText(action),
-        action: action.kind,
-        component: action.component ?? null,
-        url: action.url ?? first.repoUrl ?? null,
-        time: stamp(action.ts),
-      });
-      emitted += 1;
-    }
+  for (let i = session.length - 1; i >= 0 && rows.length < maxRows; i -= 1) {
+    const action = session[i];
+    rows.push({
+      text: rowText(action),
+      action: action.kind,
+      component: action.component ?? null,
+      url: action.url ?? first.repoUrl ?? null,
+      time: stamp(action.ts),
+    });
   }
 
-  const total = all.length;
+  const total = session.length;
   const latestText = rowText(last);
-  const span = shortDate(first.ts) === shortDate(last.ts)
-    ? ''
-    : `（${shortDate(first.ts)} → ${shortDate(last.ts)}）`;
+  // 新建仓库的「最近一条」就是仓库名，和标题重复，去掉
   const summary = [
-    countsText(counts),
-    span ? `横跨 ${span.slice(1, -1)}` : '',
+    sessionSpan(session),
     last.kind === '新建仓库' ? '' : `最近一条「${latestText.slice(0, 40)}」`,
   ]
     .filter(Boolean)
     .join('，');
 
   return {
-    id: `${platform}:repo:${repo}`,
+    id: `${platform}:repo:${repo}:${stamp(first.ts)}`,
     platform,
     type,
     // 标题里的各项加起来要等于明细条数（下面「共 N 条」就是 total），
@@ -141,19 +136,18 @@ function buildRepo({ platform, repo, sessions, maxRows, type }) {
     summary,
     url: first.repoUrl ?? last.url ?? null,
     image: null,
-    // 按最后一次动作排序：仓库有动静就浮上来
+    // 按这一段的最后一次动作排序：仓库有动静就浮上来
     timestamp: stamp(last.ts),
     meta: {
-      // collect 依据它做「覆盖 + 吸收窗口内的旧记录」，而不是当作新条目追加
+      // collect 依据它做「覆盖 + 吸收被包住的旧卡」，而不是当作新条目追加
       merge: true,
       kind: 'repo-digest',
       repo,
       count: total,
-      // 逐条明细（页面每页 10 条，靠页码切换）；{ group } 行是分段标头，不计数
+      // 逐条明细（页面每页 10 条，靠页码切换）
       changes: rows,
       windowStart: stamp(first.ts),
       windowEnd: stamp(last.ts),
-      sessions: sessions.length,
       actions: Object.fromEntries(counts),
     },
   };
@@ -163,7 +157,7 @@ function buildRepo({ platform, repo, sessions, maxRows, type }) {
  * @param {object} options
  * @param {string} options.platform
  * @param {Array<{repo: string, repoUrl?: string, kind: string, ts: number, text?: string, url?: string, component?: string}>} options.actions
- * @param {number} options.gapMs 连续工作时段之间的最小空档
+ * @param {number} options.gapMs 两次动工之间的最小空档，超过就拆成两张卡
  * @param {number} [options.maxRows] 单卡最多保留多少条明细
  * @param {string} [options.type] 条目类型文案
  * @returns {Array<object>} 汇总条目，最新在前
@@ -186,18 +180,14 @@ export function buildRepoDigests({ platform, actions, gapMs, maxRows = 300, type
     byRepo.get(action.repo).push(action);
   }
 
-  const digests = [];
+  const cards = [];
   for (const [repo, list] of byRepo) {
     const sorted = [...list].sort((a, b) => a.ts - b.ts);
-    const digest = buildRepo({
-      platform,
-      repo,
-      sessions: splitByGap(sorted, gapMs),
-      maxRows,
-      type,
-    });
-    if (digest) digests.push(digest);
+    for (const session of splitByGap(sorted, gapMs)) {
+      const card = buildSessionCard({ platform, repo, session, maxRows, type });
+      if (card) cards.push(card);
+    }
   }
 
-  return digests.sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp));
+  return cards.sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp));
 }
