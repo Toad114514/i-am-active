@@ -1,17 +1,20 @@
 /**
  * 快手短视频。
  *
- * 实测结论（重要）：
- *  - profile SSR 页免登录可用，能拿到昵称/头像/粉丝数/作品数，但**不含作品列表**。
- *  - 作品列表的真实端点是 POST /rest/v/profile/feed，需要 `__NS_hxfalcon` 签名参数
- *    与 `kww` 指纹头，由混淆的浏览器 SDK 生成；纯 HTTP 免登录返回 result:50「签名验证失败」。
- *  - GraphQL 路径需要滑块验证码（result:400002）。
- *  - 即使重放带签名的请求，未登录仍返回 result:109（登录提示）。
+ * 实测结论（2026-10-26 全面复核，重要）：
+ *  - profile SSR 页免登录可用，但**不含作品列表**（SPA 空壳，爬虫 UA 直接 63 字节拒）。
+ *  - 作品列表真实端点 POST /rest/v/profile/feed 需要 `__NS_hxfalcon` 签名 + `kww` 指纹头，
+ *    纯 HTTP 返回 result:50「签名验证失败」；GraphQL 免签名但匿名要滑块验证码（400002）。
+ *  - 拿真实浏览器（Playwright）跑起来后签名能过（SPA 自算），cookie 也确认随请求发出
+ *    （allHeaders 可见 12 条含 webday7_st 354 字符），但服务端仍一律 **result:109**。
+ *    已逐项排除：时钟差 1 秒、出口 IP 为上海移动住宅宽带直连、cookie 全部有效未分区、
+ *    UA 由头到尾锁死。Firefox 上同一账号「刷新即掉登录」，Chromium 里会话也判 109
+ *    —— 即 C 端网页会话**签发出来就无效**，与浏览器/扩展/代理无关。
  *
- * 因此本模块采用「可配置 cookie」方案：
- *  - 在 config.yaml 的 platforms.kuaishou.cookie（或环境变量 KUAISHOU_COOKIE）
- *    填入浏览器里复制的完整 Cookie 串即可拿到作品列表；
- *  - 未配置时降级为「作品数变化」提示项，不会让整个流程失败。
+ * 因此本模块在 CI 里抓不到作品，只保留「账号概况」降级路径（无 cookie 时通常返回空）。
+ * 快手的真实数据靠**本地工具** scripts/tools/kuaishou-cp.mjs：
+ *   走 cp.kuaishou.com 创作者后台的 POST /rest/cp/works/v2/video/pc/photo/list
+ *   （**免签名**，result=1 直接给 total + 列表），跑完把 res/ 提交上来即可。
  */
 import { getJson, http } from '../lib/http.mjs';
 import { platform } from '../lib/config.mjs';
