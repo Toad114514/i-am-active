@@ -3,17 +3,27 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 50 次提交、1 个新仓库",
-    "summary": "50 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-26，最近一条「feat: 侧栏限高滚动 / Weblate 窗口扩到 6 个月 / Steam」",
+    "title": "Toad114514/i-am-active · 51 次提交、1 个新仓库",
+    "summary": "51 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-27，最近一条「快手补齐全量 172 条作品（2023-12 起），修好按年切窗+无限滚动采集」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-25T21:20:07Z",
+    "timestamp": "2026-10-26T16:13:31Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 51,
+      "count": 52,
       "changes": [
+        {
+          "group": "10-27 00:13 · 1 条"
+        },
+        {
+          "text": "快手补齐全量 172 条作品（2023-12 起），修好按年切窗+无限滚动采集",
+          "action": "提交",
+          "component": "9426d80",
+          "url": "https://github.com/Toad114514/i-am-active/commit/9426d80fa2230f5b2234b4a9ee1edc24920d3bb7",
+          "time": "2026-10-26T16:13:31Z"
+        },
         {
           "group": "10-25 23:25 → 10-26 05:20 · 18 条"
         },
@@ -382,11 +392,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-25T21:20:07Z",
-      "sessions": 3,
+      "windowEnd": "2026-10-26T16:13:31Z",
+      "sessions": 4,
       "actions": {
         "新建仓库": 1,
-        "提交": 50
+        "提交": 51
       }
     }
   },

@@ -1,22 +1,22 @@
 {
   "lastRun": {
-    "weblate": "2026-10-26T15:44:07.312Z",
-    "youtube": "2026-10-26T15:43:14.703Z",
-    "ottohub": "2026-10-26T15:43:15.537Z",
-    "kuaishou": "2026-10-26T15:43:28.535Z",
-    "github": "2026-10-26T15:43:41.788Z",
-    "gitee": "2026-10-26T15:44:03.836Z",
-    "archive": "2026-10-26T15:44:04.009Z",
-    "retroachievements": "2026-10-26T15:44:15.044Z",
-    "hexo": "2026-10-26T15:44:12.367Z",
-    "steam": "2026-10-26T15:44:18.028Z",
-    "bilibili": "2026-10-26T15:43:14.511Z"
+    "weblate": "2026-10-26T16:16:03.849Z",
+    "youtube": "2026-10-26T16:15:06.680Z",
+    "ottohub": "2026-10-26T16:15:08.746Z",
+    "kuaishou": "2026-10-26T16:15:21.469Z",
+    "github": "2026-10-26T16:15:36.143Z",
+    "gitee": "2026-10-26T16:15:59.619Z",
+    "archive": "2026-10-26T16:16:00.998Z",
+    "retroachievements": "2026-10-26T16:16:12.285Z",
+    "hexo": "2026-10-26T16:16:10.213Z",
+    "steam": "2026-10-26T16:16:15.662Z",
+    "bilibili": "2026-10-26T16:15:06.498Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-10-26T15:44:12.368Z",
-      "since": "2026-10-26T15:39:10.745Z",
+      "checkedAt": "2026-10-26T16:16:10.214Z",
+      "since": "2026-10-26T15:44:15.044Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -29,27 +29,27 @@
       },
       "recentAchievements": {
         "ok": true,
-        "rawCount": 17,
-        "used": 17,
+        "rawCount": 15,
+        "used": 15,
         "error": null
       },
       "recentlyPlayed": {
         "ok": true,
         "rawCount": 30,
-        "used": 4,
+        "used": 3,
         "error": null
       },
       "items": {
-        "achievements": 17,
-        "plays": 4
+        "achievements": 15,
+        "plays": 3
       },
       "gameArt": {
-        "games": 4,
-        "withArt": 21,
+        "games": 3,
+        "withArt": 18,
         "sources": {
           "title": 5,
           "ingame": 0,
-          "boxart": 16
+          "boxart": 13
         },
         "debug": []
       }
@@ -65,16 +65,16 @@
     "github": {
       "lookbackDays": 0,
       "repos": 30,
-      "commits": 637,
+      "commits": 638,
       "events": 0,
       "truncated": 0,
       "skipped": 1,
       "digests": 27,
-      "actions": 658
+      "actions": 659
     },
     "steam": {
-      "checkedAt": "2026-10-26T15:44:15.045Z",
-      "since": "2026-10-26T15:39:14.028Z",
+      "checkedAt": "2026-10-26T16:16:12.286Z",
+      "since": "2026-10-26T15:44:18.028Z",
       "note": "窗口内没有新动作：这些游戏的 29 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
