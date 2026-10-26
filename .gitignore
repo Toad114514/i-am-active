@@ -8,6 +8,9 @@ dist/
 .Trash-0/
 .workbuddy/
 
+# 本地一键 rebase+push 脚本（个人工作流，不入库）
+/push.sh
+
 # 本地密钥（密钥请用环境变量注入，见 README）
 .env
 .env.*
