@@ -632,11 +632,12 @@ body::before {
 }
 
 /*
- * TDE 项目卡（Weblate 汇总卡）：右上角垫一张 release 截图，向左下渐隐。
+ * TDE 项目卡（Weblate 汇总卡）：右中位置钉一张 Release 截图。
  *
- * 用「径向遮罩」而不是再叠一层线性渐变：线性渐变的等值线是直的，压到卡片
- * 圆角上会露出两条斜直线；径向以右上角为圆心，边缘是弧线，和圆角同向。
- * 底图走 ::before、正文 z-index 抬到 1，这样标题和明细文字不会被压暗。
+ * 之前是「铺满 + 从右上角渐隐」：那张截图是浅色 About 对话框，铺满会把明细
+ * 文字全盖住，压暗到能读又完全看不清对话框内容。改成完整缩略图（contain，
+ * 一点不裁）：图缩小、钉在右侧中线，明细列表按图宽让位，两边都完整。
+ * 截图原始比例 1159×478，容器用同一个 aspect-ratio，contain 后无留白。
  */
 .item--tde {
   isolation: isolate;
@@ -645,60 +646,35 @@ body::before {
 .item--tde::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 50%;
+  right: 16px;
+  left: auto;
+  bottom: auto;
+  transform: translateY(-50%);
   z-index: 0;
-  /*
-   * 上层是「向右下淡出到卡片底色」的渐变，下层才是截图：
-   * 这样图在右上角最实，往左、往下融进卡片，明细文字所在的下半部分基本是干净的。
-   * 渐变里的颜色用 var(--bg-elev)，亮色主题下自动改成往白色融，不用写两套。
-   */
-  background:
-    linear-gradient(
-      to top,
-      var(--bg-elev) 0%,
-      color-mix(in srgb, var(--bg-elev) 55%, transparent) 24%,
-      transparent 50%
-    ),
-    url('../media/tde-card.jpg') right top / cover no-repeat;
-  /*
-   * 截图本身是浅色的（TDE 的 About 对话框），深色主题下必须压亮度，
-   * 否则标题区和右侧时间会被白底吃掉；亮色主题不用压，见下面的覆盖。
-   */
-  filter: saturate(0.9) brightness(0.55);
-  -webkit-mask-image: radial-gradient(
-    78% 100% at 100% 0%,
-    #000 0%,
-    rgba(0, 0, 0, 0.6) 40%,
-    transparent 72%
-  );
-  mask-image: radial-gradient(
-    78% 100% at 100% 0%,
-    #000 0%,
-    rgba(0, 0, 0, 0.6) 40%,
-    transparent 72%
-  );
+  width: 30%;
+  aspect-ratio: 1159 / 478;
+  border-radius: 9px;
+  background: url('../media/tde-card.jpg') center / contain no-repeat;
+  box-shadow: 0 8px 26px -12px rgba(0, 0, 0, 0.9), 0 0 0 1px var(--line);
+  /* 深色主题下要压一点亮度，不然一小块白底在暗卡片上过于抢眼 */
+  filter: saturate(0.95) brightness(0.86);
   pointer-events: none;
 }
 
-/* 亮色主题的底板是白的，截图也是浅色，再压亮度只会变成一块灰板 */
+/* 亮色主题的底板本身就是白的，再压亮度就发灰了 */
 :root[data-theme='light'] .item--tde::before {
-  filter: saturate(0.95) brightness(1.02);
+  filter: none;
+  box-shadow: 0 8px 22px -14px rgba(20, 26, 40, 0.45), 0 0 0 1px var(--line);
 }
 
 /*
- * 明细行压在图上时（右侧的「修改 / 提交」标签和时间），时间会落在对话框的白底上。
- * 直接把明细列表的右边让出 26%，给截图留一条干净的落脚位——行内的标签和时间
- * 仍然右对齐，只是对齐线提前了，不会压到图。窄屏另有覆盖（见文末）。
+ * 明细行右侧的「修改 / 提交」标签和时间是右对齐的，正好落在图的位置上：
+ * 让出图宽 + 一点余量（34%），行内对齐线提前，页边仍是齐的。
+ * 窄屏另有覆盖（见文末），直接去掉图和让位。
  */
 .item--tde .tlist {
-  padding-right: 26%;
-}
-
-.item--tde .tlist__text,
-.item--tde .tlist__time,
-.item--tde .tlist__tag,
-.item--tde .tlist__comp {
-  text-shadow: 0 0 5px var(--bg-elev);
+  padding-right: 34%;
 }
 
 .item--tde .item__body {
@@ -1122,69 +1098,96 @@ body::before {
 }
 
 .tl-month + .tl-month {
-  margin-top: 10px;
+  margin-top: 18px;
 }
 
 .tl-month__label {
   grid-column: 1;
-  padding-top: 9px;
+  padding-top: 10px;
   text-align: right;
   font-size: 12px;
   color: var(--fg-faint);
   font-variant-numeric: tabular-nums;
 }
 
+/*
+ * 一个月的条目是一叠卡片，挂在竖线上。
+ * 卡片自己带边框和底色，所以竖线只当「装订线」用，不再靠背景色区分奇偶。
+ */
 .tl-month__list {
   grid-column: 2;
+  /* grid 子项默认 min-width:auto，长标题会把卡片撑出视口（窄屏必现） */
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
   list-style: none;
   margin: 0;
-  padding: 0 0 0 18px;
+  padding: 2px 0 2px 20px;
   border-left: 1px solid var(--line);
 }
 
 .tl-item {
   position: relative;
   display: flex;
-  align-items: baseline;
-  gap: 10px;
-  padding: 6px 8px 6px 0;
-  border-radius: 8px;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 10px 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg-elev);
+  transition: border-color 0.16s, background 0.16s, box-shadow 0.16s;
 }
 
 .tl-item:hover {
-  background: color-mix(in srgb, var(--accent) 6%, transparent);
+  border-color: var(--accent-line);
+  background: color-mix(in srgb, var(--accent) 5%, var(--bg-elev));
+  box-shadow: 0 2px 10px -6px rgba(0, 0, 0, 0.5);
 }
 
+/* 圆点钉在竖线上（列表 padding-left 20 → 轴线在 -20.5）。 */
 .tl-item::before {
   content: '';
   position: absolute;
-  left: -22px;
-  top: 13px;
+  left: -24px;
+  top: 16px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: var(--pc, var(--accent));
-  box-shadow: 0 0 0 3px var(--bg);
+  /* 内描边：GitHub 这类「本身就是深色」的平台色在暗底上会看不见 */
+  box-shadow: 0 0 0 3px var(--bg), inset 0 0 0 1px rgba(255, 255, 255, 0.3);
 }
 
+:root[data-theme='light'] .tl-item::before {
+  box-shadow: 0 0 0 3px var(--bg), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* 日期做成小徽章：定宽由等宽的 MM-DD 自然对齐，不用写死宽度 */
 .tl-item__date {
   flex-shrink: 0;
-  width: 42px;
+  margin-top: 1px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: var(--bg-elev-2);
   font-family: var(--mono);
-  font-size: 11.5px;
-  color: var(--fg-faint);
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--fg-dim);
   font-variant-numeric: tabular-nums;
 }
 
 .tl-item__body {
+  flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
 }
 
 .tl-item__title {
   font-size: 14px;
+  font-weight: 500;
   color: var(--fg);
   text-decoration: none;
   overflow: hidden;
@@ -1406,8 +1409,9 @@ body::before {
     grid-column: 1;
   }
 
-  .tl-item__date {
-    width: 38px;
+  .tl-item {
+    gap: 9px;
+    padding: 9px 11px;
   }
 
   /* 窄屏没有多余的横向空间给截图：去掉让位和底图，回到纯文字卡 */
