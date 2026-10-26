@@ -580,6 +580,55 @@
     load();
   }
 
+  /* ---------------- 暗色 / 亮色切换 ---------------- */
+
+  /**
+   * 主题的「初值」由 head 里的内联脚本写进 <html data-theme>（避免首屏闪一下），
+   * 这里只管两件事：点按钮切一次并存下来；没存过的时候跟着系统变。
+   *
+   * 为什么系统变了还要判断 localStorage：用户手动选了深色，系统傍晚自动转
+   * 亮色时不该把他顶回去，否则「手动选择」等于摆设。
+   */
+  function startThemeToggle() {
+    const btn = $('[data-theme-toggle]');
+    const root = document.documentElement;
+    if (!btn) return;
+
+    const current = () => (root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+
+    const syncLabel = () => {
+      const next = current() === 'dark' ? '亮色' : '暗色';
+      btn.setAttribute('aria-label', `切换到${next}模式`);
+      btn.setAttribute('title', `切换到${next}模式`);
+    };
+
+    const apply = (theme) => {
+      root.setAttribute('data-theme', theme);
+      try {
+        localStorage.setItem('theme', theme);
+      } catch (e) {
+        /* 隐私模式下写不了 localStorage，就只在本次会话生效 */
+      }
+      syncLabel();
+    };
+
+    btn.addEventListener('click', () => apply(current() === 'dark' ? 'light' : 'dark'));
+
+    const mq = window.matchMedia('(prefers-color-scheme: light)');
+    const onSystemChange = (event) => {
+      let saved = null;
+      try {
+        saved = localStorage.getItem('theme');
+      } catch (e) {}
+      if (saved === 'light' || saved === 'dark') return;
+      root.setAttribute('data-theme', event.matches ? 'light' : 'dark');
+      syncLabel();
+    };
+    if (mq.addEventListener) mq.addEventListener('change', onSystemChange);
+
+    syncLabel();
+  }
+
   /* ---------------- 启动 ---------------- */
 
   function boot() {
@@ -588,6 +637,7 @@
     startSearch();
     startCategoryFilter();
     initTranslationLists();
+    startThemeToggle();
   }
 
   if (document.readyState === 'loading') {

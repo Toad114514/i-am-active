@@ -37,6 +37,16 @@ const ICON_SEARCH =
 const ICON_TAG =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h12"/></svg>';
 
+const ICON_CLOCK =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg>';
+
+/* 主题按钮两个图标叠在一起，CSS 按 data-theme 只显示一个 */
+const ICON_SUN =
+  '<svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg>';
+
+const ICON_MOON =
+  '<svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.6 6.6 0 0 0 10.5 10.5Z"/></svg>';
+
 /* ------------------------------------------------------------------ */
 /* 页面片段                                                            */
 /* ------------------------------------------------------------------ */
@@ -45,6 +55,7 @@ const ICON_TAG =
 function renderTopbar({ current, base }) {
   const homeActive = current === 'home' ? ' navbtn--active' : '';
   const catActive = current === 'category' ? ' navbtn--active' : '';
+  const tlActive = current === 'timeline' ? ' navbtn--active' : '';
   return `
   <header class="topbar">
     <div class="shell">
@@ -69,7 +80,9 @@ function renderTopbar({ current, base }) {
             <div class="search__panel" data-search-panel data-open="0" role="listbox" aria-label="搜索结果"></div>
           </div>
           <a class="navbtn${homeActive}" href="${esc(base || './')}">${ICON_TAG}<span>活动</span></a>
+          <a class="navbtn${tlActive}" href="${esc(base ? `${base}timeline/` : 'timeline/')}">${ICON_CLOCK}<span>时间线</span></a>
           <a class="navbtn${catActive}" href="${esc(base ? `${base}category/` : 'category/')}">${ICON_TAG}<span>分类</span></a>
+          <button class="navbtn theme-toggle" type="button" data-theme-toggle aria-label="切换暗色模式" title="切换暗色 / 亮色">${ICON_SUN}${ICON_MOON}</button>
         </nav>
       </div>
     </div>
@@ -155,6 +168,8 @@ function renderTranslationRows(changes, fold = TLIST_PAGE_SIZE) {
 function renderDigestItem(item) {
   const platform = getPlatform(item.platform);
   const changes = item.meta.changes;
+  // Weblate 目前只有 TDE 一个项目，汇总卡用一张 release 截图当底图（右上角起渐隐）
+  const tde = item.platform === 'weblate' ? ' item--tde' : '';
   // 分段标头不算「条」
   const total = changes.filter((change) => !change.group).length;
   const fold = TLIST_PAGE_SIZE;
@@ -163,7 +178,7 @@ function renderDigestItem(item) {
 
   return `
       <li>
-        <div class="item item--digest" style="--pc:${esc(platform.color)}">
+        <div class="item item--digest${tde}" style="--pc:${esc(platform.color)}">
           <div class="item__body">
             <div class="item__meta">
               <span class="item__icon">${platform.icon}</span>
@@ -206,13 +221,14 @@ function renderItem(item) {
   const mediaSrc = backdrop ?? item.image;
   const hasMedia = Boolean(mediaSrc);
   const showBadge = Boolean(backdrop) && Boolean(badge);
+  const tde = item.platform === 'weblate' ? ' item--tde' : '';
   const time = formatTime(item.timestamp);
   const fullTime = item.timestamp
     ? new Date(item.timestamp).toLocaleString('zh-CN', { hour12: false })
     : '';
   return `
       <li>
-        <a class="item${hasMedia ? ' item--media' : ''}${backdrop ? ' item--game' : ''}${showBadge ? ' item--badge' : ''}" href="${esc(item.url || '#')}"
+        <a class="item${hasMedia ? ' item--media' : ''}${backdrop ? ' item--game' : ''}${showBadge ? ' item--badge' : ''}${tde}" href="${esc(item.url || '#')}"
            style="--pc:${esc(platform.color)}"${item.url ? ' target="_blank" rel="noopener noreferrer"' : ''}>
           ${
             hasMedia
@@ -354,6 +370,18 @@ function renderPage({
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<script>
+/* 主题在首屏渲染前定下来：先读用户上次的选择，没有就跟随系统。
+   必须在样式表之前执行，否则深色系统会先闪一帧深色再跳亮色。
+   写成内联而不是放 site.js，是因为 site.js 带 defer，跑起来已经在画了。 */
+try {
+  var theme = localStorage.getItem('theme');
+  if (theme !== 'light' && theme !== 'dark') {
+    theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+  document.documentElement.dataset.theme = theme;
+} catch (e) {}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
@@ -572,6 +600,120 @@ ${list.slice(0, PAGE_SIZE).map(renderItem).join('\n')}
 }
 
 /* ------------------------------------------------------------------ */
+/* 时间线                                                              */
+/* ------------------------------------------------------------------ */
+
+/**
+ * 时间线页：把全部条目按「年 → 月」铺在一条竖轴上。
+ *
+ * 主页是「最新 20 条一页」，想看三年前的东西得连着点几十次页码；时间线
+ * 给的是「一眼看完这几年都在干什么」的视角，所以**不分页**，整份直接渲染
+ * （650 条上下约 100KB HTML，比再拆一套分页简单，也没有 JS 依赖）。
+ * 年月按北京时间切——和列表卡上的时间一致，否则凌晨发的会被算到前一天。
+ */
+async function buildTimeline(list, assetsPrefix) {
+  const pad = (n) => String(n).padStart(2, '0');
+  const years = new Map();
+
+  for (const item of list) {
+    const ms = Date.parse(item.timestamp || '');
+    if (!Number.isFinite(ms)) continue;
+    const d = new Date(ms + 8 * 3600 * 1000);
+    const y = d.getUTCFullYear();
+    const m = d.getUTCMonth() + 1;
+    if (!years.has(y)) years.set(y, { total: 0, months: new Map() });
+    const bucket = years.get(y);
+    bucket.total += 1;
+    if (!bucket.months.has(m)) bucket.months.set(m, []);
+    bucket.months.get(m).push({ item, day: `${pad(m)}-${pad(d.getUTCDate())}` });
+  }
+
+  const yearKeys = [...years.keys()].sort((a, b) => b - a);
+  const span = yearKeys.length
+    ? yearKeys[yearKeys.length - 1] === yearKeys[0]
+      ? String(yearKeys[0])
+      : `${yearKeys[yearKeys.length - 1]}–${yearKeys[0]}`
+    : '';
+
+  const jump =
+    yearKeys.length > 1
+      ? `<nav class="tl-jump" aria-label="按年份跳转">${yearKeys
+          .map(
+            (y) =>
+              `<a class="tl-jump__link" href="#y${y}">${y}<span class="tl-jump__n">${years.get(y).total}</span></a>`,
+          )
+          .join('')}</nav>`
+      : '';
+
+  const sections = yearKeys
+    .map((y) => {
+      const bucket = years.get(y);
+      const months = [...bucket.months.keys()].sort((a, b) => b - a);
+      const monthHtml = months
+        .map((m) => {
+          const rows = bucket.months
+            .get(m)
+            .map(({ item, day }) => {
+              const platform = getPlatform(item.platform);
+              const fullTime = item.timestamp
+                ? new Date(item.timestamp).toLocaleString('zh-CN', { hour12: false })
+                : '';
+              return `
+          <li class="tl-item" style="--pc:${esc(platform.color)}">
+            <span class="tl-item__date">${esc(day)}</span>
+            <span class="tl-item__body">
+              <a class="tl-item__title" href="${esc(item.url || '#')}"${item.url ? ' target="_blank" rel="noopener noreferrer"' : ''} title="${esc(item.title)}">${esc(item.title)}</a>
+              <span class="tl-item__meta"><span class="tl-item__plat">${esc(platform.name)}</span><span>·</span><span>${esc(item.type || '活动')}</span><span>·</span><span>${esc(fullTime)}</span></span>
+            </span>
+          </li>`;
+            })
+            .join('');
+          return `
+        <div class="tl-month">
+          <div class="tl-month__label">${m} 月</div>
+          <ul class="tl-month__list">${rows}
+          </ul>
+        </div>`;
+        })
+        .join('');
+      return `
+    <section class="tl-year" id="y${y}">
+      <div class="tl-year__head">
+        <h2 class="tl-year__num">${y}</h2>
+        <span class="tl-year__count">${bucket.total} 条</span>
+        <span class="tl-year__rule"></span>
+      </div>${monthHtml}
+    </section>`;
+    })
+    .join('');
+
+  const body = `
+    <div class="section-head">
+      <h2>时间线</h2>
+      <span class="section-head__meta">${esc(span)} · 共 ${list.length} 条</span>
+    </div>
+    ${jump}
+    <div class="tl">${sections}
+    </div>
+`;
+
+  const html = renderPage({
+    title: `时间线 · ${SITE.title}`,
+    description: `${SITE.owner} 各平台活动的完整时间线，按年月排列。`,
+    base: assetsPrefix,
+    current: 'timeline',
+    body,
+    assetsPrefix,
+    searchSrc: `${assetsPrefix}search-index.json`,
+    bodyAttrs: ` data-search-src="${esc(assetsPrefix)}search-index.json"`,
+  });
+
+  const outDir = path.join(DIST_DIR, 'timeline');
+  await mkdir(outDir, { recursive: true });
+  await writeFile(path.join(outDir, 'index.html'), html, 'utf8');
+}
+
+/* ------------------------------------------------------------------ */
 /* 站内链接自检                                                        */
 /* ------------------------------------------------------------------ */
 
@@ -707,12 +849,23 @@ async function main() {
 
   const totalPages = await buildHome(sorted, stats, assetsPrefix);
   await buildCategory(sorted, assetsPrefix);
+  await buildTimeline(sorted, assetsPrefix);
 
   // 404 页
   await writeFile(
     path.join(DIST_DIR, '404.html'),
     `<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
+<script>
+/* 和主页面同一套主题初值，否则亮色用户点进 404 会突然变黑 */
+try {
+  var theme = localStorage.getItem('theme');
+  if (theme !== 'light' && theme !== 'dark') {
+    theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+  document.documentElement.dataset.theme = theme;
+} catch (e) {}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>404 · ${esc(SITE.title)}</title>
 <link rel="stylesheet" href="${esc(assetsPrefix)}assets/style.css">

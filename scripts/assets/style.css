@@ -1,6 +1,10 @@
 /* ============================================================
    i-am-active · 样式表
-   深色主题，默认跟随系统；布局按「列表紧凑 + 右侧分页 + 左栏分类」设计。
+   两套主题：默认深色，`<html data-theme="light">` 切到亮色。
+   <head> 里的内联脚本会先按系统偏好写一次 data-theme（避免闪白，
+   也避免「亮色系统 + 无 JS」时整页只剩深色），之后用户点右上角的
+   日/月按钮就是显式选择，存 localStorage。
+   布局按「列表紧凑 + 右侧分页 + 左栏分类」设计。
    ============================================================ */
 
 :root {
@@ -35,23 +39,27 @@
   --shell: 1080px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light;
-    --bg: #f7f8fb;
-    --bg-elev: #ffffff;
-    --bg-elev-2: #f2f4f9;
-    --bg-elev-3: #e9ecf4;
-    --line: #dde2ec;
-    --line-soft: #e8ecf3;
-    --fg: #171b24;
-    --fg-dim: #55607a;
-    --fg-faint: #8a93a8;
-    --accent: #4b5bd6;
-    --accent-soft: rgba(75, 91, 214, 0.1);
-    --accent-line: rgba(75, 91, 214, 0.28);
-    --shadow: 0 1px 2px rgba(20, 26, 40, 0.06), 0 14px 34px -22px rgba(20, 26, 40, 0.4);
-  }
+/*
+ * 亮色主题。
+ * 之前这里是 `@media (prefers-color-scheme: light)`：那样一旦用户手动选了
+ * 主题就压不住系统偏好（系统亮色时点「切深色」没反应）。改成属性选择器后，
+ * 「跟随系统」这一步交给 head 里的内联脚本做，CSS 只认 data-theme。
+ */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f7f8fb;
+  --bg-elev: #ffffff;
+  --bg-elev-2: #f2f4f9;
+  --bg-elev-3: #e9ecf4;
+  --line: #dde2ec;
+  --line-soft: #e8ecf3;
+  --fg: #171b24;
+  --fg-dim: #55607a;
+  --fg-faint: #8a93a8;
+  --accent: #4b5bd6;
+  --accent-soft: rgba(75, 91, 214, 0.1);
+  --accent-line: rgba(75, 91, 214, 0.28);
+  --shadow: 0 1px 2px rgba(20, 26, 40, 0.06), 0 14px 34px -22px rgba(20, 26, 40, 0.4);
 }
 
 * {
@@ -197,6 +205,32 @@ body::before {
   color: var(--accent);
   border-color: var(--accent-line);
   background: var(--accent-soft);
+}
+
+/*
+ * 主题切换按钮：只放图标，且只显示「点下去会变成什么」——
+ * 深色时显示太阳（点了变亮），亮色时显示月亮。
+ */
+.theme-toggle {
+  width: 34px;
+  padding: 0;
+  justify-content: center;
+}
+
+.theme-toggle .i-sun {
+  display: block;
+}
+
+.theme-toggle .i-moon {
+  display: none;
+}
+
+:root[data-theme='light'] .theme-toggle .i-sun {
+  display: none;
+}
+
+:root[data-theme='light'] .theme-toggle .i-moon {
+  display: block;
 }
 
 /* 搜索框 */
@@ -597,6 +631,80 @@ body::before {
   color: var(--accent);
 }
 
+/*
+ * TDE 项目卡（Weblate 汇总卡）：右上角垫一张 release 截图，向左下渐隐。
+ *
+ * 用「径向遮罩」而不是再叠一层线性渐变：线性渐变的等值线是直的，压到卡片
+ * 圆角上会露出两条斜直线；径向以右上角为圆心，边缘是弧线，和圆角同向。
+ * 底图走 ::before、正文 z-index 抬到 1，这样标题和明细文字不会被压暗。
+ */
+.item--tde {
+  isolation: isolate;
+}
+
+.item--tde::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  /*
+   * 上层是「向右下淡出到卡片底色」的渐变，下层才是截图：
+   * 这样图在右上角最实，往左、往下融进卡片，明细文字所在的下半部分基本是干净的。
+   * 渐变里的颜色用 var(--bg-elev)，亮色主题下自动改成往白色融，不用写两套。
+   */
+  background:
+    linear-gradient(
+      to top,
+      var(--bg-elev) 0%,
+      color-mix(in srgb, var(--bg-elev) 55%, transparent) 24%,
+      transparent 50%
+    ),
+    url('../media/tde-card.jpg') right top / cover no-repeat;
+  /*
+   * 截图本身是浅色的（TDE 的 About 对话框），深色主题下必须压亮度，
+   * 否则标题区和右侧时间会被白底吃掉；亮色主题不用压，见下面的覆盖。
+   */
+  filter: saturate(0.9) brightness(0.55);
+  -webkit-mask-image: radial-gradient(
+    78% 100% at 100% 0%,
+    #000 0%,
+    rgba(0, 0, 0, 0.6) 40%,
+    transparent 72%
+  );
+  mask-image: radial-gradient(
+    78% 100% at 100% 0%,
+    #000 0%,
+    rgba(0, 0, 0, 0.6) 40%,
+    transparent 72%
+  );
+  pointer-events: none;
+}
+
+/* 亮色主题的底板是白的，截图也是浅色，再压亮度只会变成一块灰板 */
+:root[data-theme='light'] .item--tde::before {
+  filter: saturate(0.95) brightness(1.02);
+}
+
+/*
+ * 明细行压在图上时（右侧的「修改 / 提交」标签和时间），时间会落在对话框的白底上。
+ * 直接把明细列表的右边让出 26%，给截图留一条干净的落脚位——行内的标签和时间
+ * 仍然右对齐，只是对齐线提前了，不会压到图。窄屏另有覆盖（见文末）。
+ */
+.item--tde .tlist {
+  padding-right: 26%;
+}
+
+.item--tde .tlist__text,
+.item--tde .tlist__time,
+.item--tde .tlist__tag,
+.item--tde .tlist__comp {
+  text-shadow: 0 0 5px var(--bg-elev);
+}
+
+.item--tde .item__body {
+  z-index: 1;
+}
+
 .tlist {
   list-style: none;
   margin: 9px 0 0;
@@ -936,6 +1044,171 @@ body::before {
   min-width: 0;
 }
 
+/* ---------------- 时间线 ---------------- */
+
+/* 年份快捷跳转 */
+.tl-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 24px;
+}
+
+.tl-jump__link {
+  padding: 4px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-dim);
+  text-decoration: none;
+  transition: color 0.16s, border-color 0.16s, background 0.16s;
+}
+
+.tl-jump__link:hover,
+.tl-jump__link:focus-visible {
+  color: var(--fg);
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.tl-jump__n {
+  margin-left: 6px;
+  font-size: 11px;
+  color: var(--fg-faint);
+}
+
+.tl-year + .tl-year {
+  margin-top: 36px;
+}
+
+.tl-year__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 14px;
+}
+
+.tl-year__num {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-year__count {
+  font-size: 12px;
+  color: var(--fg-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 年份右边拉到头的细线，让「2024 —— 106 条」读起来像分隔条 */
+.tl-year__rule {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+/*
+ * 一个月一段：左列月份、右列竖线 + 条目。
+ * 竖线画在 ul 的 border-left 上，圆点用 ::before 钉在线上（left:-22px）。
+ */
+.tl-month {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  column-gap: 18px;
+}
+
+.tl-month + .tl-month {
+  margin-top: 10px;
+}
+
+.tl-month__label {
+  grid-column: 1;
+  padding-top: 9px;
+  text-align: right;
+  font-size: 12px;
+  color: var(--fg-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-month__list {
+  grid-column: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 18px;
+  border-left: 1px solid var(--line);
+}
+
+.tl-item {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 8px 6px 0;
+  border-radius: 8px;
+}
+
+.tl-item:hover {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -22px;
+  top: 13px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--pc, var(--accent));
+  box-shadow: 0 0 0 3px var(--bg);
+}
+
+.tl-item__date {
+  flex-shrink: 0;
+  width: 42px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--fg-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-item__body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.tl-item__title {
+  font-size: 14px;
+  color: var(--fg);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.16s;
+}
+
+.tl-item__title:hover {
+  color: var(--accent);
+}
+
+.tl-item__meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--fg-faint);
+}
+
+.tl-item__plat {
+  color: var(--pc, var(--accent));
+}
+
 /* ---------------- 页脚 ---------------- */
 
 .footer {
@@ -1116,6 +1389,34 @@ body::before {
   .pager--inner {
     justify-content: flex-start;
     width: 100%;
+  }
+
+  /* 时间线：窄屏把月份从左边栏挪到上面，竖线仍然贴着条目 */
+  .tl-month {
+    grid-template-columns: 1fr;
+  }
+
+  .tl-month__label {
+    grid-column: 1;
+    padding: 10px 0 3px 18px;
+    text-align: left;
+  }
+
+  .tl-month__list {
+    grid-column: 1;
+  }
+
+  .tl-item__date {
+    width: 38px;
+  }
+
+  /* 窄屏没有多余的横向空间给截图：去掉让位和底图，回到纯文字卡 */
+  .item--tde .tlist {
+    padding-right: 0;
+  }
+
+  .item--tde::before {
+    display: none;
   }
 }
 

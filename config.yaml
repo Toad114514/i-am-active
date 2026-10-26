@@ -108,6 +108,16 @@ platforms:
     # 最多回翻页数：6 个月全量回填时一次性要翻的页数上限（首次运行/删掉 lastRun 后）
     maxPages: 20
 
+  # ---------------- RHDC（romhacking.com）— 待接入，先别开 ----------------
+  # TODO(2026-10-27)：等 toad114514 的改版真正发布到 RHDC 之后再写抓取器。
+  #   要记的是「改版发布」和「版本更新」两类事件（不是成就、不是评论）。
+  #   届时的做法：scripts/sources/rhdc.mjs + 这里打开 enabled，用户主页形如
+  #   https://romhacking.com/user/toad114514 。
+  #   现在**不要**加空配置：账号下还没有公开改版，抓了只会是空结果。
+  # rhdc:
+  #   enabled: false
+  #   user: toad114514
+
   # ---------------- 主站博客（Hexo + Butterfly） ----------------
   hexo:
     enabled: true
