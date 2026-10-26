@@ -1903,17 +1903,31 @@
     "id": "github:repo:Toad114514/i-am-active:2026-10-26T16:13:31Z",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 4 次提交",
-    "summary": "10-27 00:13–01:19，最近一条「style: TDE 卡改回渐隐背景并缩小截图，时间线条目补摘要与页面导语」",
+    "title": "Toad114514/i-am-active · 6 次提交",
+    "summary": "10-27 00:13–02:18，最近一条「feat: 仓库活动按时间空档拆成多张卡；接入编程猫作品归档（2021 起 10」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-26T17:19:22Z",
+    "timestamp": "2026-10-26T18:18:09Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 4,
+      "count": 6,
       "changes": [
+        {
+          "text": "feat: 仓库活动按时间空档拆成多张卡；接入编程猫作品归档（2021 起 100 件）",
+          "action": "提交",
+          "component": "f23aa0b",
+          "url": "https://github.com/Toad114514/i-am-active/commit/f23aa0bda972f5756509cc2eff350ddb9be3890c",
+          "time": "2026-10-26T18:18:09Z"
+        },
+        {
+          "text": "style: TDE 截图放大并柔化边缘贴合，时间线加回到顶部按钮，分类侧栏停止吸顶",
+          "action": "提交",
+          "component": "389b47f",
+          "url": "https://github.com/Toad114514/i-am-active/commit/389b47f30417d3b94101d6412a6b3140ae4579f9",
+          "time": "2026-10-26T17:44:35Z"
+        },
         {
           "text": "style: TDE 卡改回渐隐背景并缩小截图，时间线条目补摘要与页面导语",
           "action": "提交",
@@ -1944,9 +1958,9 @@
         }
       ],
       "windowStart": "2026-10-26T16:13:31Z",
-      "windowEnd": "2026-10-26T17:19:22Z",
+      "windowEnd": "2026-10-26T18:18:09Z",
       "actions": {
-        "提交": 4
+        "提交": 6
       }
     }
   },
@@ -2323,10 +2337,10 @@
           "time": "2026-10-25T04:39:08Z"
         },
         {
-          "text": "fix(ci): 密钥提到 job 级，build 步骤也能读到",
+          "text": "fix(sources): 修掉 archive 与 ottohub 的 since 二次调用",
           "action": "提交",
-          "component": "999dd48",
-          "url": "https://github.com/Toad114514/i-am-active/commit/999dd48b76c73a02f369345bdef0ea77dcc29013",
+          "component": "2c7f67a",
+          "url": "https://github.com/Toad114514/i-am-active/commit/2c7f67ad67acfe7726aaf435df3c3482846c8ecd",
           "time": "2026-10-25T04:33:26Z"
         },
         {
@@ -2337,10 +2351,10 @@
           "time": "2026-10-25T04:33:26Z"
         },
         {
-          "text": "fix(sources): 修掉 archive 与 ottohub 的 since 二次调用",
+          "text": "fix(ci): 密钥提到 job 级，build 步骤也能读到",
           "action": "提交",
-          "component": "2c7f67a",
-          "url": "https://github.com/Toad114514/i-am-active/commit/2c7f67ad67acfe7726aaf435df3c3482846c8ecd",
+          "component": "999dd48",
+          "url": "https://github.com/Toad114514/i-am-active/commit/999dd48b76c73a02f369345bdef0ea77dcc29013",
           "time": "2026-10-25T04:33:26Z"
         },
         {
@@ -16381,23 +16395,16 @@
         {
           "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
           "action": "提交",
-          "component": "f89bfb5",
-          "url": "https://github.com/Toad114514/tpaxs/commit/f89bfb5c3c7fc802b8ad086e0adc6fd78052f429",
-          "time": "2025-04-09T16:06:49Z"
-        },
-        {
-          "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
-          "action": "提交",
           "component": "0786415",
           "url": "https://github.com/Toad114514/tpaxs/commit/07864150b14e4f951a16325038defe87cdc07222",
           "time": "2025-04-09T16:06:49Z"
         },
         {
-          "text": "chore(global): 更新 tpaxs dev 版本",
+          "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
           "action": "提交",
-          "component": "80e589f",
-          "url": "https://github.com/Toad114514/tpaxs/commit/80e589f0f02f6d4a7f25f9e7f86e9a2381e0fd77",
-          "time": "2025-04-09T16:05:58Z"
+          "component": "f89bfb5",
+          "url": "https://github.com/Toad114514/tpaxs/commit/f89bfb5c3c7fc802b8ad086e0adc6fd78052f429",
+          "time": "2025-04-09T16:06:49Z"
         },
         {
           "text": "chore(global): 更新 tpaxs dev 版本",
@@ -16407,17 +16414,24 @@
           "time": "2025-04-09T16:05:58Z"
         },
         {
-          "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
+          "text": "chore(global): 更新 tpaxs dev 版本",
           "action": "提交",
-          "component": "d79b2da",
-          "url": "https://github.com/Toad114514/tpaxs/commit/d79b2da714aaf69e096dc6f44c15a1ad94b2f3a8",
-          "time": "2025-04-09T16:04:27Z"
+          "component": "80e589f",
+          "url": "https://github.com/Toad114514/tpaxs/commit/80e589f0f02f6d4a7f25f9e7f86e9a2381e0fd77",
+          "time": "2025-04-09T16:05:58Z"
         },
         {
           "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
           "action": "提交",
           "component": "0112df4",
           "url": "https://github.com/Toad114514/tpaxs/commit/0112df496a09eae928b33f553d9c440a0a7b059e",
+          "time": "2025-04-09T16:04:27Z"
+        },
+        {
+          "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
+          "action": "提交",
+          "component": "d79b2da",
+          "url": "https://github.com/Toad114514/tpaxs/commit/d79b2da714aaf69e096dc6f44c15a1ad94b2f3a8",
           "time": "2025-04-09T16:04:27Z"
         }
       ],
@@ -16481,23 +16495,16 @@
         {
           "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
           "action": "提交",
-          "component": "f89bfb5",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/f89bfb5c3c7fc802b8ad086e0adc6fd78052f429",
-          "time": "2025-04-09T16:06:49Z"
-        },
-        {
-          "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
-          "action": "提交",
           "component": "0786415",
           "url": "https://gitee.com/toadstool/tpaxs/commit/07864150b14e4f951a16325038defe87cdc07222",
           "time": "2025-04-09T16:06:49Z"
         },
         {
-          "text": "chore(global): 更新 tpaxs dev 版本",
+          "text": "add(update): 基于提交式的 tpaxs 更新向导 [测试]",
           "action": "提交",
-          "component": "80e589f",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/80e589f0f02f6d4a7f25f9e7f86e9a2381e0fd77",
-          "time": "2025-04-09T16:05:58Z"
+          "component": "f89bfb5",
+          "url": "https://gitee.com/toadstool/tpaxs/commit/f89bfb5c3c7fc802b8ad086e0adc6fd78052f429",
+          "time": "2025-04-09T16:06:49Z"
         },
         {
           "text": "chore(global): 更新 tpaxs dev 版本",
@@ -16507,17 +16514,24 @@
           "time": "2025-04-09T16:05:58Z"
         },
         {
-          "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
+          "text": "chore(global): 更新 tpaxs dev 版本",
           "action": "提交",
-          "component": "d79b2da",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/d79b2da714aaf69e096dc6f44c15a1ad94b2f3a8",
-          "time": "2025-04-09T16:04:27Z"
+          "component": "80e589f",
+          "url": "https://gitee.com/toadstool/tpaxs/commit/80e589f0f02f6d4a7f25f9e7f86e9a2381e0fd77",
+          "time": "2025-04-09T16:05:58Z"
         },
         {
           "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
           "action": "提交",
           "component": "0112df4",
           "url": "https://gitee.com/toadstool/tpaxs/commit/0112df496a09eae928b33f553d9c440a0a7b059e",
+          "time": "2025-04-09T16:04:27Z"
+        },
+        {
+          "text": "feat(setup): 更新 tpaxs 新的短命令 \"t\"",
+          "action": "提交",
+          "component": "d79b2da",
+          "url": "https://gitee.com/toadstool/tpaxs/commit/d79b2da714aaf69e096dc6f44c15a1ad94b2f3a8",
           "time": "2025-04-09T16:04:27Z"
         }
       ],
@@ -16533,7 +16547,7 @@
     "platform": "github",
     "type": "仓库活动",
     "title": "Toad114514/tpaxs · 4 次提交",
-    "summary": "04-09 02:19–02:31，最近一条「fix(i18n): 小bug」",
+    "summary": "04-09 02:19–02:31，最近一条「fix(i18n): small bugs」",
     "url": "https://github.com/Toad114514/tpaxs",
     "image": null,
     "timestamp": "2025-04-08T18:31:11Z",
@@ -16544,17 +16558,17 @@
       "count": 4,
       "changes": [
         {
-          "text": "fix(i18n): 小bug",
-          "action": "提交",
-          "component": "6a20dd3",
-          "url": "https://github.com/Toad114514/tpaxs/commit/6a20dd391ab346905e5398ac3dfad8ff06e51752",
-          "time": "2025-04-08T18:31:11Z"
-        },
-        {
           "text": "fix(i18n): small bugs",
           "action": "提交",
           "component": "1f34988",
           "url": "https://github.com/Toad114514/tpaxs/commit/1f34988bf14b8e9c540e3a580651e3c052334871",
+          "time": "2025-04-08T18:31:11Z"
+        },
+        {
+          "text": "fix(i18n): 小bug",
+          "action": "提交",
+          "component": "6a20dd3",
+          "url": "https://github.com/Toad114514/tpaxs/commit/6a20dd391ab346905e5398ac3dfad8ff06e51752",
           "time": "2025-04-08T18:31:11Z"
         },
         {
@@ -16584,7 +16598,7 @@
     "platform": "gitee",
     "type": "仓库活动",
     "title": "toadstool/tpaxs · 4 次提交",
-    "summary": "04-09 02:19–02:31，最近一条「fix(i18n): 小bug」",
+    "summary": "04-09 02:19–02:31，最近一条「fix(i18n): small bugs」",
     "url": "https://gitee.com/toadstool/tpaxs",
     "image": null,
     "timestamp": "2025-04-08T18:31:11Z",
@@ -16595,17 +16609,17 @@
       "count": 4,
       "changes": [
         {
-          "text": "fix(i18n): 小bug",
-          "action": "提交",
-          "component": "6a20dd3",
-          "url": "https://gitee.com/toadstool/tpaxs/commit/6a20dd391ab346905e5398ac3dfad8ff06e51752",
-          "time": "2025-04-08T18:31:11Z"
-        },
-        {
           "text": "fix(i18n): small bugs",
           "action": "提交",
           "component": "1f34988",
           "url": "https://gitee.com/toadstool/tpaxs/commit/1f34988bf14b8e9c540e3a580651e3c052334871",
+          "time": "2025-04-08T18:31:11Z"
+        },
+        {
+          "text": "fix(i18n): 小bug",
+          "action": "提交",
+          "component": "6a20dd3",
+          "url": "https://gitee.com/toadstool/tpaxs/commit/6a20dd391ab346905e5398ac3dfad8ff06e51752",
           "time": "2025-04-08T18:31:11Z"
         },
         {
