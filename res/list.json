@@ -3,19 +3,26 @@
     "id": "github:repo:Toad114514/i-am-active",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 52 次提交、1 个新仓库",
-    "summary": "52 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-27，最近一条「feat: 新增时间线页与暗色/亮色切换，Weblate TDE 卡加渐隐背景图」",
+    "title": "Toad114514/i-am-active · 53 次提交、1 个新仓库",
+    "summary": "53 次提交、1 个新仓库，横跨 2026-10-25 → 2026-10-27，最近一条「style: TDE 卡改为完整缩略图，时间线条目改成卡片式」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-26T16:42:29Z",
+    "timestamp": "2026-10-26T16:55:18Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 53,
+      "count": 54,
       "changes": [
         {
-          "group": "10-27 00:13–00:42 · 2 条"
+          "group": "10-27 00:13–00:55 · 3 条"
+        },
+        {
+          "text": "style: TDE 卡改为完整缩略图，时间线条目改成卡片式",
+          "action": "提交",
+          "component": "ceb9013",
+          "url": "https://github.com/Toad114514/i-am-active/commit/ceb9013691c131e6eea050265ab002dffa8162d1",
+          "time": "2026-10-26T16:55:18Z"
         },
         {
           "text": "feat: 新增时间线页与暗色/亮色切换，Weblate TDE 卡加渐隐背景图",
@@ -399,11 +406,11 @@
         }
       ],
       "windowStart": "2026-10-24T17:02:57Z",
-      "windowEnd": "2026-10-26T16:42:29Z",
+      "windowEnd": "2026-10-26T16:55:18Z",
       "sessions": 4,
       "actions": {
         "新建仓库": 1,
-        "提交": 52
+        "提交": 53
       }
     }
   },
