@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-10-26T19:00:03.322Z",
+    "weblate": "2026-10-26T20:22:42.140Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-10-26T18:59:15.344Z",
-    "kuaishou": "2026-10-26T18:59:17.412Z",
-    "github": "2026-10-26T18:59:34.514Z",
-    "gitee": "2026-10-26T18:59:54.973Z",
-    "archive": "2026-10-26T18:59:57.609Z",
-    "retroachievements": "2026-10-26T19:00:10.623Z",
-    "hexo": "2026-10-26T19:00:08.993Z",
-    "steam": "2026-10-26T19:00:13.586Z",
-    "bilibili": "2026-10-26T18:59:14.048Z",
-    "codemao": "2026-10-26T18:59:59.048Z"
+    "ottohub": "2026-10-26T20:21:47.476Z",
+    "kuaishou": "2026-10-26T20:21:49.634Z",
+    "github": "2026-10-26T20:22:03.708Z",
+    "gitee": "2026-10-26T20:22:24.846Z",
+    "archive": "2026-10-26T20:22:37.258Z",
+    "retroachievements": "2026-10-26T20:22:49.146Z",
+    "hexo": "2026-10-26T20:22:47.621Z",
+    "steam": "2026-10-26T20:22:51.736Z",
+    "bilibili": "2026-10-26T20:21:46.686Z",
+    "codemao": "2026-10-26T20:22:38.720Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-10-26T19:00:08.993Z",
-      "since": "2026-10-26T18:20:54.033Z",
+      "checkedAt": "2026-10-26T20:22:47.622Z",
+      "since": "2026-10-26T19:00:10.623Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -60,22 +60,45 @@
       "repos": 6,
       "commits": 263,
       "truncated": 0,
-      "actions": 263,
-      "digests": 71
+      "mirrored": 251,
+      "mirrorHits": {
+        "toadstool/tpaxs": {
+          "github": "Toad114514/tpaxs",
+          "commits": 95
+        },
+        "toadstool/staxle": {
+          "github": "Toad114514/Staxle",
+          "commits": 132
+        },
+        "toadstool/efopt": {
+          "github": "Toad114514/Efoptos",
+          "commits": 13
+        },
+        "toadstool/milkfk": {
+          "github": "Toad114514/milk-fk",
+          "commits": 8
+        },
+        "toadstool/hqkillboss": {
+          "github": "Toad114514/huaqiangbuymelon",
+          "commits": 3
+        }
+      },
+      "actions": 12,
+      "digests": 5
     },
     "github": {
       "lookbackDays": 0,
       "repos": 30,
-      "commits": 643,
+      "commits": 645,
       "events": 0,
       "truncated": 0,
       "skipped": 1,
-      "digests": 179,
-      "actions": 664
+      "digests": 180,
+      "actions": 666
     },
     "steam": {
-      "checkedAt": "2026-10-26T19:00:10.624Z",
-      "since": "2026-10-26T18:20:57.814Z",
+      "checkedAt": "2026-10-26T20:22:49.147Z",
+      "since": "2026-10-26T19:00:13.586Z",
       "note": "窗口内没有新动作：这些游戏的 29 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
