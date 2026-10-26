@@ -119,14 +119,14 @@ function playItems(games, sinceMs) {
     if (!game.lastPlayedSec) continue;
     if (game.lastPlayedSec < sinceSec) continue;
     const name = game.name ?? `App ${game.appid}`;
-    const parts = [`本次会话开始于 ${formatTime(game.lastPlayedSec)}`];
-    if (game.minutes2weeks > 0) parts.push(`两周内共 ${formatPlaytime(game.minutes2weeks)}`);
-    if (game.minutesTotal > 0) parts.push(`累计 ${formatPlaytime(game.minutesTotal)}`);
+    const parts = [`从 ${formatTime(game.lastPlayedSec)} 开始玩`];
+    if (game.minutes2weeks > 0) parts.push(`两周内玩了 ${formatPlaytime(game.minutes2weeks)}`);
+    if (game.minutesTotal > 0) parts.push(`游玩时长 ${formatPlaytime(game.minutesTotal)}`);
     items.push({
       id: `steam:play:${game.appid}:${game.lastPlayedSec}`,
       platform: 'steam',
       type: '游玩记录',
-      title: `启动了 ${name}`,
+      title: `严肃游玩 ${name}`,
       summary: parts.join('，'),
       url: `https://steamcommunity.com/app/${game.appid}`,
       image: headerImage(game.appid),
@@ -366,8 +366,8 @@ async function fetchAchievementsForApp(appid, { apiKey, steamId64, sinceMs, game
       type: '成就解锁',
       title,
       summary: description
-        ? `${gameTitle} 获得成就「${title}」：${description}`
-        : `${gameTitle} 获得成就「${title}」`,
+        ? `${gameTitle} 获得成就💀️「${title}」：${description}`
+        : `${gameTitle} 获得成就💀️「${title}」`,
       url: `https://steamcommunity.com/profiles/${steamId64}/stats/${appid}/achievements`,
       image: icon,
       timestamp: new Date(seconds * 1000).toISOString(),

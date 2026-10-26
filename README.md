@@ -1,303 +1,65 @@
-# 棍母
-请查阅 Github Page 观看aaa
+# I-am-Active !!!!
+请查阅 [Github Page](https://toad.ccwu.cc/i-am-active) 观看aaa
 
-100% Vibe-Coding 项目aaa
+# 介绍
+这是一个用于展示我 2021 年以来到现在，在各个平台的活跃情况的集合，也可以允许作为考察我本人黑历史使用的大脑开智历程
+警告： 100% Vibe-Coding 项目aaa
 
-## 配置
+# 框架
+我刚开始还以为会用到什么 Vitepress 或者 astro 这样的静态网站生成器框架，结果根本就不是。
+我的天啊bro自己硬搓静态网站生成器框架的来。
+手搓yaml配置文件解析器的来
+所以你会发现这个 Nodejs 项目什么都不依赖（除了某些特殊平台爬网页会需要用到 Playwright，如果不需要那就一点事没有）
+Deepseek v4.1 Flash 还是太吓人。
 
-所有平台的账号、开关、抓取参数都在根目录 `config.yaml`，脚本里不再写死。
+```js
+"scripts": {
+    "build": "node scripts/build.mjs",
+    "collect": "node scripts/collect.mjs",
+    "art:refresh": "node scripts/art-refresh.mjs",
+    "update": "node scripts/collect.mjs && node scripts/art-refresh.mjs && node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "steam:doctor": "node scripts/steam-doctor.mjs",
+    "ra:doctor": "node scripts/ra-doctor.mjs"
+  },
+```
+
+自己猜作用吧aaa
 
 ```bash
 npm run collect -- --show-config   # 看解析后的配置（密钥自动打码）
 npm run collect -- --dry-run       # 只抓不写，先看会新增什么
 npm run art:refresh                # 只重取老条目的游戏封面/截图（不抓新活动）
 npm run update                     # 抓取 + 回填美术图 + 生成站点
+npm run serve                      # 本地服务器
 ```
 
-几条规则：
-
-- `enabled: false` 的平台会被完全跳过，其它平台不受影响。
-- 值里可以写 `${环境变量名}`，运行时替换；写 `${VAR:-默认}` 则变量缺省时用默认值。
-  密钥请这样引用，不要直接写进仓库。
-- 启用的平台请填齐必填项（例如 `bilibili.mid`）。缺了不会让整轮任务失败：该平台会被
-  跳过，日志里点名缺的是哪个键，其它平台照常抓取、站点照常部署。
-- 想换配置文件位置：`CONFIG_FILE=/path/to/config.yaml npm run collect`。
-
-### 需要配置的密钥（GitHub Actions 里存成同名 Secret）
-
-| 变量 | 用在哪 | 说明 |
-| --- | --- | --- |
-| `RA_API_KEY` | RetroAchievements | 在 <https://retroachievements.org/settings> 的 Keys 区域生成 Web API Key。**没有它该平台会直接跳过**（官方 API 必须带 key，网页有 Cloudflare 挑战，没有免 key 的退路） |
-| `GITHUB_TOKEN` | GitHub | 不配只有 60 次/小时，很容易限流；配了 5000 次/小时 |
-| `YT_API_KEY` | YouTube | 可选。配了走 Data API v3，不配走频道 RSS（RSS 无需密钥） |
-| `STEAM_API_KEY` / `STEAM_ID64` | Steam | 可选，默认 `enabled: false` |
-| `KUAISHOU_COOKIE` | 快手 | 作品列表需要登录态，没有 cookie 只能拿到作品数变化提示 |
-
-### RetroAchievements 的去重
-
-RA 的 API 只能给出「最近一段时间解锁的成就」，看不出哪条是新的，所以除了
-`res/list.json` 的 id 去重，还会把新成就追加进 `res/ralist.json` 留档：
-
-```json
-{ "id": "retroachievements:98012:2026-10-25 09:30:00", "title": "Beginner I", "gameTitle": "Pokemon Pinball mini", "unlockedAt": "2026-10-25T09:30:00Z" }
-```
-
-抓取窗口由 `lookbackDays` 控制（目前是 92 天，只在「不看上次时间」的全量抓取时才用满），
-之后每次运行会用 `res/state.json` 里记录的上次时间自动收窄查询范围，避免重复拉一大批旧数据。
-
-**想一次性补几个月的历史数据**：把 `res/state.json` 里 `lastRun.retroachievements`
-这一行删掉再跑一次（或本地 `node scripts/collect.mjs retroachievements --no-state`）。
-`since` 一为空，窗口就取 `lookbackDays` 的上限；跑完 `lastRun` 会自动写回，
-下一轮又变回增量。条目 id 稳定，重复抓到也只会命中去重，不会产生重复条目。
-
-但窗口有个下限 `minWindowMinutes`（默认 4320 = 3 天）：`lastRun` 在抓取失败时也会往前走，
-如果某天 key 没配、被 401 打回来，窗口会一路缩到只剩两小时，那几天解锁的成就就永远补不回来。
-每轮多回看几天只多花一次请求，id 稳定，去重不会产生重复条目。
-
-### RetroAchievements 的游玩记录
-
-`API_GetUserRecentAchievements` 只回「解锁了什么」。一场**没解锁成就**的游戏
-（或者模拟器没开成就检测、用了别人的存档、ROM 版本没被追踪）在列表里完全看不见，
-表现就是「昨天明明玩了 B3313，站点上却什么都没有」。所以还会顺带调
-`API_GetUserRecentlyPlayedGames` 补一条**游玩记录**：
-
-```json
-{ "id": "retroachievements:play:12345:2026-10-24 09:30:00", "title": "玩了《B3313》" }
-```
-
-id 里带 `LastPlayed`，同一场游戏重复抓取只会命中同一条；换个时间再玩是新的一条。
-旋钮：`retroachievements.playSessions`（关掉就只记成就）、`maxGames`（单轮最多看几款，默认 10）。
-
-### RetroAchievements 排障
-
-抓不到东西时 RA 不会报错，只会回空数组，所以每轮的现场信息会写进
-`res/state.json` 的 `diagnostics.retroachievements`：key 有没有配（只记打码后的提示和长度）、
-用户名校验过不过、窗口多少分钟、两个接口各自的原始条数 / 采用条数 / 错误信息。
-看这一段就能分清是「没配 key」「key 失效」还是「窗口里真的没活动」。
-
-本地自检（只读，不写 `res/`，也不打印 key）：
-
-```bash
-RA_API_KEY=xxxx node scripts/ra-doctor.mjs                 # 看最近 7 天
-RA_API_KEY=xxxx node scripts/ra-doctor.mjs --minutes 43200  # 往前看 30 天
-```
-
-### Steam 的抓取范围
-
-Steam 没有「我最近解锁了什么成就」这种接口，只能按 AppID 逐个查，所以流程是：
-
-1. `IPlayerService/GetRecentlyPlayedGames` 拿到**最近两周玩过的游戏**（按两周时长排序，
-   接口本身就固定两周，不能自定义区间）；
-2. 用 `IPlayerService/GetOwnedGames` 补出 `rtime_last_played`（**最近游戏这个接口不返回这个
-   字段**，只有 appid / 名称 / 时长），判断「这次会话是不是新的」，是就写一条**游玩记录**；
-3. 对这些 AppID 逐个调 `ISteamUserStats/GetPlayerAchievements`，解锁时间落在
-   「上次抓取时间 → 现在」之间的成就也写进列表，首轮回退 14 天。
-
-第 3 步有两个容易踩的坑，都已处理：
-
-- 这个接口的字段是 **`achieved` / `unlocktime`**，不是 `unlocked` / `unlockedtime`。
-  按后者读会得到 `undefined`，每条成就都被当成「没解锁」，安静地一条都不写。
-- 它只给 `apiname`（内部标识，形如 `ACH_WIN_ONE_GAME`），**不给**中文名和描述。
-  所以真要写成就时会再调一次 `ISteamUserStats/GetSchemaForGame`，把
-  `apiname → displayName / description / icon` 补上；拿不到就退回 `apiname`。
-
-第 2 步是必要的：只启动游戏、坐在主菜单里没解锁任何成就是常态，只靠成就会一条都抓不到。
-游玩记录的 id 是 `steam:play:<appid>:<会话时间>`，同一次会话重复运行不会重复写入；
-也刻意不用「两周时长增量」当信号，否则后台一直挂着的游戏每轮都会涨，站点会被刷屏。
-
-相关的几个旋钮：`steam.recentGames`（关掉就只查 `extraAppIds`）、
-`steam.playSessions`（关掉就只记成就）、`steam.maxGames`（单轮最多查几款，默认 10）、
-`steam.maxItems`（单轮最多写几条，默认 60）。
-`extraAppIds` 用来长期跟踪某款想持续关注的老游戏。
-
-前提是个人资料「游戏详情」设为公开，否则 `GetRecentlyPlayedGames` 只会返回空的
-`{"response":{}}`——脚本会打一条提示，看起来像「没数据」而不是报错。
-
-**成就接口对隐私的要求比游玩记录更严。** 实测：同一个 key，`GetOwnedGames` /
-`GetRecentlyPlayedGames` 都能拿到数据，但 `GetPlayerAchievements` 直接回
-`HTTP 403 {"playerstats":{"error":"Profile is not public"}}`。这时候游玩记录照常写，
-只有成就是空的，所以别把它当成代码坏了。去 编辑个人资料 → 隐私设置，把
-「我的个人资料」和「游戏详情」**都**设成公开；只开「游戏详情」不够。
-
-另一个容易踩的坑：**游戏还开着的时候，Steam 往往要等你退出后才把这次会话同步到接口**。
-所以刚启动游戏就触发抓取，很可能 `total_count=0` 或者「上次游玩」还是上一回的时间。
-关掉游戏、等一两分钟再跑就正常了。日志里每款游戏都会打一行
-「两周 X / 总计 Y / 上次游玩 Z」，对着看就知道是没同步还是真没玩。
-
-排障可以直接跑自检，它把同一套请求在本地执行一遍并解释结果（只读，不写 `res/`）：
-
-```bash
-STEAM_API_KEY=xxx STEAM_ID64=7656119xxxxxxxxxx npm run steam:doctor
-```
-
-`steamId64` 是 17 位数字，超过 JS 的安全整数范围（2^53），所以配置层会把它保留成
-字符串；写成不带引号的整数也不会被改成浮点。
-
-## 游戏成就条目的版式（RA / Steam）
-
-成就徽章只有 64×64，直接铺成卡片背景会被拉成一团糊。所以这两类条目的排法是
-**游戏图当背景 + 徽章当角标**：
-
-- 背景图：RA 取 `API_GetGame` 的三张图，优先级是 **`ImageBoxArt`（封面）→
-  `ImageTitle`（游戏内标题画面）→ `ImageIngame`（游玩过程截图）**。
-  标题画面排在游玩截图前面：标题一眼能认出是哪款游戏，游玩截图常常只是关卡里
-  某个角落。
-  另外游戏缺图时 RA **不会**返回空值，而是返回一张写着「No Screenshot Found」的
-  共享占位图（`Images/000002.png`）——不认识它的话，封面优先会退化成「永远铺着
-  占位图」。三张候选图都会先过占位判断，全被占位挡掉就真的不放背景，退回
-  「游戏图标当背景」的样式（见 `scripts/sources/retroachievements.mjs` 的
-  `PLACEHOLDER_ART`）。
-  用了哪一张会记在 `meta.backdropSource`，也汇总进 `state.json` 的
-  `diagnostics.retroachievements.gameArt.sources`。
-  Steam 直接用 CDN 的 `steam/apps/<appid>/header.jpg`，不需要 key。
-  同一轮里同一款游戏只查一次，单轮上限由 `retroachievements.maxGameArt`
-  （默认 20）控制。
-- 亮度：所有平台统一 `opacity .72`（视频封面、游戏封面、归档缩略图同一条），
-  遮罩一律是**左亮 → 右暗**单向淡出（`#000 0% → .82 46% → .35 78% → 透明`）。
-  游戏图不做任何单独处理——之前单独给它叠过 `brightness(.72)`、也用过
-  「左暗 → 中间亮 → 右暗」的双向遮罩，结果比别的平台暗一档、看着发灰。
-  文字从 30%/32% 处开始，右半边淡出正好让位给文字。
-- 徽章：钉在左图区域的右下角（`.item--badge`），右边缘对齐正文起点，不会压到文字。
-- 拿不到游戏图就**自动退回**老版式（图标铺底），背景图 404 时由 `onerror` 把整块
-  媒体区连同 `item--media/item--game/item--badge` 一起去掉，不会留一块空白。
-
-数据上就是条目多了两个字段：`meta.backdrop`（背景）和 `meta.badge`（角标）。
-`meta.badge` 存在时 `image` 才被当成角标，否则 `image` 仍然是背景——所以其它平台
-的老条目不受影响。
-
-**老条目怎么补上背景图**：两条路一起走。
-
-1. `collect` 对「同 id 已存在」的条目做字段补全。`meta.backdrop` / `meta.badge` /
-   `meta.backdropSource` 是**从源站推导出来的展示字段**，每次都会跟着源站刷新；
-   其它字段只补新出现、原值为空的，不改已有值、也不算新增。日志里显示
-   `补全 N 条老记录`。
-2. 增量窗口**够不着**的老条目靠 `npm run art:refresh`（`scripts/art-refresh.mjs`）。
-   RA 只回看最近 3 天，更早的成就不会再被抓到，改了取图优先级它们就永远停在旧图上。
-   这个脚本扫一遍 `res/list.json`，把 `backdropSource` 缺省或仍是 `title` 的 gameId
-   重查一次（`title` 就是旧规则的痕迹；`ingame` 说明这款游戏确实没封面，不用再查），
-   所以第一次跑完之后每次都空跑。CI 里紧跟 collect 执行，失败也不影响构建。
-
-## 代码仓库活动的汇总（GitHub / Gitee）
-
-一个提交一条记录会把时间线刷满（Gitee 一个仓库三年就有 260 多条），所以这两个平台
-输出的是**汇总条目**，版式直接复用 Weblate 那套（`item--digest` + 可翻页的明细）。
-
-- **一个仓库一张卡**：同仓库的所有操作（提交、新建仓库、Issue、PR）都并进这张卡，
-  标题是「仓库 · 95 次提交」。
-- **卡内按「连续工作时段」分段**：段与段之间插一条分段标头（`10-25 20:01–20:48 · 5 条`，
-  只有一条动作的段写成 `10-24 22:57 · 1 条`）。空档阈值是 `sessionGapMinutes`（默认 90 分钟）
-  ——隔了一周再动同一个仓库，会被切成另一段，不会被误当成同一次连续工作。
-- **不显示摘要**：汇总卡的标题已经把内容说完了，再堆一行「N 次提交、涉及…、最近一条…」
-  只是噪音，所以 `.item--digest` 里不再渲染 `item__summary`（数据里仍保留，供搜索用）。
-- **明细**：提交信息 + 短 sha，Issue/PR 是标题 + `#编号`，按时间倒序，**每页 5 条**。
-  分页只数「条目」，分段标头不占名额（否则一张两段的卡每页只放得下 3 条），
-  标头会跟着它所属的那一段出现在每一页开头。
-
-聚合键（id）只到仓库一级：`<平台>:repo:<仓库全名>`。同一仓库继续干活时 id 不变，
-`collect` 走「覆盖」而不是「新增」，卡片原地更新条数，不会每来一个提交就顶出一张新卡。
-
-这两条抓取器**不按 `since` 增量**：汇总条目每次都要用完整时段重算，只取增量会让条数
-失真、分段也会乱跳。所以 `lookbackDays` 默认 **0 = 全历史**（仓库卡本来就该装下
-这个仓库的所有操作）；想要截断就把天数写大点，代价是不会多请求，只是每页拉得更少。
-每个仓库最多翻 `maxPages` 页（默认 2，够 200 条提交），单卡明细上限 `maxRows`。
-
-某个仓库这一轮**没取全**（限流或某一页失败）时会直接跳过它，保留上一轮那张完整的卡，
-而不是用缺页的数据覆盖——这种情况在 `state.json` 里记成 `skipped`。
-
-历史遗留的逐条记录不用手动清理：`meta.merge` 的条目会**吸收同一仓库、落在自己时间范围内的
-旧记录**（见 `collect.mjs` 的 `applyMerged`），下一轮就跑干净了。
-
-抓不到东西时先看 `res/state.json` 的 `diagnostics.github` / `diagnostics.gitee`：
-仓库数、提交数、是否被限流（`rateLimited`）、有没有仓库因为翻页上限被截断（`truncated`）。
-
-## Weblate 的译文时段
-
-一次翻译往往在十几分钟内产生几十条 change，所以按「相邻间隔 < `sessionGapMinutes`
-（默认 120 分钟）的连续改动」聚成一个时段，一个时段一条卡，外观与仓库卡同一套。
-
-同一段工作**只应该出现一张卡**，两处约束保证这点：
-
-- **卡片 id 锚在时段的「结束」时间**（`weblate:session:<最后一条改动的时刻>`），
-  而不是开始时间。同一批译文的两次抓取经常起点不同（翻页边界会切在时段中间），
-  用开始时间做 id 就会一抓一个新 id，页面上立刻多出一张起点更晚、条数更少的重复卡。
-- **往回翻页要翻过整个回看窗口**，不能「看到第一个空档就停」。最新一页里通常已经
-  出现「上次翻译」和「这次翻译」之间的空档，但同一页里往往还带着上一次时段的**尾巴**；
-  这时停手，那个尾巴就会被当成一个新的时段，与上一轮的完整卡重叠。
-  现在停止条件是「翻到早于 `lookbackDays`」或「翻到第 1 页」，被 `maxPages` 卡住时
-  会标记 `truncatedStart`，把这个可能不完整的时段直接丢掉。
-- `collect` 侧还有一道兜底：非仓库型汇总卡只看「谁覆盖得更全」——新卡完整包住旧卡
-  就替换，旧卡完整包住新卡就丢掉新卡（不让残缺数据顶掉完整数据）；同 id 但新卡明细
-  更少时同样保留旧的。
-
-## 需要自己托管的图片（OTTOhub 封面）
-
-OTTOhub 的 `cover_url` 是**带签名的临时链接**（`...?sign=<32 位>&t=<过期时间戳>`）：
-存进 `res/list.json` 当天能看，过了 `t` 就整站 403。而页面上的 `onerror` 会把图片块
-连 `item--media` 一起去掉，症状看起来像「它从来就没有封面」。
-
-所以 OTTOhub 的封面在抓取时**就地下载**到 `res/media/ottohub/<vid>.<ext>`，条目里只记
-站点相对路径 `media/ottohub/<vid>.jpg`：
-
-- `build.mjs` 把 `res/media/` 整目录复制进 `dist/media/`，并把相对路径补成
-  `/i-am-active/media/...`（主页、`/page/N/`、`/category/` 都能取到）；
-- 已经存在的文件不会重复下载（`vid` 是稳定的键），换封面属于罕见情况，删掉文件即可；
-- `collect` 对「站点相对路径的 image」允许**覆盖**老条目的远程链接——不覆盖的话，
-  历史条目永远停在那条会过期的签名地址上；
-- 图片会跟 `res/*.json` 一起被 CI 提交回仓库，线上不再依赖源站签名。
-
-## 分类页的活动类型
-
-分类页除了「年份 × 平台」，还多了一维 **活动类型**：游戏 / 视频 / 代码 / 文章 / 归档 / 其他。
-映射只有一处：`scripts/lib/platforms.mjs` 的 `KINDS` + `PLATFORM_KIND`（页面渲染和
-前端筛选都走 `kindOf()`）：
-
-| 类型 | 平台 |
-| --- | --- |
-| 游戏 | RetroAchievements、Steam |
-| 视频 | 哔哩哔哩、YouTube、OTTOhub、快手 |
-| 代码 | GitHub、Gitee、Weblate（给 TDE 翻译代码里的字符串） |
-| 文章 | Toad's Blog（主站博客） |
-| 归档 | 互联网档案馆、西瓜视频、抖音（后两者是已停更账号的一次性存档） |
-| 其他 | 没登记的平台（自动兜底） |
-
-**Toad's Blog（主站博客）走的是 Atom feed**：`https://toad.ccwu.cc/atom.xml`
-（hexo-generator-feed 生成的；`/rss.xml` /`/feed.xml` /`/rss2.xml` /`/feed/` 这些
-常见路径在本站全是 404，别再试了）。抓取器 `scripts/sources/hexo.mjs` 三个坑：
-feed 里的链接写的是 `toad114514.github.io`（要换成自定义域）；没写 `date` 的页面
-`published` 会落到 1970（视为无时间，排到末尾）；正文首图多为图床外链而
-**imgtp.com 已经 403 跑路**，所以首图抓取时就地下载到 `res/media/hexo/`，
-下载不到就不带图，绝不存会破的外链。
-
-**西瓜视频 / 抖音是「存档」，不是抓取源**：两个账号都已经不再更新（西瓜简介写着
-「西瓜永久停更」，抖音账号已丢失），网页端也基本下线。所以它们没有 `scripts/sources/`
-里的抓取器，条目是 2026-10 一次性导入的：西瓜全量 76 条视频（2021-04 ~ 2024-08，封面
-同 OTTOhub 一样落地到 `res/media/ixigua/`），抖音只有一张账号存档卡（作品列表接口
-已要求签名，只能留档账号本身，头像存 `res/media/douyin/avatar.jpg`）。
-
-> 西瓜的坑：`i.snssdk.com/video/app/user/home/v1/` 的 `total_number` 写死 30、
-> `has_more=false`，offset/max_behot_time 全无效——第一版只拿到最新 30 条。
-> 真正的全量接口是 `m.ixigua.com/video/app/user/videolist_tab/v3/`（参数
-> `to_user_id` + `orderby=publishtime` + `tab=1` + `count`/`offset`，`count` 可以
-> 开到 100 一次拿全 76 条；`has_more` 恒为 true 不可信，判终止要看返回数组是否为空）。
-> 补录脚本见 `.tmp/init-ixigua-backfill.mjs`。
-平台展示信息仍登记在 `platforms.mjs`，只是 `PLATFORM_KIND` 里归「归档」。
-
-三个维度可以叠加，URL 用 `?year=2026&kind=code&platform=github` 这样的查询参数保存状态；
-没有条目的类型不会出现在左栏。
-
-## 自动更新与部署
-
-`.github/workflows/update.yml` 每 1 小时跑一次（`0 * * * *`），也可以在
-Actions 页面点 **Run workflow** 手动触发；推到 `main` 时也会重建一次。
-
-一次运行做五件事：抓取各平台 → 回填老条目的游戏美术图 → 有变化就把 `res/*.json`
-（含 `res/media/`）提交回 `main` → 生成 `dist/` → 部署到 GitHub Pages。只有 `res/`
-真的变了才会产生提交，所以不会每小时堆一个空 commit。
-
-首次启用需要两个一次性设置：
-
-1. **Settings → Pages → Source 选 GitHub Actions**（不是分支，否则 `deploy-pages` 会报 `Get Pages site failed`）。
-2. **Settings → Secrets and variables → Actions** 里加上表里的密钥。`GITHUB_TOKEN` 由 Actions 自动提供，不用手动建。
-
-私密平台数据（`res/`）是用工作流自带的 `GITHUB_TOKEN` 提交的，这类提交不会再次
-触发工作流，因此不存在自激循环；`concurrency` 也限制了同一时刻只有一个实例在写数据。
+所有平台配置放在 `config.yaml`，然后 `.github/workflow/update.yaml` 每一小时爬一次然后更新一次
+我反正要是在这些平台发东西肯定逃不掉被抓一番然后运到这里来
+
+# 页面
+我们有主页可以大家一条一套看。
+我们有时间线整理归纳。
+我们有分类功能选定特殊地点。
+我们有搜索功能。
+明暗色切换。
+
+# 平台活跃及原理省流
+ - Toad114514 in [![Bilibili](https://img.shields.io/badge/Bilibili-pink?style=plastic&logo=bilibili&label=Video)
+ ](https://space.bilibili.com/3494381151586530) - `bilibili.mjs` 使用了那位已经陈死亡的 API 项目参考
+ - toad1145 in [![Static Badge](https://img.shields.io/badge/Youtube-red?style=plastic&logo=youtube&logoColor=%23ff0000&label=Video)](https://youtube.com/@toad1145) - `youtube.mjs` 这次是用残留的 RSS 记录，鉴于我目前没有在油管发视频就关掉了
+ - Toad114514 in [OTTOhub 滚幕网](https://www.ottohub.cn/u/22067) - `ottohub.mjs` 从前端 chunk 到了 API /api/video/user/{uid}?offset=&num= 另外封面是临时链接用的是本地下载到仓库。直接气活，还有我发现我ottohub的uid 220 **？！67！？**
+ - Toad114514 in [![Static Badge](https://img.shields.io/badge/kuaishow-orange?style=plastic&logo=kuaishou&label=Video)](https://www.kuaishou.com/profile/xn57ehqqzfdqie) - `tools/kuaishou-cp.mjs` 主战场根本攻不破，有混淆js，而且不知道什么鬼情况，什么都换了但主站就是一直回 109，刷新页面就掉登录了，*傻逼快手我草你妈视频是一堆鬼火烂仔的网页平台是三百年登不上去的* 但快手的开发者平台还是可以拿，**唯一一个需要 Playwright 的依赖就在这里**，主要是本地扫码登录+爬虫然后提交到 res/list.json
+ - Toad114514 in [![Static Badge](https://img.shields.io/badge/%E8%A5%BF%E7%93%9C%E8%A7%86%E9%A2%91-red?style=plastic&label=Video)](https://m.ixigua.com/user/1156309825358958) - `归档` 因为已退坑而且西瓜视频早就在2024年死透了，从用户页抓来的 /video/app/user/videolist_tab/v3/，只做了一次init加到了列表里面留个黑历史 *我的神人狗头小剧场气笑了*
+ - 保护狗头de阿巴阿巴鸭 in [![Static Badge](https://img.shields.io/badge/%E6%8A%96%E9%9F%B3-black?style=plastic&logo=tiktok&label=Video)](https://m.douyin.com/share/user/MS4wLjABAAAA6PVKsXhOQnDUq6NzC0iR0Yhexul5GSzhHaBQBK7iXQQ) - `归档` 现在抖音还在但我的ai挖不出来api了，都是需要签名的接口，只留了一个我的用户入门接口，哦对了这个号登不上去了
+ - Toad114514 in [![TDE](https://img.shields.io/badge/Translator-Trinity_Desktop-blue?style=plastic&logo=weblate)](https://mirror.git.trinitydesktop.org/weblate/user/toad114514/) - `weblate.mjs` 这个官方文档有提供 REST API，匿名有限流哭炸了
+ - Toad114514/toadXtech in ![githubs](https://img.shields.io/badge/Github-black?logo=github&style=plastic&label=Code) **(You are There!)** - `github.mjs` 经典款。这个很容易，Action 会固定获得 GITHUB_SECRET 所以不必担心请求限流
+ - Toad114514@toadstool in [![Gitee](https://img.shields.io/badge/Gitee-171717?style=plastic&logo=gitee&logoColor=C71D23&label=Code)](https://gitee.com/toadstool) - `gitee.mjs` 这个也有 API，但鉴于Gitee的一些仓库开了镜像同步，所以会同时查sha来验证并与 Github 的卡片合并
+ - [Toad's Blog](https://toad.ccwu.cc) - `hexo.mjs` 主站是一个已经停更（maybe）的博客，Hexo 框架，抓的是主站的 atom.xml RSS 数据
+ - Toad114514 in [Internet Archive](https://archive.org/details/@toad1145) - `archive.mjs` 主要是用 /search/beta/page_production/ 这个端点，虽然互联网档案馆也有API但公开的不符合目前需求，又哭炸了
+ - Toad114514 in [![Static Badge](https://img.shields.io/badge/%E7%82%B9%E4%B8%AA%E7%8C%AB%E7%A4%BE%E5%8C%BA-orange?style=plastic&label=Code)](https://shequ.codemao.cn/mobile/user/16551623) - `codemao.mjs` 主要是 /creation-tools/v1/user/center/work-list ，正好api最多返回100个，我的编程猫作品也正好只有100个，简直是巧合aaa。**很可惜现在编程猫今年6月开始正在社区大改造，很有可能要跑路了，所以现在这些作品能抓但点进去是不能玩的**
+ - KeiXRemindrel in Steam - `steam.mjs` 使用 ISteamUserStats/GetPlayerAchievements/v1/ 和 IPlayerService/GetRecentlyPlayedGames/v1/ 用来获取最近开了什么游戏，游戏成就获取之类的，还有看到有很多半条命2的活动是正常的因为**半条命2牛逼**。名字故意和原来不一样因为我喜欢小凯伊
+ - Toad114514 in [RetroAchievements](https://retroachievements.org/user/toad114514) - `retroachievements.mjs` 也有官方特供 WebAPI，必须API Key鉴权，气死了api的RecentlyGame这个是回放的所以需要做二次列表去重，另外我的记录里面只回溯了前3个月的所以应该会有很多 *Transcending the Rainbow* 的成就直接气活
+
+##### 我喜欢小凯伊。参考 https://kivo.wiki/data/character/518 不要管这个是干啥的这项是ai自己输出的

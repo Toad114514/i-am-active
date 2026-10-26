@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "蟾蜍在各个互联网平台的活跃记录集合 — 个人社交活跃展示页",
+  "description": "toad 在各个互联网平台的活跃记录集合 — 个人社交活跃展示页",
   "scripts": {
     "build": "node scripts/build.mjs",
     "collect": "node scripts/collect.mjs",

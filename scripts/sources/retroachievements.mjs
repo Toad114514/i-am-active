@@ -150,8 +150,8 @@ function lookbackMinutes(config, since) {
 /** 成就 → 站点条目。 */
 function achievementItem(a, user) {
   const hardcoreText = a.hardcore ? 'Hardcore' : 'Softcore';
-  const pointsText = a.points ? `，${a.points} 分` : '';
-  const gameText = a.gameTitle ? `在《${a.gameTitle}》解锁${hardcoreText}` : `解锁${hardcoreText}`;
+  const pointsText = a.points ? `，获得了 ${a.points} 分的好成绩` : '';
+  const gameText = a.gameTitle ? `我在《${a.gameTitle}》解锁了 ${hardcoreText}` : `我解锁了 ${hardcoreText}`;
   return {
     // id 与旧版本保持同一格式，避免历史 ralist.json 里的记录被当成新成就
     id: `retroachievements:${a.achievementId}:${a.unlockedAtRaw ?? ''}`,
@@ -289,8 +289,8 @@ function playSessionItem(game, user) {
     id: `retroachievements:play:${game.GameID}:${game.LastPlayed ?? ''}`,
     platform: 'retroachievements',
     type: '游玩记录',
-    title: `启动了 ${title}`,
-    summary: `${consoleText}开始玩 ${title} ${scoreText}`,
+    title: `严肃游玩 ${title}`,
+    summary: `${consoleText}严肃游玩了 ${title} ${scoreText}`,
     url: game.GameID ? `${SITE}/game/${game.GameID}` : `${SITE}/user/${user}`,
     image: absolute(game.ImageIcon),
     timestamp: toIso(game.LastPlayed),

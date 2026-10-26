@@ -240,9 +240,9 @@ function httpsify(url) {
 function typeLabel(type) {
   switch (type) {
     case 'DYNAMIC_TYPE_AV':
-      return '投稿视频';
+      return '新视频';
     case 'DYNAMIC_TYPE_DRAW':
-      return '图文动态';
+      return '神秘小图文';
     case 'DYNAMIC_TYPE_FORWARD':
       return '转发动态';
     case 'DYNAMIC_TYPE_WORD':
