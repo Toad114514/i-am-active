@@ -3,17 +3,31 @@
     "id": "github:repo:Toad114514/i-am-active:2026-10-26T20:20:17Z",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/i-am-active · 2 次提交",
-    "summary": "10-27 04:20–04:20，最近一条「docs: 重写 README 为口语化介绍，调整各平台文案」",
+    "title": "Toad114514/i-am-active · 4 次提交",
+    "summary": "10-27 04:20–04:30，最近一条「chore: .gitignore 忽略本地一键推送脚本」",
     "url": "https://github.com/Toad114514/i-am-active",
     "image": null,
-    "timestamp": "2026-10-26T20:20:25Z",
+    "timestamp": "2026-10-26T20:30:40Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/i-am-active",
-      "count": 2,
+      "count": 4,
       "changes": [
+        {
+          "text": "chore: .gitignore 忽略本地一键推送脚本",
+          "action": "提交",
+          "component": "f35c8cc",
+          "url": "https://github.com/Toad114514/i-am-active/commit/f35c8cc69c3b0902958840f13b9ec01905a1ac88",
+          "time": "2026-10-26T20:30:40Z"
+        },
+        {
+          "text": "docs: 排版。。",
+          "action": "提交",
+          "component": "e777d2c",
+          "url": "https://github.com/Toad114514/i-am-active/commit/e777d2c3ffd0ca380d1b2e9c202ec4ba324f089a",
+          "time": "2026-10-26T20:25:39Z"
+        },
         {
           "text": "docs: 重写 README 为口语化介绍，调整各平台文案",
           "action": "提交",
@@ -30,9 +44,9 @@
         }
       ],
       "windowStart": "2026-10-26T20:20:17Z",
-      "windowEnd": "2026-10-26T20:20:25Z",
+      "windowEnd": "2026-10-26T20:30:40Z",
       "actions": {
-        "提交": 2
+        "提交": 4
       }
     }
   },
