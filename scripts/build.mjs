@@ -629,6 +629,7 @@ async function buildTimeline(list, assetsPrefix) {
   }
 
   const yearKeys = [...years.keys()].sort((a, b) => b - a);
+  const platformCount = new Set(list.map((item) => item.platform)).size;
   const span = yearKeys.length
     ? yearKeys[yearKeys.length - 1] === yearKeys[0]
       ? String(yearKeys[0])
@@ -663,6 +664,7 @@ async function buildTimeline(list, assetsPrefix) {
             <span class="tl-item__date">${esc(day)}</span>
             <span class="tl-item__body">
               <a class="tl-item__title" href="${esc(item.url || '#')}"${item.url ? ' target="_blank" rel="noopener noreferrer"' : ''} title="${esc(item.title)}">${esc(item.title)}</a>
+              ${item.summary ? `<span class="tl-item__desc">${esc(item.summary)}</span>` : ''}
               <span class="tl-item__meta"><span class="tl-item__plat">${esc(platform.name)}</span><span>·</span><span>${esc(item.type || '活动')}</span><span>·</span><span>${esc(fullTime)}</span></span>
             </span>
           </li>`;
@@ -692,6 +694,7 @@ async function buildTimeline(list, assetsPrefix) {
       <h2>时间线</h2>
       <span class="section-head__meta">${esc(span)} · 共 ${list.length} 条</span>
     </div>
+    <p class="tl-intro">写代码、打游戏、翻译、投稿，${platformCount} 个平台的记录按年月倒序铺在这条轴上，越往下越久远。</p>
     ${jump}
     <div class="tl">${sections}
     </div>
