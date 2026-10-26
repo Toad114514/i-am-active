@@ -1,5 +1,233 @@
 [
   {
+    "id": "weblate:session:2026-10-26T20:43:45Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE 简体中文 · 28 条译文改动",
+    "summary": "修改译文 24 条、新增译文 4 条，涉及 2 个组件（applications/filelight-desktop-files、applications/digikam），最近一条「Makernote 和 IPTC 元数据支持」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22Makernote%20%E5%92%8C%20IPTC%20%E5%85%83%E6%95%B0%E6%8D%AE%E6%94%AF%E6%8C%81%22",
+    "image": null,
+    "timestamp": "2026-10-26T20:43:45.858155Z",
+    "meta": {
+      "merge": true,
+      "count": 29,
+      "translationCount": 28,
+      "changes": [
+        {
+          "text": "Makernote 和 IPTC 元数据支持",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22Makernote%20%E5%92%8C%20IPTC%20%E5%85%83%E6%95%B0%E6%8D%AE%E6%94%AF%E6%8C%81%22",
+          "time": "2026-10-26T20:43:45.858155Z"
+        },
+        {
+          "text": "ICC 配置文件路径似乎无效。如果你想要现在设置，请选择“是”，否则选“否”。这种情况下“颜色管理”功能将被禁用，直到此问题被解决为止。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=ICC%20%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E4%BC%BC%E4%B9%8E%E6%97%A0%E6%95%88%E3%80%82%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%83%B3%E8%A6%81%E7%8E%B0%E5%9C%A8%E8%AE%BE%E7%BD%AE%EF%BC%8C%E8%AF%B7%E9%80%89%E6%8B%A9%E2%80%9C%E6%98%AF%E2%80%9D%EF%BC%8C%E5%90%A6%E5%88%99%E9%80%89%E2%80%9C%E5%90%A6%E2%80%9D%E3%80%82%E8%BF%99%E7%A7%8D%E6%83%85%E5%86%B5%E4%B8%8B%E2%80%9C%E9%A2%9C%E8%89%B2%E7%AE%A1%E7%90%86%E2%80%9D%E5%8A%9F%E8%83%BD%E5%B0%86%E8%A2%AB%E7%A6%81%E7%94%A8%EF%BC%8C%E7%9B%B4%E5%88%B0%E6%AD%A4",
+          "time": "2026-10-26T20:43:30.571268Z"
+        },
+        {
+          "text": "ICC 配置文件路径似乎无效。如果你想要现在设置，请选择“是”，否则选“否”。这种情况，“颜色管理”功能将被禁用，直到此问题被解决为止。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=ICC%20%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E4%BC%BC%E4%B9%8E%E6%97%A0%E6%95%88%E3%80%82%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%83%B3%E8%A6%81%E7%8E%B0%E5%9C%A8%E8%AE%BE%E7%BD%AE%EF%BC%8C%E8%AF%B7%E9%80%89%E6%8B%A9%E2%80%9C%E6%98%AF%E2%80%9D%EF%BC%8C%E5%90%A6%E5%88%99%E9%80%89%E2%80%9C%E5%90%A6%E2%80%9D%E3%80%82%E8%BF%99%E7%A7%8D%E6%83%85%E5%86%B5%EF%BC%8C%E2%80%9C%E9%A2%9C%E8%89%B2%E7%AE%A1%E7%90%86%E2%80%9D%E5%8A%9F%E8%83%BD%E5%B0%86%E8%A2%AB%E7%A6%81%E7%94%A8%EF%BC%8C%E7%9B%B4%E5%88%B0%E6%AD%A4",
+          "time": "2026-10-26T20:43:22.721393Z"
+        },
+        {
+          "text": "ICC 配置文件路径似乎无效。如果你想要现在设置，请选择“是”，否则选“否”。 In this case, \"Color Management\" feature will be disabled until you solve this issue",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=ICC%20%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E4%BC%BC%E4%B9%8E%E6%97%A0%E6%95%88%E3%80%82%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%83%B3%E8%A6%81%E7%8E%B0%E5%9C%A8%E8%AE%BE%E7%BD%AE%EF%BC%8C%E8%AF%B7%E9%80%89%E6%8B%A9%E2%80%9C%E6%98%AF%E2%80%9D%EF%BC%8C%E5%90%A6%E5%88%99%E9%80%89%E2%80%9C%E5%90%A6%E2%80%9D%E3%80%82%20In%20this%20case%2C%20Color%20",
+          "time": "2026-10-26T20:42:58.714617Z"
+        },
+        {
+          "text": "全部",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%85%A8%E9%83%A8%22",
+          "time": "2026-10-26T20:42:00.848897Z"
+        },
+        {
+          "text": "打印精确大小(&X)：",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%89%93%E5%8D%B0%E7%B2%BE%E7%A1%AE%E5%A4%A7%E5%B0%8F(%26X)%EF%BC%9A%22",
+          "time": "2026-10-26T20:41:45.803205Z"
+        },
+        {
+          "text": "保存：",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E4%BF%9D%E5%AD%98%EF%BC%9A%22",
+          "time": "2026-10-26T20:41:43.785378Z"
+        },
+        {
+          "text": "加载：",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%8A%A0%E8%BD%BD%EF%BC%9A%22",
+          "time": "2026-10-26T20:41:42.389856Z"
+        },
+        {
+          "text": "通道：",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E9%80%9A%E9%81%93%EF%BC%9A%22",
+          "time": "2026-10-26T20:41:29.735499Z"
+        },
+        {
+          "text": "If this box is checked, files will be permanently removed instead of being placed in the Trash Bin. Use this option with caution: Most filesystems are unable to",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=If%20this%20box%20is%20checked%2C%20files%20will%20be%20permanently%20removed%20in",
+          "time": "2026-10-26T20:41:11.902438Z"
+        },
+        {
+          "text": "提示：使用还原模式仅可将图像放大到超大尺寸。注意，此过程可能需要一些时间。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%8F%90%E7%A4%BA%EF%BC%9A%E4%BD%BF%E7%94%A8%E8%BF%98%E5%8E%9F%E6%A8%A1%E5%BC%8F%E4%BB%85%E5%8F%AF%E5%B0%86%E5%9B%BE%E5%83%8F%E6%94%BE%E5%A4%A7%E5%88%B0%E8%B6%85%E5%A4%A7%E5%B0%BA%E5%AF%B8%E3%80%82%E6%B3%A8%E6%84%8F%EF%BC%8C%E6%AD%A4%E8%BF%87%E7%A8%8B%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E4%B8%80%E4%BA%9B%E6%97%B6%E9%97%B4%E3%80%82%22",
+          "time": "2026-10-26T20:40:43.312647Z"
+        },
+        {
+          "text": "提示：使用还原模式仅可将图像放大到超大尺寸。注意，此过程可能需要一些时间。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%8F%90%E7%A4%BA%EF%BC%9A%E4%BD%BF%E7%94%A8%E8%BF%98%E5%8E%9F%E6%A8%A1%E5%BC%8F%E4%BB%85%E5%8F%AF%E5%B0%86%E5%9B%BE%E5%83%8F%E6%94%BE%E5%A4%A7%E5%88%B0%E8%B6%85%E5%A4%A7%E5%B0%BA%E5%AF%B8%E3%80%82%E6%B3%A8%E6%84%8F%EF%BC%8C%E6%AD%A4%E8%BF%87%E7%A8%8B%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E4%B8%80%E4%BA%9B%E6%97%B6%E9%97%B4%E3%80%82%22",
+          "time": "2026-10-26T20:40:25.755329Z"
+        },
+        {
+          "text": "在此设定图像的亮度调整。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9C%A8%E6%AD%A4%E8%AE%BE%E5%AE%9A%E5%9B%BE%E5%83%8F%E7%9A%84%E4%BA%AE%E5%BA%A6%E8%B0%83%E6%95%B4%E3%80%82%22",
+          "time": "2026-10-26T20:39:53.143507Z"
+        },
+        {
+          "text": "将全部参数保存到设置文本文件中。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%B0%86%E5%85%A8%E9%83%A8%E5%8F%82%E6%95%B0%E4%BF%9D%E5%AD%98%E5%88%B0%E8%AE%BE%E7%BD%AE%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E4%B8%AD%E3%80%82%22",
+          "time": "2026-10-26T20:39:42.233970Z"
+        },
+        {
+          "text": "在此选择要使用的字体颜色。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9C%A8%E6%AD%A4%E9%80%89%E6%8B%A9%E8%A6%81%E4%BD%BF%E7%94%A8%E7%9A%84%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2%E3%80%82%22",
+          "time": "2026-10-26T20:39:38.322757Z"
+        },
+        {
+          "text": "图像编辑器 - %1",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9B%BE%E5%83%8F%E7%BC%96%E8%BE%91%E5%99%A8%20-%20%251%22",
+          "time": "2026-10-26T20:39:19.322587Z"
+        },
+        {
+          "text": "饱和度：%1",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E9%A5%B1%E5%92%8C%E5%BA%A6%EF%BC%9A%251%22",
+          "time": "2026-10-26T20:39:14.293303Z"
+        },
+        {
+          "text": "右下角",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%8F%B3%E4%B8%8B%E8%A7%92%22",
+          "time": "2026-10-26T20:38:52.488644Z"
+        },
+        {
+          "text": "左下角",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%B7%A6%E4%B8%8B%E8%A7%92%22",
+          "time": "2026-10-26T20:38:45.951478Z"
+        },
+        {
+          "text": "右上角",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%8F%B3%E4%B8%8A%E8%A7%92%22",
+          "time": "2026-10-26T20:38:41.993616Z"
+        },
+        {
+          "text": "左上角",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%B7%A6%E4%B8%8A%E8%A7%92%22",
+          "time": "2026-10-26T20:38:36.694841Z"
+        },
+        {
+          "text": "您是否想要继续？",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%82%A8%E6%98%AF%E5%90%A6%E6%83%B3%E8%A6%81%E7%BB%A7%E7%BB%AD%EF%BC%9F%22",
+          "time": "2026-10-26T20:38:25.646343Z"
+        },
+        {
+          "text": "(第%2 / %3张)",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22(%E7%AC%AC%252%20%2F%20%253%E5%BC%A0)%22",
+          "time": "2026-10-26T20:38:19.956755Z"
+        },
+        {
+          "text": "启用此选项可显示所有带有给定标签及其所有子标签的图像。",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%90%AF%E7%94%A8%E6%AD%A4%E9%80%89%E9%A1%B9%E5%8F%AF%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E5%B8%A6%E6%9C%89%E7%BB%99%E5%AE%9A%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%85%B6%E6%89%80%E6%9C%89%E5%AD%90%E6%A0%87%E7%AD%BE%E7%9A%84%E5%9B%BE%E5%83%8F%E3%80%82%22",
+          "time": "2026-10-26T20:37:34.019804Z"
+        },
+        {
+          "text": "启用此选项可递归显示当前相册下的所有子相册。",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%90%AF%E7%94%A8%E6%AD%A4%E9%80%89%E9%A1%B9%E5%8F%AF%E9%80%92%E5%BD%92%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E7%9B%B8%E5%86%8C%E4%B8%8B%E7%9A%84%E6%89%80%E6%9C%89%E5%AD%90%E7%9B%B8%E5%86%8C%E3%80%82%22",
+          "time": "2026-10-26T20:37:19.354149Z"
+        },
+        {
+          "text": "(c) 2002-2009，digiKam 开发团队",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22(c)%202002-2009%EF%BC%8CdigiKam%20%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F%22",
+          "time": "2026-10-26T20:36:49.817880Z"
+        },
+        {
+          "text": "径向视图",
+          "action": "新增译文",
+          "component": "applications/filelight-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/filelight-desktop-files/zh_Hans/?q=%22%E5%BE%84%E5%90%91%E8%A7%86%E5%9B%BE%22",
+          "time": "2026-10-26T20:35:53.627856Z"
+        },
+        {
+          "text": "磁盘使用情况统计信息",
+          "action": "新增译文",
+          "component": "applications/filelight-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/filelight-desktop-files/zh_Hans/?q=%22%E7%A3%81%E7%9B%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5%E7%BB%9F%E8%AE%A1%E4%BF%A1%E6%81%AF%22",
+          "time": "2026-10-26T20:35:41.577885Z"
+        }
+      ],
+      "windowStart": "2026-10-26T20:35:41.567729Z",
+      "windowEnd": "2026-10-26T20:43:45.858155Z",
+      "components": [
+        "applications/filelight-desktop-files",
+        "applications/digikam"
+      ],
+      "actions": {
+        "新贡献者": 1,
+        "新增译文": 4,
+        "修改译文": 24
+      },
+      "language": "简体中文",
+      "languageName": "简体中文",
+      "latestTarget": "Makernote 和 IPTC 元数据支持",
+      "source": "api"
+    }
+  },
+  {
     "id": "github:repo:Toad114514/i-am-active:2026-10-26T20:20:17Z",
     "platform": "github",
     "type": "仓库活动",
