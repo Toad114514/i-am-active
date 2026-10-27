@@ -49,7 +49,22 @@ function rewriteRaAchievement(item) {
   const [, game, tier, title, points, desc] = m;
   const hardcore = tier === '硬核成就' ? 'Hardcore' : 'Softcore';
   const head = `我在《${game}》解锁了 ${hardcore}「${title}」，获得了 ${points} 分的好成绩`;
-  return { ...item, summary: desc ? `${head}：${desc}` : head };
+  // type 也一起换掉：source 里是 `type: hardcoreText`，本来就是英文
+  return { ...item, type: hardcore, summary: desc ? `${head}：${desc}` : head };
+}
+
+/**
+ * RA 成就的 type 单独特化：有些条目 summary 上一轮已经改成新措辞，走不到上面那条
+ * 规则，type 还停在「硬核成就 / 成就」。这里用 meta.hardcore 判定——它和两种 type
+ * 严格一一对应，且与 summary 措辞无关，所以幂等。
+ * `游玩记录` 没有 hardcore 字段，靠 typeof 判断天然排除，不会被打成 Softcore。
+ */
+function rewriteRaType(item) {
+  if (item.platform !== 'retroachievements') return null;
+  if (typeof item.meta?.hardcore !== 'boolean') return null;
+  const tier = item.meta.hardcore ? 'Hardcore' : 'Softcore';
+  if (item.type === tier) return null;
+  return { ...item, type: tier };
 }
 
 /**
@@ -110,6 +125,7 @@ function rewriteSteamAchievement(item) {
 const RULES = [
   ['bilibili 类型', rewriteBilibili],
   ['RA 成就', rewriteRaAchievement],
+  ['RA 成就 type', rewriteRaType],
   ['RA 游玩', rewriteRaPlay],
   ['Steam 游玩', rewriteSteamPlay],
   ['Steam 成就', rewriteSteamAchievement],
