@@ -1,5 +1,35 @@
 [
   {
+    "id": "github:repo:Toad114514/i-am-active:2026-10-27T18:14:41Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/i-am-active · 1 次提交",
+    "summary": "10-28 02:14，最近一条「fix: 历史条目的文案补成新措辞（B站类型 / RA / Steam）」",
+    "url": "https://github.com/Toad114514/i-am-active",
+    "image": null,
+    "timestamp": "2026-10-27T18:14:41Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/i-am-active",
+      "count": 1,
+      "changes": [
+        {
+          "text": "fix: 历史条目的文案补成新措辞（B站类型 / RA / Steam）",
+          "action": "提交",
+          "component": "295e23e",
+          "url": "https://github.com/Toad114514/i-am-active/commit/295e23ef1e0b7fda5ad717810e2d21e1b1917e2d",
+          "time": "2026-10-27T18:14:41Z"
+        }
+      ],
+      "windowStart": "2026-10-27T18:14:41Z",
+      "windowEnd": "2026-10-27T18:14:41Z",
+      "actions": {
+        "提交": 1
+      }
+    }
+  },
+  {
     "id": "steam:play:220:1793124123",
     "platform": "steam",
     "type": "游玩记录",
