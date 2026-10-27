@@ -1,27 +1,27 @@
 {
   "lastRun": {
-    "weblate": "2026-10-27T09:31:50.874Z",
+    "weblate": "2026-10-27T15:40:53.496Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-10-27T09:30:52.426Z",
-    "kuaishou": "2026-10-27T09:31:04.855Z",
-    "github": "2026-10-27T09:31:21.662Z",
-    "gitee": "2026-10-27T09:31:44.377Z",
-    "archive": "2026-10-27T09:31:45.548Z",
-    "retroachievements": "2026-10-27T09:31:57.332Z",
-    "hexo": "2026-10-27T09:31:55.846Z",
-    "steam": "2026-10-27T09:31:59.942Z",
-    "bilibili": "2026-10-27T09:30:51.715Z",
-    "codemao": "2026-10-27T09:31:47.085Z"
+    "ottohub": "2026-10-27T15:40:01.195Z",
+    "kuaishou": "2026-10-27T15:40:03.371Z",
+    "github": "2026-10-27T15:40:22.387Z",
+    "gitee": "2026-10-27T15:40:46.404Z",
+    "archive": "2026-10-27T15:40:48.034Z",
+    "retroachievements": "2026-10-27T15:40:59.837Z",
+    "hexo": "2026-10-27T15:40:59.020Z",
+    "steam": "2026-10-27T15:41:02.812Z",
+    "bilibili": "2026-10-27T15:40:00.385Z",
+    "codemao": "2026-10-27T15:40:49.434Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-10-27T09:31:55.847Z",
-      "since": "2026-10-27T03:14:43.104Z",
+      "checkedAt": "2026-10-27T15:40:59.020Z",
+      "since": "2026-10-27T09:31:57.332Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
-      "note": "",
+      "note": "窗口 4320 分钟内没有成就，也没有新玩的游戏（接口正常返回，只是没东西）",
       "profile": {
         "ok": true,
         "user": "toad114514",
@@ -30,27 +30,27 @@
       },
       "recentAchievements": {
         "ok": true,
-        "rawCount": 3,
-        "used": 3,
+        "rawCount": 0,
+        "used": 0,
         "error": null
       },
       "recentlyPlayed": {
         "ok": true,
         "rawCount": 30,
-        "used": 2,
+        "used": 0,
         "error": null
       },
       "items": {
-        "achievements": 3,
-        "plays": 2
+        "achievements": 0,
+        "plays": 0
       },
       "gameArt": {
-        "games": 2,
-        "withArt": 5,
+        "games": 0,
+        "withArt": 0,
         "sources": {
           "title": 0,
           "ingame": 0,
-          "boxart": 5
+          "boxart": 0
         },
         "debug": []
       }
@@ -97,9 +97,9 @@
       "actions": 668
     },
     "steam": {
-      "checkedAt": "2026-10-27T09:31:57.333Z",
-      "since": "2026-10-27T03:14:46.126Z",
-      "note": "窗口内没有新动作：这些游戏的 29 个已解锁成就都在上次抓取之前",
+      "checkedAt": "2026-10-27T15:40:59.838Z",
+      "since": "2026-10-27T09:31:59.942Z",
+      "note": "",
       "totalCount": 3,
       "games": [
         {
@@ -107,7 +107,7 @@
           "name": "Half-Life 2",
           "minutes2weeks": 253,
           "minutesTotal": 952,
-          "lastPlayed": "2026-10-25T09:29:27.000Z"
+          "lastPlayed": "2026-10-27T15:25:41.000Z"
         },
         {
           "appid": "365450",
@@ -124,7 +124,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 0,
+      "playItems": 1,
       "achievementItems": 0,
       "achievements": [
         {
