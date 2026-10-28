@@ -1,5 +1,175 @@
 [
   {
+    "id": "weblate:session:2026-10-28T20:03:12Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE 简体中文 · 20 条译文改动",
+    "summary": "修改译文 12 条、新增译文 8 条，涉及 1 个组件（applications/digikam），最近一条「清楚当前选择」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%B8%85%E6%A5%9A%E5%BD%93%E5%89%8D%E9%80%89%E6%8B%A9%22",
+    "image": null,
+    "timestamp": "2026-10-28T20:03:12.648458Z",
+    "meta": {
+      "merge": true,
+      "count": 20,
+      "translationCount": 20,
+      "changes": [
+        {
+          "text": "清楚当前选择",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%B8%85%E6%A5%9A%E5%BD%93%E5%89%8D%E9%80%89%E6%8B%A9%22",
+          "time": "2026-10-28T20:03:12.648458Z"
+        },
+        {
+          "text": "在此处选择直方图的时间单位。您可以更改图表的十年尺度，以便随时间推移进行放大或缩小。",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9C%A8%E6%AD%A4%E5%A4%84%E9%80%89%E6%8B%A9%E7%9B%B4%E6%96%B9%E5%9B%BE%E7%9A%84%E6%97%B6%E9%97%B4%E5%8D%95%E4%BD%8D%E3%80%82%E6%82%A8%E5%8F%AF%E4%BB%A5%E6%9B%B4%E6%94%B9%E5%9B%BE%E8%A1%A8%E7%9A%84%E5%8D%81%E5%B9%B4%E5%B0%BA%E5%BA%A6%EF%BC%8C%E4%BB%A5%E4%BE%BF%E9%9A%8F%E6%97%B6%E9%97%B4%E6%8E%A8%E7%A7%BB%E8%BF%9B%E8%A1%8C%E6%94%BE%E5%A4%A7%E6%88%96%E7%BC%A9%E5%B0%8F%E3%80%82%22",
+          "time": "2026-10-28T20:03:02.173447Z"
+        },
+        {
+          "text": "年",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%B9%B4%22",
+          "time": "2026-10-28T20:02:39.454709Z"
+        },
+        {
+          "text": "月",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%9C%88%22",
+          "time": "2026-10-28T20:02:34.921286Z"
+        },
+        {
+          "text": "周",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%91%A8%22",
+          "time": "2026-10-28T20:02:31.065942Z"
+        },
+        {
+          "text": "日",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%97%A5%22",
+          "time": "2026-10-28T20:02:27.963115Z"
+        },
+        {
+          "text": "标记创建错误",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E6%A0%87%E8%AE%B0%E5%88%9B%E5%BB%BA%E9%94%99%E8%AF%AF%22",
+          "time": "2026-10-28T20:02:13.357961Z"
+        },
+        {
+          "text": "在“%1”中 创建新标记",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9C%A8%E2%80%9C%251%E2%80%9D%E4%B8%AD%20%E5%88%9B%E5%BB%BA%E6%96%B0%E6%A0%87%E8%AE%B0%22",
+          "time": "2026-10-28T20:01:56.401642Z"
+        },
+        {
+          "text": "在“%1”中创建新标记",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9C%A8%E2%80%9C%251%E2%80%9D%E4%B8%AD%E5%88%9B%E5%BB%BA%E6%96%B0%E6%A0%87%E8%AE%B0%22",
+          "time": "2026-10-28T20:01:38.170314Z"
+        },
+        {
+          "text": "在这里输入标记名字...",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9C%A8%E8%BF%99%E9%87%8C%E8%BE%93%E5%85%A5%E6%A0%87%E8%AE%B0%E5%90%8D%E5%AD%97...%22",
+          "time": "2026-10-28T20:01:33.217153Z"
+        },
+        {
+          "text": "创建新标记",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%88%9B%E5%BB%BA%E6%96%B0%E6%A0%87%E8%AE%B0%22",
+          "time": "2026-10-28T20:01:23.582296Z"
+        },
+        {
+          "text": "在这里输入标签名字...",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%9C%A8%E8%BF%99%E9%87%8C%E8%BE%93%E5%85%A5%E6%A0%87%E7%AD%BE%E5%90%8D%E5%AD%97...%22",
+          "time": "2026-10-28T20:01:08.186901Z"
+        },
+        {
+          "text": "你确定要删除选定的搜索 \"%1\"？",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E4%BD%A0%E7%A1%AE%E5%AE%9A%E8%A6%81%E5%88%A0%E9%99%A4%E9%80%89%E5%AE%9A%E7%9A%84%E6%90%9C%E7%B4%A2%20%251%20%EF%BC%9F%22",
+          "time": "2026-10-28T20:00:35.954405Z"
+        },
+        {
+          "text": "删除搜索？",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E5%88%A0%E9%99%A4%E6%90%9C%E7%B4%A2%EF%BC%9F%22",
+          "time": "2026-10-28T20:00:07.889781Z"
+        },
+        {
+          "text": "选择用于过滤相册内容的评分数值。使用上下文菜单设置评分过滤条件。",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E9%80%89%E6%8B%A9%E7%94%A8%E4%BA%8E%E8%BF%87%E6%BB%A4%E7%9B%B8%E5%86%8C%E5%86%85%E5%AE%B9%E7%9A%84%E8%AF%84%E5%88%86%E6%95%B0%E5%80%BC%E3%80%82%E4%BD%BF%E7%94%A8%E4%B8%8A%E4%B8%8B%E6%96%87%E8%8F%9C%E5%8D%95%E8%AE%BE%E7%BD%AE%E8%AF%84%E5%88%86%E8%BF%87%E6%BB%A4%E6%9D%A1%E4%BB%B6%E3%80%82%22",
+          "time": "2026-10-28T19:59:56.165564Z"
+        },
+        {
+          "text": "以 digiKam 的数据库条目更新所有当前相册的图像元数据 (图像元数据将会用数据库中的数据覆盖写入)。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%22%E4%BB%A5%20digiKam%20%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9D%A1%E7%9B%AE%E6%9B%B4%E6%96%B0%E6%89%80%E6%9C%89%E5%BD%93%E5%89%8D%E7%9B%B8%E5%86%8C%E7%9A%84%E5%9B%BE%E5%83%8F%E5%85%83%E6%95%B0%E6%8D%AE%20(%E5%9B%BE%E5%83%8F%E5%85%83%E6%95%B0%E6%8D%AE%E5%B0%86%E4%BC%9A%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A6%86%E7%9B%96%E5%86%99%E5%85%A5)%E3%80%82%22",
+          "time": "2026-10-28T19:58:42.036092Z"
+        },
+        {
+          "text": "未能将旧数据库更新为新数据库格式 如果相册 “%1” 不存在或被写保护，则可能会发生此错误。 如果您已移动照片集，则需要在 digikam 的配置文件中调整“相册路径”。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%E6%9C%AA%E8%83%BD%E5%B0%86%E6%97%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9B%B4%E6%96%B0%E4%B8%BA%E6%96%B0%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A0%BC%E5%BC%8F%20%E5%A6%82%E6%9E%9C%E7%9B%B8%E5%86%8C%20%E2%80%9C%251%E2%80%9D%20%E4%B8%8D%E5%AD%98%E5%9C%A8%E6%88%96%E8%A2%AB%E5%86%99%E4%BF%9D%E6%8A%A4%EF%BC%8C%E5%88%99%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%8F%91%E7%94%9F%E6%AD%A4%E9%94%99%E8%AF%AF%E3%80%82%20%E5%A6%82%E6%9E%9C%E6%82%A8%E5%B7%B2%E7%A7%BB%E5%8A%A8%E7%85%A7%E7%89%87%E9%9B%86%EF%BC%8C%E5%88%99%E9%9C%80%E8%A6%81",
+          "time": "2026-10-28T19:58:18.089921Z"
+        },
+        {
+          "text": "未能将旧数据库更新为新数据库格式 如果相册 “%1” 不存在或只读，则可能会发生此错误。 如果您已移动照片集，则需要在 digikam 的配置文件中调整“相册路径”。",
+          "action": "修改译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%E6%9C%AA%E8%83%BD%E5%B0%86%E6%97%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9B%B4%E6%96%B0%E4%B8%BA%E6%96%B0%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A0%BC%E5%BC%8F%20%E5%A6%82%E6%9E%9C%E7%9B%B8%E5%86%8C%20%E2%80%9C%251%E2%80%9D%20%E4%B8%8D%E5%AD%98%E5%9C%A8%E6%88%96%E5%8F%AA%E8%AF%BB%EF%BC%8C%E5%88%99%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%8F%91%E7%94%9F%E6%AD%A4%E9%94%99%E8%AF%AF%E3%80%82%20%E5%A6%82%E6%9E%9C%E6%82%A8%E5%B7%B2%E7%A7%BB%E5%8A%A8%E7%85%A7%E7%89%87%E9%9B%86%EF%BC%8C%E5%88%99%E9%9C%80%E8%A6%81%E5%9C%A8%20",
+          "time": "2026-10-28T19:58:01.509724Z"
+        },
+        {
+          "text": "未能将旧数据库更新为新数据库格式 如果相册 “%1” 不存在或被写保护，则可能会发生此错误。 如果您已移动照片集，则需要在 digikam 的配置文件中调整“相册路径”。",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%E6%9C%AA%E8%83%BD%E5%B0%86%E6%97%A7%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9B%B4%E6%96%B0%E4%B8%BA%E6%96%B0%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A0%BC%E5%BC%8F%20%E5%A6%82%E6%9E%9C%E7%9B%B8%E5%86%8C%20%E2%80%9C%251%E2%80%9D%20%E4%B8%8D%E5%AD%98%E5%9C%A8%E6%88%96%E8%A2%AB%E5%86%99%E4%BF%9D%E6%8A%A4%EF%BC%8C%E5%88%99%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%8F%91%E7%94%9F%E6%AD%A4%E9%94%99%E8%AF%AF%E3%80%82%20%E5%A6%82%E6%9E%9C%E6%82%A8%E5%B7%B2%E7%A7%BB%E5%8A%A8%E7%85%A7%E7%89%87%E9%9B%86%EF%BC%8C%E5%88%99%E9%9C%80%E8%A6%81",
+          "time": "2026-10-28T19:57:47.128671Z"
+        },
+        {
+          "text": "此 LED 指示灯代表当前全局图像筛选器状态，包括所有状态栏过滤器和右侧边栏中的所有标签过滤器。 灰色：未启用任何过滤条件，所有项目均可见。 红色：已启用过滤条件，但没有匹配项。 绿色：过滤条件至少匹配到一个项目。 点击鼠标任意按钮都会重置所有过滤条件。",
+          "action": "新增译文",
+          "component": "applications/digikam",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/applications/digikam/zh_Hans/?q=%E6%AD%A4%20LED%20%E6%8C%87%E7%A4%BA%E7%81%AF%E4%BB%A3%E8%A1%A8%E5%BD%93%E5%89%8D%E5%85%A8%E5%B1%80%E5%9B%BE%E5%83%8F%E7%AD%9B%E9%80%89%E5%99%A8%E7%8A%B6%E6%80%81%EF%BC%8C%E5%8C%85%E6%8B%AC%E6%89%80%E6%9C%89%E7%8A%B6%E6%80%81%E6%A0%8F%E8%BF%87%E6%BB%A4%E5%99%A8%E5%92%8C%E5%8F%B3%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E6%A0%87%E7%AD%BE%E8%BF%87%E6%BB%A4%E5%99%A8%E3%80%82%20%E7%81%B0%E8%89%B2%EF%BC%9A%E6%9C%AA%E5%90%AF%E7%94%A8%E4%BB%BB%E4%BD%95%E8%BF%87%E6%BB%A4%E6%9D%A1",
+          "time": "2026-10-28T19:56:50.324003Z"
+        }
+      ],
+      "windowStart": "2026-10-28T19:56:50.324003Z",
+      "windowEnd": "2026-10-28T20:03:12.648458Z",
+      "components": [
+        "applications/digikam"
+      ],
+      "actions": {
+        "新增译文": 8,
+        "修改译文": 12
+      },
+      "language": "简体中文",
+      "languageName": "简体中文",
+      "latestTarget": "清楚当前选择",
+      "source": "api"
+    }
+  },
+  {
     "id": "steam:play:4000:1793202416",
     "platform": "steam",
     "type": "游玩记录",
