@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-10-28T13:44:17.257Z",
+    "weblate": "2026-10-28T19:15:11.573Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-10-28T13:43:04.631Z",
-    "kuaishou": "2026-10-28T13:43:26.314Z",
-    "github": "2026-10-28T13:43:46.526Z",
-    "gitee": "2026-10-28T13:44:11.706Z",
-    "archive": "2026-10-28T13:44:13.245Z",
-    "retroachievements": "2026-10-28T13:44:23.860Z",
-    "hexo": "2026-10-28T13:44:22.849Z",
-    "steam": "2026-10-28T13:44:26.955Z",
-    "bilibili": "2026-10-28T13:43:03.026Z",
-    "codemao": "2026-10-28T13:44:14.400Z"
+    "ottohub": "2026-10-28T19:14:14.210Z",
+    "kuaishou": "2026-10-28T19:14:27.256Z",
+    "github": "2026-10-28T19:14:44.773Z",
+    "gitee": "2026-10-28T19:15:05.610Z",
+    "archive": "2026-10-28T19:15:07.587Z",
+    "retroachievements": "2026-10-28T19:15:18.877Z",
+    "hexo": "2026-10-28T19:15:18.011Z",
+    "steam": "2026-10-28T19:15:22.488Z",
+    "bilibili": "2026-10-28T19:14:12.962Z",
+    "codemao": "2026-10-28T19:15:09.008Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-10-28T13:44:22.850Z",
-      "since": "2026-10-28T06:31:40.182Z",
+      "checkedAt": "2026-10-28T19:15:18.012Z",
+      "since": "2026-10-28T13:44:23.860Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -97,9 +97,9 @@
       "actions": 670
     },
     "steam": {
-      "checkedAt": "2026-10-28T13:44:23.861Z",
-      "since": "2026-10-28T06:31:43.058Z",
-      "note": "窗口内没有新动作：这些游戏的 31 个已解锁成就都在上次抓取之前",
+      "checkedAt": "2026-10-28T19:15:18.877Z",
+      "since": "2026-10-28T13:44:26.955Z",
+      "note": "",
       "totalCount": 4,
       "games": [
         {
@@ -112,9 +112,9 @@
         {
           "appid": "4000",
           "name": "Garry's Mod",
-          "minutes2weeks": 25,
-          "minutesTotal": 278,
-          "lastPlayed": "2026-10-28T05:59:26.000Z"
+          "minutes2weeks": 60,
+          "minutesTotal": 312,
+          "lastPlayed": "2026-10-28T15:46:56.000Z"
         },
         {
           "appid": "365450",
@@ -131,7 +131,7 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 0,
+      "playItems": 1,
       "achievementItems": 0,
       "achievements": [
         {

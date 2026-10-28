@@ -1,5 +1,22 @@
 [
   {
+    "id": "steam:play:4000:1793202416",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Garry's Mod",
+    "summary": "从 2026/10/28 23:46:56 开始玩，两周内玩了 1 小时，游玩时长 5 小时 12 分钟",
+    "url": "https://steamcommunity.com/app/4000",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg",
+    "timestamp": "2026-10-28T15:46:56.000Z",
+    "meta": {
+      "appid": "4000",
+      "gameName": "Garry's Mod",
+      "minutes2weeks": 60,
+      "minutesTotal": 312,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg"
+    }
+  },
+  {
     "id": "steam:play:4000:1793167166",
     "platform": "steam",
     "type": "游玩记录",
