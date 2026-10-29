@@ -1,5 +1,39 @@
 [
   {
+    "id": "steam:play:220:1793287463",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Half-Life 2",
+    "summary": "从 2026/10/29 23:24:23 开始玩，两周内玩了 6 小时 31 分钟，游玩时长 18 小时 10 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-10-29T15:24:23.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 391,
+      "minutesTotal": 1090,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
+    "id": "steam:220:GLOBAL_GNOME_ALONE",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "侏儒当家",
+    "summary": "Half-Life 2 获得成就💀️「侏儒当家」：在 Gabe Newell 将一个花园侏儒送入太空后启动《半衰期2》。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/d955037625d44c6c21031ff93d8913ec987b0895.jpg",
+    "timestamp": "2026-10-29T15:20:42.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "GLOBAL_GNOME_ALONE",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/d955037625d44c6c21031ff93d8913ec987b0895.jpg"
+    }
+  },
+  {
     "id": "weblate:session:2026-10-28T20:03:12Z",
     "platform": "weblate",
     "type": "译文提交",
