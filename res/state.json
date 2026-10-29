@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-10-29T17:16:02.232Z",
+    "weblate": "2026-10-29T22:18:40.174Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-10-29T17:15:00.728Z",
-    "kuaishou": "2026-10-29T17:15:03.401Z",
-    "github": "2026-10-29T17:15:20.952Z",
-    "gitee": "2026-10-29T17:15:56.642Z",
-    "archive": "2026-10-29T17:15:58.229Z",
-    "retroachievements": "2026-10-29T17:16:09.828Z",
-    "hexo": "2026-10-29T17:16:09.005Z",
-    "steam": "2026-10-29T17:16:13.093Z",
-    "bilibili": "2026-10-29T17:14:59.524Z",
-    "codemao": "2026-10-29T17:15:59.659Z"
+    "ottohub": "2026-10-29T22:17:54.464Z",
+    "kuaishou": "2026-10-29T22:17:57.048Z",
+    "github": "2026-10-29T22:18:12.233Z",
+    "gitee": "2026-10-29T22:18:34.791Z",
+    "archive": "2026-10-29T22:18:36.229Z",
+    "retroachievements": "2026-10-29T22:18:47.643Z",
+    "hexo": "2026-10-29T22:18:46.985Z",
+    "steam": "2026-10-29T22:18:51.078Z",
+    "bilibili": "2026-10-29T22:17:53.329Z",
+    "codemao": "2026-10-29T22:18:37.876Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-10-29T17:16:09.006Z",
-      "since": "2026-10-29T10:39:47.573Z",
+      "checkedAt": "2026-10-29T22:18:46.986Z",
+      "since": "2026-10-29T17:16:09.828Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -97,8 +97,8 @@
       "actions": 670
     },
     "steam": {
-      "checkedAt": "2026-10-29T17:16:09.829Z",
-      "since": "2026-10-29T10:39:50.692Z",
+      "checkedAt": "2026-10-29T22:18:47.643Z",
+      "since": "2026-10-29T17:16:13.093Z",
       "note": "",
       "totalCount": 4,
       "games": [
@@ -119,9 +119,9 @@
         {
           "appid": "365450",
           "name": "Hacknet",
-          "minutes2weeks": 7,
-          "minutesTotal": 291,
-          "lastPlayed": "2026-10-25T14:59:56.000Z"
+          "minutes2weeks": 13,
+          "minutesTotal": 297,
+          "lastPlayed": "2026-10-29T20:08:52.000Z"
         },
         {
           "appid": "10",
@@ -132,7 +132,7 @@
         }
       ],
       "playItems": 1,
-      "achievementItems": 1,
+      "achievementItems": 0,
       "achievements": [
         {
           "appid": "477160",
@@ -166,7 +166,7 @@
           "name": "Half-Life 2",
           "total": 69,
           "unlocked": 17,
-          "inWindow": 1,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
@@ -194,7 +194,7 @@
       "mode": "incremental",
       "works": 20,
       "pages": 1,
-      "total": 100
+      "total": 99
     }
   }
 }

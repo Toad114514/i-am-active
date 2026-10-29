@@ -1,5 +1,22 @@
 [
   {
+    "id": "steam:play:365450:1793304532",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Hacknet",
+    "summary": "从 2026/10/30 04:08:52 开始玩，两周内玩了 13 分钟，游玩时长 4 小时 57 分钟",
+    "url": "https://steamcommunity.com/app/365450",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/365450/header.jpg",
+    "timestamp": "2026-10-29T20:08:52.000Z",
+    "meta": {
+      "appid": "365450",
+      "gameName": "Hacknet",
+      "minutes2weeks": 13,
+      "minutesTotal": 297,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/365450/header.jpg"
+    }
+  },
+  {
     "id": "steam:play:220:1793287463",
     "platform": "steam",
     "type": "游玩记录",
