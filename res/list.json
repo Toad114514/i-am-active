@@ -1,5 +1,73 @@
 [
   {
+    "id": "steam:play:220:1793442337",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Half-Life 2",
+    "summary": "从 2026/10/31 18:25:37 开始玩，两周内玩了 11 小时 33 分钟，游玩时长 23 小时 13 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-10-31T10:25:37.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 693,
+      "minutesTotal": 1393,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
+    "id": "steam:220:EP1_BEAT_GARAGEELEVATORSTANDOFF",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "电梯行动",
+    "summary": "Half-Life 2 获得成就💀️「电梯行动」：坚持到最后，搭上车库电梯。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/b591626a047d338b255a256fa6e124b982004116.jpg",
+    "timestamp": "2026-10-31T09:57:31.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "EP1_BEAT_GARAGEELEVATORSTANDOFF",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/b591626a047d338b255a256fa6e124b982004116.jpg"
+    }
+  },
+  {
+    "id": "steam:220:EP1_BEAT_CITADELCORE",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "围堵",
+    "summary": "Half-Life 2 获得成就💀️「围堵」：控制城堡核心。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/5aa2be2857d0a705e84be8f58bc5eeb38d283d2f.jpg",
+    "timestamp": "2026-10-31T08:11:17.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "EP1_BEAT_CITADELCORE",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/5aa2be2857d0a705e84be8f58bc5eeb38d283d2f.jpg"
+    }
+  },
+  {
+    "id": "steam:220:EP1_BEAT_MAINELEVATOR",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "小心头！",
+    "summary": "Half-Life 2 获得成就💀️「小心头！」：毫发无伤地到达城堡主电梯井的底部。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/b5786dcef701a726353a3d1542dbe11a31309103.jpg",
+    "timestamp": "2026-10-31T07:54:42.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "EP1_BEAT_MAINELEVATOR",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/b5786dcef701a726353a3d1542dbe11a31309103.jpg"
+    }
+  },
+  {
     "id": "steam:play:220:1793432879",
     "platform": "steam",
     "type": "游玩记录",
