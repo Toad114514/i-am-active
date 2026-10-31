@@ -1,5 +1,56 @@
 [
   {
+    "id": "steam:play:220:1793432879",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Half-Life 2",
+    "summary": "从 2026/10/31 15:47:59 开始玩，两周内玩了 8 小时 55 分钟，游玩时长 20 小时 35 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-10-31T07:47:59.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 535,
+      "minutesTotal": 1235,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_BEAT_GAME",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "奇点坍塌",
+    "summary": "Half-Life 2 获得成就💀️「奇点坍塌」",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_game.jpg",
+    "timestamp": "2026-10-31T06:42:09.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_BEAT_GAME",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_game.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_BEAT_C1713STRIDERSTANDOFF",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "巨人杀手",
+    "summary": "Half-Life 2 获得成就💀️「巨人杀手」：在 17 号城的屋顶战斗中击败三脚机甲。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_c1713striderstandoff.jpg",
+    "timestamp": "2026-10-31T05:38:46.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_BEAT_C1713STRIDERSTANDOFF",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_beat_c1713striderstandoff.jpg"
+    }
+  },
+  {
     "id": "steam:play:365450:1793304532",
     "platform": "steam",
     "type": "游玩记录",
