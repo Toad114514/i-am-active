@@ -1,5 +1,56 @@
 [
   {
+    "id": "steam:220:HL2_HIT_CANCOP_WITHCAN",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "目空一切",
+    "summary": "Half-Life 2 获得成就💀️「目空一切」",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_hit_cancop_withcan.jpg",
+    "timestamp": "2026-11-01T08:21:35.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_HIT_CANCOP_WITHCAN",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_hit_cancop_withcan.jpg"
+    }
+  },
+  {
+    "id": "steam:play:220:1793520925",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Half-Life 2",
+    "summary": "从 2026/11/1 16:15:25 开始玩，两周内玩了 11 小时 33 分钟，游玩时长 23 小时 13 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-11-01T08:15:25.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 693,
+      "minutesTotal": 1393,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
+    "id": "steam:play:4000:1793520778",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Garry's Mod",
+    "summary": "从 2026/11/1 16:12:58 开始玩，两周内玩了 1 小时 45 分钟，游玩时长 5 小时 57 分钟",
+    "url": "https://steamcommunity.com/app/4000",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg",
+    "timestamp": "2026-11-01T08:12:58.000Z",
+    "meta": {
+      "appid": "4000",
+      "gameName": "Garry's Mod",
+      "minutes2weeks": 105,
+      "minutesTotal": 357,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg"
+    }
+  },
+  {
     "id": "retroachievements:play:32649:2026-10-31 17:25:21",
     "platform": "retroachievements",
     "type": "游玩记录",

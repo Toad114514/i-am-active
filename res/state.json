@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-01T01:46:04.387Z",
+    "weblate": "2026-11-01T08:33:09.504Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-01T01:45:18.976Z",
-    "kuaishou": "2026-11-01T01:45:21.261Z",
-    "github": "2026-11-01T01:45:36.901Z",
-    "gitee": "2026-11-01T01:45:58.755Z",
-    "archive": "2026-11-01T01:46:00.659Z",
-    "retroachievements": "2026-11-01T01:46:10.896Z",
-    "hexo": "2026-11-01T01:46:09.350Z",
-    "steam": "2026-11-01T01:46:14.394Z",
-    "bilibili": "2026-11-01T01:45:18.116Z",
-    "codemao": "2026-11-01T01:46:01.974Z"
+    "ottohub": "2026-11-01T08:32:21.444Z",
+    "kuaishou": "2026-11-01T08:32:23.915Z",
+    "github": "2026-11-01T08:32:39.153Z",
+    "gitee": "2026-11-01T08:33:00.876Z",
+    "archive": "2026-11-01T08:33:06.442Z",
+    "retroachievements": "2026-11-01T08:33:17.195Z",
+    "hexo": "2026-11-01T08:33:16.030Z",
+    "steam": "2026-11-01T08:33:20.611Z",
+    "bilibili": "2026-11-01T08:32:19.566Z",
+    "codemao": "2026-11-01T08:33:07.717Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-01T01:46:09.350Z",
-      "since": "2026-10-31T22:21:43.480Z",
+      "checkedAt": "2026-11-01T08:33:16.031Z",
+      "since": "2026-11-01T01:46:10.896Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -97,9 +97,9 @@
       "actions": 670
     },
     "steam": {
-      "checkedAt": "2026-11-01T01:46:10.897Z",
-      "since": "2026-10-31T22:21:45.981Z",
-      "note": "窗口内没有新动作：这些游戏的 37 个已解锁成就都在上次抓取之前",
+      "checkedAt": "2026-11-01T08:33:17.195Z",
+      "since": "2026-11-01T01:46:14.394Z",
+      "note": "",
       "totalCount": 4,
       "games": [
         {
@@ -107,14 +107,14 @@
           "name": "Half-Life 2",
           "minutes2weeks": 693,
           "minutesTotal": 1393,
-          "lastPlayed": "2026-10-31T10:25:37.000Z"
+          "lastPlayed": "2026-11-01T08:15:25.000Z"
         },
         {
           "appid": "4000",
           "name": "Garry's Mod",
-          "minutes2weeks": 60,
-          "minutesTotal": 312,
-          "lastPlayed": "2026-10-28T15:46:56.000Z"
+          "minutes2weeks": 105,
+          "minutesTotal": 357,
+          "lastPlayed": "2026-11-01T08:12:58.000Z"
         },
         {
           "appid": "365450",
@@ -131,8 +131,8 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 0,
-      "achievementItems": 0,
+      "playItems": 2,
+      "achievementItems": 1,
       "achievements": [
         {
           "appid": "477160",
@@ -165,8 +165,8 @@
           "appid": "220",
           "name": "Half-Life 2",
           "total": 69,
-          "unlocked": 22,
-          "inWindow": 0,
+          "unlocked": 23,
+          "inWindow": 1,
           "ok": true,
           "error": null
         },
