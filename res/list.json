@@ -1,5 +1,41 @@
 [
   {
+    "id": "weblate:session:2026-11-02T17:40:49Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE 简体中文 · 1 条译文改动",
+    "summary": "修改译文 1 条，涉及 1 个组件（tdeedu/kgeography），最近一条「当前地图： %1」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%BD%93%E5%89%8D%E5%9C%B0%E5%9B%BE%EF%BC%9A%20%251%22",
+    "image": null,
+    "timestamp": "2026-11-02T17:40:49.767080Z",
+    "meta": {
+      "merge": true,
+      "count": 1,
+      "translationCount": 1,
+      "changes": [
+        {
+          "text": "当前地图： %1",
+          "action": "修改译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%BD%93%E5%89%8D%E5%9C%B0%E5%9B%BE%EF%BC%9A%20%251%22",
+          "time": "2026-11-02T17:40:49.767080Z"
+        }
+      ],
+      "windowStart": "2026-11-02T17:40:49.767080Z",
+      "windowEnd": "2026-11-02T17:40:49.767080Z",
+      "components": [
+        "tdeedu/kgeography"
+      ],
+      "actions": {
+        "修改译文": 1
+      },
+      "language": "简体中文",
+      "languageName": "简体中文",
+      "latestTarget": "当前地图： %1",
+      "source": "api"
+    }
+  },
+  {
     "id": "steam:play:220:1793524807",
     "platform": "steam",
     "type": "游玩记录",
