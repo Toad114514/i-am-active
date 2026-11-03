@@ -1,18 +1,1621 @@
 [
   {
-    "id": "weblate:session:2026-11-02T17:40:49Z",
+    "id": "weblate:session:2026-11-02T19:10:02Z",
     "platform": "weblate",
     "type": "译文提交",
-    "title": "TDE 简体中文 · 1 条译文改动",
-    "summary": "修改译文 1 条，涉及 1 个组件（tdeedu/kgeography），最近一条「当前地图： %1」",
-    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%BD%93%E5%89%8D%E5%9C%B0%E5%9B%BE%EF%BC%9A%20%251%22",
+    "title": "TDE 简体中文 · 230 条译文改动",
+    "summary": "修改译文 140 条、新增译文 90 条，涉及 4 个组件（tdeedu/kgeography、tdebase/konsole 等），最近一条「你可以在这里配置虚拟桌面的数量」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E8%BF%99%E9%87%8C%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2%E7%9A%84%E6%95%B0%E9%87%8F%22",
     "image": null,
-    "timestamp": "2026-11-02T17:40:49.767080Z",
+    "timestamp": "2026-11-02T19:10:02.672499Z",
     "meta": {
       "merge": true,
-      "count": 1,
-      "translationCount": 1,
+      "count": 232,
+      "translationCount": 230,
       "changes": [
+        {
+          "text": "你可以在这里配置虚拟桌面的数量",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E8%BF%99%E9%87%8C%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2%E7%9A%84%E6%95%B0%E9%87%8F%22",
+          "time": "2026-11-02T19:10:02.672499Z"
+        },
+        {
+          "text": "CD-ROM Information;CD-ROM;CD;CD Drive;Writer Capabilities;CD-Rom 信息;CD-ROM 信息;CD 驱动器;写入兼容;",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=CD-ROM%20Information%3BCD-ROM%3BCD%3BCD%20Drive%3BWriter%20Capabilities%3BCD",
+          "time": "2026-11-02T19:09:55.501609Z"
+        },
+        {
+          "text": "CD-ROM Information;CD-ROM;CD;CD Drive;Writer Capabilities;CD-Rom 信息;CD-ROM 信息;CD 驱动器;写入兼容",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=CD-ROM%20Information%3BCD-ROM%3BCD%3BCD%20Drive%3BWriter%20Capabilities%3BCD",
+          "time": "2026-11-02T19:09:16.819120Z"
+        },
+        {
+          "text": "ICC;display;color;profile;显示;颜色;配置;配置文件;",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22ICC%3Bdisplay%3Bcolor%3Bprofile%3B%E6%98%BE%E7%A4%BA%3B%E9%A2%9C%E8%89%B2%3B%E9%85%8D%E7%BD%AE%3B%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%3B%22",
+          "time": "2026-11-02T19:08:23.969130Z"
+        },
+        {
+          "text": "CD-ROM Information;CD-ROM;CD;CD Drive;Writer Capabilities;",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22CD-ROM%20Information%3BCD-ROM%3BCD%3BCD%20Drive%3BWriter%20Capabilities%3B%22",
+          "time": "2026-11-02T19:08:19.492979Z"
+        },
+        {
+          "text": "ICC;display;color;profile;显示;颜色;配置;配置文件",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22ICC%3Bdisplay%3Bcolor%3Bprofile%3B%E6%98%BE%E7%A4%BA%3B%E9%A2%9C%E8%89%B2%3B%E9%85%8D%E7%BD%AE%3B%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%22",
+          "time": "2026-11-02T19:08:19.317335Z"
+        },
+        {
+          "text": "ICC;display;color;profile;",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22ICC%3Bdisplay%3Bcolor%3Bprofile%3B%22",
+          "time": "2026-11-02T19:07:59.188726Z"
+        },
+        {
+          "text": "hardware;devices;manager;硬件;设备;管理器;",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22hardware%3Bdevices%3Bmanager%3B%E7%A1%AC%E4%BB%B6%3B%E8%AE%BE%E5%A4%87%3B%E7%AE%A1%E7%90%86%E5%99%A8%3B%22",
+          "time": "2026-11-02T19:07:51.329437Z"
+        },
+        {
+          "text": "hardware;devices;manager;",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22hardware%3Bdevices%3Bmanager%3B%22",
+          "time": "2026-11-02T19:07:36.469043Z"
+        },
+        {
+          "text": "monitor;resolution;display;显示;监视器;分辨率;显示屏;",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22monitor%3Bresolution%3Bdisplay%3B%E6%98%BE%E7%A4%BA%3B%E7%9B%91%E8%A7%86%E5%99%A8%3B%E5%88%86%E8%BE%A8%E7%8E%87%3B%E6%98%BE%E7%A4%BA%E5%B1%8F%3B%22",
+          "time": "2026-11-02T19:06:39.124762Z"
+        },
+        {
+          "text": "monitor;resolution;display;显示;监视器;分辨率;显示屏",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22monitor%3Bresolution%3Bdisplay%3B%E6%98%BE%E7%A4%BA%3B%E7%9B%91%E8%A7%86%E5%99%A8%3B%E5%88%86%E8%BE%A8%E7%8E%87%3B%E6%98%BE%E7%A4%BA%E5%B1%8F%22",
+          "time": "2026-11-02T19:06:35.792668Z"
+        },
+        {
+          "text": "monitor;resolution;display;",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22monitor%3Bresolution%3Bdisplay%3B%22",
+          "time": "2026-11-02T19:06:15.901964Z"
+        },
+        {
+          "text": "配置用户界面",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%22",
+          "time": "2026-11-02T18:59:50.335566Z"
+        },
+        {
+          "text": "用户界面",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%22",
+          "time": "2026-11-02T18:59:40.546564Z"
+        },
+        {
+          "text": "触控板设置",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%A7%A6%E6%8E%A7%E6%9D%BF%E8%AE%BE%E7%BD%AE%22",
+          "time": "2026-11-02T18:59:16.092848Z"
+        },
+        {
+          "text": "触控版",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%A7%A6%E6%8E%A7%E7%89%88%22",
+          "time": "2026-11-02T18:59:08.497428Z"
+        },
+        {
+          "text": "CD/DVD 设备兼容性",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22CD%2FDVD%20%E8%AE%BE%E5%A4%87%E5%85%BC%E5%AE%B9%E6%80%A7%22",
+          "time": "2026-11-02T18:58:56.119664Z"
+        },
+        {
+          "text": "CD-Rom 信息",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22CD-Rom%20%E4%BF%A1%E6%81%AF%22",
+          "time": "2026-11-02T18:58:46.082072Z"
+        },
+        {
+          "text": "配置显示 ICC 颜色文件",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E9%85%8D%E7%BD%AE%E6%98%BE%E7%A4%BA%20ICC%20%E9%A2%9C%E8%89%B2%E6%96%87%E4%BB%B6%22",
+          "time": "2026-11-02T18:58:34.062496Z"
+        },
+        {
+          "text": "颜色配置文件",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%22",
+          "time": "2026-11-02T18:58:06.983022Z"
+        },
+        {
+          "text": "配置 ICC 颜色配置",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E9%85%8D%E7%BD%AE%20ICC%20%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE%22",
+          "time": "2026-11-02T18:57:51.623995Z"
+        },
+        {
+          "text": "设备管理器",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8%22",
+          "time": "2026-11-02T18:57:35.231597Z"
+        },
+        {
+          "text": "配置硬件行为",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E9%85%8D%E7%BD%AE%E7%A1%AC%E4%BB%B6%E8%A1%8C%E4%B8%BA%22",
+          "time": "2026-11-02T18:57:28.721091Z"
+        },
+        {
+          "text": "设备监控",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%AE%BE%E5%A4%87%E7%9B%91%E6%8E%A7%22",
+          "time": "2026-11-02T18:57:12.062704Z"
+        },
+        {
+          "text": "从系统托盘监控硬件设备",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E4%BB%8E%E7%B3%BB%E7%BB%9F%E6%89%98%E7%9B%98%E7%9B%91%E6%8E%A7%E7%A1%AC%E4%BB%B6%E8%AE%BE%E5%A4%87%22",
+          "time": "2026-11-02T18:57:04.591624Z"
+        },
+        {
+          "text": "显示器设备",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AE%BE%E5%A4%87%22",
+          "time": "2026-11-02T18:56:53.183403Z"
+        },
+        {
+          "text": "WordReference.com 英语同义词",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22WordReference.com%20%E8%8B%B1%E8%AF%AD%E5%90%8C%E4%B9%89%E8%AF%8D%22",
+          "time": "2026-11-02T18:56:41.555032Z"
+        },
+        {
+          "text": "维基字典 (中文) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E4%B8%AD%E6%96%87)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:56:22.435387Z"
+        },
+        {
+          "text": "维基字典 (俄语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E4%BF%84%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:56:14.636373Z"
+        },
+        {
+          "text": "维基字典 (波兰语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E6%B3%A2%E5%85%B0%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:56:08.097310Z"
+        },
+        {
+          "text": "维基字典 (日语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E6%97%A5%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:55:58.230676Z"
+        },
+        {
+          "text": "维基字典 (意大利语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E6%84%8F%E5%A4%A7%E5%88%A9%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:55:52.124708Z"
+        },
+        {
+          "text": "维基字典 (法语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E6%B3%95%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:55:40.957050Z"
+        },
+        {
+          "text": "维基字典 (西班牙语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:55:31.190698Z"
+        },
+        {
+          "text": "维基字典 (英语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E8%8B%B1%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:55:18.299471Z"
+        },
+        {
+          "text": "维基字典 (希腊语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E5%B8%8C%E8%85%8A%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:55:09.101897Z"
+        },
+        {
+          "text": "维基字典 (德语) - 免费的字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E5%AD%97%E5%85%B8%20(%E5%BE%B7%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:54:52.827473Z"
+        },
+        {
+          "text": "维基百科 (中文) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E4%B8%AD%E6%96%87)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:54:44.444455Z"
+        },
+        {
+          "text": "维基百科 (俄语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E4%BF%84%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:54:36.477945Z"
+        },
+        {
+          "text": "维基百科 (波兰语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E6%B3%A2%E5%85%B0%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:54:30.362186Z"
+        },
+        {
+          "text": "维基百科 (日语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E6%97%A5%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:54:22.940988Z"
+        },
+        {
+          "text": "维基百科 (意大利语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E6%84%8F%E5%A4%A7%E5%88%A9%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:54:02.498290Z"
+        },
+        {
+          "text": "维基百科 (法语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E6%B3%95%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:53:48.637138Z"
+        },
+        {
+          "text": "维基百科 (西班牙语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:53:39.599674Z"
+        },
+        {
+          "text": "维基百科 (英语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E8%8B%B1%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:53:20.664089Z"
+        },
+        {
+          "text": "维基百科 - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:52:53.162501Z"
+        },
+        {
+          "text": "维基百科 ( 希腊语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%20%E5%B8%8C%E8%85%8A%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:52:50.995033Z"
+        },
+        {
+          "text": "维基百科 (德语) - 免费的百科全书",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%20(%E5%BE%B7%E8%AF%AD)%20-%20%E5%85%8D%E8%B4%B9%E7%9A%84%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%22",
+          "time": "2026-11-02T18:52:31.757912Z"
+        },
+        {
+          "text": "Urban 词典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Urban%20%E8%AF%8D%E5%85%B8%22",
+          "time": "2026-11-02T18:52:13.439987Z"
+        },
+        {
+          "text": "TQt 在线文档",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22TQt%20%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3%22",
+          "time": "2026-11-02T18:51:56.738432Z"
+        },
+        {
+          "text": "电影数据库 (TMDB)",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%94%B5%E5%BD%B1%E6%95%B0%E6%8D%AE%E5%BA%93%20(TMDB)%22",
+          "time": "2026-11-02T18:51:51.867522Z"
+        },
+        {
+          "text": "TDE 维基",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22TDE%20%E7%BB%B4%E5%9F%BA%22",
+          "time": "2026-11-02T18:51:33.222389Z"
+        },
+        {
+          "text": "Trinity Gitea 工作空间",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Trinity%20Gitea%20%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4%22",
+          "time": "2026-11-02T18:51:26.274399Z"
+        },
+        {
+          "text": "TDE API 文档",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22TDE%20API%20%E6%96%87%E6%A1%A3%22",
+          "time": "2026-11-02T18:51:14.418842Z"
+        },
+        {
+          "text": "Slackware 软件包搜索",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Slackware%20%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%90%9C%E7%B4%A2%22",
+          "time": "2026-11-02T18:51:06.357321Z"
+        },
+        {
+          "text": "Qt 6 在线文档",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Qt%206%20%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3%22",
+          "time": "2026-11-02T18:50:51.576897Z"
+        },
+        {
+          "text": "Qt 5.15 LTS 在线文档",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Qt%205.15%20LTS%20%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3%22",
+          "time": "2026-11-02T18:50:41.201485Z"
+        },
+        {
+          "text": "Qt 4.8 在线文档",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Qt%204.8%20%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3%22",
+          "time": "2026-11-02T18:50:30.314740Z"
+        },
+        {
+          "text": "Qt 3.3 在线文档",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Qt%203.3%20%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3%22",
+          "time": "2026-11-02T18:50:21.970637Z"
+        },
+        {
+          "text": "Python 3 参考手册",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Python%203%20%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C%22",
+          "time": "2026-11-02T18:50:11.365165Z"
+        },
+        {
+          "text": "Python 2 参考手册",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Python%202%20%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C%22",
+          "time": "2026-11-02T18:50:06.808008Z"
+        },
+        {
+          "text": "Pixabay 视频",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Pixabay%20%E8%A7%86%E9%A2%91%22",
+          "time": "2026-11-02T18:49:59.845308Z"
+        },
+        {
+          "text": "Pixabay 音效",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Pixabay%20%E9%9F%B3%E6%95%88%22",
+          "time": "2026-11-02T18:49:48.598819Z"
+        },
+        {
+          "text": "Pixabay 音乐",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Pixabay%20%E9%9F%B3%E4%B9%90%22",
+          "time": "2026-11-02T18:49:08.548587Z"
+        },
+        {
+          "text": "Pixabay 图片",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Pixabay%20%E5%9B%BE%E7%89%87%22",
+          "time": "2026-11-02T18:48:58.990024Z"
+        },
+        {
+          "text": "修改译文",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/",
+          "time": "2026-11-02T18:48:40.089285Z"
+        },
+        {
+          "text": "微软文档 (MSDN)",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E5%BE%AE%E8%BD%AF%E6%96%87%E6%A1%A3%20(MSDN)%22",
+          "time": "2026-11-02T18:48:32.391099Z"
+        },
+        {
+          "text": "MDN 网页规范文档",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22MDN%20%E7%BD%91%E9%A1%B5%E8%A7%84%E8%8C%83%E6%96%87%E6%A1%A3%22",
+          "time": "2026-11-02T18:47:58.743773Z"
+        },
+        {
+          "text": "KDE 商店",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22KDE%20%E5%95%86%E5%BA%97%22",
+          "time": "2026-11-02T18:47:30.355632Z"
+        },
+        {
+          "text": "Kagi 助手 (付费)",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Kagi%20%E5%8A%A9%E6%89%8B%20(%E4%BB%98%E8%B4%B9)%22",
+          "time": "2026-11-02T18:47:24.798668Z"
+        },
+        {
+          "text": "Kagi (付费)",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Kagi%20(%E4%BB%98%E8%B4%B9)%22",
+          "time": "2026-11-02T18:47:10.369975Z"
+        },
+        {
+          "text": "互联网电影数据库 (IMDb)",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E4%BA%92%E8%81%94%E7%BD%91%E7%94%B5%E5%BD%B1%E6%95%B0%E6%8D%AE%E5%BA%93%20(IMDb)%22",
+          "time": "2026-11-02T18:46:52.819367Z"
+        },
+        {
+          "text": "HyperDictionary.com",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22HyperDictionary.com%22",
+          "time": "2026-11-02T18:46:41.339519Z"
+        },
+        {
+          "text": "加泰罗尼亚语大词典 (Gran Enciclopèdia Catalana)",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E5%8A%A0%E6%B3%B0%E7%BD%97%E5%B0%BC%E4%BA%9A%E8%AF%AD%E5%A4%A7%E8%AF%8D%E5%85%B8%20(Gran%20Enciclop%C3%A8dia%20Catalana)%22",
+          "time": "2026-11-02T18:46:34.339274Z"
+        },
+        {
+          "text": "加泰罗尼亚语大词典",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E5%8A%A0%E6%B3%B0%E7%BD%97%E5%B0%BC%E4%BA%9A%E8%AF%AD%E5%A4%A7%E8%AF%8D%E5%85%B8%22",
+          "time": "2026-11-02T18:46:28.218362Z"
+        },
+        {
+          "text": "谷歌学术",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%B0%B7%E6%AD%8C%E5%AD%A6%E6%9C%AF%22",
+          "time": "2026-11-02T18:46:18.818006Z"
+        },
+        {
+          "text": "谷歌学者",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%B0%B7%E6%AD%8C%E5%AD%A6%E8%80%85%22",
+          "time": "2026-11-02T18:46:00.453015Z"
+        },
+        {
+          "text": "gu",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22gu%22",
+          "time": "2026-11-02T18:45:53.442926Z"
+        },
+        {
+          "text": "谷歌电影",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%B0%B7%E6%AD%8C%E7%94%B5%E5%BD%B1%22",
+          "time": "2026-11-02T18:45:45.937960Z"
+        },
+        {
+          "text": "谷歌地图",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%B0%B7%E6%AD%8C%E5%9C%B0%E5%9B%BE%22",
+          "time": "2026-11-02T18:45:39.102335Z"
+        },
+        {
+          "text": "谷歌",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%B0%B7%E6%AD%8C%22",
+          "time": "2026-11-02T18:45:31.980359Z"
+        },
+        {
+          "text": "Gentoo 维基",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Gentoo%20%E7%BB%B4%E5%9F%BA%22",
+          "time": "2026-11-02T18:45:22.593811Z"
+        },
+        {
+          "text": "Gentoo 软件包搜索",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Gentoo%20%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%90%9C%E7%B4%A2%22",
+          "time": "2026-11-02T18:45:01.084901Z"
+        },
+        {
+          "text": "FSF/UNESCO 自由软件目录",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22FSF%2FUNESCO%20%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6%E7%9B%AE%E5%BD%95%22",
+          "time": "2026-11-02T18:44:51.726153Z"
+        },
+        {
+          "text": "LEO - 法语和德语之间的翻译",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22LEO%20-%20%E6%B3%95%E8%AF%AD%E5%92%8C%E5%BE%B7%E8%AF%AD%E4%B9%8B%E9%97%B4%E7%9A%84%E7%BF%BB%E8%AF%91%22",
+          "time": "2026-11-02T18:44:18.467729Z"
+        },
+        {
+          "text": "dict.cc 翻译：英语译德语",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22dict.cc%20%E7%BF%BB%E8%AF%91%EF%BC%9A%E8%8B%B1%E8%AF%AD%E8%AF%91%E5%BE%B7%E8%AF%AD%22",
+          "time": "2026-11-02T18:42:00.195061Z"
+        },
+        {
+          "text": "DuckDuckGo 简约版",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22DuckDuckGo%20%E7%AE%80%E7%BA%A6%E7%89%88%22",
+          "time": "2026-11-02T18:41:17.563206Z"
+        },
+        {
+          "text": "数字对象标识",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E6%95%B0%E5%AD%97%E5%AF%B9%E8%B1%A1%E6%A0%87%E8%AF%86%22",
+          "time": "2026-11-02T18:40:59.216410Z"
+        },
+        {
+          "text": "Devuan 软件包搜索",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Devuan%20%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%90%9C%E7%B4%A2%22",
+          "time": "2026-11-02T18:40:43.009081Z"
+        },
+        {
+          "text": "LEO - 德语和法语之间的翻译",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22LEO%20-%20%E5%BE%B7%E8%AF%AD%E5%92%8C%E6%B3%95%E8%AF%AD%E4%B9%8B%E9%97%B4%E7%9A%84%E7%BF%BB%E8%AF%91%22",
+          "time": "2026-11-02T18:40:27.042948Z"
+        },
+        {
+          "text": "dict.cc 翻译：德语译英语",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22dict.cc%20%E7%BF%BB%E8%AF%91%EF%BC%9A%E5%BE%B7%E8%AF%AD%E8%AF%91%E8%8B%B1%E8%AF%AD%22",
+          "time": "2026-11-02T18:40:10.645114Z"
+        },
+        {
+          "text": "CTAN 文件名搜索 - 综合 TeX 存档网络",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22CTAN%20%E6%96%87%E4%BB%B6%E5%90%8D%E6%90%9C%E7%B4%A2%20-%20%E7%BB%BC%E5%90%88%20TeX%20%E5%AD%98%E6%A1%A3%E7%BD%91%E7%BB%9C%22",
+          "time": "2026-11-02T18:39:56.839022Z"
+        },
+        {
+          "text": "CTAN - 综合 TeX 存档网络",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22CTAN%20-%20%E7%BB%BC%E5%90%88%20TeX%20%E5%AD%98%E6%A1%A3%E7%BD%91%E7%BB%9C%22",
+          "time": "2026-11-02T18:32:45.615684Z"
+        },
+        {
+          "text": "CPAN - 综合 Perl 存档网络",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22CPAN%20-%20%E7%BB%BC%E5%90%88%20Perl%20%E5%AD%98%E6%A1%A3%E7%BD%91%E7%BB%9C%22",
+          "time": "2026-11-02T18:32:32.125963Z"
+        },
+        {
+          "text": "CiteSeer: 科学文献数字图书馆",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22CiteSeer%3A%20%E7%A7%91%E5%AD%A6%E6%96%87%E7%8C%AE%E6%95%B0%E5%AD%97%E5%9B%BE%E4%B9%A6%E9%A6%86%22",
+          "time": "2026-11-02T18:32:15.058938Z"
+        },
+        {
+          "text": "老的 TDE Bugzilla 按错误编号搜索 Bug",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%80%81%E7%9A%84%20TDE%20Bugzilla%20%E6%8C%89%E9%94%99%E8%AF%AF%E7%BC%96%E5%8F%B7%E6%90%9C%E7%B4%A2%20Bug%22",
+          "time": "2026-11-02T18:31:57.478203Z"
+        },
+        {
+          "text": "老的 TDE Bugzilla 全文检索",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%80%81%E7%9A%84%20TDE%20Bugzilla%20%E5%85%A8%E6%96%87%E6%A3%80%E7%B4%A2%22",
+          "time": "2026-11-02T18:31:26.470908Z"
+        },
+        {
+          "text": "必应",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E5%BF%85%E5%BA%94%22",
+          "time": "2026-11-02T18:30:57.749900Z"
+        },
+        {
+          "text": "百度",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%99%BE%E5%BA%A6%22",
+          "time": "2026-11-02T18:30:52.439890Z"
+        },
+        {
+          "text": "Arch 用户仓库 (AUR) 软件包搜索",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Arch%20%E7%94%A8%E6%88%B7%E4%BB%93%E5%BA%93%20(AUR)%20%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%90%9C%E7%B4%A2%22",
+          "time": "2026-11-02T18:30:49.005878Z"
+        },
+        {
+          "text": "Arch维基",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Arch%E7%BB%B4%E5%9F%BA%22",
+          "time": "2026-11-02T18:30:27.868771Z"
+        },
+        {
+          "text": "Arch 软件包搜索",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22Arch%20%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%90%9C%E7%B4%A2%22",
+          "time": "2026-11-02T18:30:13.999640Z"
+        },
+        {
+          "text": "俄语学术字典",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E4%BF%84%E8%AF%AD%E5%AD%A6%E6%9C%AF%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:26:52.280597Z"
+        },
+        {
+          "text": "英语学术字典",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E8%8B%B1%E8%AF%AD%E5%AD%A6%E6%9C%AF%E5%AD%97%E5%85%B8%22",
+          "time": "2026-11-02T18:26:37.696830Z"
+        },
+        {
+          "text": "配置显示",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E9%85%8D%E7%BD%AE%E6%98%BE%E7%A4%BA%22",
+          "time": "2026-11-02T18:26:19.358579Z"
+        },
+        {
+          "text": "监视器 & 显示",
+          "action": "新增译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E7%9B%91%E8%A7%86%E5%99%A8%20%26%20%E6%98%BE%E7%A4%BA%22",
+          "time": "2026-11-02T18:26:14.078848Z"
+        },
+        {
+          "text": "此服务允许您配置您的默认文件管理器。所有调用文件管理器的 TDE 应用程序都遵从此设置。",
+          "action": "修改译文",
+          "component": "tdebase/kcontrol-desktop-files",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcontrol-desktop-files/zh_Hans/?q=%22%E6%AD%A4%E6%9C%8D%E5%8A%A1%E5%85%81%E8%AE%B8%E6%82%A8%E9%85%8D%E7%BD%AE%E6%82%A8%E7%9A%84%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8%E3%80%82%E6%89%80%E6%9C%89%E8%B0%83%E7%94%A8%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8%E7%9A%84%20TDE%20%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E9%83%BD%E9%81%B5%E4%BB%8E%E6%AD%A4%E8%AE%BE%E7%BD%AE%E3%80%82%22",
+          "time": "2026-11-02T18:26:01.655159Z"
+        },
+        {
+          "text": "你想要结束当前会话吗？",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%BD%A0%E6%83%B3%E8%A6%81%E7%BB%93%E6%9D%9F%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%90%97%EF%BC%9F%22",
+          "time": "2026-11-02T18:24:45.005381Z"
+        },
+        {
+          "text": "确定",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E7%A1%AE%E5%AE%9A%22",
+          "time": "2026-11-02T18:24:24.371344Z"
+        },
+        {
+          "text": "如果没有动作，计算机将在 X 秒后关闭。",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%8A%A8%E4%BD%9C%EF%BC%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B0%86%E5%9C%A8%20X%20%E7%A7%92%E5%90%8E%E5%85%B3%E9%97%AD%E3%80%82%22",
+          "time": "2026-11-02T18:24:19.530905Z"
+        },
+        {
+          "text": "你想要关闭你的计算机吗？",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%BD%A0%E6%83%B3%E8%A6%81%E5%85%B3%E9%97%AD%E4%BD%A0%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%97%EF%BC%9F%22",
+          "time": "2026-11-02T18:23:53.517612Z"
+        },
+        {
+          "text": "确认",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E7%A1%AE%E8%AE%A4%22",
+          "time": "2026-11-02T18:23:44.429481Z"
+        },
+        {
+          "text": "加载设置",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%8A%A0%E8%BD%BD%E8%AE%BE%E7%BD%AE%22",
+          "time": "2026-11-02T18:23:36.370604Z"
+        },
+        {
+          "text": "会话将在 ％1 秒后结束。",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%BC%9A%E8%AF%9D%E5%B0%86%E5%9C%A8%20%EF%BC%851%20%E7%A7%92%E5%90%8E%E7%BB%93%E6%9D%9F%E3%80%82%22",
+          "time": "2026-11-02T18:23:29.447835Z"
+        },
+        {
+          "text": "你想要结束当前会话吗》",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%BD%A0%E6%83%B3%E8%A6%81%E7%BB%93%E6%9D%9F%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%90%97%E3%80%8B%22",
+          "time": "2026-11-02T18:23:11.926474Z"
+        },
+        {
+          "text": "计算机将在 ％1 秒后关闭。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B0%86%E5%9C%A8%20%EF%BC%851%20%E7%A7%92%E5%90%8E%E5%85%B3%E9%97%AD%E3%80%82%22",
+          "time": "2026-11-02T18:22:59.221274Z"
+        },
+        {
+          "text": "计算机将在 ％1 秒后重启。",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B0%86%E5%9C%A8%20%EF%BC%851%20%E7%A7%92%E5%90%8E%E9%87%8D%E5%90%AF%E3%80%82%22",
+          "time": "2026-11-02T18:22:57.233577Z"
+        },
+        {
+          "text": "你想要重启到 “％1” 吗？",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%BD%A0%E6%83%B3%E8%A6%81%E9%87%8D%E5%90%AF%E5%88%B0%20%E2%80%9C%EF%BC%851%E2%80%9D%20%E5%90%97%EF%BC%9F%22",
+          "time": "2026-11-02T18:22:32.424833Z"
+        },
+        {
+          "text": "你想要重启你的计算机吗？",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%BD%A0%E6%83%B3%E8%A6%81%E9%87%8D%E5%90%AF%E4%BD%A0%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%97%EF%BC%9F%22",
+          "time": "2026-11-02T18:22:13.412450Z"
+        },
+        {
+          "text": "计算机将自动在 ％1 秒后关闭。",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%B0%86%E8%87%AA%E5%8A%A8%E5%9C%A8%20%EF%BC%851%20%E7%A7%92%E5%90%8E%E5%85%B3%E9%97%AD%E3%80%82%22",
+          "time": "2026-11-02T18:22:03.103053Z"
+        },
+        {
+          "text": "你想要关闭你的计算机吗？",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%BD%A0%E6%83%B3%E8%A6%81%E5%85%B3%E9%97%AD%E4%BD%A0%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%97%EF%BC%9F%22",
+          "time": "2026-11-02T18:21:32.877539Z"
+        },
+        {
+          "text": "取消注销",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%8F%96%E6%B6%88%E6%B3%A8%E9%94%80%22",
+          "time": "2026-11-02T18:21:23.868178Z"
+        },
+        {
+          "text": "跳过消息",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%B7%B3%E8%BF%87%E6%B6%88%E6%81%AF%22",
+          "time": "2026-11-02T18:21:19.502519Z"
+        },
+        {
+          "text": "注销当前会话并关闭计算机。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E5%85%B3%E9%97%AD%E8%AE%A1%E7%AE%97%E6%9C%BA%E3%80%82%22",
+          "time": "2026-11-02T18:21:14.038722Z"
+        },
+        {
+          "text": "Log out of the current session and turn off the computer.",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22Log%20out%20of%20the%20current%20session%20and%20turn%20off%20the%20computer.%22",
+          "time": "2026-11-02T18:20:57.415926Z"
+        },
+        {
+          "text": "关机 (&S)",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%85%B3%E6%9C%BA%20(%26S)%22",
+          "time": "2026-11-02T18:20:54.221705Z"
+        },
+        {
+          "text": "注销当前会话并重启计算机。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%E3%80%82%22",
+          "time": "2026-11-02T18:20:46.668196Z"
+        },
+        {
+          "text": "Log out of the current session and restart the computer.",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22Log%20out%20of%20the%20current%20session%20and%20restart%20the%20computer.%22",
+          "time": "2026-11-02T18:20:29.852519Z"
+        },
+        {
+          "text": "让计算机进入睡眠和休眠模式，系统将完全停止并将当前状态存到运存和磁盘中。此模式结合了“睡眠” 和 “休眠” 的特点，系统实际上处于“睡眠”模式，但如果突发断电仍可恢复工作，就像系统处于“休眠“模式一样，从而防止任何数据丢失。对应了 ACPI S3+S4 模式也就是 在内存中睡眠 + 在磁盘中睡眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E5%92%8C%E4%BC%91%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E5%92%8C%E7%A3%81%E7%9B%98%E4%B8%AD%E3%80%82%E6%AD%A4%E6%A8%A1%E5%BC%8F%E7%BB%93%E5%90%88%E4%BA%86%E2%80%9C%E7%9D%A1%E7%9C%A0%E2%80%9D%20%E5%92%8C%20%E2%80%9C%E4%BC%91%E7%9C%A0%E2%80%9D%20%E7%9A%84%E7%89%B9%E7%82%B9%EF%BC%8C%E7%B3%BB%E7%BB%9F",
+          "time": "2026-11-02T18:20:24.502295Z"
+        },
+        {
+          "text": "让计算机进入睡眠和休眠模式，系统将完全停止并将当前状态存到运存和磁盘中。此模式结合了“睡眠” 和 “休眠” 的特点，系统实际上处于“睡眠”模式，但如果突发断电仍可恢复工作，就像系统处于“休眠“模式一样，从而防止任何数据丢失。对应了 ACPI S3+S4 模式也就是 在内存中休眠 + 在磁盘中休眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E5%92%8C%E4%BC%91%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E5%92%8C%E7%A3%81%E7%9B%98%E4%B8%AD%E3%80%82%E6%AD%A4%E6%A8%A1%E5%BC%8F%E7%BB%93%E5%90%88%E4%BA%86%E2%80%9C%E7%9D%A1%E7%9C%A0%E2%80%9D%20%E5%92%8C%20%E2%80%9C%E4%BC%91%E7%9C%A0%E2%80%9D%20%E7%9A%84%E7%89%B9%E7%82%B9%EF%BC%8C%E7%B3%BB%E7%BB%9F",
+          "time": "2026-11-02T18:20:15.411358Z"
+        },
+        {
+          "text": "让计算机进入睡眠和休眠模式，系统将完全停止并将当前状态存到运存和磁盘中。此模式结合了“睡眠” 和 “休眠” 的特点，he system is de facto in 'Suspend' mode but if power is lost, work can still be resumed as if the syst",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E5%92%8C%E4%BC%91%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E5%92%8C%E7%A3%81%E7%9B%98%E4%B8%AD%E3%80%82%E6%AD%A4%E6%A8%A1%E5%BC%8F%E7%BB%93%E5%90%88%E4%BA%86%E2%80%9C%E7%9D%A1%E7%9C%A0%E2%80%9D%20%E5%92%8C%20%E2%80%9C%E4%BC%91%E7%9C%A0%E2%80%9D%20%E7%9A%84%E7%89%B9%E7%82%B9%EF%BC%8Che",
+          "time": "2026-11-02T18:18:27.273815Z"
+        },
+        {
+          "text": "让计算机进入待机模式，节省电量。系统可以在极短时间内激活。对应了 ACPI S0 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%85%A5%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%E3%80%82%E5%AF%B9%E5%BA%94%E4%BA%86%20ACPI%20S0%20%E6%A8%A1%E5%BC%8F%E3%80%82%22",
+          "time": "2026-11-02T18:17:24.493164Z"
+        },
+        {
+          "text": "让计算机进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。对应了 ACPI S3 模式。也就是 在运存中睡眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%E5%AF%B9%E5%BA%94",
+          "time": "2026-11-02T18:17:16.976930Z"
+        },
+        {
+          "text": "让计算机进入休眠模式，系统将完全停止并将状态保存到磁盘中。目前最省电但恢复时间也最长的模式。对应了 ACPI S4 模式。也就是 在磁盘中睡眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%85%A5%E4%BC%91%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E7%A3%81%E7%9B%98%E4%B8%AD%E3%80%82%E7%9B%AE%E5%89%8D%E6%9C%80%E7%9C%81%E7%94%B5%E4%BD%86%E6%81%A2%E5%A4%8D%E6%97%B6%E9%97%B4%E4%B9%9F%E6%9C%80%E9%95%BF%E7%9A%84%E6%A8%A1%E5%BC%8F%E3%80%82%E5%AF%B9%E5%BA%94%E4%BA%86%20ACPI%20S4%20%E6%A8%A1%E5%BC%8F",
+          "time": "2026-11-02T18:17:11.048725Z"
+        },
+        {
+          "text": "让计算机进入睡眠和休眠模式，系统将完全停止并将当前状态存到运存和磁盘中。This offers the best of both 'Suspend' and 'Hibernate' modes combined together. The system is de facto in 'Suspend' mode but",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E5%92%8C%E4%BC%91%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E5%92%8C%E7%A3%81%E7%9B%98%E4%B8%AD%E3%80%82This%20offers%20the%20best%20of%20",
+          "time": "2026-11-02T18:17:02.169842Z"
+        },
+        {
+          "text": "让计算机进入睡眠和休眠模式。系统将完全停止并将当前状态存到运存和磁盘中。This offers the best of both 'Suspend' and 'Hibernate' modes combined together. The system is de facto in 'Suspend' mode but",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E5%92%8C%E4%BC%91%E7%9C%A0%E6%A8%A1%E5%BC%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E5%BD%93%E5%89%8D%E7%8A%B6%E6%80%81%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E5%92%8C%E7%A3%81%E7%9B%98%E4%B8%AD%E3%80%82This%20offers%20the%20best%20of%20",
+          "time": "2026-11-02T18:16:56.443675Z"
+        },
+        {
+          "text": "Put the computer in both suspend-to-memory and suspend-to-disk mode. The system is stopped and its state saved to memory and to disk.This offers the best of bot",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=Put%20the%20computer%20in%20both%20suspend-to-memory%20and%20suspend-to-di",
+          "time": "2026-11-02T18:15:54.627161Z"
+        },
+        {
+          "text": "重启计算机 (&R)",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E9%87%8D%E5%90%AF%E8%AE%A1%E7%AE%97%E6%9C%BA%20(%26R)%22",
+          "time": "2026-11-02T18:15:50.982129Z"
+        },
+        {
+          "text": "混合休眠 (&Y)",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B7%B7%E5%90%88%E4%BC%91%E7%9C%A0%20(%26Y)%22",
+          "time": "2026-11-02T18:15:44.565277Z"
+        },
+        {
+          "text": "让当前电脑进入软件待机模式，节省电量。系统可以在极短时间内激活。对应了 ACPI S0 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%E3%80%82%E5%AF%B9%E5%BA%94%E4%BA%86%20ACPI%20S0%20%E6%A8%A1%E5%BC%8F%E3%80%82%22",
+          "time": "2026-11-02T18:15:20.815194Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。对应了 ACPI S3 模式。也就是 在运存中睡眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%E5%AF%B9",
+          "time": "2026-11-02T18:15:16.488154Z"
+        },
+        {
+          "text": "让当前电脑进入休眠模式，系统将完全停止并将状态保存到磁盘中。目前最省电但恢复时间也最长的模式。对应了 ACPI S4 模式。也就是 在磁盘中睡眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E4%BC%91%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E7%A3%81%E7%9B%98%E4%B8%AD%E3%80%82%E7%9B%AE%E5%89%8D%E6%9C%80%E7%9C%81%E7%94%B5%E4%BD%86%E6%81%A2%E5%A4%8D%E6%97%B6%E9%97%B4%E4%B9%9F%E6%9C%80%E9%95%BF%E7%9A%84%E6%A8%A1%E5%BC%8F%E3%80%82%E5%AF%B9%E5%BA%94%E4%BA%86%20ACPI%20S4%20%E6%A8%A1",
+          "time": "2026-11-02T18:15:12.115892Z"
+        },
+        {
+          "text": "休眠 (&H)",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%BC%91%E7%9C%A0%20(%26H)%22",
+          "time": "2026-11-02T18:14:39.847105Z"
+        },
+        {
+          "text": "让当前电脑进入休眠模式，系统将完全停止并将状态保存到磁盘中。目前最省电但恢复时间也最长的模式。对应了 ACPI 54 模式。也就是 在磁盘中睡眠 模式。",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E4%BC%91%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E7%A3%81%E7%9B%98%E4%B8%AD%E3%80%82%E7%9B%AE%E5%89%8D%E6%9C%80%E7%9C%81%E7%94%B5%E4%BD%86%E6%81%A2%E5%A4%8D%E6%97%B6%E9%97%B4%E4%B9%9F%E6%9C%80%E9%95%BF%E7%9A%84%E6%A8%A1%E5%BC%8F%E3%80%82%E5%AF%B9%E5%BA%94%E4%BA%86%20ACPI%2054%20%E6%A8%A1",
+          "time": "2026-11-02T18:14:28.838292Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。对应了 ACPI 53 模式。也就是 在运存中睡眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%E5%AF%B9",
+          "time": "2026-11-02T18:10:39.763672Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。对应了 ACPI 53 模式。也就是 在运存中睡眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%E5%AF%B9",
+          "time": "2026-11-02T18:10:39.175143Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。对应了 ACPI 53 模式。也就是 在运存中睡眠 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%E5%AF%B9",
+          "time": "2026-11-02T18:10:38.491050Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。对应了 ACPI 53 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%E5%AF%B9",
+          "time": "2026-11-02T18:10:14.157074Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。对应了 ACPI 53 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%E5%AF%B9",
+          "time": "2026-11-02T18:10:11.702098Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。对应了 ACPI 53 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%E5%AF%B9",
+          "time": "2026-11-02T18:10:11.124354Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。d",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82d%22",
+          "time": "2026-11-02T18:10:00.007395Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%22",
+          "time": "2026-11-02T18:09:59.364680Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。对比 “冻结” 模式可以省下更多电量但恢复也许要一段时间。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%E5%AF%B9%E6%AF%94%20%E2%80%9C%E5%86%BB%E7%BB%93%E2%80%9D%20%E6%A8%A1%E5%BC%8F%E5%8F%AF%E4%BB%A5%E7%9C%81%E4%B8%8B%E6%9B%B4%E5%A4%9A%E7%94%B5%E9%87%8F%E4%BD%86%E6%81%A2%E5%A4%8D%E4%B9%9F%E8%AE%B8%E8%A6%81%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E3%80%82%22",
+          "time": "2026-11-02T18:09:58.687135Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%22",
+          "time": "2026-11-02T18:09:22.008970Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%22",
+          "time": "2026-11-02T18:09:21.431581Z"
+        },
+        {
+          "text": "让当前电脑进入睡眠模式，系统将完全停止并将状态保存到运存中。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%86%E5%AE%8C%E5%85%A8%E5%81%9C%E6%AD%A2%E5%B9%B6%E5%B0%86%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98%E5%88%B0%E8%BF%90%E5%AD%98%E4%B8%AD%E3%80%82%22",
+          "time": "2026-11-02T18:09:20.756131Z"
+        },
+        {
+          "text": "修改译文",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/",
+          "time": "2026-11-02T18:08:35.317322Z"
+        },
+        {
+          "text": "新增译文",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/",
+          "time": "2026-11-02T18:08:34.557310Z"
+        },
+        {
+          "text": "睡眠 (%S)",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E7%9D%A1%E7%9C%A0%20(%25S)%22",
+          "time": "2026-11-02T18:08:31.878080Z"
+        },
+        {
+          "text": "挂起 (%S)",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%8C%82%E8%B5%B7%20(%25S)%22",
+          "time": "2026-11-02T18:07:58.377715Z"
+        },
+        {
+          "text": "让当前电脑进入软件待机模式，节省电量。系统可以在极短时间内激活。对应了 ACPI 50 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%E3%80%82%E5%AF%B9%E5%BA%94%E4%BA%86%20ACPI%2050%20%E6%A8%A1%E5%BC%8F%E3%80%82%22",
+          "time": "2026-11-02T18:07:42.799404Z"
+        },
+        {
+          "text": "让当前电脑进入软件待机模式，节省电量。系统可以在极短时间内激活这对应 ACPI 50 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%E8%BF%99%E5%AF%B9%E5%BA%94%20ACPI%2050%20%E6%A8%A1%E5%BC%8F%E3%80%82%22",
+          "time": "2026-11-02T18:07:16.350163Z"
+        },
+        {
+          "text": "让当前电脑进入软件待机模式，节省电量。系统可以在极短时间内激活这对应 ACPI 50 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%E8%BF%99%E5%AF%B9%E5%BA%94%20ACPI%2050%20%E6%A8%A1%E5%BC%8F%E3%80%82%22",
+          "time": "2026-11-02T18:07:15.484582Z"
+        },
+        {
+          "text": "让当前电脑进入软件待机模式，节省电量。系统可以在极短时间内激活这对应 ACPI 50 模式。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%E8%BF%99%E5%AF%B9%E5%BA%94%20ACPI%2050%20%E6%A8%A1%E5%BC%8F%E3%80%82%22",
+          "time": "2026-11-02T18:07:14.889567Z"
+        },
+        {
+          "text": "让当前电脑进入软件待机模式，节省电量。系统可以在极短时间内激活",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%22",
+          "time": "2026-11-02T18:06:58.285898Z"
+        },
+        {
+          "text": "让当前电脑进入软件待机模式，节省电量。系统可以在极短时间内激活",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%22",
+          "time": "2026-11-02T18:06:57.668862Z"
+        },
+        {
+          "text": "让当前电脑进入软件待机模式，节省电量。系统可以在极短时间内激活",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%AE%A9%E5%BD%93%E5%89%8D%E7%94%B5%E8%84%91%E8%BF%9B%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%BE%85%E6%9C%BA%E6%A8%A1%E5%BC%8F%EF%BC%8C%E8%8A%82%E7%9C%81%E7%94%B5%E9%87%8F%E3%80%82%E7%B3%BB%E7%BB%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%9E%81%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E6%BF%80%E6%B4%BB%22",
+          "time": "2026-11-02T18:06:56.989376Z"
+        },
+        {
+          "text": "修改译文",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/",
+          "time": "2026-11-02T18:05:58.836185Z"
+        },
+        {
+          "text": "新增译文",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/",
+          "time": "2026-11-02T18:05:58.232090Z"
+        },
+        {
+          "text": "注销当前会话并以另一个用户登录。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E3%80%82%22",
+          "time": "2026-11-02T18:05:52.726542Z"
+        },
+        {
+          "text": "注销当前会话并以另一个用户登录。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E3%80%82%22",
+          "time": "2026-11-02T18:05:47.816034Z"
+        },
+        {
+          "text": "注销当前会话并以另一个用户登录。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E3%80%82%22",
+          "time": "2026-11-02T18:05:47.210547Z"
+        },
+        {
+          "text": "注销当前会话并以另一个用户登录。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E3%80%82%22",
+          "time": "2026-11-02T18:05:42.792733Z"
+        },
+        {
+          "text": "注销当前会话并以另一个用户登录。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E3%80%82%22",
+          "time": "2026-11-02T18:05:39.289948Z"
+        },
+        {
+          "text": "修改译文",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/",
+          "time": "2026-11-02T18:05:38.353080Z"
+        },
+        {
+          "text": "新增译文",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/",
+          "time": "2026-11-02T18:05:32.919747Z"
+        },
+        {
+          "text": "冻结 (&F)",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%86%BB%E7%BB%93%20(%26F)%22",
+          "time": "2026-11-02T18:05:11.671129Z"
+        },
+        {
+          "text": "注销 (%L)",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%20(%25L)%22",
+          "time": "2026-11-02T18:05:00.391376Z"
+        },
+        {
+          "text": "注销当前会话并以另一个用户登录。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E3%80%82%22",
+          "time": "2026-11-02T18:04:50.358008Z"
+        },
+        {
+          "text": "注销当前会话并以另一个用户登录。",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%B9%B6%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E3%80%82%22",
+          "time": "2026-11-02T18:04:49.605581Z"
+        },
+        {
+          "text": "修改译文",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/",
+          "time": "2026-11-02T18:04:29.634273Z"
+        },
+        {
+          "text": "新增译文",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/",
+          "time": "2026-11-02T18:04:29.044594Z"
+        },
+        {
+          "text": "注销",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%B3%A8%E9%94%80%22",
+          "time": "2026-11-02T18:04:23.258337Z"
+        },
+        {
+          "text": "终止服务中...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E7%BB%88%E6%AD%A2%E6%9C%8D%E5%8A%A1%E4%B8%AD...%22",
+          "time": "2026-11-02T18:04:16.698661Z"
+        },
+        {
+          "text": "关闭软件 (%1/%2, %3)...",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%85%B3%E9%97%AD%E8%BD%AF%E4%BB%B6%20(%251%2F%252%2C%20%253)...%22",
+          "time": "2026-11-02T18:04:00.460640Z"
+        },
+        {
+          "text": "关闭软件 ()",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%85%B3%E9%97%AD%E8%BD%AF%E4%BB%B6%20()%22",
+          "time": "2026-11-02T18:03:41.748785Z"
+        },
+        {
+          "text": "关闭软件 (%1/%2)...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%85%B3%E9%97%AD%E8%BD%AF%E4%BB%B6%20(%251%2F%252)...%22",
+          "time": "2026-11-02T18:03:27.251950Z"
+        },
+        {
+          "text": "正在保存设置...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%AD%A3%E5%9C%A8%E4%BF%9D%E5%AD%98%E8%AE%BE%E7%BD%AE...%22",
+          "time": "2026-11-02T18:03:13.334264Z"
+        },
+        {
+          "text": "同步远程文件夹",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%90%8C%E6%AD%A5%E8%BF%9C%E7%A8%8B%E6%96%87%E4%BB%B6%E5%A4%B9%22",
+          "time": "2026-11-02T18:02:52.870650Z"
+        },
+        {
+          "text": "正在通知其他应用注销...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%AD%A3%E5%9C%A8%E9%80%9A%E7%9F%A5%E5%85%B6%E4%BB%96%E5%BA%94%E7%94%A8%E6%B3%A8%E9%94%80...%22",
+          "time": "2026-11-02T18:02:45.846177Z"
+        },
+        {
+          "text": "强制终止交互应用程序",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%BC%BA%E5%88%B6%E7%BB%88%E6%AD%A2%E4%BA%A4%E4%BA%92%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%22",
+          "time": "2026-11-02T18:02:29.976729Z"
+        },
+        {
+          "text": "用户取消了注销",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E7%94%A8%E6%88%B7%E5%8F%96%E6%B6%88%E4%BA%86%E6%B3%A8%E9%94%80%22",
+          "time": "2026-11-02T18:02:21.537641Z"
+        },
+        {
+          "text": "通知应用程序注销 (%1/%2, %3)...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E9%80%9A%E7%9F%A5%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%B3%A8%E9%94%80%20(%251%2F%252%2C%20%253)...%22",
+          "time": "2026-11-02T18:02:14.969369Z"
+        },
+        {
+          "text": "通知应用程序注销 (%1/%2)...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E9%80%9A%E7%9F%A5%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%B3%A8%E9%94%80%20(%251%2F%252)...%22",
+          "time": "2026-11-02T18:01:47.114440Z"
+        },
+        {
+          "text": "一个应用正在请求关注，停止注销...",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8%E6%AD%A3%E5%9C%A8%E8%AF%B7%E6%B1%82%E5%85%B3%E6%B3%A8%EF%BC%8C%E5%81%9C%E6%AD%A2%E6%B3%A8%E9%94%80...%22",
+          "time": "2026-11-02T18:01:02.422830Z"
+        },
+        {
+          "text": "%3 正在请求关注，停止注销..",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%253%20%E6%AD%A3%E5%9C%A8%E8%AF%B7%E6%B1%82%E5%85%B3%E6%B3%A8%EF%BC%8C%E5%81%9C%E6%AD%A2%E6%B3%A8%E9%94%80..%22",
+          "time": "2026-11-02T18:00:42.429923Z"
+        },
+        {
+          "text": "一个应用正在进行重要操作，停止注销...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8%E6%AD%A3%E5%9C%A8%E8%BF%9B%E8%A1%8C%E9%87%8D%E8%A6%81%E6%93%8D%E4%BD%9C%EF%BC%8C%E5%81%9C%E6%AD%A2%E6%B3%A8%E9%94%80...%22",
+          "time": "2026-11-02T18:00:03.516710Z"
+        },
+        {
+          "text": "忽略并继续注销",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%BF%BD%E7%95%A5%E5%B9%B6%E7%BB%A7%E7%BB%AD%E6%B3%A8%E9%94%80%22",
+          "time": "2026-11-02T17:59:05.136447Z"
+        },
+        {
+          "text": "通知剩余应用程序已收到注销请求 (%1/%2, %3) ...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E9%80%9A%E7%9F%A5%E5%89%A9%E4%BD%99%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%B7%B2%E6%94%B6%E5%88%B0%E6%B3%A8%E9%94%80%E8%AF%B7%E6%B1%82%20(%251%2F%252%2C%20%253)%20...%22",
+          "time": "2026-11-02T17:58:51.122492Z"
+        },
+        {
+          "text": "通知剩余应用程序已收到注销请求 (%1/%2) ...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E9%80%9A%E7%9F%A5%E5%89%A9%E4%BD%99%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%B7%B2%E6%94%B6%E5%88%B0%E6%B3%A8%E9%94%80%E8%AF%B7%E6%B1%82%20(%251%2F%252)%20...%22",
+          "time": "2026-11-02T17:58:34.661593Z"
+        },
+        {
+          "text": "跳过通知 (%1)",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E8%B7%B3%E8%BF%87%E9%80%9A%E7%9F%A5%20(%251)%22",
+          "time": "2026-11-02T17:58:11.563792Z"
+        },
+        {
+          "text": "向窗口管理器传递其他参数。默认值为 ‘’",
+          "action": "修改译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%90%91%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%A0%E9%80%92%E5%85%B6%E4%BB%96%E5%8F%82%E6%95%B0%E3%80%82%E9%BB%98%E8%AE%A4%E5%80%BC%E4%B8%BA%20%E2%80%98%E2%80%99%22",
+          "time": "2026-11-02T17:57:54.283354Z"
+        },
+        {
+          "text": "正在通知应用程序已收到注销请求...",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E6%AD%A3%E5%9C%A8%E9%80%9A%E7%9F%A5%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%B7%B2%E6%94%B6%E5%88%B0%E6%B3%A8%E9%94%80%E8%AF%B7%E6%B1%82...%22",
+          "time": "2026-11-02T17:57:47.700305Z"
+        },
+        {
+          "text": "向窗口管理器传递其他参数。默认值为空字符串。",
+          "action": "新增译文",
+          "component": "tdebase/ksmserver",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/ksmserver/zh_Hans/?q=%22%E5%90%91%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%A0%E9%80%92%E5%85%B6%E4%BB%96%E5%8F%82%E6%95%B0%E3%80%82%E9%BB%98%E8%AE%A4%E5%80%BC%E4%B8%BA%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%82%22",
+          "time": "2026-11-02T17:57:36.269710Z"
+        },
+        {
+          "text": "…按住 Shift 键再按 Insert 键 可以插入剪贴板内容。",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%22%E2%80%A6%E6%8C%89%E4%BD%8F%20Shift%20%E9%94%AE%E5%86%8D%E6%8C%89%20Insert%20%E9%94%AE%20%E5%8F%AF%E4%BB%A5%E6%8F%92%E5%85%A5%E5%89%AA%E8%B4%B4%E6%9D%BF%E5%86%85%E5%AE%B9%E3%80%82%22",
+          "time": "2026-11-02T17:56:49.482124Z"
+        },
+        {
+          "text": "…在 “设置 -> 配置 Konsole…”中的方案编辑器， 可以创建个性化的配色方案",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%22%E2%80%A6%E5%9C%A8%20%E2%80%9C%E8%AE%BE%E7%BD%AE%20-%3E%20%E9%85%8D%E7%BD%AE%20Konsole%E2%80%A6%E2%80%9D%E4%B8%AD%E7%9A%84%E6%96%B9%E6%A1%88%E7%BC%96%E8%BE%91%E5%99%A8%EF%BC%8C%20%E5%8F%AF%E4%BB%A5%E5%88%9B%E5%BB%BA%E4%B8%AA%E6%80%A7%E5%8C%96%E7%9A%84%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88%22",
+          "time": "2026-11-02T17:56:38.107544Z"
+        },
+        {
+          "text": "…在 “设置 -> 配置 Konsole…”中的方案编辑器， 可以创建个性化的配色方案。",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%22%E2%80%A6%E5%9C%A8%20%E2%80%9C%E8%AE%BE%E7%BD%AE%20-%3E%20%E9%85%8D%E7%BD%AE%20Konsole%E2%80%A6%E2%80%9D%E4%B8%AD%E7%9A%84%E6%96%B9%E6%A1%88%E7%BC%96%E8%BE%91%E5%99%A8%EF%BC%8C%20%E5%8F%AF%E4%BB%A5%E5%88%9B%E5%BB%BA%E4%B8%AA%E6%80%A7%E5%8C%96%E7%9A%84%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88%E3%80%82%22",
+          "time": "2026-11-02T17:56:26.697460Z"
+        },
+        {
+          "text": "打开(&O) ...",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%22%E6%89%93%E5%BC%80(%26O)%20...%22",
+          "time": "2026-11-02T17:55:30.316778Z"
+        },
+        {
+          "text": "指定 TERM 环境变量中 设置的终端类型",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%22%E6%8C%87%E5%AE%9A%20TERM%20%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%AD%20%E8%AE%BE%E7%BD%AE%E7%9A%84%E7%BB%88%E7%AB%AF%E7%B1%BB%E5%9E%8B%22",
+          "time": "2026-11-02T17:55:19.129729Z"
+        },
+        {
+          "text": "...你可以通过脚本控制 Konsole 会话的图标: \"echo -ne '\\e]32;<icon>\\a'\", 这个 <icon> 可以是图标名或者图片的完整路径",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=...%E4%BD%A0%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E8%84%9A%E6%9C%AC%E6%8E%A7%E5%88%B6%20Konsole%20%E4%BC%9A%E8%AF%9D%E7%9A%84%E5%9B%BE%E6%A0%87%3A%20echo%20-ne%20'%5Ce%5D32%3B%3Cicon%3E%5Ca'%20%2C%20%E8%BF%99%E4%B8%AA%20%3C",
+          "time": "2026-11-02T17:54:29.065577Z"
+        },
+        {
+          "text": "...that you can set Konsole session's icon from a script with: \"echo -ne '\\e]32;<icon>\\a'\", where <icon> is either an icon name or a full path?",
+          "action": "新增译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=...that%20you%20can%20set%20Konsole%20session's%20icon%20from%20a%20script%20wit",
+          "time": "2026-11-02T17:52:47.798838Z"
+        },
+        {
+          "text": "…如果你在 Konsole 中 Shell 配置好了适当的变量 例如在 Bash 里，用上 “export PS1=$PS1\"\\[\\e]31;\\w\\a\\]\"” 之后 也许每次在终端中切换文件夹时，Konqueror 就会自动同步位置？",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%E2%80%A6%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%9C%A8%20Konsole%20%E4%B8%AD%20Shell%20%E9%85%8D%E7%BD%AE%E5%A5%BD%E4%BA%86%E9%80%82%E5%BD%93%E7%9A%84%E5%8F%98%E9%87%8F%20%E4%BE%8B%E5%A6%82%E5%9C%A8%20Bash%20%E9%87%8C%EF%BC%8C%E7%94%A8%E4%B8%8A%20%E2%80%9Cexport%20PS1%3D%24P",
+          "time": "2026-11-02T17:52:28.025743Z"
+        },
+        {
+          "text": "…如果你在 Konsole 中 Shell 配置好了适当的变量 例如在 Bash，用上 “export PS1=$PS1\"\\[\\e]31;\\w\\a\\]\"” 命令 也许每次在终端中切换文件夹时，Konqueror 就会自动同步位置？",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%E2%80%A6%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%9C%A8%20Konsole%20%E4%B8%AD%20Shell%20%E9%85%8D%E7%BD%AE%E5%A5%BD%E4%BA%86%E9%80%82%E5%BD%93%E7%9A%84%E5%8F%98%E9%87%8F%20%E4%BE%8B%E5%A6%82%E5%9C%A8%20Bash%EF%BC%8C%E7%94%A8%E4%B8%8A%20%E2%80%9Cexport%20PS1%3D%24PS1",
+          "time": "2026-11-02T17:52:08.964993Z"
+        },
+        {
+          "text": "…如果你在 Konsole 中 Shell 配置好了适当的变量 例如在 Bash，用上 “export PS1=$PS1\"\\[\\e]31;\\w\\a\\]\"” 命令的话 也许每次在终端中切换文件夹时，Konqueror 就会自动同步位置？",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%E2%80%A6%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%9C%A8%20Konsole%20%E4%B8%AD%20Shell%20%E9%85%8D%E7%BD%AE%E5%A5%BD%E4%BA%86%E9%80%82%E5%BD%93%E7%9A%84%E5%8F%98%E9%87%8F%20%E4%BE%8B%E5%A6%82%E5%9C%A8%20Bash%EF%BC%8C%E7%94%A8%E4%B8%8A%20%E2%80%9Cexport%20PS1%3D%24PS1",
+          "time": "2026-11-02T17:52:05.528053Z"
+        },
+        {
+          "text": "…如果你在 Konsole 中 Shell 配置好了适当的变量 例如在 Bash，用上 “export PS1=$PS1\"\\[\\e]31;\\w\\a\\]\"” 命令的话 那么每次在终端中切换文件夹时，Konqueror 就会自动同步位置？",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%E2%80%A6%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%9C%A8%20Konsole%20%E4%B8%AD%20Shell%20%E9%85%8D%E7%BD%AE%E5%A5%BD%E4%BA%86%E9%80%82%E5%BD%93%E7%9A%84%E5%8F%98%E9%87%8F%20%E4%BE%8B%E5%A6%82%E5%9C%A8%20Bash%EF%BC%8C%E7%94%A8%E4%B8%8A%20%E2%80%9Cexport%20PS1%3D%24PS1",
+          "time": "2026-11-02T17:51:59.910601Z"
+        },
+        {
+          "text": "…想要让 Shell 将当前目录通过提示符变量传递给 Konsole？ 对于 Bash，如果在 ~/.bashrc 中有“export PS1=$PS1\"\\[\\e]31;\\w\\a\\]\"”命令的话 那么 Konsole 每次在终端切换文件夹时会自动同步位置吗？",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%E2%80%A6%E6%83%B3%E8%A6%81%E8%AE%A9%20Shell%20%E5%B0%86%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95%E9%80%9A%E8%BF%87%E6%8F%90%E7%A4%BA%E7%AC%A6%E5%8F%98%E9%87%8F%E4%BC%A0%E9%80%92%E7%BB%99%20Konsole%EF%BC%9F%20%E5%AF%B9%E4%BA%8E%20Bash%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%9C%A8%20~%2F.bashrc%20%E4%B8%AD%E6%9C%89",
+          "time": "2026-11-02T17:49:21.711384Z"
+        },
+        {
+          "text": "…想要让 Shell 将当前目录通过提示符变量传递给 Konsole？ 对于 Bash，如果在 ~/.bashrc 中有“export PS1=$PS1\"\\[\\e]31;\\w\\a\\]\"”命令的话 那么 Konsole 将在每次在终端切换文件夹时自动同步位置？",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%E2%80%A6%E6%83%B3%E8%A6%81%E8%AE%A9%20Shell%20%E5%B0%86%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95%E9%80%9A%E8%BF%87%E6%8F%90%E7%A4%BA%E7%AC%A6%E5%8F%98%E9%87%8F%E4%BC%A0%E9%80%92%E7%BB%99%20Konsole%EF%BC%9F%20%E5%AF%B9%E4%BA%8E%20Bash%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%9C%A8%20~%2F.bashrc%20%E4%B8%AD%E6%9C%89",
+          "time": "2026-11-02T17:48:24.536670Z"
+        },
+        {
+          "text": "…如何让 Konsole 使用当前路径作为会话名称？ 对于 Bash，将 “export PS1=$PS1\"\\[\\e]30;\\H:\\w\\a\\]\"”添加到 ~/.bashrc 中。",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%E2%80%A6%E5%A6%82%E4%BD%95%E8%AE%A9%20Konsole%20%E4%BD%BF%E7%94%A8%E5%BD%93%E5%89%8D%E8%B7%AF%E5%BE%84%E4%BD%9C%E4%B8%BA%E4%BC%9A%E8%AF%9D%E5%90%8D%E7%A7%B0%EF%BC%9F%20%E5%AF%B9%E4%BA%8E%20Bash%EF%BC%8C%E5%B0%86%20%E2%80%9Cexport%20PS1%3D%24PS1%20%5C%5B%5Ce%5D3",
+          "time": "2026-11-02T17:46:27.295469Z"
+        },
+        {
+          "text": "…如何让 Konsole 使用当前路径作为窗口标题？ 对于 Bash，将“export PS1=$PS1\"\\[\\e]0;\\H:\\w\\a\\]\"”添加到 ~/.bashrc 中。",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%E2%80%A6%E5%A6%82%E4%BD%95%E8%AE%A9%20Konsole%20%E4%BD%BF%E7%94%A8%E5%BD%93%E5%89%8D%E8%B7%AF%E5%BE%84%E4%BD%9C%E4%B8%BA%E7%AA%97%E5%8F%A3%E6%A0%87%E9%A2%98%EF%BC%9F%20%E5%AF%B9%E4%BA%8E%20Bash%EF%BC%8C%E5%B0%86%E2%80%9Cexport%20PS1%3D%24PS1%20%5C%5B%5Ce%5D0%3B",
+          "time": "2026-11-02T17:46:01.586800Z"
+        },
+        {
+          "text": "将工作目录设置为“dir”",
+          "action": "修改译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%22%E5%B0%86%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E8%AE%BE%E7%BD%AE%E4%B8%BA%E2%80%9Cdir%E2%80%9D%22",
+          "time": "2026-11-02T17:45:31.276037Z"
+        },
+        {
+          "text": "选择所有 (&A)",
+          "action": "新增译文",
+          "component": "tdebase/konsole",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/konsole/zh_Hans/?q=%22%E9%80%89%E6%8B%A9%E6%89%80%E6%9C%89%20(%26A)%22",
+          "time": "2026-11-02T17:45:24.222385Z"
+        },
+        {
+          "text": "台北是哪个国家的首都...",
+          "action": "修改译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E5%8F%B0%E5%8C%97%E6%98%AF%E5%93%AA%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E9%A6%96%E9%83%BD...%22",
+          "time": "2026-11-02T17:43:20.493681Z"
+        },
+        {
+          "text": "新加坡是哪个国家的首都...",
+          "action": "修改译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E6%96%B0%E5%8A%A0%E5%9D%A1%E6%98%AF%E5%93%AA%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E9%A6%96%E9%83%BD...%22",
+          "time": "2026-11-02T17:43:04.763578Z"
+        },
+        {
+          "text": "请点击： 塞尔维亚",
+          "action": "修改译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E8%AF%B7%E7%82%B9%E5%87%BB%EF%BC%9A%20%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%22",
+          "time": "2026-11-02T17:42:45.932789Z"
+        },
+        {
+          "text": "阿拉伯联合酋长国的首都是...",
+          "action": "修改译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E9%98%BF%E6%8B%89%E4%BC%AF%E8%81%94%E5%90%88%E9%85%8B%E9%95%BF%E5%9B%BD%E7%9A%84%E9%A6%96%E9%83%BD%E6%98%AF...%22",
+          "time": "2026-11-02T17:41:38.058556Z"
+        },
+        {
+          "text": "请点击： 阿拉伯联合酋长国",
+          "action": "新增译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E8%AF%B7%E7%82%B9%E5%87%BB%EF%BC%9A%20%E9%98%BF%E6%8B%89%E4%BC%AF%E8%81%94%E5%90%88%E9%85%8B%E9%95%BF%E5%9B%BD%22",
+          "time": "2026-11-02T17:41:35.106591Z"
+        },
+        {
+          "text": "阿拉伯联合酋长国的首都是",
+          "action": "新增译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E9%98%BF%E6%8B%89%E4%BC%AF%E8%81%94%E5%90%88%E9%85%8B%E9%95%BF%E5%9B%BD%E7%9A%84%E9%A6%96%E9%83%BD%E6%98%AF%22",
+          "time": "2026-11-02T17:41:27.171559Z"
+        },
+        {
+          "text": "阿拉伯联合酋长国",
+          "action": "新增译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E9%98%BF%E6%8B%89%E4%BC%AF%E8%81%94%E5%90%88%E9%85%8B%E9%95%BF%E5%9B%BD%22",
+          "time": "2026-11-02T17:41:16.166515Z"
+        },
+        {
+          "text": "乌干达",
+          "action": "新增译文",
+          "component": "tdeedu/kgeography",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdeedu/kgeography/zh_Hans/?q=%22%E4%B9%8C%E5%B9%B2%E8%BE%BE%22",
+          "time": "2026-11-02T17:41:06.203510Z"
+        },
         {
           "text": "当前地图： %1",
           "action": "修改译文",
@@ -22,16 +1625,21 @@
         }
       ],
       "windowStart": "2026-11-02T17:40:49.767080Z",
-      "windowEnd": "2026-11-02T17:40:49.767080Z",
+      "windowEnd": "2026-11-02T19:10:02.672499Z",
       "components": [
-        "tdeedu/kgeography"
+        "tdeedu/kgeography",
+        "tdebase/konsole",
+        "tdebase/ksmserver",
+        "tdebase/kcontrol-desktop-files"
       ],
       "actions": {
-        "修改译文": 1
+        "修改译文": 140,
+        "新增译文": 90,
+        "新贡献者": 2
       },
       "language": "简体中文",
       "languageName": "简体中文",
-      "latestTarget": "当前地图： %1",
+      "latestTarget": "你可以在这里配置虚拟桌面的数量",
       "source": "api"
     }
   },
