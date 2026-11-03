@@ -1,27 +1,27 @@
 {
   "lastRun": {
-    "weblate": "2026-11-03T15:42:51.069Z",
+    "weblate": "2026-11-03T21:25:57.606Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-03T15:41:56.917Z",
-    "kuaishou": "2026-11-03T15:41:59.984Z",
-    "github": "2026-11-03T15:42:18.799Z",
-    "gitee": "2026-11-03T15:42:44.860Z",
-    "archive": "2026-11-03T15:42:46.291Z",
-    "retroachievements": "2026-11-03T15:42:59.134Z",
-    "hexo": "2026-11-03T15:42:58.392Z",
-    "steam": "2026-11-03T15:43:02.577Z",
-    "bilibili": "2026-11-03T15:41:55.986Z",
-    "codemao": "2026-11-03T15:42:47.866Z"
+    "ottohub": "2026-11-03T21:24:51.108Z",
+    "kuaishou": "2026-11-03T21:25:12.465Z",
+    "github": "2026-11-03T21:25:29.071Z",
+    "gitee": "2026-11-03T21:25:51.056Z",
+    "archive": "2026-11-03T21:25:52.703Z",
+    "retroachievements": "2026-11-03T21:26:04.917Z",
+    "hexo": "2026-11-03T21:26:04.232Z",
+    "steam": "2026-11-03T21:26:07.885Z",
+    "bilibili": "2026-11-03T21:24:50.018Z",
+    "codemao": "2026-11-03T21:25:54.455Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-03T15:42:58.392Z",
-      "since": "2026-11-03T07:28:38.493Z",
+      "checkedAt": "2026-11-03T21:26:04.233Z",
+      "since": "2026-11-03T15:42:59.134Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
-      "note": "",
+      "note": "窗口 4320 分钟内没有成就，也没有新玩的游戏（接口正常返回，只是没东西）",
       "profile": {
         "ok": true,
         "user": "toad114514",
@@ -30,27 +30,27 @@
       },
       "recentAchievements": {
         "ok": true,
-        "rawCount": 4,
-        "used": 4,
+        "rawCount": 0,
+        "used": 0,
         "error": null
       },
       "recentlyPlayed": {
         "ok": true,
         "rawCount": 30,
-        "used": 1,
+        "used": 0,
         "error": null
       },
       "items": {
-        "achievements": 4,
-        "plays": 1
+        "achievements": 0,
+        "plays": 0
       },
       "gameArt": {
-        "games": 1,
-        "withArt": 5,
+        "games": 0,
+        "withArt": 0,
         "sources": {
           "title": 0,
           "ingame": 0,
-          "boxart": 5
+          "boxart": 0
         },
         "debug": []
       }
@@ -97,8 +97,8 @@
       "actions": 670
     },
     "steam": {
-      "checkedAt": "2026-11-03T15:42:59.135Z",
-      "since": "2026-11-03T07:28:41.989Z",
+      "checkedAt": "2026-11-03T21:26:04.917Z",
+      "since": "2026-11-03T15:43:02.577Z",
       "note": "窗口内没有新动作：这些游戏的 38 个已解锁成就都在上次抓取之前",
       "totalCount": 4,
       "games": [
