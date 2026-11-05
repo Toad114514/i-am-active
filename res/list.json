@@ -1,5 +1,464 @@
 [
   {
+    "id": "weblate:session:2026-11-05T18:46:21Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE 简体中文 · 61 条译文改动",
+    "summary": "修改译文 43 条、新增译文 18 条，涉及 2 个组件（tdebase/kcmkonq、tdebase/kcmkonqhtml），最近一条「i18n-translation@lists.linux.net.cn, xia」",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22i18n-translation%40lists.linux.net.cn%2C%20xiaolan2332021%40163.com%22",
+    "image": null,
+    "timestamp": "2026-11-05T18:46:21.730487Z",
+    "meta": {
+      "merge": true,
+      "count": 63,
+      "translationCount": 61,
+      "changes": [
+        {
+          "text": "i18n-translation@lists.linux.net.cn, xiaolan2332021@163.com",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22i18n-translation%40lists.linux.net.cn%2C%20xiaolan2332021%40163.com%22",
+          "time": "2026-11-05T18:46:21.730487Z"
+        },
+        {
+          "text": "TDE 简体中文翻译组, Toad114514",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22TDE%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91%E7%BB%84%2C%20Toad114514%22",
+          "time": "2026-11-05T18:46:10.879604Z"
+        },
+        {
+          "text": "每次弹出窗口请求时都提示。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E6%AF%8F%E6%AC%A1%E5%BC%B9%E5%87%BA%E7%AA%97%E5%8F%A3%E8%AF%B7%E6%B1%82%E6%97%B6%E9%83%BD%E6%8F%90%E7%A4%BA%E3%80%82%22",
+          "time": "2026-11-05T18:45:42.472503Z"
+        },
+        {
+          "text": "如果设置了这个选项，当鼠标移动到超级链接上时，指针将会改变形状 (通常会是一个手的形状)。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E5%A6%82%E6%9E%9C%E8%AE%BE%E7%BD%AE%E4%BA%86%E8%BF%99%E4%B8%AA%E9%80%89%E9%A1%B9%EF%BC%8C%E5%BD%93%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E8%B6%85%E7%BA%A7%E9%93%BE%E6%8E%A5%E4%B8%8A%E6%97%B6%EF%BC%8C%E6%8C%87%E9%92%88%E5%B0%86%E4%BC%9A%E6%94%B9%E5%8F%98%E5%BD%A2%E7%8A%B6%20(%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%98%AF%E4%B8%80%E4%B8%AA%E6%89%8B%E7%9A%84%E5%BD%A2%E7%8A%B6)%E3%80%82%22",
+          "time": "2026-11-05T18:45:40.856638Z"
+        },
+        {
+          "text": "启用此选项将导致 jvm 使用 TDEIO 进行网络传送",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E5%90%AF%E7%94%A8%E6%AD%A4%E9%80%89%E9%A1%B9%E5%B0%86%E5%AF%BC%E8%87%B4%20jvm%20%E4%BD%BF%E7%94%A8%20TDEIO%20%E8%BF%9B%E8%A1%8C%E7%BD%91%E7%BB%9C%E4%BC%A0%E9%80%81%22",
+          "time": "2026-11-05T18:45:28.298160Z"
+        },
+        {
+          "text": "Konqueror AdBlocKKonqueror AdBlocK 允许您创建一组过滤器列表，而 Konqueror 将会把这些过滤器应用到链接的图像和框架上。匹配的 URL 将被忽略，或者替换为占位图像。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=Konqueror%20AdBlocKKonqueror%20AdBlocK%20%E5%85%81%E8%AE%B8%E6%82%A8%E5%88%9B%E5%BB%BA%E4%B8%80%E7%BB%84%E8%BF%87%E6%BB%A4%E5%99%A8%E5%88%97%E8%A1%A8%EF%BC%8C%E8%80%8C%20Konqueror%20",
+          "time": "2026-11-05T18:45:26.221641Z"
+        },
+        {
+          "text": "鼠标悬浮时显示关闭按钮而不是网站图标 (&S)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E9%BC%A0%E6%A0%87%E6%82%AC%E6%B5%AE%E6%97%B6%E6%98%BE%E7%A4%BA%E5%85%B3%E9%97%AD%E6%8C%89%E9%92%AE%E8%80%8C%E4%B8%8D%E6%98%AF%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87%20(%26S)%22",
+          "time": "2026-11-05T18:44:50.328183Z"
+        },
+        {
+          "text": "这将允许你通过鼠标滚轮在两个或更多的标签页中切换。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E8%BF%99%E5%B0%86%E5%85%81%E8%AE%B8%E4%BD%A0%E9%80%9A%E8%BF%87%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%E5%9C%A8%E4%B8%A4%E4%B8%AA%E6%88%96%E6%9B%B4%E5%A4%9A%E7%9A%84%E6%A0%87%E7%AD%BE%E9%A1%B5%E4%B8%AD%E5%88%87%E6%8D%A2%E3%80%82%22",
+          "time": "2026-11-05T18:44:27.803698Z"
+        },
+        {
+          "text": "仅当打开了两个或更多标签时才显示标签栏。否则，将一直显示标签栏。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E4%BB%85%E5%BD%93%E6%89%93%E5%BC%80%E4%BA%86%E4%B8%A4%E4%B8%AA%E6%88%96%E6%9B%B4%E5%A4%9A%E6%A0%87%E7%AD%BE%E6%97%B6%E6%89%8D%E6%98%BE%E7%A4%BA%E6%A0%87%E7%AD%BE%E6%A0%8F%E3%80%82%E5%90%A6%E5%88%99%EF%BC%8C%E5%B0%86%E4%B8%80%E7%9B%B4%E6%98%BE%E7%A4%BA%E6%A0%87%E7%AD%BE%E6%A0%8F%E3%80%82%22",
+          "time": "2026-11-05T18:43:34.314578Z"
+        },
+        {
+          "text": "使用鼠标滚轮切换标题栏 (&Y)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E4%BD%BF%E7%94%A8%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%E5%88%87%E6%8D%A2%E6%A0%87%E9%A2%98%E6%A0%8F%20(%26Y)%22",
+          "time": "2026-11-05T18:43:18.325774Z"
+        },
+        {
+          "text": "h",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22h%22",
+          "time": "2026-11-05T18:42:58.825802Z"
+        },
+        {
+          "text": "仅打开一个标签时隐藏标签栏 (&H)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E4%BB%85%E6%89%93%E5%BC%80%E4%B8%80%E4%B8%AA%E6%A0%87%E7%AD%BE%E6%97%B6%E9%9A%90%E8%97%8F%E6%A0%87%E7%AD%BE%E6%A0%8F%20(%26H)%22",
+          "time": "2026-11-05T18:42:53.369718Z"
+        },
+        {
+          "text": "输入主机名 (如 www.trinitydesktop.org) 或以点起始的域名 (如.trinitydesktop.org 或.org)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%E8%BE%93%E5%85%A5%E4%B8%BB%E6%9C%BA%E5%90%8D%20(%E5%A6%82%20www.trinitydesktop.org)%20%E6%88%96%E4%BB%A5%E7%82%B9%E8%B5%B7%E5%A7%8B%E7%9A%84%E5%9F%9F%E5%90%8D%20(%E5%A6%82.trinitydesktop.",
+          "time": "2026-11-05T18:42:37.667049Z"
+        },
+        {
+          "text": "已禁用",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E5%B7%B2%E7%A6%81%E7%94%A8%22",
+          "time": "2026-11-05T18:41:57.455330Z"
+        },
+        {
+          "text": "已启用",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E5%B7%B2%E5%90%AF%E7%94%A8%22",
+          "time": "2026-11-05T18:41:56.312875Z"
+        },
+        {
+          "text": "平滑滚动",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E5%B9%B3%E6%BB%91%E6%BB%9A%E5%8A%A8%22",
+          "time": "2026-11-05T18:41:54.705487Z"
+        },
+        {
+          "text": "如果选中此复选框，Konqueror 将自动加载并显示与网页关联的网站图标。这些图标会显示在地址栏中。否则，将显示通用图标。",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%E5%A6%82%E6%9E%9C%E9%80%89%E4%B8%AD%E6%AD%A4%E5%A4%8D%E9%80%89%E6%A1%86%EF%BC%8CKonqueror%20%E5%B0%86%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD%E5%B9%B6%E6%98%BE%E7%A4%BA%E4%B8%8E%E7%BD%91%E9%A1%B5%E5%85%B3%E8%81%94%E7%9A%84%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87%E3%80%82%E8%BF%99%E4%BA%9B%E5%9B%BE%E6%A0%87%E4%BC%9A%E6%98%BE%E7%A4%BA%E5%9C%A8%E5%9C%B0%E5%9D%80%E6%A0%8F%E4%B8%AD%E3%80%82%E5%90%A6%E5%88%99%EF%BC%8C%E5%B0%86%E6%98%BE%E7%A4%BA%E9%80%9A%E7%94%A8%E5%9B%BE",
+          "time": "2026-11-05T18:41:36.395335Z"
+        },
+        {
+          "text": "启用网站图标 (&F)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E5%90%AF%E7%94%A8%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87%20(%26F)%22",
+          "time": "2026-11-05T18:41:17.558076Z"
+        },
+        {
+          "text": "启用表单补全 (&P)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonqhtml",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonqhtml/zh_Hans/?q=%22%E5%90%AF%E7%94%A8%E8%A1%A8%E5%8D%95%E8%A1%A5%E5%85%A8%20(%26P)%22",
+          "time": "2026-11-05T18:40:54.252853Z"
+        },
+        {
+          "text": "该文件夹默认将被用来载入或保存视频。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E9%BB%98%E8%AE%A4%E5%B0%86%E8%A2%AB%E7%94%A8%E6%9D%A5%E8%BD%BD%E5%85%A5%E6%88%96%E4%BF%9D%E5%AD%98%E8%A7%86%E9%A2%91%E3%80%82%22",
+          "time": "2026-11-05T18:40:09.804842Z"
+        },
+        {
+          "text": "该文件夹默认将被用来载入或保存模板。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E9%BB%98%E8%AE%A4%E5%B0%86%E8%A2%AB%E7%94%A8%E6%9D%A5%E8%BD%BD%E5%85%A5%E6%88%96%E4%BF%9D%E5%AD%98%E6%A8%A1%E6%9D%BF%E3%80%82%22",
+          "time": "2026-11-05T18:40:06.126261Z"
+        },
+        {
+          "text": "该文件夹默认将被用来载入或保存共享的文件。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E9%BB%98%E8%AE%A4%E5%B0%86%E8%A2%AB%E7%94%A8%E6%9D%A5%E8%BD%BD%E5%85%A5%E6%88%96%E4%BF%9D%E5%AD%98%E5%85%B1%E4%BA%AB%E7%9A%84%E6%96%87%E4%BB%B6%E3%80%82%22",
+          "time": "2026-11-05T18:40:00.580488Z"
+        },
+        {
+          "text": "该文件夹默认将被用来载入或保存图片。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E9%BB%98%E8%AE%A4%E5%B0%86%E8%A2%AB%E7%94%A8%E6%9D%A5%E8%BD%BD%E5%85%A5%E6%88%96%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E3%80%82%22",
+          "time": "2026-11-05T18:39:49.273580Z"
+        },
+        {
+          "text": "该文件夹默认将被用来载入或保存音乐文件。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E9%BB%98%E8%AE%A4%E5%B0%86%E8%A2%AB%E7%94%A8%E6%9D%A5%E8%BD%BD%E5%85%A5%E6%88%96%E4%BF%9D%E5%AD%98%E9%9F%B3%E4%B9%90%E6%96%87%E4%BB%B6%E3%80%82%22",
+          "time": "2026-11-05T18:39:41.729200Z"
+        },
+        {
+          "text": "该文件夹默认将被用来载入或保存下载的文件。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E9%BB%98%E8%AE%A4%E5%B0%86%E8%A2%AB%E7%94%A8%E6%9D%A5%E8%BD%BD%E5%85%A5%E6%88%96%E4%BF%9D%E5%AD%98%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%96%87%E4%BB%B6%E3%80%82%22",
+          "time": "2026-11-05T18:39:32.445123Z"
+        },
+        {
+          "text": "桌面图标",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%22",
+          "time": "2026-11-05T18:39:04.464196Z"
+        },
+        {
+          "text": "视频路径：",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E8%A7%86%E9%A2%91%E8%B7%AF%E5%BE%84%EF%BC%9A%22",
+          "time": "2026-11-05T18:38:59.697564Z"
+        },
+        {
+          "text": "图片路径：",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%EF%BC%9A%22",
+          "time": "2026-11-05T18:38:51.440181Z"
+        },
+        {
+          "text": "下载路径：",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E4%B8%8B%E8%BD%BD%E8%B7%AF%E5%BE%84%EF%BC%9A%22",
+          "time": "2026-11-05T18:38:36.391774Z"
+        },
+        {
+          "text": "将已归档文件显示为文件夹 (&F)",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%B0%86%E5%B7%B2%E5%BD%92%E6%A1%A3%E6%96%87%E4%BB%B6%E6%98%BE%E7%A4%BA%E4%B8%BA%E6%96%87%E4%BB%B6%E5%A4%B9%20(%26F)%22",
+          "time": "2026-11-05T18:38:10.727669Z"
+        },
+        {
+          "text": "勾选此项可允许在桌面背景通过 Ctrl+鼠标滚轮 快速修改桌面图标的间距。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%8B%BE%E9%80%89%E6%AD%A4%E9%A1%B9%E5%8F%AF%E5%85%81%E8%AE%B8%E5%9C%A8%E6%A1%8C%E9%9D%A2%E8%83%8C%E6%99%AF%E9%80%9A%E8%BF%87%20Ctrl%2B%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%20%E5%BF%AB%E9%80%9F%E4%BF%AE%E6%94%B9%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E7%9A%84%E9%97%B4%E8%B7%9D%E3%80%82%22",
+          "time": "2026-11-05T18:37:53.517768Z"
+        },
+        {
+          "text": "勾选此项可允许通过 Ctrl+鼠标滚轮 快速修改桌面图标的间距。",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%8B%BE%E9%80%89%E6%AD%A4%E9%A1%B9%E5%8F%AF%E5%85%81%E8%AE%B8%E9%80%9A%E8%BF%87%20Ctrl%2B%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%20%E5%BF%AB%E9%80%9F%E4%BF%AE%E6%94%B9%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E7%9A%84%E9%97%B4%E8%B7%9D%E3%80%82%22",
+          "time": "2026-11-05T18:37:46.347845Z"
+        },
+        {
+          "text": "对齐到网格",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%AF%B9%E9%BD%90%E5%88%B0%E7%BD%91%E6%A0%BC%22",
+          "time": "2026-11-05T18:36:58.685023Z"
+        },
+        {
+          "text": "设置每个桌面的图标相邻间多远的距离。此项仅在应用 “对齐到网格” 时有效。",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E8%AE%BE%E7%BD%AE%E6%AF%8F%E4%B8%AA%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%9B%BE%E6%A0%87%E7%9B%B8%E9%82%BB%E9%97%B4%E5%A4%9A%E8%BF%9C%E7%9A%84%E8%B7%9D%E7%A6%BB%E3%80%82%E6%AD%A4%E9%A1%B9%E4%BB%85%E5%9C%A8%E5%BA%94%E7%94%A8%20%E2%80%9C%E5%AF%B9%E9%BD%90%E5%88%B0%E7%BD%91%E6%A0%BC%E2%80%9D%20%E6%97%B6%E6%9C%89%E6%95%88%E3%80%82%22",
+          "time": "2026-11-05T18:36:53.934753Z"
+        },
+        {
+          "text": "锁定位置",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E9%94%81%E5%AE%9A%E4%BD%8D%E7%BD%AE%22",
+          "time": "2026-11-05T18:35:12.244932Z"
+        },
+        {
+          "text": "Ctrl+鼠标滚轮 修改间距",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22Ctrl%2B%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%20%E4%BF%AE%E6%94%B9%E9%97%B4%E8%B7%9D%22",
+          "time": "2026-11-05T18:34:58.868101Z"
+        },
+        {
+          "text": "像素",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%83%8F%E7%B4%A0%22",
+          "time": "2026-11-05T18:34:39.758346Z"
+        },
+        {
+          "text": "图标间距：",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%9B%BE%E6%A0%87%E9%97%B4%E8%B7%9D%EF%BC%9A%22",
+          "time": "2026-11-05T18:34:33.155351Z"
+        },
+        {
+          "text": "对齐到方格",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%AF%B9%E9%BD%90%E5%88%B0%E6%96%B9%E6%A0%BC%22",
+          "time": "2026-11-05T18:34:21.154597Z"
+        },
+        {
+          "text": "模板路径：",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E6%A8%A1%E6%9D%BF%E8%B7%AF%E5%BE%84%EF%BC%9A%22",
+          "time": "2026-11-05T18:34:04.422048Z"
+        },
+        {
+          "text": "共享目录路径：",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%85%B1%E4%BA%AB%E7%9B%AE%E5%BD%95%E8%B7%AF%E5%BE%84%EF%BC%9A%22",
+          "time": "2026-11-05T18:33:55.777660Z"
+        },
+        {
+          "text": "音乐路径：",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E9%9F%B3%E4%B9%90%E8%B7%AF%E5%BE%84%EF%BC%9A%22",
+          "time": "2026-11-05T18:33:42.528556Z"
+        },
+        {
+          "text": "双击空白区域导航到上级文件夹",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%8F%8C%E5%87%BB%E7%A9%BA%E7%99%BD%E5%8C%BA%E5%9F%9F%E5%AF%BC%E8%88%AA%E5%88%B0%E4%B8%8A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%22",
+          "time": "2026-11-05T18:33:33.347452Z"
+        },
+        {
+          "text": "启用此选项后，双击空白区域将导航至上级文件夹。",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%90%AF%E7%94%A8%E6%AD%A4%E9%80%89%E9%A1%B9%E5%90%8E%EF%BC%8C%E5%8F%8C%E5%87%BB%E7%A9%BA%E7%99%BD%E5%8C%BA%E5%9F%9F%E5%B0%86%E5%AF%BC%E8%88%AA%E8%87%B3%E4%B8%8A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E3%80%82%22",
+          "time": "2026-11-05T18:33:23.156951Z"
+        },
+        {
+          "text": "双击空白区域以移动到父文件夹",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%8F%8C%E5%87%BB%E7%A9%BA%E7%99%BD%E5%8C%BA%E5%9F%9F%E4%BB%A5%E7%A7%BB%E5%8A%A8%E5%88%B0%E7%88%B6%E6%96%87%E4%BB%B6%E5%A4%B9%22",
+          "time": "2026-11-05T18:33:09.280546Z"
+        },
+        {
+          "text": "xiaolan2332021@163.com",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22xiaolan2332021%40163.com%22",
+          "time": "2026-11-05T18:32:42.412073Z"
+        },
+        {
+          "text": "Toad114514",
+          "action": "新增译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22Toad114514%22",
+          "time": "2026-11-05T18:32:32.758089Z"
+        },
+        {
+          "text": "显示设备图标 (&S)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E8%AE%BE%E5%A4%87%E5%9B%BE%E6%A0%87%20(%26S)%22",
+          "time": "2026-11-05T18:32:13.654136Z"
+        },
+        {
+          "text": "在设备图标显示剩余空间叠加层 (&S)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E5%9C%A8%E8%AE%BE%E5%A4%87%E5%9B%BE%E6%A0%87%E6%98%BE%E7%A4%BA%E5%89%A9%E4%BD%99%E7%A9%BA%E9%97%B4%E5%8F%A0%E5%8A%A0%E5%B1%82%20(%26S)%22",
+          "time": "2026-11-05T18:32:10.159639Z"
+        },
+        {
+          "text": "显示设备图标(&S)",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E6%98%BE%E7%A4%BA%E8%AE%BE%E5%A4%87%E5%9B%BE%E6%A0%87(%26S)%22",
+          "time": "2026-11-05T18:31:35.708586Z"
+        },
+        {
+          "text": "_n: 像素 个像素",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22_n%3A%20%E5%83%8F%E7%B4%A0%20%E4%B8%AA%E5%83%8F%E7%B4%A0%22",
+          "time": "2026-11-05T18:31:30.291757Z"
+        },
+        {
+          "text": "_n: 像素 像素",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22_n%3A%20%E5%83%8F%E7%B4%A0%20%E5%83%8F%E7%B4%A0%22",
+          "time": "2026-11-05T18:31:22.706412Z"
+        },
+        {
+          "text": "_n: 像素",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22_n%3A%20%E5%83%8F%E7%B4%A0%22",
+          "time": "2026-11-05T18:31:18.207230Z"
+        },
+        {
+          "text": "_n: 像素 像素",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22_n%3A%20%E5%83%8F%E7%B4%A0%20%E5%83%8F%E7%B4%A0%22",
+          "time": "2026-11-05T18:30:56.176744Z"
+        },
+        {
+          "text": "_n: pixel pixels",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22_n%3A%20pixel%20pixels%22",
+          "time": "2026-11-05T18:30:44.867171Z"
+        },
+        {
+          "text": "_n: 行 行",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22_n%3A%20%E8%A1%8C%20%E8%A1%8C%22",
+          "time": "2026-11-05T18:30:44.321838Z"
+        },
+        {
+          "text": "_n: line lines",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22_n%3A%20line%20lines%22",
+          "time": "2026-11-05T18:30:33.679203Z"
+        },
+        {
+          "text": "行为 此模块允许您为您的桌面选择不同的选项， 包括图标排列的方式， 桌面目录的位置， 以及在桌面上与点击鼠标中键和右键关联的弹出菜单。 使用“这是什么？”(Shift+F1)可在特定的选项取得帮助。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%E8%A1%8C%E4%B8%BA%20%E6%AD%A4%E6%A8%A1%E5%9D%97%E5%85%81%E8%AE%B8%E6%82%A8%E4%B8%BA%E6%82%A8%E7%9A%84%E6%A1%8C%E9%9D%A2%E9%80%89%E6%8B%A9%E4%B8%8D%E5%90%8C%E7%9A%84%E9%80%89%E9%A1%B9%EF%BC%8C%20%E5%8C%85%E6%8B%AC%E5%9B%BE%E6%A0%87%E6%8E%92%E5%88%97%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%8C%20%E6%A1%8C%E9%9D%A2%E7%9B%AE%E5%BD%95%E7%9A%84%E4%BD%8D%E7%BD%AE%EF%BC%8C%20%E4%BB%A5%E5%8F%8A%E5%9C%A8%E6%A1%8C%E9%9D%A2%E4%B8%8A%E4%B8%8E%E7%82%B9%E5%87%BB%E9%BC%A0%E6%A0%87%E4%B8%AD%E9%94%AE%E5%92%8C%E5%8F%B3%E9%94%AE%E5%85%B3",
+          "time": "2026-11-05T18:30:26.391496Z"
+        },
+        {
+          "text": "无响应：没有任何响应！ 窗口列表菜单：显示虚拟桌面上的所有窗口的菜单。点击桌面名切换到该桌面，或者点击窗口名切换到该窗口。隐藏或最小化的窗口在括弧里显示窗口名。 桌面菜单：桌面的上下文菜单。该菜单包括了屏幕显示、屏幕锁定、退出TDE的选项。应用程序菜单：“Kicker”菜单。快速访问应用程序。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%E6%97%A0%E5%93%8D%E5%BA%94%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95%E5%93%8D%E5%BA%94%EF%BC%81%20%E7%AA%97%E5%8F%A3%E5%88%97%E8%A1%A8%E8%8F%9C%E5%8D%95%EF%BC%9A%E6%98%BE%E7%A4%BA%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2%E4%B8%8A%E7%9A%84%E6%89%80%E6%9C%89%E7%AA%97%E5%8F%A3%E7%9A%84%E8%8F%9C%E5%8D%95%E3%80%82%E7%82%B9%E5%87%BB%E6%A1%8C%E9%9D%A2%E5%90%8D%E5%88%87%E6%8D%A2%E5%88%B0%E8%AF%A5%E6%A1%8C%E9%9D%A2%EF%BC%8C%E6%88%96%E8%80%85%E7%82%B9%E5%87%BB%E7%AA%97%E5%8F%A3%E5%90%8D%E5%88%87%E6%8D%A2%E5%88%B0%E8%AF%A5%E7%AA%97%E5%8F%A3",
+          "time": "2026-11-05T18:29:58.364061Z"
+        },
+        {
+          "text": "桌面数量(&U)：",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E6%A1%8C%E9%9D%A2%E6%95%B0%E9%87%8F(%26U)%EF%BC%9A%22",
+          "time": "2026-11-05T18:29:53.256076Z"
+        },
+        {
+          "text": "选中此选项将点击图标名称直接对文件改名。",
+          "action": "修改译文",
+          "component": "tdebase/kcmkonq",
+          "url": "https://mirror.git.trinitydesktop.org/weblate/translate/tdebase/kcmkonq/zh_Hans/?q=%22%E9%80%89%E4%B8%AD%E6%AD%A4%E9%80%89%E9%A1%B9%E5%B0%86%E7%82%B9%E5%87%BB%E5%9B%BE%E6%A0%87%E5%90%8D%E7%A7%B0%E7%9B%B4%E6%8E%A5%E5%AF%B9%E6%96%87%E4%BB%B6%E6%94%B9%E5%90%8D%E3%80%82%22",
+          "time": "2026-11-05T18:29:50.212665Z"
+        }
+      ],
+      "windowStart": "2026-11-05T18:29:50.205967Z",
+      "windowEnd": "2026-11-05T18:46:21.730487Z",
+      "components": [
+        "tdebase/kcmkonq",
+        "tdebase/kcmkonqhtml"
+      ],
+      "actions": {
+        "新贡献者": 2,
+        "修改译文": 43,
+        "新增译文": 18
+      },
+      "language": "简体中文",
+      "languageName": "简体中文",
+      "latestTarget": "i18n-translation@lists.linux.net.cn, xiaolan2332021@163.com",
+      "source": "api"
+    }
+  },
+  {
     "id": "weblate:session:2026-11-02T19:10:02Z",
     "platform": "weblate",
     "type": "译文提交",
