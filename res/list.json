@@ -1,5 +1,39 @@
 [
   {
+    "id": "steam:play:220:1794009049",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Half-Life 2",
+    "summary": "从 2026/11/7 07:50:49 开始玩，两周内玩了 14 小时 11 分钟，游玩时长 25 小时 50 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-11-06T23:50:49.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 851,
+      "minutesTotal": 1550,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
+    "id": "steam:220:HL2_MAKEABASKET",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "双点",
+    "summary": "Half-Life 2 获得成就💀️「双点」：用阿狗的玩具球在伊莱的废料场中投篮。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_makeabasket.jpg",
+    "timestamp": "2026-11-06T23:21:04.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "HL2_MAKEABASKET",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/hl2_makeabasket.jpg"
+    }
+  },
+  {
     "id": "retroachievements:play:14658:2026-11-06 18:10:14",
     "platform": "retroachievements",
     "type": "游玩记录",
