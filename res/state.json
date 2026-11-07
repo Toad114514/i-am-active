@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-06T23:55:20.031Z",
+    "weblate": "2026-11-07T04:03:06.139Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-06T23:54:31.353Z",
-    "kuaishou": "2026-11-06T23:54:33.817Z",
-    "github": "2026-11-06T23:54:49.101Z",
-    "gitee": "2026-11-06T23:55:11.755Z",
-    "archive": "2026-11-06T23:55:16.056Z",
-    "retroachievements": "2026-11-06T23:55:28.677Z",
-    "hexo": "2026-11-06T23:55:26.497Z",
-    "steam": "2026-11-06T23:55:31.997Z",
-    "bilibili": "2026-11-06T23:54:30.280Z",
-    "codemao": "2026-11-06T23:55:17.647Z"
+    "ottohub": "2026-11-07T04:02:15.928Z",
+    "kuaishou": "2026-11-07T04:02:18.371Z",
+    "github": "2026-11-07T04:02:36.643Z",
+    "gitee": "2026-11-07T04:02:59.977Z",
+    "archive": "2026-11-07T04:03:01.838Z",
+    "retroachievements": "2026-11-07T04:03:14.628Z",
+    "hexo": "2026-11-07T04:03:12.625Z",
+    "steam": "2026-11-07T04:03:18.272Z",
+    "bilibili": "2026-11-07T04:02:13.104Z",
+    "codemao": "2026-11-07T04:03:03.209Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-06T23:55:26.497Z",
-      "since": "2026-11-06T19:48:57.997Z",
+      "checkedAt": "2026-11-07T04:03:12.625Z",
+      "since": "2026-11-06T23:55:28.677Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -97,17 +97,17 @@
       "actions": 670
     },
     "steam": {
-      "checkedAt": "2026-11-06T23:55:28.678Z",
-      "since": "2026-11-06T19:49:01.239Z",
+      "checkedAt": "2026-11-07T04:03:14.629Z",
+      "since": "2026-11-06T23:55:31.997Z",
       "note": "",
       "totalCount": 4,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 851,
-          "minutesTotal": 1550,
-          "lastPlayed": "2026-11-06T23:50:49.000Z"
+          "minutes2weeks": 942,
+          "minutesTotal": 1642,
+          "lastPlayed": "2026-11-07T01:22:13.000Z"
         },
         {
           "appid": "4000",
@@ -165,7 +165,7 @@
           "appid": "220",
           "name": "Half-Life 2",
           "total": 69,
-          "unlocked": 24,
+          "unlocked": 25,
           "inWindow": 1,
           "ok": true,
           "error": null
