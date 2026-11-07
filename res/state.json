@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-07T04:03:06.139Z",
+    "weblate": "2026-11-07T11:27:45.103Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-07T04:02:15.928Z",
-    "kuaishou": "2026-11-07T04:02:18.371Z",
-    "github": "2026-11-07T04:02:36.643Z",
-    "gitee": "2026-11-07T04:02:59.977Z",
-    "archive": "2026-11-07T04:03:01.838Z",
-    "retroachievements": "2026-11-07T04:03:14.628Z",
-    "hexo": "2026-11-07T04:03:12.625Z",
-    "steam": "2026-11-07T04:03:18.272Z",
-    "bilibili": "2026-11-07T04:02:13.104Z",
-    "codemao": "2026-11-07T04:03:03.209Z"
+    "ottohub": "2026-11-07T11:26:43.552Z",
+    "kuaishou": "2026-11-07T11:26:56.575Z",
+    "github": "2026-11-07T11:27:09.701Z",
+    "gitee": "2026-11-07T11:27:38.288Z",
+    "archive": "2026-11-07T11:27:41.374Z",
+    "retroachievements": "2026-11-07T11:27:53.488Z",
+    "hexo": "2026-11-07T11:27:51.660Z",
+    "steam": "2026-11-07T11:27:56.690Z",
+    "bilibili": "2026-11-07T11:26:42.406Z",
+    "codemao": "2026-11-07T11:27:42.691Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-07T04:03:12.625Z",
-      "since": "2026-11-06T23:55:28.677Z",
+      "checkedAt": "2026-11-07T11:27:51.661Z",
+      "since": "2026-11-07T04:03:14.628Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -97,9 +97,9 @@
       "actions": 670
     },
     "steam": {
-      "checkedAt": "2026-11-07T04:03:14.629Z",
-      "since": "2026-11-06T23:55:31.997Z",
-      "note": "",
+      "checkedAt": "2026-11-07T11:27:53.489Z",
+      "since": "2026-11-07T04:03:18.272Z",
+      "note": "窗口内没有新动作：这些游戏的 40 个已解锁成就都在上次抓取之前",
       "totalCount": 4,
       "games": [
         {
@@ -131,8 +131,8 @@
           "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
-      "playItems": 1,
-      "achievementItems": 1,
+      "playItems": 0,
+      "achievementItems": 0,
       "achievements": [
         {
           "appid": "477160",
@@ -166,7 +166,7 @@
           "name": "Half-Life 2",
           "total": 69,
           "unlocked": 25,
-          "inWindow": 1,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
