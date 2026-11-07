@@ -1,5 +1,54 @@
 [
   {
+    "id": "retroachievements:play:17505:2026-11-07 12:10:27",
+    "platform": "retroachievements",
+    "type": "游玩记录",
+    "title": "严肃游玩 ~Hack~ Star Revenge 5: Neo Blue Realm",
+    "summary": "在 Nintendo 64 上严肃游玩了 ~Hack~ Star Revenge 5: Neo Blue Realm ，3/50 完成",
+    "url": "https://retroachievements.org/game/17505",
+    "image": "https://media.retroachievements.org/Images/116282.png",
+    "timestamp": "2026-11-07T12:10:27Z",
+    "meta": {
+      "kind": "play-session",
+      "gameId": 17505,
+      "gameTitle": "~Hack~ Star Revenge 5: Neo Blue Realm",
+      "consoleName": "Nintendo 64",
+      "achievementsUnlocked": 3,
+      "achievementsTotal": 50,
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/116052.png",
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2"
+    }
+  },
+  {
+    "id": "retroachievements:536796:2026-11-07 11:43:58",
+    "platform": "retroachievements",
+    "type": "Hardcore",
+    "title": "Switching It Up",
+    "summary": "我在《~Hack~ Star Revenge 5: Neo Blue Realm》解锁了 Hardcore「Switching It Up」，获得了 5 分的好成绩：Collect star 3 \"Follow the Path of Switches\" in Course 1 without turning on the red blocks or riding a Koopa Shell.",
+    "url": "https://retroachievements.org/achievement/536796",
+    "image": "https://media.retroachievements.org/Badge/609590.png",
+    "timestamp": "2026-11-07T11:43:58Z",
+    "meta": {
+      "achievementId": 536796,
+      "gameId": 17505,
+      "gameTitle": "~Hack~ Star Revenge 5: Neo Blue Realm",
+      "consoleName": "Nintendo 64",
+      "points": 5,
+      "trueRatio": 15,
+      "hardcore": true,
+      "badgeUrl": "https://media.retroachievements.org/Badge/609590.png",
+      "gameIconUrl": "https://media.retroachievements.org/Images/116282.png",
+      "gameUrl": "https://retroachievements.org/game/17505",
+      "user": "Toad114514",
+      "backdrop": "https://media.retroachievements.org/Images/116052.png",
+      "backdropSource": "boxart",
+      "artRule": "boxart>title>ingame@v2",
+      "badge": "https://media.retroachievements.org/Badge/609590.png"
+    }
+  },
+  {
     "id": "steam:play:220:1794014533",
     "platform": "steam",
     "type": "游玩记录",
