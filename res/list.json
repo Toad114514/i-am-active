@@ -154,17 +154,87 @@
     "id": "github:repo:Toad114514/sm64iquedx:2026-11-08T14:21:16Z",
     "platform": "github",
     "type": "仓库活动",
-    "title": "Toad114514/sm64iquedx · 33 次提交、1 个新仓库、1 个 Issue",
-    "summary": "11-08 22:21 → 11-09 03:11，最近一条「test: 上游地址不写死，改从 upstream.txt 读」",
+    "title": "Toad114514/sm64iquedx · 43 次提交、1 个新仓库、1 个 Issue",
+    "summary": "11-08 22:21 → 11-09 04:43，最近一条「test: Windows 上别用 -x 判断主程序（MSYS2 默认 noac」",
     "url": "https://github.com/Toad114514/sm64iquedx",
     "image": null,
-    "timestamp": "2026-11-08T19:11:04Z",
+    "timestamp": "2026-11-08T20:43:33Z",
     "meta": {
       "merge": true,
       "kind": "repo-digest",
       "repo": "Toad114514/sm64iquedx",
-      "count": 35,
+      "count": 45,
       "changes": [
+        {
+          "text": "test: Windows 上别用 -x 判断主程序（MSYS2 默认 noacl，无扩展名文件永远不是可执行）",
+          "action": "提交",
+          "component": "f54719a",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/f54719a1d525b61255532332974c5da6186124e3",
+          "time": "2026-11-08T20:43:33Z"
+        },
+        {
+          "text": "fix(aarch64): 收集成品时把 sm64coopdx.arm 改名成 sm64coopdx",
+          "action": "提交",
+          "component": "671e5a2",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/671e5a2f65c7d9405caa766609a8748e27d99993",
+          "time": "2026-11-08T20:20:59Z"
+        },
+        {
+          "text": "ci(debug): aarch64 打包加 IQDX_DEBUG 现场（uname/id/df/dist 清单）",
+          "action": "提交",
+          "component": "3e3b3e2",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/3e3b3e2f543403e0f3281f778fa3bb1f2a42a832",
+          "time": "2026-11-08T20:13:55Z"
+        },
+        {
+          "text": "fix(mkdeb): $arch 后面跟的是全角空格 U+3000，macOS 的 bash 3.2 会把它吞进变量名",
+          "action": "提交",
+          "component": "c5a993a",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/c5a993ad089ca347e5e526801692ab2ea75f1fb1",
+          "time": "2026-11-08T20:07:57Z"
+        },
+        {
+          "text": "fix(ci): aarch64 打包失败无从定位 → 加阶段追溯，拆开 deb/zip",
+          "action": "提交",
+          "component": "09b8eff",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/09b8effcf50873d8a91daf1433146c2e29db0f9e",
+          "time": "2026-11-08T20:05:46Z"
+        },
+        {
+          "text": "feat(ci): macOS 加 Intel 腿，Linux 加 aarch64 腿",
+          "action": "提交",
+          "component": "77bbeb9",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/77bbeb9d8c15f9851d00c457c52d501ef6d3d346",
+          "time": "2026-11-08T19:56:21Z"
+        },
+        {
+          "text": "fix(macos): .app 缺 dylib + -po 找不到可执行文件（CI mac 步两处红）",
+          "action": "提交",
+          "component": "5bba22a",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/5bba22a6882599fbfcd138d56f33b9de31e39ef4",
+          "time": "2026-11-08T19:35:30Z"
+        },
+        {
+          "text": "ci: arch 容器里要装 git（install.sh 开头就 command -v git，-po 分支也在它之后）",
+          "action": "提交",
+          "component": "8e49869",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/8e4986954284fafd57c108aab42f273198c84cc2",
+          "time": "2026-11-08T19:29:35Z"
+        },
+        {
+          "text": "feat(pkg): 新增便携 zip（-p zip），CI 产物按格式拆成独立 artifact",
+          "action": "提交",
+          "component": "492c2ee",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/492c2eeb30dd4d43583e464d627f985cda56b0bb",
+          "time": "2026-11-08T19:26:50Z"
+        },
+        {
+          "text": "ci(desktop): macOS 补 coreutils（Makefile 在 Darwin 上硬写 CP := gcp）",
+          "action": "提交",
+          "component": "b47a993",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/b47a993b21c3dea9854d84ccce97706063b4654e",
+          "time": "2026-11-08T19:17:33Z"
+        },
         {
           "text": "test: 上游地址不写死，改从 upstream.txt 读",
           "action": "提交",
@@ -412,9 +482,9 @@
         }
       ],
       "windowStart": "2026-11-08T14:21:16Z",
-      "windowEnd": "2026-11-08T19:11:04Z",
+      "windowEnd": "2026-11-08T20:43:33Z",
       "actions": {
-        "提交": 33,
+        "提交": 43,
         "新建仓库": 1,
         "新建 Issue": 1
       }
