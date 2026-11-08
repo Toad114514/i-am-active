@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-08T01:00:19.321Z",
+    "weblate": "2026-11-08T07:03:25.244Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-08T00:59:32.094Z",
-    "kuaishou": "2026-11-08T00:59:34.955Z",
-    "github": "2026-11-08T00:59:48.825Z",
-    "gitee": "2026-11-08T01:00:13.233Z",
-    "archive": "2026-11-08T01:00:15.354Z",
-    "retroachievements": "2026-11-08T01:00:28.082Z",
-    "hexo": "2026-11-08T01:00:25.968Z",
-    "steam": "2026-11-08T01:00:31.184Z",
-    "bilibili": "2026-11-08T00:59:30.987Z",
-    "codemao": "2026-11-08T01:00:16.917Z"
+    "ottohub": "2026-11-08T07:02:36.705Z",
+    "kuaishou": "2026-11-08T07:02:39.395Z",
+    "github": "2026-11-08T07:02:53.530Z",
+    "gitee": "2026-11-08T07:03:19.519Z",
+    "archive": "2026-11-08T07:03:21.272Z",
+    "retroachievements": "2026-11-08T07:03:34.079Z",
+    "hexo": "2026-11-08T07:03:31.800Z",
+    "steam": "2026-11-08T07:03:35.082Z",
+    "bilibili": "2026-11-08T07:02:35.541Z",
+    "codemao": "2026-11-08T07:03:22.883Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-08T01:00:25.969Z",
-      "since": "2026-11-07T21:18:53.745Z",
+      "checkedAt": "2026-11-08T07:03:31.801Z",
+      "since": "2026-11-08T01:00:28.082Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -97,15 +97,15 @@
       "actions": 670
     },
     "steam": {
-      "checkedAt": "2026-11-08T01:00:28.083Z",
-      "since": "2026-11-07T21:18:57.097Z",
+      "checkedAt": "2026-11-08T07:03:34.080Z",
+      "since": "2026-11-08T01:00:31.184Z",
       "note": "窗口内没有新动作：这些游戏的 40 个已解锁成就都在上次抓取之前",
-      "totalCount": 4,
+      "totalCount": 3,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 942,
+          "minutes2weeks": 835,
           "minutesTotal": 1642,
           "lastPlayed": "2026-11-07T01:22:13.000Z"
         },
@@ -119,16 +119,9 @@
         {
           "appid": "365450",
           "name": "Hacknet",
-          "minutes2weeks": 13,
+          "minutes2weeks": 6,
           "minutesTotal": 297,
           "lastPlayed": "2026-10-29T20:08:52.000Z"
-        },
-        {
-          "appid": "10",
-          "name": "Counter-Strike",
-          "minutes2weeks": 1,
-          "minutesTotal": 1,
-          "lastPlayed": "2026-10-25T05:11:19.000Z"
         }
       ],
       "playItems": 0,
@@ -178,15 +171,6 @@
           "inWindow": 0,
           "ok": true,
           "error": null
-        },
-        {
-          "appid": "10",
-          "name": "Counter-Strike",
-          "total": 0,
-          "unlocked": 0,
-          "inWindow": 0,
-          "ok": false,
-          "error": "l=schinese → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））；无 l → HTTP 400（这款游戏没有成就体系（Steam 回 Requested app has no stats））"
         }
       ]
     },
