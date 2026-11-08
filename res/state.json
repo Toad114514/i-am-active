@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-08T14:42:43.948Z",
+    "weblate": "2026-11-08T19:17:01.049Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-08T14:41:44.204Z",
-    "kuaishou": "2026-11-08T14:41:57.892Z",
-    "github": "2026-11-08T14:42:12.991Z",
-    "gitee": "2026-11-08T14:42:38.146Z",
-    "archive": "2026-11-08T14:42:40.001Z",
-    "retroachievements": "2026-11-08T14:42:53.102Z",
-    "hexo": "2026-11-08T14:42:50.618Z",
-    "steam": "2026-11-08T14:42:54.973Z",
-    "bilibili": "2026-11-08T14:41:38.416Z",
-    "codemao": "2026-11-08T14:42:41.465Z"
+    "ottohub": "2026-11-08T19:16:04.195Z",
+    "kuaishou": "2026-11-08T19:16:18.249Z",
+    "github": "2026-11-08T19:16:31.865Z",
+    "gitee": "2026-11-08T19:16:54.552Z",
+    "archive": "2026-11-08T19:16:57.139Z",
+    "retroachievements": "2026-11-08T19:17:09.752Z",
+    "hexo": "2026-11-08T19:17:07.642Z",
+    "steam": "2026-11-08T19:17:12.190Z",
+    "bilibili": "2026-11-08T19:16:03.232Z",
+    "codemao": "2026-11-08T19:16:58.670Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-08T14:42:50.619Z",
-      "since": "2026-11-08T07:03:34.079Z",
+      "checkedAt": "2026-11-08T19:17:07.643Z",
+      "since": "2026-11-08T14:42:53.102Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -88,17 +88,17 @@
     },
     "github": {
       "lookbackDays": 0,
-      "repos": 30,
-      "commits": 649,
-      "events": 0,
+      "repos": 31,
+      "commits": 697,
+      "events": 1,
       "truncated": 0,
       "skipped": 1,
-      "digests": 181,
-      "actions": 670
+      "digests": 184,
+      "actions": 720
     },
     "steam": {
-      "checkedAt": "2026-11-08T14:42:53.103Z",
-      "since": "2026-11-08T07:03:35.082Z",
+      "checkedAt": "2026-11-08T19:17:09.753Z",
+      "since": "2026-11-08T14:42:54.973Z",
       "note": "窗口内没有新动作：这些游戏的 40 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
@@ -119,7 +119,7 @@
         {
           "appid": "365450",
           "name": "Hacknet",
-          "minutes2weeks": 6,
+          "minutes2weeks": 5,
           "minutesTotal": 297,
           "lastPlayed": "2026-10-29T20:08:52.000Z"
         }

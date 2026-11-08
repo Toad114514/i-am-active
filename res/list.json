@@ -1,5 +1,426 @@
 [
   {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-08T00:02:19Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 4 次提交",
+    "summary": "11-08 08:02–08:21，最近一条「feat: 填充 src/ 26 个改动文件 + cn-text 模块 12 个」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-08T00:21:13Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 4,
+      "changes": [
+        {
+          "text": "feat: 填充 src/ 26 个改动文件 + cn-text 模块 12 个新增文件",
+          "action": "提交",
+          "component": "2f17d16",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/2f17d16b74bb17ce447c45ea526f09a03ca9c241",
+          "time": "2026-11-08T00:21:13Z"
+        },
+        {
+          "text": "feat: 新增 src/ 全量改动文件 + gen_patches.sh",
+          "action": "提交",
+          "component": "a9d48dc",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/a9d48dcb93b391c4ba65ad5e92b5c683cb1a1321",
+          "time": "2026-11-08T00:05:47Z"
+        },
+        {
+          "text": "feat: 新增 src/ 存放改动后的完整文件，路径与上游一致",
+          "action": "提交",
+          "component": "2f4cbf3",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/2f4cbf34b04988006ec1c2e8ffd82d33da862e97",
+          "time": "2026-11-08T00:04:15Z"
+        },
+        {
+          "text": "chore: 初始化补丁仓库骨架",
+          "action": "提交",
+          "component": "6bfc2e4",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/6bfc2e4e45a33acf80bf4682fe5ad237be47471f",
+          "time": "2026-11-08T00:02:19Z"
+        }
+      ],
+      "windowStart": "2026-11-08T00:02:19Z",
+      "windowEnd": "2026-11-08T00:21:13Z",
+      "actions": {
+        "提交": 4
+      }
+    }
+  },
+  {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-08T07:25:41Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 11 次提交",
+    "summary": "11-08 15:25–17:28，最近一条「platform 打包信息」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-08T09:28:06Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 11,
+      "changes": [
+        {
+          "text": "platform 打包信息",
+          "action": "提交",
+          "component": "0be5d1f",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/0be5d1f6dc17506e2968adabf49de6c0a69b54a1",
+          "time": "2026-11-08T09:28:06Z"
+        },
+        {
+          "text": "debian control 2",
+          "action": "提交",
+          "component": "87c7b42",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/87c7b4250560ee97ab16385bc42ce53c60203fd2",
+          "time": "2026-11-08T09:01:58Z"
+        },
+        {
+          "text": "debian control 包",
+          "action": "提交",
+          "component": "12f0ba1",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/12f0ba11e7db61b5d45d5096003692f43ba77889",
+          "time": "2026-11-08T08:56:54Z"
+        },
+        {
+          "text": "截图",
+          "action": "提交",
+          "component": "53dfa49",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/53dfa490c2c27d65eb4b50c925def8b31da5acc6",
+          "time": "2026-11-08T08:48:30Z"
+        },
+        {
+          "text": "feat: 拆出可选的 DJUI 前端补丁 0002",
+          "action": "提交",
+          "component": "7681541",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/7681541c0ed58f64b284ef9a2c1ae5fe79261f3e",
+          "time": "2026-11-08T08:47:57Z"
+        },
+        {
+          "text": "feat: 拆出可选的 DJUI 前端补丁 0002",
+          "action": "提交",
+          "component": "98dc6b2",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/98dc6b249814754bc248630f15e0dde1a76c657d",
+          "time": "2026-11-08T08:44:24Z"
+        },
+        {
+          "text": "feat: 上游不存在的新增文件归入 patches/cn_extra/",
+          "action": "提交",
+          "component": "a4dc84e",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/a4dc84e9ebc1d65f91c6d44c07a7699309540d79",
+          "time": "2026-11-08T08:30:54Z"
+        },
+        {
+          "text": "docs 补readme",
+          "action": "提交",
+          "component": "9e0b37e",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/9e0b37ed9633c7bf403e9e2077431d3bd4f75a24",
+          "time": "2026-11-08T08:20:40Z"
+        },
+        {
+          "text": "feat: 初版的安装脚本",
+          "action": "提交",
+          "component": "9ca4b16",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/9ca4b16374edd237e44436a72b178bfbeb50aa2e",
+          "time": "2026-11-08T08:17:55Z"
+        },
+        {
+          "text": "更新基线",
+          "action": "提交",
+          "component": "0e03b73",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/0e03b7368cc4b2d37339a81907f98731027712f0",
+          "time": "2026-11-08T07:26:26Z"
+        },
+        {
+          "text": "platform 特定包构建的路径",
+          "action": "提交",
+          "component": "5ac9e8e",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/5ac9e8e8b470f3780e3e5130725263b86643ebfe",
+          "time": "2026-11-08T07:25:41Z"
+        }
+      ],
+      "windowStart": "2026-11-08T07:25:41Z",
+      "windowEnd": "2026-11-08T09:28:06Z",
+      "actions": {
+        "提交": 11
+      }
+    }
+  },
+  {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-08T14:21:16Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 33 次提交、1 个新仓库、1 个 Issue",
+    "summary": "11-08 22:21 → 11-09 03:11，最近一条「test: 上游地址不写死，改从 upstream.txt 读」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-08T19:11:04Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 35,
+      "changes": [
+        {
+          "text": "test: 上游地址不写死，改从 upstream.txt 读",
+          "action": "提交",
+          "component": "d2934e7",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/d2934e71a44f14299e10cfdcdc994c61a77dddcc",
+          "time": "2026-11-08T19:11:04Z"
+        },
+        {
+          "text": "fix(upstream): cn-repo 用户名写错（Shangshanruo66 → Shangshanruo666）",
+          "action": "提交",
+          "component": "0b2b3af",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/0b2b3af4b26bf91a91ba0b98ab06dfa3d30d109e",
+          "time": "2026-11-08T19:08:18Z"
+        },
+        {
+          "text": "fix(ci): 修自测在 macOS/Windows/Linux 全红的三处原因",
+          "action": "提交",
+          "component": "b8784cb",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/b8784cbdf81a88118a145859f3e0ca445d6f97b2",
+          "time": "2026-11-08T19:01:31Z"
+        },
+        {
+          "text": "docs(readme): 自测项数 45 → 47",
+          "action": "提交",
+          "component": "65537a7",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/65537a7c9b60c8bc02b8351f6c4b491652435f82",
+          "time": "2026-11-08T18:46:23Z"
+        },
+        {
+          "text": "feat: 新增 --package-only/-po 与 -p all，并加两条 CI 流水线",
+          "action": "提交",
+          "component": "dcef348",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/dcef34859a0658b5d99f869b123a6dc86158e7b9",
+          "time": "2026-11-08T18:44:03Z"
+        },
+        {
+          "text": "继续微调 readme.md",
+          "action": "提交",
+          "component": "60155c5",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/60155c5aab2255f3f46cddd89723f4c44109a21a",
+          "time": "2026-11-08T18:33:45Z"
+        },
+        {
+          "text": "feat(install): 加 --print-config 自检开关 + 参数自测脚本，修值被选项吞掉",
+          "action": "提交",
+          "component": "df5fb48",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/df5fb48678d72c04bccccf3292f40eed319d54cf",
+          "time": "2026-11-08T18:24:03Z"
+        },
+        {
+          "text": "微改 rpm",
+          "action": "提交",
+          "component": "8cada5c",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/8cada5ce42376a6b1a82b6a2abcf0a4131af4e93",
+          "time": "2026-11-08T17:57:28Z"
+        },
+        {
+          "text": "readme update",
+          "action": "提交",
+          "component": "0afddae",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/0afddae9de94ad9eb0a91d2c5696f44f03acc4a1",
+          "time": "2026-11-08T17:57:16Z"
+        },
+        {
+          "text": "feat(cn_extra): 补 src/pc/djui/cn_glyphs.h，让 djui_modern 在原版上游能编译",
+          "action": "提交",
+          "component": "30d4490",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/30d449001d689c2d29cac147ab449f9edb917425",
+          "time": "2026-11-08T17:48:26Z"
+        },
+        {
+          "text": "写错版本号。",
+          "action": "提交",
+          "component": "2351471",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/2351471ea3997f54402337fbdab671c9f65a50e4",
+          "time": "2026-11-08T17:30:11Z"
+        },
+        {
+          "text": "feat(platform): 补完 rpm 与 darwin 打包",
+          "action": "提交",
+          "component": "8376164",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/83761641440fce5a3090052b0398abfc8a00fa07",
+          "time": "2026-11-08T17:25:05Z"
+        },
+        {
+          "text": "[Bug] Intro 自动演示的渲染问题",
+          "action": "新建 Issue",
+          "component": "#1",
+          "url": "https://github.com/Toad114514/sm64iquedx/issues/1",
+          "time": "2026-11-08T17:16:24Z"
+        },
+        {
+          "text": "fix(issue-template): config.yaml 改名 config.yml，修 mailto 链接",
+          "action": "提交",
+          "component": "3aa7d7c",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/3aa7d7cb72fad8c2894c78f043bad9562b87b8fe",
+          "time": "2026-11-08T17:03:40Z"
+        },
+        {
+          "text": "fix(issue-template): 去掉 upload 元素，改用可拖拽的文字框",
+          "action": "提交",
+          "component": "ae0248a",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/ae0248a37ff06d49f2a08d9f7925115e77ca5a7e",
+          "time": "2026-11-08T17:03:19Z"
+        },
+        {
+          "text": "加上 config.yaml",
+          "action": "提交",
+          "component": "37ffd73",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/37ffd73951caa7044d99b6daf98e8baef1a0d91b",
+          "time": "2026-11-08T16:58:40Z"
+        },
+        {
+          "text": "丢弃原来github自己生产的issue template",
+          "action": "提交",
+          "component": "11a8bec",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/11a8bec516b3d6ef8fcf5e93dff259ad0a2fcf59",
+          "time": "2026-11-08T16:50:41Z"
+        },
+        {
+          "text": "docs(issue-template): 完善 Bug 表单",
+          "action": "提交",
+          "component": "4eb61d7",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/4eb61d753571eb0f60a8d42e65285cf577bda1ac",
+          "time": "2026-11-08T16:49:41Z"
+        },
+        {
+          "text": "脚本框架完善还没填内容",
+          "action": "提交",
+          "component": "d3f1abf",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/d3f1abf009acc4957ccd21faecc533b8a09d5613",
+          "time": "2026-11-08T16:30:09Z"
+        },
+        {
+          "text": "feat(issue-template): 新增表单式 Bug 报告模板",
+          "action": "提交",
+          "component": "68cb9bf",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/68cb9bf472063228648622b209e65317afb2396b",
+          "time": "2026-11-08T16:28:37Z"
+        },
+        {
+          "text": "refactor: 语言字符串改用脚本插入，不再做补丁",
+          "action": "提交",
+          "component": "ccc33ce",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/ccc33ce31f5a5b327f2ec03c10721d3f8ead74d8",
+          "time": "2026-11-08T16:14:41Z"
+        },
+        {
+          "text": "Update README.md",
+          "action": "提交",
+          "component": "645ba0a",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/645ba0ad64348b13fb2701338ca7d18cb729d3ef",
+          "time": "2026-11-08T15:59:36Z"
+        },
+        {
+          "text": "Update issue templates",
+          "action": "提交",
+          "component": "1737918",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/17379185d28b34066d7873311c149591b49ed270",
+          "time": "2026-11-08T15:58:00Z"
+        },
+        {
+          "text": "我还是喜欢我的 mit 许可证aaa",
+          "action": "提交",
+          "component": "df2ed78",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/df2ed7850e07a8e1d1d80ddec204b7f61bd3a86f",
+          "time": "2026-11-08T15:38:39Z"
+        },
+        {
+          "text": "微改 README.md",
+          "action": "提交",
+          "component": "f4c8daa",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/f4c8daa6f4f855d0586b53ccb13658b65a645484",
+          "time": "2026-11-08T15:37:27Z"
+        },
+        {
+          "text": "sm64iquedx",
+          "action": "新建仓库",
+          "component": "C",
+          "url": "https://github.com/Toad114514/sm64iquedx",
+          "time": "2026-11-08T15:30:10Z"
+        },
+        {
+          "text": "package: RPM spec 信息准备",
+          "action": "提交",
+          "component": "1084941",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/1084941c57a78339b87b97490d9084669c592dbb",
+          "time": "2026-11-08T15:20:47Z"
+        },
+        {
+          "text": "一堆补丁",
+          "action": "提交",
+          "component": "02a993c",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/02a993c06d1bfb8b2ab8141c7ef991253c18abb9",
+          "time": "2026-11-08T15:20:13Z"
+        },
+        {
+          "text": "bugfix: peach 开头的信没有正常换行",
+          "action": "提交",
+          "component": "4eee6eb",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/4eee6ebe61c521c330b2dfc07c78c1f592d7d066",
+          "time": "2026-11-08T15:19:40Z"
+        },
+        {
+          "text": "feat: 自动启用神游Rom而不是弹对话框",
+          "action": "提交",
+          "component": "607a237",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/607a2378d3d31087397b1e2462d29fe6bc5e7761",
+          "time": "2026-11-08T15:18:33Z"
+        },
+        {
+          "text": "script 补丁脚本",
+          "action": "提交",
+          "component": "630fdfc",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/630fdfc02552c90cf21b6d0dceffdca046fff0ec",
+          "time": "2026-11-08T15:16:23Z"
+        },
+        {
+          "text": "docs: 文档更新",
+          "action": "提交",
+          "component": "4da127d",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/4da127df46b89e88dde5d22afb8038f08f400bec",
+          "time": "2026-11-08T15:15:52Z"
+        },
+        {
+          "text": "package: freedesktop.org 桌面图标和其他文件的安装脚本",
+          "action": "提交",
+          "component": "906c912",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/906c9128de02f91b996efa38e11d72078a2003a7",
+          "time": "2026-11-08T14:24:16Z"
+        },
+        {
+          "text": "package: Arch 的包构建",
+          "action": "提交",
+          "component": "f5f2398",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/f5f239823333d73878c707879253748ae2c5b544",
+          "time": "2026-11-08T14:22:42Z"
+        },
+        {
+          "text": "package: Debian 的包构建",
+          "action": "提交",
+          "component": "87e13c7",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/87e13c7359bfc881472ff57c7f4df3f90f4de063",
+          "time": "2026-11-08T14:21:16Z"
+        }
+      ],
+      "windowStart": "2026-11-08T14:21:16Z",
+      "windowEnd": "2026-11-08T19:11:04Z",
+      "actions": {
+        "提交": 33,
+        "新建仓库": 1,
+        "新建 Issue": 1
+      }
+    }
+  },
+  {
     "id": "retroachievements:play:17505:2026-11-07 12:10:27",
     "platform": "retroachievements",
     "type": "游玩记录",
