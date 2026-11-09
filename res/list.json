@@ -1,5 +1,123 @@
 [
   {
+    "id": "steam:play:220:1794250322",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Half-Life 2",
+    "summary": "从 2026/11/10 02:52:02 开始玩，两周内玩了 12 小时 19 分钟，游玩时长 28 小时 12 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-11-09T18:52:02.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 739,
+      "minutesTotal": 1692,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-09T19:20:32Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 10 次提交、1 个 Issue",
+    "summary": "11-10 03:20–05:25，最近一条「fix: 自测没跟上修了 InnoSetup EP2」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-09T21:25:04Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 11,
+      "changes": [
+        {
+          "text": "fix: 自测没跟上修了 InnoSetup EP2",
+          "action": "提交",
+          "component": "3d42b8b",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/3d42b8bc14e3e80b24717cc253e99b4c440453c0",
+          "time": "2026-11-09T21:25:04Z"
+        },
+        {
+          "text": "feat: InnoSetup 安装向导打包 EP1",
+          "action": "提交",
+          "component": "bd73748",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/bd7374865575884ef26fb5f6cf4c9bfefac3b948",
+          "time": "2026-11-09T21:11:59Z"
+        },
+        {
+          "text": "feat: action 基础的自定义编译",
+          "action": "提交",
+          "component": "3823592",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/38235923a6df85d128d15539e7bd89205ec7b8b6",
+          "time": "2026-11-09T20:49:14Z"
+        },
+        {
+          "text": "fix: 不同 awk 容忍度的坑 EP2",
+          "action": "提交",
+          "component": "d9328e7",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/d9328e7b0f819f3e4d558c1af687a7e0666b8757",
+          "time": "2026-11-09T20:37:28Z"
+        },
+        {
+          "text": "fix: 不同 awk 容忍度的坑",
+          "action": "提交",
+          "component": "138153b",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/138153b3e416b2ccd161a291661678b1280eb6cd",
+          "time": "2026-11-09T20:28:36Z"
+        },
+        {
+          "text": "readme补齐",
+          "action": "提交",
+          "component": "cb1ba1e",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/cb1ba1eb661749d6edcc8b819e3e309d02f1f753",
+          "time": "2026-11-09T20:21:00Z"
+        },
+        {
+          "text": "feat: 将 0005 和 0006 合并",
+          "action": "提交",
+          "component": "5cb4f15",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/5cb4f150dc9bb82a95fc65ce043ca6246e4f610b",
+          "time": "2026-11-09T20:10:23Z"
+        },
+        {
+          "text": "action 合并成一条",
+          "action": "提交",
+          "component": "431ce04",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/431ce04e868c5beb5ff9611f9e1e1029d7c82e99",
+          "time": "2026-11-09T19:48:03Z"
+        },
+        {
+          "text": "[Bug] 多行对话框渲染不完全",
+          "action": "新建 Issue",
+          "component": "#2",
+          "url": "https://github.com/Toad114514/sm64iquedx/issues/2",
+          "time": "2026-11-09T19:42:24Z"
+        },
+        {
+          "text": "fix(android): assembleRelease 不带 :project: 前缀（上游工程挂在 :platform:app）",
+          "action": "提交",
+          "component": "0f96c28",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/0f96c28bff7f21a3022e1c388ecbe11b718d5029",
+          "time": "2026-11-09T19:25:11Z"
+        },
+        {
+          "text": "readme c2",
+          "action": "提交",
+          "component": "7658c9a",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/7658c9a5cc9b6809c31fa50625bfe8df12df6553",
+          "time": "2026-11-09T19:20:32Z"
+        }
+      ],
+      "windowStart": "2026-11-09T19:20:32Z",
+      "windowEnd": "2026-11-09T21:25:04Z",
+      "actions": {
+        "提交": 10,
+        "新建 Issue": 1
+      }
+    }
+  },
+  {
     "id": "github:repo:Toad114514/sm64iquedx:2026-11-09T04:15:50Z",
     "platform": "github",
     "type": "仓库活动",
