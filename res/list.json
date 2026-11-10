@@ -1,5 +1,49 @@
 [
   {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-10T19:48:49Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 3 次提交",
+    "summary": "11-11 03:48–03:51，最近一条「fix: InnoSetup EP3」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-10T19:51:44Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 3,
+      "changes": [
+        {
+          "text": "fix: InnoSetup EP3",
+          "action": "提交",
+          "component": "a8e1b66",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/a8e1b666b12d99583521168395a1f14b05411422",
+          "time": "2026-11-10T19:51:44Z"
+        },
+        {
+          "text": "readme change",
+          "action": "提交",
+          "component": "2581722",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/258172250449046bcc2d70fa56c9eaccc3aca915",
+          "time": "2026-11-10T19:51:28Z"
+        },
+        {
+          "text": "del/change",
+          "action": "提交",
+          "component": "0b2e9d6",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/0b2e9d64dc267b6bbfb1bfbe409c9ff4a1c719ae",
+          "time": "2026-11-10T19:48:49Z"
+        }
+      ],
+      "windowStart": "2026-11-10T19:48:49Z",
+      "windowEnd": "2026-11-10T19:51:44Z",
+      "actions": {
+        "提交": 3
+      }
+    }
+  },
+  {
     "id": "steam:play:220:1794250322",
     "platform": "steam",
     "type": "游玩记录",
