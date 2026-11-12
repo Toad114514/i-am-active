@@ -1,5 +1,57 @@
 [
   {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-12T05:34:11Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 3 次提交、1 个 PR",
+    "summary": "11-12 13:34–13:53，最近一条「Merge pull request #4 from Toad114514/fi」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-12T05:53:04Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 4,
+      "changes": [
+        {
+          "text": "Merge pull request #4 from Toad114514/fix/1",
+          "action": "提交",
+          "component": "3777e2b",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/3777e2b107c5083d90a61c4eeba91a2b85aa7afd",
+          "time": "2026-11-12T05:53:04Z"
+        },
+        {
+          "text": "（无标题）",
+          "action": "新建 PR",
+          "component": null,
+          "url": "https://github.com/Toad114514/sm64iquedx",
+          "time": "2026-11-12T05:41:45Z"
+        },
+        {
+          "text": "patches: 补丁更新 0001-src-overlay",
+          "action": "提交",
+          "component": "e3615cf",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/e3615cf98312619faf44512a02f800d14953fa84",
+          "time": "2026-11-12T05:34:58Z"
+        },
+        {
+          "text": "fix: issue #3 LuaAPI 的对话框空白bug",
+          "action": "提交",
+          "component": "0bd45d7",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/0bd45d713e773c4669c2d0169aa7d065d1788298",
+          "time": "2026-11-12T05:34:11Z"
+        }
+      ],
+      "windowStart": "2026-11-12T05:34:11Z",
+      "windowEnd": "2026-11-12T05:53:04Z",
+      "actions": {
+        "提交": 3,
+        "新建 PR": 1
+      }
+    }
+  },
+  {
     "id": "github:repo:Toad114514/sm64iquedx:2026-11-10T19:48:49Z",
     "platform": "github",
     "type": "仓库活动",

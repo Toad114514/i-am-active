@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-12T03:33:15.163Z",
+    "weblate": "2026-11-12T12:04:05.694Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-12T03:32:15.659Z",
-    "kuaishou": "2026-11-12T03:32:29.680Z",
-    "github": "2026-11-12T03:32:48.222Z",
-    "gitee": "2026-11-12T03:33:10.260Z",
-    "archive": "2026-11-12T03:33:11.708Z",
-    "retroachievements": "2026-11-12T03:33:20.845Z",
-    "hexo": "2026-11-12T03:33:20.059Z",
-    "steam": "2026-11-12T03:33:22.441Z",
-    "bilibili": "2026-11-12T03:32:10.559Z",
-    "codemao": "2026-11-12T03:33:13.044Z"
+    "ottohub": "2026-11-12T12:03:00.183Z",
+    "kuaishou": "2026-11-12T12:03:13.255Z",
+    "github": "2026-11-12T12:03:31.999Z",
+    "gitee": "2026-11-12T12:04:00.785Z",
+    "archive": "2026-11-12T12:04:02.264Z",
+    "retroachievements": "2026-11-12T12:04:13.411Z",
+    "hexo": "2026-11-12T12:04:12.846Z",
+    "steam": "2026-11-12T12:04:15.323Z",
+    "bilibili": "2026-11-12T12:02:58.614Z",
+    "codemao": "2026-11-12T12:04:03.979Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-12T03:33:20.060Z",
-      "since": "2026-11-11T22:26:13.947Z",
+      "checkedAt": "2026-11-12T12:04:12.846Z",
+      "since": "2026-11-12T03:33:20.845Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -89,16 +89,16 @@
     "github": {
       "lookbackDays": 0,
       "repos": 31,
-      "commits": 721,
-      "events": 3,
+      "commits": 724,
+      "events": 4,
       "truncated": 0,
       "skipped": 1,
-      "digests": 187,
-      "actions": 746
+      "digests": 188,
+      "actions": 750
     },
     "steam": {
-      "checkedAt": "2026-11-12T03:33:20.846Z",
-      "since": "2026-11-11T22:26:15.416Z",
+      "checkedAt": "2026-11-12T12:04:13.411Z",
+      "since": "2026-11-12T03:33:22.441Z",
       "note": "窗口内没有新动作：这些游戏的 40 个已解锁成就都在上次抓取之前",
       "totalCount": 3,
       "games": [
