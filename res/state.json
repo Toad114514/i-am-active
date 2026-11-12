@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-12T12:04:05.694Z",
+    "weblate": "2026-11-12T20:37:36.456Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-12T12:03:00.183Z",
-    "kuaishou": "2026-11-12T12:03:13.255Z",
-    "github": "2026-11-12T12:03:31.999Z",
-    "gitee": "2026-11-12T12:04:00.785Z",
-    "archive": "2026-11-12T12:04:02.264Z",
-    "retroachievements": "2026-11-12T12:04:13.411Z",
-    "hexo": "2026-11-12T12:04:12.846Z",
-    "steam": "2026-11-12T12:04:15.323Z",
-    "bilibili": "2026-11-12T12:02:58.614Z",
-    "codemao": "2026-11-12T12:04:03.979Z"
+    "ottohub": "2026-11-12T20:36:47.373Z",
+    "kuaishou": "2026-11-12T20:36:49.796Z",
+    "github": "2026-11-12T20:37:08.546Z",
+    "gitee": "2026-11-12T20:37:30.443Z",
+    "archive": "2026-11-12T20:37:32.954Z",
+    "retroachievements": "2026-11-12T20:37:43.794Z",
+    "hexo": "2026-11-12T20:37:43.029Z",
+    "steam": "2026-11-12T20:37:45.458Z",
+    "bilibili": "2026-11-12T20:36:46.384Z",
+    "codemao": "2026-11-12T20:37:34.330Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-12T12:04:12.846Z",
-      "since": "2026-11-12T03:33:20.845Z",
+      "checkedAt": "2026-11-12T20:37:43.030Z",
+      "since": "2026-11-12T12:04:13.411Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -89,23 +89,23 @@
     "github": {
       "lookbackDays": 0,
       "repos": 31,
-      "commits": 724,
-      "events": 4,
+      "commits": 734,
+      "events": 5,
       "truncated": 0,
       "skipped": 1,
-      "digests": 188,
-      "actions": 750
+      "digests": 190,
+      "actions": 761
     },
     "steam": {
-      "checkedAt": "2026-11-12T12:04:13.411Z",
-      "since": "2026-11-12T03:33:22.441Z",
-      "note": "窗口内没有新动作：这些游戏的 40 个已解锁成就都在上次抓取之前",
-      "totalCount": 3,
+      "checkedAt": "2026-11-12T20:37:43.795Z",
+      "since": "2026-11-12T12:04:15.323Z",
+      "note": "窗口内没有新动作：这些游戏的 35 个已解锁成就都在上次抓取之前",
+      "totalCount": 2,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 608,
+          "minutes2weeks": 601,
           "minutesTotal": 1692,
           "lastPlayed": "2026-11-09T18:52:02.000Z"
         },
@@ -115,13 +115,6 @@
           "minutes2weeks": 45,
           "minutesTotal": 357,
           "lastPlayed": "2026-11-01T08:12:58.000Z"
-        },
-        {
-          "appid": "365450",
-          "name": "Hacknet",
-          "minutes2weeks": 5,
-          "minutesTotal": 297,
-          "lastPlayed": "2026-10-29T20:08:52.000Z"
         }
       ],
       "playItems": 0,
@@ -159,15 +152,6 @@
           "name": "Half-Life 2",
           "total": 69,
           "unlocked": 25,
-          "inWindow": 0,
-          "ok": true,
-          "error": null
-        },
-        {
-          "appid": "365450",
-          "name": "Hacknet",
-          "total": 11,
-          "unlocked": 5,
           "inWindow": 0,
           "ok": true,
           "error": null

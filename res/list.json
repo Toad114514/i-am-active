@@ -1,5 +1,129 @@
 [
   {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-12T15:01:04Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 3 次提交",
+    "summary": "11-12 23:01–23:29，最近一条「Update README.md」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-12T15:29:22Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 3,
+      "changes": [
+        {
+          "text": "Update README.md",
+          "action": "提交",
+          "component": "c97e01e",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/c97e01edf380e42c66733848fe0a60dc4b810da4",
+          "time": "2026-11-12T15:29:22Z"
+        },
+        {
+          "text": "djui_modern 改为硬依赖汉化上游：-d 必须配 -c，不再替它补字表",
+          "action": "提交",
+          "component": "d704fed",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/d704fedd31ec82d5c04213a9fc0ca52280e1eadf",
+          "time": "2026-11-12T15:10:51Z"
+        },
+        {
+          "text": "ci: 修 Windows 冒烟测试挂死（MSYS2 改写 /VERYSILENT）",
+          "action": "提交",
+          "component": "eb01c12",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/eb01c12c1c0ce5671885f1f25e89611392b4d773",
+          "time": "2026-11-12T15:01:04Z"
+        }
+      ],
+      "windowStart": "2026-11-12T15:01:04Z",
+      "windowEnd": "2026-11-12T15:29:22Z",
+      "actions": {
+        "提交": 3
+      }
+    }
+  },
+  {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-12T18:28:32Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 7 次提交、1 个 PR",
+    "summary": "11-13 02:28–04:02，最近一条「补丁更新」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-12T20:02:02Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 8,
+      "changes": [
+        {
+          "text": "补丁更新",
+          "action": "提交",
+          "component": "cf1d8b8",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/cf1d8b811c10c772208cf0be36a45eb0822c6097",
+          "time": "2026-11-12T20:02:02Z"
+        },
+        {
+          "text": "feat: 将原先 0001-src-overlay.patch 分成多个 patch 文件",
+          "action": "提交",
+          "component": "71419d8",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/71419d8726e782f9d715c95eb18cae0f9bcc0a87",
+          "time": "2026-11-12T20:01:35Z"
+        },
+        {
+          "text": "fix: 未导入时突然多出的空白",
+          "action": "提交",
+          "component": "e35700b",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/e35700b37bba579500f3f2a046dfffc832b5cf59",
+          "time": "2026-11-12T20:00:23Z"
+        },
+        {
+          "text": "fix: 模组 get_texture_info 函数获得的能量面板错位bug",
+          "action": "提交",
+          "component": "cbf1be6",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/cbf1be6b487e47e4bfbe07dfa1aab119f451fb86",
+          "time": "2026-11-12T18:51:54Z"
+        },
+        {
+          "text": "Merge pull request #5 from Toad114514/fix/scissor-render",
+          "action": "提交",
+          "component": "c6769ef",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/c6769ef8cb26b368b3dab3de417308f8d723d512",
+          "time": "2026-11-12T18:49:23Z"
+        },
+        {
+          "text": "（无标题）",
+          "action": "新建 PR",
+          "component": null,
+          "url": "https://github.com/Toad114514/sm64iquedx",
+          "time": "2026-11-12T18:34:56Z"
+        },
+        {
+          "text": "补丁更新",
+          "action": "提交",
+          "component": "2a8a9de",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/2a8a9dec99db6b774ce54a4578b6613568dac1fe",
+          "time": "2026-11-12T18:28:43Z"
+        },
+        {
+          "text": "fix: issue #2 剪裁问题",
+          "action": "提交",
+          "component": "b0ac784",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/b0ac7843a442f03c3a8b4f15c1c26798bfb03117",
+          "time": "2026-11-12T18:28:32Z"
+        }
+      ],
+      "windowStart": "2026-11-12T18:28:32Z",
+      "windowEnd": "2026-11-12T20:02:02Z",
+      "actions": {
+        "提交": 7,
+        "新建 PR": 1
+      }
+    }
+  },
+  {
     "id": "github:repo:Toad114514/sm64iquedx:2026-11-12T05:34:11Z",
     "platform": "github",
     "type": "仓库活动",
