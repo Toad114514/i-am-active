@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-13T08:59:15.917Z",
+    "weblate": "2026-11-13T17:00:03.715Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-13T08:58:24.427Z",
-    "kuaishou": "2026-11-13T08:58:26.720Z",
-    "github": "2026-11-13T08:58:42.951Z",
-    "gitee": "2026-11-13T08:59:10.784Z",
-    "archive": "2026-11-13T08:59:12.106Z",
-    "retroachievements": "2026-11-13T08:59:22.424Z",
-    "hexo": "2026-11-13T08:59:21.668Z",
-    "steam": "2026-11-13T08:59:23.362Z",
-    "bilibili": "2026-11-13T08:58:23.510Z",
-    "codemao": "2026-11-13T08:59:13.257Z"
+    "ottohub": "2026-11-13T16:59:08.800Z",
+    "kuaishou": "2026-11-13T16:59:10.966Z",
+    "github": "2026-11-13T16:59:29.497Z",
+    "gitee": "2026-11-13T16:59:57.671Z",
+    "archive": "2026-11-13T16:59:59.726Z",
+    "retroachievements": "2026-11-13T17:00:11.189Z",
+    "hexo": "2026-11-13T17:00:10.488Z",
+    "steam": "2026-11-13T17:00:13.973Z",
+    "bilibili": "2026-11-13T16:59:07.879Z",
+    "codemao": "2026-11-13T17:00:01.191Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-13T08:59:21.669Z",
-      "since": "2026-11-13T01:39:23.191Z",
+      "checkedAt": "2026-11-13T17:00:10.489Z",
+      "since": "2026-11-13T08:59:22.424Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -89,25 +89,25 @@
     "github": {
       "lookbackDays": 0,
       "repos": 31,
-      "commits": 734,
+      "commits": 736,
       "events": 5,
       "truncated": 0,
       "skipped": 1,
-      "digests": 190,
-      "actions": 761
+      "digests": 191,
+      "actions": 763
     },
     "steam": {
-      "checkedAt": "2026-11-13T08:59:22.424Z",
-      "since": "2026-11-13T01:39:24.671Z",
-      "note": "窗口内没有新动作：这些游戏的 35 个已解锁成就都在上次抓取之前",
+      "checkedAt": "2026-11-13T17:00:11.190Z",
+      "since": "2026-11-13T08:59:23.362Z",
+      "note": "",
       "totalCount": 2,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 601,
-          "minutesTotal": 1692,
-          "lastPlayed": "2026-11-09T18:52:02.000Z"
+          "minutes2weeks": 691,
+          "minutesTotal": 1782,
+          "lastPlayed": "2026-11-13T16:59:38.000Z"
         },
         {
           "appid": "4000",
@@ -117,8 +117,8 @@
           "lastPlayed": "2026-11-01T08:12:58.000Z"
         }
       ],
-      "playItems": 0,
-      "achievementItems": 0,
+      "playItems": 1,
+      "achievementItems": 3,
       "achievements": [
         {
           "appid": "477160",
@@ -151,8 +151,8 @@
           "appid": "220",
           "name": "Half-Life 2",
           "total": 69,
-          "unlocked": 25,
-          "inWindow": 0,
+          "unlocked": 28,
+          "inWindow": 3,
           "ok": true,
           "error": null
         }

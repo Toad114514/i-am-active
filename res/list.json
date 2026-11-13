@@ -1,5 +1,110 @@
 [
   {
+    "id": "steam:play:220:1794589178",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Half-Life 2",
+    "summary": "从 2026/11/14 00:59:38 开始玩，两周内玩了 11 小时 31 分钟，游玩时长 29 小时 42 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-11-13T16:59:38.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 691,
+      "minutesTotal": 1782,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
+    "id": "steam:220:EP1_BEAT_GAME",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "逃出 17 号城",
+    "summary": "Half-Life 2 获得成就💀️「逃出 17 号城」：与爱莉克斯逃出 17 号城市。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/7cd51b19caac5973c270c8a973eb336f77ce8a17.jpg",
+    "timestamp": "2026-11-13T16:55:27.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "EP1_BEAT_GAME",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/7cd51b19caac5973c270c8a973eb336f77ce8a17.jpg"
+    }
+  },
+  {
+    "id": "steam:220:EP1_BEAT_CITIZENESCORT_NOCITIZENDEATHS",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "护送公民",
+    "summary": "Half-Life 2 获得成就💀️「护送公民」：护送公民到逃生火车，别让他们有生命危险。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/e0041f3934c7b4aba49069e80b31f97594118cea.jpg",
+    "timestamp": "2026-11-13T16:35:59.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "EP1_BEAT_CITIZENESCORT_NOCITIZENDEATHS",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/e0041f3934c7b4aba49069e80b31f97594118cea.jpg"
+    }
+  },
+  {
+    "id": "steam:220:EP1_BEAT_HOSPITALATTICGUNSHIP",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "高手！",
+    "summary": "Half-Life 2 获得成就💀️「高手！」：摧毁医院阁楼的武装直升机。",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/220/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/eec14c6852c0ba82e6e8f02904daae08c4a72b03.jpg",
+    "timestamp": "2026-11-13T16:01:10.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "achievementId": "EP1_BEAT_HOSPITALATTICGUNSHIP",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/220/eec14c6852c0ba82e6e8f02904daae08c4a72b03.jpg"
+    }
+  },
+  {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-13T14:21:04Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 2 次提交",
+    "summary": "11-13 22:21–22:46，最近一条「fix: romhack 兼容2」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-13T14:46:56Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 2,
+      "changes": [
+        {
+          "text": "fix: romhack 兼容2",
+          "action": "提交",
+          "component": "82535ff",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/82535ffe959809caaddc5daa8fb77d4d3afc0738",
+          "time": "2026-11-13T14:46:56Z"
+        },
+        {
+          "text": "fix: romhack 兼容修复",
+          "action": "提交",
+          "component": "a27787d",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/a27787dc686cc423af4f37e08b1370085a847ad9",
+          "time": "2026-11-13T14:21:04Z"
+        }
+      ],
+      "windowStart": "2026-11-13T14:21:04Z",
+      "windowEnd": "2026-11-13T14:46:56Z",
+      "actions": {
+        "提交": 2
+      }
+    }
+  },
+  {
     "id": "github:repo:Toad114514/sm64iquedx:2026-11-12T15:01:04Z",
     "platform": "github",
     "type": "仓库活动",
