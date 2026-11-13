@@ -1,5 +1,52 @@
 [
   {
+    "id": "steam:play:220:1794589247",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Half-Life 2",
+    "summary": "从 2026/11/14 01:00:47 开始玩，两周内玩了 11 小时 32 分钟，游玩时长 29 小时 43 分钟",
+    "url": "https://steamcommunity.com/app/220",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
+    "timestamp": "2026-11-13T17:00:47.000Z",
+    "meta": {
+      "appid": "220",
+      "gameName": "Half-Life 2",
+      "minutes2weeks": 692,
+      "minutesTotal": 1783,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg"
+    }
+  },
+  {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-13T20:12:57Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 1 次提交",
+    "summary": "11-14 04:12，最近一条「feat: 特制的内建 Unicode 字体系统」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-13T20:12:57Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 1,
+      "changes": [
+        {
+          "text": "feat: 特制的内建 Unicode 字体系统",
+          "action": "提交",
+          "component": "99e0ea5",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/99e0ea5555b9d3c2edffd30c2759b72eac95525a",
+          "time": "2026-11-13T20:12:57Z"
+        }
+      ],
+      "windowStart": "2026-11-13T20:12:57Z",
+      "windowEnd": "2026-11-13T20:12:57Z",
+      "actions": {
+        "提交": 1
+      }
+    }
+  },
+  {
     "id": "steam:play:220:1794589178",
     "platform": "steam",
     "type": "游玩记录",
