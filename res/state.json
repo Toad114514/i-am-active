@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-14T02:52:12.622Z",
+    "weblate": "2026-11-14T09:43:23.474Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-14T02:51:08.101Z",
-    "kuaishou": "2026-11-14T02:51:29.785Z",
-    "github": "2026-11-14T02:51:46.985Z",
-    "gitee": "2026-11-14T02:52:06.892Z",
-    "archive": "2026-11-14T02:52:09.233Z",
-    "retroachievements": "2026-11-14T02:52:19.313Z",
-    "hexo": "2026-11-14T02:52:18.570Z",
-    "steam": "2026-11-14T02:52:21.091Z",
-    "bilibili": "2026-11-14T02:51:07.222Z",
-    "codemao": "2026-11-14T02:52:10.513Z"
+    "ottohub": "2026-11-14T09:42:34.132Z",
+    "kuaishou": "2026-11-14T09:42:36.662Z",
+    "github": "2026-11-14T09:42:52.477Z",
+    "gitee": "2026-11-14T09:43:18.781Z",
+    "archive": "2026-11-14T09:43:20.103Z",
+    "retroachievements": "2026-11-14T09:43:30.413Z",
+    "hexo": "2026-11-14T09:43:29.822Z",
+    "steam": "2026-11-14T09:43:31.595Z",
+    "bilibili": "2026-11-14T09:42:32.840Z",
+    "codemao": "2026-11-14T09:43:21.493Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-14T02:52:18.570Z",
-      "since": "2026-11-13T22:26:36.981Z",
+      "checkedAt": "2026-11-14T09:43:29.823Z",
+      "since": "2026-11-14T02:52:19.313Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -89,23 +89,23 @@
     "github": {
       "lookbackDays": 0,
       "repos": 31,
-      "commits": 737,
+      "commits": 742,
       "events": 5,
       "truncated": 0,
       "skipped": 1,
-      "digests": 192,
-      "actions": 764
+      "digests": 193,
+      "actions": 769
     },
     "steam": {
-      "checkedAt": "2026-11-14T02:52:19.314Z",
-      "since": "2026-11-13T22:26:38.059Z",
+      "checkedAt": "2026-11-14T09:43:30.414Z",
+      "since": "2026-11-14T02:52:21.091Z",
       "note": "窗口内没有新动作：这些游戏的 38 个已解锁成就都在上次抓取之前",
       "totalCount": 2,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 692,
+          "minutes2weeks": 432,
           "minutesTotal": 1783,
           "lastPlayed": "2026-11-13T17:00:47.000Z"
         },

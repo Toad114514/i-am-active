@@ -1,5 +1,63 @@
 [
   {
+    "id": "github:repo:Toad114514/sm64iquedx:2026-11-14T07:42:54Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/sm64iquedx · 5 次提交",
+    "summary": "11-14 15:42–16:51，最近一条「删掉冗余内容和action编译简化」",
+    "url": "https://github.com/Toad114514/sm64iquedx",
+    "image": null,
+    "timestamp": "2026-11-14T08:51:07Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/sm64iquedx",
+      "count": 5,
+      "changes": [
+        {
+          "text": "删掉冗余内容和action编译简化",
+          "action": "提交",
+          "component": "4b9f39c",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/4b9f39c2deaa995846377adf1637c3732dfe24a5",
+          "time": "2026-11-14T08:51:07Z"
+        },
+        {
+          "text": "英文文档",
+          "action": "提交",
+          "component": "dcd5ff7",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/dcd5ff7f12895becf52cb5552da07d2cc4b66c7a",
+          "time": "2026-11-14T08:50:47Z"
+        },
+        {
+          "text": "Update README.md",
+          "action": "提交",
+          "component": "c4469aa",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/c4469aa6a41ad91fa9cc495565917ceccedd0478",
+          "time": "2026-11-14T08:33:39Z"
+        },
+        {
+          "text": "fix patch 找不到上下文",
+          "action": "提交",
+          "component": "d56a569",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/d56a569b89570048b4d49b9af0afa2c7c71335ea",
+          "time": "2026-11-14T08:16:43Z"
+        },
+        {
+          "text": "fix 修复各种问题",
+          "action": "提交",
+          "component": "6c14c9a",
+          "url": "https://github.com/Toad114514/sm64iquedx/commit/6c14c9ac14817c6edcf7f3326c5e0b6711adc089",
+          "time": "2026-11-14T07:42:54Z"
+        }
+      ],
+      "windowStart": "2026-11-14T07:42:54Z",
+      "windowEnd": "2026-11-14T08:51:07Z",
+      "actions": {
+        "提交": 5
+      }
+    }
+  },
+  {
     "id": "steam:play:220:1794589247",
     "platform": "steam",
     "type": "游玩记录",
