@@ -1,56 +1,56 @@
 {
   "lastRun": {
-    "weblate": "2026-11-15T01:29:26.419Z",
+    "weblate": "2026-11-15T08:43:26.650Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-15T01:28:28.997Z",
-    "kuaishou": "2026-11-15T01:28:42.281Z",
-    "github": "2026-11-15T01:28:59.442Z",
-    "gitee": "2026-11-15T01:29:21.288Z",
-    "archive": "2026-11-15T01:29:23.239Z",
-    "retroachievements": "2026-11-15T01:29:33.461Z",
-    "hexo": "2026-11-15T01:29:32.847Z",
-    "steam": "2026-11-15T01:29:34.938Z",
-    "bilibili": "2026-11-15T01:28:27.962Z",
-    "codemao": "2026-11-15T01:29:24.618Z"
+    "ottohub": "2026-11-15T08:42:29.498Z",
+    "kuaishou": "2026-11-15T08:42:32.045Z",
+    "github": "2026-11-15T08:42:46.963Z",
+    "gitee": "2026-11-15T08:43:16.752Z",
+    "archive": "2026-11-15T08:43:23.232Z",
+    "retroachievements": "2026-11-15T08:43:33.451Z",
+    "hexo": "2026-11-15T08:43:32.666Z",
+    "steam": "2026-11-15T08:43:34.454Z",
+    "bilibili": "2026-11-15T08:42:28.319Z",
+    "codemao": "2026-11-15T08:43:24.917Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-15T01:29:32.848Z",
-      "since": "2026-11-14T21:04:16.655Z",
+      "checkedAt": "2026-11-15T08:43:32.666Z",
+      "since": "2026-11-15T01:29:33.461Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
-      "note": "窗口 4320 分钟内没有成就，也没有新玩的游戏（接口正常返回，只是没东西）",
+      "note": "",
       "profile": {
         "ok": true,
         "user": "toad114514",
-        "points": 1365,
-        "truePoints": 3444
+        "points": 1371,
+        "truePoints": 3452
       },
       "recentAchievements": {
         "ok": true,
-        "rawCount": 0,
-        "used": 0,
+        "rawCount": 3,
+        "used": 3,
         "error": null
       },
       "recentlyPlayed": {
         "ok": true,
         "rawCount": 30,
-        "used": 0,
+        "used": 1,
         "error": null
       },
       "items": {
-        "achievements": 0,
-        "plays": 0
+        "achievements": 3,
+        "plays": 1
       },
       "gameArt": {
-        "games": 0,
-        "withArt": 0,
+        "games": 1,
+        "withArt": 4,
         "sources": {
           "title": 0,
           "ingame": 0,
-          "boxart": 0
+          "boxart": 4
         },
         "debug": []
       }
@@ -97,24 +97,17 @@
       "actions": 769
     },
     "steam": {
-      "checkedAt": "2026-11-15T01:29:33.461Z",
-      "since": "2026-11-14T21:04:18.310Z",
+      "checkedAt": "2026-11-15T08:43:33.451Z",
+      "since": "2026-11-15T01:29:34.938Z",
       "note": "窗口内没有新动作：这些游戏的 38 个已解锁成就都在上次抓取之前",
-      "totalCount": 2,
+      "totalCount": 1,
       "games": [
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 390,
+          "minutes2weeks": 362,
           "minutesTotal": 1783,
           "lastPlayed": "2026-11-13T17:00:47.000Z"
-        },
-        {
-          "appid": "4000",
-          "name": "Garry's Mod",
-          "minutes2weeks": 45,
-          "minutesTotal": 357,
-          "lastPlayed": "2026-11-01T08:12:58.000Z"
         }
       ],
       "playItems": 0,
