@@ -1,5 +1,33 @@
 [
   {
+    "id": "weblate:session:2026-11-18T13:52:49Z",
+    "platform": "weblate",
+    "type": "译文提交",
+    "title": "TDE Georgian · 5 条译文改动",
+    "summary": "5 条改动，涉及 1 个组件（tdeutils/kcmthinkpad）",
+    "url": "https://mirror.git.trinitydesktop.org/weblate/projects/tdeutils/kcmthinkpad/ka/",
+    "image": null,
+    "timestamp": "2026-11-18T13:52:49.000Z",
+    "meta": {
+      "merge": true,
+      "count": 5,
+      "translationCount": 0,
+      "changes": [],
+      "windowStart": "2026-11-18T12:48:07.000Z",
+      "windowEnd": "2026-11-18T13:52:49.000Z",
+      "components": [
+        "tdeutils/kcmthinkpad"
+      ],
+      "actions": {
+        "翻译改动": 5
+      },
+      "language": "Georgian",
+      "languageName": "Georgian",
+      "latestTarget": null,
+      "source": "rss"
+    }
+  },
+  {
     "id": "retroachievements:play:17500:2026-11-15 09:34:32",
     "platform": "retroachievements",
     "type": "游玩记录",
