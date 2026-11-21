@@ -1,5 +1,39 @@
 [
   {
+    "id": "steam:play:431960:1795277871",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Wallpaper Engine",
+    "summary": "从 2026/11/22 00:17:51 开始玩，两周内玩了 6 分钟，游玩时长 53 分钟",
+    "url": "https://steamcommunity.com/app/431960",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/431960/header.jpg",
+    "timestamp": "2026-11-21T16:17:51.000Z",
+    "meta": {
+      "appid": "431960",
+      "gameName": "Wallpaper Engine",
+      "minutes2weeks": 6,
+      "minutesTotal": 53,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/431960/header.jpg"
+    }
+  },
+  {
+    "id": "steam:431960:SUBSCRIBE_100_WALLPAPERS",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "硬盘空间不足",
+    "summary": "Wallpaper Engine 获得成就💀️「硬盘空间不足」：使用100张不同的创意工坊壁纸",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/431960/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/431960/53c2189431308f46ef77d0c5eb1ecac697d703a6.jpg",
+    "timestamp": "2026-11-21T16:12:10.000Z",
+    "meta": {
+      "appid": "431960",
+      "gameName": "Wallpaper Engine",
+      "achievementId": "SUBSCRIBE_100_WALLPAPERS",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/431960/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/431960/53c2189431308f46ef77d0c5eb1ecac697d703a6.jpg"
+    }
+  },
+  {
     "id": "weblate:session:2026-11-18T13:52:49Z",
     "platform": "weblate",
     "type": "译文提交",
