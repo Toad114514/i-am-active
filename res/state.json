@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-21T18:46:39.401Z",
+    "weblate": "2026-11-21T23:41:13.959Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-21T18:45:43.937Z",
-    "kuaishou": "2026-11-21T18:45:45.927Z",
-    "github": "2026-11-21T18:46:01.410Z",
-    "gitee": "2026-11-21T18:46:22.406Z",
-    "archive": "2026-11-21T18:46:36.245Z",
-    "retroachievements": "2026-11-21T18:46:46.612Z",
-    "hexo": "2026-11-21T18:46:45.868Z",
-    "steam": "2026-11-21T18:46:48.217Z",
-    "bilibili": "2026-11-21T18:45:42.930Z",
-    "codemao": "2026-11-21T18:46:37.504Z"
+    "ottohub": "2026-11-21T23:40:26.619Z",
+    "kuaishou": "2026-11-21T23:40:29.001Z",
+    "github": "2026-11-21T23:40:44.076Z",
+    "gitee": "2026-11-21T23:41:09.150Z",
+    "archive": "2026-11-21T23:41:10.440Z",
+    "retroachievements": "2026-11-21T23:41:21.284Z",
+    "hexo": "2026-11-21T23:41:20.618Z",
+    "steam": "2026-11-21T23:41:22.458Z",
+    "bilibili": "2026-11-21T23:40:25.505Z",
+    "codemao": "2026-11-21T23:41:11.871Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-21T18:46:45.868Z",
-      "since": "2026-11-21T11:59:09.885Z",
+      "checkedAt": "2026-11-21T23:41:20.618Z",
+      "since": "2026-11-21T18:46:46.612Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -97,9 +97,9 @@
       "actions": 769
     },
     "steam": {
-      "checkedAt": "2026-11-21T18:46:46.613Z",
-      "since": "2026-11-21T11:59:11.007Z",
-      "note": "",
+      "checkedAt": "2026-11-21T23:41:21.285Z",
+      "since": "2026-11-21T18:46:48.217Z",
+      "note": "窗口内没有新动作：这些游戏的 39 个已解锁成就都在上次抓取之前",
       "totalCount": 2,
       "games": [
         {
@@ -117,8 +117,8 @@
           "lastPlayed": "2026-11-21T16:17:51.000Z"
         }
       ],
-      "playItems": 1,
-      "achievementItems": 1,
+      "playItems": 0,
+      "achievementItems": 0,
       "achievements": [
         {
           "appid": "477160",
@@ -143,7 +143,7 @@
           "name": null,
           "total": 17,
           "unlocked": 4,
-          "inWindow": 1,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
