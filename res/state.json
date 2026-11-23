@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-23T10:07:34.522Z",
+    "weblate": "2026-11-23T22:23:59.539Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-23T10:06:41.955Z",
-    "kuaishou": "2026-11-23T10:06:44.543Z",
-    "github": "2026-11-23T10:07:02.016Z",
-    "gitee": "2026-11-23T10:07:30.149Z",
-    "archive": "2026-11-23T10:07:31.285Z",
-    "retroachievements": "2026-11-23T10:07:40.775Z",
-    "hexo": "2026-11-23T10:07:40.034Z",
-    "steam": "2026-11-23T10:07:41.760Z",
-    "bilibili": "2026-11-23T10:06:41.109Z",
-    "codemao": "2026-11-23T10:07:32.381Z"
+    "ottohub": "2026-11-23T22:22:48.607Z",
+    "kuaishou": "2026-11-23T22:23:10.045Z",
+    "github": "2026-11-23T22:23:29.332Z",
+    "gitee": "2026-11-23T22:23:50.387Z",
+    "archive": "2026-11-23T22:23:55.911Z",
+    "retroachievements": "2026-11-23T22:24:04.885Z",
+    "hexo": "2026-11-23T22:24:04.111Z",
+    "steam": "2026-11-23T22:24:07.314Z",
+    "bilibili": "2026-11-23T22:22:47.538Z",
+    "codemao": "2026-11-23T22:23:57.227Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-23T10:07:40.034Z",
-      "since": "2026-11-23T01:20:26.494Z",
+      "checkedAt": "2026-11-23T22:24:04.111Z",
+      "since": "2026-11-23T10:07:40.775Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -89,25 +89,39 @@
     "github": {
       "lookbackDays": 0,
       "repos": 31,
-      "commits": 742,
+      "commits": 744,
       "events": 5,
       "truncated": 0,
       "skipped": 1,
-      "digests": 193,
-      "actions": 769
+      "digests": 194,
+      "actions": 771
     },
     "steam": {
-      "checkedAt": "2026-11-23T10:07:40.776Z",
-      "since": "2026-11-23T01:20:27.939Z",
-      "note": "窗口内没有新动作：这些游戏的 39 个已解锁成就都在上次抓取之前",
-      "totalCount": 2,
+      "checkedAt": "2026-11-23T22:24:04.886Z",
+      "since": "2026-11-23T10:07:41.760Z",
+      "note": "",
+      "totalCount": 4,
       "games": [
+        {
+          "appid": "362890",
+          "name": "Black Mesa",
+          "minutes2weeks": 157,
+          "minutesTotal": 157,
+          "lastPlayed": "2026-11-23T19:42:28.000Z"
+        },
         {
           "appid": "220",
           "name": "Half-Life 2",
-          "minutes2weeks": 141,
+          "minutes2weeks": 91,
           "minutesTotal": 1783,
           "lastPlayed": "2026-11-13T17:00:47.000Z"
+        },
+        {
+          "appid": "4000",
+          "name": "Garry's Mod",
+          "minutes2weeks": 11,
+          "minutesTotal": 369,
+          "lastPlayed": "2026-11-23T15:32:03.000Z"
         },
         {
           "appid": "431960",
@@ -117,8 +131,8 @@
           "lastPlayed": "2026-11-21T16:17:51.000Z"
         }
       ],
-      "playItems": 0,
-      "achievementItems": 0,
+      "playItems": 2,
+      "achievementItems": 3,
       "achievements": [
         {
           "appid": "477160",
@@ -133,8 +147,8 @@
           "appid": "4000",
           "name": null,
           "total": 29,
-          "unlocked": 2,
-          "inWindow": 0,
+          "unlocked": 3,
+          "inWindow": 1,
           "ok": true,
           "error": null
         },
@@ -144,6 +158,15 @@
           "total": 17,
           "unlocked": 4,
           "inWindow": 0,
+          "ok": true,
+          "error": null
+        },
+        {
+          "appid": "362890",
+          "name": "Black Mesa",
+          "total": 50,
+          "unlocked": 2,
+          "inWindow": 2,
           "ok": true,
           "error": null
         },

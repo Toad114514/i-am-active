@@ -1,5 +1,127 @@
 [
   {
+    "id": "steam:play:362890:1795462948",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Black Mesa",
+    "summary": "从 2026/11/24 03:42:28 开始玩，两周内玩了 2 小时 37 分钟，游玩时长 2 小时 37 分钟",
+    "url": "https://steamcommunity.com/app/362890",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/362890/header.jpg",
+    "timestamp": "2026-11-23T19:42:28.000Z",
+    "meta": {
+      "appid": "362890",
+      "gameName": "Black Mesa",
+      "minutes2weeks": 157,
+      "minutesTotal": 157,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/362890/header.jpg"
+    }
+  },
+  {
+    "id": "steam:362890:BMS_BROWN_MOTION",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "Brownian Motion",
+    "summary": "Black Mesa 获得成就💀️「Brownian Motion」：Pass the toilet paper to the Scientist in need.",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/362890/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/362890/10a60fce128f3b65bd6ca012daf8957c5314ed0c.jpg",
+    "timestamp": "2026-11-23T18:00:58.000Z",
+    "meta": {
+      "appid": "362890",
+      "gameName": "Black Mesa",
+      "achievementId": "BMS_BROWN_MOTION",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/362890/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/362890/10a60fce128f3b65bd6ca012daf8957c5314ed0c.jpg"
+    }
+  },
+  {
+    "id": "steam:362890:BMS_FLAVOR_TRANSFORMATION",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "Convection Refinement",
+    "summary": "Black Mesa 获得成就💀️「Convection Refinement」：Ruin the microwave casserole.",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/362890/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/362890/bb2fd29b1a7269febb3012bda8d59ea41a96d824.jpg",
+    "timestamp": "2026-11-23T17:58:30.000Z",
+    "meta": {
+      "appid": "362890",
+      "gameName": "Black Mesa",
+      "achievementId": "BMS_FLAVOR_TRANSFORMATION",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/362890/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/362890/bb2fd29b1a7269febb3012bda8d59ea41a96d824.jpg"
+    }
+  },
+  {
+    "id": "steam:play:4000:1795447923",
+    "platform": "steam",
+    "type": "游玩记录",
+    "title": "严肃游玩 Garry's Mod",
+    "summary": "从 2026/11/23 23:32:03 开始玩，两周内玩了 11 分钟，游玩时长 6 小时 9 分钟",
+    "url": "https://steamcommunity.com/app/4000",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg",
+    "timestamp": "2026-11-23T15:32:03.000Z",
+    "meta": {
+      "appid": "4000",
+      "gameName": "Garry's Mod",
+      "minutes2weeks": 11,
+      "minutesTotal": 369,
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg"
+    }
+  },
+  {
+    "id": "steam:4000:GMA_X_MAPS",
+    "platform": "steam",
+    "type": "成就解锁",
+    "title": "换图狂魔",
+    "summary": "Garry's Mod 获得成就💀️「换图狂魔」：游玩了二十张地图",
+    "url": "https://steamcommunity.com/profiles/76561198744899986/stats/4000/achievements",
+    "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4000/7cb317f7a953204e79a3fc2923aad8eb77df74bd.jpg",
+    "timestamp": "2026-11-23T15:30:25.000Z",
+    "meta": {
+      "appid": "4000",
+      "gameName": "Garry's Mod",
+      "achievementId": "GMA_X_MAPS",
+      "backdrop": "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg",
+      "badge": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/4000/7cb317f7a953204e79a3fc2923aad8eb77df74bd.jpg"
+    }
+  },
+  {
+    "id": "github:repo:Toad114514/Toad114514:2026-11-23T14:28:37Z",
+    "platform": "github",
+    "type": "仓库活动",
+    "title": "Toad114514/Toad114514 · 2 次提交",
+    "summary": "11-23 22:28–22:30，最近一条「README.md +banner」",
+    "url": "https://github.com/Toad114514/Toad114514",
+    "image": null,
+    "timestamp": "2026-11-23T14:30:52Z",
+    "meta": {
+      "merge": true,
+      "kind": "repo-digest",
+      "repo": "Toad114514/Toad114514",
+      "count": 2,
+      "changes": [
+        {
+          "text": "README.md +banner",
+          "action": "提交",
+          "component": "5da0710",
+          "url": "https://github.com/Toad114514/Toad114514/commit/5da07106c64735e34003b042bcd124a5443dc6ed",
+          "time": "2026-11-23T14:30:52Z"
+        },
+        {
+          "text": "上传banner",
+          "action": "提交",
+          "component": "a1654b3",
+          "url": "https://github.com/Toad114514/Toad114514/commit/a1654b34775dfe2451688b843ee1985da216a9c2",
+          "time": "2026-11-23T14:28:37Z"
+        }
+      ],
+      "windowStart": "2026-11-23T14:28:37Z",
+      "windowEnd": "2026-11-23T14:30:52Z",
+      "actions": {
+        "提交": 2
+      }
+    }
+  },
+  {
     "id": "steam:play:431960:1795277871",
     "platform": "steam",
     "type": "游玩记录",
