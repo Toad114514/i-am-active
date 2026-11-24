@@ -1,23 +1,23 @@
 {
   "lastRun": {
-    "weblate": "2026-11-23T22:23:59.539Z",
+    "weblate": "2026-11-24T06:40:36.815Z",
     "youtube": "2026-10-26T18:59:14.463Z",
-    "ottohub": "2026-11-23T22:22:48.607Z",
-    "kuaishou": "2026-11-23T22:23:10.045Z",
-    "github": "2026-11-23T22:23:29.332Z",
-    "gitee": "2026-11-23T22:23:50.387Z",
-    "archive": "2026-11-23T22:23:55.911Z",
-    "retroachievements": "2026-11-23T22:24:04.885Z",
-    "hexo": "2026-11-23T22:24:04.111Z",
-    "steam": "2026-11-23T22:24:07.314Z",
-    "bilibili": "2026-11-23T22:22:47.538Z",
-    "codemao": "2026-11-23T22:23:57.227Z"
+    "ottohub": "2026-11-24T06:39:46.199Z",
+    "kuaishou": "2026-11-24T06:39:48.563Z",
+    "github": "2026-11-24T06:40:06.560Z",
+    "gitee": "2026-11-24T06:40:31.818Z",
+    "archive": "2026-11-24T06:40:33.017Z",
+    "retroachievements": "2026-11-24T06:40:42.504Z",
+    "hexo": "2026-11-24T06:40:41.740Z",
+    "steam": "2026-11-24T06:40:43.592Z",
+    "bilibili": "2026-11-24T06:39:45.190Z",
+    "codemao": "2026-11-24T06:40:34.534Z"
   },
   "knownIds": {},
   "diagnostics": {
     "retroachievements": {
-      "checkedAt": "2026-11-23T22:24:04.111Z",
-      "since": "2026-11-23T10:07:40.775Z",
+      "checkedAt": "2026-11-24T06:40:41.741Z",
+      "since": "2026-11-23T22:24:04.885Z",
       "windowMinutes": 4320,
       "keyConfigured": true,
       "keyHint": "oCzx…yt（长度 32）",
@@ -97,9 +97,9 @@
       "actions": 771
     },
     "steam": {
-      "checkedAt": "2026-11-23T22:24:04.886Z",
-      "since": "2026-11-23T10:07:41.760Z",
-      "note": "",
+      "checkedAt": "2026-11-24T06:40:42.505Z",
+      "since": "2026-11-23T22:24:07.314Z",
+      "note": "窗口内没有新动作：这些游戏的 42 个已解锁成就都在上次抓取之前",
       "totalCount": 4,
       "games": [
         {
@@ -131,8 +131,8 @@
           "lastPlayed": "2026-11-21T16:17:51.000Z"
         }
       ],
-      "playItems": 2,
-      "achievementItems": 3,
+      "playItems": 0,
+      "achievementItems": 0,
       "achievements": [
         {
           "appid": "477160",
@@ -148,7 +148,7 @@
           "name": null,
           "total": 29,
           "unlocked": 3,
-          "inWindow": 1,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
@@ -166,7 +166,7 @@
           "name": "Black Mesa",
           "total": 50,
           "unlocked": 2,
-          "inWindow": 2,
+          "inWindow": 0,
           "ok": true,
           "error": null
         },
